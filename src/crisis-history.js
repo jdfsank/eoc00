@@ -148,12 +148,12 @@ export function getCrisisHistory(s, eventId) {
   }
   if (impact) {
     const crisis = s.flags?.crisis;
-    if (coefficient(crisis?.damage)) detail.push(`第23年已存整体损失系数：${crisis.damage.toFixed(2)}。`);
+    if (coefficient(crisis?.damage)) detail.push(`第23年已存整体损失系数：${String(crisis.damage)}。`);
     let incomplete = false;
     for (const id of FLOOD_REGIONS) {
       const coverage = crisis?.coverageByCell?.[id], damage = crisis?.damageByCell?.[id];
       if (!coefficient(coverage) || !coefficient(damage)) incomplete = true;
-      if (coefficient(coverage) || coefficient(damage)) detail.push(`第23年 ${id}：已存覆盖系数${coefficient(coverage) ? coverage.toFixed(2) : '未知'}；已存损失系数${coefficient(damage) ? damage.toFixed(2) : '未知'}。`);
+      if (coefficient(coverage) || coefficient(damage)) detail.push(`第23年 ${id}：已存覆盖系数${coefficient(coverage) ? String(coverage) : '未知'}；已存损失系数${coefficient(damage) ? String(damage) : '未知'}。`);
     }
     if (incomplete) detail.push('旧档未完整保存第23年的逐地覆盖与损失明细，缺项未知；不从当前机构、状态标记或后来的互助重算，也不据此补写危机已避免。');
     detail.push('以上系数是第23年已保存的原型结算，不是人口或伤亡统计；后来的机构兴衰不会改写这些历史明细。');

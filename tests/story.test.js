@@ -31,11 +31,13 @@ test('failed build is acknowledged rather than replaying the successful training
   assert.match(body(state), /没有正在运转的水文站/);
   assert.doesNotMatch(body(state), /父亲|河港的管理者/);
 });
-test('successful, publicly renewed station has the matching training and maintenance scene', () => {
+test('successful renewal preserves the public station and Linche’s teaching without appointing Sulan', () => {
   const state = createRun(12); decade(state, 'build_joint');
   assert.match(body(state), /第一批学徒已经/);
   decade(state, 'renew_charter');
-  assert.equal(sceneFor(state, 'D4').speaker, '苏岚 · 河港的维护者');
+  assert.equal(sceneFor(state, 'D4').speaker, '苏岚 · 河港居民');
+  assert.match(body(state), /林澈留下带教.*没有记录苏岚接任/);
+  assert.match(state.history.find(event => event.id === 'resolved:event:action:10:protagonist:D4:renew_charter').text, /林澈留下带教/);
   assert.match(body(state), /仍向居民开放/);
   assert.doesNotMatch(body(state), /父亲/);
   assert.match(state.history.find(event => event.id === 'old-reality-conflict').text, /测站仍在运转/);
@@ -137,7 +139,8 @@ test('R0 evidence identifies whose witness it is while local testimony stays sta
     assert.deepEqual(evidenceFor(state, id, 'D4', 'linche'), evidenceFor(state, id, 'D4', 'protagonist'));
   }
   assert.match(evidenceFor(state, 'resident_testimony', 'D4', 'linche').text, /收费门槛/);
-  assert.match(evidenceFor(state, 'successor_consent', 'D4', 'linche').title, /与学徒/);
+  assert.match(evidenceFor(state, 'successor_consent', 'D4', 'linche').title, /与苏岚商量培训与接班/);
+  assert.doesNotMatch(evidenceFor(state, 'successor_consent', 'D4', 'linche').text, /苏岚带着已经完成的读尺记录/);
 });
 
 test('far-port provenance does not claim either actor has never intervened there', () => {

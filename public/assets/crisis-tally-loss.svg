@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="72" viewBox="0 0 64 72" shape-rendering="crispEdges" data-tally-state="loss">
+<title>Historical settlement annotation: loss</title><desc>Original paper-and-ink marker. Its shapes distinguish a recorded positive loss coefficient, a recorded zero, and unknown local details. It never represents a count of people, injuries, buildings or destroyed objects.</desc>
+<g id="archive-page"><path d="M9 5h33l13 13v47H9Z" fill="#D6C9A4" stroke="#718477" stroke-width="3" /><path d="M42 5v14h13" fill="none" stroke="#718477" stroke-width="3"/></g>
+<g id="recorded-loss"><path d="M18 25h27M18 34h10M36 34h9M18 43h27" stroke="#294944" stroke-width="3"/><path d="M30 30l5 8" stroke="#9E8053" stroke-width="3"/><path d="M45 46l12 11-12 11-12-11Z" fill="#B4A06C" stroke="#294944" stroke-width="3"/></g>
+</svg>

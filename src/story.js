@@ -1,5 +1,5 @@
 import {getDecadeReview} from './decade-review.js';
-import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, fulfilledEvent, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets } from './simulation.js';
+import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets } from './simulation.js';
 
 export const chapters = {
   0: {
@@ -31,6 +31,93 @@ export const evidenceText={
  resident_testimony:{title:'听取岸边居民的证词',text:'居民希望第一声钟能传到最远的棚户。他们愿意商量值班与维护，但不接受无限的免费劳动。'}
 };
 
+// Personal identity is not a capability flag. Keep the submitted choice, its
+// outcome and the actual job separate, including in genuine older archives.
+const personalTimings = {
+  build_merchant: [0, 2], build_state: [0, 3], build_joint: [0, 3],
+  recruit_successor: [10, 1], recruit_risk: [10, 1], recruit_volunteer: [10, 1],
+  renew_charter: [10, 1], restore_archive: [10, 2],
+  present_archive: [20, 1], relocate_teacher: [20, 1], free_warning: [20, 1],
+};
+function personalEvent(state, actionIds, statuses = ['success'], eventId = null) {
+  const ids = Array.isArray(actionIds) ? actionIds : [actionIds];
+  return state.events.filter(event => {
+    const timing = personalTimings[event.actionId];
+    if ((eventId && event.id !== eventId) || !ids.includes(event.actionId) || !timing || typeof event.sourceActionId !== 'string') return false;
+    const [year, delay] = timing, actorId = event.sourceActionId.split(':')[2];
+    const sourceId = `action:${year}:${actorId}:D4:${event.actionId}`;
+    const action = state.history.find(h => h.id === sourceId);
+    const outcome = state.history.find(h => h.id === `resolved:${event.id}`);
+    const required = { recruit_successor: ['successor_consent'], present_archive: ['old_reality_record'], free_warning: ['resident_testimony'] }[event.actionId] || [];
+    return event.sourceActionId === sourceId && event.id === `event:${sourceId}` && event.parentId === sourceId
+      && event.kind === 'event' && event.cellId === 'D4' && statuses.includes(event.status)
+      && event.year === year + delay && event.resolvedYear === event.year && event.year <= state.year
+      && ['protagonist', 'linche'].includes(actorId) && (year >= 20 || actorId === 'protagonist')
+      && state.actors.some(a => a.id === actorId && a.availableFrom <= year)
+      && action?.kind === 'action' && action.year === year && action.cellId === 'D4'
+      && action.sourceActionId === sourceId && action.parentId === null && action.status === 'confirmed'
+      && required.every(id => action.evidence?.includes(id))
+      && (event.evidence === undefined || required.every(id => event.evidence?.includes(id)))
+      && outcome?.parentId === event.id && outcome.sourceActionId === sourceId && outcome.cellId === 'D4'
+      && outcome.year === event.resolvedYear && outcome.status === event.status
+      && outcome.kind === (event.status === 'failed' ? 'failure' : 'outcome')
+      && state.events.filter(e => e.id === event.id).length === 1
+      && state.history.filter(h => h.id === sourceId).length === 1
+      && state.history.filter(h => h.id === outcome.id).length === 1
+      && state.history.filter(h => h.kind === 'action' && typeof h.id === 'string' && h.id.startsWith(`action:${year}:${actorId}:`)).length === 1
+      && !state.history.some(h => h.id === `pass:${year}:${actorId}`)
+      && [event, action, outcome].every(record => record.actorId === undefined || record.actorId === actorId);
+  }).sort((a, b) => b.resolvedYear - a.resolvedYear)[0] || null;
+}
+function verifiedRiverportRole(state, role) {
+  if (!role || role.cellId !== 'D4' || !['station', 'archive'].includes(role.kind)) return false;
+  const origin = personalEvent(state, ['build_merchant', 'build_state', 'build_joint', 'restore_archive'], ['success', 'failed'], role.sourceEventId);
+  return !!origin && (origin.actionId !== 'restore_archive' || origin.status === 'success') && role.sourceEventId === origin.id && role.sourceActionId === origin.sourceActionId
+    && role.id === `institution:${origin.id}:D4` && role.startYear === origin.resolvedYear
+    && role.kind === (origin.status === 'failed' ? 'archive' : 'station')
+    && state.institutions.filter(i => i.id === role.id).length === 1;
+}
+function personalDeparture(state, recruit) {
+  if (!recruit) return { roles: [], known: false };
+  const action = state.history.find(h => h.id === recruit.sourceActionId);
+  const hasSnapshot = recruit.departureRoleIds !== undefined || action.departureRoleIds !== undefined;
+  if (usesRecruitmentRules(state) || hasSnapshot) {
+    const ids = recruit.departureRoleIds;
+    if (!Array.isArray(ids) || new Set(ids).size !== ids.length || JSON.stringify(ids) !== JSON.stringify(action.departureRoleIds)) return { roles: [], known: false };
+    const roles = ids.map(id => state.institutions.find(i => i.id === id));
+    const known = roles.every(i => verifiedRiverportRole(state, i) && i.startYear <= 10)
+      && (recruit.actionId === 'recruit_volunteer' ? ids.length === 0 : ids.length > 0);
+    return { roles: known ? roles : [], known };
+  }
+  const roles = recruitmentRolesAtDeparture(state, recruit);
+  const earlierBuilds = state.events.filter(e => ['build_merchant', 'build_state', 'build_joint'].includes(e.actionId) && e.cellId === 'D4' && e.year < recruit.year);
+  // An old archive without a role snapshot can establish absence only when it
+  // has no unresolved or missing construction carrier to account for.
+  const known = roles.every(i => verifiedRiverportRole(state, i))
+    && earlierBuilds.every(e => roles.some(i => i.sourceEventId === e.id));
+  return { roles: known ? roles : [], known };
+}
+function personalHistory(state) {
+  const recruit = personalEvent(state, RECRUITMENT_ACTIONS);
+  return {
+    recruit, departure: personalDeparture(state, recruit),
+    forced: personalEvent(state, 'relocate_teacher'), respect: personalEvent(state, 'present_archive'),
+    warning: personalEvent(state, 'free_warning'), renewal: personalEvent(state, 'renew_charter'),
+    rebuilding: personalEvent(state, 'restore_archive'),
+  };
+}
+export function sulanIdentity(state) {
+  const facts = personalHistory(state);
+  if (facts.forced) return { kind: 'relocated', speaker: '苏岚 · 来自东岸的信', sources: [`resolved:${facts.forced.id}`] };
+  const role = facts.recruit?.actionId === 'recruit_successor'
+    ? facts.departure.roles.find(i => i.active && i.maintenance > 0) : null;
+  if (role) return {
+    kind: role.kind, speaker: role.kind === 'station' ? '苏岚 · 河港的维护者' : '苏岚 · 河港档案保管员',
+    sources: [`resolved:${facts.recruit.id}`, `resolved:${role.sourceEventId}`],
+  };
+  return { kind: 'resident', speaker: '苏岚 · 河港居民', sources: [] };
+}
+
 export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   const base = evidenceText[id];
   if (!base) return { title: id, text: '一份有关当地制度的材料。' };
@@ -50,8 +137,8 @@ export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   if (id === 'successor_consent') {
     if (!getRecruitmentRoles(state).length) return { ...base, title: '确认是否有岗位需要交接', text: '河港没有正在运转的测站或档案岗位。苏岚没有因此被指定接班，林澈的同行意愿与当地未来的建设是两件事。若要另行建设或培训，需要另外作出安排。' };
     const trained = state.institutions.some(i => i.kind === 'training');
-    return { ...base, title: trained ? '与学徒商量继任' : '与苏岚商量培训与接班',
-      text: (trained ? '苏岚带着已经完成的读尺记录来商量接班。' : '这里没有原培训链培养的接班人。苏岚愿意先接受培训，再承担明确的工作。') + '她要求正式薪资、公开记录和拒绝不安全指令的权利。“我不是她的替身，我要有自己的签名。”' };
+    return { ...base, title: '与苏岚商量培训与接班',
+      text: (trained ? '现有培训点留下了读尺记录。苏岚愿意商量自己需要完成的培训和接班条件。' : '这里没有原培训链培养的接班人。苏岚愿意先接受培训，再承担明确的工作。') + '她要求正式薪资、公开记录和拒绝不安全指令的权利。“我不是她的替身，我要有自己的签名。”' };
   }
   if (id === 'unfunded_maintenance') {
     const station = state.institutions.find(i => i.kind === 'station' && i.cellId === 'D4');
@@ -71,16 +158,16 @@ export function crisisRecollection(state) {
   return '这份档案没有完整记录第23年的结算结果。你不能用今天的机构与产出，替过去补写一场没有证据的胜利或灾难。';
 }
 function currentConsent(state) {
-  if (state.flags.trust === false) return state.flags.forced
-    ? '苏岚从东岸寄来的信没有替迁任补上同意：“岗位可以写进命令，我的签名不能。谈下一次交班之前，先承认上一次是谁替我作了决定。”'
-    : '河港仍明确拒绝当前安排。现有机构可以列出人手，却不能替居民在交班协议上签名。';
-  if (state.flags.respected) return '当年那份旧现实履历旁，留着苏岚自己写下的选择。她愿意继续核对证据，但要求你记住：合作来自现在的同意，不来自她在另一段人生里的职位。';
-  if (state.flags.freeWarning) {
-    const carriers=state.institutions.filter(i=>i.cellId==='D4'&&['warning','station'].includes(i.kind));
-    const live=carriers.some(i=>i.active&&i.maintenance>0);
-    return live?'居民传讯与值班协议仍有现存服务在执行。苏岚愿意讨论下一次交班：“把维护责任和拒绝错误指令的权利，一起写在我们能看见的地方。”':carriers.length?'当年的免费预警协议仍在，但当前载体已经停下。旧签名不能替空着的班次继续敲钟，交班前仍要核对现实中的服务。':'旧档保留了免费预警协议，却缺少当前载体的明细。不从缺页推断它仍在运行或已经停运。';
+  const { forced, respect, warning, renewal } = personalHistory(state);
+  if (forced) return '苏岚从东岸寄来的信没有替迁任补上同意：“岗位可以写进命令，我的签名不能。谈下一次交班之前，先承认上一次是谁替我作了决定。”';
+  if (respect) return '当年那份旧现实履历旁，留着苏岚自己写下的选择。她愿意继续核对证据，但要求你记住：合作来自现在的同意，不来自她在另一段人生里的职位。';
+  if (warning) {
+    const carriers = state.institutions.filter(i => i.cellId === 'D4' && ['warning', 'station'].includes(i.kind));
+    const live = carriers.some(i => i.active && i.maintenance > 0);
+    return live ? '居民传讯与值班协议仍有现存服务在执行。苏岚愿意讨论下一次交班：“把维护责任和拒绝错误指令的权利，一起写在我们能看见的地方。”' : carriers.length ? '当年的免费预警协议仍在，但当前载体已经停下。旧签名不能替空着的班次继续敲钟，交班前仍要核对现实中的服务。' : '旧档保留了免费预警协议，却缺少当前载体的明细。不从缺页推断它仍在运行或已经停运。';
   }
-  if (state.flags.renewed) return '公开章程仍是苏岚愿意继续商量的根据。她指着当年写下的继任条款：“不是只有你留下来才有人会做；但你也不能把我们的名字当成现成的签字。”';
+  if (renewal) return '公开章程保留了长期维护与地方复核的约定，也记着林澈留下带教。制度的继任条款不能代替苏岚个人的任职记录，更不能替下一次交班签名。';
+  if (state.flags.trust === false) return '当前记录显示地方信任仍有缺口，但个人决定的来源不完整。现有机构与这项标记都不能替居民签名，也不能据此补写苏岚的去向或同意。';
   return '苏岚还没有承诺替你接过全部责任。听过报告不等于同意交班，现存的人手也不能替尚未作出的合作决定签名。';
 }
 
@@ -89,7 +176,7 @@ function riverportScene(state, base, chapter, actorId) {
   const operatingStation = station?.active && station.maintenance > 0;
   const warnings=state.institutions.filter(i=>i.kind==='warning'&&i.cellId==='D4');
   const training = state.institutions.some(i => i.kind === 'training');
-  const archive = state.institutions.some(i => i.kind === 'archive' && i.cellId === 'D4');
+  const archive = state.institutions.find(i => i.kind === 'archive' && i.cellId === 'D4');
   const failedBuild = state.events.some(e => e.actionId?.startsWith('build_') && e.status === 'failed');
   if (chapter === 0) return base;
   if (chapter === 10) return {
@@ -111,29 +198,47 @@ function riverportScene(state, base, chapter, actorId) {
     ],
   };
   if (chapter === 20) {
-    const current = !station
-      ? archive
-        ? '今天，苏岚把小型档案站里的散页重新编号。建站未成留下的记录还在，河港却没有正在运转的水文站。'
-        : '今天，苏岚以居民的身份来到河港。这里没有建成水文站，也没有属于她的测站管理岗位。'
-      : !operatingStation
-        ? '今天，河港测站的门关着。苏岚站在停运告示旁，问那些已经留下的记录要由谁保管。'
-        : station.open
-          ? '今天，河港的水位记录仍向居民开放。苏岚把一张刚抄好的记录放在桌上。'
-          : '今天，河港测站仍在运转，收费牌也还挂着。苏岚把一枚磨损的铜币放回孩子掌心。';
+    const facts = personalHistory(state), identity = sulanIdentity(state);
+    const current = facts.forced
+      ? `第${facts.forced.resolvedYear}年的迁任已经把苏岚带到东岸。桌上是她寄来的信，不是她重新回到河港任职的证明。`
+      : !station
+        ? archive
+          ? identity.kind === 'archive'
+            ? '今天，苏岚把小型档案站里的散页重新编号。她接过的是档案保管工作；建站未成留下的记录还在，河港却没有正在运转的水文站。'
+            : `今天，苏岚以居民的身份来查看旧记录。建站未成留下的小型档案站${archive.active && archive.maintenance > 0 ? '仍在运转' : '已经停运'}，河港没有正在运转的水文站。档案仍在，不证明她曾接过保管岗位。`
+          : '今天，苏岚以居民的身份来到河港。这里没有建成水文站，也没有属于她的测站管理岗位。'
+        : !operatingStation
+          ? '今天，河港测站的门关着。苏岚站在停运告示旁，问那些已经留下的记录要由谁保管。'
+          : station.open
+            ? '今天，河港的水位记录仍向居民开放。苏岚把一张公开的记录放在桌上。'
+            : '今天，河港测站仍在运转，收费牌也还挂着。苏岚把一枚磨损的铜币放回孩子掌心。';
     const upkeep = operatingStation && station.maintenance < 1 ? ' 维护经费不足，值班与修缮都有缺口；它仍在运转，不能把失修写成从未建成。' : '';
+    const roleHistory = facts.recruit?.actionId === 'recruit_successor'
+      ? !facts.departure.known
+        ? '继任合同仍保留着苏岚的同意，但对应岗位的来源缺失或不一致，不能把承诺写成已核实的任职。'
+        : facts.departure.roles.length
+          ? `第${facts.recruit.resolvedYear}年，苏岚同意接过${facts.departure.roles.some(i => i.kind === 'station') ? '测站维护' : '档案保管'}。${identity.kind === 'resident' || facts.forced ? '这段交接没有被抹去，但它不是今天仍在原岗位工作的证明。' : '接班有人，不等于长期经费已经足额。'}`
+          : '旧合同记录过苏岚的继任安排，但当时没有运转中的河港岗位。承诺仍在，不能补写成已经发生的任职。'
+      : facts.rebuilding
+        ? '重建记录写的是新的维护小组，没有指定苏岚接班。测站的运转与她个人选择承担什么，是两件事。'
+        : facts.renewal
+          ? '公开章程记录了林澈留下带教，并没有记录苏岚接任测站。制度有了维护人手，不等于可以替她署名。'
+          : station || archive ? '现存机构可以说明当地的工作，不能代替苏岚个人任职的来源；这份档案没有可核实的接班记录。' : null;
     return {
-      ...base,
-      speaker: operatingStation && state.flags.successor ? '苏岚 · 河港的维护者' : base.speaker,
+      ...base, speaker: identity.speaker,
       body: [
         (actorId === 'protagonist'
           ? '旧现实的档案里，苏岚是免费学校的教师。你记得她讲课时总开着窗。'
           : '你读到主角保存的旧现实档案：苏岚曾是免费学校的教师。那间开着窗的教室来自主角的见证，不是你的亲历记忆。') + current + upkeep,
-        actorId === 'protagonist'
-          ? '“那是你记得的我。”她看着那页不属于自己记忆的履历，“它没有写下我今天愿意承担什么。你要先问我。”'
-          : '“那是档案里的我。”她看着那页不属于自己记忆的履历，“你认识的是现在的我。这张纸没有写下我今天愿意承担什么，你要先问我。”',
-        ...getActorRefusals(state, actorId, 'D4').map(r => r.reason),
+        roleHistory,
+        facts.forced
+          ? '她在信里写道：“那份旧履历没有我的同意。学校多了一个岗位，也不能把迁任改称为我的选择。”'
+          : actorId === 'protagonist'
+            ? '“那是你记得的我。”她看着那页不属于自己记忆的履历，“它没有写下我今天愿意承担什么。你要先问我。”'
+            : '“那是档案里的我。”她看着那页不属于自己记忆的履历，“你认识的是现在的我。这张纸没有写下我今天愿意承担什么，你要先问我。”',
+        ...getActorRefusals(state, actorId, 'D4').map(r => facts.recruit && facts.departure.known ? r.reason : '这份档案缺少可核实的个人交接来源，不能替林澈补写当年的承诺。她不亲自执行未经本人同意的迁任。'),
         '远方的水位报告出现共同偏差。是否曾建成河港测站，不会替所有地方消除风险。现在仍能独立复核或争取地方停闸权，但你的介入名额有限。',
-      ],
+      ].filter(Boolean),
     };
   }
   const teaching = state.institutions.some(i => ['training', 'school'].includes(i.kind) && i.active && i.maintenance > 0);
@@ -209,14 +314,7 @@ function locationScene(state, cell, actorId = 'protagonist') {
 
 // A response to a verified choice, not a relationship score or automatic pardon.
 export function lincheRelationship(state) {
-  const known=ids=>{
-    const e=fulfilledEvent(state,ids);if(!e)return null;
-    const action=state.history.find(h=>h.id===e.sourceActionId),outcome=state.history.find(h=>h.id===`resolved:${e.id}`),actor=e.sourceActionId.split(':')[2];
-    const year=RECRUITMENT_ACTIONS.includes(e.actionId)?10:20;
-    return e.kind==='event'&&e.cellId==='D4'&&e.year===year+1&&action?.year===year&&action.parentId===null&&action.status==='confirmed'
-      &&state.events.filter(x=>x.id===e.id).length===1&&state.history.filter(x=>x.id===action.id).length===1&&state.history.filter(x=>x.id===outcome.id).length===1
-      &&[e,action,outcome].every(x=>x.actorId===undefined||x.actorId===actor)?e:null;
-  };
+  const known = ids => personalEvent(state, ids);
   if(state.year<30||!known(RECRUITMENT_ACTIONS))return null;
   const forced=known('relocate_teacher'),respect=known('present_archive');
   if(forced){const own=forced.sourceActionId.split(':')[2]==='linche';return {kind:'forced',title:'林澈 · 调令之后仍有分歧',text:own?'“那份迁任有我的责任。不论后来做了多少工作，我都不能拿它们替当年的决定辩解。那份调令没有苏岚的同意，同行的约定也不能替她宣布这件事已经过去。”':`${state.actors.find(a=>a.id===forced.sourceActionId.split(':')[2]).name}在第${forced.resolvedYear}年执行了迁任。林澈没有把同行的约定盖在它上面：“我同意同行，不等于认可这份替苏岚决定去向的调令。谁愿意承担什么，下一次仍要由本人说。”`,sources:[`resolved:${forced.id}`]};}
@@ -232,21 +330,18 @@ export function sceneFor(state,cell,actorId='protagonist') {
 export function characterEpilogue(state) {
   if (state.year < 40 || state.phase !== 'ended') return [];
   const recordId = e => e ? `resolved:${e.id}` : null;
-  const recruit = fulfilledEvent(state, RECRUITMENT_ACTIONS);
-  const roles = recruitmentRolesAtDeparture(state, recruit);
-  const warning = fulfilledEvent(state, 'free_warning');
-  const renewal = fulfilledEvent(state, 'renew_charter');
-  const respect = fulfilledEvent(state, 'present_archive');
-  const forced = fulfilledEvent(state, 'relocate_teacher');
+  const { recruit, departure, warning, renewal, respect, forced } = personalHistory(state);
+  const roles = departure.roles;
   const linche = [], lincheSources = [];
   if (!recruit) {
     linche.push(renewal ? `第${renewal.resolvedYear}年的章程留下林澈愿意带教的记录，她没有在这份历史中完成入局。留下来的选择，也不等于一份没有期限的劳动承诺。` : '这份档案没有林澈完成入局的记录。最后一册报告没有替她补写一段未曾作出的承诺，也不把未同行当成背弃。');
     if (renewal) lincheSources.push(recordId(renewal));
   } else {
     lincheSources.push(recordId(recruit));
-    if (!roles.length) linche.push(`第${recruit.resolvedYear}年，林澈自愿入局；当时没有运转中的河港测站或档案岗位需要交接。同行是真实的选择，却没有一个不存在的空岗可以归咎于她。`);
-    if (!roles.length && recruit.actionId === 'recruit_successor') linche.push('旧合同记录了继任安排，但那时没有运转中的岗位。承诺本身仍在，不能据此补写苏岚已经管理了一座测站。');
-    if (!roles.length && recruit.actionId === 'recruit_risk') linche.push('旧合同列过减产与停运的风险，却没有对应的在岗载体。没有实际停运记录，就不把空缺算成她造成的损失。');
+    if (!departure.known) linche.push('入局记录仍在，但当时岗位的来源缺失或不一致。不能从今天的机构补写苏岚的任职，也不能把缺页当成当年没有岗位。');
+    if (departure.known && !roles.length) linche.push(`第${recruit.resolvedYear}年，林澈自愿入局；当时没有运转中的河港测站或档案岗位需要交接。同行是真实的选择，却没有一个不存在的空岗可以归咎于她。`);
+    if (departure.known && !roles.length && recruit.actionId === 'recruit_successor') linche.push('旧合同记录了继任安排，但那时没有运转中的岗位。承诺本身仍在，不能据此补写苏岚已经管理了一座测站。');
+    if (departure.known && !roles.length && recruit.actionId === 'recruit_risk') linche.push('旧合同列过减产与停运的风险，却没有对应的在岗载体。没有实际停运记录，就不把空缺算成她造成的损失。');
     if (roles.length && recruit.actionId === 'recruit_successor') linche.push(`第${recruit.resolvedYear}年，林澈在苏岚同意接班后离开。那份签名解决了谁来值班，不是长期经费已经充足的证明。`);
     else if (roles.length) linche.push(`第${recruit.resolvedYear}年，林澈入局时留下了尚未安排继任的${roles.some(i=>i.kind==='station')?'测站':'档案站'}岗位。她带走了自己的选择，也留下了一项没有完成的交接。`);
     const stopped = state.history.filter(h => h.kind === 'maintenance' && /-unattended$/.test(h.id) && h.year >= recruit.resolvedYear && roles.some(i => i.sourceEventId === h.parentId));
@@ -296,10 +391,21 @@ export function characterEpilogue(state) {
   } else if (recruit?.actionId === 'recruit_successor' && roles.length) {
     sulan.push(`第${recruit.resolvedYear}年，她同意承担接班。档案没有继续记录她对旧现实履历或迁任的决定，末页不会替她签下一个未作出的选择。`);
     sulanSources.push(recordId(recruit));
+  } else if (recruit?.actionId === 'recruit_successor' && !departure.known) {
+    sulan.push(`第${recruit.resolvedYear}年的继任合同仍记录着苏岚的同意，但岗位来源缺失或不一致。承诺没有被删去，也不能被写成已核实的任职。`);
+    sulanSources.push(recordId(recruit));
   } else if (recruit?.actionId === 'recruit_successor') {
     sulan.push(`第${recruit.resolvedYear}年的旧合同记录了苏岚的继任安排，但当时没有运转中的河港岗位可供交接。那份承诺不能被写成已经发生的任职，也没有替她决定此后的生活。`);
     sulanSources.push(recordId(recruit));
   } else sulan.push('档案没有可核实的继任、迁任或个人去向同意。没有选择记录，不等于她已经同意成为任何人的历史样本。');
+  if ((forced || respect || warning) && recruit?.actionId === 'recruit_successor') {
+    sulan.push(departure.known && roles.length
+      ? `第${recruit.resolvedYear}年同意承担${roles.some(i => i.kind === 'station') ? '测站维护' : '档案保管'}的交接仍留在原页。后来的选择没有抹去这段经历，也不证明她此刻仍在原岗位工作。`
+      : departure.known
+        ? '旧合同中的继任承诺也仍在，但当时没有可交接的河港岗位。后来的合作没有把它改写成任职。'
+        : '旧合同中的继任同意仍在，但对应岗位来源缺失或不一致。后来的选择不能替那一页补齐证据。');
+    sulanSources.push(recordId(recruit));
+  }
   return [
     { name:'林澈', title:recruit?'同行之后，仍要面对留下的事':'未曾同行，也不是空白', paragraphs:linche, sources:[...new Set(lincheSources.filter(Boolean))] },
     { name:'苏岚', title, paragraphs:sulan, sources:[...new Set(sulanSources.filter(Boolean))] },

@@ -66,7 +66,7 @@ test('natural build, discovery and successful review are separate from the indep
   assert.equal(view.responses[0].chain[1].year, 22);
   assert.match(view.responses[0].note, /修正共同标准偏差/);
   assert.equal(view.impact.id, 'crisis-impact');
-  assert.match(text(view), /第23年 D4：已存覆盖系数1.00；已存损失系数0.00/);
+  assert.match(text(view), /第23年 D4：已存覆盖系数1；已存损失系数0/);
   assertLinks(state, view);
 
   const passed = sim.createRun(12); decade(passed); decade(passed); submit(passed); advance(passed, 23);
@@ -75,7 +75,7 @@ test('natural build, discovery and successful review are separate from the indep
   assert.equal(control.responses.length, 0);
   assert.equal(passed.flags.crisis.damage, 1);
   assert.equal(control.explanation, view.explanation);
-  assert.match(text(control), /已存损失系数1.00/);
+  assert.match(text(control), /已存损失系数1/);
   assertLinks(passed, control);
 });
 
@@ -264,7 +264,7 @@ test('true old engine history stays byte-for-byte unchanged and missing detail s
   assert.equal(JSON.stringify(state), bytes);
   assert.equal(view.responses[0].status, 'success');
   assert.match(view.responses[0].note, /旧版合同.*0.80/);
-  assert.ok(view.detail.includes('第23年已存整体损失系数：0.80。'));
+  assert.ok(view.detail.includes('第23年已存整体损失系数：0.8。'));
   assert.match(text(view), /缺项未知/);
   assert.equal(view.detail.some(line => /已存损失系数/.test(line)), false);
   assertLinks(state, view);
@@ -289,14 +289,14 @@ test('current institutions and flags never reconstruct frozen crisis details', (
   delete state.flags.crisis.damageByCell.D4;
   state.flags.crisis.coverageByCell.E4 = NaN;
   const partial = getCrisisHistory(state, 'crisis-impact');
-  assert.match(text(partial), /D4：已存覆盖系数1.00；已存损失系数未知/);
-  assert.match(text(partial), /E4：已存覆盖系数未知；已存损失系数0.00/);
+  assert.match(text(partial), /D4：已存覆盖系数1；已存损失系数未知/);
+  assert.match(text(partial), /E4：已存覆盖系数未知；已存损失系数0/);
   assert.match(text(partial), /缺项未知/);
 });
 
 test('saved aggregate loss is shown only when finite, bounded and backed by the impact record', () => {
   const state = reviewedAt23();
-  assert.ok(getCrisisHistory(state, 'crisis-impact').detail.includes('第23年已存整体损失系数：0.00。'));
+  assert.ok(getCrisisHistory(state, 'crisis-impact').detail.includes('第23年已存整体损失系数：0。'));
   for (const value of [undefined, null, NaN, Infinity, -1, 1.1, '0']) {
     const altered = structuredClone(state); altered.flags.crisis.damage = value;
     altered.flags.crisis.status = 'averted';
@@ -326,4 +326,12 @@ test('an anomalous action parent cannot manufacture a verified response that loo
   assert.ok(!view.responses.some(r=>r.eventId==='event:'+source.id));
   assert.match(view.detail.join(' '),/来源或兑现记录.*未知/);
   assert.equal(JSON.stringify(state),before);
+});
+
+test('raw saved coefficients retain their precision on the source page without changing the original record',()=>{
+ const state=reviewedAt23();state.flags.crisis.damage=.0001;state.flags.crisis.damageByCell.D5=.0001;state.flags.crisis.coverageByCell.D5=.7268;
+ const before=structuredClone(state),view=getCrisisHistory(freeze(state),'crisis-impact');
+ assert.ok(view.detail.includes('第23年已存整体损失系数：0.0001。'));
+ assert.ok(view.detail.includes('第23年 D5：已存覆盖系数0.7268；已存损失系数0.0001。'));
+ assert.deepEqual(state,before);assert.deepEqual(view.impact,before.history.find(h=>h.id==='crisis-impact'));
 });

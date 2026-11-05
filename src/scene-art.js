@@ -1,8 +1,14 @@
 import {farPortVisual} from './far-port-visuals.js';
 import {southBankVisual} from './south-bank-visuals.js';
+import {getLocalCrisisRecord} from './local-crisis-record.js';
 // Original repo-native vector illustrations. They depict only a broad setting,
 // not evidence that an unbuilt institution, a survivor or a future event exists.
 export function sceneArt(state, cellId, { ending = false } = {}) {
+  const art=currentSceneArt(state,cellId,{ending});
+  if(cellId==='D5'&&!ending){const history=getLocalCrisisRecord(state,cellId);if(history)return {...art,history};}
+  return art;
+}
+function currentSceneArt(state, cellId, { ending = false } = {}) {
   if (ending) return { file: 'archive-desk.svg', alt: '档案桌上并列的记录与一盏灯，记录已经发生的四十年。', caption: '场景示意 · 留下来的历史' };
   const has = kind => state.institutions.some(i => i.cellId === cellId && i.kind === kind && i.active && i.maintenance > 0);
   if (cellId === 'D4') {

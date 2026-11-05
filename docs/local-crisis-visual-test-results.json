@@ -1,0 +1,1470 @@
+{
+  "checks": [
+    {
+      "name": "390px before: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px before: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px before: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px before: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px y22: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px y22: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px y22: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px y23: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px y23: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px y23: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px y23: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px y23: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px loss: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px loss: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px loss: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px loss: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px loss: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px loss: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px loss: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px loss: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px loss: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px zero: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px zero: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px zero: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px zero: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px zero: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px zero: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px zero: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px zero: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px zero: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px legacy: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px missing: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px missing: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px missing: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px missing: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px missing: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px missing: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px missing: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px missing: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px missing: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px partial: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px partial: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px partial: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px partial: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px partial: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px partial: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px partial: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px partial: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px partial: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px closed: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px closed: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px closed: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px closed: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px closed: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px closed: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px closed: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px closed: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px closed: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px aid-only: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px teaching-only: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px empty: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px empty: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px empty: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px empty: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px empty: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "390px empty: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "390px empty: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "390px empty: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "390px empty: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px late: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "390px late: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "390px late: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "390px late: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "390px late: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "390px loss and zero keep identical current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px loss and zero do not manufacture different current damage scenery",
+      "passed": true
+    },
+    {
+      "name": "390px loss, zero and unknown are distinguishable in grayscale",
+      "passed": true
+    },
+    {
+      "name": "390px200% loss: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% loss: marker stays small and heading gets the full line",
+      "passed": true
+    },
+    {
+      "name": "390px200% loss: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% loss: keyboard opens the real source without spending",
+      "passed": true
+    },
+    {
+      "name": "390px200% zero: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% zero: marker stays small and heading gets the full line",
+      "passed": true
+    },
+    {
+      "name": "390px200% zero: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% zero: keyboard opens the real source without spending",
+      "passed": true
+    },
+    {
+      "name": "390px200% legacy: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% legacy: marker stays small and heading gets the full line",
+      "passed": true
+    },
+    {
+      "name": "390px200% legacy: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% legacy: keyboard opens the real source without spending",
+      "passed": true
+    },
+    {
+      "name": "390px200% missing: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% missing: marker stays small and heading gets the full line",
+      "passed": true
+    },
+    {
+      "name": "320px before: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px before: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px before: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px before: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px y22: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px y22: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px y22: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px y23: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px y23: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px y23: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px y23: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px y23: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px loss: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px loss: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px loss: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px loss: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px loss: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px loss: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px loss: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px loss: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px loss: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px zero: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px zero: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px zero: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px zero: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px zero: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px zero: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px zero: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px zero: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px zero: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px legacy: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px missing: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px missing: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px missing: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px missing: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px missing: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px missing: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px missing: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px missing: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px missing: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px partial: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px partial: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px partial: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px partial: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px partial: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px partial: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px partial: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px partial: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px partial: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px closed: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px closed: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px closed: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px closed: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px closed: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px closed: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px closed: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px closed: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px closed: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px aid-only: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px teaching-only: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px empty: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px empty: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px empty: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px empty: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px empty: current physical illustration stays factual",
+      "passed": true
+    },
+    {
+      "name": "320px empty: annotation is separate and below the current scene",
+      "passed": true
+    },
+    {
+      "name": "320px empty: full detail distinguishes history from people or building counts",
+      "passed": true
+    },
+    {
+      "name": "320px empty: saved local coefficient precision stays intact",
+      "passed": true
+    },
+    {
+      "name": "320px empty: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px late: world shows only a settled historical marker",
+      "passed": true
+    },
+    {
+      "name": "320px late: current service status remains independent",
+      "passed": true
+    },
+    {
+      "name": "320px late: source button exists only for a verified original record",
+      "passed": true
+    },
+    {
+      "name": "320px late: world displays the exact local history summary",
+      "passed": true
+    },
+    {
+      "name": "320px late: rendering preserves exact saved facts",
+      "passed": true
+    },
+    {
+      "name": "320px loss and zero keep identical current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px loss and zero do not manufacture different current damage scenery",
+      "passed": true
+    },
+    {
+      "name": "320px loss, zero and unknown are distinguishable in grayscale",
+      "passed": true
+    },
+    {
+      "name": "320px200% loss: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% loss: marker stays small and heading gets the full line",
+      "passed": true
+    },
+    {
+      "name": "320px200% loss: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% loss: keyboard opens the real source without spending",
+      "passed": true
+    },
+    {
+      "name": "320px200% zero: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% zero: marker stays small and heading gets the full line",
+      "passed": true
+    },
+    {
+      "name": "320px200% zero: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% zero: keyboard opens the real source without spending",
+      "passed": true
+    },
+    {
+      "name": "320px200% legacy: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% legacy: marker stays small and heading gets the full line",
+      "passed": true
+    },
+    {
+      "name": "320px200% legacy: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% legacy: keyboard opens the real source without spending",
+      "passed": true
+    },
+    {
+      "name": "320px200% missing: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% missing: marker stays small and heading gets the full line",
+      "passed": true
+    },
+    {
+      "name": "D5 regional history now includes the real shared impact record once",
+      "passed": true
+    },
+    {
+      "name": "The D5 source shows saved local coefficients, not a recomputed present value",
+      "passed": true
+    },
+    {
+      "name": "Regional archive and source navigation do not mutate state",
+      "passed": true
+    },
+    {
+      "name": "Missing original record has neither a fabricated card nor a source button",
+      "passed": true
+    },
+    {
+      "name": "Actual year21 marker follows settlement time",
+      "passed": true
+    },
+    {
+      "name": "Actual year22 marker follows settlement time",
+      "passed": true
+    },
+    {
+      "name": "Actual year23 marker follows settlement time",
+      "passed": true
+    },
+    {
+      "name": "Public year30 revisit retains both current services and the historical page",
+      "passed": true
+    },
+    {
+      "name": "Legacy import preserves unknown local loss and a real original source",
+      "passed": true
+    },
+    {
+      "name": "Reload does not manufacture missing local history",
+      "passed": true
+    },
+    {
+      "name": "unknown source link opens the real year23 record",
+      "passed": true
+    },
+    {
+      "name": "Legacy source explicitly preserves missing per-place detail",
+      "passed": true
+    },
+    {
+      "name": "current D4: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "current D4: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "current D4: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "current D4: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "current D4: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "current D4: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "current D4: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "current D4: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "current E4: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "current E4: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "current E4: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "current E4: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "current E4: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "current E4: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "current E4: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "current E4: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "current D5: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "current D5: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "current D5: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "current D5: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "current D5: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "current D5: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "current D5: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "current D5: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "current F6: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "current F6: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "current F6: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "current F6: no unplayable AVG route is invented",
+      "passed": true
+    },
+    {
+      "name": "current F6: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "current F6: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "current F6: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "current F6: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy D4: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "legacy D4: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "legacy D4: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "legacy D4: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "legacy D4: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "legacy D4: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy D4: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "legacy D4: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy E4: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "legacy E4: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "legacy E4: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "legacy E4: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "legacy E4: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "legacy E4: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy E4: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "legacy E4: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy D5: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "legacy D5: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "legacy D5: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "legacy D5: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "legacy D5: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "legacy D5: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy D5: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "legacy D5: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy F6: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "legacy F6: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "legacy F6: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "legacy F6: no unplayable AVG route is invented",
+      "passed": true
+    },
+    {
+      "name": "legacy F6: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "legacy F6: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy F6: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "legacy F6: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "missing D4: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "missing D4: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "missing D4: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "missing D4: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "missing E4: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "missing E4: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "missing E4: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "missing E4: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "missing D5: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "missing D5: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "missing D5: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "missing D5: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "missing F6: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "missing F6: no unplayable AVG route is invented",
+      "passed": true
+    },
+    {
+      "name": "missing F6: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "missing F6: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "precision D4: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "precision D4: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "precision D4: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "D4: source also preserves the tiny aggregate rather than rounding to zero",
+      "passed": true
+    },
+    {
+      "name": "precision D4: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "precision D4: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "precision D4: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "precision D4: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "precision D4: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "precision E4: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "precision E4: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "precision E4: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "E4: source also preserves the tiny aggregate rather than rounding to zero",
+      "passed": true
+    },
+    {
+      "name": "precision E4: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "precision E4: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "precision E4: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "precision E4: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "precision E4: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "precision D5: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "precision D5: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "precision D5: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "D5: source also preserves the tiny aggregate rather than rounding to zero",
+      "passed": true
+    },
+    {
+      "name": "precision D5: public local visit uses the same complete historical detail",
+      "passed": true
+    },
+    {
+      "name": "precision D5: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "precision D5: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "precision D5: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "precision D5: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "precision F6: world exposes its own factual summary and source eligibility",
+      "passed": true
+    },
+    {
+      "name": "precision F6: world button opens the actual shared original record",
+      "passed": true
+    },
+    {
+      "name": "precision F6: source preserves exact local precision or explicit legacy unknown",
+      "passed": true
+    },
+    {
+      "name": "F6: source also preserves the tiny aggregate rather than rounding to zero",
+      "passed": true
+    },
+    {
+      "name": "precision F6: no unplayable AVG route is invented",
+      "passed": true
+    },
+    {
+      "name": "precision F6: regional archive includes exactly the real source when available",
+      "passed": true
+    },
+    {
+      "name": "precision F6: original D4 tag and history narrative stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "precision F6: regional source button resolves to the original event",
+      "passed": true
+    },
+    {
+      "name": "precision F6: full source navigation leaves every saved fact unchanged",
+      "passed": true
+    },
+    {
+      "name": "D4: no four-region history is revealed before settlement",
+      "passed": true
+    },
+    {
+      "name": "E4: no four-region history is revealed before settlement",
+      "passed": true
+    },
+    {
+      "name": "D5: no four-region history is revealed before settlement",
+      "passed": true
+    },
+    {
+      "name": "F6: no four-region history is revealed before settlement",
+      "passed": true
+    },
+    {
+      "name": "Unrelated B4 has no shared-crisis local marker",
+      "passed": true
+    },
+    {
+      "name": "No B4 visit is fabricated when no local contract is available",
+      "passed": true
+    },
+    {
+      "name": "Unrelated B4 archive does not invent the shared source association",
+      "passed": true
+    },
+    {
+      "name": "No runtime or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Real year23 local settlement and independent current D5 services. Grayscale archive markers describe recorded loss, recorded zero and unknown old details; no population, injury or building damage is inferred. Closed-service and 0.0001 precision cases are legal display boundaries, not newly added actions or claimed natural outcomes. Only public AVG entries are exercised; world and regional archives cover every affected place. Four-region source links retain the actual shared record and its unmodified narrative. Chromium390/320 and200% text; not physical-device certification."
+}

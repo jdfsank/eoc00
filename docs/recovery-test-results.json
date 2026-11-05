@@ -30,7 +30,7 @@
       "passed": true
     },
     {
-      "name": "Follow-up option requires actual re-investigation",
+      "name": "Follow-up contract is freely readable but actual re-investigation still gates locking",
       "passed": true
     },
     {

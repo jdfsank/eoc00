@@ -23,3 +23,8 @@
 
 /* Round 8: compare whole-window conditions without color-only verdicts. */
 .handoff-comparison{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1rem}.handoff-capability{border:1px solid var(--line);padding:1rem;min-width:0}.handoff-contracts{padding-left:1.5rem}.handoff-contracts li{margin:.6rem 0}.handoff-policy-status{font-weight:600}.handoff-conditional{margin-top:1rem}.handoff-outlook p,.handoff-outlook li{overflow-wrap:anywhere}
+
+.contract-preview-hint,.contract-readonly,.missing-evidence{overflow-wrap:anywhere}.choice-card.needs-evidence{border-style:dashed}.choice-card.needs-evidence small{color:var(--gold)}.missing-evidence h2{font-size:1.125rem}.missing-evidence .secondary{width:100%}
+
+.local-crisis-history{margin:1rem 0;overflow-wrap:anywhere}.crisis-tally-heading{display:flex;align-items:center;gap:.75rem}.crisis-tally-heading img{width:3rem;height:auto;flex:none;image-rendering:pixelated}.crisis-tally-heading h2{font-size:1.125rem;margin:0;min-width:0}.local-crisis-history ul{padding-left:1.25rem}.local-crisis-history .text-button{white-space:normal;text-align:left}
+.large-text .crisis-tally-heading{flex-direction:column;align-items:flex-start}.large-text .crisis-tally-heading img{width:48px}
