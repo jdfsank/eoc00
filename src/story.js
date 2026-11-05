@@ -21,6 +21,7 @@ export const chapters = {
 };
 
 export const evidenceText={
+ evacuation_routes:{title:'逐户核实撤离路线',text:'居民把夜间无法通行的渡口、需要搀扶的邻居和备用高地标在同一张图上。这不能校正水位标准，却能让停闸后真正有人及时撤离。新规则下花2轮确认，把停闸损失基数从0.30降至0.20。'},
  independent_flood_records:{title:'比对修会的旧洪水记录',text:'修会保存的河岸刻线比官署记录早了四十年。它们提示：上游暴雨与河港最高水位并不同步。公开副本可以让不同的人独立复核。'},
  unfunded_maintenance:{title:'打开商会的经费账簿',text:'建站款足够，十年后的值班薪资却没有着落。商会愿意出钱，但希望优先向缴费港口发出预警。免费不是没有成本。'},
  successor_consent:{title:'商量培训与继任条件',text:'苏岚愿意商量培训与接班，条件是有正式薪资、公开记录和拒绝不安全指令的权利。“我不是她的替身，我要有自己的签名。”'},
@@ -29,9 +30,12 @@ export const evidenceText={
  resident_testimony:{title:'听取岸边居民的证词',text:'居民希望第一声钟能传到最远的棚户。他们愿意商量值班与维护，但不接受无限的免费劳动。'}
 };
 
-export function evidenceFor(state, id, cellId = 'D4') {
+export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   const base = evidenceText[id];
   if (!base) return { title: id, text: '一份有关当地制度的材料。' };
+  if (id === 'old_reality_record' && actorId !== 'protagonist') {
+    return { ...base, text: base.text + '这份材料由主角从亲历的旧现实中保存；对你而言，它是可查阅的他人见证，不是入局锚定后凭空获得的记忆。' };
+  }
   if (id === 'resident_testimony') {
     if (usesLegacyCrisisRules(state) && state.flags.freeWarning) return { ...base, text: '这份旧版历史已经兑现了免费预警协议，居民仍要求明确的值班与长期经费。协议的整体减损承诺继续生效，但旧记录没有提供逐地覆盖明细。' };
     const service = getWarningCoverage(state)[cellId];
@@ -55,7 +59,7 @@ export function evidenceFor(state, id, cellId = 'D4') {
   return base;
 }
 
-function riverportScene(state, base, chapter) {
+function riverportScene(state, base, chapter, actorId) {
   const station = state.institutions.find(i => i.kind === 'station' && i.cellId === 'D4');
   const training = state.institutions.some(i => i.kind === 'training');
   const archive = state.institutions.some(i => i.kind === 'archive' && i.cellId === 'D4');
@@ -92,8 +96,12 @@ function riverportScene(state, base, chapter) {
       ...base,
       speaker: station?.active && state.flags.successor ? '苏岚 · 河港的维护者' : base.speaker,
       body: [
-        '旧现实的档案里，苏岚是免费学校的教师。你记得她讲课时总开着窗。' + current,
-        '“那是你记得的我。”她看着那页不属于自己记忆的履历，“它没有写下我今天愿意承担什么。你要先问我。”',
+        (actorId === 'protagonist'
+          ? '旧现实的档案里，苏岚是免费学校的教师。你记得她讲课时总开着窗。'
+          : '你读到主角保存的旧现实档案：苏岚曾是免费学校的教师。那间开着窗的教室来自主角的见证，不是你的亲历记忆。') + current,
+        actorId === 'protagonist'
+          ? '“那是你记得的我。”她看着那页不属于自己记忆的履历，“它没有写下我今天愿意承担什么。你要先问我。”'
+          : '“那是档案里的我。”她看着那页不属于自己记忆的履历，“你认识的是现在的我。这张纸没有写下我今天愿意承担什么，你要先问我。”',
         '远方的水位报告出现共同偏差。是否曾建成河港测站，不会替所有地方消除风险。现在仍能独立复核或争取地方停闸权，但你的介入名额有限。',
       ],
     };
@@ -115,9 +123,9 @@ function riverportScene(state, base, chapter) {
   };
 }
 
-export function sceneFor(state, cell) {
+export function sceneFor(state, cell, actorId = 'protagonist') {
   const chapter = Math.min(30, Math.floor(state.year / 10) * 10);
-  const base = riverportScene(state, chapters[chapter], chapter);
+  const base = riverportScene(state, chapters[chapter], chapter, actorId);
   if (cell === 'D4') return base;
   if (cell === 'E4') {
     const teaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind) && i.active);
@@ -129,7 +137,7 @@ export function sceneFor(state, cell) {
   if (cell === 'F6') {
     const branch = state.institutions.some(i => i.kind === 'branch' && i.cellId === cell && i.active);
     return { ...base, title: '远方的水声', speaker: branch ? '远港 · 分站值班人' : '远港 · 船工代表', body: [
-      branch ? '你在这里从未落过笔，却在柜子里看见了河港协议的抄本。它经过东岸的课堂，又被带到了这座远方港口。' : '河港的培训链没有在这里建成分站。船工仍用自己的记录辨认支流水位，也收到了一份来自外地的统一标准。',
+      branch ? '柜子里保存着河港协议的抄本。它经过东岸的课堂，又被带到了这座远方港口。' : '河港的培训链没有在这里建成分站。船工仍用自己的记录辨认支流水位，也收到了一份来自外地的统一标准。',
       '“他们说，照着上游的标准做就不会错。”对方指向两条并不吻合的曲线，“可我们的支流，从来不在那份表里。”',
     ], question: '真正可靠的网络，必须允许一个节点说：这里不一样。' };
   }

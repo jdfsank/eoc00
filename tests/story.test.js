@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createRun, getActions, getActors, lockTask, passTask, commitWindow, advanceToNextWindow } from '../src/simulation.js';
+import { createRun, getActions, getActors, passTask, commitWindow, advanceToNextWindow } from '../src/simulation.js';
 import { sceneFor, evidenceFor } from '../src/story.js';
-const evidence = ['independent_flood_records', 'unfunded_maintenance', 'successor_consent'];
+import { investigateAndLock as lockTask } from './helpers/play.js';
 function decade(state, action, cellId = 'D4') {
-  if (action) lockTask(state, 'protagonist', cellId, action, evidence);
+  if (action) lockTask(state, 'protagonist', cellId, action);
   for (const actor of getActors(state)) if (!state.drafts[actor.id]) passTask(state, actor.id);
   commitWindow(state); advanceToNextWindow(state);
 }
@@ -93,4 +93,60 @@ test('coverage rules are disclosed as model assumptions in relevant action previ
   for (const action of getActions(state, 'D4')) assert.ok(action.modelNote);
   decade(state); decade(state);
   assert.match(getActions(state, 'D4').find(action => action.id === 'free_warning').modelNote, /0.65/);
+});
+
+test('Linche reads the protagonist’s R0 witness instead of inheriting personal memories', () => {
+  const state = createRun(12); decade(state, 'build_joint'); decade(state, 'recruit_successor');
+  assert.ok(getActors(state).some(actor => actor.id === 'linche'));
+  const before = structuredClone(state);
+  const protagonist = sceneFor(state, 'D4', 'protagonist');
+  const companion = sceneFor(state, 'D4', 'linche');
+  assert.deepEqual(sceneFor(state, 'D4'), protagonist);
+  assert.match(protagonist.body.join(''), /你记得她讲课时总开着窗/);
+  assert.match(protagonist.body.join(''), /那是你记得的我/);
+  assert.match(companion.body.join(''), /主角保存的旧现实档案/);
+  assert.match(companion.body.join(''), /不是你的亲历记忆/);
+  assert.match(companion.body.join(''), /那是档案里的我/);
+  assert.doesNotMatch(companion.body.join(''), /你记得她讲课|那是你记得的我/);
+  assert.equal(companion.speaker, protagonist.speaker);
+  assert.match(companion.body.join(''), /收费牌也还挂着/);
+  assert.deepEqual(state, before);
+});
+
+test('companion perspective preserves no-build, failed-build and stopped-station branches', () => {
+  for (const [build, seed, expected] of [[null, 12, /没有属于她的测站管理岗位/], ['build_joint', 6, /没有正在运转的水文站/], ['build_joint', 12, /测站的门关着/]]) {
+    const state = createRun(seed); decade(state, build); decade(state, 'recruit_risk');
+    const scene = sceneFor(state, 'D4', 'linche');
+    assert.match(scene.body.join(''), expected);
+    assert.match(scene.body.join(''), /不是你的亲历记忆/);
+    assert.equal(scene.speaker, '苏岚 · 河港居民');
+    assert.doesNotMatch(scene.body.join(''), /你记得她讲课|那是你记得的我|父亲/);
+  }
+});
+
+test('R0 evidence identifies whose witness it is while local testimony stays state-dependent', () => {
+  const state = createRun(12); decade(state, 'build_joint'); decade(state, 'recruit_successor');
+  const old = evidenceFor(state, 'old_reality_record', 'D4', 'linche');
+  assert.match(old.text, /R0｜已归档现实/);
+  assert.match(old.text, /由主角从亲历的旧现实中保存/);
+  assert.match(old.text, /他人见证/);
+  assert.match(old.text, /不是入局锚定后凭空获得的记忆/);
+  assert.deepEqual(evidenceFor(state, 'old_reality_record'), evidenceFor(state, 'old_reality_record', 'D4', 'protagonist'));
+  for (const id of ['resident_testimony', 'successor_consent', 'unfunded_maintenance', 'anomaly_records']) {
+    assert.deepEqual(evidenceFor(state, id, 'D4', 'linche'), evidenceFor(state, id, 'D4', 'protagonist'));
+  }
+  assert.match(evidenceFor(state, 'resident_testimony', 'D4', 'linche').text, /收费门槛/);
+  assert.match(evidenceFor(state, 'successor_consent', 'D4', 'linche').title, /与学徒/);
+});
+
+test('far-port provenance does not claim either actor has never intervened there', () => {
+  const state = createRun(12); decade(state, 'build_joint'); decade(state, 'recruit_successor');
+  lockTask(state, 'linche', 'F6', 'local_veto', []);
+  decade(state);
+  for (const actorId of ['protagonist', 'linche']) {
+    const text = sceneFor(state, 'F6', actorId).body.join('');
+    assert.match(text, /河港协议的抄本/);
+    assert.match(text, /经过东岸的课堂/);
+    assert.doesNotMatch(text, /你在这里从未落过笔|你记得她讲课/);
+  }
 });

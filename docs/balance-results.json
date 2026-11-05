@@ -1,0 +1,44 @@
+{
+  "rules": "tradeoffs-v1",
+  "seeds": "0–99",
+  "scope": "Deterministic regression sample, not human-playtest balance certification. Costs remain local capability burdens; no blanket price increase.",
+  "routes": {
+    "unprepared_review": {
+      "zeroLossRuns": 54,
+      "meanLoss": 0.4338,
+      "minLoss": 0,
+      "maxLoss": 0.9431,
+      "endings": {
+        "许多人签署的历史": 54,
+        "纸上的共同作者": 46
+      }
+    },
+    "archive_review": {
+      "zeroLossRuns": 71,
+      "meanLoss": 0.2735,
+      "minLoss": 0,
+      "maxLoss": 0.9431,
+      "endings": {
+        "许多人签署的历史": 100
+      }
+    },
+    "basic_veto": {
+      "zeroLossRuns": 0,
+      "meanLoss": 0.283,
+      "minLoss": 0.283,
+      "maxLoss": 0.283,
+      "endings": {
+        "纸上的共同作者": 100
+      }
+    },
+    "surveyed_veto": {
+      "zeroLossRuns": 0,
+      "meanLoss": 0.1886,
+      "minLoss": 0.1886,
+      "maxLoss": 0.1886,
+      "endings": {
+        "纸上的共同作者": 100
+      }
+    }
+  }
+}

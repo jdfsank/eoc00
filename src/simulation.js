@@ -9,10 +9,12 @@ export const COVERAGE_RULES = Object.freeze({
   warningProtection: .35, stateCoordination: .1, jointRecords: .15, mutualAid: .3,
 });
 export const usesLegacyCrisisRules = s => s.crisisRulesVersion !== COVERAGE_RULES.version;
+export const PLANNING_RULES = Object.freeze({ version: 'tradeoffs-v1', investigationBudget: 3, emergencyReview: .55, partialReview: .8, surveyedVeto: .2 });
+export const usesTradeoffs = s => s.planningRulesVersion === PLANNING_RULES.version;
 export const EVIDENCE = {
   independent_flood_records: '独立洪水记录', unfunded_maintenance: '维护经费缺口',
   successor_consent: '继任者的同意', anomaly_records: '异常水位记录',
-  old_reality_record: '旧现实教师档案', resident_testimony: '居民的当前证词',
+  old_reality_record: '旧现实教师档案', resident_testimony: '居民的当前证词', evacuation_routes: '逐户核实撤离路线',
 };
 const copy = x => structuredClone(x);
 const clamp = x => Math.round(Math.max(0, Math.min(100, x)) * 10000) / 10000;
@@ -56,6 +58,34 @@ export function getWarningCoverage(s) {
       protection: Math.max(0, ...providers.map(i => i.protection)), providers }];
   }));
 }
+
+export function reviewPreparation(s) {
+  const records = s.institutions.some(i => i.active && i.maintenance > 0 && (i.sourceActionId?.endsWith(':preserve_records') || (governanceFor(s, i).kind === 'joint' && governanceFor(s, i).protection > 0)));
+  const workforce = s.institutions.some(i => i.active && i.maintenance > 0 && ['station', 'branch', 'training', 'school'].includes(i.kind));
+  return { records, workforce, probability: records && workforce ? 1 : records || workforce ? PLANNING_RULES.partialReview : PLANNING_RULES.emergencyReview };
+}
+export const PORTABLE_EVIDENCE = ['independent_flood_records', 'anomaly_records', 'evacuation_routes', 'old_reality_record'];
+export const evidenceCost = (s, id) => usesTradeoffs(s) && ['anomaly_records', 'evacuation_routes'].includes(id) ? 2 : 1;
+export function getEvidenceIds(s, cellId, actorId = 'protagonist') {
+  const candidates = s.year === 0 ? ['independent_flood_records', 'unfunded_maintenance', 'resident_testimony']
+    : s.year === 10 ? ['successor_consent', 'resident_testimony', 'unfunded_maintenance']
+    : ['anomaly_records', ...(usesTradeoffs(s) && s.year === 20 ? ['evacuation_routes'] : []), 'old_reality_record', 'resident_testimony'];
+  return [...new Set(getActions(s, cellId, actorId).flatMap(a => a.requireEvidence).concat(candidates))];
+}
+export function getInvestigation(s, actorId, cellId) {
+  const entries = s.investigations?.[`${s.year}:${actorId}`] || [];
+  return { evidence: entries.filter(e => e.cellId === cellId || PORTABLE_EVIDENCE.includes(e.evidenceId)).map(e => e.evidenceId), budget: PLANNING_RULES.investigationBudget - entries.reduce((sum, e) => sum + evidenceCost(s, e.evidenceId), 0) };
+}
+export function investigate(s, actorId, cellId, evidenceId) {
+  assertPlanning(s, actorId); require(usesTradeoffs(s), '本局仍使用原场景调查规则');
+  require(getActions(s, cellId, actorId).length && getEvidenceIds(s, cellId, actorId).includes(evidenceId), '当前现场没有这份材料');
+  const current = getInvestigation(s, actorId, cellId);
+  if (current.evidence.includes(evidenceId)) return s;
+  require(current.budget >= evidenceCost(s, evidenceId), '本角色本窗口的调查轮次不足');
+  (s.investigations[`${s.year}:${actorId}`] ||= []).push({ cellId, evidenceId });
+  return s;
+}
+
 function institution(s, kind, location, event, name, source = sources[kind]) {
   const i = { id: `institution:${event.id}:${location}`, kind, cellId: location, name, active: true, sourceEventId: event.id, sourceActionId: event.sourceActionId, startYear: s.year, annualSource: Object.fromEntries(CHANNELS.map((k, n) => [k, source[n]])), maintenance: 1, open: true };
   s.institutions.push(i); return i;
@@ -70,16 +100,17 @@ function schedule(s, data) {
   if (!s.events.some(e => e.id === data.id)) s.events.push({ kind: 'event', status: 'pending', parentId: null, sourceActionId: null, probability: 1, conditionVersion: 1, ...data });
 }
 export function createRun(seed = 12) {
-  const s = { version: 'afterwave.run.v1', crisisRulesVersion: COVERAGE_RULES.version, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
+  const s = { version: 'afterwave.run.v1', crisisRulesVersion: COVERAGE_RULES.version, planningRulesVersion: PLANNING_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
   s.cells.forEach(c => { c.deployable = ['D4', 'B4'].includes(c.id); if (c.name === '未命名地域') c.name = `${c.id}·${c.terrain === 'water' ? '水域' : '原野'}`; });
   record(s, { id: 'arrival', title: '第零年 · 借来的十年', text: '续史局只能在每十年的窗口介入一次。你是唯一的介入员。河港将迎来洪水，但居民并不只需要被拯救。', kind: 'arrival' });
   s.snapshots[0] = copy(s.cells); return s;
 }
 export function getActors(s) { return s.actors.filter(a => a.alive && a.availableFrom <= s.year); }
 function action(id, title, description, cost, probability = 1, dueIn = 1, requireEvidence = [], risk = '', reward = '') { return { id, title, description, cost, probability, dueIn, requireEvidence, risk, reward }; }
-export function getActions(s, cellId, actorId = 'protagonist') {
+export function getActions(s, cellId, actorId = 'protagonist', evidence = null) {
   if (s.phase !== 'planning' || !getActors(s).some(a => a.id === actorId)) return [];
   const y = s.year, out = [];
+  evidence ??= usesTradeoffs(s) ? getInvestigation(s, actorId, cellId).evidence : [];
   if (cellId === 'D4' && y === 0) out.push(
     action('build_merchant', '商会独资', '商会愿意先付运输费用，但收费港口享有优先预警。', { economy: 3 }, .85, 2, [], '收费门槛限制当地和后续分站的预警覆盖；依赖单一资助方。', '较快启用；每年持续创造测量与运输能力。'),
     action('build_state', '官署独办', '统一撤离指令覆盖河港，复核权暂留官署。', { politics: 3, economy: 4 }, .8, 3, [], '统一标准仍可能共同失效；公开覆盖与撤离协调只能减轻损失。', '公开预警，并保留较小的统一撤离保护。'),
@@ -130,36 +161,83 @@ export function getActions(s, cellId, actorId = 'protagonist') {
     notes.independent_review += ' 完整复核消除本次共同失效损失。';
     notes.local_veto += ' 四地停闸与先行撤离使损失基数降至0.30。';
   }
+  if (usesTradeoffs(s)) {
+    notes.share_power = notes.withdraw = '至少需要两个不同地域的自治支点，其中一处必须是学校或轮值维护网络。学校提供承接人手，并不天然代表异源方法；仍需另一个地区成功工作的异源校验支点。原建站培训链可提供复核人手，不自动等于独立自治来源；共享另需地方信任。';
+    const review = out.find(a => a.id === 'independent_review');
+    if (review) {
+      const prep = reviewPreparation(s); review.probability = prep.probability; review.dueIn = 2;
+      review.title = prep.probability === 1 ? '完整异源交叉复核' : '组织紧急交叉复核';
+      review.description = '用独立旧刻度与当前测量交叉校验。既有档案和测量人手决定能否在冲击前完成。';
+      review.risk = '未能及时完成时不消除第23年危机；费用不退，留下校验记录。可由另一角色在另一处安排停闸作后备。';
+      review.reward = '成功则截断四地共同标准失效；预警覆盖和此前损失仍分别保留。';
+      notes.independent_review = `准备快照：异源档案${prep.records ? '有' : '缺'}，活跃测量/教学人手${prep.workforce ? '有' : '缺'}。两项齐备100%，仅一项80%，全缺55%；第22年只判定一次，失败保留记录但不修正指令。新建复核机构不能充当前置准备，同窗口新办机构也不追溯提高已提交概率。`;
+    }
+    const veto = out.find(a => a.id === 'local_veto');
+    if (veto) {
+      const surveyed = evidence.includes('evacuation_routes');
+      veto.reward = `确定把第23年四地共同失效损失基数降至${surveyed ? '0.20' : '0.30'}，再按当地保护结算。`;
+      veto.risk = '不会消除错误标准，仍有可预见的剩余损失。可不取证直接采用基本停闸。';
+      notes.local_veto = '基本停闸确定把四地损失基数降至0.30；花2轮核实撤离路线后降至0.20。与复核可由不同角色、不同地点协同，复核失败时停闸仍有效。';
+    }
+    const train = out.find(a => a.id === 'train_network');
+    if (train) { train.reward = '增加当地维护产出；同一地域扩容只算一个自治支点，不能冒充不同地区的网络。'; notes.train_network += ' 结局按不同地域的现存载体计数。'; }
+  }
   return out.map(a => ({ ...a, ...(notes[a.id] ? { modelNote: notes[a.id] } : {}) }));
 }
 function assertPlanning(s, actorId) { require(s.phase === 'planning', '当前不在介入窗口'); require(getActors(s).some(a => a.id === actorId), '该棋子本轮不可部署'); }
 export function lockTask(s, actorId, cellId, actionId, evidence = []) {
   assertPlanning(s, actorId);
-  const a = getActions(s, cellId, actorId).find(a => a.id === actionId);
+  if (usesTradeoffs(s)) evidence = getInvestigation(s, actorId, cellId).evidence;
+  const a = getActions(s, cellId, actorId, evidence).find(a => a.id === actionId);
   require(a, '该行动当前不可用'); require(a.requireEvidence.every(e => evidence.includes(e)), '尚缺必要证据');
   s.drafts[actorId] = { actorId, cellId, actionId, evidence: [...new Set(evidence)], status: 'locked', window: s.year }; return s;
 }
 export function passTask(s, actorId) { assertPlanning(s, actorId); s.drafts[actorId] = { actorId, status: 'passed', window: s.year }; return s; }
 export function unlockTask(s, actorId) { assertPlanning(s, actorId); delete s.drafts[actorId]; return s; }
-export function commitWindow(s) {
-  require(s.phase === 'planning' && WINDOWS.includes(s.year) && !s.committedWindows.includes(s.year), '本轮已提交或不在介入窗口');
-  const actors = getActors(s), tasks = [], costs = {}, occupied = new Set();
+export function getWindowReview(s) {
+  const actors = getActors(s), tasks = [], costs = {}, issues = [], warnings = [], occupied = new Map();
+  if (s.phase !== 'planning' || !WINDOWS.includes(s.year) || s.committedWindows.includes(s.year)) {
+    return { ready: false, issues: ['本轮已提交或不在介入窗口'], warnings, costs, tasks, assigned: 0, total: actors.length };
+  }
+  let assigned = 0;
   for (const actor of actors) {
-    const d = s.drafts[actor.id]; require(d && d.window === s.year && ['locked', 'passed'].includes(d.status), '请先为全部棋子锁定任务或明确放弃');
+    const d = s.drafts[actor.id];
+    if (!d || d.window !== s.year || !['locked', 'passed'].includes(d.status)) {
+      issues.push(`${actor.name}尚未安排。请先为全部棋子锁定任务或明确放弃。`); continue;
+    }
+    assigned++;
     if (d.status === 'passed') continue;
-    const a = getActions(s, d.cellId, actor.id).find(a => a.id === d.actionId);
-    require(a && a.requireEvidence.every(e => d.evidence.includes(e)), '草案条件已经失效');
-    require(!occupied.has(d.cellId), '同格任务冲突：本版不支持未定义的联合行动'); occupied.add(d.cellId);
-    tasks.push({ d, a }); costs[d.cellId] ||= {};
+    const a = getActions(s, d.cellId, actor.id, d.evidence).find(a => a.id === d.actionId);
+    if (usesTradeoffs(s) && !d.evidence.every(id => getInvestigation(s, actor.id, d.cellId).evidence.includes(id))) { issues.push(`${actor.name}的草案取证记录缺失，请修改安排。`); continue; }
+    if (!a || !a.requireEvidence.every(e => d.evidence.includes(e))) { issues.push(`${actor.name}的草案条件已经失效，请修改安排。`); continue; }
+    if (occupied.has(d.cellId)) issues.push(`${d.cellId}同格任务冲突：${occupied.get(d.cellId)}与${actor.name}不能使用未定义的联合行动。`);
+    occupied.set(d.cellId, actor.name);
+    if (usesTradeoffs(s) && a.id === 'local_veto' && !d.evidence.includes('evacuation_routes') && getInvestigation(s, actor.id, d.cellId).evidence.includes('evacuation_routes')) warnings.push(`${actor.name}新调查的撤离路线尚未纳入已锁定草案：当前仍为基本停闸0.30。请修改并重新锁定，才会采用强化停闸0.20。调查不需要重复支付。`);
+    tasks.push({ d: copy(d), a: copy(a) }); costs[d.cellId] ||= {};
     for (const [k, v] of Object.entries(a.cost)) costs[d.cellId][k] = (costs[d.cellId][k] || 0) + v;
   }
-  for (const [id, spend] of Object.entries(costs)) for (const [k, v] of Object.entries(spend)) require(cell(s, id).channels[k] >= v, `${id}的${k}能力不足，整轮未提交`);
+  const names = { politics: '政治', economy: '经济', science: '科学', religion: '宗教' };
+  for (const [id, spend] of Object.entries(costs)) for (const [k, v] of Object.entries(spend)) {
+    if (cell(s, id).channels[k] < v) issues.push(`${id}的${names[k]}能力不足：现有${cell(s, id).channels[k].toFixed(1)}，需支付${v}。整轮未提交。`);
+  }
+  const reviewCount = tasks.filter(t => t.a.id === 'independent_review').length;
+  const vetoCount = tasks.filter(t => t.a.id === 'local_veto').length;
+  if (reviewCount > 1) warnings.push(usesTradeoffs(s) && tasks.some(t => t.a.id === 'independent_review' && t.a.probability < 1) ? '双地紧急复核分别判定，任一成功即可纠正共同指令。成功后的危机保护不叠加，但两地机构仍各自产出，自治还需真实维护人手。' : '重复交叉复核：四地共同失效保护只生效一次。两个所在地的独立站仍各自产出知识，但不会获得两次危机减伤。');
+  if (vetoCount > 1) warnings.push(usesTradeoffs(s) ? '双份停闸不叠加、不相乘，采用已兑现方案中较强的一份：已核实撤离路线为0.20，基本停闸为0.30。第二项仍消耗名额和成本；两份相同方案不再增加保护。' : '重复地方停闸权：同一四地规则不叠加。第二项仍消耗名额和成本，不会增加本次危机保护。');
+  if (reviewCount && vetoCount) warnings.push(tasks.some(t => t.a.id === 'independent_review' && t.a.probability < 1) ? '复核与停闸形成后备：复核成功时消除共同失效，失败时停闸仍确定减伤。两项各消耗一个名额和对应成本。' : '复核与停闸同时安排：确定的完整复核将阻止本次共同失效。停闸仍会付费并记录承诺，但不再额外降低第23年损失。');
+  if (assigned === actors.length && !tasks.length) warnings.push('所有棋子都明确放弃本窗口。不会支付介入成本；现存制度、维护缺口和危机仍会自然演化十年。');
+  return { ready: issues.length === 0, issues, warnings, costs, tasks, assigned, total: actors.length };
+}
+export function commitWindow(s) {
+  const review = getWindowReview(s);
+  require(review.ready, review.issues.join(' '));
+  const actors = getActors(s), tasks = review.tasks;
   // Every validation precedes writes. No event RNG is consumed during planning or submission.
   for (const { d, a } of tasks) {
     const sourceActionId = `action:${s.year}:${d.actorId}:${d.cellId}:${a.id}`;
     for (const [k, v] of Object.entries(a.cost)) cell(s, d.cellId).channels[k] = clamp(cell(s, d.cellId).channels[k] - v);
     record(s, { id: sourceActionId, title: a.title, text: `${a.description} 确定成本已支付；${a.probability === 1 ? '确定' : `${Math.round(a.probability * 100)}%概率`}在第${s.year + a.dueIn}年兑现。`, cellId: d.cellId, kind: 'action', sourceActionId, evidence: copy(d.evidence), cost: copy(a.cost) });
-    schedule(s, { id: `event:${sourceActionId}`, year: s.year + a.dueIn, cellId: d.cellId, title: a.title, text: a.description, actionId: a.id, parentId: sourceActionId, sourceActionId, probability: a.probability });
+    schedule(s, { id: `event:${sourceActionId}`, year: s.year + a.dueIn, cellId: d.cellId, title: a.title, text: a.description, actionId: a.id, parentId: sourceActionId, sourceActionId, probability: a.probability, ...(usesTradeoffs(s) ? { planningRulesVersion: PLANNING_RULES.version, evidence: copy(d.evidence), ...(a.id === 'independent_review' ? { preparation: reviewPreparation(s) } : {}) } : {}) });
     if (a.id.startsWith('build_')) s.promises.push({ id: `promise:${sourceActionId}`, sourceActionId, text: '第10年处理维护人与长期经费', dueYear: 10, status: 'pending' });
   }
   for (const actor of actors) if (s.drafts[actor.id].status === 'passed') record(s, { id: `pass:${s.year}:${actor.id}`, kind: 'pass', title: `${actor.name}保留沉默`, text: '本轮名额明确放弃。历史仍会继续。' });
@@ -208,8 +286,8 @@ function resolve(s, e) {
   }
   else if (a === 'present_archive') { s.flags.respected = true; s.flags.trust = true; text = '“那是你认识的我，不是我欠你的人生。”苏岚留下自己的证词，拒绝被旧现实替换。'; }
   else if (a === 'relocate_teacher') { const hadMaintenance = s.institutions.some(i => i.cellId === 'D4' && i.active); s.flags.forced = true; s.flags.trust = false; for (const i of s.institutions.filter(i => i.cellId === 'D4')) i.active = false; institution(s, 'school', 'E4', e, '迁任标准学校'); text = hadMaintenance ? '迁任完成，学校多了教师，河港现有制度失去维护。苏岚拒绝把这称为被拯救。' : '迁任完成，学校多了教师，河港仍没有测站。苏岚反对自己的意愿被一份旧履历替代。'; }
-  else if (a === 'independent_review') { s.flags.review = true; institution(s, 'independent', e.cellId, e, '独立交叉复核站'); text = '两个独立来源揭示了共同标准的偏差。第23年的水位冲击仍会到来，但错误不再同步传播。'; }
-  else if (a === 'local_veto') { s.flags.veto = true; text = '地方停闸与先行撤离权生效。统一标准仍错，但居民不必盲从。'; }
+  else if (a === 'independent_review') { institution(s, 'independent', e.cellId, e, e.status === 'success' ? '独立交叉复核站' : '待核实的校验记录'); if (e.status === 'success') { s.flags.review = true; text = '交叉校验在冲击前确认了共同标准的偏差。第23年的水位冲击仍会到来，但错误不再同步传播。'; } else { text = '临时校验未能在冲击前形成可靠结论。已付费用不退，留下的记录仍可继续整理；本次共同指令没有被修正，另行安排的停闸仍可减伤。'; } }
+  else if (a === 'local_veto') { s.flags.veto = true; if (e.planningRulesVersion === PLANNING_RULES.version) s.flags.vetoMitigation = Math.min(s.flags.vetoMitigation ?? .3, e.evidence?.includes('evacuation_routes') ? PLANNING_RULES.surveyedVeto : .3); text = '地方停闸与先行撤离权生效。统一标准仍错，但居民不必盲从。'; }
   else if (['share_power', 'central_review', 'withdraw'].includes(a)) { s.flags.policy = a; text = '终局方针已经签署。它能否兑现，取决于此前积累的人手、信任与复核网络，而非这一句宣言。'; }
   record(s, { id: `resolved:${e.id}`, year: s.year, title, text: text || e.text, cellId: e.cellId, parentId: e.id, sourceActionId: e.sourceActionId, kind: e.status === 'failed' ? 'failure' : 'outcome', status: e.status });
 }
@@ -237,7 +315,7 @@ function milestone(s) {
     record(s, { id: 'old-reality-conflict', title: '她不是档案中的教师', text: `R0旧档中的苏岚在免费学校教书。${present}她要求先听取自己现在的意愿。旧档是证据，不是她欠你的命运。`, kind: 'reality' });
   }
   if (s.year === 23) {
-    const mitigation = s.flags.review ? 0 : s.flags.veto ? .3 : 1;
+    const mitigation = s.flags.review ? 0 : s.flags.veto ? (usesTradeoffs(s) ? s.flags.vetoMitigation ?? .3 : .3) : 1;
     if (usesLegacyCrisisRules(s)) {
       // Older saves lack carrier-based warning data. Honor their already-paid
       // commitments with the exact original formula instead of inventing detail.
@@ -302,16 +380,18 @@ export function advanceYear(s, options = {}) {
 }
 export function advanceToNextWindow(s) { require(s.phase === 'playback', '请先提交本轮任务'); do { advanceYear(s); } while (s.phase === 'playback'); return s; }
 export function getEnding(s) {
-  const networks = s.flags.networks || 0;
-  const autonomy = networks + (s.flags.independentArchive ? 1 : 0) + (s.flags.review ? 1 : 0);
+  const networkCells = new Set(s.institutions.filter(i => i.active && i.maintenance > 0 && i.kind === 'school').map(i => i.cellId));
+  const autonomousCells = new Set([...networkCells, ...s.institutions.filter(i => i.active && i.maintenance > 0 && i.kind === 'independent' && s.events.some(e => e.id === i.sourceEventId && e.status === 'success')).map(i => i.cellId)]);
+  const networks = usesTradeoffs(s) ? networkCells.size : s.flags.networks || 0;
+  const autonomy = usesTradeoffs(s) ? autonomousCells.size : networks + (s.flags.independentArchive ? 1 : 0) + (s.flags.review ? 1 : 0);
   const trust = s.flags.trust ?? !!s.flags.renewed;
   const legacy = usesLegacyCrisisRules(s);
   const coverage = getWarningCoverage(s), warningCoverage = coefficient(FLOOD_REGIONS.reduce((sum, id) => sum + coverage[id].coverage, 0) / FLOOD_REGIONS.length);
   const metrics = { institutions: s.institutions.filter(i => i.active).length, networks, autonomy, trust, crisis: s.flags.crisis?.status || '尚未发生', warningCoverage: legacy ? '旧版未记录' : warningCoverage, crisisDamage: s.flags.crisis?.damage ?? '尚未结算', anchoredSurvivors: s.actors.filter(a => a.alive && a.anchored).length, years: s.year };
   let title = '未签署的下一页', text = '没有新的方针替地方补上责任。现存机构继续运作，也继续承担缺口。';
-  if (s.flags.policy === 'share_power') { const ready = autonomy >= 2 && trust; title = ready ? '许多人签署的历史' : '纸上的共同作者'; text = ready ? '独立记录、维护者与居民同意让共享纠错权有了现实支撑。没有人拥有全部未来，也没有人独自承担它。' : '档案已开放，但独立人手或地方信任仍不足。新的权利需要在现实中继续建立，宣言没有替你完成它。'; }
+  if (s.flags.policy === 'share_power') { const ready = autonomy >= 2 && (!usesTradeoffs(s) || networks >= 1) && trust; title = ready ? '许多人签署的历史' : '纸上的共同作者'; text = ready ? '独立记录、维护者与居民同意让共享纠错权有了现实支撑。没有人拥有全部未来，也没有人独自承担它。' : '档案已开放，但独立人手或地方信任仍不足。新的权利需要在现实中继续建立，宣言没有替你完成它。'; }
   if (s.flags.policy === 'central_review') { title = s.flags.review ? '仍亮着灯的续史局' : '更安静的警报室'; text = s.flags.review ? '集中协调保留下来，独立复核可以否决错误指令。安全依赖持续维护，而非永远正确的计算。' : '续史局仍能协调救援，却尚未打破共同标准的依赖。短期秩序没有消除下一次共同失效。'; }
-  if (s.flags.policy === 'withdraw') { title = autonomy >= 2 ? '没有唯一守夜人' : '交班后的空椅子'; text = autonomy >= 2 ? '地方网络接住了退出后的责任。你留下的不是控制，而是人们可以自己纠错的能力。' : '独占控制结束了，但接班能力没有同步长成。仍在运作的机构需要面对服务空缺。'; }
+  if (s.flags.policy === 'withdraw') { title = autonomy >= 2 && (!usesTradeoffs(s) || networks >= 1) ? '没有唯一守夜人' : '交班后的空椅子'; text = autonomy >= 2 && (!usesTradeoffs(s) || networks >= 1) ? '地方网络接住了退出后的责任。你留下的不是控制，而是人们可以自己纠错的能力。' : '独占控制结束了，但接班能力没有同步长成。仍在运作的机构需要面对服务空缺。'; }
   if (s.flags.crisis?.status === 'disaster') text += ' 第23年的地方灾难无法撤销，它的名字留在结局里。';
   const unserved = FLOOD_REGIONS.filter(id => coverage[id].coverage === 0);
   const restricted = FLOOD_REGIONS.filter(id => coverage[id].providers.some(i => ['station', 'branch'].includes(i.kind) && !i.open));
@@ -322,6 +402,7 @@ export function getEnding(s) {
   const paragraphs = [legacy ? '本局沿用旧版整体危机规则。已兑现的免费预警与互助承诺继续按原来的减损系数结算，不用新覆盖模型替换。' : `当前预警覆盖系数：${FLOOD_REGIONS.map(id => `${id} ${coverage[id].coverage.toFixed(2)}`).join(' · ')}。系数来自现存制度的开放、维护与人手，不是人口统计。`];
   if (s.flags.crisis?.damageByCell) paragraphs.push(`第23年已记录的损失系数：${FLOOD_REGIONS.map(id => `${id} ${s.flags.crisis.damageByCell[id].toFixed(2)}`).join(' · ')}。这份记录不会随后来的复苏或新制度改写。`);
   else if (s.year >= 23) paragraphs.push('这份旧版存档只记录了整体危机结果，没有逐地覆盖与损失明细；不根据今天的制度补造过去的数值。');
+  if (usesTradeoffs(s)) paragraphs.push(`自治支点按不同地域的现存学校与已成功工作的异源校验载体计数：${[...autonomousCells].join('、') || '暂无'}。共享和退出还需至少一处学校或轮值维护网络来承接人手；原建站培训链可提供复核人手，但不自动等于独立自治来源。同地重复培训和保档加复核不重复计数；失败的临时复核不计为已具备的纠错能力。`);
   paragraphs.push('预警覆盖、制度保护与损失权重属于本轮可调的原型假设，尚未经过真人平衡验证。');
   return { title, text, paragraphs, metrics, policy: s.flags.policy || null, provisional: s.year < 40 };
 }
@@ -339,6 +420,8 @@ function inspectState(s) {
   const bounded = (value, min = 0, max = 100) => Number.isFinite(value) && value >= min && value <= max;
   const id = value => typeof value === 'string' && value.length > 0;
   if (!object(s) || s.version !== 'afterwave.run.v1') return { valid: false, errors: ['不兼容的存档版本'] };
+  if (s.planningRulesVersion !== undefined && s.planningRulesVersion !== PLANNING_RULES.version) errors.push('行动规则版本非法');
+  if (usesTradeoffs(s) && !object(s.investigations)) return { valid: false, errors: [...errors, '取证记录缺失'] };
   if (s.crisisRulesVersion !== undefined && !['legacy-v1', COVERAGE_RULES.version].includes(s.crisisRulesVersion)) errors.push('危机规则版本非法');
   if (!Array.isArray(s.cells) || s.cells.length !== 64) return { valid: false, errors: ['棋盘必须有64格'] };
   const ids = new Set();
@@ -360,6 +443,7 @@ function inspectState(s) {
   const expectedWindows = WINDOWS.filter(year => year < s.year || (year === s.year && s.phase === 'playback'));
   if (expectedWindows.length !== s.committedWindows.length || expectedWindows.some(year => !s.committedWindows.includes(year))) errors.push('已提交窗口与当前年代不一致');
   for (const e of s.events) {
+    if (e.planningRulesVersion !== undefined && (e.planningRulesVersion !== PLANNING_RULES.version || !Array.isArray(e.evidence) || e.evidence.some(id => !Object.hasOwn(EVIDENCE, id)))) errors.push('事件行动合同非法');
     if (!['pending', 'success', 'failed', 'cancelled'].includes(e.status) || !bounded(e.probability, 0, 1) || !integer(e.year, 1, 40) || !ids.has(e.cellId) || !id(e.actionId) || (e.status === 'pending' && e.year <= s.year) || (e.status !== 'pending' && e.year > s.year)) errors.push('事件状态非法');
   }
   for (const entry of [...s.events, ...s.history]) {
@@ -372,6 +456,12 @@ function inspectState(s) {
   for (const c of s.cells) if (!object(s.baseline[c.id]) || CHANNELS.some(k => !bounded(s.baseline[c.id][k]))) errors.push('基线缺失或非法');
   if (!s.actors.some(a => a.id === 'protagonist' && a.alive && a.availableFrom === 0)) errors.push('缺少可用主角');
   for (const a of s.actors) if (!integer(a.availableFrom, 0, 40) || typeof a.alive !== 'boolean' || typeof a.anchored !== 'boolean' || typeof a.name !== 'string') errors.push('棋子结构或可用窗口非法');
+  if (usesTradeoffs(s)) for (const [key, entries] of Object.entries(s.investigations)) {
+    const [year, actorId, extra] = key.split(':');
+    if (extra !== undefined || !WINDOWS.some(y => String(y) === year) || Number(year) > s.year || !s.actors.some(a => a.id === actorId && a.availableFrom <= Number(year)) || !Array.isArray(entries)) { errors.push('取证会话非法'); continue; }
+    if (entries.some(e => !object(e) || !ids.has(e.cellId) || !Object.hasOwn(EVIDENCE, e.evidenceId)) || new Set(entries.map(e => `${PORTABLE_EVIDENCE.includes(e.evidenceId) ? 'portable' : e.cellId}:${e.evidenceId}`)).size !== entries.length || entries.reduce((sum, e) => sum + evidenceCost(s, e.evidenceId), 0) > PLANNING_RULES.investigationBudget) errors.push('取证预算或材料非法');
+  }
+  if (s.flags.vetoMitigation !== undefined && ![.2, .3].includes(s.flags.vetoMitigation)) errors.push('停闸保护非法');
   for (const [actorId, draft] of Object.entries(s.drafts)) {
     if (!object(draft) || draft.actorId !== actorId || !s.actors.some(a => a.id === actorId && a.alive && a.availableFrom <= s.year) || draft.window !== s.year || s.phase !== 'planning' || !['passed', 'locked'].includes(draft.status)) { errors.push('任务草稿非法'); continue; }
     if (draft.status === 'locked' && (!ids.has(draft.cellId) || !id(draft.actionId) || !Array.isArray(draft.evidence) || draft.evidence.some(e => !Object.hasOwn(EVIDENCE, e)))) errors.push('任务草稿证据或目标非法');

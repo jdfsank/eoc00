@@ -34,6 +34,7 @@ await page.setViewportSize({width:320,height:568});await click('settings');await
 const fixtureStates=await page.evaluate(async()=>{
   const sim=await import('/src/simulation.js');
   const fresh=sim.createRun(0), failed=sim.createRun(6);
+  for(const id of ['independent_flood_records','unfunded_maintenance'])sim.investigate(failed,'protagonist','D4',id);
   sim.lockTask(failed,'protagonist','D4','build_joint',['independent_flood_records','unfunded_maintenance']);
   sim.commitWindow(failed);sim.advanceToNextWindow(failed);
   return {fresh,failed};
@@ -97,7 +98,7 @@ const governanceFixtures=await page.evaluate(async()=>{
   const sim=await import('/src/simulation.js'), results={};
   for(const [kind,threshold] of [['merchant',.85],['state',.8],['joint',.7]]){
     let seed=0;while(sim.randomFor(seed,`event:action:0:protagonist:D4:build_${kind}`)>=threshold)seed++;
-    const state=sim.createRun(seed);sim.lockTask(state,'protagonist','D4',`build_${kind}`,Object.keys(sim.EVIDENCE));sim.commitWindow(state);sim.advanceToNextWindow(state);
+    const state=sim.createRun(seed);for(const id of sim.getActions(state,'D4').find(a=>a.id===`build_${kind}`).requireEvidence)sim.investigate(state,'protagonist','D4',id);sim.lockTask(state,'protagonist','D4',`build_${kind}`,Object.keys(sim.EVIDENCE));sim.commitWindow(state);sim.advanceToNextWindow(state);
     results[kind]={at10:structuredClone(state)};
     for(let window=0;window<3;window++){sim.passTask(state,'protagonist');sim.commitWindow(state);sim.advanceToNextWindow(state);}
     results[kind].ended=state;

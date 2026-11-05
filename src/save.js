@@ -1,4 +1,4 @@
-import { CHANNELS, EVIDENCE, WINDOWS, getActions, getActors, traceEvent, validateState, usesLegacyCrisisRules } from './simulation.js';
+import { CHANNELS, EVIDENCE, WINDOWS, getActions, getActors, traceEvent, validateState, usesLegacyCrisisRules, usesTradeoffs, getInvestigation } from './simulation.js';
 
 const SCREENS = ['world', 'list', 'avg', 'choice', 'confirm', 'window', 'playback', 'review', 'archive', 'trace', 'ending', 'settings'];
 const FILTERS = ['all', 'action', 'history', 'risk'];
@@ -34,6 +34,15 @@ export function normalizeUi(state, saved) {
         : [];
       const budget = Number.isInteger(session.budget) && session.budget >= 0 && session.budget <= 3 ? session.budget : 3;
       ui.sessions[key] = { evidence, budget: Math.min(budget, 3 - evidence.length) };
+    }
+  }
+  if (usesTradeoffs(state)) {
+    // UI can be dropped or corrupted without restoring a spent investigation.
+    ui.sessions = {};
+    for (const [key, entries] of Object.entries(state.investigations)) {
+      const [year, actorId] = key.split(':');
+      const atWindow = { ...state, year: Number(year) };
+      for (const cellId of new Set(entries.map(e => e.cellId))) ui.sessions[`${key}:${cellId}`] = getInvestigation(atWindow, actorId, cellId);
     }
   }
   if (getActions(state, ui.selected, ui.actor).some(action => action.id === saved.choice)) ui.choice = saved.choice;

@@ -88,6 +88,7 @@ try {
     const sim = await import('/src/simulation.js');
     const state = sim.createRun(12), evidence = Object.keys(sim.EVIDENCE);
     for (const action of ['build_joint', 'recruit_successor']) {
+      for (const id of sim.getActions(state, 'D4').find(a => a.id === action).requireEvidence) sim.investigate(state, 'protagonist', 'D4', id);
       sim.lockTask(state, 'protagonist', 'D4', action, evidence);
       sim.commitWindow(state); sim.advanceToNextWindow(state);
     }
@@ -152,7 +153,7 @@ try {
   check('Map navigation, channel, actor, resize and reset leave world unchanged', beforeMap === await world());
 
   await newPage(390, 844);
-  const beforeEvidence = await world();
+  const beforeEvidence = await page.evaluate(() => { const s=structuredClone(window.afterwave.state); delete s.investigations; return JSON.stringify(s); });
   await page.locator('[data-primary-action]').click();
   const first = page.locator('[data-evidence-id="independent_flood_records"]');
   const summary = first.locator(':scope > summary');
@@ -173,7 +174,7 @@ try {
   await snap('evidence-keyboard');
   await click('home'); await page.locator('[data-primary-action]').click();
   check('Investigation budget survives leaving and returning', JSON.stringify(await session()) === JSON.stringify(investigated));
-  check('Evidence and focus navigation leave simulation world unchanged', beforeEvidence === await world());
+  check('Investigation persists planning records without changing world outcomes', beforeEvidence === await page.evaluate(() => { const s=structuredClone(window.afterwave.state); delete s.investigations; return JSON.stringify(s); }) && await page.evaluate(() => window.afterwave.state.investigations['0:protagonist'].length === 1));
   // The one primary action must reflect legal actions and the simulation phase.
   await newPage(390, 844);
   const beforeA1 = await world();

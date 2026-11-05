@@ -502,7 +502,7 @@
         "pointer": {
           "start": {
             "x": 195,
-            "y": 486.15625
+            "y": 510.3125
           },
           "deltaX": 60,
           "deltaY": 35
@@ -668,7 +668,7 @@
       "passed": true
     },
     {
-      "name": "Evidence and focus navigation leave simulation world unchanged",
+      "name": "Investigation persists planning records without changing world outcomes",
       "passed": true
     },
     {
@@ -846,7 +846,7 @@
     "pointer": {
       "start": {
         "x": 195,
-        "y": 486.15625
+        "y": 510.3125
       },
       "deltaX": 60,
       "deltaY": 35

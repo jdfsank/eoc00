@@ -6,3 +6,5 @@
 - Vite、Playwright、Sparticuz Chromium：开发与测试工具，各自许可证由锁定依赖保留。
 
 地图由真实64格数据绘制，建筑由生效制度驱动。概念PNG没有进入游戏构建。
+
+2026-11-05新增原创代码绘制SVG：`archive-desk.svg`（档案与协商）、`open-shore.svg`（无已建机构的河岸）、`local-classroom.svg`（现存教学场所）。`scene-art.js`按真实机构选择，现有`river-room.svg`仅用于活动测站/分站，结局使用档案桌。地图状态叠加符号与五档调色均为项目原生几何和配置，不引入外部游戏素材。

@@ -1,0 +1,94 @@
+{
+  "scope": "Real headless Chromium at 390×844 and 320×568 CSS pixels; not physical device certification.",
+  "checks": [
+    {
+      "name": "World legend uses five named bands shared with map colors",
+      "passed": true
+    },
+    {
+      "name": "Unbuilt riverport illustration does not show a functioning station",
+      "passed": true
+    },
+    {
+      "name": "Investigation explains shared rounds and portable source documents",
+      "passed": true
+    },
+    {
+      "name": "Anomaly investigation visibly spends two rounds",
+      "passed": true
+    },
+    {
+      "name": "Unbuilt far port uses the open shore scene",
+      "passed": true
+    },
+    {
+      "name": "Document collected at D4 unlocks F6 review without a second payment",
+      "passed": true
+    },
+    {
+      "name": "Unprepared contract discloses 55 percent, year22, failure and missing prerequisites",
+      "passed": true
+    },
+    {
+      "name": "Linche reads protagonist testimony without claiming that personal R0 memory",
+      "passed": true
+    },
+    {
+      "name": "Companion has a separate three-round allowance",
+      "passed": true
+    },
+    {
+      "name": "Window review exposes all local costs and retains both chosen tasks",
+      "passed": true
+    },
+    {
+      "name": "Deleting UI and reloading does not restore investigation rounds",
+      "passed": true
+    },
+    {
+      "name": "Reloaded protagonist still has portable evidence and only one round",
+      "passed": true
+    },
+    {
+      "name": "Incompatible two-round route survey is disabled, basic veto remains available",
+      "passed": true
+    },
+    {
+      "name": "Evidence and choice layout has no horizontal overflow at320",
+      "passed": true
+    },
+    {
+      "name": "Surveyed evacuation contract promises deterministic .20 rather than stacking",
+      "passed": true
+    },
+    {
+      "name": "Mixed emergency review and veto is described as a fallback, not a redundant choice",
+      "passed": true
+    },
+    {
+      "name": "Real submitted fallback preserves at most .20 crisis loss even if review fails",
+      "passed": true
+    },
+    {
+      "name": "Window review shows locked .30 outcome and warns that new route evidence is not incorporated",
+      "passed": true
+    },
+    {
+      "name": "Explicitly relocking incorporates route evidence without paying investigation again",
+      "passed": true
+    },
+    {
+      "name": "A real school selects the classroom illustration",
+      "passed": true
+    },
+    {
+      "name": "Archive plus night school offers certain no-station full review",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "name": "Operating marker has equivalent text",
+      "passed": true
+    },
+    {
+      "name": "Numeric maintenance and access barriers have equivalent text",
+      "passed": true
+    },
+    {
+      "name": "Halted building is described as retained, not destroyed",
+      "passed": true
+    },
+    {
+      "name": "Failed construction keeps records without claiming warning service",
+      "passed": true
+    },
+    {
+      "name": "Resident bell has equivalent text",
+      "passed": true
+    },
+    {
+      "name": "archive scene uses a state-appropriate illustration",
+      "passed": true
+    },
+    {
+      "name": "shore scene uses a state-appropriate illustration",
+      "passed": true
+    },
+    {
+      "name": "classroom scene uses a state-appropriate illustration",
+      "passed": true
+    },
+    {
+      "name": "station scene uses a state-appropriate illustration",
+      "passed": true
+    },
+    {
+      "name": "politics layer preserves D4",
+      "passed": true
+    },
+    {
+      "name": "politics layer has all five labelled bands",
+      "passed": true
+    },
+    {
+      "name": "economy layer preserves D4",
+      "passed": true
+    },
+    {
+      "name": "economy layer has all five labelled bands",
+      "passed": true
+    },
+    {
+      "name": "science layer preserves D4",
+      "passed": true
+    },
+    {
+      "name": "science layer has all five labelled bands",
+      "passed": true
+    },
+    {
+      "name": "religion layer preserves D4",
+      "passed": true
+    },
+    {
+      "name": "religion layer has all five labelled bands",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 320",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 320 with 200% text",
+      "passed": true
+    },
+    {
+      "name": "No browser errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

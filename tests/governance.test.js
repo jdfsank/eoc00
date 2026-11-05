@@ -1,13 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  COVERAGE_RULES, FLOOD_REGIONS, EVIDENCE, createRun, getActors, lockTask,
+  COVERAGE_RULES, FLOOD_REGIONS, createRun, getActors,
   passTask, commitWindow, advanceYear, advanceToNextWindow, getWarningCoverage,
   getEnding, randomFor, validateState,
 } from '../src/simulation.js';
 import { restoreSave } from '../src/save.js';
 
-const evidence = Object.keys(EVIDENCE);
+import { investigateAndLock as lockTask } from './helpers/play.js';
 const rounded = n => Math.round(n * 10000) / 10000;
 function seedFor(kind, success = true) {
   const threshold = { merchant: .85, state: .8, joint: .7 }[kind];
@@ -17,7 +17,7 @@ function seedFor(kind, success = true) {
   throw new Error('No matching deterministic seed');
 }
 function submit(s, action, location = 'D4', actor = 'protagonist') {
-  if (action) lockTask(s, actor, location, action, evidence);
+  if (action) lockTask(s, actor, location, action);
   for (const a of getActors(s)) if (!s.drafts[a.id]) passTask(s, a.id);
   commitWindow(s);
 }
@@ -136,7 +136,10 @@ test('south-bank aid reduces only D5 direct crisis loss and must have an active 
 
 test('independent review still averts all modeled harm and veto retains strong mitigation', () => {
   for (const [action, expected, status] of [['independent_review', 0, 'averted'], ['local_veto', .3, 'contained']]) {
-    const s = noBuildAt20(); toImpact(s, action, 'B4');
+    const s = action === 'independent_review'
+      ? decade(decade(createRun(), 'preserve_records', 'B4'), 'fund_school', 'E4')
+      : noBuildAt20();
+    toImpact(s, action, 'B4');
     assert.equal(s.flags.crisis.status, status);
     for (const id of FLOOD_REGIONS) assert.equal(s.flags.crisis.damageByCell[id], expected);
     assertValid(s);
@@ -194,7 +197,7 @@ test('legacy post-impact saves retain absent detail rather than inventing past c
 
 test('new crisis details and annual state are deterministic under reverse traversal and reload', () => {
   const a = built('joint'); decade(a, 'recruit_successor');
-  lockTask(a, 'linche', 'D5', 'mutual_aid', evidence); submit(a, 'free_warning');
+  lockTask(a, 'linche', 'D5', 'mutual_aid'); submit(a, 'free_warning');
   const b = restoreSave(JSON.parse(JSON.stringify({ state: a }))).state;
   b.cells.reverse();
   while (a.year < 30) { advanceYear(a); advanceYear(b, { reverse: true }); }

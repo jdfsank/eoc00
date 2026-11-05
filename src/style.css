@@ -7,3 +7,8 @@
 .world-entry .primary{margin-top:0;min-height:52px}
 @media(max-width:700px){.world-entry{padding:10px 12px;margin-bottom:12px}.world-entry .primary{font-size:1rem}}
 .large-text .world-entry{padding:8px 12px}
+
+.commit-costs{margin:28px 0}.commit-costs article{padding:16px 0;border-bottom:1px solid var(--line)}.commit-costs h3{color:var(--gold)}.cost-line{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:8px 0}.cost-line strong{font-weight:400;font-variant-numeric:tabular-nums}.cost-line.insufficient{color:var(--politics)}.commit-issues{border-color:var(--politics)}.commit-issues h2,.commit-warnings h2{font-size:1.125rem}.commit-issues li,.commit-warnings li{margin:12px 0}.commit-issues ul,.commit-warnings ul{padding-left:20px}
+
+/* Shared five-band scale also remains legible without color and at 200% text. */
+.heat-legend{display:flex;flex-wrap:wrap;gap:.35rem .65rem;padding:.6rem .85rem 0;color:var(--muted);font-size:.65rem;line-height:1.4}.heat-legend span{display:inline-flex;align-items:center;gap:.25rem;white-space:nowrap}.heat-legend i{display:inline-block;width:1.2em;height:.75em;border:1px solid #b6c7ac66}.institution-status{padding:.45rem .65rem;border-left:3px solid var(--gold);background:#213a34;font-size:.85rem;line-height:1.5}

@@ -1,11 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createRun, lockTask, passTask, commitWindow, advanceYear, advanceToNextWindow, validateState } from '../src/simulation.js';
+import { createRun, investigate, getInvestigation, passTask, commitWindow, advanceYear, advanceToNextWindow, validateState } from '../src/simulation.js';
 import { createUi, normalizeUi, restoreSave } from '../src/save.js';
+
+import { investigateAndLock as lockTask } from './helpers/play.js';
 
 const original = () => ({ state: createRun(0), ui: createUi() });
 test('valid save preserves world, seed zero, selection and investigation progress', () => {
   const saved = original();
+  investigate(saved.state, 'protagonist', 'D4', 'independent_flood_records');
   Object.assign(saved.ui, { screen: 'avg', selected: 'D4', bigText: true, sessions: { '0:protagonist:D4': { evidence: ['independent_flood_records'], budget: 2 } } });
   const before = JSON.stringify(saved);
   const restored = restoreSave(saved);
@@ -24,7 +27,8 @@ test('all render-sensitive UI fields are allowlisted rather than merged', () => 
   assert.deepEqual(ui, createUi());
 });
 test('session normalization rejects malformed keys and bounds evidence and budget', () => {
-  const ui = normalizeUi(createRun(), { sessions: {
+  const legacy = createRun(); delete legacy.planningRulesVersion; delete legacy.investigations;
+  const ui = normalizeUi(legacy, { sessions: {
     '0:protagonist:D4': { evidence: ['independent_flood_records', 'independent_flood_records', null, '__proto__', 'unfunded_maintenance', 'resident_testimony', 'successor_consent'], budget: 99 },
     '0:protagonist:B4': { evidence: null, budget: -1 },
     '0:protagonist:E4': null,
@@ -90,4 +94,23 @@ test('other malformed runtime structures fail validation without throwing', () =
     state => { state.flags.crisis = {}; },
   ];
   for (const corrupt of corruptions) { const state = createRun(); corrupt(state); assert.equal(validateState(state).valid, false); }
+});
+
+test('new saves restore authoritative investigation even with missing or forged UI sessions', () => {
+  const state = createRun(0);
+  investigate(state, 'protagonist', 'D4', 'independent_flood_records');
+  investigate(state, 'protagonist', 'B4', 'resident_testimony');
+  const before = structuredClone(state);
+  for (const ui of [undefined, null, { sessions: { '0:protagonist:D4': { evidence: ['unfunded_maintenance'], budget: 3 } } }]) {
+    const restored = restoreSave({ state: structuredClone(state), ui });
+    assert.deepEqual(restored.state, before);
+    assert.deepEqual(getInvestigation(restored.state, 'protagonist', 'D4'), { evidence: ['independent_flood_records'], budget: 1 });
+    assert.deepEqual(getInvestigation(restored.state, 'protagonist', 'B4'), { evidence: ['independent_flood_records', 'resident_testimony'], budget: 1 });
+    assert.deepEqual(getInvestigation(restored.state, 'protagonist', 'E4'), { evidence: ['independent_flood_records'], budget: 1 });
+  }
+  const restoredUi = normalizeUi(state, { sessions: { '0:protagonist:D4': { evidence: ['unfunded_maintenance'], budget: 3 } } });
+  assert.deepEqual(restoredUi.sessions, {
+    '0:protagonist:D4': { evidence: ['independent_flood_records'], budget: 1 },
+    '0:protagonist:B4': { evidence: ['independent_flood_records', 'resident_testimony'], budget: 1 },
+  });
 });
