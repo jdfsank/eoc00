@@ -1,0 +1,262 @@
+{
+  "scope": "Real Chromium 390×844 and320×568/200%. Free parallel building terms and locked snapshot; true legacy save; seed5 B4 failure/F6 success with zero23 settlement; later32 review preserves raw historical text and adds a sourced correction. No simulation or score changes.",
+  "checks": [
+    {
+      "name": "current/build_merchant: every common condition is visible before spending",
+      "passed": true
+    },
+    {
+      "name": "current/build_merchant: actual probability and paid or public terms remain distinct",
+      "passed": true
+    },
+    {
+      "name": "current/build_merchant: free terms do not mutate world, investigations or drafts",
+      "passed": true
+    },
+    {
+      "name": "current/build_merchant: missing real evidence still prevents locking",
+      "passed": true
+    },
+    {
+      "name": "current/build_merchant: expanded assumptions remain read-only and do not import coverage into old rules",
+      "passed": true
+    },
+    {
+      "name": "current/build_merchant: locked whole-window card carries the same contract",
+      "passed": true
+    },
+    {
+      "name": "current/build_merchant: refresh preserves frozen lock and contract",
+      "passed": true
+    },
+    {
+      "name": "current/build_state: every common condition is visible before spending",
+      "passed": true
+    },
+    {
+      "name": "current/build_state: actual probability and paid or public terms remain distinct",
+      "passed": true
+    },
+    {
+      "name": "current/build_state: free terms do not mutate world, investigations or drafts",
+      "passed": true
+    },
+    {
+      "name": "current/build_state: missing real evidence still prevents locking",
+      "passed": true
+    },
+    {
+      "name": "current/build_state: expanded assumptions remain read-only and do not import coverage into old rules",
+      "passed": true
+    },
+    {
+      "name": "current/build_state: locked whole-window card carries the same contract",
+      "passed": true
+    },
+    {
+      "name": "current/build_state: refresh preserves frozen lock and contract",
+      "passed": true
+    },
+    {
+      "name": "current/build_joint: every common condition is visible before spending",
+      "passed": true
+    },
+    {
+      "name": "current/build_joint: actual probability and paid or public terms remain distinct",
+      "passed": true
+    },
+    {
+      "name": "current/build_joint: free terms do not mutate world, investigations or drafts",
+      "passed": true
+    },
+    {
+      "name": "current/build_joint: missing real evidence still prevents locking",
+      "passed": true
+    },
+    {
+      "name": "current/build_joint: expanded assumptions remain read-only and do not import coverage into old rules",
+      "passed": true
+    },
+    {
+      "name": "current/build_joint: locked whole-window card carries the same contract",
+      "passed": true
+    },
+    {
+      "name": "current/build_joint: refresh preserves frozen lock and contract",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_merchant: every common condition is visible before spending",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_merchant: actual probability and paid or public terms remain distinct",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_merchant: free terms do not mutate world, investigations or drafts",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_merchant: missing real evidence still prevents locking",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_merchant: expanded assumptions remain read-only and do not import coverage into old rules",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_merchant: locked whole-window card carries the same contract",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_merchant: refresh preserves frozen lock and contract",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_state: every common condition is visible before spending",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_state: actual probability and paid or public terms remain distinct",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_state: free terms do not mutate world, investigations or drafts",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_state: missing real evidence still prevents locking",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_state: expanded assumptions remain read-only and do not import coverage into old rules",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_state: locked whole-window card carries the same contract",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_state: refresh preserves frozen lock and contract",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_joint: every common condition is visible before spending",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_joint: actual probability and paid or public terms remain distinct",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_joint: free terms do not mutate world, investigations or drafts",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_joint: missing real evidence still prevents locking",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_joint: expanded assumptions remain read-only and do not import coverage into old rules",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_joint: locked whole-window card carries the same contract",
+      "passed": true
+    },
+    {
+      "name": "true-legacy/build_joint: refresh preserves frozen lock and contract",
+      "passed": true
+    },
+    {
+      "name": "Natural seed5 has local B4 failure but F6 success and frozen global zero",
+      "passed": true
+    },
+    {
+      "name": "30-year B4 story preserves local failure without inventing global loss",
+      "passed": true
+    },
+    {
+      "name": "Actual recovery document distinguishes zero from local failure",
+      "passed": true
+    },
+    {
+      "name": "Actual32 recovery succeeds without revising23 or original failure",
+      "passed": true
+    },
+    {
+      "name": "Original late generic text stays intact but is qualified beside zero settlement",
+      "passed": true
+    },
+    {
+      "name": "Correction links include real23 tally and successful F6 response, never itself",
+      "passed": true
+    },
+    {
+      "name": "Actual correction source opens real settlement without changing history",
+      "passed": true
+    },
+    {
+      "name": "40-year review recap retains zero and both local outcomes",
+      "passed": true
+    },
+    {
+      "name": "Ending offers separate real B4 and F6 read-only visits",
+      "passed": true
+    },
+    {
+      "name": "B4 read-only visit survives refresh without touching the world",
+      "passed": true
+    },
+    {
+      "name": "loss: fixture is valid",
+      "passed": true
+    },
+    {
+      "name": "loss: local failure annotation follows actual global evidence",
+      "passed": true
+    },
+    {
+      "name": "unknown: fixture is valid",
+      "passed": true
+    },
+    {
+      "name": "unknown: local failure annotation follows actual global evidence",
+      "passed": true
+    },
+    {
+      "name": "Missing impact does not fabricate a source link",
+      "passed": true
+    },
+    {
+      "name": "320px200percent full building terms do not overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200percent actual keyboard continues to lock review",
+      "passed": true
+    },
+    {
+      "name": "320px200percent source button receives visible unobstructed keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200percent Enter follows the real source",
+      "passed": true
+    },
+    {
+      "name": "No browser, asset or HMR errors",
+      "passed": true
+    },
+    {
+      "name": "Runtime remained frozen throughout browser checks",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "runtimeHash": {
+    "before": "a1c4c4f6c91094a1a83416ccd9d98f9926657fcc7fa0d39768db1e3b7e8a07d0",
+    "after": "a1c4c4f6c91094a1a83416ccd9d98f9926657fcc7fa0d39768db1e3b7e8a07d0"
+  }
+}

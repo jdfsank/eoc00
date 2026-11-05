@@ -574,6 +574,10 @@
       "passed": true
     },
     {
+      "name": "390px paid/control exact native RGBA and actual display geometry agree",
+      "passed": true
+    },
+    {
       "name": "390px paid/opened: access shapes remain distinct in grayscale",
       "passed": true
     },
@@ -1246,6 +1250,10 @@
       "passed": true
     },
     {
+      "name": "320px paid/control exact native RGBA and actual display geometry agree",
+      "passed": true
+    },
+    {
       "name": "320px paid/opened: access shapes remain distinct in grayscale",
       "passed": true
     },
@@ -1346,6 +1354,22 @@
       "passed": true
     },
     {
+      "name": "Wrong actual artwork is rejected by exact decoded pixels despite unchanged labels and size",
+      "passed": true
+    },
+    {
+      "name": "Restored actual artwork returns to exact native RGBA",
+      "passed": true
+    },
+    {
+      "name": "Wrong image-rendering is rejected despite unchanged actual native RGBA and world",
+      "passed": true
+    },
+    {
+      "name": "Restored actual style and every native pixel match the normal UI",
+      "passed": true
+    },
+    {
       "name": "Actual lock retains the fee gate and does not claim public access",
       "passed": true
     },
@@ -1387,8 +1411,674 @@
     }
   ],
   "errors": [],
+  "imageSamples": {
+    "320": {
+      "paid": {
+        "rgba": "ea6233c2109070c36a896451f38d2839e89785a5865db63ad7d33120ab8f7dd7",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "opened": {
+        "rgba": "74c3505491da54ee07904945ffbbd2df849176331d75fb40d36bd42054a769b1",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "control": {
+        "rgba": "ea6233c2109070c36a896451f38d2839e89785a5865db63ad7d33120ab8f7dd7",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "check-pending": {
+        "rgba": "3fa420c436a9a23d3a55c0e6df7cf6da576a56670b927ef810a756de776928b2",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-pending.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "recovered": {
+        "rgba": "17fbb7f8f19475f5ff9bba6b625e0f0a710fb7b41f10f7338bc5430e04c4ea8c",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-recovered.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-pending": {
+        "rgba": "573eb32a7bd978b827724b16f4d2947bf4423cee0b6f7d349900877a5dd90190",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-pending.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-recovered": {
+        "rgba": "331d56b0bdfaa168f22797d41cda4b0a25a9a721856adb9b5970d38da6557c4f",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-recovered.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "stopped-fee": {
+        "rgba": "c98e8984c3668fc1659387149f9218452841ea7a806e4eebf13133da76a1c93d",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-closed-fee-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "stopped-public": {
+        "rgba": "89821467ed825b2ad36e79b9e292fe5d0fc2077ebb0920b08d78d76d904a0cdb",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-closed-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "check-closed-fee": {
+        "rgba": "3d9f1c14b481892e5a99e2e71080e7378fb317c7252748418108e28dd9e20355",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-closed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "check-closed-public": {
+        "rgba": "54f58bd9e3f835ac1d0156fd5c780e128fb9049ee1cd723ee7e06b3b48eb55b8",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-closed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 447.546875,
+          "width": 286,
+          "height": 150
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      }
+    },
+    "390": {
+      "paid": {
+        "rgba": "ea6233c2109070c36a896451f38d2839e89785a5865db63ad7d33120ab8f7dd7",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "opened": {
+        "rgba": "74c3505491da54ee07904945ffbbd2df849176331d75fb40d36bd42054a769b1",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "control": {
+        "rgba": "ea6233c2109070c36a896451f38d2839e89785a5865db63ad7d33120ab8f7dd7",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "check-pending": {
+        "rgba": "3fa420c436a9a23d3a55c0e6df7cf6da576a56670b927ef810a756de776928b2",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-pending.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "recovered": {
+        "rgba": "17fbb7f8f19475f5ff9bba6b625e0f0a710fb7b41f10f7338bc5430e04c4ea8c",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-recovered.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-pending": {
+        "rgba": "573eb32a7bd978b827724b16f4d2947bf4423cee0b6f7d349900877a5dd90190",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-pending.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-recovered": {
+        "rgba": "331d56b0bdfaa168f22797d41cda4b0a25a9a721856adb9b5970d38da6557c4f",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-recovered.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "stopped-fee": {
+        "rgba": "c98e8984c3668fc1659387149f9218452841ea7a806e4eebf13133da76a1c93d",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-closed-fee-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "stopped-public": {
+        "rgba": "89821467ed825b2ad36e79b9e292fe5d0fc2077ebb0920b08d78d76d904a0cdb",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-closed-verified.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "check-closed-fee": {
+        "rgba": "3d9f1c14b481892e5a99e2e71080e7378fb317c7252748418108e28dd9e20355",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-fee-closed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "check-closed-public": {
+        "rgba": "54f58bd9e3f835ac1d0156fd5c780e128fb9049ee1cd723ee7e06b3b48eb55b8",
+        "src": "http://127.0.0.1:4209/assets/far-port-branch-closed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "rect": {
+          "x": 17,
+          "y": 449.953125,
+          "width": 356,
+          "height": 178
+        },
+        "scrollY": 0,
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      }
+    }
+  },
   "runtimeHash": {
-    "before": "4e0a582ce25a5259f76dbc2cd0cd5e63cf17ce46833dc44e38b2de0f351b0eab",
-    "after": "4e0a582ce25a5259f76dbc2cd0cd5e63cf17ce46833dc44e38b2de0f351b0eab"
+    "before": "a1c4c4f6c91094a1a83416ccd9d98f9926657fcc7fa0d39768db1e3b7e8a07d0",
+    "after": "a1c4c4f6c91094a1a83416ccd9d98f9926657fcc7fa0d39768db1e3b7e8a07d0"
   }
 }

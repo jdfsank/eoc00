@@ -1,3 +1,4 @@
+import {monasteryVisual} from './monastery-visuals.js';
 import {getInstitutionStaffing} from './simulation.js';
 import {farPortVisual} from './far-port-visuals.js';
 import {southBankVisual} from './south-bank-visuals.js';
@@ -36,6 +37,7 @@ function currentSceneArt(state, cellId, { ending = false } = {}) {
       return {file:`river-warning-${condition}.svg`,alt:`D4河港档案室的书架、旧账册与记录桌仍保留，不表示原档案岗位恢复。${detail}这里没有测量塔或水尺，居民传讯不是测站或独立复核，也不表示所有家庭都已收到消息。`,caption:`场景示意 · ${condition==='stopped'?'居民钟报停运，原址与旧档保留':condition==='maintenance'?'居民钟报仍在运行，维护不足':'居民钟报运行中，旧档仍在'} · 非测站`,captionBelow:true};
     }
   }
+  if (cellId === 'B4') { const library=monasteryVisual(state); if(library) return {file:library.file,alt:library.alt,caption:`场景示意 · ${library.label}`,captionBelow:true}; }
   if (cellId === 'F6') { const port=farPortVisual(state); if(port) return {file:port.file,alt:port.alt,caption:`场景示意 · ${port.label}`,captionBelow:true}; }
   if (cellId === 'D5') {
     const south=southBankVisual(state);

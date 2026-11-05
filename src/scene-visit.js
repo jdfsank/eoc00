@@ -1,13 +1,21 @@
+import {monasteryVisual} from './monastery-visuals.js';
 import {sceneArt} from './scene-art.js';
 import {farPortVisual} from './far-port-visuals.js';
 
 // A separate read-only view, not an AVG action or a new investigation session.
-// The first supported site is F6. Its existing illustrations already distinguish
+// Supported sites B4 and F6 distinguish
 // a submitted order from a realised institution and retain earlier failures.
 export function getSceneVisit(state,cellId){
- if(cellId!=='F6'||!Number.isInteger(state?.year)||state.year<0||state.year>40
+ if(!['B4','F6'].includes(cellId)||!Number.isInteger(state?.year)||state.year<0||state.year>40
   ||!Array.isArray(state.cells)||!state.cells.some(c=>c.id===cellId)||!Array.isArray(state.institutions)
   ||!Array.isArray(state.events)||!Array.isArray(state.history))return null;
+ if(cellId==='B4'){
+  const library=monasteryVisual(state);if(!library)return null;
+  return {available:true,cellId,year:state.year,title:'B4 · 修会藏书院回访',
+   notice:'只读现场回访。这里不取证、不锁定或提交任务，也不推进年份。',
+   summary:[library.label,'既有藏书院、保档柜与复核台分别记述地点、保留方法和已核实结果；一种载体停管不会抹去其他载体。'],
+   art:sceneArt(state,cellId),sourceIds:library.sourceIds};
+ }
  const port=farPortVisual(state),summary=[];
  if(port){
   summary.push(port.label);

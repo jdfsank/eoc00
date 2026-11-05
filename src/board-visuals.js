@@ -1,3 +1,4 @@
+import {monasteryVisual} from './monastery-visuals.js';
 import {getInstitutionStaffing} from './simulation.js';
 import {farPortVisual} from './far-port-visuals.js';
 import {southBankVisual} from './south-bank-visuals.js';
@@ -30,6 +31,17 @@ const PRIORITY = ['station', 'branch', 'school', 'training', 'warning', 'mutual'
 // This is a view of existing simulation facts. It must not award warning
 // coverage, repair a station, or treat a failed review's records as success.
 export function institutionVisual(state, cellId) {
+  if (cellId === 'B4') {
+    const monastery=monasteryVisual(state);
+    if(monastery){
+      const {archive,review,failed}=monastery,exists=archive.exists||review.exists||failed.exists;
+      const halted=exists&&!archive.active&&!review.active&&!failed.active;
+      const maintenanceGap=archive.maintenanceGap||review.maintenanceGap||failed.maintenanceGap;
+      return {institutionId:null,kind:exists?'independent':'landmark',prop:monastery.prop,monastery,label:monastery.label,
+        halted,maintenanceGap,degraded:maintenanceGap,status:halted?'halted':maintenanceGap?'degraded':'operating',
+        staffingGap:false,restricted:false,recordsOnly:!review.active,unverified:failed.exists&&!review.active};
+    }
+  }
   const all = state.institutions.filter(item => item.cellId === cellId);
   if (!all.length) return null;
   const working = all.filter(item => item.active !== false && item.maintenance > 0);

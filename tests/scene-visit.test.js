@@ -14,9 +14,9 @@ function dates(){
 }
 function freeze(value){if(value&&typeof value==='object'){Object.freeze(value);for(const v of Object.values(value))freeze(v);}return value;}
 
-test('only the supported real F6 site is available; an unbuilt shore is not a station',()=>{
+test('supported F6 shore remains real while unrelated sites stay unavailable',()=>{
  const s=createRun(0),v=getSceneVisit(s,'F6');assert.equal(v.available,true);assert.equal(v.art.file,'open-shore.svg');assert.equal(v.sourceIds.length,0);assert.match(v.summary.join(''),/尚无可核实/);
- for(const cell of ['D4','E4','D5','B4','Z9',null])assert.equal(getSceneVisit(s,cell),null);
+ for(const cell of ['D4','E4','D5','Z9',null])assert.equal(getSceneVisit(s,cell),null);
  for(const year of [-1,41,1.5,null])assert.equal(getSceneVisit({...s,year},'F6'),null);
  assert.equal(getSceneVisit({...s,cells:[]},'F6'),null);assert.equal(getSceneVisit(null,'F6'),null);
 });

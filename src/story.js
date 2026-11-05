@@ -1,4 +1,5 @@
 import {getDecadeReview} from './decade-review.js';
+import {getReviewHistory} from './review-history.js';
 import {getFeeHistory} from './fee-history.js';
 import {getRelocationHistory} from './relocation-history.js';
 import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets } from './simulation.js';
@@ -123,7 +124,10 @@ export function sulanIdentity(state) {
 export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   const base = evidenceText[id];
   if (!base) return { title: id, text: '一份有关当地制度的材料。' };
-  if(id==='anomaly_records' && state.year>=30 && usesRecoveryRules(state) && getRecoverySource(state,cellId,{requireActive:false})) return {...base,title:'重读未完成的异源校验',text:'这份曲线曾在第23年冲击前被送来，却没有及时形成可靠结论。今天可以重新核对遗留记录，为今后的指令补上校验能力；原失败与已经发生的损失不能改写。是否有人在第32年真正读尺、整理记录，要以届时运转的测量或教学岗位为准。'};
+  if(id==='anomaly_records' && state.year>=30 && usesRecoveryRules(state) && getRecoverySource(state,cellId,{requireActive:false})) {
+    const review=getReviewHistory(state,null,cellId), failed=review?.localReviews.some(item=>item.status==='failed');
+    return {...base,title:'重读未完成的异源校验',text:(failed?'这份曲线曾在第23年冲击前被送来，却没有及时形成可靠结论。原失败仍保留，今天的核对只为今后的指令补上校验能力。':'遗留记录的来源仍需核对，不能把缺页补写成失败或成功。')+` ${review?.summary||'第23年的清点结果未知。'} 是否有人在第32年真正读尺、整理记录，要以届时运转的测量或教学岗位为准。`};
+  }
   if (id === 'old_reality_record' && actorId !== 'protagonist') {
     return { ...base, text: base.text + '这份材料由主角从亲历的旧现实中保存；对你而言，它是可查阅的他人见证，不是入局锚定后凭空获得的记忆。' };
   }
@@ -283,13 +287,14 @@ function locationScene(state, cell, actorId = 'protagonist') {
     ], question: '给学校一次机会，也意味着本窗口把有限的名额留在这里。' };
   }
   if(['B4','F6'].includes(cell) && state.year===30 && usesRecoveryRules(state) && getRecoverySource(state,cell)) {
-    const staff=getRecoveryWorkforce(state);
+    const staff=getRecoveryWorkforce(state), review=getReviewHistory(state,null,cell);
+    const failed=review?.localReviews.some(item=>item.status==='failed');
     return {...base,title:'没赶上的那份校验',speaker:cell==='F6'?'远港 · 记录保管员':'北岸 · 档案保管员',body:[
-      '没有及时完成的校验仍留在原来的纸页上。它没有被偷偷改成成功，记录旁也没有抹去第23年的损失。',
+      (failed?'没有及时完成的校验仍留在原来的纸页上。它没有被偷偷改成成功。':'遗留校验的来源仍需核对，不能把缺页补写成失败或成功。')+` ${review?.summary||'第23年的清点结果未知。'}`,
       '“迟到的核对，不能让那一年重来。”保管员把空白的轮值表放在旁边，“但下一份指令来到时，我们还可以让它经过另一双眼睛。”',
       staff.length?'已有测量或教学人手仍在运转。新的校验合同仍需支付经费、科学能力和一个名额；它不会替这些人取得交班授权，也不会替你签署方针。':'现在还没有可用的测量或教学人手。如果另一位介入员在本轮安排培训，第31年到位的人手可以参与第32年校验；两个名额用在这里，就不能同时签署交班方针。',
       ...(cell==='F6'&&usesPortAccessRules(state)&&getPortWarningTargets(state).length?['值班窗前仍有缴费名单。整理失败底稿与协商公开预警是不同的工作，同一角色在远港只能选其中一项；后来的开放也不会改写第23年。']:[]),
-      crisisRecollection(state),
+      review?.responses.filter(item=>item.actionId==='independent_review').map(item=>`第${item.year}年 · ${item.cellId}：${item.note}`).join(' ')||'本地复核与第23年全局清点分开核对；当前机构和后来恢复的产出不能填补旧档缺页。',
     ],question:'把未完成的工作接下去，也要承认它没有赶上过去。'};
   }
   if (cell === 'F6') {

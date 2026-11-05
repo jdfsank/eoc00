@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T15:19:27.632Z",
+  "generatedAt": "2026-11-05T18:01:13.103Z",
   "nodeVersion": "v24.22.1",
   "purpose": "Compare read-only year20 conditional projections with the same prototype model's actual year23 settlement.",
   "limits": [
@@ -31,6 +31,5 @@
     "fallback": 606
   },
   "failures": [],
-  "skippedCases": [],
-  "fullCases": "Run npm run test:outlook-matrix; full report is playtest-output/round6-outlook-matrix.json and is included in the CI artifact."
+  "skippedCases": []
 }

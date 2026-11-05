@@ -1,5 +1,5 @@
 {
-  "scope": "Actual file imports at320×568, direct and invalid→valid; real pointer targets, unchanged precommit world, exact year20 settlement, and200% keyboard/status readability. No injected CSS, forced click, retry, or toast-dismissal wait.",
+  "scope": "Actual file imports at320×568; paused-clock visible-input cases (including4500ms host delays), exact3500ms/replacement timer boundaries, and a fresh unmocked-clock expiry case. Real pointer and Tab+Enter targets; unchanged precommit world, exact year20 settlement, and200% status readability. No injected CSS, forced click, input retry, or production lifetime change.",
   "checks": [
     {
       "name": "direct import: original import status remains visible and readable",
@@ -69,63 +69,6 @@
       "passed": true
     },
     {
-      "name": "direct: pointerdown targets confirm, never the toast",
-      "passed": true,
-      "detail": {
-        "type": "pointerdown",
-        "screen": "choice",
-        "action": "confirm",
-        "id": null,
-        "targetClass": "primary",
-        "pointerType": "mouse",
-        "detail": 0,
-        "x": 160,
-        "y": 443.010009765625,
-        "toastVisible": true,
-        "toastRole": "status",
-        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-        "time": 1300
-      }
-    },
-    {
-      "name": "direct: pointerup targets confirm, never the toast",
-      "passed": true,
-      "detail": {
-        "type": "pointerup",
-        "screen": "choice",
-        "action": "confirm",
-        "id": null,
-        "targetClass": "primary",
-        "pointerType": "mouse",
-        "detail": 0,
-        "x": 160,
-        "y": 443.010009765625,
-        "toastVisible": true,
-        "toastRole": "status",
-        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-        "time": 1300.1999999955297
-      }
-    },
-    {
-      "name": "direct: click targets confirm, never the toast",
-      "passed": true,
-      "detail": {
-        "type": "click",
-        "screen": "choice",
-        "action": "confirm",
-        "id": null,
-        "targetClass": "primary",
-        "pointerType": "mouse",
-        "detail": 1,
-        "x": 160,
-        "y": 443,
-        "toastVisible": true,
-        "toastRole": "status",
-        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-        "time": 1300.1999999955297
-      }
-    },
-    {
       "name": "direct: locking only adds the expected draft without paying or settling",
       "passed": true
     },
@@ -139,6 +82,410 @@
     },
     {
       "name": "direct: archive halts at16 and recruit is available at20",
+      "passed": true
+    },
+    {
+      "name": "direct: every captured pointer/key event is trusted and has the same visible status",
+      "passed": true
+    },
+    {
+      "name": "direct: pointerdown targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 220.25999450683594,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerup targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 220.25999450683594,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: click targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 220,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerdown targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 283.67999267578125,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerup targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 283.67999267578125,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: click targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 283,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerdown targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerup targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: click targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 443,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerdown targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerup targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: click targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 443,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerdown targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 442.8699951171875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerup targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 442.8699951171875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: click targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 442,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerdown targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 259.32000732421875,
+        "y": 525.22998046875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: pointerup targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 259.32000732421875,
+        "y": 525.22998046875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: click targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 259,
+        "y": 525,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "direct: every input through the lock click sees the unchanged imported world",
       "passed": true
     },
     {
@@ -213,63 +560,6 @@
       "passed": true
     },
     {
-      "name": "invalid-then-valid: pointerdown targets confirm, never the toast",
-      "passed": true,
-      "detail": {
-        "type": "pointerdown",
-        "screen": "choice",
-        "action": "confirm",
-        "id": null,
-        "targetClass": "primary",
-        "pointerType": "mouse",
-        "detail": 0,
-        "x": 160,
-        "y": 443.010009765625,
-        "toastVisible": true,
-        "toastRole": "status",
-        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-        "time": 2249.39999999851
-      }
-    },
-    {
-      "name": "invalid-then-valid: pointerup targets confirm, never the toast",
-      "passed": true,
-      "detail": {
-        "type": "pointerup",
-        "screen": "choice",
-        "action": "confirm",
-        "id": null,
-        "targetClass": "primary",
-        "pointerType": "mouse",
-        "detail": 0,
-        "x": 160,
-        "y": 443.010009765625,
-        "toastVisible": true,
-        "toastRole": "status",
-        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-        "time": 2249.60000000149
-      }
-    },
-    {
-      "name": "invalid-then-valid: click targets confirm, never the toast",
-      "passed": true,
-      "detail": {
-        "type": "click",
-        "screen": "choice",
-        "action": "confirm",
-        "id": null,
-        "targetClass": "primary",
-        "pointerType": "mouse",
-        "detail": 1,
-        "x": 160,
-        "y": 443,
-        "toastVisible": true,
-        "toastRole": "status",
-        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-        "time": 2249.60000000149
-      }
-    },
-    {
       "name": "invalid-then-valid: locking only adds the expected draft without paying or settling",
       "passed": true
     },
@@ -283,6 +573,410 @@
     },
     {
       "name": "invalid-then-valid: archive halts at16 and recruit is available at20",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid: every captured pointer/key event is trusted and has the same visible status",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid: pointerdown targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 220.25999450683594,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerup targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 220.25999450683594,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: click targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 220,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerdown targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 283.67999267578125,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerup targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 283.67999267578125,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: click targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 283,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerdown targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerup targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: click targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 443,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerdown targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerup targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: click targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 443,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerdown targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 442.8699951171875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerup targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 442.8699951171875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: click targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 442,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerdown targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 259.32000732421875,
+        "y": 525.22998046875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerup targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 259.32000732421875,
+        "y": 525.22998046875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: click targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 259,
+        "y": 525,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "invalid-then-valid: every input through the lock click sees the unchanged imported world",
       "passed": true
     },
     {
@@ -307,11 +1001,11 @@
       "passed": true
     },
     {
-      "name": "320px200%: font setting and whole document stay within viewport",
+      "name": "keyboard-200: 320px200% font setting and whole document stay within viewport",
       "passed": true
     },
     {
-      "name": "200%: recruit_risk is reachable with Tab",
+      "name": "keyboard-200: recruit_risk is reachable with Tab",
       "passed": true
     },
     {
@@ -336,7 +1030,7 @@
       }
     },
     {
-      "name": "200%: confirm is reachable with Tab",
+      "name": "keyboard-200: confirm is reachable with Tab",
       "passed": true
     },
     {
@@ -365,11 +1059,7 @@
       "passed": true
     },
     {
-      "name": "200%: Enter activates confirm while status is visible",
-      "passed": true
-    },
-    {
-      "name": "200%: lock is reachable with Tab",
+      "name": "keyboard-200: lock is reachable with Tab",
       "passed": true
     },
     {
@@ -377,7 +1067,7 @@
       "passed": true
     },
     {
-      "name": "200%: commit is reachable with Tab",
+      "name": "keyboard-200: commit is reachable with Tab",
       "passed": true
     },
     {
@@ -385,7 +1075,7 @@
       "passed": true
     },
     {
-      "name": "200%: skip is reachable with Tab",
+      "name": "keyboard-200: skip is reachable with Tab",
       "passed": true
     },
     {
@@ -394,6 +1084,1420 @@
     },
     {
       "name": "keyboard-200: archive halts at16 and recruit is available at20",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: every captured pointer/key event is trusted and has the same visible status",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: pointerdown targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 495.30999755859375,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "keyboard-200: pointerup targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 495.30999755859375,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "keyboard-200: click targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 495,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "keyboard-200: real Enter targets choose once",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: real Enter targets confirm once",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: real Enter targets lock once",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: real Enter targets commit once",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: real Enter targets skip once",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: every input through the lock click sees the unchanged imported world",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: keyboard route uses real Tab events",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct import: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "delayed-direct: actual imported world is byte-identical",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct: host delay exceeds production lifetime while application clock stays paused",
+      "passed": true,
+      "detail": {
+        "mode": "delayed-direct",
+        "requestedHostMs": 4500,
+        "elapsedHostMs": 4500.696763,
+        "elapsedBrowserMs": 0
+      }
+    },
+    {
+      "name": "delayed-direct after host delay: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "delayed-direct: free preview preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct before confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "delayed-direct: first real confirm input reaches lock review",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct after confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "delayed-direct: confirmation still has no draft, cost, history or investigation side effect",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct: locking only adds the expected draft without paying or settling",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct: submit pays exactly once and records the expected event",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct: entire year20 world matches independent engine settlement",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct: archive halts at16 and recruit is available at20",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct: every captured pointer/key event is trusted and has the same visible status",
+      "passed": true
+    },
+    {
+      "name": "delayed-direct: pointerdown targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 220.25999450683594,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerup targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 220.25999450683594,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: click targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 220,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerdown targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 283.67999267578125,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerup targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 283.67999267578125,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: click targets choose once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "avg",
+        "action": "choose",
+        "id": "recruit_risk",
+        "targetClass": "",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 283,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerdown targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerup targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: click targets confirm once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 443,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerdown targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerup targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: click targets lock once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "confirm",
+        "action": "lock",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 443,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerdown targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 442.8699951171875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerup targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 442.8699951171875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: click targets commit once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "window",
+        "action": "commit",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 442,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerdown targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 259.32000732421875,
+        "y": 525.22998046875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: pointerup targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 259.32000732421875,
+        "y": 525.22998046875,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: click targets skip once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "playback",
+        "action": "skip",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 259,
+        "y": 525,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": false,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-direct: every input through the lock click sees the unchanged imported world",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200 import: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "delayed-keyboard-200: actual imported world is byte-identical",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: 320px200% font setting and whole document stay within viewport",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: host delay exceeds production lifetime while application clock stays paused",
+      "passed": true,
+      "detail": {
+        "mode": "delayed-keyboard-200",
+        "requestedHostMs": 4500,
+        "elapsedHostMs": 4499.9012299999995,
+        "elapsedBrowserMs": 0
+      }
+    },
+    {
+      "name": "delayed-keyboard-200 after host delay: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "delayed-keyboard-200: recruit_risk is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: free preview preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200 before confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "delayed-keyboard-200: confirm is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: first real confirm input reaches lock review",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200 after confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "delayed-keyboard-200: confirmation still has no draft, cost, history or investigation side effect",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: lock is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: locking only adds the expected draft without paying or settling",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: commit is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: submit pays exactly once and records the expected event",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: skip is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: entire year20 world matches independent engine settlement",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: archive halts at16 and recruit is available at20",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: every captured pointer/key event is trusted and has the same visible status",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: pointerdown targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 495.30999755859375,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-keyboard-200: pointerup targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 495.30999755859375,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-keyboard-200: click targets avg once, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "key": null,
+        "trusted": true,
+        "screen": "world",
+        "action": "avg",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 495,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "worldUnchanged": true,
+        "time": 60630
+      }
+    },
+    {
+      "name": "delayed-keyboard-200: real Enter targets choose once",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: real Enter targets confirm once",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: real Enter targets lock once",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: real Enter targets commit once",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: real Enter targets skip once",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: every input through the lock click sees the unchanged imported world",
+      "passed": true
+    },
+    {
+      "name": "delayed-keyboard-200: keyboard route uses real Tab events",
+      "passed": true
+    },
+    {
+      "name": "Controlled clock: prior import status expires at3500ms",
+      "passed": true
+    },
+    {
+      "name": "Controlled clock single import: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Controlled clock single import at3499ms: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Controlled clock: single import expires exactly at3500ms",
+      "passed": true
+    },
+    {
+      "name": "Controlled valid→valid replacement: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Controlled valid→valid survives old timer deadline: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Controlled valid→valid at replacement3499ms: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Controlled valid→valid replacement expires exactly at its own3500ms",
+      "passed": true
+    },
+    {
+      "name": "Controlled valid→valid lifecycle preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "Controlled invalid→valid replacement: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Controlled invalid→valid survives old timer deadline: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Controlled invalid→valid at replacement3499ms: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Controlled invalid→valid replacement expires exactly at its own3500ms",
+      "passed": true
+    },
+    {
+      "name": "Controlled invalid→valid lifecycle preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "Unmocked clock: browser observer saw the readable actual import status",
+      "passed": true,
+      "detail": {
+        "clock": "unmocked browser clock",
+        "observations": [
+          {
+            "kind": "shown",
+            "time": 816.2000000029802,
+            "screen": "world",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "removed",
+            "time": 4316.5,
+            "screen": "world",
+            "status": null
+          }
+        ],
+        "elapsedHostMs": 4518.326956000001,
+        "visibleMs": 3500.2999999970198
+      }
+    },
+    {
+      "name": "Unmocked clock: import status lasts3500ms before natural removal",
+      "passed": true,
+      "detail": {
+        "clock": "unmocked browser clock",
+        "observations": [
+          {
+            "kind": "shown",
+            "time": 816.2000000029802,
+            "screen": "world",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "removed",
+            "time": 4316.5,
+            "screen": "world",
+            "status": null
+          }
+        ],
+        "elapsedHostMs": 4518.326956000001,
+        "visibleMs": 3500.2999999970198
+      }
+    },
+    {
+      "name": "Unmocked clock: natural expiry preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "Unmocked after expiry: recruit_risk is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "Unmocked after expiry: confirm is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "Unmocked clock: delayed real Tab+Enter still reaches confirmation without world/autosave changes",
+      "passed": true
+    },
+    {
+      "name": "Unmocked clock: delayed confirm is trusted Enter after natural expiry, not a visible-toast claim",
+      "passed": true
+    },
+    {
+      "name": "Unmocked valid→valid: second file import replaces an actually visible status",
+      "passed": true,
+      "detail": {
+        "replacement": {
+          "requestedDelayMs": 1800,
+          "dispatchedAt": 2604.5,
+          "priorVisible": true,
+          "error": null
+        },
+        "observations": [
+          {
+            "kind": "shown",
+            "time": 793.6999999955297,
+            "screen": "world",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "shown",
+            "time": 2604.7999999970198,
+            "screen": "settings",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "shown",
+            "time": 2621.6999999955297,
+            "screen": "world",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "removed",
+            "time": 6121.89999999851,
+            "screen": "world",
+            "status": null
+          }
+        ],
+        "mode": "valid→valid",
+        "clock": "unmocked browser clock",
+        "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
+        "replacementVisibleMs": 3500.2000000029802
+      }
+    },
+    {
+      "name": "Unmocked valid→valid: old timeout does not shorten replacement3500ms lifetime",
+      "passed": true,
+      "detail": {
+        "replacement": {
+          "requestedDelayMs": 1800,
+          "dispatchedAt": 2604.5,
+          "priorVisible": true,
+          "error": null
+        },
+        "observations": [
+          {
+            "kind": "shown",
+            "time": 793.6999999955297,
+            "screen": "world",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "shown",
+            "time": 2604.7999999970198,
+            "screen": "settings",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "shown",
+            "time": 2621.6999999955297,
+            "screen": "world",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "removed",
+            "time": 6121.89999999851,
+            "screen": "world",
+            "status": null
+          }
+        ],
+        "mode": "valid→valid",
+        "clock": "unmocked browser clock",
+        "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
+        "replacementVisibleMs": 3500.2000000029802
+      }
+    },
+    {
+      "name": "Unmocked valid→valid: import and both timers preserve exact world/autosave",
+      "passed": true
+    },
+    {
+      "name": "Unmocked invalid→valid: second file import replaces an actually visible status",
+      "passed": true,
+      "detail": {
+        "replacement": {
+          "requestedDelayMs": 1800,
+          "dispatchedAt": 2635.2000000029802,
+          "priorVisible": true,
+          "error": null
+        },
+        "observations": [
+          {
+            "kind": "shown",
+            "time": 830,
+            "screen": "settings",
+            "status": {
+              "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 468,
+                "width": 288,
+                "height": 80
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "shown",
+            "time": 2635.5,
+            "screen": "settings",
+            "status": {
+              "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 468,
+                "width": 288,
+                "height": 80
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "shown",
+            "time": 2675,
+            "screen": "world",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "removed",
+            "time": 6175.30000000447,
+            "screen": "world",
+            "status": null
+          }
+        ],
+        "mode": "invalid→valid",
+        "clock": "unmocked browser clock",
+        "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
+        "replacementVisibleMs": 3500.3000000044703
+      }
+    },
+    {
+      "name": "Unmocked invalid→valid: old timeout does not shorten replacement3500ms lifetime",
+      "passed": true,
+      "detail": {
+        "replacement": {
+          "requestedDelayMs": 1800,
+          "dispatchedAt": 2635.2000000029802,
+          "priorVisible": true,
+          "error": null
+        },
+        "observations": [
+          {
+            "kind": "shown",
+            "time": 830,
+            "screen": "settings",
+            "status": {
+              "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 468,
+                "width": 288,
+                "height": 80
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "shown",
+            "time": 2635.5,
+            "screen": "settings",
+            "status": {
+              "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 468,
+                "width": 288,
+                "height": 80
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "shown",
+            "time": 2675,
+            "screen": "world",
+            "status": {
+              "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+              "role": "status",
+              "visible": true,
+              "rect": {
+                "x": 16,
+                "y": 228,
+                "width": 288,
+                "height": 320
+              },
+              "withinViewport": true,
+              "noTextOverflow": true
+            }
+          },
+          {
+            "kind": "removed",
+            "time": 6175.30000000447,
+            "screen": "world",
+            "status": null
+          }
+        ],
+        "mode": "invalid→valid",
+        "clock": "unmocked browser clock",
+        "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
+        "replacementVisibleMs": 3500.3000000044703
+      }
+    },
+    {
+      "name": "Unmocked invalid→valid: import and both timers preserve exact world/autosave",
       "passed": true
     },
     {
@@ -409,9 +2513,12 @@
   "pointerEvents": [
     {
       "mode": "direct",
+      "clock": "paused Playwright clock",
       "events": [
         {
           "type": "pointerdown",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -423,10 +2530,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1154.1000000014901
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerup",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -438,10 +2548,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1154.5
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -453,10 +2566,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1154.6000000014901
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerdown",
+          "key": null,
+          "trusted": true,
           "screen": "avg",
           "action": "choose",
           "id": "recruit_risk",
@@ -468,10 +2584,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1219.1999999955297
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerup",
+          "key": null,
+          "trusted": true,
           "screen": "avg",
           "action": "choose",
           "id": "recruit_risk",
@@ -483,10 +2602,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1219.5
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "avg",
           "action": "choose",
           "id": "recruit_risk",
@@ -498,10 +2620,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1219.5
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerdown",
+          "key": null,
+          "trusted": true,
           "screen": "choice",
           "action": "confirm",
           "id": null,
@@ -513,10 +2638,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1300
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerup",
+          "key": null,
+          "trusted": true,
           "screen": "choice",
           "action": "confirm",
           "id": null,
@@ -528,10 +2656,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1300.1999999955297
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "choice",
           "action": "confirm",
           "id": null,
@@ -543,15 +2674,181 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 1300.1999999955297
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 443,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 442.8699951171875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 442.8699951171875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 442,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 259.32000732421875,
+          "y": 525.22998046875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 259.32000732421875,
+          "y": 525.22998046875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 259,
+          "y": 525,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
         }
       ]
     },
     {
       "mode": "invalid-then-valid",
+      "clock": "paused Playwright clock",
       "events": [
         {
           "type": "pointerdown",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -563,10 +2860,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2154.6999999955297
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerup",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -578,10 +2878,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2155
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -593,10 +2896,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2155
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerdown",
+          "key": null,
+          "trusted": true,
           "screen": "avg",
           "action": "choose",
           "id": "recruit_risk",
@@ -608,10 +2914,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2199.6999999955297
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerup",
+          "key": null,
+          "trusted": true,
           "screen": "avg",
           "action": "choose",
           "id": "recruit_risk",
@@ -623,10 +2932,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2199.89999999851
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "avg",
           "action": "choose",
           "id": "recruit_risk",
@@ -638,10 +2950,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2200
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerdown",
+          "key": null,
+          "trusted": true,
           "screen": "choice",
           "action": "confirm",
           "id": null,
@@ -653,10 +2968,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2249.39999999851
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerup",
+          "key": null,
+          "trusted": true,
           "screen": "choice",
           "action": "confirm",
           "id": null,
@@ -668,10 +2986,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2249.60000000149
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "choice",
           "action": "confirm",
           "id": null,
@@ -683,15 +3004,181 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2249.60000000149
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 443,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 442.8699951171875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 442.8699951171875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 442,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 259.32000732421875,
+          "y": 525.22998046875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 259.32000732421875,
+          "y": 525.22998046875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 259,
+          "y": 525,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
         }
       ]
     },
     {
       "mode": "keyboard-200",
+      "clock": "paused Playwright clock",
       "events": [
         {
           "type": "pointerdown",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -703,10 +3190,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2751.6999999955297
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "pointerup",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -718,10 +3208,13 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2752
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "world",
           "action": "avg",
           "id": null,
@@ -733,10 +3226,189 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2752.10000000149
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_successor",
+          "targetClass": "choice-card needs-evidence",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_successor",
+          "targetClass": "choice-card needs-evidence",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "avg",
           "action": "choose",
           "id": "recruit_risk",
@@ -748,10 +3420,77 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2784.1999999955297
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "choice",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "choice",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
         },
         {
           "type": "click",
+          "key": null,
+          "trusted": true,
           "screen": "choice",
           "action": "confirm",
           "id": null,
@@ -763,13 +3502,1901 @@
           "toastVisible": true,
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
-          "time": 2820.60000000149
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "confirm",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "confirm",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "window",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "window",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "window",
+          "action": "unlock",
+          "id": null,
+          "targetClass": "secondary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "window",
+          "action": "unlock",
+          "id": null,
+          "targetClass": "secondary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "playback",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "auto",
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "auto",
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "step",
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "step",
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "review",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        }
+      ]
+    },
+    {
+      "mode": "delayed-direct",
+      "clock": "paused Playwright clock",
+      "events": [
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 220.25999450683594,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 220.25999450683594,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 220,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 283.67999267578125,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 283.67999267578125,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 283,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 443,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 443,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 442.8699951171875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 442.8699951171875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 442,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 259.32000732421875,
+          "y": 525.22998046875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 259.32000732421875,
+          "y": 525.22998046875,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 259,
+          "y": 525,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        }
+      ]
+    },
+    {
+      "mode": "delayed-keyboard-200",
+      "clock": "paused Playwright clock",
+      "events": [
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 495.30999755859375,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 495.30999755859375,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 495,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_successor",
+          "targetClass": "choice-card needs-evidence",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_successor",
+          "targetClass": "choice-card needs-evidence",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "choice",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "choice",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "confirm",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "confirm",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "confirm",
+          "action": "lock",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": true,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "window",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "window",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "window",
+          "action": "unlock",
+          "id": null,
+          "targetClass": "secondary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "window",
+          "action": "unlock",
+          "id": null,
+          "targetClass": "secondary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "window",
+          "action": "commit",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "playback",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "auto",
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "auto",
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "step",
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "step",
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "playback",
+          "action": "skip",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "review",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "worldUnchanged": false,
+          "time": 60630
+        }
+      ]
+    },
+    {
+      "mode": "unmocked-after-expiry",
+      "clock": "unmocked browser clock",
+      "events": [
+        {
+          "type": "pointerdown",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 495.30999755859375,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5348.60000000149
+        },
+        {
+          "type": "pointerup",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 495.30999755859375,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5350.10000000149
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 495,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5351.39999999851
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5379.70000000298
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5382.60000000149
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5385.39999999851
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5387.79999999702
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5390.20000000298
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5392.39999999851
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5402.70000000298
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_successor",
+          "targetClass": "choice-card needs-evidence",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5405.79999999702
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_successor",
+          "targetClass": "choice-card needs-evidence",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5411.89999999851
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5414.79999999702
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5417
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5417.79999999702
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "choice",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5433.29999999702
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "choice",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5438.70000000298
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5440.70000000298
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5444.20000000298
+        },
+        {
+          "type": "click",
+          "key": null,
+          "trusted": true,
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5445.10000000149
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "trusted": true,
+          "screen": "confirm",
+          "action": null,
+          "id": null,
+          "targetClass": "",
+          "pointerType": null,
+          "detail": 0,
+          "toastVisible": false,
+          "worldUnchanged": true,
+          "time": 5452.39999999851
         }
       ]
     }
   ],
+  "hostDelays": [
+    {
+      "mode": "delayed-direct",
+      "requestedHostMs": 4500,
+      "elapsedHostMs": 4500.696763,
+      "elapsedBrowserMs": 0
+    },
+    {
+      "mode": "delayed-keyboard-200",
+      "requestedHostMs": 4500,
+      "elapsedHostMs": 4499.9012299999995,
+      "elapsedBrowserMs": 0
+    }
+  ],
+  "ordinaryExpiry": {
+    "clock": "unmocked browser clock",
+    "observations": [
+      {
+        "kind": "shown",
+        "time": 816.2000000029802,
+        "screen": "world",
+        "status": {
+          "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "role": "status",
+          "visible": true,
+          "rect": {
+            "x": 16,
+            "y": 228,
+            "width": 288,
+            "height": 320
+          },
+          "withinViewport": true,
+          "noTextOverflow": true
+        }
+      },
+      {
+        "kind": "removed",
+        "time": 4316.5,
+        "screen": "world",
+        "status": null
+      }
+    ],
+    "elapsedHostMs": 4518.326956000001,
+    "visibleMs": 3500.2999999970198
+  },
+  "unmockedReplacements": [
+    {
+      "replacement": {
+        "requestedDelayMs": 1800,
+        "dispatchedAt": 2604.5,
+        "priorVisible": true,
+        "error": null
+      },
+      "observations": [
+        {
+          "kind": "shown",
+          "time": 793.6999999955297,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 228,
+              "width": 288,
+              "height": 320
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        },
+        {
+          "kind": "shown",
+          "time": 2604.7999999970198,
+          "screen": "settings",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 228,
+              "width": 288,
+              "height": 320
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        },
+        {
+          "kind": "shown",
+          "time": 2621.6999999955297,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 228,
+              "width": 288,
+              "height": 320
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        },
+        {
+          "kind": "removed",
+          "time": 6121.89999999851,
+          "screen": "world",
+          "status": null
+        }
+      ],
+      "mode": "valid→valid",
+      "clock": "unmocked browser clock",
+      "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
+      "replacementVisibleMs": 3500.2000000029802
+    },
+    {
+      "replacement": {
+        "requestedDelayMs": 1800,
+        "dispatchedAt": 2635.2000000029802,
+        "priorVisible": true,
+        "error": null
+      },
+      "observations": [
+        {
+          "kind": "shown",
+          "time": 830,
+          "screen": "settings",
+          "status": {
+            "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 468,
+              "width": 288,
+              "height": 80
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        },
+        {
+          "kind": "shown",
+          "time": 2635.5,
+          "screen": "settings",
+          "status": {
+            "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 468,
+              "width": 288,
+              "height": 80
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        },
+        {
+          "kind": "shown",
+          "time": 2675,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 228,
+              "width": 288,
+              "height": 320
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        },
+        {
+          "kind": "removed",
+          "time": 6175.30000000447,
+          "screen": "world",
+          "status": null
+        }
+      ],
+      "mode": "invalid→valid",
+      "clock": "unmocked browser clock",
+      "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
+      "replacementVisibleMs": 3500.3000000044703
+    }
+  ],
   "runtimeHash": {
-    "before": "4e0a582ce25a5259f76dbc2cd0cd5e63cf17ce46833dc44e38b2de0f351b0eab",
-    "after": "4e0a582ce25a5259f76dbc2cd0cd5e63cf17ce46833dc44e38b2de0f351b0eab"
+    "before": "a1c4c4f6c91094a1a83416ccd9d98f9926657fcc7fa0d39768db1e3b7e8a07d0",
+    "after": "a1c4c4f6c91094a1a83416ccd9d98f9926657fcc7fa0d39768db1e3b7e8a07d0"
   }
 }

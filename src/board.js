@@ -1,3 +1,4 @@
+import {MONASTERY_ASSETS} from './monastery-visuals.js';
 import {FAR_PORT_ASSETS} from './far-port-visuals.js';
 import Phaser from 'phaser';
 import {SOUTH_BANK_ASSETS} from './south-bank-visuals.js';
@@ -92,7 +93,7 @@ export function makeBoard(parent,onSelect,initialView=null){
  let center=initialView&&Number.isFinite(initialView.centerX)&&Number.isFinite(initialView.centerY)?{x:initialView.centerX,y:initialView.centerY}:null;
  const rememberCenter=()=>{if(scene){const camera=scene.cameras.main;center={x:camera.scrollX+camera.width/2,y:camera.scrollY+camera.height/2};}return center;};
  class World extends Phaser.Scene{
-  preload(){ for(const name of ['agent','archive','assembly_hall','observatory','temple','tree','warehouse','water_station','riverside_school','bank_reading_circle',...SOUTH_BANK_ASSETS,...FAR_PORT_ASSETS]) this.load.image(name,`${import.meta.env.BASE_URL}assets/props/${name}.png`); }
+  preload(){ for(const name of ['agent','archive','assembly_hall','observatory','temple','tree','warehouse','water_station','riverside_school','bank_reading_circle',...SOUTH_BANK_ASSETS,...FAR_PORT_ASSETS,...MONASTERY_ASSETS]) this.load.image(name,`${import.meta.env.BASE_URL}assets/props/${name}.png`); }
   create(){ scene=this; this.layer=this.add.container(0,0); this.input.on('pointerdown',p=>{drag={x:p.x,y:p.y,cx:this.cameras.main.scrollX,cy:this.cameras.main.scrollY};});
    this.input.on('pointermove',p=>{if(p.isDown&&drag&&focus){this.cameras.main.scrollX=drag.cx-(p.x-drag.x)/this.cameras.main.zoom;this.cameras.main.scrollY=drag.cy-(p.y-drag.y)/this.cameras.main.zoom;rememberCenter();}});
    this.input.on('pointerup',p=>{if(!drag)return;const moved=Math.hypot(p.x-drag.x,p.y-drag.y);drag=null;if(moved<8){const w=this.cameras.main.getWorldPoint(p.x,p.y);const id=hitTile(w.x,w.y);if(id)onSelect(id);}});
@@ -112,8 +113,8 @@ export function makeBoard(parent,onSelect,initialView=null){
    const chosen=state.cells.find(c=>c.id===selected),anchor=chosen?project(chosen.col,chosen.row):null;
    for(const c of cells){const p=project(c.col,c.row),visual=institutionVisual(state,c.id),prop=visual?.prop||c.prop;
     const obscures=focus&&anchor&&c.id!==selected&&p.y>anchor.y&&Math.abs(p.x-anchor.x)<56&&p.y-54<anchor.y+8;
-    if(prop&&this.textures.exists(prop)){const spr=this.add.image(p.x,p.y,prop).setOrigin(.5,.8).setDisplaySize(64,80);this.layer.add(spr);if(!visual?.compound&&!visual?.farPort&&visual?.halted)spr.setTint(0x7d8981);else if(!visual?.compound&&!visual?.farPort&&visual?.maintenanceGap)spr.setTint(0xc3b394);if(obscures)spr.setAlpha(.35);}
-    if(visual&&!visual.compound&&!visual.farPort)drawInstitutionTrace(this,this.layer,p,visual).setAlpha(obscures?.35:1);
+    if(prop&&this.textures.exists(prop)){const spr=this.add.image(p.x,p.y,prop).setOrigin(.5,.8).setDisplaySize(64,80);this.layer.add(spr);if(!visual?.compound&&!visual?.farPort&&!visual?.monastery&&visual?.halted)spr.setTint(0x7d8981);else if(!visual?.compound&&!visual?.farPort&&!visual?.monastery&&visual?.maintenanceGap)spr.setTint(0xc3b394);if(obscures)spr.setAlpha(.35);}
+    if(visual&&!visual.compound&&!visual.farPort&&!visual.monastery)drawInstitutionTrace(this,this.layer,p,visual).setAlpha(obscures?.35:1);
     if(visual?.compound)drawSouthBankUpkeep(this,this.layer,p,visual.compound).setAlpha(obscures?.35:1);
     if(visual?.farPort)drawFarPortUpkeep(this,this.layer,p,visual.farPort).setAlpha(obscures?.35:1);
    }

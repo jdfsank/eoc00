@@ -241,9 +241,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 214,
+      "waitedMs": 346,
       "samples": 3,
-      "bytes": 26482
+      "bytes": 26458
     },
     {
       "width": 356,
@@ -254,9 +254,9 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 136,
+      "waitedMs": 154,
       "samples": 3,
-      "bytes": 29450
+      "bytes": 29418
     },
     {
       "width": 356,
@@ -267,9 +267,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 128,
+      "waitedMs": 132,
       "samples": 3,
-      "bytes": 28234
+      "bytes": 28598
     },
     {
       "width": 356,
@@ -278,50 +278,50 @@
         "focus": true,
         "centerX": 256,
         "centerY": 152,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 145,
+      "samples": 3,
+      "bytes": 31598
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 141,
+      "samples": 3,
+      "bytes": 30982
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 126,
+      "samples": 3,
+      "bytes": 25354
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
         "zoom": 1.5344827586206897
       },
       "waitedMs": 119,
       "samples": 3,
-      "bytes": 31214
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 256,
-        "centerY": 152,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 121,
-      "samples": 3,
-      "bytes": 30598
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 122,
-      "samples": 3,
-      "bytes": 25782
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 135,
-      "samples": 3,
-      "bytes": 26334
+      "bytes": 26314
     },
     {
       "width": 356,
@@ -332,9 +332,9 @@
         "centerY": 136,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 138,
+      "waitedMs": 149,
       "samples": 3,
-      "bytes": 32430
+      "bytes": 32418
     },
     {
       "width": 356,
@@ -345,9 +345,9 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 147,
+      "waitedMs": 135,
       "samples": 3,
-      "bytes": 32126
+      "bytes": 32106
     },
     {
       "width": 356,
@@ -358,9 +358,74 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 119,
+      "waitedMs": 174,
       "samples": 3,
-      "bytes": 26482
+      "bytes": 26458
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 121,
+      "samples": 3,
+      "bytes": 21634
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 129,
+      "samples": 3,
+      "bytes": 24090
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 125,
+      "samples": 3,
+      "bytes": 23414
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 121,
+      "samples": 3,
+      "bytes": 25818
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 106,
+      "samples": 3,
+      "bytes": 25322
     },
     {
       "width": 286,
@@ -373,20 +438,7 @@
       },
       "waitedMs": 142,
       "samples": 3,
-      "bytes": 21638
-    },
-    {
-      "width": 286,
-      "height": 210,
-      "view": {
-        "focus": true,
-        "centerX": 256,
-        "centerY": 152,
-        "zoom": 1.2327586206896552
-      },
-      "waitedMs": 137,
-      "samples": 3,
-      "bytes": 24094
+      "bytes": 20806
     },
     {
       "width": 286,
@@ -397,61 +449,9 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 139,
+      "waitedMs": 123,
       "samples": 3,
-      "bytes": 23094
-    },
-    {
-      "width": 286,
-      "height": 210,
-      "view": {
-        "focus": true,
-        "centerX": 256,
-        "centerY": 152,
-        "zoom": 1.2327586206896552
-      },
-      "waitedMs": 128,
-      "samples": 3,
-      "bytes": 25554
-    },
-    {
-      "width": 286,
-      "height": 210,
-      "view": {
-        "focus": true,
-        "centerX": 256,
-        "centerY": 152,
-        "zoom": 1.2327586206896552
-      },
-      "waitedMs": 147,
-      "samples": 3,
-      "bytes": 25050
-    },
-    {
-      "width": 286,
-      "height": 210,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.2327586206896552
-      },
-      "waitedMs": 121,
-      "samples": 3,
-      "bytes": 21130
-    },
-    {
-      "width": 286,
-      "height": 210,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.2327586206896552
-      },
-      "waitedMs": 133,
-      "samples": 3,
-      "bytes": 21558
+      "bytes": 21562
     },
     {
       "width": 286,
@@ -462,7 +462,7 @@
         "centerY": 136,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 141,
+      "waitedMs": 150,
       "samples": 3,
       "bytes": 26302
     },
@@ -475,9 +475,9 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 145,
+      "waitedMs": 138,
       "samples": 3,
-      "bytes": 26502
+      "bytes": 26510
     },
     {
       "width": 286,
@@ -488,9 +488,9 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 202,
+      "waitedMs": 119,
       "samples": 3,
-      "bytes": 21638
+      "bytes": 21634
     },
     {
       "width": 356,
@@ -501,9 +501,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 125,
+      "waitedMs": 123,
       "samples": 3,
-      "bytes": 26282
+      "bytes": 26258
     },
     {
       "width": 356,
@@ -514,9 +514,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 144,
+      "waitedMs": 128,
       "samples": 3,
-      "bytes": 26282
+      "bytes": 26258
     },
     {
       "width": 356,
@@ -527,9 +527,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 135,
+      "waitedMs": 189,
       "samples": 3,
-      "bytes": 24546
+      "bytes": 24538
     },
     {
       "width": 356,
@@ -540,9 +540,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 617,
+      "waitedMs": 818,
       "samples": 3,
-      "bytes": 26282
+      "bytes": 26258
     },
     {
       "width": 356,
@@ -553,9 +553,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 145,
+      "waitedMs": 138,
       "samples": 3,
-      "bytes": 26282
+      "bytes": 26258
     },
     {
       "width": 356,
@@ -566,9 +566,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 130,
+      "waitedMs": 119,
       "samples": 3,
-      "bytes": 26282
+      "bytes": 26258
     },
     {
       "width": 356,
@@ -579,17 +579,17 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 135,
+      "waitedMs": 147,
       "samples": 3,
-      "bytes": 26282
+      "bytes": 26258
     }
   ],
   "relockDiagnostic": {
     "assetDelay": 180,
     "pixelMatch": true,
     "cellsMatch": true,
-    "firstBytes": 26282,
-    "relockBytes": 26282,
+    "firstBytes": 26258,
+    "relockBytes": 26258,
     "firstLayout": {
       "width": 356,
       "height": 250,

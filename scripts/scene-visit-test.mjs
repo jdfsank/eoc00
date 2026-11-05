@@ -78,7 +78,7 @@ try{
  await page.reload();await section().waitFor();check('Refreshing current visit preserves read-only screen, exact year and state',await page.evaluate(()=>window.afterwave.ui.screen)==='visit'&&await state()===JSON.stringify(y32));
  await click('settings');await page.locator('#import-save').setInputFiles({name:'f6-current-visit.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({state:y40,ui:{screen:'visit',selected:'F6'}}))});await page.locator('.toast').waitFor({state:'detached'});
  check('Import safely returns to world without changing40-year facts',await page.evaluate(()=>window.afterwave.ui.screen)==='world'&&await state()===JSON.stringify(y40));await enter();await contents(y40,'Imported year40');
- await show(y40,false,'D4');await page.locator('[data-primary-action]').click();await page.locator('.ending [data-action="visit"]').click();
+ await show(y40,false,'D4');await page.locator('[data-primary-action]').click();await page.locator('.ending [data-action="visit"][data-cell="F6"]').click();
  check('Ending can explicitly visit F6 even when the prior selection was D4',await page.evaluate(()=>window.afterwave.ui.selected)==='F6'&&await section().count()===1&&await state()===JSON.stringify(y40));
  await click('home');await page.waitForFunction(()=>window.afterwave.mapView);
  const returnedView=await stableView();check('Cross-region ending visit resets focus to the selected F6 instead of old D4',returnedView.focus===true&&Math.abs(returnedView.centerX-288)<=1&&Math.abs(returnedView.centerY-200)<=1,returnedView);
@@ -101,10 +101,10 @@ try{
   const beforeVisit=await state();await enter();check(`Actual year${year} visit follows committed timing only`,await page.evaluate(()=>window.afterwave.state.year)===year&&(await section().locator('.scene-art img').getAttribute('src')).endsWith(year<32?'far-port-branch-pending.svg':'far-port-branch-recovered.svg'));
   check(`Actual year${year} revisit does not alter source outcomes or investigations`,await state()===beforeVisit);await click('home');
  }
- await click('playback');await click('skip');await click('home');await click('ending');await page.locator('.ending [data-action="visit"]').click();
+ await click('playback');await click('skip');await click('home');await click('ending');await page.locator('.ending [data-action="visit"][data-cell="F6"]').click();
  check('Actual year40 ending leads to fulfilled on-site history, not a fabricated AVG',await page.evaluate(()=>window.afterwave.state.year)===40&&(await section().locator('.scene-art img').getAttribute('src')).endsWith('far-port-branch-recovered.svg')&&!await section().locator('[data-action="evidence"],[data-action="lock"]').count());
  check('All actual visits retain original failure and frozen crisis',frozen===await page.evaluate(()=>JSON.stringify({crisis:window.afterwave.state.flags.crisis,failure:window.afterwave.state.events.find(e=>e.actionId==='independent_review')})));
- await show(y40,false,'B4');check('Unsupported B4 does not acquire a fictional local visit',!await page.locator('.selection-card [data-action="visit"]').count());
+ await show(y40,false,'E4');check('Unsupported E4 does not acquire a fictional local visit',!await page.locator('.selection-card [data-action="visit"]').count());
  // A valid old/imported state may reuse a history ID in the event queue.
  // traceEvent indexes events last. Keep the data and import compatibility,
  // but never advertise a link that would resolve to a future/other-place row.

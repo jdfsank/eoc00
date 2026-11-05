@@ -23,7 +23,7 @@ test('both actual actors have non-color-distinct intent chips at B4 and D5',()=>
 });
 test('conflicting same-place drafts remain separate intents, without inventing a joint action',()=>{
  const s=at20();investigateAndLock(s,'protagonist','B4','local_veto');investigateAndLock(s,'linche','B4','local_veto');
- assert.equal(mapActivity(s,'B4').length,2);assert.equal(institutionVisual(s,'B4'),null);
+ assert.equal(mapActivity(s,'B4').length,2);assert.equal(institutionVisual(s,'B4').kind,'landmark');assert.equal(institutionVisual(s,'B4').prop,'monastery_none_none');assert.equal(institutionVisual(s,'B4').monastery.archive.exists,false);assert.equal(institutionVisual(s,'B4').monastery.review.exists,false);
 });
 test('commit replaces intent chips with waits at all places; real annual outcomes remove them',()=>{
  const s=pair();commitWindow(s);assert.equal(validateState(s).valid,true);
@@ -31,7 +31,7 @@ test('commit replaces intent chips with waits at all places; real annual outcome
  assert.ok(mapActivity(s).every(a=>a.actorId===undefined));assert.equal(institutionVisual(s,'D5'),null);
  advanceYear(s);assert.deepEqual(mapActivity(s).map(a=>a.cellId),['B4']);assert.equal(institutionVisual(s,'D5').kind,'mutual');
  advanceYear(s);assert.deepEqual(mapActivity(s),[]);assert.equal(institutionVisual(s,'B4').kind,'independent');
- assert.equal(s.events.find(e=>e.cellId==='B4').status,'failed');assert.match(institutionVisual(s,'B4').label,/校验尚未成功/);assert.ok(!s.flags.review);
+ assert.equal(s.events.find(e=>e.cellId==='B4').status,'failed');assert.match(institutionVisual(s,'B4').label,/第22年复核失败底稿保留/);assert.equal(institutionVisual(s,'B4').monastery.review.exists,false);assert.equal(institutionVisual(s,'B4').monastery.stage,'failed');assert.ok(!s.flags.review);
 });
 test('descendant training waits do not pretend the original actor is stationed there',()=>{
  const s=createRun(0);investigateAndLock(s,'protagonist','D4','build_joint');commitWindow(s);
