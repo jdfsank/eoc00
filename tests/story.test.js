@@ -69,7 +69,8 @@ test('no-build options and evidence describe a proposed service instead of unpai
   assert.match(evidenceFor(state, 'resident_testimony').text, /还没有持续运转/);
   assert.doesNotMatch(evidenceFor(state, 'resident_testimony').text, /居民感谢/);
   decade(state);
-  assert.match(evidenceFor(state, 'successor_consent').title, /培训与接班/);
+  assert.match(evidenceFor(state, 'successor_consent').title, /是否有岗位/);
+  assert.match(evidenceFor(state, 'successor_consent').text, /没有正在运转/);
   assert.doesNotMatch(evidenceFor(state, 'successor_consent').text, /学徒苏岚同意接班/);
   decade(state);
   const warning = getActions(state, 'D4').find(action => action.id === 'free_warning');
@@ -115,7 +116,7 @@ test('Linche reads the protagonist’s R0 witness instead of inheriting personal
 
 test('companion perspective preserves no-build, failed-build and stopped-station branches', () => {
   for (const [build, seed, expected] of [[null, 12, /没有属于她的测站管理岗位/], ['build_joint', 6, /没有正在运转的水文站/], ['build_joint', 12, /测站的门关着/]]) {
-    const state = createRun(seed); decade(state, build); decade(state, 'recruit_risk');
+    const state = createRun(seed); decade(state, build); decade(state, build ? 'recruit_risk' : 'recruit_volunteer');
     const scene = sceneFor(state, 'D4', 'linche');
     assert.match(scene.body.join(''), expected);
     assert.match(scene.body.join(''), /不是你的亲历记忆/);

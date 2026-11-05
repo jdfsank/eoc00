@@ -1,4 +1,4 @@
-import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals } from './simulation.js';
+import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, fulfilledEvent, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture } from './simulation.js';
 
 export const chapters = {
   0: {
@@ -46,6 +46,7 @@ export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
     return { ...base, text: opening + '“只要第一声钟能响到这里，之后我们愿意一起修。”当地合作并不等于无限负担。' };
   }
   if (id === 'successor_consent') {
+    if (!getRecruitmentRoles(state).length) return { ...base, title: '确认是否有岗位需要交接', text: '河港没有正在运转的测站或档案岗位。苏岚没有因此被指定接班，林澈的同行意愿与当地未来的建设是两件事。若要另行建设或培训，需要另外作出安排。' };
     const trained = state.institutions.some(i => i.kind === 'training');
     return { ...base, title: trained ? '与学徒商量继任' : '与苏岚商量培训与接班',
       text: (trained ? '苏岚带着已经完成的读尺记录来商量接班。' : '这里没有原培训链培养的接班人。苏岚愿意先接受培训，再承担明确的工作。') + '她要求正式薪资、公开记录和拒绝不安全指令的权利。“我不是她的替身，我要有自己的签名。”' };
@@ -87,6 +88,7 @@ function riverportScene(state, base, chapter, actorId) {
   if (chapter === 10) return {
     ...base,
     title: !station ? '没有建成的十年，也要有人接住' : base.title,
+    question: usesRecruitmentRules(state) && !getRecruitmentRoles(state).length ? '邀请她同行，或把这一次介入留给地方建设？没有岗位，不等于没有机会成本。' : base.question,
     body: [
       training
         ? '第一批学徒已经会独自读水尺。林澈翻着东岸送回的练习记录，问下一轮该由谁带教。'
@@ -95,10 +97,10 @@ function riverportScene(state, base, chapter, actorId) {
         : failedBuild
           ? '建站协议没能兑现，小型档案站保住了零散的记录。没有最初的测站，也没有随它出发的学徒。林澈把未完成的名单放回桌上。'
           : '过去十年，没有河港测站投入运转，也没有从这里出发的培训链。林澈仍在整理旧水尺和地方记录。',
-      '“我愿意去看看你说的那些年代。”她停顿了一下，“但如果我的离开，只是把没有做完的工作留给下一个人，这不叫自由。”',
+      !getRecruitmentRoles(state).length ? '“我愿意去看看你说的那些年代。”林澈把入局条件读完，“这里没有一个现成岗位需要我交给苏岚。请把邀请我同行，和替地方建起什么，分别写清楚。”' : '“我愿意去看看你说的那些年代。”她停顿了一下，“但如果我的离开，只是把没有做完的工作留给下一个人，这不叫自由。”',
       operatingStation
         ? '续约会占用你的十年名额。去东岸资助学校，也许能培养更多维护者；请她入局，则必须面对原岗位的空缺。'
-        : '现在可以重建地方测站，或另行资助东岸的夜校。重建不会补回错过的培训链；请林澈入局，也不能代替当地建设。',
+        : getRecruitmentRoles(state).length ? '小型档案站也是一份正在进行的工作。招募林澈仍要决定谁来接班；重建测站或资助夜校，则占用另一项本轮选择。' : '现在可以邀请林澈自愿同行，或把本轮名额用于重建测站、地方保档与东岸夜校。同行不会补出机构，也没有虚构的岗位需要减产停运。',
     ],
   };
   if (chapter === 20) {
@@ -183,4 +185,71 @@ export function sceneFor(state, cell, actorId = 'protagonist') {
     ], question: '这个地方的能力也会进入每一年的历史。' };
   }
   return { ...base, title: cell === 'D5' ? '把第一声钟传到岸边' : '不应消失的底稿', speaker: cell === 'D5' ? '南岸 · 居民代表' : '北岸 · 档案保管员', body: cell === 'D5' ? ['南岸没有高大的观测塔，只有一口大家轮流敲的钟。', '居民愿意组成互助队，却不愿再被要求承担无穷的免费劳动。培训和经费必须与责任一起到来。'] : ['有些纸页没有被抄进正式报告。它们不是正确答案，却记录着一种不同的判断。', '保存旧档不能让过去重新生效，但可以在所有人相信同一个数字时，提醒他们再看一眼。'], question: '这个地方的能力也会进入每一年的历史。' };
+}
+
+
+// Read-only personal coda: it never edits ending scores, old contracts or history.
+export function characterEpilogue(state) {
+  if (state.year < 40 || state.phase !== 'ended') return [];
+  const recordId = e => e ? `resolved:${e.id}` : null;
+  const recruit = fulfilledEvent(state, RECRUITMENT_ACTIONS);
+  const roles = recruitmentRolesAtDeparture(state, recruit);
+  const warning = fulfilledEvent(state, 'free_warning');
+  const renewal = fulfilledEvent(state, 'renew_charter');
+  const respect = fulfilledEvent(state, 'present_archive');
+  const forced = fulfilledEvent(state, 'relocate_teacher');
+  const linche = [], lincheSources = [];
+  if (!recruit) {
+    linche.push(renewal ? `第${renewal.resolvedYear}年的章程留下林澈愿意带教的记录，她没有在这份历史中完成入局。留下来的选择，也不等于一份没有期限的劳动承诺。` : '这份档案没有林澈完成入局的记录。最后一册报告没有替她补写一段未曾作出的承诺，也不把未同行当成背弃。');
+    if (renewal) lincheSources.push(recordId(renewal));
+  } else {
+    lincheSources.push(recordId(recruit));
+    if (!roles.length) linche.push(`第${recruit.resolvedYear}年，林澈自愿入局；当时没有运转中的河港测站或档案岗位需要交接。同行是真实的选择，却没有一个不存在的空岗可以归咎于她。`);
+    if (!roles.length && recruit.actionId === 'recruit_successor') linche.push('旧合同记录了继任安排，但那时没有运转中的岗位。承诺本身仍在，不能据此补写苏岚已经管理了一座测站。');
+    if (!roles.length && recruit.actionId === 'recruit_risk') linche.push('旧合同列过减产与停运的风险，却没有对应的在岗载体。没有实际停运记录，就不把空缺算成她造成的损失。');
+    if (roles.length && recruit.actionId === 'recruit_successor') linche.push(`第${recruit.resolvedYear}年，林澈在苏岚同意接班后离开。那份签名解决了谁来值班，不是长期经费已经充足的证明。`);
+    else if (roles.length) linche.push(`第${recruit.resolvedYear}年，林澈入局时留下了尚未安排继任的${roles.some(i=>i.kind==='station')?'测站':'档案站'}岗位。她带走了自己的选择，也留下了一项没有完成的交接。`);
+    const stopped = state.history.filter(h => h.kind === 'maintenance' && /-unattended$/.test(h.id) && h.year >= recruit.resolvedYear && roles.some(i => i.sourceEventId === h.parentId));
+    if (stopped.length) {
+      linche.push(`第${stopped[0].year}年的停运告示仍在档案里。后来增加的产出或新的合作，没有把那段无人接班的时间删掉。`);
+      lincheSources.push(...stopped.map(h=>h.id));
+      if (warning) {
+        const station = roles.find(i=>i.kind==='station');
+        if (station) linche.push(`第${warning.resolvedYear}年，免费预警方案重新补足河港维护与接班安排。${station.active&&station.maintenance>0?'测站现在仍在运转，但恢复不等于从未停过。':'当前测站仍未有效运转，不能把那次修复承诺当作永久有效。'}`);
+        else {
+          const team = state.institutions.find(i=>i.kind==='warning'&&i.sourceEventId===warning.id);
+          linche.push(`第${warning.resolvedYear}年另行建立了居民传讯队，${team?.active&&team.maintenance>0?'如今仍在服务':'当前没有可确认的有效服务'}。它没有重新打开原来的档案站，旧岗位的中断不能被新机构冒名顶替。`);
+        }
+        lincheSources.push(recordId(warning));
+      }
+    }
+    const lapse = state.history.find(h=>h.id==='charter-lapsed' && roles.some(i=>i.sourceEventId===h.parentId));
+    if (lapse) { linche.push(`第${lapse.year}年，维护经费的缺口又变成收费门槛。${warning?'后来的免费预警曾重新处理这项负担，却没有让旧缺口消失。':'接班有人，并不代表当地已经获得公开、长期的支持。'}`); lincheSources.push(lapse.id); if(warning)lincheSources.push(recordId(warning)); }
+  }
+  const sulan = [], sulanSources = [];
+  let title = '末页仍留着她的选择';
+  if (forced) {
+    title = '调令没有替她签名';
+    sulan.push(`第${forced.resolvedYear}年，迁任命令把苏岚带到东岸，反对的证词也被留了下来。学校多了一个岗位，不证明她曾同意，也不能把强制改称为拯救。`);
+    if (respect) sulan.push('这份档案也有尊重她选择的记录。两份记录必须同时面对，不能拿一份同意去抹掉另一项强制决定。');
+    sulanSources.push(recordId(forced),recordId(respect));
+  } else if (respect) {
+    title = '她在这一版历史里的签名';
+    sulan.push(`第${respect.resolvedYear}年，旧现实履历被放到桌上，苏岚保留了决定今天生活的权利。她的证词成为合作依据，不是一张保证所有问题都已解决的收据。`);
+    sulanSources.push(recordId(respect));
+  } else if (warning) {
+    title = '河岸上的共同安排';
+    sulan.push(`第${warning.resolvedYear}年，苏岚与居民参与了免费预警和值班安排。这是当前现实里作出的合作，不是旧现实教师身份替她选好的生活。`);
+    sulanSources.push(recordId(warning));
+  } else if (recruit?.actionId === 'recruit_successor' && roles.length) {
+    sulan.push(`第${recruit.resolvedYear}年，她同意承担接班。档案没有继续记录她对旧现实履历或迁任的决定，末页不会替她签下一个未作出的选择。`);
+    sulanSources.push(recordId(recruit));
+  } else if (recruit?.actionId === 'recruit_successor') {
+    sulan.push(`第${recruit.resolvedYear}年的旧合同记录了苏岚的继任安排，但当时没有运转中的河港岗位可供交接。那份承诺不能被写成已经发生的任职，也没有替她决定此后的生活。`);
+    sulanSources.push(recordId(recruit));
+  } else sulan.push('档案没有可核实的继任、迁任或个人去向同意。没有选择记录，不等于她已经同意成为任何人的历史样本。');
+  return [
+    { name:'林澈', title:recruit?'同行之后，仍要面对留下的事':'未曾同行，也不是空白', paragraphs:linche, sources:[...new Set(lincheSources.filter(Boolean))] },
+    { name:'苏岚', title, paragraphs:sulan, sources:[...new Set(sulanSources.filter(Boolean))] },
+  ];
 }

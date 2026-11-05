@@ -12,3 +12,5 @@
 本轮新增原创`props/riverside_school.svg/.png`与`props/bank_reading_circle.svg/.png`，不是交接包素材。两者64×80逻辑尺寸、锚点32,64，透明RGBA PNG为128×160，可用`node scripts/render-learning-art.mjs`重复生成。`local-classroom.svg`改为露天敞棚，`bank-reading.svg`为南岸无顶围座，`closed-*`保留旧址但没有学员。
 
 本轮D4近景为原创代码绘制SVG，使用同一间记录室和测站轮廓表达运转、维护不足、人手缺口、停运；由`node scripts/render-station-art.mjs`生成。未建站与失败档案仍使用档案桌，恢复服务后才切回运转图。它们是状态示意，不是额外剧情事件或实际损失证据。
+
+本轮地图仍使用原建筑纹理；空班、维护修补、停运封板为原生几何状态标记，分别依实际原因绘制。新增验证包含单色截图、320/390宽度及同一Canvas原位恢复，未把调色误当新建筑素材。

@@ -14,7 +14,7 @@ test('explicit all-pass warns and stays a valid zero-cost choice',()=>{const s=c
 test('unprepared review and veto are complementary fallback rather than redundant protection',()=>{
   const s=createRun(12);
   passTask(s,'protagonist');commitWindow(s);advanceToNextWindow(s);
-  lockTask(s,'protagonist','D4','recruit_risk');commitWindow(s);advanceToNextWindow(s);
+  lockTask(s,'protagonist','D4','recruit_volunteer');commitWindow(s);advanceToNextWindow(s);
   lockTask(s,'protagonist','B4','independent_review');
   lockTask(s,'linche','F6','local_veto');
   const before=JSON.stringify(s),r=getWindowReview(s);
@@ -28,7 +28,7 @@ test('unprepared review and veto are complementary fallback rather than redundan
 test('two unprepared review attempts disclose separate determinations without stacking success',()=>{
   const s=createRun(12);
   passTask(s,'protagonist');commitWindow(s);advanceToNextWindow(s);
-  lockTask(s,'protagonist','D4','recruit_risk');commitWindow(s);advanceToNextWindow(s);
+  lockTask(s,'protagonist','D4','recruit_volunteer');commitWindow(s);advanceToNextWindow(s);
   lockTask(s,'protagonist','B4','independent_review');
   lockTask(s,'linche','F6','independent_review');
   const r=getWindowReview(s);

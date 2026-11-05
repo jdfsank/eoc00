@@ -55,3 +55,7 @@ Phaser 3负责地图和相机，DOM负责中文阅读与操作。`simulation.js`
 ### 同伴立场与晚期互助
 
 `aftermath-v1`使林澈的实际招募承诺约束亲自迁任的选项，主角仍可承担该后果；互助区分首次/扩容/重启和第23年前后的真实收益，不修改已结算危机。D4停运近景保留原址，恢复才重新亮灯。[详细假设与兼容边界](AFTERMATH_ASSUMPTIONS.md)。
+
+### 真实岗位与人物尾声
+
+`recruitment-v1`按实际在岗载体提供招募合同，并保存/核验离岗岗位快照。第40年新增只读`characterEpilogue`，核对事件、行动与兑现来源，不写回世界或旧结局。地图将`maintenanceGap`与`staffingGap`分离，分别控制屋顶修补与空班标记。[假设与证据](RECRUITMENT_ASSUMPTIONS.md)。

@@ -8,7 +8,7 @@ const submit = (s, api = sim) => { for (const a of api.getActors(s)) if (!s.draf
 const decade = s => { submit(s); sim.advanceToNextWindow(s); };
 function twoActors(seed = 12, records = false) {
   const s = sim.createRun(seed); if (records) lock(s, 'protagonist', 'B4', 'preserve_records'); decade(s);
-  lock(s, 'protagonist', 'D4', 'recruit_risk'); decade(s); return s;
+  lock(s, 'protagonist', 'D4', 'recruit_volunteer'); decade(s); return s;
 }
 function route(seed, action, records = false) {
   const s = twoActors(seed, records); lock(s, 'protagonist', 'F6', action); lock(s, 'linche', 'D4', 'free_warning'); decade(s);

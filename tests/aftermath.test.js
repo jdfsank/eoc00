@@ -46,7 +46,7 @@ function finish(api, state, script) {
   }
   return state;
 }
-function recruited({ recruitment = 'recruit_successor', build, seed = 0 } = {}, api = sim) {
+function recruited({ recruitment = 'recruit_successor', build = 'build_joint', seed = 0 } = {}, api = sim) {
   const state = api.createRun(seed);
   decade(api, state, build ? [['protagonist', 'D4', build]] : []);
   decade(api, state, [['protagonist', 'D4', recruitment]]);
@@ -81,9 +81,10 @@ test('new runs persist and validate their separate aftermath contract', () => {
   assert.throws(() => reload(bad), /角色与后续互助规则版本非法/);
 });
 
-for (const recruitment of ['recruit_successor', 'recruit_risk']) {
-  for (const { build, seed, label } of [
-    { seed: 0, label: 'no build' },
+for (const recruitment of ['recruit_successor', 'recruit_risk', 'recruit_volunteer']) {
+  for (const { build, seed, label } of recruitment === 'recruit_volunteer' ? [
+    { build: null, seed: 0, label: 'no build' },
+  ] : [
     { build: 'build_joint', seed: 0, label: 'successful build' },
     { build: 'build_joint', seed: 6, label: 'failed build' },
   ]) {
@@ -96,7 +97,8 @@ for (const recruitment of ['recruit_successor', 'recruit_risk']) {
       assert.equal(refusals[0].actionId, 'relocate_teacher');
       const event = state.events.find(e => e.actionId === recruitment);
       assert.equal(refusals[0].sourceEventId, event.id);
-      assert.match(refusals[0].reason, recruitment === 'recruit_successor' ? /苏岚同意接班|自己签名/ : /没有安排继任|岗位缺口/);
+      assert.match(refusals[0].reason, recruitment === 'recruit_successor' ? /苏岚同意接班|自己签名/ : recruitment === 'recruit_risk' ? /没有安排继任|岗位缺口/ : /没有运转中的.*岗位需要交接/);
+      if (recruitment === 'recruit_volunteer') assert.doesNotMatch(refusals[0].reason, /留下过一个岗位缺口|苏岚同意接班/);
       assert.ok(sim.getActions(state, 'D4', 'protagonist').some(a => a.id === 'relocate_teacher'));
       assert.deepEqual(sim.getActions(state, 'D4', 'linche').map(a => a.id), ['free_warning', 'present_archive']);
       for (const cellId of ['B4', 'F6', 'D5', 'E4']) {

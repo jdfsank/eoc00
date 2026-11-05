@@ -6,7 +6,7 @@ const report={rules:'tradeoffs-v1',seeds:'0–99',scope:'Deterministic regressio
 for(const [name,records,action,survey] of [['unprepared_review',false,'independent_review',false],['archive_review',true,'independent_review',false],['basic_veto',false,'local_veto',false],['surveyed_veto',false,'local_veto',true]]){
  const losses=[],endings={};
  for(let seed=0;seed<100;seed++){
-  const s=sim.createRun(seed);if(records)lock(s,'protagonist','B4','preserve_records');next(s);lock(s,'protagonist','D4','recruit_risk');next(s);
+  const s=sim.createRun(seed);if(records)lock(s,'protagonist','B4','preserve_records');next(s);lock(s,'protagonist','D4','recruit_volunteer');next(s);
   if(survey)sim.investigate(s,'protagonist','F6','evacuation_routes');lock(s,'protagonist','F6',action);lock(s,'linche','D4','free_warning');next(s);
   lock(s,'protagonist','D4','share_power');lock(s,'linche','E4','train_network');next(s);
   losses.push(s.flags.crisis.damage);const title=sim.getEnding(s).title;endings[title]=(endings[title]||0)+1;

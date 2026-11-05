@@ -21,7 +21,7 @@ try{
   const s=await import('/src/simulation.js');
   const lock=(state,actor,cell,id)=>{for(const e of s.getActions(state,cell,actor).find(a=>a.id===id).requireEvidence)s.investigate(state,actor,cell,e);s.lockTask(state,actor,cell,id);};
   const next=state=>{for(const a of s.getActors(state))if(!state.drafts[a.id])s.passTask(state,a.id);s.commitWindow(state);s.advanceToNextWindow(state);};
-  const bare=s.createRun(6);next(bare);lock(bare,'protagonist','D4','recruit_risk');next(bare);
+  const bare=s.createRun(6);next(bare);lock(bare,'protagonist','D4','recruit_volunteer');next(bare);
   const ready=s.createRun(6);lock(ready,'protagonist','B4','preserve_records');next(ready);lock(ready,'protagonist','E4','fund_school');next(ready);
   return {bare,ready};
  });

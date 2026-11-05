@@ -20,17 +20,19 @@ function drawInstitutionTrace(scene,layer,p,visual){
   if(visual.halted){
    detail.lineStyle(3,wood);detail.lineBetween(x-22,y-14,x-8,y-2);detail.lineBetween(x-22,y-2,x-8,y-14);
   }else if(visual.recordsOnly){
-   detail.lineStyle(2,ink);detail.lineBetween(x-19,y-11,x-10,y-11);detail.lineBetween(x-19,y-7,x-10,y-7);
+   detail.lineStyle(2,ink);detail.lineBetween(x-19,y-11,x-10,y-11);
+   if(visual.staffingGap){detail.lineStyle(1,ink);detail.strokeRect(x-19,y-7,10,3);}
+   else detail.lineBetween(x-19,y-7,x-10,y-7);
    if(visual.unverified){detail.fillStyle(amber);detail.fillTriangle(x-12,y-5,x-5,y-5,x-5,y+2);}
   }else{
    detail.fillStyle(ink);detail.fillRect(x-19,y-11,4,3);detail.fillRect(x-13,y-11,4,3);
-   if(!visual.degraded){detail.fillRect(x-19,y-6,4,3);detail.fillRect(x-13,y-6,4,3);}
+   if(!visual.staffingGap){detail.fillRect(x-19,y-6,4,3);detail.fillRect(x-13,y-6,4,3);}
    else {detail.lineStyle(1,ink);detail.strokeRect(x-19,y-6,10,3);}
   }
  }
- if(visual.degraded){
+ if(visual.maintenanceGap){
   const {x,y}=p;
-  // A roof patch plus an empty shift, not a complete building replacement.
+  // Physical maintenance alone adds a roof patch. Staffing uses the board.
   detail.fillStyle(wood);detail.fillPoints([{x:x-14,y:y-30},{x:x-5,y:y-34},{x:x+3,y:y-30},{x:x-6,y:y-26}],true);
   detail.lineStyle(1,ink);detail.lineBetween(x-9,y-31,x-1,y-28);
  }
@@ -69,7 +71,7 @@ export function makeBoard(parent,onSelect,initialView=null){
    const chosen=state.cells.find(c=>c.id===selected),anchor=chosen?project(chosen.col,chosen.row):null;
    for(const c of cells){const p=project(c.col,c.row),visual=institutionVisual(state,c.id),prop=visual?.prop||c.prop;
     const obscures=focus&&anchor&&c.id!==selected&&p.y>anchor.y&&Math.abs(p.x-anchor.x)<56&&p.y-54<anchor.y+8;
-    if(prop&&this.textures.exists(prop)){const spr=this.add.image(p.x,p.y,prop).setOrigin(.5,.8).setDisplaySize(64,80);this.layer.add(spr);if(visual?.halted)spr.setTint(0x7d8981);else if(visual?.degraded)spr.setTint(0xc3b394);if(obscures)spr.setAlpha(.35);}
+    if(prop&&this.textures.exists(prop)){const spr=this.add.image(p.x,p.y,prop).setOrigin(.5,.8).setDisplaySize(64,80);this.layer.add(spr);if(visual?.halted)spr.setTint(0x7d8981);else if(visual?.maintenanceGap)spr.setTint(0xc3b394);if(obscures)spr.setAlpha(.35);}
     if(visual)drawInstitutionTrace(this,this.layer,p,visual).setAlpha(obscures?.35:1);
     if((c.id==='D4'||c.id==='E4'||c.id==='F6')&&state.events.some(e=>e.cellId===c.id&&e.status==='pending')){this.layer.add(this.add.text(p.x+20,p.y-26,'◆',{fontSize:'14px',color:'#e0b65f'}));}
    }

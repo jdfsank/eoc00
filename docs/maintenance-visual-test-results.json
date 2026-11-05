@@ -1,0 +1,148 @@
+{
+  "checks": [
+    {
+      "name": "390px normal exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "390px staffing exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "390px both exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "390px stopped exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "390px restored exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "390px staffing leaves every pixel outside the empty duty slot unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px staffing has a visible shape change in its duty slot",
+      "passed": true
+    },
+    {
+      "name": "390px adding staffing to maintenance changes only the duty slot",
+      "passed": true
+    },
+    {
+      "name": "390px restoration exactly restores the normal map",
+      "passed": true
+    },
+    {
+      "name": "390px map has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px recovery reuses the existing canvas",
+      "passed": true
+    },
+    {
+      "name": "390px in-place recovery clears every obsolete mark",
+      "passed": true
+    },
+    {
+      "name": "320px normal exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "320px staffing exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "320px both exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "320px stopped exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "320px restored exposes the exact non-color status",
+      "passed": true
+    },
+    {
+      "name": "320px staffing leaves every pixel outside the empty duty slot unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px staffing has a visible shape change in its duty slot",
+      "passed": true
+    },
+    {
+      "name": "320px adding staffing to maintenance changes only the duty slot",
+      "passed": true
+    },
+    {
+      "name": "320px restoration exactly restores the normal map",
+      "passed": true
+    },
+    {
+      "name": "320px map has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px recovery reuses the existing canvas",
+      "passed": true
+    },
+    {
+      "name": "320px in-place recovery clears every obsolete mark",
+      "passed": true
+    },
+    {
+      "name": "390px / 200% both causes remain written out",
+      "passed": true
+    },
+    {
+      "name": "390px / 200% has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px layer and camera controls preserve the world",
+      "passed": true
+    },
+    {
+      "name": "390px layer and camera controls preserve both status causes",
+      "passed": true
+    },
+    {
+      "name": "320px / 200% both causes remain written out",
+      "passed": true
+    },
+    {
+      "name": "320px / 200% has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px layer and camera controls preserve the world",
+      "passed": true
+    },
+    {
+      "name": "320px layer and camera controls preserve both status causes",
+      "passed": true
+    },
+    {
+      "name": "No script or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "The six images use validated same-year field-boundary fixtures so only staffing, maintenance and operation differ. They are not six new authored gameplay branches. Monochrome views are visual checks, not accessibility certification."
+  ]
+}

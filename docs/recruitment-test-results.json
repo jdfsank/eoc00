@@ -1,0 +1,134 @@
+{
+  "scope": "Real Chromium,390×844 and320×568/200% text. Engine-generated branch fixtures; not device certification.",
+  "checks": [
+    {
+      "name": "empty has one factual recruitment choice",
+      "passed": true
+    },
+    {
+      "name": "empty scene does not invent a job for SuLan",
+      "passed": true
+    },
+    {
+      "name": "records has one factual recruitment choice",
+      "passed": true
+    },
+    {
+      "name": "records scene does not invent a job for SuLan",
+      "passed": true
+    },
+    {
+      "name": "Neutral contract preserves the low cost and next-window deployment",
+      "passed": true
+    },
+    {
+      "name": "Locking neutral recruitment does not spend or create a successor",
+      "passed": true
+    },
+    {
+      "name": "Submitted neutral recruitment has an empty truthful role snapshot",
+      "passed": true
+    },
+    {
+      "name": "Year11 recruitment is not an early second action",
+      "passed": true
+    },
+    {
+      "name": "Neutral recruitment has no fictional year16 shutdown or free institution",
+      "passed": true
+    },
+    {
+      "name": "Linche recalls neutral recruitment rather than an invented vacancy",
+      "passed": true
+    },
+    {
+      "name": "Neutral recruitment refusal links to its actual result",
+      "passed": true
+    },
+    {
+      "name": "Actual year40 neutral route has two personal endings",
+      "passed": true
+    },
+    {
+      "name": "repaired personal coda follows its real consequence",
+      "passed": true
+    },
+    {
+      "name": "repaired personal coda does not mutate the ending history",
+      "passed": true
+    },
+    {
+      "name": "repaired personal coda source link reaches actual history",
+      "passed": true
+    },
+    {
+      "name": "archive personal coda follows its real consequence",
+      "passed": true
+    },
+    {
+      "name": "archive personal coda does not mutate the ending history",
+      "passed": true
+    },
+    {
+      "name": "archive personal coda source link reaches actual history",
+      "passed": true
+    },
+    {
+      "name": "successor personal coda follows its real consequence",
+      "passed": true
+    },
+    {
+      "name": "successor personal coda does not mutate the ending history",
+      "passed": true
+    },
+    {
+      "name": "successor personal coda source link reaches actual history",
+      "passed": true
+    },
+    {
+      "name": "forced personal coda follows its real consequence",
+      "passed": true
+    },
+    {
+      "name": "forced personal coda does not mutate the ending history",
+      "passed": true
+    },
+    {
+      "name": "forced personal coda source link reaches actual history",
+      "passed": true
+    },
+    {
+      "name": "respected personal coda follows its real consequence",
+      "passed": true
+    },
+    {
+      "name": "respected personal coda does not mutate the ending history",
+      "passed": true
+    },
+    {
+      "name": "respected personal coda source link reaches actual history",
+      "passed": true
+    },
+    {
+      "name": "True f9 prior save retains both issued recruitment alternatives",
+      "passed": true
+    },
+    {
+      "name": "True f9 old low-cost contract continues without silent migration",
+      "passed": true
+    },
+    {
+      "name": "Personal coda stays within320 at200% text",
+      "passed": true
+    },
+    {
+      "name": "Last personal-source button is reachable at320px200%",
+      "passed": true
+    },
+    {
+      "name": "No runtime or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

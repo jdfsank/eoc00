@@ -44,11 +44,46 @@ test('numeric maintenance .7 gives a repair trace and a separate access barrier'
 test('missing successor has an empty duty slot, then a retained closed station', () => {
   const state = built(); investigateAndLock(state, 'protagonist', 'D4', 'recruit_risk'); commitWindow(state); advanceYear(state);
   assert.equal(institutionVisual(state, 'D4').staffingGap, true);
+  assert.equal(institutionVisual(state, 'D4').maintenanceGap, false);
+  assert.equal(institutionVisual(state, 'D4').degraded, false);
+  assert.equal(institutionVisual(state, 'D4').status, 'understaffed');
   advanceToNextWindow(state);
   const before = structuredClone(state), visual = institutionVisual(state, 'D4');
   assert.equal(visual.status, 'halted'); assert.equal(visual.prop, 'water_station');
   assert.match(visual.label, /停运/); assert.deepEqual(state, before);
   assert.equal(institutionVisual(state, 'F6').status, 'operating', 'independent branch survives the source station');
+});
+
+test('staffing, upkeep, both causes, halt and restoration stay independently visible', () => {
+  const state = built(), station = state.institutions.find(i => i.kind === 'station');
+  const initial = structuredClone(state);
+  state.flags.recruited = true; state.flags.successor = false;
+  let visual = institutionVisual(state, 'D4');
+  assert.equal(visual.staffingGap, true); assert.equal(visual.maintenanceGap, false); assert.equal(visual.degraded, false);
+  assert.equal(visual.label, '维护者缺席');
+  station.maintenance = .7;
+  visual = institutionVisual(state, 'D4');
+  assert.equal(visual.staffingGap, true); assert.equal(visual.maintenanceGap, true);
+  assert.equal(visual.label, '维护者缺席 · 维护不足', 'one cause must not hide the other');
+  state.flags.successor = true;
+  visual = institutionVisual(state, 'D4');
+  assert.equal(visual.staffingGap, false); assert.equal(visual.maintenanceGap, true); assert.equal(visual.label, '维护不足');
+  station.active = false; state.flags.successor = false;
+  visual = institutionVisual(state, 'D4');
+  assert.equal(visual.halted, true); assert.equal(visual.staffingGap, false); assert.equal(visual.maintenanceGap, false);
+  assert.equal(visual.label, '停运 · 原址建筑保留');
+  station.active = true; station.maintenance = 1; state.flags.successor = true;
+  visual = institutionVisual(state, 'D4');
+  assert.equal(visual.staffingGap, false); assert.equal(visual.maintenanceGap, false); assert.equal(visual.degraded, false);
+  assert.equal(visual.label, institutionVisual(initial, 'D4').label);
+});
+
+test('staffing-only failed-build archive has empty record duty without invented roof damage', () => {
+  const state = built(false);
+  state.flags.recruited = true; state.flags.successor = false;
+  const before = structuredClone(state), visual = institutionVisual(state, 'D4');
+  assert.equal(visual.recordsOnly, true); assert.equal(visual.staffingGap, true); assert.equal(visual.maintenanceGap, false);
+  assert.match(visual.label, /维护者缺席.*档案不等于预警服务/); assert.deepEqual(state, before);
 });
 
 test('zero maintenance is halted even when an institution retains its active flag', () => {

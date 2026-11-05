@@ -6,7 +6,7 @@ import {restoreSave} from '../src/save.js';
 const copy=structuredClone;
 function lock(api,s,actor,cell,id){for(const e of api.getActions(s,cell,actor).find(a=>a.id===id).requireEvidence)api.investigate(s,actor,cell,e);api.lockTask(s,actor,cell,id);}
 function next(api,s){for(const a of api.getActors(s))if(!s.drafts[a.id])api.passTask(s,a.id);api.commitWindow(s);api.advanceToNextWindow(s);}
-function recruited(api=sim){const s=api.createRun(0);next(api,s);lock(api,s,'protagonist','D4','recruit_successor');next(api,s);return s;}
+function recruited(api=sim){const s=api.createRun(0);lock(api,s,'protagonist','D4','build_joint');next(api,s);lock(api,s,'protagonist','D4','recruit_successor');next(api,s);return s;}
 function submitted(){const s=recruited();lock(sim,s,'linche','D4','present_archive');sim.passTask(s,'protagonist');sim.commitWindow(s);return s;}
 const canonical='action:20:protagonist:D4:relocate_teacher';
 for(const [name,mutate] of [

@@ -34,16 +34,23 @@ export function institutionVisual(state, cellId) {
   const institution = [...candidates].sort((a, b) => PRIORITY.indexOf(a.kind) - PRIORITY.indexOf(b.kind) || b.startYear - a.startYear)[0];
   const halted = institution.active === false || institution.maintenance <= 0;
   const staffingGap = !halted && cellId === 'D4' && ['station', 'archive'].includes(institution.kind) && !!state.flags.recruited && !state.flags.successor;
-  const degraded = !halted && (institution.maintenance < 1 || staffingGap);
+  // Missing people and insufficient physical upkeep are independent facts.
+  // Keep degraded as a compatibility alias for physical maintenance only.
+  const maintenanceGap = !halted && institution.maintenance < 1;
+  const degraded = maintenanceGap;
   const restricted = !halted && ['station', 'branch'].includes(institution.kind) && institution.open === false;
   const recordsOnly = ['archive', 'independent'].includes(institution.kind);
   const unverified = institution.kind === 'independent' && state.events.some(event => event.id === institution.sourceEventId && event.status === 'failed');
-  const status = halted ? 'halted' : degraded ? 'degraded' : 'operating';
-  const parts = halted ? ['停运', '原址建筑保留']
-    : [staffingGap ? '维护者缺席' : degraded ? '维护不足' : recordsOnly ? '记录维护中' : institution.kind === 'warning' ? '居民钟报运行中' : '制度运行中'];
+  const status = halted ? 'halted' : maintenanceGap ? 'degraded' : staffingGap ? 'understaffed' : 'operating';
+  const parts = halted ? ['停运', '原址建筑保留'] : [];
+  if (!halted) {
+    if (staffingGap) parts.push('维护者缺席');
+    if (maintenanceGap) parts.push('维护不足');
+    if (!parts.length) parts.push(recordsOnly ? '记录维护中' : institution.kind === 'warning' ? '居民钟报运行中' : '制度运行中');
+  }
   if (restricted) parts.push('收费门槛');
   if (unverified) parts.push('校验尚未成功');
   else if (recordsOnly && !halted) parts.push('档案不等于预警服务');
   const prop = ['school', 'training'].includes(institution.kind) && cellId === 'D5' ? 'bank_reading_circle' : PROP[institution.kind] || null;
-  return { institutionId: institution.id, kind: institution.kind, prop, status, halted, degraded, staffingGap, restricted, recordsOnly, unverified, label: parts.join(' · ') };
+  return { institutionId: institution.id, kind: institution.kind, prop, status, halted, degraded, maintenanceGap, staffingGap, restricted, recordsOnly, unverified, label: parts.join(' · ') };
 }
