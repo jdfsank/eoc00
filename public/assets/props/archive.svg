@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges">
+<title>Archive — original programmatic prototype proxy</title>
+<desc>Transparent 2:1 dimetric prototype prop. Ground anchor 32,64. Original geometric artwork; not sliced from the concept illustration.</desc>
+<polygon points="32,54 52,64 32,74 12,64" fill="#233C3B"/>
+<polygon points="32,56 48,64 32,72 16,64" fill="#7D8271"/>
+<polygon points="16,36 32,44 32,68 16,60" fill="#C4B99A" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,44 48,36 48,60 32,68" fill="#7D8271" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,28 48,36 32,44 16,36" fill="#E0D6B7" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,26 52,36 32,46 12,36" fill="#467F78" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,28 46,36 32,42 18,36" fill="#355B59"/>
+<path d="M 24 34 L 38 40" fill="none" stroke="#467F78" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square"/>
+<polygon points="18,42 28,48 28,60 18,54" fill="#233C3B"/>
+<polygon points="20,44 22,46 22,56 20,54" fill="#E0D6B7"/>
+<polygon points="24,46 26,48 26,58 24,56" fill="#E5B966"/>
+<polygon points="28,48 30,50 30,60 28,58" fill="#E0D6B7"/>
+<polygon points="36,50 42,46 42,62 36,66" fill="#233C3B"/>
+<polygon points="38,52 40,50 40,60 38,62" fill="#E5B966"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges">
+<title>Observatory — original programmatic prototype proxy</title>
+<desc>Transparent 2:1 dimetric prototype prop. Ground anchor 32,64. Original geometric artwork; not sliced from the concept illustration.</desc>
+<polygon points="32,54 52,64 32,74 12,64" fill="#233C3B"/>
+<polygon points="32,56 48,64 32,72 16,64" fill="#7D8271"/>
+<polygon points="20,28 32,34 32,66 20,60" fill="#C4B99A" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,34 44,28 44,60 32,66" fill="#7D8271" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,22 44,28 32,34 20,28" fill="#467F78" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="22,38 26,40 26,48 22,46" fill="#E5B966"/>
+<polygon points="36,40 40,38 40,46 36,48" fill="#233C3B"/>
+<polygon points="28,52 32,54 32,66 28,64" fill="#233C3B"/>
+<polygon points="18,48 32,56 46,48 46,52 32,60 18,52" fill="#E0D6B7" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,18 46,26 32,34 18,26" fill="#467F78" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="18,26 32,34 32,38 18,30" fill="#E0D6B7" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,34 46,26 46,30 32,38" fill="#7D8271" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<path d="M 30 22 H 34 V 30 H 30 Z" fill="#233C3B"/>
+<path d="M 32 18 L 36 18 L 46 12 L 52 16 L 52 20 L 42 26 L 36 24 L 32 22 Z" fill="#233C3B"/>
+<polygon points="36,20 46,14 50,16 40,22" fill="#E0D6B7"/>
+<polygon points="40,22 50,16 50,20 42,24" fill="#E5B966"/>
+<polygon points="48,16 50,16 50,20 48,20" fill="#355B59"/>
+<polygon points="34,20 36,20 38,22 36,24 34,22" fill="#E5B966"/>
+</svg>

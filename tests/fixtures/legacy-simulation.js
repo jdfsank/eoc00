@@ -1,0 +1,238 @@
+import board from '../../src/data/board.json' with { type: 'json' };
+
+export const CHANNELS = ['politics', 'economy', 'science', 'religion'];
+export const WINDOWS = [0, 10, 20, 30];
+export const EVIDENCE = {
+  independent_flood_records: '独立洪水记录', unfunded_maintenance: '维护经费缺口',
+  successor_consent: '继任者的同意', anomaly_records: '异常水位记录',
+  old_reality_record: '旧现实教师档案', resident_testimony: '居民的当前证词',
+};
+const copy = x => structuredClone(x);
+const clamp = x => Math.round(Math.max(0, Math.min(100, x)) * 10000) / 10000;
+const cell = (s, id) => s.cells.find(c => c.id === id);
+const require = (condition, message) => { if (!condition) throw new Error(message); };
+const active = (s, kind) => s.institutions.find(i => i.kind === kind && i.active);
+// Stateless keyed PRNG: execution order, translated titles, UI navigation and reloads cannot reroll it.
+export function randomFor(seed, key) {
+  let h = 2166136261;
+  for (const char of `${seed}/${key}/conditions-v1`) { h ^= char.charCodeAt(0); h = Math.imul(h, 16777619); }
+  h ^= h >>> 16; h = Math.imul(h, 0x7feb352d); h ^= h >>> 15;
+  h = Math.imul(h, 0x846ca68b); h ^= h >>> 16;
+  return (h >>> 0) / 4294967296;
+}
+const sources = { station: [0.1, 0.1, 1.6, 0.25], archive: [0, 0, .35, .15], training: [.1, .25, .7, .1], branch: [.15, .4, 1, .15], school: [.1, .25, .65, .2], mutual: [.1, .6, .1, .55], independent: [.2, .1, .65, .2] };
+function institution(s, kind, location, event, name, source = sources[kind]) {
+  const i = { id: `institution:${event.id}:${location}`, kind, cellId: location, name, active: true, sourceEventId: event.id, sourceActionId: event.sourceActionId, startYear: s.year, annualSource: Object.fromEntries(CHANNELS.map((k, n) => [k, source[n]])), maintenance: 1, open: true };
+  s.institutions.push(i); return i;
+}
+function record(s, data) {
+  const item = { id: data.id, year: s.year, cellId: 'D4', title: '', text: '', parentId: null, sourceActionId: null, kind: 'history', status: 'confirmed', reality: 'R1', ...data };
+  require(!s.history.some(h => h.id === item.id), `重复历史记录：${item.id}`);
+  s.history.push(item); return item;
+}
+function schedule(s, data) {
+  require(data.year > s.year, '次生事件只能在未来年份兑现');
+  if (!s.events.some(e => e.id === data.id)) s.events.push({ kind: 'event', status: 'pending', parentId: null, sourceActionId: null, probability: 1, conditionVersion: 1, ...data });
+}
+export function createRun(seed = 12) {
+  const s = { version: 'afterwave.run.v1', seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
+  s.cells.forEach(c => { c.deployable = ['D4', 'B4'].includes(c.id); if (c.name === '未命名地域') c.name = `${c.id}·${c.terrain === 'water' ? '水域' : '原野'}`; });
+  record(s, { id: 'arrival', title: '第零年 · 借来的十年', text: '续史局只能在每十年的窗口介入一次。你是唯一的介入员。河港将迎来洪水，但居民并不只需要被拯救。', kind: 'arrival' });
+  s.snapshots[0] = copy(s.cells); return s;
+}
+export function getActors(s) { return s.actors.filter(a => a.alive && a.availableFrom <= s.year); }
+function action(id, title, description, cost, probability = 1, dueIn = 1, requireEvidence = [], risk = '', reward = '') { return { id, title, description, cost, probability, dueIn, requireEvidence, risk, reward }; }
+export function getActions(s, cellId, actorId = 'protagonist') {
+  if (s.phase !== 'planning' || !getActors(s).some(a => a.id === actorId)) return [];
+  const y = s.year, out = [];
+  if (cellId === 'D4' && y === 0) out.push(
+    action('build_merchant', '商会独资', '商会愿意先付运输费用，但收费港口享有优先预警。', { economy: 3 }, .85, 2, [], '基本预警排除无力缴费者；依赖单一资助方。', '较快启用；每年持续创造测量与运输能力。'),
+    action('build_state', '官署独办', '统一撤离指令覆盖河港，复核权暂留官署。', { politics: 3, economy: 4 }, .8, 3, [], '统一标准可能造成共同失效。', '公开撤离与协调能力较强。'),
+    action('build_joint', '联合管理', '公开水文资料，由官署、商会和档案院共同维护。', { economy: 6 }, .7, 3, ['independent_flood_records', 'unfunded_maintenance'], '成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。', '开放档案与培训连接；成功后第7年传播至东岸。'));
+  if (cellId === 'B4' && [0, 10].includes(y)) out.push(action('preserve_records', '保留地方档案', '修会提供旧洪水刻度，保留不同于官署的校验方法。', { religion: 2, economy: 2 }, 1, 1, [], '放弃河港当期的另一项介入机会。', '建立独立知识源；增强将来的复核能力。'));
+  if (cellId === 'D4' && y === 10) {
+    if (active(s, 'station')) out.push(action('renew_charter', '续约公开章程', '补足维护基金并明确继任权。林澈留在河港照料测站。', { economy: 3 }, 1, 1, [], '消耗本轮主角名额，不能同时招募。', '防止第16年收费分化，维护教学网络。'));
+    if (!s.flags.recruited) out.push(action('recruit_successor', '招募林澈 · 安排继任', '林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。', { economy: 5, science: 2 }, 1, 1, ['successor_consent'], '当地仍需补充长期经费；这不等于续约公开章程。', '第20年起获得第二名介入员；保留维护人手。'), action('recruit_risk', '招募林澈 · 暂缺继任', '林澈自愿锚定记忆，但河港没有准备好的接班人。', { economy: 1 }, 1, 1, [], '测站产出减半；第16年起停运，已经传播的知识仍保留。', '以较低成本获得第20年可部署的同伴。'));
+    if (active(s, 'archive') || !active(s, 'station')) out.push(action('restore_archive', '重建地方测站', '把留下的零散记录交给新的维护小组。此次不重启最初培训链。', { economy: 5 }, 1, 2, [], '无法追回错过的十年与原分站链。', '可靠建立测站，恢复持续知识产出。'));
+  }
+  if (cellId === 'E4' && y === 10) out.push(action('fund_school', '资助东岸夜校', '居民自办的学校教授识字与独立读尺，承认未入站者的经验。', { economy: 4 }, 1, 1, [], '河港的继任争议无人处理。', '独立学校为未来共享纠错权提供人手。'));
+  if (cellId === 'D5' && y >= 10) out.push(action('mutual_aid', '南岸互助仓', '把救援物资的分配权交给居民轮值，而不是只按缴费名单。', { economy: 3 }, 1, 1, [], '不修复统一水文标准。', '改善南岸生计，并在洪水时降低损失。'));
+  if (cellId === 'D4' && y === 20) out.push(
+    action('free_warning', '协商基本免费预警', '苏岚愿意让不缴费的家庭先收到险情，但需要你补上欠薪。', { economy: 4 }, 1, 1, ['resident_testimony'], '开放预警不等于恢复独立校验。', '让当前居民保有选择，恢复公开服务。'),
+    action('present_archive', '呈示旧档 · 尊重她的选择', '旧现实的苏岚是一名教师。她愿意读档，却不愿被替换成人生样本。', { politics: 2 }, 1, 1, ['old_reality_record'], '仅凭旧档不能修复危机或支付维护。', '形成当前现实的同意记录，支持有条件共享档案。'),
+    action('relocate_teacher', '执行迁任方案', '按续史局指标把苏岚调往学校，短期补充标准教育岗位。', { politics: 3 }, 1, 1, [], '河港失去维护者；苏岚反对被旧人生定义。', '增加教学能力，却损害地方信任。'));
+  if (y === 20 && (cellId === 'F6' || cellId === 'B4')) out.push(
+    action('independent_review', '独立测站交叉复核', '以不同来源的洪水刻度校验统一标准，并保留异常报告。', { science: 3, economy: 4 }, 1, 1, ['anomaly_records'], '占用一次干预；此前已发生的损失不能撤销。', '在第23年冲击前消除共同失效风险。'),
+    action('local_veto', '授予地方停闸权', '居民可以在异常水位时拒绝中央开闸令，先行撤离。', { politics: 4 }, 1, 1, [], '只能减轻损失，无法修正错误标准。', '第23年损失显著降低。'));
+  if (cellId === 'E4' && y >= 20) out.push(action('train_network', '培育轮值维护者', '培养能够独立接班、公开记录的地方小组。', { economy: 4, science: 2 }, 1, 1, [], '人手需要时间成长，不会立即改变当年的危机。', '增加独立网络与退出独占控制的条件。'));
+  if (cellId === 'D4' && y === 30 && actorId === 'protagonist') out.push(
+    action('share_power', '共享档案与纠错权', '把历史干预的证据与否决权交给现实中的维护网络。', { politics: 3, economy: 3 }, 1, 1, [], '没有独立网络与地方信任，权利将停留在纸上。', '有准备的地区可自治并互相复核。'),
+    action('central_review', '集中干预 · 强化复核', '续史局保留干预权，承诺让不同测站审查每一次指令。', { politics: 4, science: 2 }, 1, 1, [], '集中依赖仍然存在；缺少独立复核时结局脆弱。', '保留应急协调能力，承担持续维护责任。'),
+    action('withdraw', '逐步退出独占控制', '不再垄断未来，把维护工作和档案移交给现存地方网络。', { economy: 2 }, 1, 1, [], '若人手不足，退出会造成服务空缺。', '已建立的学校与互助制度继续自行运作。'));
+  return out;
+}
+function assertPlanning(s, actorId) { require(s.phase === 'planning', '当前不在介入窗口'); require(getActors(s).some(a => a.id === actorId), '该棋子本轮不可部署'); }
+export function lockTask(s, actorId, cellId, actionId, evidence = []) {
+  assertPlanning(s, actorId);
+  const a = getActions(s, cellId, actorId).find(a => a.id === actionId);
+  require(a, '该行动当前不可用'); require(a.requireEvidence.every(e => evidence.includes(e)), '尚缺必要证据');
+  s.drafts[actorId] = { actorId, cellId, actionId, evidence: [...new Set(evidence)], status: 'locked', window: s.year }; return s;
+}
+export function passTask(s, actorId) { assertPlanning(s, actorId); s.drafts[actorId] = { actorId, status: 'passed', window: s.year }; return s; }
+export function unlockTask(s, actorId) { assertPlanning(s, actorId); delete s.drafts[actorId]; return s; }
+export function commitWindow(s) {
+  require(s.phase === 'planning' && WINDOWS.includes(s.year) && !s.committedWindows.includes(s.year), '本轮已提交或不在介入窗口');
+  const actors = getActors(s), tasks = [], costs = {}, occupied = new Set();
+  for (const actor of actors) {
+    const d = s.drafts[actor.id]; require(d && d.window === s.year && ['locked', 'passed'].includes(d.status), '请先为全部棋子锁定任务或明确放弃');
+    if (d.status === 'passed') continue;
+    const a = getActions(s, d.cellId, actor.id).find(a => a.id === d.actionId);
+    require(a && a.requireEvidence.every(e => d.evidence.includes(e)), '草案条件已经失效');
+    require(!occupied.has(d.cellId), '同格任务冲突：本版不支持未定义的联合行动'); occupied.add(d.cellId);
+    tasks.push({ d, a }); costs[d.cellId] ||= {};
+    for (const [k, v] of Object.entries(a.cost)) costs[d.cellId][k] = (costs[d.cellId][k] || 0) + v;
+  }
+  for (const [id, spend] of Object.entries(costs)) for (const [k, v] of Object.entries(spend)) require(cell(s, id).channels[k] >= v, `${id}的${k}能力不足，整轮未提交`);
+  // Every validation precedes writes. No event RNG is consumed during planning or submission.
+  for (const { d, a } of tasks) {
+    const sourceActionId = `action:${s.year}:${d.actorId}:${d.cellId}:${a.id}`;
+    for (const [k, v] of Object.entries(a.cost)) cell(s, d.cellId).channels[k] = clamp(cell(s, d.cellId).channels[k] - v);
+    record(s, { id: sourceActionId, title: a.title, text: `${a.description} 确定成本已支付；${a.probability === 1 ? '确定' : `${Math.round(a.probability * 100)}%概率`}在第${s.year + a.dueIn}年兑现。`, cellId: d.cellId, kind: 'action', sourceActionId, evidence: copy(d.evidence), cost: copy(a.cost) });
+    schedule(s, { id: `event:${sourceActionId}`, year: s.year + a.dueIn, cellId: d.cellId, title: a.title, text: a.description, actionId: a.id, parentId: sourceActionId, sourceActionId, probability: a.probability });
+    if (a.id.startsWith('build_')) s.promises.push({ id: `promise:${sourceActionId}`, sourceActionId, text: '第10年处理维护人与长期经费', dueYear: 10, status: 'pending' });
+  }
+  for (const actor of actors) if (s.drafts[actor.id].status === 'passed') record(s, { id: `pass:${s.year}:${actor.id}`, kind: 'pass', title: `${actor.name}保留沉默`, text: '本轮名额明确放弃。历史仍会继续。' });
+  s.committedWindows.push(s.year); s.drafts = {}; s.phase = 'playback'; return s;
+}
+function resolve(s, e) {
+  if (e.requiresInstitution && !s.institutions.some(i => i.id === e.requiresInstitution && i.active)) {
+    e.status = 'cancelled'; e.resolvedYear = s.year; e.text = '必要的来源机构已经停运。后续建设取消；已付成本与既有影响仍然保留。';
+    record(s, { ...e, id: `resolved:${e.id}`, parentId: e.id, kind: 'cancelled' }); return;
+  }
+  e.roll = randomFor(s.seed, e.id); e.status = e.roll < e.probability ? 'success' : 'failed'; e.resolvedYear = s.year;
+  let text = '', title = e.title; const a = e.actionId;
+  if (a?.startsWith('build_')) {
+    s.flags.governance = a.slice(6);
+    if (e.status === 'failed') { institution(s, 'archive', e.cellId, e, '小型档案站'); text = '协议未能完成。小型档案站保留记录，每年仍产生少量知识；成本不退还，原培训链不启动。'; title = '建站未成，记录留下'; }
+    else {
+      const station = institution(s, 'station', 'D4', e, '河港水文站'); station.open = a !== 'build_merchant';
+      if (a === 'build_merchant') { station.annualSource.economy = .8; station.annualSource.science = 1.2; }
+      if (a === 'build_state') station.annualSource.politics = .5;
+      s.flags.stationBuilt = true;
+      text = '水文站启用。洪水有了可读的刻度，预警也有了谁先收到的问题。';
+      schedule(s, { id: `${e.id}:training`, year: 7, cellId: 'E4', title: '学徒跨过东岸', actionId: 'training', parentId: e.id, sourceActionId: e.sourceActionId, requiresInstitution: station.id });
+    }
+  } else if (a === 'training') {
+    const school = institution(s, 'training', 'E4', e, '东岸学徒培训点'); institution(s, 'training', 'D5', e, '南岸读尺班');
+    text = '学徒带着河港的记录抵达东岸与南岸。当地船工也贡献了自己的经验。';
+    schedule(s, { id: `${e.id}:branch`, year: 12, cellId: 'F6', title: '远港分站亮灯', actionId: 'branch', parentId: e.id, sourceActionId: e.sourceActionId, requiresInstitution: school.id });
+  } else if (a === 'branch') { institution(s, 'branch', 'F6', e, '远港水文分站'); text = '东岸学徒与远港船工共同建起分站。它来自河港，却不只是河港的功劳。'; }
+  else if (a === 'renew_charter') { s.flags.renewed = true; s.flags.successor = true; s.promises.forEach(p => p.status = 'fulfilled'); text = '公开章程获得长期维护基金，林澈留下带教，地方复核权写入继任条款。'; }
+  else if (a?.startsWith('recruit_')) { s.flags.recruited = true; s.flags.successor = a === 'recruit_successor'; s.actors.push({ id: 'linche', name: '林澈', availableFrom: 20, anchored: true, alive: true }); text = s.flags.successor ? '林澈自愿锚定，苏岚同意接班。第20年起林澈可部署；家人与身份仍受当前现实影响。' : '林澈自愿锚定。河港暂缺维护者：产出减半，第16年将停运。第20年起林澈可部署。'; }
+  else if (a === 'restore_archive') { institution(s, 'station', 'D4', e, '重建水文站'); s.flags.successor = true; text = '新的维护小组重建测站。错过的旧培训链不会凭空补回。'; }
+  else if (a === 'preserve_records') { institution(s, 'independent', 'B4', e, '修会校验档案'); s.flags.independentArchive = true; text = '不同来源的洪水刻度被保留，没有被统一标准覆盖。'; }
+  else if (a === 'fund_school' || a === 'train_network') { institution(s, 'school', e.cellId, e, a === 'fund_school' ? '东岸夜校' : '轮值维护网络'); s.flags.networks = (s.flags.networks || 0) + 1; text = '新的维护者学会公开记录与独立校验。承接历史的人手来自多年积累。'; }
+  else if (a === 'mutual_aid') { institution(s, 'mutual', 'D5', e, '南岸互助仓'); s.flags.aid = true; text = '轮值居民把物资分给未缴费的家庭。预警之外，避难还需要粮食。'; }
+  else if (a === 'free_warning') { s.flags.freeWarning = true; s.flags.trust = true; for (const i of s.institutions.filter(i => i.cellId === 'D4')) { i.open = true; i.active = true; i.maintenance = 1; } text = '苏岚接受补足欠薪与基本免费预警的协议。她选择留下，而不是成为旧档中的自己。'; }
+  else if (a === 'present_archive') { s.flags.respected = true; s.flags.trust = true; text = '“那是你认识的我，不是我欠你的人生。”苏岚留下自己的证词，拒绝被旧现实替换。'; }
+  else if (a === 'relocate_teacher') { s.flags.forced = true; s.flags.trust = false; for (const i of s.institutions.filter(i => i.cellId === 'D4')) i.active = false; institution(s, 'school', 'E4', e, '迁任标准学校'); text = '迁任完成，学校多了教师，河港少了维护者。苏岚拒绝把这称为被拯救。'; }
+  else if (a === 'independent_review') { s.flags.review = true; institution(s, 'independent', e.cellId, e, '独立交叉复核站'); text = '两个独立来源揭示了共同标准的偏差。第23年的水位冲击仍会到来，但错误不再同步传播。'; }
+  else if (a === 'local_veto') { s.flags.veto = true; text = '地方停闸与先行撤离权生效。统一标准仍错，但居民不必盲从。'; }
+  else if (['share_power', 'central_review', 'withdraw'].includes(a)) { s.flags.policy = a; text = '终局方针已经签署。它能否兑现，取决于此前积累的人手、信任与复核网络，而非这一句宣言。'; }
+  record(s, { id: `resolved:${e.id}`, year: s.year, title, text: text || e.text, cellId: e.cellId, parentId: e.id, sourceActionId: e.sourceActionId, kind: e.status === 'failed' ? 'failure' : 'outcome', status: e.status });
+}
+function milestone(s) {
+  if (s.year === 10) record(s, { id: 'succession-window', title: '谁来守住下一次洪水', text: '林澈愿意入局，但带走维护者也会改变河港。招募、继任与续约争夺同一名额。', kind: 'choice' });
+  if (s.year === 14) {
+    s.flags.crisis = { warningYear: 14, irreversibleYear: 23, status: 'warning', dependency: '统一水文标准', affectedCells: ['D4', 'E4', 'D5', 'F6'] };
+    record(s, { id: 'crisis-warning', title: '过于一致的水位', text: '四地报告出现同一偏差。第20年可以建立独立复核或地方停闸权；第23年才可能发生不可逆损失。改名与降温不会重置时钟。', kind: 'warning', parentId: s.events.find(e => e.actionId === 'branch')?.id || null });
+  }
+  if (s.year === 16) {
+    const station = active(s, 'station');
+    if (station && s.flags.recruited && !s.flags.successor) { station.active = false; record(s, { id: 'station-unattended', title: '无人接班的测站', text: '林澈离开后无人维护，河港测站停运。东岸与远港已经学会的知识没有消失。', parentId: station.sourceEventId, kind: 'maintenance' }); }
+    else if (station && !s.flags.renewed) { station.open = false; station.maintenance = .7; record(s, { id: 'charter-lapsed', title: '免费刻度，收费门槛', text: '没有长期经费，继任者开始收费填补欠薪。测站仍运转，但并非所有人都收到预警。', parentId: station.sourceEventId, kind: 'maintenance' }); }
+    if (!s.flags.renewed) s.promises.forEach(p => { if (p.status === 'pending') p.status = 'unfulfilled'; });
+  }
+  if (s.year === 20) record(s, { id: 'old-reality-conflict', title: '她不是档案中的教师', text: 'R0旧档中的苏岚在免费学校教书。R1中的她留在河港，因为父亲活了下来。旧档是证据，不是她欠你的命运。', kind: 'reality' });
+  if (s.year === 23) {
+    const mitigation = s.flags.review ? 0 : s.flags.veto ? .3 : 1;
+    const damage = mitigation * (s.flags.aid ? .7 : 1) * (s.flags.freeWarning ? .8 : 1);
+    s.flags.crisis.status = damage === 0 ? 'averted' : damage < .5 ? 'contained' : 'disaster'; s.flags.crisis.damage = damage;
+    for (const id of s.flags.crisis.affectedCells) { const c = cell(s, id); c.channels.economy = clamp(c.channels.economy - 14 * damage); c.channels.politics = clamp(c.channels.politics - 7 * damage); }
+    record(s, { id: 'crisis-impact', parentId: 'crisis-warning', title: damage === 0 ? '错误被拦在指令之前' : damage < .5 ? '停闸之后的清点' : '共同标准，共同失效', text: damage === 0 ? '独立记录揭穿偏差，预警及时改写。水位上涨，没有同步开错闸。' : '洪水留下不可逆的地方损失。已经失去的生活不能用通道回升抵消；人类并未灭绝。', kind: 'crisis' });
+  }
+}
+export function advanceYear(s, options = {}) {
+  require(s.phase === 'playback' && s.year < 40, '请先提交本轮；窗口中不能直接推进年份');
+  s.year++;
+  const due = s.events.filter(e => e.status === 'pending' && e.year === s.year).sort((a, b) => a.id.localeCompare(b.id));
+  for (const e of due) resolve(s, e);
+  // Maintenance decisions take effect before this year's production snapshot.
+  milestone(s);
+  const snapshot = Object.fromEntries(s.cells.map(c => [c.id, copy(c.channels)]));
+  const ordered = options.reverse ? [...s.cells].reverse() : s.cells;
+  const next = {};
+  for (const c of ordered) {
+    next[c.id] = {};
+    const neighbors = s.cells.filter(n => Math.abs(n.row - c.row) + Math.abs(n.col - c.col) === 1).sort((a, b) => a.id.localeCompare(b.id));
+    for (const k of CHANNELS) {
+      const localDelta = snapshot[c.id][k] - s.baseline[c.id][k];
+      const adjacent = neighbors.reduce((sum, n) => sum + (snapshot[n.id][k] - s.baseline[n.id][k]), 0) / neighbors.length;
+      let source = 0;
+      for (const i of [...s.institutions].sort((a, b) => a.id.localeCompare(b.id))) if (i.active && i.cellId === c.id) {
+        const staffing = i.kind === 'station' && s.flags.recruited && !s.flags.successor ? .5 : 1;
+        source += i.annualSource[k] * i.maintenance * staffing;
+      }
+      // Remote teaching only runs through an existing, active carrier; no arbitrary global science bonus.
+      let remote = 0;
+      if (c.id === 'F6' && active(s, 'branch') && s.institutions.some(i => i.cellId === 'E4' && i.active)) remote = .025 * (snapshot.E4[k] - s.baseline.E4[k]);
+      const cross = k === 'economy' && s.institutions.some(i => i.cellId === c.id && ['station', 'branch'].includes(i.kind) && i.active) ? .015 * Math.max(0, snapshot[c.id].science - s.baseline[c.id].science) : 0;
+      next[c.id][k] = clamp(s.baseline[c.id][k] + localDelta * .94 + adjacent * .035 + remote + source + cross);
+    }
+  }
+  for (const c of s.cells) c.channels = next[c.id];
+  s.snapshots[s.year] = copy(s.cells);
+  if (WINDOWS.includes(s.year)) { s.phase = 'planning'; s.drafts = {}; }
+  if (s.year === 40) { s.phase = 'ended'; const ending = getEnding(s); record(s, { id: 'ending', title: ending.title, text: ending.text, kind: 'ending', parentId: s.events.find(e => e.actionId === s.flags.policy)?.id || null }); }
+  return s;
+}
+export function advanceToNextWindow(s) { require(s.phase === 'playback', '请先提交本轮任务'); do { advanceYear(s); } while (s.phase === 'playback'); return s; }
+export function getEnding(s) {
+  const networks = s.flags.networks || 0;
+  const autonomy = networks + (s.flags.independentArchive ? 1 : 0) + (s.flags.review ? 1 : 0);
+  const trust = !!(s.flags.trust || s.flags.renewed);
+  const metrics = { institutions: s.institutions.filter(i => i.active).length, networks, autonomy, trust, crisis: s.flags.crisis?.status || '尚未发生', anchoredSurvivors: s.actors.filter(a => a.alive && a.anchored).length, years: s.year };
+  let title = '未签署的下一页', text = '没有新的方针替地方补上责任。现存机构继续运作，也继续承担缺口。';
+  if (s.flags.policy === 'share_power') { const ready = autonomy >= 2 && trust; title = ready ? '许多人签署的历史' : '纸上的共同作者'; text = ready ? '独立记录、维护者与居民同意让共享纠错权有了现实支撑。没有人拥有全部未来，也没有人独自承担它。' : '档案已开放，但独立人手或地方信任仍不足。新的权利需要在现实中继续建立，宣言没有替你完成它。'; }
+  if (s.flags.policy === 'central_review') { title = s.flags.review ? '仍亮着灯的续史局' : '更安静的警报室'; text = s.flags.review ? '集中协调保留下来，独立复核可以否决错误指令。安全依赖持续维护，而非永远正确的计算。' : '续史局仍能协调救援，却尚未打破共同标准的依赖。短期秩序没有消除下一次共同失效。'; }
+  if (s.flags.policy === 'withdraw') { title = autonomy >= 2 ? '没有唯一守夜人' : '交班后的空椅子'; text = autonomy >= 2 ? '地方网络接住了退出后的责任。你留下的不是控制，而是人们可以自己纠错的能力。' : '独占控制结束了，但接班能力没有同步长成。仍在运作的机构需要面对服务空缺。'; }
+  if (s.flags.crisis?.status === 'disaster') text += ' 第23年的地方灾难无法撤销，它的名字留在结局里。';
+  text += ' 历史内外仍有幸存者；这不是物种灭绝。';
+  return { title, text, metrics, policy: s.flags.policy || null, provisional: s.year < 40 };
+}
+export function traceEvent(s, eventId) {
+  const all = new Map([...s.history, ...s.events].map(e => [e.id, e])); const chain = [], seen = new Set();
+  let current = all.get(eventId); while (current && !seen.has(current.id)) { chain.unshift(copy(current)); seen.add(current.id); current = all.get(current.parentId); } return chain;
+}
+export function validateState(s) {
+  try { return inspectState(s); } catch { return { valid: false, errors: ['存档结构损坏'] }; }
+}
+function inspectState(s) {
+  const errors = [];
+  if (!s || s.version !== 'afterwave.run.v1') return { valid: false, errors: ['不兼容的存档版本'] };
+  if (!Array.isArray(s.cells) || s.cells.length !== 64) errors.push('棋盘必须有64格');
+  const ids = new Set();
+  for (const c of s.cells || []) { if (ids.has(c.id) || c.id !== `${String.fromCharCode(65 + c.col)}${c.row + 1}` || c.col < 0 || c.col > 7 || c.row < 0 || c.row > 7) errors.push('坐标重复或非法'); ids.add(c.id); for (const k of CHANNELS) if (!Number.isFinite(c.channels?.[k]) || c.channels[k] < 0 || c.channels[k] > 100) errors.push(`${c.id}通道非法`); }
+  if (!Number.isInteger(s.year) || s.year < 0 || s.year > 40) errors.push('年份非法');
+  if (!['planning', 'playback', 'ended'].includes(s.phase) || (s.phase === 'planning' && !WINDOWS.includes(s.year)) || (s.phase === 'ended' && s.year !== 40)) errors.push('阶段非法');
+  if (!Array.isArray(s.events) || !Array.isArray(s.history) || !Array.isArray(s.institutions) || !Array.isArray(s.actors) || !s.flags || !s.drafts || !s.baseline || !s.snapshots || !Array.isArray(s.committedWindows) || !Array.isArray(s.promises)) return { valid: false, errors: [...errors, '存档字段缺失'] };
+  for (const collection of [s.events, s.history, s.institutions, s.actors]) if (new Set(collection.map(x => x.id)).size !== collection.length) errors.push('稳定ID重复');
+  if (new Set(s.committedWindows).size !== s.committedWindows.length) errors.push('窗口重复提交');
+  if (s.phase === 'planning' && s.committedWindows.includes(s.year)) errors.push('已提交窗口重新开放');
+  for (const e of s.events) if (!['pending', 'success', 'failed', 'cancelled'].includes(e.status) || !Number.isFinite(e.probability) || e.probability < 0 || e.probability > 1 || (e.status === 'pending' && e.year <= s.year)) errors.push('事件状态非法');
+  for (const c of s.cells) for (const k of CHANNELS) if (!Number.isFinite(s.baseline[c.id]?.[k])) errors.push('基线缺失或非法');
+  if (!s.actors.some(a => a.id === 'protagonist' && a.alive)) errors.push('缺少主角');
+  for (const a of s.actors) if (!Number.isInteger(a.availableFrom) || a.availableFrom < 0) errors.push('棋子可用窗口非法');
+  if (s.phase === 'playback' && !s.committedWindows.includes(Math.floor(s.year / 10) * 10)) errors.push('未提交的年代不能播放');
+  return { valid: errors.length === 0, errors };
+}

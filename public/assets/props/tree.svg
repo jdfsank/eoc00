@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges">
+<title>Tree — original programmatic prototype proxy</title>
+<desc>Transparent 2:1 dimetric prototype prop. Ground anchor 32,64. Original geometric artwork; not sliced from the concept illustration.</desc>
+<polygon points="28,46 32,48 32,64 28,62" fill="#79694E"/>
+<polygon points="32,48 36,46 36,62 32,64" fill="#B39769"/>
+<path d="M 26 60 H 30 V 62 H 36 V 64 H 38 V 66 H 32 V 64 H 26 Z" fill="#233C3B"/>
+<path d="M 28 22 H 36 V 26 H 42 V 30 H 46 V 42 H 42 V 48 H 34 V 50 H 26 V 46 H 20 V 40 H 18 V 30 H 22 V 26 H 28 Z" fill="#233C3B"/>
+<path d="M 28 24 H 34 V 28 H 40 V 32 H 44 V 40 H 40 V 46 H 34 V 48 H 28 V 44 H 22 V 38 H 20 V 32 H 24 V 28 H 28 Z" fill="#668168"/>
+<path d="M 28 24 H 34 V 28 H 38 V 32 H 34 V 36 H 28 V 40 H 22 V 34 H 24 V 30 H 28 Z" fill="#899565"/>
+<path d="M 38 34 H 44 V 40 H 40 V 46 H 34 V 48 H 28 V 44 H 32 V 40 H 38 Z" fill="#3F6258"/>
+</svg>

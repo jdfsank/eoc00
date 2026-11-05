@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges">
+<title>Warehouse — original programmatic prototype proxy</title>
+<desc>Transparent 2:1 dimetric prototype prop. Ground anchor 32,64. Original geometric artwork; not sliced from the concept illustration.</desc>
+<polygon points="32,54 52,64 32,74 12,64" fill="#233C3B"/>
+<polygon points="32,56 48,64 32,72 16,64" fill="#7D8271"/>
+<polygon points="16,42 32,50 32,70 16,62" fill="#C4B99A" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,50 48,42 48,62 32,70" fill="#7D8271" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,34 48,42 32,50 16,42" fill="#E0D6B7" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="16,42 24,30 32,50" fill="#C4B99A" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="16,42 24,30 40,22 32,34" fill="#467F78" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="24,30 40,22 48,42 32,50" fill="#355B59" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<path d="M 28 36 L 44 28" fill="none" stroke="#467F78" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square"/>
+<polygon points="20,48 28,52 28,66 20,62" fill="#79694E" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<path d="M 20 50 L 28 64 M 20 60 L 28 54" fill="none" stroke="#B39769" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square"/>
+<polygon points="36,50 42,46 42,50 36,54" fill="#E5B966"/>
+<polygon points="32,58 40,62 40,70 32,66" fill="#B39769" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="40,62 48,58 48,66 40,70" fill="#79694E" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="40,54 48,58 40,62 32,58" fill="#B39769" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<path d="M 36 58 L 44 62 M 36 60 L 36 66 M 44 60 L 44 66" fill="none" stroke="#79694E" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square"/>
+<polygon points="12,58 16,60 16,66 12,64" fill="#B39769" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="16,60 20,58 20,64 16,66" fill="#79694E" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="16,56 20,58 16,60 12,58" fill="#B39769" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+</svg>

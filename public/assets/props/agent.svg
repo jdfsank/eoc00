@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges">
+<title>Human agent — original programmatic prototype proxy</title>
+<desc>Transparent 2:1 dimetric prototype prop. Ground anchor 32,64. Original geometric artwork; not sliced from the concept illustration.</desc>
+<path d="M 28 40 H 34 V 42 H 36 V 48 H 34 V 50 H 36 V 52 H 38 V 58 H 34 V 62 H 36 V 64 H 32 V 62 H 30 V 64 H 26 V 62 H 28 V 58 H 24 V 52 H 26 V 50 H 28 V 48 H 26 V 42 H 28 Z" fill="#233C3B"/>
+<rect x="30" y="42" width="4" height="6" fill="#C4B99A"/>
+<rect x="30" y="42" width="4" height="2" fill="#79694E"/>
+<path d="M 28 50 H 34 V 52 H 36 V 56 H 34 V 60 H 30 V 58 H 28 V 54 H 26 V 52 H 28 Z" fill="#E0D6B7"/>
+<path d="M 26 50 H 30 V 52 H 32 V 58 H 28 V 54 H 26 Z" fill="#467F78"/>
+<rect x="34" y="52" width="4" height="4" fill="#E5B966"/>
+<rect x="30" y="58" width="2" height="4" fill="#7D8271"/>
+<rect x="32" y="58" width="2" height="4" fill="#79694E"/>
+</svg>

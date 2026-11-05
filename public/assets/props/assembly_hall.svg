@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges">
+<title>Assembly hall — original programmatic prototype proxy</title>
+<desc>Transparent 2:1 dimetric prototype prop. Ground anchor 32,64. Original geometric artwork; not sliced from the concept illustration.</desc>
+<polygon points="32,54 52,64 32,74 12,64" fill="#233C3B"/>
+<polygon points="32,56 48,64 32,72 16,64" fill="#7D8271"/>
+<polygon points="12,40 32,50 32,72 12,62" fill="#C4B99A" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,50 52,40 52,62 32,72" fill="#7D8271" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,30 52,40 32,50 12,40" fill="#E0D6B7" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="14,44 30,52 30,68 14,60" fill="#233C3B"/>
+<polygon points="14,44 18,46 18,62 14,60" fill="#E0D6B7"/>
+<polygon points="22,48 26,50 26,66 22,64" fill="#E0D6B7"/>
+<polygon points="30,52 32,52 32,70 30,68" fill="#E0D6B7"/>
+<polygon points="36,52 40,50 40,60 36,62" fill="#233C3B"/>
+<polygon points="44,48 48,46 48,56 44,58" fill="#E5B966"/>
+<polygon points="32,26 54,38 32,50 10,38" fill="#467F78" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,28 48,38 32,46 16,38" fill="#355B59"/>
+<polygon points="10,38 32,50 32,54 10,42" fill="#E0D6B7" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="32,50 54,38 54,42 32,54" fill="#7D8271" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="20,42 26,46 26,48 20,44" fill="#E5B966"/>
+<polygon points="14,60 32,70 32,74 14,64" fill="#C4B99A"/>
+<path d="M 14 62 L 32 72" fill="none" stroke="#E0D6B7" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square"/>
+</svg>

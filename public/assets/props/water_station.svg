@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges">
+<title>Water station — original programmatic prototype proxy</title>
+<desc>Transparent 2:1 dimetric prototype prop. Ground anchor 32,64. Original geometric artwork; not sliced from the concept illustration.</desc>
+<polygon points="32,54 52,64 32,74 12,64" fill="#233C3B"/>
+<polygon points="32,56 48,64 32,72 16,64" fill="#7D8271"/>
+<polygon points="24,62 44,68 32,74 16,66" fill="#5A9692"/>
+<polygon points="14,40 26,46 26,68 14,62" fill="#C4B99A" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="26,46 38,40 38,62 26,68" fill="#7D8271" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="26,34 38,40 26,46 14,40" fill="#E0D6B7" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="26,30 42,38 26,46 10,38" fill="#467F78" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="26,38 34,42 26,46 18,42" fill="#355B59"/>
+<polygon points="18,46 22,48 22,54 18,52" fill="#E5B966"/>
+<polygon points="30,50 34,48 34,60 30,62" fill="#233C3B"/>
+<polygon points="32,60 44,66 40,68 28,62" fill="#B39769" stroke="#233C3B" stroke-width="2" stroke-linejoin="miter"/>
+<path d="M 36 62 L 32 64 M 40 64 L 36 66" fill="none" stroke="#79694E" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square"/>
+<path d="M 44 30 H 52 V 66 L 48 68 L 44 66 Z" fill="#233C3B"/>
+<rect x="46" y="32" width="4" height="34" fill="#E0D6B7"/>
+<rect x="46" y="36" width="4" height="2" fill="#E5B966"/>
+<rect x="48" y="40" width="2" height="2" fill="#233C3B"/>
+<rect x="46" y="44" width="4" height="2" fill="#E5B966"/>
+<rect x="48" y="48" width="2" height="2" fill="#233C3B"/>
+<rect x="46" y="52" width="4" height="2" fill="#E5B966"/>
+<rect x="48" y="56" width="2" height="2" fill="#233C3B"/>
+<rect x="46" y="60" width="4" height="2" fill="#E5B966"/>
+<rect x="48" y="64" width="2" height="2" fill="#233C3B"/>
+</svg>

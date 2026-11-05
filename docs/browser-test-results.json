@@ -1,0 +1,189 @@
+{
+  "checks": [
+    {
+      "name": "Initial 64 cells and only protagonist",
+      "passed": true
+    },
+    {
+      "name": "List contains all 64 coordinates",
+      "passed": true
+    },
+    {
+      "name": "List selects A1",
+      "passed": true
+    },
+    {
+      "name": "List selects H1",
+      "passed": true
+    },
+    {
+      "name": "List selects A8",
+      "passed": true
+    },
+    {
+      "name": "List selects H8",
+      "passed": true
+    },
+    {
+      "name": "List selects D4",
+      "passed": true
+    },
+    {
+      "name": "Lock leaves real world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Commit pays once",
+      "passed": true
+    },
+    {
+      "name": "Year10 after whole decade",
+      "passed": true
+    },
+    {
+      "name": "Recruit available next window only",
+      "passed": true
+    },
+    {
+      "name": "Cannot submit with unassigned companion",
+      "passed": true
+    },
+    {
+      "name": "Passed companion is clearly labelled",
+      "passed": true
+    },
+    {
+      "name": "Crisis can be averted",
+      "passed": true
+    },
+    {
+      "name": "Reach actual year40 ending",
+      "passed": true
+    },
+    {
+      "name": "Causal trace includes D4/E4/F6",
+      "passed": true
+    },
+    {
+      "name": "Reload preserves exact state",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 320",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 360",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 430",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 1280",
+      "passed": true
+    },
+    {
+      "name": "200% text remains within viewport",
+      "passed": true
+    },
+    {
+      "name": "Malformed imported UI is repaired before rendering and saving",
+      "passed": true
+    },
+    {
+      "name": "UI repair preserves exact imported world",
+      "passed": true
+    },
+    {
+      "name": "Repaired investigation session can collect evidence",
+      "passed": true
+    },
+    {
+      "name": "Reload preserves normalized investigation evidence and budget",
+      "passed": true
+    },
+    {
+      "name": "Startup repairs invalid selected cell, screen and null sessions",
+      "passed": true
+    },
+    {
+      "name": "Invalid institution import preserves current world and autosave",
+      "passed": true
+    },
+    {
+      "name": "Failed-build year10 scene acknowledges missing station and training",
+      "passed": true
+    },
+    {
+      "name": "Failed-build recruitment shuts the archive before year20",
+      "passed": true
+    },
+    {
+      "name": "Failed-build year20 scene does not invent a rescued father or station manager",
+      "passed": true
+    },
+    {
+      "name": "New-run seed input preserves zero",
+      "passed": true
+    },
+    {
+      "name": "No-build year20 offers a real community warning action",
+      "passed": true
+    },
+    {
+      "name": "No-build resident evidence does not thank a nonexistent service",
+      "passed": true
+    },
+    {
+      "name": "Action preview discloses tunable coverage assumptions",
+      "passed": true
+    },
+    {
+      "name": "Community action creates a visible local service without inventing a station",
+      "passed": true
+    },
+    {
+      "name": "Ending exposes frozen regional losses and present service separately",
+      "passed": true
+    },
+    {
+      "name": "merchant governance coverage is visible",
+      "passed": true
+    },
+    {
+      "name": "state governance coverage is visible",
+      "passed": true
+    },
+    {
+      "name": "joint governance coverage is visible",
+      "passed": true
+    },
+    {
+      "name": "Governance paths display distinct historical loss results",
+      "passed": true
+    },
+    {
+      "name": "Genuine old warning promise is disclosed as legacy rather than zero new coverage",
+      "passed": true
+    },
+    {
+      "name": "Genuine old no-build warning retains original .8 loss and exact year23 channels",
+      "passed": true
+    },
+    {
+      "name": "Genuine old funded station repair restores successor staffing",
+      "passed": true
+    },
+    {
+      "name": "Legacy ending preserves actual loss without inventing regional history",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}
