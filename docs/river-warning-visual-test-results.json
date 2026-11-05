@@ -1,0 +1,342 @@
+{
+  "checks": [
+    {
+      "name": "390px before: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px before: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px locked: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px locked: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px active: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px active: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px active: caption does not cover bell or old archive",
+      "passed": true
+    },
+    {
+      "name": "390px active: reload preserves imported service and scene",
+      "passed": true
+    },
+    {
+      "name": "390px archive: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px archive: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px archive: reload preserves imported service and scene",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance: caption does not cover bell or old archive",
+      "passed": true
+    },
+    {
+      "name": "390px stopped: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px stopped: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px stopped: caption does not cover bell or old archive",
+      "passed": true
+    },
+    {
+      "name": "390px stopped: reload preserves imported service and scene",
+      "passed": true
+    },
+    {
+      "name": "390px zero: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px zero: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px station-restored: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px station-restored: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px station-restored: reload preserves imported service and scene",
+      "passed": true
+    },
+    {
+      "name": "390px station-stopped: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "390px station-stopped: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "390px active, upkeep and stopped scenes remain different in grayscale",
+      "passed": true
+    },
+    {
+      "name": "390px200% active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% active: complete caption stays below artwork",
+      "passed": true
+    },
+    {
+      "name": "390px200% active: visible caption is not covered by a toast or control",
+      "passed": true
+    },
+    {
+      "name": "390px200% active: last actual choice is reachable",
+      "passed": true
+    },
+    {
+      "name": "390px200% archive: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% archive: complete caption stays below artwork",
+      "passed": true
+    },
+    {
+      "name": "390px200% archive: visible caption is not covered by a toast or control",
+      "passed": true
+    },
+    {
+      "name": "390px200% archive: last actual choice is reachable",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped: complete caption stays below artwork",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped: visible caption is not covered by a toast or control",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped: last actual choice is reachable",
+      "passed": true
+    },
+    {
+      "name": "320px before: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px before: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px locked: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px locked: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px active: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px active: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px active: caption does not cover bell or old archive",
+      "passed": true
+    },
+    {
+      "name": "320px active: reload preserves imported service and scene",
+      "passed": true
+    },
+    {
+      "name": "320px archive: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px archive: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px archive: reload preserves imported service and scene",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance: caption does not cover bell or old archive",
+      "passed": true
+    },
+    {
+      "name": "320px stopped: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px stopped: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px stopped: caption does not cover bell or old archive",
+      "passed": true
+    },
+    {
+      "name": "320px stopped: reload preserves imported service and scene",
+      "passed": true
+    },
+    {
+      "name": "320px zero: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px zero: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px station-restored: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px station-restored: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px station-restored: reload preserves imported service and scene",
+      "passed": true
+    },
+    {
+      "name": "320px station-stopped: imported state selects its real scene",
+      "passed": true
+    },
+    {
+      "name": "320px station-stopped: viewing does not mutate any history",
+      "passed": true
+    },
+    {
+      "name": "320px active, upkeep and stopped scenes remain different in grayscale",
+      "passed": true
+    },
+    {
+      "name": "320px200% active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% active: complete caption stays below artwork",
+      "passed": true
+    },
+    {
+      "name": "320px200% active: visible caption is not covered by a toast or control",
+      "passed": true
+    },
+    {
+      "name": "320px200% active: last actual choice is reachable",
+      "passed": true
+    },
+    {
+      "name": "320px200% archive: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% archive: complete caption stays below artwork",
+      "passed": true
+    },
+    {
+      "name": "320px200% archive: visible caption is not covered by a toast or control",
+      "passed": true
+    },
+    {
+      "name": "320px200% archive: last actual choice is reachable",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped: complete caption stays below artwork",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped: visible caption is not covered by a toast or control",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped: last actual choice is reachable",
+      "passed": true
+    },
+    {
+      "name": "Actual lock retains archive-only scene",
+      "passed": true
+    },
+    {
+      "name": "Actual submission remains waiting with no invented warning institution",
+      "passed": true
+    },
+    {
+      "name": "At21 a real fulfilled warning institution replaces the pending promise",
+      "passed": true
+    },
+    {
+      "name": "Public year30 revisit shows the fulfilled resident bell",
+      "passed": true
+    },
+    {
+      "name": "Export contains the exact fulfilled service and source history",
+      "passed": true
+    },
+    {
+      "name": "Imported export reloads the same map pixels and history",
+      "passed": true
+    },
+    {
+      "name": "Imported export keeps the resident scene without rebuilding a station",
+      "passed": true
+    },
+    {
+      "name": "No runtime or missing asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Engine-generated unbuilt and failed-archive routes, real resident warning fulfilment at21 and playable return at30. Upkeep/closure are legal boundary fixtures, not newly added actions. Chromium390/320,200% text and grayscale; not physical-device certification. No public AVG is claimed during playback."
+}

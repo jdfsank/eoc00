@@ -230,5 +230,385 @@
     }
   ],
   "errors": [],
-  "scope": "Real engine-generated routes, Chromium at390 and320, including200% text. Monochrome is a visual check, not device or accessibility certification."
+  "scope": "Real engine-generated routes, Chromium at390 and320, including200% text. Monochrome is a visual check, not device or accessibility certification.",
+  "renderSamples": [
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 202,
+      "samples": 3,
+      "bytes": 26482
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 147,
+      "samples": 3,
+      "bytes": 29450
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 139,
+      "samples": 3,
+      "bytes": 28234
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 125,
+      "samples": 3,
+      "bytes": 31214
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 143,
+      "samples": 3,
+      "bytes": 30598
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 147,
+      "samples": 3,
+      "bytes": 25782
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 123,
+      "samples": 3,
+      "bytes": 26334
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 142,
+      "samples": 3,
+      "bytes": 32430
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 320,
+        "centerY": 152,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 140,
+      "samples": 3,
+      "bytes": 32126
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 201,
+      "samples": 3,
+      "bytes": 26482
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 127,
+      "samples": 3,
+      "bytes": 21638
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 145,
+      "samples": 3,
+      "bytes": 24094
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 144,
+      "samples": 3,
+      "bytes": 23094
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 121,
+      "samples": 3,
+      "bytes": 25554
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 256,
+        "centerY": 152,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 104,
+      "samples": 3,
+      "bytes": 25050
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 143,
+      "samples": 3,
+      "bytes": 21130
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 143,
+      "samples": 3,
+      "bytes": 21558
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 129,
+      "samples": 3,
+      "bytes": 26302
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 320,
+        "centerY": 152,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 128,
+      "samples": 3,
+      "bytes": 26502
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 118,
+      "samples": 3,
+      "bytes": 21638
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 127,
+      "samples": 3,
+      "bytes": 26282
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 140,
+      "samples": 3,
+      "bytes": 26282
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 202,
+      "samples": 3,
+      "bytes": 24546
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 597,
+      "samples": 3,
+      "bytes": 26282
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 128,
+      "samples": 3,
+      "bytes": 26282
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 121,
+      "samples": 3,
+      "bytes": 26282
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 124,
+      "samples": 3,
+      "bytes": 26282
+    }
+  ],
+  "relockDiagnostic": {
+    "assetDelay": 180,
+    "pixelMatch": true,
+    "cellsMatch": true,
+    "firstBytes": 26282,
+    "relockBytes": 26282,
+    "firstLayout": {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      }
+    },
+    "relockLayout": {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      }
+    }
+  }
 }

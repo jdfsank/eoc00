@@ -1,5 +1,5 @@
 import {getDecadeReview} from './decade-review.js';
-import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, fulfilledEvent, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce } from './simulation.js';
+import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, fulfilledEvent, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets } from './simulation.js';
 
 export const chapters = {
   0: {
@@ -75,7 +75,11 @@ function currentConsent(state) {
     ? '苏岚从东岸寄来的信没有替迁任补上同意：“岗位可以写进命令，我的签名不能。谈下一次交班之前，先承认上一次是谁替我作了决定。”'
     : '河港仍明确拒绝当前安排。现有机构可以列出人手，却不能替居民在交班协议上签名。';
   if (state.flags.respected) return '当年那份旧现实履历旁，留着苏岚自己写下的选择。她愿意继续核对证据，但要求你记住：合作来自现在的同意，不来自她在另一段人生里的职位。';
-  if (state.flags.freeWarning) return '居民传讯与值班协议还在执行。苏岚愿意讨论下一次交班：“把维护责任和拒绝错误指令的权利，一起写在我们能看见的地方。”';
+  if (state.flags.freeWarning) {
+    const carriers=state.institutions.filter(i=>i.cellId==='D4'&&['warning','station'].includes(i.kind));
+    const live=carriers.some(i=>i.active&&i.maintenance>0);
+    return live?'居民传讯与值班协议仍有现存服务在执行。苏岚愿意讨论下一次交班：“把维护责任和拒绝错误指令的权利，一起写在我们能看见的地方。”':carriers.length?'当年的免费预警协议仍在，但当前载体已经停下。旧签名不能替空着的班次继续敲钟，交班前仍要核对现实中的服务。':'旧档保留了免费预警协议，却缺少当前载体的明细。不从缺页推断它仍在运行或已经停运。';
+  }
   if (state.flags.renewed) return '公开章程仍是苏岚愿意继续商量的根据。她指着当年写下的继任条款：“不是只有你留下来才有人会做；但你也不能把我们的名字当成现成的签字。”';
   return '苏岚还没有承诺替你接过全部责任。听过报告不等于同意交班，现存的人手也不能替尚未作出的合作决定签名。';
 }
@@ -83,6 +87,7 @@ function currentConsent(state) {
 function riverportScene(state, base, chapter, actorId) {
   const station = state.institutions.find(i => i.kind === 'station' && i.cellId === 'D4');
   const operatingStation = station?.active && station.maintenance > 0;
+  const warnings=state.institutions.filter(i=>i.kind==='warning'&&i.cellId==='D4');
   const training = state.institutions.some(i => i.kind === 'training');
   const archive = state.institutions.some(i => i.kind === 'archive' && i.cellId === 'D4');
   const failedBuild = state.events.some(e => e.actionId?.startsWith('build_') && e.status === 'failed');
@@ -139,7 +144,7 @@ function riverportScene(state, base, chapter, actorId) {
         ? '四十年的报告还剩最后一册。河港测站仍在运转，下一次维护不会因为你写完报告就自动发生。' + (station.maintenance < 1 ? ' 站内仍有维护缺口，继续亮灯不等于已经修复。' : '')
         : station
           ? '四十年的报告还剩最后一册。河港曾有一座测站，如今已经停运。移交文件里，不能把关着的门写成仍在提供的服务。'
-          : '四十年的报告还剩最后一册。河港测站一直没有建成。空白也是这段历史的一部分，不能在最后一页补写成成功。',
+          : '四十年的报告还剩最后一册。河港测站一直没有建成。'+(warnings.length?(warnings.some(i=>i.active&&i.maintenance>0)?'居民传讯队正在原钟架旁轮值；这是实际服务，不是补建了一座测站，也没有恢复旧档案岗位。':'居民传讯队留下的钟架与旧轮值板还在，但当前服务已经停下；旧址不等于仍有人传话。'):'空白也是这段历史的一部分，不能在最后一页补写成成功。'),
       crisisRecollection(state),
       teaching
         ? '沿岸仍有人教授读尺与记录。知识已有承接者，但能否独立纠错，还要看现存网络与居民的信任。'
@@ -151,7 +156,7 @@ function riverportScene(state, base, chapter, actorId) {
   };
 }
 
-export function sceneFor(state, cell, actorId = 'protagonist') {
+function locationScene(state, cell, actorId = 'protagonist') {
   const chapter = Math.min(30, Math.floor(state.year / 10) * 10);
   const base = riverportScene(state, chapters[chapter], chapter, actorId);
   if (cell === 'D4') return base;
@@ -170,6 +175,7 @@ export function sceneFor(state, cell, actorId = 'protagonist') {
       '没有及时完成的校验仍留在原来的纸页上。它没有被偷偷改成成功，记录旁也没有抹去第23年的损失。',
       '“迟到的核对，不能让那一年重来。”保管员把空白的轮值表放在旁边，“但下一份指令来到时，我们还可以让它经过另一双眼睛。”',
       staff.length?'已有测量或教学人手仍在运转。新的校验合同仍需支付经费、科学能力和一个名额；它不会替这些人取得交班授权，也不会替你签署方针。':'现在还没有可用的测量或教学人手。如果另一位介入员在本轮安排培训，第31年到位的人手可以参与第32年校验；两个名额用在这里，就不能同时签署交班方针。',
+      ...(cell==='F6'&&usesPortAccessRules(state)&&getPortWarningTargets(state).length?['值班窗前仍有缴费名单。整理失败底稿与协商公开预警是不同的工作，同一角色在远港只能选其中一项；后来的开放也不会改写第23年。']:[]),
       crisisRecollection(state),
     ],question:'把未完成的工作接下去，也要承认它没有赶上过去。'};
   }
@@ -181,6 +187,7 @@ export function sceneFor(state, cell, actorId = 'protagonist') {
     return { ...base, title: '远方的水声', speaker: branch ? '远港 · 分站值班人' : '远港 · 船工代表', body: [
       branch ? '柜子里保存着河港协议的抄本。它经过东岸的课堂，又被带到了这座远方港口。' : hadBranch ? '原来的远港分站已经停运。留下的柜子仍装着旧记录，但门口没有新的值班表。' : '河港的培训链没有在这里建成分站。船工仍用自己的记录辨认支流水位，也收到了一份来自外地的统一标准。',
       corrected ? '对方把改写前后的两条曲线并排留下：“那次复核让支流进入了记录。下一次，也要允许我们指出这里不一样。”' : incomplete ? '两条曲线旁缺了一页结算记录。对方没有把空白填成定论：“先把能够确认的经过留下，再继续核对。”' : '“他们说，照着上游的标准做就不会错。”对方指向两条并不吻合的曲线，“可我们的支流，从来不在那份表里。”',
+      ...(state.year>=30&&branch?[state.institutions.some(i=>i.cellId==='F6'&&i.kind==='branch'&&i.active&&i.maintenance>0&&!i.open)?(usesPortAccessRules(state)?'测量与复核没有自动撤下缴费名单。未缴费家庭仍在门外，开放预警需要另行筹措本地经费与协商；它不是再做一次校验。':'测量与复核没有自动撤下缴费名单。未缴费家庭仍在门外，这份旧合同没有替远港重新协商准入。'):'当前有效分站已经向未缴费家庭开放基本预警，维护责任仍在。眼前的准入状态不会倒写成第23年时就已如此。']:[]),
       ...(state.year >= 30 ? [crisisRecollection(state)] : []),
     ], question: '真正可靠的网络，必须允许一个节点说：这里不一样。' };
   }
@@ -199,6 +206,27 @@ export function sceneFor(state, cell, actorId = 'protagonist') {
   return { ...base, title: cell === 'D5' ? '把第一声钟传到岸边' : '不应消失的底稿', speaker: cell === 'D5' ? '南岸 · 居民代表' : '北岸 · 档案保管员', body: cell === 'D5' ? ['南岸没有高大的观测塔，只有一口大家轮流敲的钟。', '居民愿意组成互助队，却不愿再被要求承担无穷的免费劳动。培训和经费必须与责任一起到来。'] : ['有些纸页没有被抄进正式报告。它们不是正确答案，却记录着一种不同的判断。', '保存旧档不能让过去重新生效，但可以在所有人相信同一个数字时，提醒他们再看一眼。'], question: '这个地方的能力也会进入每一年的历史。' };
 }
 
+
+// A response to a verified choice, not a relationship score or automatic pardon.
+export function lincheRelationship(state) {
+  const known=ids=>{
+    const e=fulfilledEvent(state,ids);if(!e)return null;
+    const action=state.history.find(h=>h.id===e.sourceActionId),outcome=state.history.find(h=>h.id===`resolved:${e.id}`),actor=e.sourceActionId.split(':')[2];
+    const year=RECRUITMENT_ACTIONS.includes(e.actionId)?10:20;
+    return e.kind==='event'&&e.cellId==='D4'&&e.year===year+1&&action?.year===year&&action.parentId===null&&action.status==='confirmed'
+      &&state.events.filter(x=>x.id===e.id).length===1&&state.history.filter(x=>x.id===action.id).length===1&&state.history.filter(x=>x.id===outcome.id).length===1
+      &&[e,action,outcome].every(x=>x.actorId===undefined||x.actorId===actor)?e:null;
+  };
+  if(state.year<30||!known(RECRUITMENT_ACTIONS))return null;
+  const forced=known('relocate_teacher'),respect=known('present_archive');
+  if(forced){const own=forced.sourceActionId.split(':')[2]==='linche';return {kind:'forced',title:'林澈 · 调令之后仍有分歧',text:own?'“那份迁任有我的责任。不论后来做了多少工作，我都不能拿它们替当年的决定辩解。那份调令没有苏岚的同意，同行的约定也不能替她宣布这件事已经过去。”':`${state.actors.find(a=>a.id===forced.sourceActionId.split(':')[2]).name}在第${forced.resolvedYear}年执行了迁任。林澈没有把同行的约定盖在它上面：“我同意同行，不等于认可这份替苏岚决定去向的调令。谁愿意承担什么，下一次仍要由本人说。”`,sources:[`resolved:${forced.id}`]};}
+  if(respect)return {kind:'respected',title:'林澈 · 同意不是下一张通行证',text:'“那次，旧档没有替苏岚决定。”林澈把她的证词与轮值表分开放着，“我们记住的是她当时愿意，不是以后都可以替她签字。继续合作，也要继续问。”',sources:[`resolved:${respect.id}`]};
+  return null;
+}
+export function sceneFor(state,cell,actorId='protagonist') {
+  const scene=locationScene(state,cell,actorId);
+  return cell==='E4'&&state.year>=30?{...scene,relationship:lincheRelationship(state)}:scene;
+}
 
 // Read-only personal coda: it never edits ending scores, old contracts or history.
 export function characterEpilogue(state) {
@@ -248,6 +276,8 @@ export function characterEpilogue(state) {
       lincheSources.push(...card.sourceIds);
     }
   }
+  const relation=lincheRelationship(state);
+  if(relation){linche.push(relation.text);lincheSources.push(...relation.sources);}
   const sulan = [], sulanSources = [];
   let title = '末页仍留着她的选择';
   if (forced) {

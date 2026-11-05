@@ -24,7 +24,7 @@ const born=structuredClone(build);commitWindow(born);advanceYear(born);advanceYe
 const click=a=>page.locator(`[data-action="${a}"]`).first().click();
 async function show(state,cell='B4',bigText=false,focus=true){
  await page.evaluate(({state,cell,bigText,focus})=>sessionStorage.setItem('afterwave.activity.fixture',JSON.stringify({state,ui:{screen:'world',selected:cell,actor:'protagonist',channel:'science',focus,bigText}})),{state,cell,bigText,focus});
- await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(150);
+ await page.reload();await page.locator('canvas').waitFor();await canvas();
 }
 async function select(cell){await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();await page.waitForTimeout(100);}
 async function snap(name,mono=false,full=false){
@@ -32,7 +32,29 @@ async function snap(name,mono=false,full=false){
  await (full?page:frame).screenshot({path:`${out}/round6-map-${name}${mono?'-mono':''}.png`,...(full?{fullPage:true}:{})});
  if(mono)await frame.evaluate(el=>el.style.filter='');
 }
-async function canvas(){await page.waitForTimeout(70);return page.locator('canvas').evaluate(c=>c.toDataURL());}
+async function canvas(){
+ // Leaving world destroys Phaser's canvas; returning creates and loads a new
+ // one asynchronously. A visible <canvas> and a fixed 70ms delay can still
+ // capture an empty/loading frame. Wait for nonempty pixels that remain
+ // identical over three samples spanning at least 100ms, without consulting
+ // the expected image. A wrong but stable image must still fail below.
+ const sample=await page.locator('canvas').evaluate(async c=>{
+  const started=performance.now();let previous=null,stableSince=0,matches=0,lastSample=0;
+  while(performance.now()-started<5000){
+   await new Promise(resolve=>requestAnimationFrame(resolve));const now=performance.now();
+   if(now-lastSample<50)continue;lastSample=now;
+   const rgba=c.getContext('2d').getImageData(0,0,c.width,c.height).data;
+   let visible=false;for(let i=3;i<rgba.length;i+=4)if(rgba[i]){visible=true;break;}
+   if(!visible){previous=null;matches=0;continue;}
+   const pixels=c.toDataURL();
+   if(pixels===previous)matches++;else{previous=pixels;stableSince=now;matches=1;}
+   if(matches>=3&&now-stableSince>=100)return {pixels,width:c.width,height:c.height,view:window.afterwave.mapView,waitedMs:Math.round(now-started),samples:matches};
+  }
+  throw Error('World canvas did not reach a nonempty stable rendered frame within 5s');
+ });
+ (report.renderSamples??=[]).push({width:sample.width,height:sample.height,view:sample.view,waitedMs:sample.waitedMs,samples:sample.samples,bytes:sample.pixels.length});
+ return sample.pixels;
+}
 async function chipCenter(cell){return page.locator('canvas').evaluate((canvas,cell)=>{
  const col=cell.charCodeAt(0)-65,row=Number(cell[1])-1,view=window.afterwave.mapView;
  const x=Math.round((288+(col-row)*32+18-view.centerX)*view.zoom+canvas.width/2),y=Math.round((60+(col+row)*16-40-view.centerY)*view.zoom+canvas.height/2);
@@ -60,12 +82,19 @@ try{
   check(`${width}px layer/focus does not spend, commit, or draw RNG`,before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
  }
  // A real UI sequence exercises rollback, relock, commit, pause and annual resolution.
- await page.setViewportSize({width:390,height:844});await show(locked);const first=await canvas();
+ await page.setViewportSize({width:390,height:844});await show(locked);const first=await canvas();const firstLayout=await page.locator('canvas').evaluate(c=>({width:c.width,height:c.height,view:window.afterwave.mapView}));
  await click('window');await page.locator('[data-action="unlock"][data-actor="protagonist"]').click();
  check('Actual unlock removes only the selected actor draft',await page.evaluate(()=>!window.afterwave.state.drafts.protagonist&&window.afterwave.state.drafts.linche.status==='locked'));
  check('Actual unlock removes its map chip',await canvas()!==first&&!await page.locator('.map-activity li').count());await snap('390-unlocked');
- await click('avg');await page.locator('[data-action="choose"][data-id="independent_review"]').click();await click('confirm');await click('lock');await click('home');
- check('Actual relock restores the same chip without spending costs',await canvas()===first&&await page.evaluate(()=>JSON.stringify(window.afterwave.state.cells))===JSON.stringify(locked.cells));
+ await click('avg');await page.locator('[data-action="choose"][data-id="independent_review"]').click();await click('confirm');await click('lock');
+ // Deliberately cover the loader race in the ordinary regression run too.
+ const assetDelay=Number(process.env.AFTERWAVE_ACTIVITY_ASSET_DELAY_MS??180);
+ if(assetDelay)await page.route('**/assets/props/*.png',async route=>{await new Promise(resolve=>setTimeout(resolve,assetDelay));await route.continue();});
+ await click('home');
+ const relockPixels=await canvas(),relockCells=await page.evaluate(()=>JSON.stringify(window.afterwave.state.cells));
+ report.relockDiagnostic={assetDelay,pixelMatch:relockPixels===first,cellsMatch:relockCells===JSON.stringify(locked.cells),firstBytes:first.length,relockBytes:relockPixels.length,firstLayout,relockLayout:await page.locator('canvas').evaluate(c=>({width:c.width,height:c.height,view:window.afterwave.mapView}))};
+ if(assetDelay)await page.unroute('**/assets/props/*.png');
+ check('Actual relock restores the same chip without spending costs',relockPixels===first&&relockCells===JSON.stringify(locked.cells));
  await click('window');await click('commit');await click('pause-world');
  check('Actual commit replaces both drafts with pending events',await page.evaluate(()=>Object.keys(window.afterwave.state.drafts).length===0&&window.afterwave.state.events.filter(e=>e.status==='pending').length===2));
  check('B4 wait is not labelled as an outcome or institution',await page.locator('.map-activity').innerText()===mapActivity(pending,'B4')[0].label&&!await page.locator('.institution-status').count());

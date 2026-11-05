@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/*.test.js",
-    "test:browser": "node scripts/browser-test.mjs && node scripts/interactions-test.mjs && node scripts/tradeoffs-test.mjs && node scripts/visuals-test.mjs && node scripts/handoff-test.mjs && node scripts/learning-visuals-test.mjs && node scripts/aftermath-test.mjs && node scripts/station-visuals-test.mjs && node scripts/recruitment-test.mjs && node scripts/maintenance-visuals-test.mjs && node scripts/outlook-test.mjs && node scripts/activity-visuals-test.mjs && node scripts/recovery-test.mjs && node scripts/south-bank-visuals-test.mjs && node scripts/handoff-outlook-test.mjs && node scripts/far-port-visuals-test.mjs",
+    "test:browser": "node scripts/browser-test.mjs && node scripts/interactions-test.mjs && node scripts/tradeoffs-test.mjs && node scripts/visuals-test.mjs && node scripts/handoff-test.mjs && node scripts/learning-visuals-test.mjs && node scripts/aftermath-test.mjs && node scripts/station-visuals-test.mjs && node scripts/recruitment-test.mjs && node scripts/maintenance-visuals-test.mjs && node scripts/outlook-test.mjs && node scripts/activity-visuals-test.mjs && node scripts/recovery-test.mjs && node scripts/south-bank-visuals-test.mjs && node scripts/handoff-outlook-test.mjs && node scripts/far-port-visuals-test.mjs && node scripts/port-access-test.mjs && node scripts/river-warning-visuals-test.mjs",
     "test:interactions": "node scripts/interactions-test.mjs",
     "test:tradeoffs": "node scripts/tradeoffs-test.mjs",
     "test:visuals": "node scripts/visuals-test.mjs",
@@ -26,7 +26,9 @@
     "test:recovery": "node scripts/recovery-test.mjs",
     "test:south-bank-visuals": "node scripts/south-bank-visuals-test.mjs",
     "test:handoff-outlook": "node scripts/handoff-outlook-test.mjs",
-    "test:far-port-visuals": "node scripts/far-port-visuals-test.mjs"
+    "test:far-port-visuals": "node scripts/far-port-visuals-test.mjs",
+    "test:port-access": "node scripts/port-access-test.mjs",
+    "test:river-warning-visuals": "node scripts/river-warning-visuals-test.mjs"
   },
   "dependencies": {
     "phaser": "3.90.0"

@@ -15,6 +15,19 @@ export function sceneArt(state, cellId, { ending = false } = {}) {
       return { file: 'river-station-active.svg', alt: 'D4河港记录室，窗外是仍在运转的原测站、水尺和码头；值班牌与记录册保持在用，桌灯亮着。', caption: '场景示意 · 持续工作的河港测站' };
     }
     if (stations.length) return { file: 'river-station-stopped.svg', alt: 'D4曾经建成的河港测站已经停运。原站房、水尺、码头和旧记录仍保留，窗门与值班牌被木条封起，桌灯熄灭；这里不是从未建站的河岸。', caption: '场景示意 · 测站停运，历史仍在' };
+    // A real resident service is distinct from the old archive post and from
+    // a water station. Flags, drafts and pending events never install its bell.
+    const warnings=state.institutions.filter(i=>i.cellId==='D4'&&i.kind==='warning'&&(!Number.isFinite(state.year)||!Number.isFinite(i.startYear)||i.startYear<=state.year));
+    const running=warnings.filter(i=>i.active&&i.maintenance>0).sort((a,b)=>(b.startYear||0)-(a.startYear||0));
+    if(warnings.length){
+      const condition=running.length?(running[0].maintenance<1?'maintenance':'active'):'stopped';
+      const detail=condition==='stopped'
+        ? '门外原有的低矮钟架仍在，钟绳系起，轮值板封住，没有正在传讯的人。居民传讯队已经停运。'
+        : condition==='maintenance'
+          ? '门外低矮钟架留下加固补片，轮值表有空格；居民仍在敲钟并递送地方观察，传讯队尚在运行但维护不足。'
+          : '门外低矮钟架旁，居民按轮值表敲钟、递送地方观察；居民传讯队正在运行。';
+      return {file:`river-warning-${condition}.svg`,alt:`D4河港档案室的书架、旧账册与记录桌仍保留，不表示原档案岗位恢复。${detail}这里没有测量塔或水尺，居民传讯不是测站或独立复核，也不表示所有家庭都已收到消息。`,caption:`场景示意 · ${condition==='stopped'?'居民钟报停运，原址与旧档保留':condition==='maintenance'?'居民钟报仍在运行，维护不足':'居民钟报运行中，旧档仍在'} · 非测站`,captionBelow:true};
+    }
   }
   if (cellId === 'F6') { const port=farPortVisual(state); if(port) return {file:port.file,alt:port.alt,caption:`场景示意 · ${port.label}`,captionBelow:true}; }
   if (cellId === 'D5') {

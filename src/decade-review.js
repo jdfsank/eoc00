@@ -8,6 +8,7 @@ const LABELS = {
   recruit_volunteer: '邀请林澈自愿同行',
 };
 const OUTCOMES = {
+  open_port_warning: '既有远港分站向未缴费家庭开放基本预警，没有新增机构',
   renew_charter: '公开章程落实了维护基金与继任条款',
   restore_archive: '新的维护小组重建测站，没有补回错过的旧培训链',
   preserve_records: '不同来源的洪水刻度进入校验档案',
@@ -25,6 +26,7 @@ const OUTCOMES = {
   withdraw: '结束独占控制的方针已经签署',
 };
 const RESPONSIBILITIES = {
+  open_port_warning: '开放准入仍依赖原分站的维护，不替代教学、授权或异源校验，也不重算第23年的损失。',
   renew_charter: '基金与签名仍要持续兑现，培训人手不等于已经有异源校验。',
   restore_archive: '重建之后仍需经费与接班人手，错过的教学积累要另外建立。',
   preserve_records: '底稿需要有人继续比对，留档本身不能替代预警与撤离。',
