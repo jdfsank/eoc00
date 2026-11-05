@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-11-05T08:21:53.806Z",
+  "nodeVersion": "v24.22.1",
+  "purpose": "Compare read-only year20 conditional projections with the same prototype model's actual year23 settlement.",
+  "limits": [
+    "This is deterministic automated model verification, not human playtesting, real-device certification, or evidence of historical accuracy.",
+    "The selected histories use three fixed seeds, four build choices, and risky recruitment when a real post exists. Legal year20 actor plans at distinct cells are enumerated, including explicit passes.",
+    "Individual review contracts are retained; this check does not infer independence or combine their probabilities.",
+    "Optional surveyed veto, true legacy rules, unresolved drafts, and hidden-roll access are covered separately by tests/crisis-outlook.test.js."
+  ],
+  "sourceHashes": {
+    "src/simulation.js": "13fba94b8ca7fafd931d01cddf7cbf963c0cd9c2c03635f97b7cfabd7b69ad0b",
+    "src/crisis-outlook.js": "222967c284b26f5b1141f1a9fcb4f3760b837aad07b2a300bdef337f041a2564"
+  },
+  "seeds": [
+    0,
+    1,
+    12
+  ],
+  "buildKinds": [
+    "none",
+    "state",
+    "joint",
+    "merchant"
+  ],
+  "checked": 888,
+  "failed": 0,
+  "skipped": 0,
+  "branches": {
+    "success": 282,
+    "fallback": 606
+  },
+  "failures": [],
+  "skippedCases": [],
+  "fullCases": "Run npm run test:outlook-matrix; full report is playtest-output/round6-outlook-matrix.json and is included in the CI artifact."
+}

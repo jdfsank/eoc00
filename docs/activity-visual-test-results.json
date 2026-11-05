@@ -1,0 +1,234 @@
+{
+  "checks": [
+    {
+      "name": "390px protagonist text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px protagonist viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px protagonist chip is opaque above foreground props",
+      "passed": true
+    },
+    {
+      "name": "390px linche text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px linche viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px linche chip is opaque above foreground props",
+      "passed": true
+    },
+    {
+      "name": "390px pending-b4 text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px pending-b4 viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px pending-d5 text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px pending-d5 viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px after-aid text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px after-aid viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px after-review text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px after-review viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px two-drafts text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px two-drafts viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px build-draft text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px build-draft viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px training-pending text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "390px training-pending viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "390px 200% legend identifies both shapes and waiting",
+      "passed": true
+    },
+    {
+      "name": "390px 200% legend and actor status do not overflow",
+      "passed": true
+    },
+    {
+      "name": "390px layer/focus does not spend, commit, or draw RNG",
+      "passed": true
+    },
+    {
+      "name": "320px protagonist text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px protagonist viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px protagonist chip is opaque above foreground props",
+      "passed": true
+    },
+    {
+      "name": "320px linche text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px linche viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px linche chip is opaque above foreground props",
+      "passed": true
+    },
+    {
+      "name": "320px pending-b4 text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px pending-b4 viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px pending-d5 text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px pending-d5 viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px after-aid text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px after-aid viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px after-review text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px after-review viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px two-drafts text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px two-drafts viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px build-draft text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px build-draft viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px training-pending text matches actual intent or pending event",
+      "passed": true
+    },
+    {
+      "name": "320px training-pending viewing preserves all simulation facts",
+      "passed": true
+    },
+    {
+      "name": "320px 200% legend identifies both shapes and waiting",
+      "passed": true
+    },
+    {
+      "name": "320px 200% legend and actor status do not overflow",
+      "passed": true
+    },
+    {
+      "name": "320px layer/focus does not spend, commit, or draw RNG",
+      "passed": true
+    },
+    {
+      "name": "Actual unlock removes only the selected actor draft",
+      "passed": true
+    },
+    {
+      "name": "Actual unlock removes its map chip",
+      "passed": true
+    },
+    {
+      "name": "Actual relock restores the same chip without spending costs",
+      "passed": true
+    },
+    {
+      "name": "Actual commit replaces both drafts with pending events",
+      "passed": true
+    },
+    {
+      "name": "B4 wait is not labelled as an outcome or institution",
+      "passed": true
+    },
+    {
+      "name": "D5 wait is visible before any warehouse exists",
+      "passed": true
+    },
+    {
+      "name": "Year21 aid resolution replaces the wait with a real institution",
+      "passed": true
+    },
+    {
+      "name": "B4 remains pending while D5 has resolved",
+      "passed": true
+    },
+    {
+      "name": "Year22 review resolution removes its waiting mark",
+      "passed": true
+    },
+    {
+      "name": "Reload preserves locked intent and identical pixels",
+      "passed": true
+    },
+    {
+      "name": "No browser or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Real engine-generated routes, Chromium at390 and320, including200% text. Monochrome is a visual check, not device or accessibility certification."
+}

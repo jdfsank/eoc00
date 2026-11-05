@@ -54,3 +54,27 @@ export function institutionVisual(state, cellId) {
   const prop = ['school', 'training'].includes(institution.kind) && cellId === 'D5' ? 'bank_reading_circle' : PROP[institution.kind] || null;
   return { institutionId: institution.id, kind: institution.kind, prop, status, halted, degraded, maintenanceGap, staffingGap, restricted, recordsOnly, unverified, label: parts.join(' · ') };
 }
+
+// Intent is a separate overlay, never a building or an outcome prediction.
+// In particular, do not inspect seeds, rolls, preparation, or probabilities.
+// Descendant events belong to a place, not to an actor currently standing there.
+export function mapActivity(state, cellId = null) {
+  const cells = new Set(state.cells.map(cell => cell.id));
+  const visible = id => cells.has(id) && (cellId === null || id === cellId);
+  const activities = [];
+  if (state.phase === 'planning') {
+    for (const actor of state.actors) {
+      const draft = state.drafts?.[actor.id];
+      if (!actor.alive || actor.availableFrom > state.year || !draft || draft.window !== state.year || draft.status !== 'locked' || !visible(draft.cellId)) continue;
+      activities.push({ id: `draft:${actor.id}`, kind: 'draft', cellId: draft.cellId, actorId: actor.id, actorName: actor.name,
+        shape: actor.id === 'linche' ? 'circle' : 'square', actionId: draft.actionId,
+        label: `${actor.name} · 拟派遣（已锁定，未提交）` });
+    }
+  }
+  for (const event of state.events) {
+    if (event.status !== 'pending' || !visible(event.cellId)) continue;
+    activities.push({ id: event.id, kind: 'pending', cellId: event.cellId, shape: 'hourglass', dueYear: event.year,
+      label: `${event.title} · 第${event.year}年待兑现（尚非结果）` });
+  }
+  return activities;
+}

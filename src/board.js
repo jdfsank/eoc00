@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import {heatColor,institutionVisual} from './board-visuals.js';
+import {heatColor,institutionVisual,mapActivity} from './board-visuals.js';
 
 // Small, hard-edged physical traces stay within their owner's footprint.
 // All markers supplement the selected region's equivalent text description.
@@ -44,6 +44,26 @@ function drawInstitutionTrace(scene,layer,p,visual){
  }
  return detail;
 }
+function drawActivity(scene,layer,p,activities){
+ const drafts=activities.filter(item=>item.kind==='draft'),pending=activities.filter(item=>item.kind==='pending');
+ const marks=[...drafts,...(pending.length?[{kind:'pending',shape:'hourglass',count:pending.length}]:[])];
+ marks.forEach((mark,index)=>{
+  // Annotation chips float above the place. A dashed tether describes an
+  // intention or wait, not a new permanent structure on the ground.
+  const x=p.x+18+(index-(marks.length-1)/2)*24,y=p.y-40,ink=0x18383e,paper=0xf6ecc8;
+  const g=scene.add.graphics();layer.add(g);g.setName(`map-activity:${mark.kind}:${mark.actorId||'events'}`);
+  g.lineStyle(2,paper);for(let n=0;n<3;n++)g.lineBetween(x,y+12+n*5,x,y+14+n*5);
+  g.fillStyle(ink);g.lineStyle(2,paper);
+  if(mark.shape==='circle'){g.fillCircle(x,y,9);g.strokeCircle(x,y,9);}
+  else if(mark.shape==='square'){g.fillRect(x-9,y-9,18,18);g.strokeRect(x-9,y-9,18,18);}
+  else{
+   g.fillRect(x-10,y-10,20,20);g.strokeRect(x-10,y-10,20,20);
+   g.lineStyle(2,paper);g.lineBetween(x-5,y-6,x+5,y-6);g.lineBetween(x-5,y+6,x+5,y+6);
+   g.lineBetween(x-5,y-6,x+5,y+6);g.lineBetween(x+5,y-6,x-5,y+6);
+   if(mark.count>1)layer.add(scene.add.text(x+10,y-16,String(mark.count),{fontFamily:'monospace',fontSize:'10px',color:'#f6ecc8',backgroundColor:'#18383e'}).setPadding(1));
+  }
+ });
+}
 export const project = (c,r) => ({x:288+(c-r)*32,y:60+(c+r)*16});
 export function hitTile(x,y){ const a=(x-288)/32,b=(y-60)/16;const c=Math.floor((a+b)/2+0.5),r=Math.floor((b-a)/2+0.5);return c>=0&&c<8&&r>=0&&r<8?String.fromCharCode(65+c)+(r+1):null; }
 export function makeBoard(parent,onSelect,initialView=null){
@@ -73,11 +93,14 @@ export function makeBoard(parent,onSelect,initialView=null){
     const obscures=focus&&anchor&&c.id!==selected&&p.y>anchor.y&&Math.abs(p.x-anchor.x)<56&&p.y-54<anchor.y+8;
     if(prop&&this.textures.exists(prop)){const spr=this.add.image(p.x,p.y,prop).setOrigin(.5,.8).setDisplaySize(64,80);this.layer.add(spr);if(visual?.halted)spr.setTint(0x7d8981);else if(visual?.maintenanceGap)spr.setTint(0xc3b394);if(obscures)spr.setAlpha(.35);}
     if(visual)drawInstitutionTrace(this,this.layer,p,visual).setAlpha(obscures?.35:1);
-    if((c.id==='D4'||c.id==='E4'||c.id==='F6')&&state.events.some(e=>e.cellId===c.id&&e.status==='pending')){this.layer.add(this.add.text(p.x+20,p.y-26,'◆',{fontSize:'14px',color:'#e0b65f'}));}
    }
    {const c=state.cells.find(c=>c.id===selected); if(c){const p=project(c.col,c.row);    if(c.id===selected){const sel=this.add.graphics();sel.lineStyle(3,0xf6ecc8);sel.strokePoints([{x:p.x,y:p.y-16},{x:p.x+32,y:p.y},{x:p.x,y:p.y+16},{x:p.x-32,y:p.y}],true);this.layer.add(sel);this.layer.add(this.add.text(p.x,p.y+23,c.id,{fontFamily:'monospace',fontSize:'15px',color:'#f6ecc8',backgroundColor:'#18383e'}).setOrigin(.5,0).setPadding(4,1));}
 }}
    for(let i=0;i<8;i++){const a=project(i,0),b=project(0,i);this.layer.add(this.add.text(a.x+10,a.y-35,String.fromCharCode(65+i),{fontSize:'13px',fontFamily:'monospace',color:'#b5c9b9'}));this.layer.add(this.add.text(b.x-43,b.y-6,String(i+1),{fontSize:'13px',fontFamily:'monospace',color:'#b5c9b9'}));}
+   // Render every place, including B4 and D5, above foreground buildings.
+   // Existing institution traces and selection geometry remain underneath.
+   const activities=mapActivity(state);
+   for(const c of cells){const local=activities.filter(item=>item.cellId===c.id);if(local.length)drawActivity(this,this.layer,project(c.col,c.row),local);}
    this.frame();
   }
  }

@@ -15,3 +15,6 @@
 /* Large-text reading takes priority over decorative caption overlays. */
 .large-text .scene-art>span{position:relative;bottom:auto;left:auto;display:block;padding:.5rem .625rem;background:var(--panel)}
 .large-text .scene-art:after{display:none}
+
+/* Conditional risk is readable prose, not a color-only success meter. */
+.crisis-outlook{margin:28px 0}.crisis-outlook h2{font-size:1.25rem}.crisis-outlook li{margin:.65rem 0}.risk-regions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}.risk-regions article{border:1px solid var(--line);padding:12px}.risk-regions h3{margin:0 0 8px;color:var(--gold)}.risk-regions p{margin:.5rem 0;overflow-wrap:anywhere}.crisis-outlook summary{cursor:pointer;line-height:1.6}.crisis-history>section{margin-top:28px}.crisis-history h2{font-size:1.25rem}.crisis-history .causal-arrow{font-size:.8rem}.map-activity-legend{font-size:.75rem;line-height:1.65;color:var(--muted);margin:8px 0 14px}.map-activity{padding:.6rem .6rem .6rem 1.6rem;border-left:3px dashed var(--gold);background:var(--panel);font-size:.85rem;line-height:1.6}.map-activity li{margin:.3rem 0}.large-text .risk-regions{grid-template-columns:1fr}.large-text .map-activity-legend,.large-text .map-activity{font-size:1rem}@media(max-width:420px){.risk-regions{grid-template-columns:1fr}}
