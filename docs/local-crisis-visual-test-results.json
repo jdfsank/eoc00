@@ -1501,7 +1501,7 @@
       "passed": true
     },
     {
-      "name": "No B4 visit is fabricated when no local contract is available",
+      "name": "Unrelated B4 visit does not borrow another region tally",
       "passed": true
     },
     {

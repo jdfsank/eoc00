@@ -1,8 +1,8 @@
 import {getDecadeReview} from './decade-review.js';
 import {getReviewHistory} from './review-history.js';
 import {getFeeHistory} from './fee-history.js';
-import {getRelocationHistory} from './relocation-history.js';
-import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets } from './simulation.js';
+import {getRelocationHistory, getRelocationDestination} from './relocation-history.js';
+import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets, getFutureCheckPlan } from './simulation.js';
 
 export const chapters = {
   0: {
@@ -127,6 +127,10 @@ export function sulanIdentity(state) {
 export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   const base = evidenceText[id];
   if (!base) return { title: id, text: '一份有关当地制度的材料。' };
+  if(cellId==='B4' && state.year===30 && getFutureCheckPlan(state).available && ['anomaly_records','resident_testimony'].includes(id)) {
+    if(id==='anomaly_records')return {...base,title:'核对未来校验所需的新记录',text:'这里没有可直接沿用的有效校验或可用失败底稿。保管员把来自不同河段的刻度与新测量计划分开登记：新刻水尺、对照抄本和连续比对，都还需要投入。这是面向今后的筹备，不证明此前曾完成或失败过一次复核。 '+crisisRecollection(state)};
+    return {...base,title:'听取修院居民对新校验席的条件',text:'修院居民重新指认岸边水痕，愿意讨论仪器、抄本和场地怎样长期维护。他们要求把负责读尺的人手另列清楚；这份当地筹备证词不能替任何人接受无限劳动，也不代替跨地交班授权。新计划仍需到第34年核对真实测量或教学人手。'};
+  }
   if(id==='anomaly_records' && state.year>=30 && usesRecoveryRules(state) && getRecoverySource(state,cellId,{requireActive:false})) {
     const review=getReviewHistory(state,null,cellId), failed=review?.localReviews.some(item=>item.status==='failed');
     return {...base,title:'重读未完成的异源校验',text:(failed?'这份曲线曾在第23年冲击前被送来，却没有及时形成可靠结论。原失败仍保留，今天的核对只为今后的指令补上校验能力。':'遗留记录的来源仍需核对，不能把缺页补写成失败或成功。')+` ${review?.summary||'第23年的清点结果未知。'} 是否有人在第32年真正读尺、整理记录，要以届时运转的测量或教学岗位为准。`};
@@ -281,13 +285,27 @@ function locationScene(state, cell, actorId = 'protagonist') {
   const base = riverportScene(state, chapters[chapter], chapter, actorId);
   if (cell === 'D4') return base;
   if (cell === 'E4') {
-    const hadTeaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind));
-    const teaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind) && i.active && i.maintenance > 0);
+    const localTeaching = state.institutions.filter(i => i.cellId === cell && ['training', 'school'].includes(i.kind));
+    const knownActivity = i => typeof i.active === 'boolean' && Number.isFinite(i.maintenance) && i.maintenance >= 0 && i.maintenance <= 1;
+    const teaching = localTeaching.some(i => knownActivity(i) && i.active && i.maintenance > 0);
+    const uncertainTeaching = localTeaching.some(i => !knownActivity(i));
+    const relocation = getRelocationDestination(state, cell);
     return { ...base, title: '不是一座站，是一群会读水的人', speaker: '东岸 · 居民代表', body: [
-      teaching ? '河堤上的学棚向两侧敞开，长凳可以挪到读尺架旁。学员把旧水尺与当天的记录放在一起练习。' : hadTeaching ? '河堤上的旧学棚和读尺架仍在，课已经停下。没有人值班的地方，不能在交班表里写成正在带教。' : '河堤上还没有持续运作的课堂。居民带来旧水尺，希望有人把读尺和记录的方法教给更多人。',
+      teaching ? '河堤上的学棚向两侧敞开，长凳可以挪到读尺架旁。学员把旧水尺与当天的记录放在一起练习。' : uncertainTeaching ? '河堤上留着教学载体的记录，但当前运转情况缺页。不能把旧课堂写成仍有人带教，也不能把缺页当作停课。' : localTeaching.length ? '河堤上的旧学棚和读尺架仍在，课已经停下。没有人值班的地方，不能在交班表里写成正在带教。' : '河堤上还没有持续运作的课堂。居民带来旧水尺，希望有人把读尺和记录的方法教给更多人。',
+      ...(relocation?.paragraphs || []),
       teaching ? '“会读尺，不等于手里已经有另一套可靠的记录。”带教者指着轮值表。培训可以留下承接人手，谁授权他们接班、由谁提供异源校验，还要分别说清楚。' : '居民把还未排满的轮值表递过来。先让人学会、愿意接手，再谈谁来提供另一套校验记录；一纸移交不会让空位自动坐满。',
       ...(state.year >= 30 ? [crisisRecollection(state)] : []),
     ], question: '给学校一次机会，也意味着本窗口把有限的名额留在这里。' };
+  }
+  if(cell==='B4' && state.year===30 && getFutureCheckPlan(state).available) {
+    const staff=getRecoveryWorkforce(state);
+    return {...base,title:'为下一份指令留一席校验',speaker:'北岸 · 档案保管员',body:[
+      '藏书院原来的屋檐还在。保管员清出一张工作台：“这里没有可直接沿用的有效校验或可用失败底稿。我们可以从新的水尺和抄本开始，却不能把准备中的桌子写成已经会纠错的机构。”',
+      crisisRecollection(state),
+      '新的刻度、连续记录和场地要另付经费；核对异常材料还须听取B4本地居民证词。第34年才检查是否有真实测量或教学人手开席，无人就取消，已经投入的材料与场地成本不会退回。',
+      staff.length?'现有人手可以支持筹备，但这份合同不会替他们取得地方授权、增加河港信任或签署交班方针。':'目前没有可用人手。另一位介入员本轮安排的培训可在第31年先到位；若两个名额都用于筹备和培训，就没有另外签署方针的名额。',
+      '保管员把新工单放在第23年的清点册旁，而不是压在上面：“未来的校验可以新建，过去不能重填。”',
+    ],question:'愿不愿意为未来另起一项工作，也承担它到时可能无法开席的成本？'};
   }
   if(['B4','F6'].includes(cell) && state.year===30 && usesRecoveryRules(state) && getRecoverySource(state,cell)) {
     const staff=getRecoveryWorkforce(state), review=getReviewHistory(state,null,cell);

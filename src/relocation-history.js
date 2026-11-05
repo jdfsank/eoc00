@@ -162,3 +162,67 @@ export function getRelocationHistory(state, recordId = null) {
     targets: targets.carriers.map(({ institution, source: origin }) => ({ id: institution.id, kind: institution.kind, cellId: 'D4', sourceRecordId: origin.outcome.id })),
   };
 }
+
+/**
+ * Read-only destination citation. The action/outcome stay in D4: E4 only
+ * points at that original record, never creates a second local event.
+ * This deliberately does not use getRelocationHistory().status: uncertainty
+ * about earlier D4 shutdown targets need not erase a proven E4 origin.
+ */
+export function getRelocationDestination(state, cellId = 'E4') {
+  if (cellId !== 'E4') return null;
+  const reader = readSources(state);
+  if (!reader.validYear || reader.year < 21) return null;
+  const pattern = /^resolved:event:action:20:(protagonist|linche):D4:relocate_teacher$/;
+  const candidates = reader.history.filter(record => typeof record?.id === 'string' && pattern.test(record.id));
+  const claimedSchools = reader.institutions.filter(item => item?.cellId === 'E4'
+    && [item.id, item.sourceEventId, item.sourceActionId].some(id => typeof id === 'string'
+      && /^(?:institution:event:|event:)?action:20:(protagonist|linche):D4:relocate_teacher(?::E4)?$/.test(id)));
+  const completedClaim = reader.events.some(event => event?.actionId === 'relocate_teacher'
+    && event.status === 'success' && Number.isInteger(event.resolvedYear) && event.resolvedYear <= reader.year);
+  // A draft or pending event alone is not a completed destination story. Nor
+  // are flags, school names, night schools or anonymous training identities.
+  if (!candidates.length && !claimedSchools.length && !completedClaim) return null;
+  const title = '东岸学校的河港来处';
+  const unknown = () => {
+    const summary = '东岸学校与河港迁任之间的来源缺失或不一致，暂不能把本地教学归于这次迁任，也不能据此补写苏岚的去向或意愿。';
+    return { status: 'unknown', title, summary, paragraphs: [summary], schoolId: null, activity: 'unknown', sources: [] };
+  };
+  const original = candidates.length === 1 ? candidates[0] : null;
+  const source = reader.sourceFor(unique(reader.events, original?.parentId));
+  const school = source && unique(reader.institutions, `institution:${source.event.id}:E4`);
+  const all = [...reader.all, ...reader.institutions];
+  if (!source || source.event.actionId !== 'relocate_teacher' || source.outcome !== original
+    || !school || school.kind !== 'school' || school.cellId !== 'E4'
+    || school.sourceEventId !== source.event.id || school.sourceActionId !== source.action.id
+    || school.startYear !== source.event.year || claimedSchools.length !== 1
+    || !agrees(state, 'reality', 'R1') || !agrees(school, 'reality', 'R1')
+    || !agrees(school, 'actionId', 'relocate_teacher')
+    || !agrees(school, 'actorId', source.action.id.split(':')[2])
+    || [source.action, source.event, source.outcome, school].some(record => unique(all, record.id) !== record)
+    || reader.institutions.filter(item => item?.sourceEventId === source.event.id).length !== 1) return unknown();
+  const actorId = source.action.id.split(':')[2], actorName = actorId === 'linche' ? '林澈' : '主角';
+  const validActivity = typeof school.active === 'boolean' && Number.isFinite(school.maintenance)
+    && school.maintenance >= 0 && school.maintenance <= 1;
+  const activity = !validActivity ? 'unknown' : school.active && school.maintenance > 0 ? 'active' : 'stopped';
+  const current = activity === 'active' ? '这所学校目前仍在运转。'
+    : activity === 'stopped' ? '这所学校目前已经停运，不能把旧迁任记成今天仍在带教。'
+      : '这所学校当前的运转记录不完整，暂不能判断是否仍在带教。';
+  const summary = `第${source.event.year}年，${actorName}执行的河港迁任在东岸留下了这所学校。${current}`;
+  const otherTeaching = reader.institutions.filter(item => item?.cellId === 'E4' && item !== school
+    && ['school', 'training'].includes(item.kind));
+  const coexistence = !otherTeaching.length ? ''
+    : otherTeaching.some(item => item.active === true && Number.isFinite(item.maintenance) && item.maintenance > 0 && item.maintenance <= 1)
+      ? '东岸还有其他教学载体在运转；它们有各自的来处，不因同在东岸就成为苏岚的任职记录。'
+      : '东岸还留有其他教学载体的记录；各自的来处与当前状态须另行核对，不归入这次迁任。';
+  // Quote only the objection actually retained in this producer's outcome.
+  // Do not reconstruct a missing testimony from flags or present-day jobs.
+  const objection = ['苏岚拒绝把这称为被拯救。', '苏岚反对自己的意愿被一份旧履历替代。']
+    .find(text => typeof original.text === 'string' && original.text.includes(text));
+  const testimony = objection ? `原迁任记录仍记着：${objection}` : '原迁任记录没有保留可核对的个人证词，不能补写苏岚的态度。';
+  const paragraphs = [summary + coexistence,
+    `${testimony}机构的运转不等于她今天仍在授课，更不能替她补上同意、留守或原谅。`];
+  return { status: 'recorded', title, summary, paragraphs, schoolId: school.id, activity,
+    sources: [{ recordId: original.id, cellId: 'D4', year: original.year,
+      label: `第${original.year}年 · 河港迁任原记录`, summary }] };
+}

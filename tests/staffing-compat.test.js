@@ -106,10 +106,11 @@ for (const [name, api] of ENGINES) for (const seed of [0, 6]) for (const choice 
   });
 }
 
-for (const seed of [0, 6]) for (const choice of ['recruit_risk', 'recruit_successor']) test(`new explicit run ${seed}/${choice}: only the added version differs from the frozen factory`, () => {
+for (const seed of [0, 6]) for (const choice of ['recruit_risk', 'recruit_successor']) test(`new explicit run ${seed}/${choice}: only explicit rule versions differ from the frozen factory`, () => {
   const expected = before.createRun(seed), actual = sim.createRun(seed);
   expected.staffingRulesVersion = 'river-carriers-v1';
   expected.branchAccessRulesVersion = 'source-branch-v1';
+  expected.futureCheckRulesVersion = sim.FUTURE_CHECK_RULES.version;
   assert.deepEqual(actual, expected);
   submit(before, expected, 'build_joint'); submit(sim, actual, 'build_joint');
   continuePair(before, expected, actual, choice, true);

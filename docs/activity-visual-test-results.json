@@ -241,7 +241,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 227,
+      "waitedMs": 241,
       "samples": 3,
       "bytes": 26458
     },
@@ -254,7 +254,7 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 138,
+      "waitedMs": 143,
       "samples": 3,
       "bytes": 29418
     },
@@ -267,7 +267,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 191,
+      "waitedMs": 127,
       "samples": 3,
       "bytes": 28598
     },
@@ -280,7 +280,7 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 119,
+      "waitedMs": 143,
       "samples": 3,
       "bytes": 31598
     },
@@ -293,7 +293,7 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 138,
+      "waitedMs": 130,
       "samples": 3,
       "bytes": 30982
     },
@@ -306,7 +306,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 187,
+      "waitedMs": 137,
       "samples": 3,
       "bytes": 25354
     },
@@ -319,7 +319,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 113,
+      "waitedMs": 105,
       "samples": 3,
       "bytes": 26314
     },
@@ -332,7 +332,7 @@
         "centerY": 136,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 102,
+      "waitedMs": 122,
       "samples": 3,
       "bytes": 32418
     },
@@ -345,7 +345,7 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 139,
+      "waitedMs": 107,
       "samples": 3,
       "bytes": 32302
     },
@@ -358,7 +358,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 135,
+      "waitedMs": 212,
       "samples": 3,
       "bytes": 26458
     },
@@ -371,7 +371,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 209,
+      "waitedMs": 204,
       "samples": 3,
       "bytes": 21634
     },
@@ -384,7 +384,7 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 134,
+      "waitedMs": 129,
       "samples": 3,
       "bytes": 24090
     },
@@ -397,7 +397,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 118,
+      "waitedMs": 135,
       "samples": 3,
       "bytes": 23414
     },
@@ -410,7 +410,7 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 121,
+      "waitedMs": 135,
       "samples": 3,
       "bytes": 25818
     },
@@ -423,7 +423,7 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 136,
+      "waitedMs": 128,
       "samples": 3,
       "bytes": 25322
     },
@@ -436,7 +436,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 121,
+      "waitedMs": 140,
       "samples": 3,
       "bytes": 20806
     },
@@ -449,7 +449,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 192,
+      "waitedMs": 126,
       "samples": 3,
       "bytes": 21562
     },
@@ -462,7 +462,7 @@
         "centerY": 136,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 121,
+      "waitedMs": 138,
       "samples": 3,
       "bytes": 26302
     },
@@ -475,7 +475,7 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 121,
+      "waitedMs": 148,
       "samples": 3,
       "bytes": 26722
     },
@@ -488,7 +488,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 124,
+      "waitedMs": 143,
       "samples": 3,
       "bytes": 21634
     },
@@ -501,7 +501,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 120,
+      "waitedMs": 168,
       "samples": 3,
       "bytes": 26258
     },
@@ -514,7 +514,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 133,
+      "waitedMs": 135,
       "samples": 3,
       "bytes": 26258
     },
@@ -527,7 +527,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 187,
+      "waitedMs": 177,
       "samples": 3,
       "bytes": 24538
     },
@@ -540,20 +540,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 781,
-      "samples": 3,
-      "bytes": 26258
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 123,
+      "waitedMs": 813,
       "samples": 3,
       "bytes": 26258
     },
@@ -579,7 +566,20 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 141,
+      "waitedMs": 130,
+      "samples": 3,
+      "bytes": 26258
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 173,
       "samples": 3,
       "bytes": 26258
     }

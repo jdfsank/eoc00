@@ -823,27 +823,27 @@
   "imageReadiness": [
     {
       "label": "original-pending-public-390",
-      "at": 1793907595781,
+      "at": 1793911323730,
       "images": []
     },
     {
       "label": "mixed-paid-future-public-390",
-      "at": 1793907618121,
+      "at": 1793911345704,
       "images": []
     },
     {
       "label": "old-merchant-public-branch-contract-390",
-      "at": 1793907627998,
+      "at": 1793911355319,
       "images": []
     },
     {
       "label": "public-branch-keyboard-submit-320-text200",
-      "at": 1793907633114,
+      "at": 1793911360324,
       "images": []
     },
     {
       "label": "actual build_joint scene",
-      "at": 1793907637753,
+      "at": 1793911364857,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -854,7 +854,7 @@
     },
     {
       "label": "actual renew_charter scene",
-      "at": 1793907639039,
+      "at": 1793911366125,
       "images": [
         {
           "src": "/assets/river-station-public-active.svg",
@@ -865,7 +865,7 @@
     },
     {
       "label": "actual present_archive scene",
-      "at": 1793907644193,
+      "at": 1793911371275,
       "images": [
         {
           "src": "/assets/river-station-public-active.svg",
@@ -876,7 +876,7 @@
     },
     {
       "label": "linche-stayed-public-390",
-      "at": 1793907645866,
+      "at": 1793911372993,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -887,7 +887,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907646331,
+      "at": 1793911373481,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -898,7 +898,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907646731,
+      "at": 1793911373890,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -909,7 +909,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907647084,
+      "at": 1793911374249,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -920,7 +920,7 @@
     },
     {
       "label": "actual relocate_teacher scene",
-      "at": 1793907651757,
+      "at": 1793911378995,
       "images": [
         {
           "src": "/assets/river-station-public-active.svg",
@@ -931,7 +931,7 @@
     },
     {
       "label": "linche-relocated-stopped-390",
-      "at": 1793907653343,
+      "at": 1793911380636,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -942,7 +942,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907653802,
+      "at": 1793911381153,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -953,7 +953,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907654161,
+      "at": 1793911381534,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -964,7 +964,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907654536,
+      "at": 1793911381848,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -975,7 +975,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907654900,
+      "at": 1793911382221,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -986,7 +986,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907655246,
+      "at": 1793911382555,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -997,7 +997,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907655604,
+      "at": 1793911382939,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1008,7 +1008,7 @@
     },
     {
       "label": "actual free_warning scene",
-      "at": 1793907660705,
+      "at": 1793911387738,
       "images": [
         {
           "src": "/assets/river-station-fee-maintenance.svg",
@@ -1019,7 +1019,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907663126,
+      "at": 1793911390157,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1030,7 +1030,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907663585,
+      "at": 1793911390722,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1041,7 +1041,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907664024,
+      "at": 1793911391070,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1052,7 +1052,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907664443,
+      "at": 1793911391435,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1063,7 +1063,7 @@
     },
     {
       "label": "actual relocate_teacher scene",
-      "at": 1793907669253,
+      "at": 1793911396132,
       "images": [
         {
           "src": "/assets/river-station-fee-maintenance.svg",
@@ -1074,7 +1074,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907671296,
+      "at": 1793911398262,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1085,7 +1085,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907671655,
+      "at": 1793911398672,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1096,7 +1096,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907672001,
+      "at": 1793911398982,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1107,7 +1107,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907672317,
+      "at": 1793911399343,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1118,7 +1118,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907672704,
+      "at": 1793911399699,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1129,7 +1129,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907677275,
+      "at": 1793911404269,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1140,7 +1140,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907677575,
+      "at": 1793911404628,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1151,7 +1151,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907677909,
+      "at": 1793911404957,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1162,7 +1162,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907678225,
+      "at": 1793911405245,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1173,7 +1173,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907678507,
+      "at": 1793911405584,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1184,7 +1184,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907678825,
+      "at": 1793911405951,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1195,7 +1195,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907679146,
+      "at": 1793911406259,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1206,7 +1206,7 @@
     },
     {
       "label": "linche-end-controls-320-text200",
-      "at": 1793907679153,
+      "at": 1793911406265,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1217,7 +1217,7 @@
     },
     {
       "label": "actual40 ending",
-      "at": 1793907679553,
+      "at": 1793911406717,
       "images": [
         {
           "src": "/assets/archive-desk.svg",
@@ -1229,7 +1229,7 @@
   ],
   "canvasReadiness": [
     {
-      "at": 1793907590893,
+      "at": 1793911318821,
       "screen": "world",
       "year": 0,
       "width": 356,
@@ -1237,7 +1237,7 @@
       "drawn": true
     },
     {
-      "at": 1793907595253,
+      "at": 1793911323179,
       "screen": "world",
       "year": 11,
       "width": 356,
@@ -1245,7 +1245,7 @@
       "drawn": true
     },
     {
-      "at": 1793907595540,
+      "at": 1793911323498,
       "screen": "world",
       "year": 11,
       "width": 356,
@@ -1253,7 +1253,7 @@
       "drawn": true
     },
     {
-      "at": 1793907596548,
+      "at": 1793911324423,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1261,7 +1261,7 @@
       "drawn": true
     },
     {
-      "at": 1793907596961,
+      "at": 1793911324752,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1269,7 +1269,7 @@
       "drawn": true
     },
     {
-      "at": 1793907601356,
+      "at": 1793911329075,
       "screen": "world",
       "year": 11,
       "width": 356,
@@ -1277,7 +1277,7 @@
       "drawn": true
     },
     {
-      "at": 1793907601640,
+      "at": 1793911329323,
       "screen": "world",
       "year": 11,
       "width": 356,
@@ -1285,7 +1285,7 @@
       "drawn": true
     },
     {
-      "at": 1793907602253,
+      "at": 1793911329961,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1293,7 +1293,7 @@
       "drawn": true
     },
     {
-      "at": 1793907602600,
+      "at": 1793911330290,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1301,7 +1301,7 @@
       "drawn": true
     },
     {
-      "at": 1793907606871,
+      "at": 1793911334486,
       "screen": "world",
       "year": 11,
       "width": 356,
@@ -1309,7 +1309,7 @@
       "drawn": true
     },
     {
-      "at": 1793907607127,
+      "at": 1793911334709,
       "screen": "world",
       "year": 11,
       "width": 356,
@@ -1317,7 +1317,7 @@
       "drawn": true
     },
     {
-      "at": 1793907607672,
+      "at": 1793911335206,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1325,7 +1325,7 @@
       "drawn": true
     },
     {
-      "at": 1793907608001,
+      "at": 1793911335530,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1333,7 +1333,7 @@
       "drawn": true
     },
     {
-      "at": 1793907612354,
+      "at": 1793911339804,
       "screen": "world",
       "year": 11,
       "width": 356,
@@ -1341,7 +1341,7 @@
       "drawn": true
     },
     {
-      "at": 1793907612587,
+      "at": 1793911340083,
       "screen": "world",
       "year": 11,
       "width": 356,
@@ -1349,7 +1349,7 @@
       "drawn": true
     },
     {
-      "at": 1793907613084,
+      "at": 1793911340623,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1357,7 +1357,7 @@
       "drawn": true
     },
     {
-      "at": 1793907613424,
+      "at": 1793911340960,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1365,7 +1365,7 @@
       "drawn": true
     },
     {
-      "at": 1793907617667,
+      "at": 1793911345235,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1373,7 +1373,7 @@
       "drawn": true
     },
     {
-      "at": 1793907617936,
+      "at": 1793911345541,
       "screen": "world",
       "year": 12,
       "width": 356,
@@ -1381,7 +1381,7 @@
       "drawn": true
     },
     {
-      "at": 1793907618844,
+      "at": 1793911346524,
       "screen": "world",
       "year": 13,
       "width": 356,
@@ -1389,7 +1389,7 @@
       "drawn": true
     },
     {
-      "at": 1793907619187,
+      "at": 1793911346875,
       "screen": "world",
       "year": 13,
       "width": 356,
@@ -1397,7 +1397,7 @@
       "drawn": true
     },
     {
-      "at": 1793907627585,
+      "at": 1793911354904,
       "screen": "world",
       "year": 0,
       "width": 356,
@@ -1405,7 +1405,7 @@
       "drawn": true
     },
     {
-      "at": 1793907627867,
+      "at": 1793911355202,
       "screen": "world",
       "year": 0,
       "width": 356,
@@ -1413,7 +1413,7 @@
       "drawn": true
     },
     {
-      "at": 1793907632689,
+      "at": 1793911359937,
       "screen": "world",
       "year": 0,
       "width": 286,
@@ -1421,7 +1421,7 @@
       "drawn": true
     },
     {
-      "at": 1793907632935,
+      "at": 1793911360165,
       "screen": "world",
       "year": 0,
       "width": 286,
@@ -1429,7 +1429,7 @@
       "drawn": true
     },
     {
-      "at": 1793907637414,
+      "at": 1793911364531,
       "screen": "world",
       "year": 0,
       "width": 356,
@@ -1437,7 +1437,7 @@
       "drawn": true
     },
     {
-      "at": 1793907637684,
+      "at": 1793911364806,
       "screen": "world",
       "year": 0,
       "width": 356,
@@ -1445,7 +1445,7 @@
       "drawn": true
     },
     {
-      "at": 1793907638352,
+      "at": 1793911365420,
       "screen": "world",
       "year": 10,
       "width": 356,
@@ -1453,7 +1453,7 @@
       "drawn": true
     },
     {
-      "at": 1793907638745,
+      "at": 1793911365836,
       "screen": "world",
       "year": 10,
       "width": 356,
@@ -1461,7 +1461,7 @@
       "drawn": true
     },
     {
-      "at": 1793907638988,
+      "at": 1793911366068,
       "screen": "world",
       "year": 10,
       "width": 356,
@@ -1469,7 +1469,7 @@
       "drawn": true
     },
     {
-      "at": 1793907643853,
+      "at": 1793911370970,
       "screen": "world",
       "year": 20,
       "width": 356,
@@ -1477,7 +1477,7 @@
       "drawn": true
     },
     {
-      "at": 1793907644132,
+      "at": 1793911371226,
       "screen": "world",
       "year": 20,
       "width": 356,
@@ -1485,7 +1485,7 @@
       "drawn": true
     },
     {
-      "at": 1793907645060,
+      "at": 1793911372183,
       "screen": "world",
       "year": 30,
       "width": 356,
@@ -1493,7 +1493,7 @@
       "drawn": true
     },
     {
-      "at": 1793907646261,
+      "at": 1793911373410,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1501,7 +1501,7 @@
       "drawn": true
     },
     {
-      "at": 1793907646658,
+      "at": 1793911373810,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1509,7 +1509,7 @@
       "drawn": true
     },
     {
-      "at": 1793907646994,
+      "at": 1793911374182,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1517,7 +1517,7 @@
       "drawn": true
     },
     {
-      "at": 1793907651470,
+      "at": 1793911378662,
       "screen": "world",
       "year": 20,
       "width": 356,
@@ -1525,7 +1525,7 @@
       "drawn": true
     },
     {
-      "at": 1793907651704,
+      "at": 1793911378942,
       "screen": "world",
       "year": 20,
       "width": 356,
@@ -1533,7 +1533,7 @@
       "drawn": true
     },
     {
-      "at": 1793907652552,
+      "at": 1793911379836,
       "screen": "world",
       "year": 30,
       "width": 356,
@@ -1541,7 +1541,7 @@
       "drawn": true
     },
     {
-      "at": 1793907653740,
+      "at": 1793911381090,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1549,7 +1549,7 @@
       "drawn": true
     },
     {
-      "at": 1793907654091,
+      "at": 1793911381460,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1557,7 +1557,7 @@
       "drawn": true
     },
     {
-      "at": 1793907654458,
+      "at": 1793911381789,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1565,7 +1565,7 @@
       "drawn": true
     },
     {
-      "at": 1793907654837,
+      "at": 1793911382143,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1573,7 +1573,7 @@
       "drawn": true
     },
     {
-      "at": 1793907655187,
+      "at": 1793911382489,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1581,7 +1581,7 @@
       "drawn": true
     },
     {
-      "at": 1793907655538,
+      "at": 1793911382860,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1589,7 +1589,7 @@
       "drawn": true
     },
     {
-      "at": 1793907660146,
+      "at": 1793911387392,
       "screen": "world",
       "year": 20,
       "width": 356,
@@ -1597,7 +1597,7 @@
       "drawn": true
     },
     {
-      "at": 1793907660616,
+      "at": 1793911387677,
       "screen": "world",
       "year": 20,
       "width": 356,
@@ -1605,7 +1605,7 @@
       "drawn": true
     },
     {
-      "at": 1793907661712,
+      "at": 1793911388802,
       "screen": "world",
       "year": 30,
       "width": 356,
@@ -1613,7 +1613,7 @@
       "drawn": true
     },
     {
-      "at": 1793907663037,
+      "at": 1793911390074,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1621,7 +1621,7 @@
       "drawn": true
     },
     {
-      "at": 1793907663496,
+      "at": 1793911390637,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1629,7 +1629,7 @@
       "drawn": true
     },
     {
-      "at": 1793907663923,
+      "at": 1793911391002,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1637,7 +1637,7 @@
       "drawn": true
     },
     {
-      "at": 1793907664358,
+      "at": 1793911391363,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1645,7 +1645,7 @@
       "drawn": true
     },
     {
-      "at": 1793907668879,
+      "at": 1793911395788,
       "screen": "world",
       "year": 20,
       "width": 356,
@@ -1653,7 +1653,7 @@
       "drawn": true
     },
     {
-      "at": 1793907669179,
+      "at": 1793911396069,
       "screen": "world",
       "year": 20,
       "width": 356,
@@ -1661,7 +1661,7 @@
       "drawn": true
     },
     {
-      "at": 1793907670053,
+      "at": 1793911397018,
       "screen": "world",
       "year": 30,
       "width": 356,
@@ -1669,7 +1669,7 @@
       "drawn": true
     },
     {
-      "at": 1793907671227,
+      "at": 1793911398205,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1677,7 +1677,7 @@
       "drawn": true
     },
     {
-      "at": 1793907671586,
+      "at": 1793911398591,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1685,7 +1685,7 @@
       "drawn": true
     },
     {
-      "at": 1793907671939,
+      "at": 1793911398922,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1693,7 +1693,7 @@
       "drawn": true
     },
     {
-      "at": 1793907672241,
+      "at": 1793911399248,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1701,7 +1701,7 @@
       "drawn": true
     },
     {
-      "at": 1793907672623,
+      "at": 1793911399629,
       "screen": "world",
       "year": 40,
       "width": 356,
@@ -1709,7 +1709,7 @@
       "drawn": true
     },
     {
-      "at": 1793907677189,
+      "at": 1793911404193,
       "screen": "world",
       "year": 40,
       "width": 286,
@@ -1717,7 +1717,7 @@
       "drawn": true
     },
     {
-      "at": 1793907677519,
+      "at": 1793911404572,
       "screen": "world",
       "year": 40,
       "width": 286,
@@ -1725,7 +1725,7 @@
       "drawn": true
     },
     {
-      "at": 1793907677853,
+      "at": 1793911404904,
       "screen": "world",
       "year": 40,
       "width": 286,
@@ -1733,7 +1733,7 @@
       "drawn": true
     },
     {
-      "at": 1793907678171,
+      "at": 1793911405188,
       "screen": "world",
       "year": 40,
       "width": 286,
@@ -1741,7 +1741,7 @@
       "drawn": true
     },
     {
-      "at": 1793907678453,
+      "at": 1793911405522,
       "screen": "world",
       "year": 40,
       "width": 286,
@@ -1749,7 +1749,7 @@
       "drawn": true
     },
     {
-      "at": 1793907678772,
+      "at": 1793911405879,
       "screen": "world",
       "year": 40,
       "width": 286,
@@ -1757,7 +1757,7 @@
       "drawn": true
     },
     {
-      "at": 1793907679086,
+      "at": 1793911406202,
       "screen": "world",
       "year": 40,
       "width": 286,
@@ -1765,7 +1765,7 @@
       "drawn": true
     },
     {
-      "at": 1793907679485,
+      "at": 1793911406655,
       "screen": "world",
       "year": 40,
       "width": 286,
@@ -1778,8 +1778,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907590240,
-      "documentId": "1793907589797.7",
+      "at": 1793911318232,
+      "documentId": "1793911317808.3",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -1793,8 +1793,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907590990,
-      "documentId": "1793907589797.7",
+      "at": 1793911318910,
+      "documentId": "1793911317808.3",
       "screen": "settings",
       "year": 0,
       "boardPresent": false,
@@ -1809,8 +1809,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907591227,
-      "documentId": "1793907589797.7",
+      "at": 1793911319140,
+      "documentId": "1793911317808.3",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -1824,8 +1824,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907595182,
-      "documentId": "1793907589797.7",
+      "at": 1793911323117,
+      "documentId": "1793911317808.3",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -1839,8 +1839,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907595301,
-      "documentId": "1793907589797.7",
+      "at": 1793911323232,
+      "documentId": "1793911317808.3",
       "screen": "list",
       "year": 11,
       "boardPresent": false,
@@ -1855,8 +1855,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907595352,
-      "documentId": "1793907589797.7",
+      "at": 1793911323303,
+      "documentId": "1793911317808.3",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -1870,8 +1870,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907596059,
-      "documentId": "1793907589797.7",
+      "at": 1793911323982,
+      "documentId": "1793911317808.3",
       "screen": "playback",
       "year": 11,
       "boardPresent": false,
@@ -1886,8 +1886,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907596327,
-      "documentId": "1793907589797.7",
+      "at": 1793911324230,
+      "documentId": "1793911317808.3",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -1901,8 +1901,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907596743,
-      "documentId": "1793907596554.7",
+      "at": 1793911324587,
+      "documentId": "1793911324427.5",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -1916,8 +1916,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907597181,
-      "documentId": "1793907596554.7",
+      "at": 1793911324947,
+      "documentId": "1793911324427.5",
       "screen": "settings",
       "year": 12,
       "boardPresent": false,
@@ -1932,8 +1932,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907597247,
-      "documentId": "1793907596554.7",
+      "at": 1793911325019,
+      "documentId": "1793911324427.5",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -1947,8 +1947,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907601300,
-      "documentId": "1793907596554.7",
+      "at": 1793911329004,
+      "documentId": "1793911324427.5",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -1962,8 +1962,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907601400,
-      "documentId": "1793907596554.7",
+      "at": 1793911329115,
+      "documentId": "1793911324427.5",
       "screen": "list",
       "year": 11,
       "boardPresent": false,
@@ -1978,8 +1978,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907601448,
-      "documentId": "1793907596554.7",
+      "at": 1793911329162,
+      "documentId": "1793911324427.5",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -1993,8 +1993,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907601861,
-      "documentId": "1793907596554.7",
+      "at": 1793911329545,
+      "documentId": "1793911324427.5",
       "screen": "playback",
       "year": 11,
       "boardPresent": false,
@@ -2009,8 +2009,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907602074,
-      "documentId": "1793907596554.7",
+      "at": 1793911329759,
+      "documentId": "1793911324427.5",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2024,8 +2024,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907602426,
-      "documentId": "1793907602256.8",
+      "at": 1793911330125,
+      "documentId": "1793911329964.9",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2039,8 +2039,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907602778,
-      "documentId": "1793907602256.8",
+      "at": 1793911330445,
+      "documentId": "1793911329964.9",
       "screen": "settings",
       "year": 12,
       "boardPresent": false,
@@ -2055,8 +2055,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907602826,
-      "documentId": "1793907602256.8",
+      "at": 1793911330494,
+      "documentId": "1793911329964.9",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -2070,8 +2070,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907606813,
-      "documentId": "1793907602256.8",
+      "at": 1793911334432,
+      "documentId": "1793911329964.9",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -2085,8 +2085,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907606913,
-      "documentId": "1793907602256.8",
+      "at": 1793911334527,
+      "documentId": "1793911329964.9",
       "screen": "list",
       "year": 11,
       "boardPresent": false,
@@ -2101,8 +2101,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907606963,
-      "documentId": "1793907602256.8",
+      "at": 1793911334580,
+      "documentId": "1793911329964.9",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -2116,8 +2116,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907607291,
-      "documentId": "1793907602256.8",
+      "at": 1793911334844,
+      "documentId": "1793911329964.9",
       "screen": "playback",
       "year": 11,
       "boardPresent": false,
@@ -2132,8 +2132,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907607491,
-      "documentId": "1793907602256.8",
+      "at": 1793911335025,
+      "documentId": "1793911329964.9",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2147,8 +2147,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907607838,
-      "documentId": "1793907607675.5",
+      "at": 1793911335360,
+      "documentId": "1793911335209.7",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2162,8 +2162,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907608180,
-      "documentId": "1793907607675.5",
+      "at": 1793911335729,
+      "documentId": "1793911335209.7",
       "screen": "settings",
       "year": 12,
       "boardPresent": false,
@@ -2178,8 +2178,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907608224,
-      "documentId": "1793907607675.5",
+      "at": 1793911335780,
+      "documentId": "1793911335209.7",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -2193,8 +2193,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907612250,
-      "documentId": "1793907607675.5",
+      "at": 1793911339749,
+      "documentId": "1793911335209.7",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -2208,8 +2208,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907612399,
-      "documentId": "1793907607675.5",
+      "at": 1793911339849,
+      "documentId": "1793911335209.7",
       "screen": "list",
       "year": 11,
       "boardPresent": false,
@@ -2224,8 +2224,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907612448,
-      "documentId": "1793907607675.5",
+      "at": 1793911339893,
+      "documentId": "1793911335209.7",
       "screen": "world",
       "year": 11,
       "boardPresent": true,
@@ -2239,8 +2239,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907612740,
-      "documentId": "1793907607675.5",
+      "at": 1793911340259,
+      "documentId": "1793911335209.7",
       "screen": "playback",
       "year": 11,
       "boardPresent": false,
@@ -2255,8 +2255,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907612924,
-      "documentId": "1793907607675.5",
+      "at": 1793911340458,
+      "documentId": "1793911335209.7",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2270,8 +2270,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907613243,
-      "documentId": "1793907613088",
+      "at": 1793911340771,
+      "documentId": "1793911340625.8",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2285,8 +2285,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907613597,
-      "documentId": "1793907613088",
+      "at": 1793911341165,
+      "documentId": "1793911340625.8",
       "screen": "settings",
       "year": 12,
       "boardPresent": false,
@@ -2301,8 +2301,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907613651,
-      "documentId": "1793907613088",
+      "at": 1793911341220,
+      "documentId": "1793911340625.8",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2316,8 +2316,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907617613,
-      "documentId": "1793907613088",
+      "at": 1793911345185,
+      "documentId": "1793911340625.8",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2331,8 +2331,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907617710,
-      "documentId": "1793907613088",
+      "at": 1793911345286,
+      "documentId": "1793911340625.8",
       "screen": "list",
       "year": 12,
       "boardPresent": false,
@@ -2347,8 +2347,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907617758,
-      "documentId": "1793907613088",
+      "at": 1793911345327,
+      "documentId": "1793911340625.8",
       "screen": "world",
       "year": 12,
       "boardPresent": true,
@@ -2362,8 +2362,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907618396,
-      "documentId": "1793907613088",
+      "at": 1793911346016,
+      "documentId": "1793911340625.8",
       "screen": "playback",
       "year": 12,
       "boardPresent": false,
@@ -2378,8 +2378,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907618673,
-      "documentId": "1793907613088",
+      "at": 1793911346309,
+      "documentId": "1793911340625.8",
       "screen": "world",
       "year": 13,
       "boardPresent": true,
@@ -2393,8 +2393,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907619019,
-      "documentId": "1793907618855.4",
+      "at": 1793911346707,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 13,
       "boardPresent": true,
@@ -2408,8 +2408,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907619227,
-      "documentId": "1793907618855.4",
+      "at": 1793911346930,
+      "documentId": "1793911346543.9",
       "screen": "settings",
       "year": 13,
       "boardPresent": false,
@@ -2424,8 +2424,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907623158,
-      "documentId": "1793907618855.4",
+      "at": 1793911350889,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2439,8 +2439,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907627131,
-      "documentId": "1793907618855.4",
+      "at": 1793911354846,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2454,8 +2454,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907627629,
-      "documentId": "1793907618855.4",
+      "at": 1793911354947,
+      "documentId": "1793911346543.9",
       "screen": "list",
       "year": 0,
       "boardPresent": false,
@@ -2470,8 +2470,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907627710,
-      "documentId": "1793907618855.4",
+      "at": 1793911354990,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2485,8 +2485,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907627913,
-      "documentId": "1793907618855.4",
+      "at": 1793911355246,
+      "documentId": "1793911346543.9",
       "screen": "avg",
       "year": 0,
       "boardPresent": false,
@@ -2501,8 +2501,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907628458,
-      "documentId": "1793907618855.4",
+      "at": 1793911355757,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2516,8 +2516,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907632424,
-      "documentId": "1793907618855.4",
+      "at": 1793911359690,
+      "documentId": "1793911346543.9",
       "screen": "settings",
       "year": 0,
       "boardPresent": false,
@@ -2532,8 +2532,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907632531,
-      "documentId": "1793907618855.4",
+      "at": 1793911359781,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2547,8 +2547,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907632730,
-      "documentId": "1793907618855.4",
+      "at": 1793911359980,
+      "documentId": "1793911346543.9",
       "screen": "list",
       "year": 0,
       "boardPresent": false,
@@ -2563,8 +2563,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907632773,
-      "documentId": "1793907618855.4",
+      "at": 1793911360024,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2578,8 +2578,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907632982,
-      "documentId": "1793907618855.4",
+      "at": 1793911360214,
+      "documentId": "1793911346543.9",
       "screen": "avg",
       "year": 0,
       "boardPresent": false,
@@ -2594,8 +2594,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907633317,
-      "documentId": "1793907618855.4",
+      "at": 1793911360520,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2609,8 +2609,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907637311,
-      "documentId": "1793907618855.4",
+      "at": 1793911364479,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2624,8 +2624,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907637463,
-      "documentId": "1793907618855.4",
+      "at": 1793911364578,
+      "documentId": "1793911346543.9",
       "screen": "list",
       "year": 0,
       "boardPresent": false,
@@ -2640,8 +2640,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907637505,
-      "documentId": "1793907618855.4",
+      "at": 1793911364623,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 0,
       "boardPresent": true,
@@ -2655,8 +2655,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907637731,
-      "documentId": "1793907618855.4",
+      "at": 1793911364847,
+      "documentId": "1793911346543.9",
       "screen": "avg",
       "year": 0,
       "boardPresent": false,
@@ -2671,8 +2671,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907638177,
-      "documentId": "1793907618855.4",
+      "at": 1793911365241,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 10,
       "boardPresent": true,
@@ -2686,8 +2686,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907638711,
-      "documentId": "1793907618855.4",
+      "at": 1793911365811,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 10,
       "boardPresent": true,
@@ -2701,8 +2701,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907638797,
-      "documentId": "1793907618855.4",
+      "at": 1793911365883,
+      "documentId": "1793911346543.9",
       "screen": "list",
       "year": 10,
       "boardPresent": false,
@@ -2717,8 +2717,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907638846,
-      "documentId": "1793907618855.4",
+      "at": 1793911365930,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 10,
       "boardPresent": true,
@@ -2732,8 +2732,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907639028,
-      "documentId": "1793907618855.4",
+      "at": 1793911366113,
+      "documentId": "1793911346543.9",
       "screen": "avg",
       "year": 10,
       "boardPresent": false,
@@ -2748,8 +2748,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907639687,
-      "documentId": "1793907618855.4",
+      "at": 1793911366772,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -2763,8 +2763,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907643798,
-      "documentId": "1793907618855.4",
+      "at": 1793911370916,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -2778,8 +2778,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907643898,
-      "documentId": "1793907618855.4",
+      "at": 1793911371015,
+      "documentId": "1793911346543.9",
       "screen": "list",
       "year": 20,
       "boardPresent": false,
@@ -2794,8 +2794,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907643940,
-      "documentId": "1793907618855.4",
+      "at": 1793911371060,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -2809,8 +2809,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907644180,
-      "documentId": "1793907618855.4",
+      "at": 1793911371263,
+      "documentId": "1793911346543.9",
       "screen": "avg",
       "year": 20,
       "boardPresent": false,
@@ -2825,8 +2825,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907644894,
-      "documentId": "1793907618855.4",
+      "at": 1793911372007,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 30,
       "boardPresent": true,
@@ -2840,8 +2840,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907645096,
-      "documentId": "1793907618855.4",
+      "at": 1793911372237,
+      "documentId": "1793911346543.9",
       "screen": "window",
       "year": 30,
       "boardPresent": false,
@@ -2856,8 +2856,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907646112,
-      "documentId": "1793907618855.4",
+      "at": 1793911373230,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -2871,8 +2871,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907646316,
-      "documentId": "1793907618855.4",
+      "at": 1793911373464,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -2887,8 +2887,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907646460,
-      "documentId": "1793907618855.4",
+      "at": 1793911373612,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -2902,8 +2902,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907646716,
-      "documentId": "1793907618855.4",
+      "at": 1793911373869,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -2918,8 +2918,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907646849,
-      "documentId": "1793907618855.4",
+      "at": 1793911374012,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -2933,8 +2933,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907647048,
-      "documentId": "1793907618855.4",
+      "at": 1793911374233,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -2949,8 +2949,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907647184,
-      "documentId": "1793907618855.4",
+      "at": 1793911374370,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -2964,8 +2964,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907651363,
-      "documentId": "1793907618855.4",
+      "at": 1793911378581,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -2979,8 +2979,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907651511,
-      "documentId": "1793907618855.4",
+      "at": 1793911378716,
+      "documentId": "1793911346543.9",
       "screen": "list",
       "year": 20,
       "boardPresent": false,
@@ -2995,8 +2995,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907651563,
-      "documentId": "1793907618855.4",
+      "at": 1793911378763,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -3010,8 +3010,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907651745,
-      "documentId": "1793907618855.4",
+      "at": 1793911378981,
+      "documentId": "1793911346543.9",
       "screen": "avg",
       "year": 20,
       "boardPresent": false,
@@ -3026,8 +3026,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907652377,
-      "documentId": "1793907618855.4",
+      "at": 1793911379630,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 30,
       "boardPresent": true,
@@ -3041,8 +3041,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907652595,
-      "documentId": "1793907618855.4",
+      "at": 1793911379880,
+      "documentId": "1793911346543.9",
       "screen": "window",
       "year": 30,
       "boardPresent": false,
@@ -3057,8 +3057,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907653576,
-      "documentId": "1793907618855.4",
+      "at": 1793911380912,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3072,8 +3072,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907653784,
-      "documentId": "1793907618855.4",
+      "at": 1793911381137,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3088,8 +3088,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907653926,
-      "documentId": "1793907618855.4",
+      "at": 1793911381277,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3103,8 +3103,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907654147,
-      "documentId": "1793907618855.4",
+      "at": 1793911381519,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3119,8 +3119,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907654260,
-      "documentId": "1793907618855.4",
+      "at": 1793911381629,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3134,8 +3134,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907654517,
-      "documentId": "1793907618855.4",
+      "at": 1793911381833,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3150,8 +3150,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907654660,
-      "documentId": "1793907618855.4",
+      "at": 1793911381977,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3165,8 +3165,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907654884,
-      "documentId": "1793907618855.4",
+      "at": 1793911382203,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3181,8 +3181,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907655026,
-      "documentId": "1793907618855.4",
+      "at": 1793911382310,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3196,8 +3196,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907655229,
-      "documentId": "1793907618855.4",
+      "at": 1793911382535,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3212,8 +3212,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907655377,
-      "documentId": "1793907618855.4",
+      "at": 1793911382678,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3227,8 +3227,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907655588,
-      "documentId": "1793907618855.4",
+      "at": 1793911382919,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3243,8 +3243,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907655745,
-      "documentId": "1793907618855.4",
+      "at": 1793911383064,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -3258,8 +3258,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907659983,
-      "documentId": "1793907618855.4",
+      "at": 1793911387238,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -3273,8 +3273,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907660203,
-      "documentId": "1793907618855.4",
+      "at": 1793911387451,
+      "documentId": "1793911346543.9",
       "screen": "list",
       "year": 20,
       "boardPresent": false,
@@ -3289,8 +3289,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907660258,
-      "documentId": "1793907618855.4",
+      "at": 1793911387512,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -3304,8 +3304,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907660686,
-      "documentId": "1793907618855.4",
+      "at": 1793911387719,
+      "documentId": "1793911346543.9",
       "screen": "avg",
       "year": 20,
       "boardPresent": false,
@@ -3320,8 +3320,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907661482,
-      "documentId": "1793907618855.4",
+      "at": 1793911388535,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 30,
       "boardPresent": true,
@@ -3335,8 +3335,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907661764,
-      "documentId": "1793907618855.4",
+      "at": 1793911388846,
+      "documentId": "1793911346543.9",
       "screen": "window",
       "year": 30,
       "boardPresent": false,
@@ -3351,8 +3351,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907662780,
-      "documentId": "1793907618855.4",
+      "at": 1793911389849,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3366,8 +3366,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907663104,
-      "documentId": "1793907618855.4",
+      "at": 1793911390123,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3382,8 +3382,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907663281,
-      "documentId": "1793907618855.4",
+      "at": 1793911390261,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3397,8 +3397,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907663568,
-      "documentId": "1793907618855.4",
+      "at": 1793911390702,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3413,8 +3413,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907663710,
-      "documentId": "1793907618855.4",
+      "at": 1793911390830,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3428,8 +3428,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907663995,
-      "documentId": "1793907618855.4",
+      "at": 1793911391052,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3444,8 +3444,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907664143,
-      "documentId": "1793907618855.4",
+      "at": 1793911391194,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3459,8 +3459,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907664422,
-      "documentId": "1793907618855.4",
+      "at": 1793911391415,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3475,8 +3475,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907664572,
-      "documentId": "1793907618855.4",
+      "at": 1793911391559,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -3490,8 +3490,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907668781,
-      "documentId": "1793907618855.4",
+      "at": 1793911395716,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -3505,8 +3505,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907668930,
-      "documentId": "1793907618855.4",
+      "at": 1793911395830,
+      "documentId": "1793911346543.9",
       "screen": "list",
       "year": 20,
       "boardPresent": false,
@@ -3521,8 +3521,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907668972,
-      "documentId": "1793907618855.4",
+      "at": 1793911395873,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 20,
       "boardPresent": true,
@@ -3536,8 +3536,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907669232,
-      "documentId": "1793907618855.4",
+      "at": 1793911396118,
+      "documentId": "1793911346543.9",
       "screen": "avg",
       "year": 20,
       "boardPresent": false,
@@ -3552,8 +3552,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907669912,
-      "documentId": "1793907618855.4",
+      "at": 1793911396812,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 30,
       "boardPresent": true,
@@ -3567,8 +3567,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907670092,
-      "documentId": "1793907618855.4",
+      "at": 1793911397064,
+      "documentId": "1793911346543.9",
       "screen": "window",
       "year": 30,
       "boardPresent": false,
@@ -3583,8 +3583,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907671033,
-      "documentId": "1793907618855.4",
+      "at": 1793911398029,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3598,8 +3598,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907671281,
-      "documentId": "1793907618855.4",
+      "at": 1793911398249,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3614,8 +3614,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907671427,
-      "documentId": "1793907618855.4",
+      "at": 1793911398394,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3629,8 +3629,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907671636,
-      "documentId": "1793907618855.4",
+      "at": 1793911398654,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3645,8 +3645,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907671759,
-      "documentId": "1793907618855.4",
+      "at": 1793911398759,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3660,8 +3660,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907671984,
-      "documentId": "1793907618855.4",
+      "at": 1793911398965,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3676,8 +3676,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907672092,
-      "documentId": "1793907618855.4",
+      "at": 1793911399075,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3691,8 +3691,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907672299,
-      "documentId": "1793907618855.4",
+      "at": 1793911399325,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3707,8 +3707,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907672444,
-      "documentId": "1793907618855.4",
+      "at": 1793911399459,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3722,8 +3722,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907672685,
-      "documentId": "1793907618855.4",
+      "at": 1793911399683,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3738,8 +3738,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907672858,
-      "documentId": "1793907618855.4",
+      "at": 1793911399860,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3753,8 +3753,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907676880,
-      "documentId": "1793907618855.4",
+      "at": 1793911403880,
+      "documentId": "1793911346543.9",
       "screen": "settings",
       "year": 40,
       "boardPresent": false,
@@ -3769,8 +3769,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907677020,
-      "documentId": "1793907618855.4",
+      "at": 1793911404010,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3784,8 +3784,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907677257,
-      "documentId": "1793907618855.4",
+      "at": 1793911404253,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3800,8 +3800,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907677377,
-      "documentId": "1793907618855.4",
+      "at": 1793911404414,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3815,8 +3815,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907677563,
-      "documentId": "1793907618855.4",
+      "at": 1793911404616,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3831,8 +3831,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907677674,
-      "documentId": "1793907618855.4",
+      "at": 1793911404760,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3846,8 +3846,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907677895,
-      "documentId": "1793907618855.4",
+      "at": 1793911404946,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3862,8 +3862,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907678025,
-      "documentId": "1793907618855.4",
+      "at": 1793911405042,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3877,8 +3877,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907678212,
-      "documentId": "1793907618855.4",
+      "at": 1793911405234,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3893,8 +3893,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907678307,
-      "documentId": "1793907618855.4",
+      "at": 1793911405380,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3908,8 +3908,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907678494,
-      "documentId": "1793907618855.4",
+      "at": 1793911405567,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3924,8 +3924,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907678591,
-      "documentId": "1793907618855.4",
+      "at": 1793911405715,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3939,8 +3939,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907678810,
-      "documentId": "1793907618855.4",
+      "at": 1793911405939,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3955,8 +3955,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907678916,
-      "documentId": "1793907618855.4",
+      "at": 1793911406026,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -3970,8 +3970,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907679133,
-      "documentId": "1793907618855.4",
+      "at": 1793911406248,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -3986,8 +3986,8 @@
     {
       "kind": "canvas-attached",
       "action": "current-canvas-attached",
-      "at": 1793907679343,
-      "documentId": "1793907618855.4",
+      "at": 1793911406495,
+      "documentId": "1793911346543.9",
       "screen": "world",
       "year": 40,
       "boardPresent": true,
@@ -4001,8 +4001,8 @@
     {
       "kind": "canvas-detached",
       "action": "old-canvas-removed",
-      "at": 1793907679533,
-      "documentId": "1793907618855.4",
+      "at": 1793911406700,
+      "documentId": "1793911346543.9",
       "screen": "ending",
       "year": 40,
       "boardPresent": false,
@@ -4017,12 +4017,12 @@
   ],
   "runtimeHash": {
     "before": {
-      "sha256": "e306ec888138a3221c4d8c3370db88a1f743e127b0bd983e650904b7f7e260c4",
-      "files": 283
+      "sha256": "c60877ffd14ddb0c1dad0693ffdb96254b5fde1ade6b11f2c92018920de7c5b6",
+      "files": 284
     },
     "after": {
-      "sha256": "e306ec888138a3221c4d8c3370db88a1f743e127b0bd983e650904b7f7e260c4",
-      "files": 283
+      "sha256": "c60877ffd14ddb0c1dad0693ffdb96254b5fde1ade6b11f2c92018920de7c5b6",
+      "files": 284
     }
   },
   "counts": {

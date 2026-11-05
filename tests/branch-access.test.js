@@ -80,9 +80,10 @@ test('three compatibility fixture blobs are exact published engines apart from t
   }
 });
 
-test('new runs explicitly pin source access; adding the tag is the only factory state change', () => {
+test('new runs explicitly pin source access and future checks; only explicit tags differ from the frozen factory', () => {
   const state = sim.createRun(1), expected = before.createRun(1);
   expected.branchAccessRulesVersion = BRANCH_ACCESS_RULES.source;
+  expected.futureCheckRulesVersion = sim.FUTURE_CHECK_RULES.version;
   assert.deepEqual(state, expected);
   assert.deepEqual(reload(state), state);
   submit(before, expected, 'build_merchant'); submit(sim, state, 'build_merchant');

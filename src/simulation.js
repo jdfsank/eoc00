@@ -36,6 +36,8 @@ export const RECRUITMENT_RULES = Object.freeze({ version: 'recruitment-v1' });
 export const usesRecruitmentRules = s => s.recruitmentRulesVersion === RECRUITMENT_RULES.version;
 export const RECOVERY_RULES = Object.freeze({ version: 'recovery-v1' });
 export const usesRecoveryRules = s => s.recoveryRulesVersion === RECOVERY_RULES.version;
+export const FUTURE_CHECK_RULES = Object.freeze({ version: 'future-check-v1', actionId: 'establish_future_check', dueYear: 34 });
+export const usesFutureCheckRules = s => s.futureCheckRulesVersion === FUTURE_CHECK_RULES.version;
 export const PORT_ACCESS_RULES = Object.freeze({version:'port-access-v1'});
 export const usesPortAccessRules = s => s.portAccessRulesVersion === PORT_ACCESS_RULES.version;
 export const RECRUITMENT_ACTIONS = ['recruit_successor', 'recruit_risk', 'recruit_volunteer'];
@@ -134,7 +136,7 @@ export function getHandoffReadiness(s) {
     return !!grant && grant.sourceActionId === i.sourceActionId && s.events.some(e => e.id === grant.eventId && e.actionId === 'renew_charter' && e.status === 'success' && e.resolvedYear === grant.year && e.authorizedTrainingSources?.includes(grant.sourceActionId));
   };
   const authorizedStaff = staff.filter(hasMandate);
-  const checks = live.filter(i => i.kind === 'independent' && (['preserve_records', 'independent_review'].includes(sourceEvent(i)?.actionId) || (usesRecoveryRules(s) && sourceEvent(i)?.actionId === 'complete_review' && isRecoveryCarrier(s,i))));
+  const checks = live.filter(i => i.kind === 'independent' && (['preserve_records', 'independent_review'].includes(sourceEvent(i)?.actionId) || (usesRecoveryRules(s) && sourceEvent(i)?.actionId === 'complete_review' && isRecoveryCarrier(s,i)) || (usesFutureCheckRules(s) && isFutureCheckCarrier(s,i))));
   const links = authorizedStaff.flatMap(person => checks.filter(check => check.cellId !== person.cellId).map(check => ({ staffId: person.id, staffCell: person.cellId, checkId: check.id, checkCell: check.cellId })));
   const trust = s.flags.trust ?? !!s.flags.renewed;
   const missing = [];
@@ -188,7 +190,7 @@ function schedule(s, data) {
   if (!s.events.some(e => e.id === data.id)) s.events.push({ kind: 'event', status: 'pending', parentId: null, sourceActionId: null, probability: 1, conditionVersion: 1, ...data });
 }
 export function createRun(seed = 12) {
-  const s = { version: 'afterwave.run.v1', crisisRulesVersion: COVERAGE_RULES.version, staffingRulesVersion: STAFFING_RULES.version, branchAccessRulesVersion: BRANCH_ACCESS_RULES.version, planningRulesVersion: PLANNING_RULES.version, handoffRulesVersion: HANDOFF_RULES.version, aftermathRulesVersion: AFTERMATH_RULES.version, recruitmentRulesVersion: RECRUITMENT_RULES.version, recoveryRulesVersion: RECOVERY_RULES.version, portAccessRulesVersion: PORT_ACCESS_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
+  const s = { version: 'afterwave.run.v1', crisisRulesVersion: COVERAGE_RULES.version, staffingRulesVersion: STAFFING_RULES.version, branchAccessRulesVersion: BRANCH_ACCESS_RULES.version, planningRulesVersion: PLANNING_RULES.version, handoffRulesVersion: HANDOFF_RULES.version, aftermathRulesVersion: AFTERMATH_RULES.version, recruitmentRulesVersion: RECRUITMENT_RULES.version, recoveryRulesVersion: RECOVERY_RULES.version, futureCheckRulesVersion: FUTURE_CHECK_RULES.version, portAccessRulesVersion: PORT_ACCESS_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
   s.cells.forEach(c => { c.deployable = ['D4', 'B4'].includes(c.id); if (c.name === '未命名地域') c.name = `${c.id}·${c.terrain === 'water' ? '水域' : '原野'}`; });
   record(s, { id: 'arrival', title: '第零年 · 借来的十年', text: '续史局只能在每十年的窗口介入一次。你是唯一的介入员。河港将迎来洪水，但居民并不只需要被拯救。', kind: 'arrival' });
   s.snapshots[0] = copy(s.cells); return s;
@@ -355,6 +357,55 @@ export function hasCompletedRecovery(s) {
   return usesRecoveryRules(s)&&s.institutions.some(i=>i.active&&i.maintenance>0&&isRecoveryCarrier(s,i));
 }
 
+// A new prospective contract, never a substitute for the failed-review contract.
+// Evidence, paid materials, technicians, the outcome and the carrier must all
+// point to the same real year30 action. Later shutdowns preserve historical work.
+function validFutureCheckSource(s, e) {
+  const actionId = FUTURE_CHECK_RULES.actionId;
+  if(e.actionId!==actionId)return !('futureCheckRulesVersion' in e || 'futureCheckWorkforceIds' in e || e.sourceActionId?.endsWith(`:${actionId}`) || e.id?.endsWith(`:${actionId}`));
+  if(!usesFutureCheckRules(s)||!usesTradeoffs(s))return false;
+  const [prefix,year,actorId,place,kind,extra]=(e.sourceActionId||'').split(':');
+  const source=s.history.find(h=>h.id===e.sourceActionId),outcome=s.history.find(h=>h.id===`resolved:${e.id}`);
+  if(prefix!=='action'||year!=='30'||place!=='B4'||kind!==actionId||extra!==undefined||!s.actors.some(a=>a.id===actorId&&a.availableFrom<=30))return false;
+  if(e.kind!=='event'||e.cellId!=='B4'||e.id!==`event:${e.sourceActionId}`||e.parentId!==e.sourceActionId||e.year!==34||e.probability!==1||e.futureCheckRulesVersion!==FUTURE_CHECK_RULES.version)return false;
+  if(source?.kind!=='action'||source.status!=='confirmed'||source.parentId!==null||source.sourceActionId!==source.id||source.year!==30||source.cellId!=='B4'||source.futureCheckRulesVersion!==FUTURE_CHECK_RULES.version)return false;
+  if((source.actorId!==undefined&&source.actorId!==actorId)||(e.actorId!==undefined&&e.actorId!==actorId))return false;
+  if(source.cost?.economy!==6||source.cost?.science!==4||Object.keys(source.cost).length!==2)return false;
+  if(e.planningRulesVersion!==PLANNING_RULES.version||!Array.isArray(e.evidence)||new Set(e.evidence).size!==e.evidence.length||e.evidence.length!==2||!['anomaly_records','resident_testimony'].every(id=>e.evidence.includes(id))||JSON.stringify(e.evidence)!==JSON.stringify(source.evidence))return false;
+  const inventory=s.investigations?.[`30:${actorId}`]||[];
+  if(!e.evidence.every(id=>inventory.some(entry=>entry.evidenceId===id&&(entry.cellId==='B4'||PORTABLE_EVIDENCE.includes(id)))))return false;
+  if([source,e,...(outcome?[outcome]:[])].some(row=>(row.reality!==undefined&&row.reality!=='R1')||(row.actionId!==undefined&&row.actionId!==actionId)||(row.actorId!==undefined&&row.actorId!==actorId)))return false;
+  if(s.history.filter(h=>h.kind==='action'&&h.id.startsWith(`action:30:${actorId}:`)).length!==1||s.history.some(h=>h.id===`pass:30:${actorId}`))return false;
+  if(s.events.filter(row=>row.id===e.id).length!==1||s.history.filter(h=>h.id===source.id).length!==1||outcome&&s.history.filter(h=>h.id===outcome.id).length!==1)return false;
+  const carriers=s.institutions.filter(i=>i.sourceEventId===e.id||i.sourceActionId===e.sourceActionId);
+  if(e.status==='pending')return e.year>s.year&&e.resolvedYear===undefined&&!outcome&&e.futureCheckWorkforceIds===undefined&&!carriers.length;
+  if(!['success','cancelled'].includes(e.status)||e.year>s.year||e.resolvedYear!==34||outcome?.year!==34||outcome.parentId!==e.id||outcome.sourceActionId!==source.id||outcome.cellId!=='B4'||outcome.status!==e.status||outcome.kind!==(e.status==='success'?'outcome':'cancelled')||outcome.futureCheckRulesVersion!==FUTURE_CHECK_RULES.version)return false;
+  if(e.status==='cancelled')return e.futureCheckWorkforceIds===undefined&&outcome.futureCheckWorkforceIds===undefined&&!carriers.length;
+  const workforce=e.futureCheckWorkforceIds;
+  if(!Array.isArray(workforce)||!workforce.length||new Set(workforce).size!==workforce.length||JSON.stringify(workforce)!==JSON.stringify(outcome.futureCheckWorkforceIds))return false;
+  const proven=getRecoveryWorkforce(s,{requireActive:s.year<=34});
+  return workforce.every(id=>proven.some(i=>i.id===id&&i.startYear<34))&&carriers.length===1&&carriers.every(i=>i.kind==='independent'&&i.id===`institution:${e.id}:B4`&&i.cellId==='B4'&&i.startYear===34&&i.sourceEventId===e.id&&i.sourceActionId===e.sourceActionId);
+}
+function isFutureCheckCarrier(s, i) {
+  const e=s.events.find(e=>e.id===i.sourceEventId&&e.actionId===FUTURE_CHECK_RULES.actionId);
+  return !!e&&e.status==='success'&&i.kind==='independent'&&i.id===`institution:${e.id}:B4`&&i.cellId==='B4'&&i.startYear===34&&i.sourceActionId===e.sourceActionId&&validFutureCheckSource(s,e);
+}
+export function getFutureCheckSources(s, {requireActive=true}={}) {
+  if(!usesFutureCheckRules(s))return [];
+  return s.institutions.filter(i=>(!requireActive||(i.active&&i.maintenance>0))&&isFutureCheckCarrier(s,i)).map(i=>({institutionId:i.id,cellId:i.cellId,eventId:i.sourceEventId,recordId:`resolved:${i.sourceEventId}`,sourceActionId:i.sourceActionId,workforceIds:[...s.events.find(e=>e.id===i.sourceEventId).futureCheckWorkforceIds]}));
+}
+export function hasCompletedFutureCheck(s) { return getFutureCheckSources(s).length>0; }
+export function getFutureCheckContracts(s) {
+  if(!usesFutureCheckRules(s))return [];
+  return s.events.filter(e=>e.actionId===FUTURE_CHECK_RULES.actionId&&validFutureCheckSource(s,e)).map(e=>({actionId:e.actionId,status:e.status,year:e.year,cellId:e.cellId,sourceActionId:e.sourceActionId,eventId:e.id,recordId:e.status==='pending'?null:`resolved:${e.id}`,institutionId:e.status==='success'?`institution:${e.id}:B4`:null,workforceIds:[...(e.futureCheckWorkforceIds||[])]}));
+}
+export function getFutureCheckPlan(s) {
+  const enabled=usesFutureCheckRules(s)&&usesTradeoffs(s);
+  const existing=enabled&&getHandoffReadiness(s).checkCells.includes('B4');
+  const recovery=enabled&&getRecoverySource(s,'B4');
+  return {enabled,available:enabled&&s.year===30&&!existing&&!recovery,reason:!enabled?'本局未启用从零未来校验合同。':s.year!==30?'新建未来校验只在第30年安排。':existing?'B4已有运转中的独立校验来源，无需另付从零建设成本。':recovery?'B4有可用失败底稿，可沿用成本更低、到位更早的遗留校验合同。':'B4尚无可用独立校验或失败底稿，可从零建立面向未来的新席；停运的旧载体仍原样保留。'};
+}
+
 export function getAidPlan(s) {
   const existing = s.institutions.filter(i => i.kind === 'mutual' && i.cellId === 'D5');
   const working = existing.filter(i => i.active && i.maintenance > 0);
@@ -408,6 +459,7 @@ export function getActions(s, cellId, actorId = 'protagonist', evidence = null) 
     action('local_veto', '授予地方停闸权', '居民可以在异常水位时拒绝中央开闸令，先行撤离。', { politics: 4 }, 1, 1, [], '只能减轻损失，无法修正错误标准。', '第23年损失显著降低。'));
   if (cellId === 'E4' && y >= 20) out.push(action('train_network', '培育轮值维护者', '培养能够独立接班、公开记录的地方小组。', { economy: 4, science: 2 }, 1, 1, [], '人手需要时间成长，不会立即改变当年的危机。', '增加独立网络与退出独占控制的条件。'));
   if (y === 30 && getRecoverySource(s,cellId)) out.push(action('complete_review', '完成遗留校验 · 面向今后', '重新整理当年未完成的异源测量记录，把尚存的底稿与实际读尺工作接起来。', {economy:4,science:3}, 1, 2, ['anomaly_records'], '第32年仍需运转中的测量或教学人手；无人或原记录停运则取消，成本不退。不会改写第23年的损失。', '条件齐备后，新增面向未来的真实校验载体；不自动获得培训人手、授权、信任或交班方针。'));
+  if (cellId==='B4'&&getFutureCheckPlan(s).available) out.push(action(FUTURE_CHECK_RULES.actionId,'建立未来校验席','购置新刻水尺与对照抄本，结合修院居民重新指认的水痕，留出连续比对的工作席。',{economy:6,science:4},1,4,['anomaly_records','resident_testimony'],'第34年仍需真实运转的测量或教学人手；无人则取消，已付材料与场地成本不退。不补造早年的失败或改写第23年。','条件成立后新建B4未来异源校验载体；不附送培训、地方授权、信任或交班方针。'));
   if (cellId==='F6'&&y===30&&usesPortAccessRules(s)&&usesTradeoffs(s)&&getPortWarningTargets(s).length) out.push(action('open_port_warning','协商远港公开预警','听取远港居民证词，为既有分站的基本预警筹措本地经费，取消缴费名单的准入门槛。',{economy:4,politics:2},1,1,['resident_testimony'],'第31年目标分站须仍在有效运转且尚未开放，否则取消，费用不退。不会重开停运机构、补足维护或改写第23年。','第31年起只向未缴费家庭开放既有远港分站；不新增教学、异源校验、授权、河港信任或交班方针。'));
   if (cellId === 'D4' && y === 30 && actorId === 'protagonist') out.push(
     action('share_power', '共享档案与纠错权', '把历史干预的证据与否决权交给现实中的维护网络。', { politics: 3, economy: 3 }, 1, 1, [], '没有独立网络与地方信任，权利将停留在纸上。', '有准备的地区可自治并互相复核。'),
@@ -456,6 +508,8 @@ export function getActions(s, cellId, actorId = 'protagonist', evidence = null) 
   }
   const completion = out.find(a=>a.id==='complete_review');
   if(completion) completion.conditional = true;
+  const futureCheck=out.find(a=>a.id===FUTURE_CHECK_RULES.actionId);
+  if(futureCheck){futureCheck.conditional=true;notes.establish_future_check='经济6、科学4用于新刻水尺、对照抄本和比对工作席；异常记录2轮加B4本地居民证词1轮，耗满本角色取证，并占一个名额。第34年核对真实测量或教学人手，当前来源：'+([...new Set(getRecoveryWorkforce(s).map(i=>i.cellId))].join('、')||'无')+'。另一角色第31年培训可赶上期限，但两项占满两个名额，不能再签方针。新校验不改变第23年；同地重复不算跨地承接，共享仍需信任。经济6、科学4、3轮取证与第34年期限是本轮可调原型假设，尚未经过真人平衡验证。';}
   const port=out.find(a=>a.id==='open_port_warning');
   if(port){port.conditional=true;const targets=getPortWarningTargets(s);notes.open_port_warning=`经济4、政治2、远港本地居民证词1轮及本角色一个名额。足额维护的收费分站覆盖0.45，开放后为1；当前目标维护系数为${targets.map(i=>i.maintenance.toFixed(2)).join('、')}，实际覆盖仍乘维护系数，不承诺未来灾害减损。只改现有分站的开放规则，不改变年度产出和原机构来源；与培训、遗留校验或其他方针争夺本轮名额。第23年记录保持不变。`;}
 
@@ -505,7 +559,7 @@ export function passTask(s, actorId) { assertPlanning(s, actorId); s.drafts[acto
 export function unlockTask(s, actorId) { assertPlanning(s, actorId); delete s.drafts[actorId]; return s; }
 export function getWindowReview(s) {
   const actors = getActors(s), tasks = [], costs = {}, issues = [], warnings = [], occupied = new Map();
-  if (usesAftermathRules(s) || s.staffingRulesVersion !== undefined || s.branchAccessRulesVersion !== undefined) {
+  if (usesAftermathRules(s) || s.staffingRulesVersion !== undefined || s.branchAccessRulesVersion !== undefined || s.futureCheckRulesVersion !== undefined) {
     const integrity = validateState(s);
     if (!integrity.valid) return { ready: false, issues: integrity.errors, warnings, costs, tasks, assigned: 0, total: actors.length };
   }
@@ -539,6 +593,7 @@ export function getWindowReview(s) {
     const staff=getRecoveryWorkforce(s);
     warnings.push(staff.length ? '后续校验第32年核对实际人手与原记录；成功只增加未来校验能力。交班方针仍按第40年的授权、人手、跨地关系与信任核对。' : tasks.some(t=>t.a.id==='train_network') ? '本轮培训可在第31年提供人手，后续校验第32年再核对。两项各占一个名额，不能同时用这些名额签署交班方针；第23年的损失不变。' : '当前没有测量或教学人手，本轮也未锁定培训。第32年若仍无人到位，后续校验会取消且成本不退；可修改另一角色的安排。');
   }
+  if(tasks.some(t=>t.a.id===FUTURE_CHECK_RULES.actionId))warnings.push(getRecoveryWorkforce(s).length?'新建未来校验席第34年仍核对真实测量或教学人手；成本经济6、科学4不退。校验不提供授权、信任或方针，第23年记录保留。':tasks.some(t=>t.a.id==='train_network')?'本轮培训第31年到位可支持第34年未来校验；两项占满两个名额，不能同时签署方针。材料成本不退，第23年不变。':'当前没有测量或教学人手，本轮也未锁定培训。第34年若仍无人到位，新建校验取消，经济6、科学4不退。');
   const reviewCount = tasks.filter(t => t.a.id === 'independent_review').length;
   const vetoCount = tasks.filter(t => t.a.id === 'local_veto').length;
   if (reviewCount > 1) warnings.push(usesTradeoffs(s) && tasks.some(t => t.a.id === 'independent_review' && t.a.probability < 1) ? '双地紧急复核分别判定，任一成功即可纠正共同指令。成功后的危机保护不叠加，但两地机构仍各自产出，自治还需真实维护人手。' : '重复交叉复核：四地共同失效保护只生效一次。两个所在地的独立站仍各自产出知识，但不会获得两次危机减伤。');
@@ -555,11 +610,12 @@ export function commitWindow(s) {
   for (const { d, a } of tasks) {
     const sourceActionId = `action:${s.year}:${d.actorId}:${d.cellId}:${a.id}`;
     const port = a.id==='open_port_warning'?{portBranchIds:getPortWarningTargets(s).map(i=>i.id)}:{};
+    const futureCheck = a.id===FUTURE_CHECK_RULES.actionId?{futureCheckRulesVersion:FUTURE_CHECK_RULES.version}:{};
     const recovery = a.id === 'complete_review' ? {recoverySourceId:getRecoverySource(s,d.cellId).eventId,recoveryInstitutionId:getRecoverySource(s,d.cellId).institutionId} : {};
     const recruitment = usesRecruitmentRules(s) && RECRUITMENT_ACTIONS.includes(a.id) ? { departureRoleIds: getRecruitmentRoles(s).map(i => i.id) } : {};
     for (const [k, v] of Object.entries(a.cost)) cell(s, d.cellId).channels[k] = clamp(cell(s, d.cellId).channels[k] - v);
-    record(s, { id: sourceActionId, title: a.title, text: a.id==='open_port_warning'?`${a.description} 确定成本已支付；第31年核对原分站仍在有效运转且尚未开放，否则取消，费用不退。`:a.id==='complete_review' ? `${a.description} 确定成本已支付；第32年核对原记录与实际测量/教学人手，条件不符则取消，费用不退。` : `${a.description} 确定成本已支付；${a.probability === 1 ? '确定' : `${Math.round(a.probability * 100)}%概率`}在第${s.year + a.dueIn}年兑现。`, cellId: d.cellId, kind: 'action', sourceActionId, evidence: copy(d.evidence), cost: copy(a.cost), ...recruitment, ...recovery, ...port });
-    schedule(s, { id: `event:${sourceActionId}`, year: s.year + a.dueIn, cellId: d.cellId, title: a.title, text: a.description, actionId: a.id, parentId: sourceActionId, sourceActionId, probability: a.probability, ...recruitment, ...recovery, ...port, ...(usesTradeoffs(s) ? { planningRulesVersion: PLANNING_RULES.version, evidence: copy(d.evidence), ...(a.id === 'independent_review' ? { preparation: reviewPreparation(s) } : {}) } : {}) });
+    record(s, { id: sourceActionId, title: a.title, text: a.id===FUTURE_CHECK_RULES.actionId?`${a.description} 经济6、科学4的材料与场地成本已支付；第34年核对真实测量或教学人手，无人则取消，费用不退。第23年历史不变。`:a.id==='open_port_warning'?`${a.description} 确定成本已支付；第31年核对原分站仍在有效运转且尚未开放，否则取消，费用不退。`:a.id==='complete_review' ? `${a.description} 确定成本已支付；第32年核对原记录与实际测量/教学人手，条件不符则取消，费用不退。` : `${a.description} 确定成本已支付；${a.probability === 1 ? '确定' : `${Math.round(a.probability * 100)}%概率`}在第${s.year + a.dueIn}年兑现。`, cellId: d.cellId, kind: 'action', sourceActionId, evidence: copy(d.evidence), cost: copy(a.cost), ...recruitment, ...recovery, ...futureCheck, ...port });
+    schedule(s, { id: `event:${sourceActionId}`, year: s.year + a.dueIn, cellId: d.cellId, title: a.title, text: a.description, actionId: a.id, parentId: sourceActionId, sourceActionId, probability: a.probability, ...recruitment, ...recovery, ...futureCheck, ...port, ...(usesTradeoffs(s) ? { planningRulesVersion: PLANNING_RULES.version, evidence: copy(d.evidence), ...(a.id === 'independent_review' ? { preparation: reviewPreparation(s) } : {}) } : {}) });
     if (a.id.startsWith('build_')) s.promises.push({ id: `promise:${sourceActionId}`, sourceActionId, text: '第10年处理维护人与长期经费', dueYear: 10, status: 'pending' });
   }
   for (const actor of actors) if (s.drafts[actor.id].status === 'passed') record(s, { id: `pass:${s.year}:${actor.id}`, kind: 'pass', title: `${actor.name}保留沉默`, text: '本轮名额明确放弃。历史仍会继续。' });
@@ -578,6 +634,12 @@ function resolve(s, e) {
       record(s,{id:`resolved:${e.id}`,title:'后续校验未完成',text:e.text,cellId:e.cellId,parentId:e.id,sourceActionId:e.sourceActionId,kind:'cancelled',status:'cancelled'});return;
     }
     e.recoveryWorkforceIds=workforce.map(i=>i.id);
+  }
+
+  if(e.actionId===FUTURE_CHECK_RULES.actionId) {
+    const workforce=getRecoveryWorkforce(s).filter(i=>i.startYear<34);
+    if(!workforce.length){e.status='cancelled';e.resolvedYear=s.year;e.text='第34年没有实际测量或教学人手，新刻水尺与抄本没有组成持续校验席。合同取消，经济6、科学4的材料与场地成本不退；第23年记录不变。';record(s,{id:`resolved:${e.id}`,title:'未来校验席未能开席',text:e.text,cellId:e.cellId,parentId:e.id,sourceActionId:e.sourceActionId,kind:'cancelled',status:'cancelled',futureCheckRulesVersion:FUTURE_CHECK_RULES.version});return;}
+    e.futureCheckWorkforceIds=workforce.map(i=>i.id);
   }
 
   if (e.requiresInstitution && !s.institutions.some(i => i.id === e.requiresInstitution && i.active)) {
@@ -645,9 +707,10 @@ function resolve(s, e) {
   else if (a === 'independent_review') { institution(s, 'independent', e.cellId, e, e.status === 'success' ? '独立交叉复核站' : '待核实的校验记录'); if (e.status === 'success') { s.flags.review = true; text = '交叉校验在冲击前确认了共同标准的偏差。第23年的水位冲击仍会到来，但错误不再同步传播。'; } else { text = '临时校验未能在冲击前形成可靠结论。已付费用不退，留下的记录仍可继续整理；本次共同指令没有被修正，另行安排的停闸仍可减伤。'; } }
   else if(a==='open_port_warning'){for(const i of s.institutions.filter(i=>e.portBranchIds.includes(i.id)))i.open=true;text='远港分站取消基本预警的缴费门槛，原测量者与记录仍在。此后覆盖仍依靠原来的维护水平；这项协商没有新增教学、校验或河港同意，第23年损失没有重算。';}
   else if (a === 'complete_review') { institution(s,'independent',e.cellId,e,'后续异源校验组'); text='遗留记录与实际测量人手完成后续校验，今后的共同指令有了新的核查来源。原来的复核失败仍记在原页，第23年的损失没有撤回；这项工作不代替承接人手、地方授权或交班方针。'; }
+  else if (a === FUTURE_CHECK_RULES.actionId) { institution(s,'independent','B4',e,'修院未来校验席'); text='新刻水尺、对照抄本与真实测量人手完成连续比对，修院开出面向未来的独立校验席。这不是补写一次早年的失败，第23年损失保持原样；人手、地方授权、信任和交班方针仍各自核对。'; }
   else if (a === 'local_veto') { s.flags.veto = true; if (e.planningRulesVersion === PLANNING_RULES.version) s.flags.vetoMitigation = Math.min(s.flags.vetoMitigation ?? .3, e.evidence?.includes('evacuation_routes') ? PLANNING_RULES.surveyedVeto : .3); text = '地方停闸与先行撤离权生效。统一标准仍错，但居民不必盲从。'; }
   else if (['share_power', 'central_review', 'withdraw'].includes(a)) { s.flags.policy = a; text = '终局方针已经签署。它能否兑现，取决于此前积累的人手、信任与复核网络，而非这一句宣言。'; }
-  record(s, { id: `resolved:${e.id}`, year: s.year, title, text: text || e.text, cellId: e.cellId, parentId: e.id, sourceActionId: e.sourceActionId, kind: e.status === 'failed' ? 'failure' : 'outcome', status: e.status, ...(a==='open_port_warning'?{portBranchIds:copy(e.portBranchIds)}:{}) });
+  record(s, { id: `resolved:${e.id}`, year: s.year, title, text: text || e.text, cellId: e.cellId, parentId: e.id, sourceActionId: e.sourceActionId, kind: e.status === 'failed' ? 'failure' : 'outcome', status: e.status, ...(a===FUTURE_CHECK_RULES.actionId?{futureCheckRulesVersion:FUTURE_CHECK_RULES.version,futureCheckWorkforceIds:copy(e.futureCheckWorkforceIds)}:{}), ...(a==='open_port_warning'?{portBranchIds:copy(e.portBranchIds)}:{}) });
 }
 function milestone(s) {
   if (s.year === 10) record(s, { id: 'succession-window', title: '谁来守住下一次洪水', text: usesRecruitmentRules(s) && !getRecruitmentRoles(s).length ? '林澈愿意入局，但河港没有运转中的测站或档案岗位需要交接。招募仍占一次介入；重建、保档与夜校是另外的选择，不会随她入局自动完成。' : '林澈愿意入局，但带走维护者也会改变河港。招募、继任与续约争夺同一名额。', kind: 'choice' });
@@ -754,7 +817,7 @@ export function getEnding(s) {
   if (handoff) Object.assign(metrics, { delegatedStaff: handoff.authorizedCells.length, independentChecks: handoff.checkCells.length, handoffStatus: handoff.canWithdraw ? '条件齐备' : '尚有缺口' });
   let title = '未签署的下一页', text = '没有新的方针替地方补上责任。现存机构继续运作，也继续承担缺口。';
   if (s.flags.policy === 'share_power') { const ready = handoff ? handoff.canShare : autonomy >= 2 && (!usesTradeoffs(s) || networks >= 1) && trust; title = ready ? '许多人签署的历史' : '纸上的共同作者'; text = ready ? '独立记录、维护者与居民同意让共享纠错权有了现实支撑。没有人拥有全部未来，也没有人独自承担它。' : '档案已开放，但独立人手或地方信任仍不足。新的权利需要在现实中继续建立，宣言没有替你完成它。'; }
-  if (s.flags.policy === 'central_review') { title = (s.flags.review || hasCompletedRecovery(s)) ? '仍亮着灯的续史局' : '更安静的警报室'; text = s.flags.review ? '集中协调保留下来，独立复核可以否决错误指令。安全依赖持续维护，而非永远正确的计算。' : hasCompletedRecovery(s) ? '集中协调保留下来。后来完成的校验开始审查未来指令；它没有赶上第23年的冲击，也不能把那次损失从记录中移除。' : '续史局仍能协调救援，却尚未打破共同标准的依赖。短期秩序没有消除下一次共同失效。'; }
+  if (s.flags.policy === 'central_review') { title = (s.flags.review || hasCompletedRecovery(s) || hasCompletedFutureCheck(s)) ? '仍亮着灯的续史局' : '更安静的警报室'; text = s.flags.review ? '集中协调保留下来，独立复核可以否决错误指令。安全依赖持续维护，而非永远正确的计算。' : (hasCompletedRecovery(s)||hasCompletedFutureCheck(s)) ? '集中协调保留下来。后来完成的校验开始审查未来指令；它没有赶上第23年的冲击，也不能把那次损失从记录中移除。' : '续史局仍能协调救援，却尚未打破共同标准的依赖。短期秩序没有消除下一次共同失效。'; }
   if (s.flags.policy === 'withdraw') { const ready = handoff ? handoff.canWithdraw : autonomy >= 2 && (!usesTradeoffs(s) || networks >= 1); title = ready ? '没有唯一守夜人' : '交班后的空椅子'; text = ready ? '地方网络接住了退出后的责任。你留下的不是控制，而是人们可以自己纠错的能力。' : '独占控制结束了，但接班能力没有同步长成。仍在运作的机构需要面对服务空缺。'; }
   if (s.flags.crisis?.status === 'disaster') text += ' 第23年的地方灾难无法撤销，它的名字留在结局里。';
   const unserved = FLOOD_REGIONS.filter(id => coverage[id].coverage === 0);
@@ -775,6 +838,7 @@ export function getEnding(s) {
     if (aid.length) paragraphs.push(`南岸当前有${aid.length}组运转中的互助轮值，其中${aid.filter(i => i.startYear > 23).length}组在第23年之后才开始。它们支持当前生计；后续产出不抵销历史损失，增设轮值不叠加已经结算的洪水保护，也不冒充教学或异源校验。`);
   }
   if(hasCompletedRecovery(s)) paragraphs.push('第32年完成的后续校验只提供今后的纠错能力。它没有把当年的失败改写成成功，也没有改动第23年的损失；承接仍分别需要实际人手、地方授权和方针。');
+  if(hasCompletedFutureCheck(s)) paragraphs.push('第34年新建的未来校验席有独立取证、实物投入与真实测量人手的来源；它不冒称早年已有校验或失败，也不冲销第23年损失。它只是一处校验，不附送授权、信任或交班方针。');
   paragraphs.push('预警覆盖、制度保护与损失权重属于本轮可调的原型假设，尚未经过真人平衡验证。');
   return { title, text, paragraphs, metrics, ...(handoff ? { handoff } : {}), policy: s.flags.policy || null, provisional: s.year < 40 };
 }
@@ -794,6 +858,7 @@ function inspectState(s) {
   if (!object(s) || s.version !== 'afterwave.run.v1') return { valid: false, errors: ['不兼容的存档版本'] };
   if (s.staffingRulesVersion !== undefined && !validStaffingVersion(s.staffingRulesVersion)) return { valid: false, errors: ['人手结算规则版本非法'] };
   if (s.branchAccessRulesVersion !== undefined && !isBranchAccessRulesVersion(s.branchAccessRulesVersion)) return { valid: false, errors: ['分站准入规则版本非法'] };
+  if (s.futureCheckRulesVersion !== undefined && s.futureCheckRulesVersion !== FUTURE_CHECK_RULES.version) errors.push('未来校验规则版本非法');
   if (s.portAccessRulesVersion !== undefined && s.portAccessRulesVersion !== PORT_ACCESS_RULES.version) errors.push('远港准入规则版本非法');
   if (s.recoveryRulesVersion !== undefined && s.recoveryRulesVersion !== RECOVERY_RULES.version) errors.push('后续校验规则版本非法');
   if (s.recruitmentRulesVersion !== undefined && s.recruitmentRulesVersion !== RECRUITMENT_RULES.version) errors.push('招募岗位规则版本非法');
@@ -822,6 +887,7 @@ function inspectState(s) {
   const expectedWindows = WINDOWS.filter(year => year < s.year || (year === s.year && s.phase === 'playback'));
   if (expectedWindows.length !== s.committedWindows.length || expectedWindows.some(year => !s.committedWindows.includes(year))) errors.push('已提交窗口与当前年代不一致');
   for (const e of s.events) {
+    if(!validFutureCheckSource(s,e))errors.push('未来校验合同的取证、成本、人手或兑现来源不一致');
     if(!validPortAccessSource(s,e))errors.push('远港公开预警合同的目标、证词或兑现来源不一致');
     if (!validRecoverySource(s,e)) errors.push('后续校验合同的失败来源、人手或兑现记录不一致');
     if (e.actionId === 'recruit_volunteer' && !usesRecruitmentRules(s)) errors.push('无在岗交接的招募需要对应规则版本');
@@ -835,9 +901,11 @@ function inspectState(s) {
   for (const entry of [...s.events, ...s.history]) {
     if (['title', 'text', 'description', 'reason', 'kind', 'status'].some(key => entry[key] !== undefined && typeof entry[key] !== 'string') || ['parentId', 'sourceActionId'].some(key => entry[key] != null && !id(entry[key]))) errors.push('历史记录字段非法');
   }
+  for(const entry of s.history)if(('futureCheckRulesVersion' in entry||'futureCheckWorkforceIds' in entry||entry.sourceActionId?.endsWith(`:${FUTURE_CHECK_RULES.actionId}`)||entry.id?.endsWith(`:${FUTURE_CHECK_RULES.actionId}`))&&!s.events.some(e=>e.actionId===FUTURE_CHECK_RULES.actionId&&e.sourceActionId===entry.sourceActionId&&validFutureCheckSource(s,e)))errors.push('未来校验历史缺少对应的有效合同');
   for(const entry of s.history)if(('portBranchIds' in entry||entry.sourceActionId?.endsWith(':open_port_warning')||entry.id?.endsWith(':open_port_warning'))&&!s.events.some(e=>e.actionId==='open_port_warning'&&e.sourceActionId===entry.sourceActionId&&validPortAccessSource(s,e)))errors.push('远港公开预警历史缺少对应的有效合同');
   for (const entry of s.history) if (!integer(entry.year, 0, s.year) || !ids.has(entry.cellId)) errors.push('历史记录年代或坐标非法');
   for (const i of s.institutions) {
+    if((i.sourceActionId?.endsWith(`:${FUTURE_CHECK_RULES.actionId}`)||s.events.some(e=>e.id===i.sourceEventId&&e.actionId===FUTURE_CHECK_RULES.actionId))&&!isFutureCheckCarrier(s,i))errors.push('未来校验载体与真实兑现来源不一致');
     if(usesRecoveryRules(s)&&(i.sourceActionId?.endsWith(':complete_review')||s.events.some(e=>e.id===i.sourceEventId&&e.actionId==='complete_review'))&&!isRecoveryCarrier(s,i)) errors.push('后续校验载体与真实兑现来源不一致');
     if (i.handoffAuthorization !== undefined) { const grant = i.handoffAuthorization; if (i.kind !== 'training' || !object(grant) || !id(grant.eventId) || grant.sourceActionId !== i.sourceActionId || !integer(grant.year, i.startYear, s.year) || !s.events.some(e => e.id === grant.eventId && e.actionId === 'renew_charter' && e.status === 'success' && e.resolvedYear === grant.year && e.authorizedTrainingSources?.includes(grant.sourceActionId))) errors.push('继任授权记录非法'); }
     if (!Object.hasOwn(sources, i.kind) || !ids.has(i.cellId) || !id(i.sourceActionId) || !id(i.sourceEventId) || typeof i.name !== 'string' || typeof i.active !== 'boolean' || typeof i.open !== 'boolean' || !bounded(i.maintenance, 0, 1) || !integer(i.startYear, 0, s.year) || !object(i.annualSource) || CHANNELS.some(k => !bounded(i.annualSource[k], 0, Number.MAX_VALUE))) errors.push('制度结构或年度产出非法');
@@ -853,6 +921,7 @@ function inspectState(s) {
   if (s.flags.vetoMitigation !== undefined && ![.2, .3].includes(s.flags.vetoMitigation)) errors.push('停闸保护非法');
   for (const [actorId, draft] of Object.entries(s.drafts)) {
     if (!object(draft) || draft.actorId !== actorId || !s.actors.some(a => a.id === actorId && a.alive && a.availableFrom <= s.year) || draft.window !== s.year || s.phase !== 'planning' || !['passed', 'locked'].includes(draft.status)) { errors.push('任务草稿非法'); continue; }
+    if(draft.status==='locked'&&draft.actionId===FUTURE_CHECK_RULES.actionId&&!getActions(s,draft.cellId,actorId,draft.evidence).some(a=>a.id===FUTURE_CHECK_RULES.actionId))errors.push('未来校验草稿缺少对应规则或地点');
     if (draft.status==='locked' && draft.actionId==='complete_review' && !getActions(s,draft.cellId,actorId,draft.evidence).some(a=>a.id==='complete_review')) errors.push('后续校验草稿缺少真实可用的失败记录');
     if (usesRecruitmentRules(s) && draft.status === 'locked' && RECRUITMENT_ACTIONS.includes(draft.actionId) && !getActions(s, draft.cellId, actorId, draft.evidence).some(a => a.id === draft.actionId)) errors.push('招募草稿与实际可交接岗位不一致');
     if (draft.status === 'locked') { const refusal = getActorRefusals(s, actorId, draft.cellId).find(r => r.actionId === draft.actionId); if (refusal) errors.push('林澈拒绝执行的迁任不能成为锁定任务。' + refusal.reason); }

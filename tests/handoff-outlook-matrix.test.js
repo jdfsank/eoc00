@@ -15,7 +15,7 @@ for(const seed of [0,1,6])for(const path of ['no-build','joint-successor','joint
   const before=JSON.stringify(s),view=getHandoffOutlook(s);if(!sim.getWindowReview(s).ready){assert.equal(view.ready,false);continue;}assert.equal(view.ready,true);assert.equal(JSON.stringify(s),before);const crisis=structuredClone(s.flags.crisis);next(s);const real=sim.getHandoffReadiness(s),ending=sim.getEnding(s);
   for(const key of ['staffCells','authorizedCells','checkCells'])assert.deepEqual([...view.projected[key]].sort(),[...real[key]].sort(),`${key}: ${JSON.stringify([first,second])}`);
   for(const key of ['canShare','canWithdraw','trust'])assert.equal(view.projected[key],real[key],key);for(const key of ['networks','autonomy'])assert.equal(view.projected[key],ending.metrics[key],key);
-  assert.deepEqual(s.flags.crisis,crisis);for(const condition of view.conditional)assert.equal(s.events.find(e=>e.sourceActionId===`action:30:${condition.actorId}:${condition.cellId}:complete_review`).status,condition.supported?'success':'cancelled');count++;
+  assert.deepEqual(s.flags.crisis,crisis);for(const condition of view.conditional)assert.equal(s.events.find(e=>e.sourceActionId===`action:30:${condition.actorId}:${condition.cellId}:${condition.actionId||'complete_review'}`).status,condition.supported?'success':'cancelled');count++;
  }
  assert.ok(count>=4,`at least four legal options, got ${count}`);t.diagnostic(`${count} legal locked combinations compared with actual40`);
 });

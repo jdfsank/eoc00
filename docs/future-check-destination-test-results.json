@@ -1,0 +1,5158 @@
+{
+  "scope": "Round15 independent Chromium integration: future B4 checks and E4 relocation destination. Native engine saves imported through visible settings; true annual31/33/34/40 transitions;390×844 and320×568 with200% UI text and keyboard. No forced actions, injected state, illegal AVG, fabricated years, physical-device certification or old-history migration.",
+  "failureHandling": "All requestfailed events are fatal, including aborted and blob requests. Readiness waits observe actual canvas pixels, complete decoded images and fonts; there are no failure exemptions or arbitrary sleeps.",
+  "baseline": "7fd0ee703d9339f7c2ef68c63f38819c221b8d27 / tests/fixtures/pre-future-check-simulation.js",
+  "checks": [
+    {
+      "name": "All fixture entry routes pass explicit year/actor/cell/action preflight before browser launch",
+      "passed": true,
+      "detail": [
+        {
+          "label": "natural0 pass via window",
+          "year": 0,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "D4",
+          "actions": [
+            "build_merchant",
+            "build_state",
+            "build_joint"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "window"
+        },
+        {
+          "label": "natural10 recruit",
+          "year": 10,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "D4",
+          "actions": [
+            "recruit_volunteer",
+            "restore_archive"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "natural20 veto",
+          "year": 20,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "B4",
+          "actions": [
+            "independent_review",
+            "local_veto"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "natural20 training",
+          "year": 20,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "natural30/new-check",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [
+            "establish_future_check"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "natural30/withdraw/shared",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "D4",
+          "actions": [
+            "share_power",
+            "central_review",
+            "withdraw"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "actor-evidence",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "B4",
+          "actions": [
+            "establish_future_check"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "foreign-evidence",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "narrow-future30",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [
+            "establish_future_check"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "cancel30/new-check",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [
+            "establish_future_check"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "cancel30/withdraw",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "D4",
+          "actions": [
+            "share_power",
+            "central_review",
+            "withdraw"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "same-round31/training",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "real-pre-future-veto30",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [],
+          "primaryAction": "cell-history",
+          "plannedNavigation": "primary-history"
+        },
+        {
+          "label": "real-pre-future-failed-review30",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [
+            "complete_review"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "old-recovery/withdraw",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "D4",
+          "actions": [
+            "share_power",
+            "central_review",
+            "withdraw"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "genuine-existing-check30",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "protagonist",
+          "cellId": "B4",
+          "actions": [],
+          "primaryAction": "cell-history",
+          "plannedNavigation": "primary-history"
+        },
+        {
+          "label": "current-genuine-failure30",
+          "year": 30,
+          "phase": "planning",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [
+            "complete_review"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "relocation20 action",
+          "year": 20,
+          "phase": "planning",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "D4",
+          "actions": [
+            "free_warning",
+            "present_archive",
+            "relocate_teacher"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "locked-destination20",
+          "year": 20,
+          "phase": "planning",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "archive"
+        },
+        {
+          "label": "pending-destination20",
+          "year": 20,
+          "phase": "playback",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [],
+          "primaryAction": "playback",
+          "plannedNavigation": "archive"
+        },
+        {
+          "label": "settled-destination21",
+          "year": 21,
+          "phase": "playback",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [],
+          "primaryAction": "playback",
+          "plannedNavigation": "archive"
+        },
+        {
+          "label": "destination30/narrow",
+          "year": 30,
+          "phase": "planning",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "anonymous-fund_school",
+          "year": 20,
+          "phase": "planning",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "anonymous-train_network",
+          "year": 30,
+          "phase": "planning",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "separate-companion30",
+          "year": 30,
+          "phase": "planning",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "missing-destination-source-boundary",
+          "year": 30,
+          "phase": "planning",
+          "seed": "12",
+          "actorId": "protagonist",
+          "cellId": "E4",
+          "actions": [
+            "train_network"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
+        },
+        {
+          "label": "future-native30",
+          "year": 30,
+          "phase": "playback",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [],
+          "primaryAction": "playback",
+          "plannedNavigation": "playback"
+        },
+        {
+          "label": "future-native31",
+          "year": 31,
+          "phase": "playback",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [],
+          "primaryAction": "playback",
+          "plannedNavigation": "playback"
+        },
+        {
+          "label": "future-native32",
+          "year": 32,
+          "phase": "playback",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [],
+          "primaryAction": "playback",
+          "plannedNavigation": "playback"
+        },
+        {
+          "label": "future-native33",
+          "year": 33,
+          "phase": "playback",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [],
+          "primaryAction": "playback",
+          "plannedNavigation": "playback"
+        },
+        {
+          "label": "future-native34",
+          "year": 34,
+          "phase": "playback",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [],
+          "primaryAction": "playback",
+          "plannedNavigation": "playback"
+        },
+        {
+          "label": "future-native40",
+          "year": 40,
+          "phase": "ended",
+          "seed": "0",
+          "actorId": "linche",
+          "cellId": "B4",
+          "actions": [],
+          "primaryAction": "ending",
+          "plannedNavigation": "ending"
+        }
+      ]
+    },
+    {
+      "name": "New UI factory explicitly pins future-check-v1",
+      "passed": true
+    },
+    {
+      "name": "natural-seed0: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "natural-seed0: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "D4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "B4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "E4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Natural UI reaches30 with actual .1904 crisis and no invented failed review",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Free preview explains6 economy/4 science, one slot,34 and nonrefundable workforce condition",
+      "passed": true
+    },
+    {
+      "name": "Missing evidence blocks locking and preview leaves world byte-identical",
+      "passed": true
+    },
+    {
+      "name": "Opening evidence entrance is free",
+      "passed": true
+    },
+    {
+      "name": "Anomaly records genuinely spend2 rounds",
+      "passed": true
+    },
+    {
+      "name": "B4 current residents spend the third round under the actual actor",
+      "passed": true
+    },
+    {
+      "name": "Evidence does not pay costs, advance years, alter history or reveal outcomes",
+      "passed": true
+    },
+    {
+      "name": "Lock saves one draft and spends no resources or future facts",
+      "passed": true
+    },
+    {
+      "name": "D4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Whole-window projection explicitly schedules34, separates current absence and futureB4",
+      "passed": true
+    },
+    {
+      "name": "Projection reading leaves state and committed history untouched",
+      "passed": true
+    },
+    {
+      "name": "locked future contract: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "Submission pays exactly once and records one genuine pending event",
+      "passed": true
+    },
+    {
+      "name": "New30 action is genuinely recorded exactly once without a fabricated failed review",
+      "passed": true
+    },
+    {
+      "name": "submitted future contract: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "Reload exposes no second submit action and retains paid state",
+      "passed": true
+    },
+    {
+      "name": "Actual year31 exactly matches source engine",
+      "passed": true
+    },
+    {
+      "name": "Year31 does not turn a future contract into present capability",
+      "passed": true
+    },
+    {
+      "name": "Actual year32 exactly matches source engine",
+      "passed": true
+    },
+    {
+      "name": "Year32 does not turn a future contract into present capability",
+      "passed": true
+    },
+    {
+      "name": "Actual year33 exactly matches source engine",
+      "passed": true
+    },
+    {
+      "name": "Year33 does not turn a future contract into present capability",
+      "passed": true
+    },
+    {
+      "name": "Actual year34 exactly matches source engine",
+      "passed": true
+    },
+    {
+      "name": "At34 actual workforce creates one future-only check with no retroactive review or free trust",
+      "passed": true
+    },
+    {
+      "name": "Actual34 still contains no invented past failed review or failure record",
+      "passed": true
+    },
+    {
+      "name": "34 future check source: traces actual original record without mutation",
+      "passed": true
+    },
+    {
+      "name": "settled future source: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "Natural withdrawal: actual40 exactly matches annual engine",
+      "passed": true
+    },
+    {
+      "name": "Natural withdrawal: true ending has correct policy outcome",
+      "passed": true
+    },
+    {
+      "name": "Natural withdrawal: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "40-year positive withdrawal preserves original23 loss and all old snapshots",
+      "passed": true
+    },
+    {
+      "name": "evidence-actor-boundary: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "evidence-actor-boundary: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "B4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Protagonist evidence cannot unlock Linche contract",
+      "passed": true
+    },
+    {
+      "name": "evidence-location-boundary: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "evidence-location-boundary: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "E4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Changing location does not restore the actor three-round budget",
+      "passed": true
+    },
+    {
+      "name": "E4 residents never substitute forB4 local testimony",
+      "passed": true
+    },
+    {
+      "name": "Real exhausted budget disables a fourth local evidence purchase",
+      "passed": true
+    },
+    {
+      "name": "exhausted local evidence: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "D4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: projected conditional branch explains actual support",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: actual31 follows declared annual branch",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation:31-year training is not an early completed check",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: actual32 follows declared annual branch",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: actual33 follows declared annual branch",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: actual34 follows declared annual branch",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation:34 creates only the supported result and retains earlier history",
+      "passed": true
+    },
+    {
+      "name": "Cancellation has no refund or late second settlement path",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: actual40 exactly matches annual engine",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: true ending has correct policy outcome",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "34-no-workforce-cancellation: no automatic policy or trust award",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "E4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: projected conditional branch explains actual support",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: actual31 follows declared annual branch",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy:31-year training is not an early completed check",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: actual32 follows declared annual branch",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: actual33 follows declared annual branch",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: actual34 follows declared annual branch",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy:34 creates only the supported result and retains earlier history",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: actual40 exactly matches annual engine",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: true ending has correct policy outcome",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "31-training-no-policy: no automatic policy or trust award",
+      "passed": true
+    },
+    {
+      "name": "future-check-shared-without-trust: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "future-check-shared-without-trust: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "D4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Shared policy projection still requires distinct riverport trust",
+      "passed": true
+    },
+    {
+      "name": "Future check without shared trust: actual40 exactly matches annual engine",
+      "passed": true
+    },
+    {
+      "name": "Future check without shared trust: true ending has correct policy outcome",
+      "passed": true
+    },
+    {
+      "name": "Future check without shared trust: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Actual completed future check does not grant shared authority or trust",
+      "passed": true
+    },
+    {
+      "name": "real-pre-future-veto30: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "real-pre-future-veto30: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "Published old save gains no future-check menu, illegal AVG or version tag",
+      "passed": true
+    },
+    {
+      "name": "Old B4 history offers no fabricated future action",
+      "passed": true
+    },
+    {
+      "name": "real old untagged menu: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "real-pre-future-failed-review30: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "real-pre-future-failed-review30: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Real failed-review history keeps old recovery and no from-zero duplicate",
+      "passed": true
+    },
+    {
+      "name": "Old complete_review remains4 economy/3 science and year32",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "D4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Actual old32 recovery is byte-identical to published engine",
+      "passed": true
+    },
+    {
+      "name": "genuine-existing-check30: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "genuine-existing-check30: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "Existing activeB4 check suppresses costly redundant construction without an illegal AVG",
+      "passed": true
+    },
+    {
+      "name": "Existing B4 source remains read-only with no redundant construction menu",
+      "passed": true
+    },
+    {
+      "name": "current-genuine-failure30: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "current-genuine-failure30: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Current genuine failed source prefers old cheaper recovery",
+      "passed": true
+    },
+    {
+      "name": "Unknown future version rejects atomically without replacing current world or autosave",
+      "passed": true
+    },
+    {
+      "name": "natural-relocation20: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "natural-relocation20: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "D4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Locked relocation does not anticipate E4 destination",
+      "passed": true
+    },
+    {
+      "name": "Pending relocation does not invent a finished school or destination source",
+      "passed": true
+    },
+    {
+      "name": "Actual21 destination citesD4 outcome without moving or duplicating record",
+      "passed": true
+    },
+    {
+      "name": "Actual21 E4 origin: traces actual original record without mutation",
+      "passed": true
+    },
+    {
+      "name": "E4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Natural30 E4 story states Sulan opposition without inventing consent or current personal employment",
+      "passed": true
+    },
+    {
+      "name": "E4 destination390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Destination source button keeps exact originalD4 resolved ID",
+      "passed": true
+    },
+    {
+      "name": "E4 AVG original source: traces actual original record without mutation",
+      "passed": true
+    },
+    {
+      "name": "Returning from destination source spends nothing",
+      "passed": true
+    },
+    {
+      "name": "E4 original source return: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "E4 regional archive shows untouched originalD4 record text and source",
+      "passed": true
+    },
+    {
+      "name": "anonymous-fund_school: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "anonymous-fund_school: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "E4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "fund_school: real anonymous E4 teaching is never attributed to Sulan relocation",
+      "passed": true
+    },
+    {
+      "name": "anonymous-train_network: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "anonymous-train_network: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "E4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "train_network: real anonymous E4 teaching is never attributed to Sulan relocation",
+      "passed": true
+    },
+    {
+      "name": "separate-companion-destination30: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "separate-companion-destination30: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "E4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Companion disagreement remains a separate relationship panel, not destination proof",
+      "passed": true
+    },
+    {
+      "name": "Anonymous same-window training retains its own independent school source",
+      "passed": true
+    },
+    {
+      "name": "Separate companion source: traces actual original record without mutation",
+      "passed": true
+    },
+    {
+      "name": "missing-destination-source-boundary: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "missing-destination-source-boundary: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "E4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "Missing destination evidence stays unknown with no fabricated link or personal story",
+      "passed": true
+    },
+    {
+      "name": "unknown destination source: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "narrow-future30: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "narrow-future30: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "320px uses genuine200% application text mode",
+      "passed": true
+    },
+    {
+      "name": "B4/linche: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "320/200 future preview: native Tab reaches visible, outlined and unobscured keyboard target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "focusVisible": true,
+        "choiceCard": true,
+        "left": 16,
+        "right": 304,
+        "top": -66.671875,
+        "bottom": 634.265625,
+        "height": 700.9375,
+        "viewportWidth": 320,
+        "viewportHeight": 568,
+        "visibleHeight": 568,
+        "horizontalOverflow": false,
+        "hits": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "future320/200: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320/200 evidence entrance: native Tab reaches visible, outlined and unobscured keyboard target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "focusVisible": true,
+        "choiceCard": false,
+        "left": 37,
+        "right": 283,
+        "top": 224.984375,
+        "bottom": 342.984375,
+        "height": 118,
+        "viewportWidth": 320,
+        "viewportHeight": 568,
+        "visibleHeight": 118,
+        "horizontalOverflow": false,
+        "hits": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "320/200 prepared choice: native Tab reaches visible, outlined and unobscured keyboard target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "focusVisible": true,
+        "choiceCard": true,
+        "left": 16,
+        "right": 304,
+        "top": 10.328125,
+        "bottom": 557.265625,
+        "height": 546.9375,
+        "viewportWidth": 320,
+        "viewportHeight": 568,
+        "visibleHeight": 546.9375,
+        "horizontalOverflow": false,
+        "hits": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "320/200 confirm: native Tab reaches visible, outlined and unobscured keyboard target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "focusVisible": true,
+        "choiceCard": false,
+        "left": 16,
+        "right": 304,
+        "top": 305.40625,
+        "bottom": 423.40625,
+        "height": 118,
+        "viewportWidth": 320,
+        "viewportHeight": 568,
+        "visibleHeight": 118,
+        "horizontalOverflow": false,
+        "hits": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "320/200 lock: native Tab reaches visible, outlined and unobscured keyboard target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "focusVisible": true,
+        "choiceCard": false,
+        "left": 16,
+        "right": 304,
+        "top": 304.796875,
+        "bottom": 422.796875,
+        "height": 118,
+        "viewportWidth": 320,
+        "viewportHeight": 568,
+        "visibleHeight": 118,
+        "horizontalOverflow": false,
+        "hits": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "320/200 real keyboard locks only one costly draft, not a settlement",
+      "passed": true
+    },
+    {
+      "name": "locked future320/200: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "narrow-destination30: fixture passes current structural validation",
+      "passed": true
+    },
+    {
+      "name": "narrow-destination30: visible file import preserves exact state and autosave",
+      "passed": true
+    },
+    {
+      "name": "E4/protagonist: entered only through legal planning AVG",
+      "passed": true
+    },
+    {
+      "name": "E4 destination320/200: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320/200 E4 source keyboard: native Tab reaches visible, outlined and unobscured keyboard target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "focusVisible": true,
+        "choiceCard": false,
+        "left": 37,
+        "right": 283,
+        "top": 457.5625,
+        "bottom": 559.5625,
+        "height": 102,
+        "viewportWidth": 320,
+        "viewportHeight": 568,
+        "visibleHeight": 102,
+        "horizontalOverflow": false,
+        "hits": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "320/200 E4 source keyboard: traces actual original record without mutation",
+      "passed": true
+    },
+    {
+      "name": "E4 source320/200: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320/200 source: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "320/200 return archive: native Tab reaches visible, outlined and unobscured keyboard target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "focusVisible": true,
+        "choiceCard": false,
+        "left": 16,
+        "right": 94.015625,
+        "top": 94.140625,
+        "bottom": 160.140625,
+        "height": 66,
+        "viewportWidth": 320,
+        "viewportHeight": 568,
+        "visibleHeight": 66,
+        "horizontalOverflow": false,
+        "hits": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "E4 archive320/200: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Destination read helper remains pure for the final saved state",
+      "passed": true
+    },
+    {
+      "name": "Runtime and all assets stayed frozen throughout independent browser regression",
+      "passed": true
+    },
+    {
+      "name": "No page, HTTP, asset, HMR or request failures",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "path": "playtest-output/round15-future-free-preview-390.png",
+      "width": 358,
+      "height": 1614,
+      "kind": "element",
+      "selector": ".page"
+    },
+    {
+      "path": "playtest-output/round15-future-whole-window-390.png",
+      "width": 358,
+      "height": 1400,
+      "kind": "element",
+      "selector": ".handoff-outlook"
+    },
+    {
+      "path": "playtest-output/round15-future-positive-ending-390.png",
+      "width": 358,
+      "height": 3058,
+      "kind": "element",
+      "selector": ".ending"
+    },
+    {
+      "path": "playtest-output/round15-34-no-workforce-cancellation-projection-390.png",
+      "width": 358,
+      "height": 1511,
+      "kind": "element",
+      "selector": ".handoff-outlook"
+    },
+    {
+      "path": "playtest-output/round15-31-training-no-policy-projection-390.png",
+      "width": 358,
+      "height": 1497,
+      "kind": "element",
+      "selector": ".handoff-outlook"
+    },
+    {
+      "path": "playtest-output/round15-e4-destination-scene-390.png",
+      "width": 358,
+      "height": 2733,
+      "kind": "element",
+      "selector": ".page.reading"
+    },
+    {
+      "path": "playtest-output/round15-e4-regional-origin-390.png",
+      "width": 358,
+      "height": 1752,
+      "kind": "element",
+      "selector": ".history-list"
+    },
+    {
+      "path": "playtest-output/round15-future-preview-320-text200.png",
+      "width": 288,
+      "height": 4637,
+      "kind": "element",
+      "selector": ".page"
+    },
+    {
+      "path": "playtest-output/round15-e4-destination-320-text200.png",
+      "width": 288,
+      "height": 744,
+      "kind": "element",
+      "selector": ".relocation-destination"
+    }
+  ],
+  "readiness": [
+    {
+      "label": "initial",
+      "year": 0,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "settings",
+      "year": 0,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import natural-seed0",
+      "year": 0,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 0,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "window",
+      "year": 0,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "pass protagonist",
+      "year": 0,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 0,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "skip",
+      "year": 10,
+      "screen": "review",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 10,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 10,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 10,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select D4",
+      "year": 10,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 10,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG D4/protagonist",
+      "year": 10,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview recruit_volunteer",
+      "year": 10,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 10,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 10,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 10,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "skip",
+      "year": 20,
+      "screen": "review",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 20,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/protagonist",
+      "year": 20,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence evacuation_routes",
+      "year": 20,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview local_veto",
+      "year": 20,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 20,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 20,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 20,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG E4/linche",
+      "year": 20,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/open-shore.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview train_network",
+      "year": 20,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 20,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 20,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 20,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "skip",
+      "year": 30,
+      "screen": "review",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "future free preview",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "future-free-preview-390",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "preview-evidence",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence anomaly_records",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence resident_testimony",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select D4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG D4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "preview withdraw",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "future-whole-window-390",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "reload locked future contract",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 30,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "reload submitted future contract",
+      "year": 30,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 31,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 32,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 33,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 34,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "34 future check source",
+      "year": 34,
+      "screen": "trace",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "reload settled future source",
+      "year": 34,
+      "screen": "trace",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 34,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "playback",
+      "year": 34,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "skip",
+      "year": 40,
+      "screen": "review",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "ending",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "Natural withdrawal",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "future-positive-ending-390",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 40,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import evidence-actor-boundary",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence anomaly_records",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence resident_testimony",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import evidence-location-boundary",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG E4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "evidence resident_testimony",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence anomaly_records",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview-evidence",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "reload exhausted local evidence",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import 34-no-workforce-cancellation",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence anomaly_records",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence resident_testimony",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview establish_future_check",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select D4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG D4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "preview withdraw",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "34-no-workforce-cancellation-projection-390",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 30,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 31,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 32,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 33,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 34,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "reload 34-no-workforce-cancellation",
+      "year": 34,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "skip",
+      "year": 40,
+      "screen": "review",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "ending",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "34-no-workforce-cancellation",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 40,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import 31-training-no-policy",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence anomaly_records",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence resident_testimony",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview establish_future_check",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG E4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/open-shore.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "preview train_network",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "31-training-no-policy-projection-390",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 30,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 31,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 32,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 33,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 34,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "reload 31-training-no-policy",
+      "year": 34,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "skip",
+      "year": 40,
+      "screen": "review",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "ending",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "31-training-no-policy",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 40,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import future-check-shared-without-trust",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence anomaly_records",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence resident_testimony",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview establish_future_check",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select D4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG D4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "preview share_power",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 30,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "skip",
+      "year": 40,
+      "screen": "review",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "ending",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "Future check without shared trust",
+      "year": 40,
+      "screen": "ending",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 40,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import real-pre-future-veto30",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "old B4 legal history",
+      "year": 30,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "reload real old untagged menu",
+      "year": 30,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import real-pre-future-failed-review30",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-failed.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-failed.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence anomaly_records",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-failed.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview complete_review",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select D4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG D4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "preview withdraw",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 30,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 31,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 32,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "settings",
+      "year": 32,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import genuine-existing-check30",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "existing B4 legal history",
+      "year": 30,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import current-genuine-failure30",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-failed.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import natural-relocation20",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 20,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select D4",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG D4/protagonist",
+      "year": 20,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "preview relocate_teacher",
+      "year": 20,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "confirm",
+      "year": 20,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "lock",
+      "year": 20,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 20,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "cell-history",
+      "year": 20,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "window",
+      "year": 20,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "commit",
+      "year": 20,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 20,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "cell-history",
+      "year": 20,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "playback",
+      "year": 20,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "step",
+      "year": 21,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 21,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 21,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 21,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 21,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "cell-history",
+      "year": 21,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "Actual21 E4 origin",
+      "year": 21,
+      "screen": "trace",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 21,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "playback",
+      "year": 21,
+      "screen": "playback",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "skip",
+      "year": 30,
+      "screen": "review",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG E4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "e4-destination-scene-390",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "E4 AVG original source",
+      "year": 30,
+      "screen": "trace",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "archive",
+      "year": 30,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "reload E4 original source return",
+      "year": 30,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "cell-history",
+      "year": 30,
+      "screen": "archive",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "e4-regional-origin-390",
+      "year": 30,
+      "screen": "archive",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import anonymous-fund_school",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "list",
+      "year": 20,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor protagonist",
+      "year": 20,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG E4/protagonist",
+      "year": 20,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 20,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import anonymous-train_network",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG E4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import separate-companion-destination30",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG E4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "Separate companion source",
+      "year": 30,
+      "screen": "trace",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import missing-destination-source-boundary",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG E4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "reload unknown destination source",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import narrow-future30",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "text-size",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select B4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "actor linche",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": []
+    },
+    {
+      "label": "AVG B4/linche",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "320/200 future preview",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "future-preview-320-text200",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "320/200 evidence entrance",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence anomaly_records",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "evidence resident_testimony",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/monastery-none-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "320/200 prepared choice",
+      "year": 30,
+      "screen": "choice",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "320/200 confirm",
+      "year": 30,
+      "screen": "confirm",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "320/200 lock",
+      "year": 30,
+      "screen": "window",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "import narrow-destination30",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "settings",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "text-size",
+      "year": 30,
+      "screen": "settings",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "home",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "list",
+      "year": 30,
+      "screen": "list",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "select E4",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "actor protagonist",
+      "year": 30,
+      "screen": "world",
+      "canvas": true,
+      "images": [
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "AVG E4/protagonist",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "e4-destination-320-text200",
+      "year": 30,
+      "screen": "avg",
+      "canvas": false,
+      "images": [
+        {
+          "src": "/assets/local-classroom.svg",
+          "width": 1000,
+          "height": 500
+        },
+        {
+          "src": "/assets/crisis-tally-loss.svg",
+          "width": 64,
+          "height": 72
+        }
+      ]
+    },
+    {
+      "label": "320/200 E4 source keyboard",
+      "year": 30,
+      "screen": "trace",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "reload 320/200 source",
+      "year": 30,
+      "screen": "trace",
+      "canvas": false,
+      "images": []
+    },
+    {
+      "label": "320/200 return archive",
+      "year": 30,
+      "screen": "archive",
+      "canvas": false,
+      "images": []
+    }
+  ],
+  "requestFailures": [],
+  "boundaries": [
+    "Synthetic rejection only: the real failed-review30 save has its futureCheckRulesVersion replaced with an unknown string. No other data changed.",
+    "Synthetic missing-source display: only the real relocation outcome history record is removed from a naturally generated30 save. Retained school is not claimed as proof of personal history."
+  ],
+  "fixtureEntries": [
+    {
+      "label": "natural0 pass via window",
+      "year": 0,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "D4",
+      "actions": [
+        "build_merchant",
+        "build_state",
+        "build_joint"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "window"
+    },
+    {
+      "label": "natural10 recruit",
+      "year": 10,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "D4",
+      "actions": [
+        "recruit_volunteer",
+        "restore_archive"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "natural20 veto",
+      "year": 20,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "B4",
+      "actions": [
+        "independent_review",
+        "local_veto"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "natural20 training",
+      "year": 20,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "natural30/new-check",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [
+        "establish_future_check"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "natural30/withdraw/shared",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "D4",
+      "actions": [
+        "share_power",
+        "central_review",
+        "withdraw"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "actor-evidence",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "B4",
+      "actions": [
+        "establish_future_check"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "foreign-evidence",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "narrow-future30",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [
+        "establish_future_check"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "cancel30/new-check",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [
+        "establish_future_check"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "cancel30/withdraw",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "D4",
+      "actions": [
+        "share_power",
+        "central_review",
+        "withdraw"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "same-round31/training",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "real-pre-future-veto30",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [],
+      "primaryAction": "cell-history",
+      "plannedNavigation": "primary-history"
+    },
+    {
+      "label": "real-pre-future-failed-review30",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [
+        "complete_review"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "old-recovery/withdraw",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "D4",
+      "actions": [
+        "share_power",
+        "central_review",
+        "withdraw"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "genuine-existing-check30",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "protagonist",
+      "cellId": "B4",
+      "actions": [],
+      "primaryAction": "cell-history",
+      "plannedNavigation": "primary-history"
+    },
+    {
+      "label": "current-genuine-failure30",
+      "year": 30,
+      "phase": "planning",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [
+        "complete_review"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "relocation20 action",
+      "year": 20,
+      "phase": "planning",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "D4",
+      "actions": [
+        "free_warning",
+        "present_archive",
+        "relocate_teacher"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "locked-destination20",
+      "year": 20,
+      "phase": "planning",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "archive"
+    },
+    {
+      "label": "pending-destination20",
+      "year": 20,
+      "phase": "playback",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [],
+      "primaryAction": "playback",
+      "plannedNavigation": "archive"
+    },
+    {
+      "label": "settled-destination21",
+      "year": 21,
+      "phase": "playback",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [],
+      "primaryAction": "playback",
+      "plannedNavigation": "archive"
+    },
+    {
+      "label": "destination30/narrow",
+      "year": 30,
+      "phase": "planning",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "anonymous-fund_school",
+      "year": 20,
+      "phase": "planning",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "anonymous-train_network",
+      "year": 30,
+      "phase": "planning",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "separate-companion30",
+      "year": 30,
+      "phase": "planning",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "missing-destination-source-boundary",
+      "year": 30,
+      "phase": "planning",
+      "seed": "12",
+      "actorId": "protagonist",
+      "cellId": "E4",
+      "actions": [
+        "train_network"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
+    },
+    {
+      "label": "future-native30",
+      "year": 30,
+      "phase": "playback",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [],
+      "primaryAction": "playback",
+      "plannedNavigation": "playback"
+    },
+    {
+      "label": "future-native31",
+      "year": 31,
+      "phase": "playback",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [],
+      "primaryAction": "playback",
+      "plannedNavigation": "playback"
+    },
+    {
+      "label": "future-native32",
+      "year": 32,
+      "phase": "playback",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [],
+      "primaryAction": "playback",
+      "plannedNavigation": "playback"
+    },
+    {
+      "label": "future-native33",
+      "year": 33,
+      "phase": "playback",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [],
+      "primaryAction": "playback",
+      "plannedNavigation": "playback"
+    },
+    {
+      "label": "future-native34",
+      "year": 34,
+      "phase": "playback",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [],
+      "primaryAction": "playback",
+      "plannedNavigation": "playback"
+    },
+    {
+      "label": "future-native40",
+      "year": 40,
+      "phase": "ended",
+      "seed": "0",
+      "actorId": "linche",
+      "cellId": "B4",
+      "actions": [],
+      "primaryAction": "ending",
+      "plannedNavigation": "ending"
+    }
+  ],
+  "keyboardTargets": [
+    {
+      "label": "320/200 future preview",
+      "tabs": 4,
+      "focused": true,
+      "focusVisible": true,
+      "choiceCard": true,
+      "left": 16,
+      "right": 304,
+      "top": -66.671875,
+      "bottom": 634.265625,
+      "height": 700.9375,
+      "viewportWidth": 320,
+      "viewportHeight": 568,
+      "visibleHeight": 568,
+      "horizontalOverflow": false,
+      "hits": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "label": "320/200 evidence entrance",
+      "tabs": 1,
+      "focused": true,
+      "focusVisible": true,
+      "choiceCard": false,
+      "left": 37,
+      "right": 283,
+      "top": 224.984375,
+      "bottom": 342.984375,
+      "height": 118,
+      "viewportWidth": 320,
+      "viewportHeight": 568,
+      "visibleHeight": 118,
+      "horizontalOverflow": false,
+      "hits": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "label": "320/200 prepared choice",
+      "tabs": 2,
+      "focused": true,
+      "focusVisible": true,
+      "choiceCard": true,
+      "left": 16,
+      "right": 304,
+      "top": 10.328125,
+      "bottom": 557.265625,
+      "height": 546.9375,
+      "viewportWidth": 320,
+      "viewportHeight": 568,
+      "visibleHeight": 546.9375,
+      "horizontalOverflow": false,
+      "hits": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "label": "320/200 confirm",
+      "tabs": 1,
+      "focused": true,
+      "focusVisible": true,
+      "choiceCard": false,
+      "left": 16,
+      "right": 304,
+      "top": 305.40625,
+      "bottom": 423.40625,
+      "height": 118,
+      "viewportWidth": 320,
+      "viewportHeight": 568,
+      "visibleHeight": 118,
+      "horizontalOverflow": false,
+      "hits": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "label": "320/200 lock",
+      "tabs": 1,
+      "focused": true,
+      "focusVisible": true,
+      "choiceCard": false,
+      "left": 16,
+      "right": 304,
+      "top": 304.796875,
+      "bottom": 422.796875,
+      "height": 118,
+      "viewportWidth": 320,
+      "viewportHeight": 568,
+      "visibleHeight": 118,
+      "horizontalOverflow": false,
+      "hits": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "label": "320/200 E4 source keyboard",
+      "tabs": 1,
+      "focused": true,
+      "focusVisible": true,
+      "choiceCard": false,
+      "left": 37,
+      "right": 283,
+      "top": 457.5625,
+      "bottom": 559.5625,
+      "height": 102,
+      "viewportWidth": 320,
+      "viewportHeight": 568,
+      "visibleHeight": 102,
+      "horizontalOverflow": false,
+      "hits": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "label": "320/200 return archive",
+      "tabs": 2,
+      "focused": true,
+      "focusVisible": true,
+      "choiceCard": false,
+      "left": 16,
+      "right": 94.015625,
+      "top": 94.140625,
+      "bottom": 160.140625,
+      "height": 66,
+      "viewportWidth": 320,
+      "viewportHeight": 568,
+      "visibleHeight": 66,
+      "horizontalOverflow": false,
+      "hits": [
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "focusNegativeControls": [
+    {
+      "name": "wrong focused element",
+      "rejected": true
+    },
+    {
+      "name": "missing keyboard focus outline",
+      "rejected": true
+    },
+    {
+      "name": "visible portion obstructed",
+      "rejected": true
+    },
+    {
+      "name": "non-choice oversized control",
+      "rejected": true
+    },
+    {
+      "name": "horizontal overflow",
+      "rejected": true
+    },
+    {
+      "name": "partially clipped ordinary button",
+      "rejected": true
+    }
+  ],
+  "runtimeHash": {
+    "before": {
+      "sha256": "c60877ffd14ddb0c1dad0693ffdb96254b5fde1ade6b11f2c92018920de7c5b6",
+      "files": 284
+    },
+    "after": {
+      "sha256": "c60877ffd14ddb0c1dad0693ffdb96254b5fde1ade6b11f2c92018920de7c5b6",
+      "files": 284
+    }
+  }
+}

@@ -53,7 +53,7 @@ export function normalizeUi(state, saved) {
   if (ui.screen === 'playback' && state.phase !== 'playback') ui.screen = state.phase === 'ended' ? 'ending' : 'review';
   if (['avg', 'choice', 'confirm'].includes(ui.screen) && state.phase !== 'planning') ui.screen = 'world';
   if (['choice', 'confirm'].includes(ui.screen) && !ui.choice) ui.screen = 'avg';
-  if (ui.screen === 'visit' && !['B4', 'F6'].includes(ui.selected)) ui.screen = 'world';
+  if (ui.screen === 'visit' && !['B4', 'D5', 'F6'].includes(ui.selected)) ui.screen = 'world';
   if (ui.screen === 'ending' && state.phase !== 'ended') ui.screen = 'world';
   if (ui.screen === 'trace' && !ui.traceId) ui.screen = 'archive';
   return ui;

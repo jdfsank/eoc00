@@ -912,8 +912,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 229,
-      "stableMs": 216,
+      "waitedMs": 164,
+      "stableMs": 150,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -927,7 +927,22 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 143,
+      "waitedMs": 130,
+      "stableMs": 117,
+      "samples": 3,
+      "pendingSamples": 0
+    },
+    {
+      "view": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "width": 356,
+      "height": 250,
+      "rendered": true,
+      "waitedMs": 146,
       "stableMs": 133,
       "samples": 3,
       "pendingSamples": 0
@@ -942,8 +957,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 130,
-      "stableMs": 117,
+      "waitedMs": 147,
+      "stableMs": 133,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -957,23 +972,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 130,
-      "stableMs": 117,
-      "samples": 3,
-      "pendingSamples": 0
-    },
-    {
-      "view": {
-        "focus": true,
-        "centerX": 248,
-        "centerY": 113,
-        "zoom": 1.5344827586206897
-      },
-      "width": 356,
-      "height": 250,
-      "rendered": true,
-      "waitedMs": 123,
-      "stableMs": 117,
+      "waitedMs": 179,
+      "stableMs": 167,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -987,7 +987,7 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 128,
+      "waitedMs": 130,
       "stableMs": 117,
       "samples": 3,
       "pendingSamples": 0
@@ -1002,10 +1002,10 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 681,
-      "stableMs": 116,
+      "waitedMs": 632,
+      "stableMs": 118,
       "samples": 3,
-      "pendingSamples": 10
+      "pendingSamples": 9
     },
     {
       "view": {
@@ -1017,10 +1017,10 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 681,
-      "stableMs": 117,
+      "waitedMs": 631,
+      "stableMs": 100,
       "samples": 3,
-      "pendingSamples": 10
+      "pendingSamples": 9
     },
     {
       "view": {
@@ -1032,8 +1032,8 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 147,
-      "stableMs": 132,
+      "waitedMs": 143,
+      "stableMs": 133,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -1047,8 +1047,8 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 214,
-      "stableMs": 200,
+      "waitedMs": 181,
+      "stableMs": 166,
       "samples": 3,
       "pendingSamples": 0
     }

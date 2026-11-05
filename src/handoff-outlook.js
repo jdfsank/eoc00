@@ -1,4 +1,4 @@
-import {getWindowReview,getHandoffReadiness,getRecoveryWorkforce,usesHandoffRules,usesTradeoffs} from './simulation.js';
+import {getWindowReview,getHandoffReadiness,getRecoveryWorkforce,FUTURE_CHECK_RULES,usesHandoffRules,usesTradeoffs} from './simulation.js';
 
 const unique = values => [...new Set(values)];
 const POLICIES = ['share_power','withdraw','central_review'];
@@ -37,22 +37,23 @@ export function getHandoffOutlook(state) {
   const current=capability(currentStaff,readiness?.authorizedCells||[],currentChecks);
   const issues=[...review.issues];
   if(state.events.some(e=>e.status==='pending'&&e.year<=40))issues.push('仍有尚未兑现的既有合同，暂不猜测它们对交班的影响。请核对年度记录。');
-  if(review.tasks.some(t=>!['train_network','mutual_aid','complete_review','open_port_warning',...POLICIES].includes(t.a.id)||t.a.probability!==1))issues.push('存在本对照尚未定义的合同，暂不承诺兑现后的交班能力。');
+  if(review.tasks.some(t=>!['train_network','mutual_aid','complete_review',FUTURE_CHECK_RULES.actionId,'open_port_warning',...POLICIES].includes(t.a.id)||t.a.probability!==1))issues.push('存在本对照尚未定义的合同，暂不承诺兑现后的交班能力。');
   if(issues.length)return {ready:false,issues,model,policy,current};
   const training=review.tasks.filter(t=>t.a.id==='train_network');
   const staff=[...currentStaff,...training.map(t=>t.d.cellId)], authorized=[...(readiness?.authorizedCells||[]),...training.map(t=>t.d.cellId)];
-  const workforce=getRecoveryWorkforce(state).length>0||training.some(t=>30+t.a.dueIn<32);
-  const conditional=review.tasks.filter(t=>t.a.id==='complete_review').map(t=>({actorId:t.d.actorId,cellId:t.d.cellId,dueYear:30+t.a.dueIn,supported:workforce}));
+  const workforce=getRecoveryWorkforce(state).length>0;
+  const conditional=review.tasks.filter(t=>['complete_review',FUTURE_CHECK_RULES.actionId].includes(t.a.id)).map(t=>({actorId:t.d.actorId,cellId:t.d.cellId,dueYear:30+t.a.dueIn,supported:workforce||training.some(plan=>30+plan.a.dueIn<30+t.a.dueIn),...(t.a.id===FUTURE_CHECK_RULES.actionId?{actionId:t.a.id}:{})}));
   const withoutRecovery=capability(staff,authorized,currentChecks,training.length);
   const projected=capability(staff,authorized,[...currentChecks,...conditional.filter(c=>c.supported).map(c=>c.cellId)],training.length);
   const contracts=review.tasks.map(({d,a})=>({actorId:d.actorId,cellId:d.cellId,actionId:a.id,title:a.title,dueYear:30+a.dueIn,conditional:!!a.conditional}));
   const serviceConditional=contracts.filter(c=>c.actionId==='open_port_warning');
-  return {ready:true,issues:[],model,policy,current,projected,withoutRecovery,contracts,conditional,serviceConditional,
+  return {ready:true,issues:[],model,policy,current,projected,withoutRecovery,withoutConditionalChecks:withoutRecovery,contracts,conditional,serviceConditional,
     notes:[
       '这只是已锁定合同的条件对照，不提前兑现、不抽随机，也不预告结局标题。最终按第40年的真实存续状态核对。',
       '假设当前载体继续运行，确定合同按时落实。新增培训第31年提供本地人手；互助改善生计，不替代教学、异源校验或交班方针。',
       '远港公开预警第31年仍须原分站有效运转且尚未开放；条件失效则取消不退费。它只改变当地准入，不改变本表的人手、授权、校验、信任或方针。',
-      '后续校验第32年仍须原失败记录与实际测量或教学人手有效。若条件不符，会取消且费用不退；下方同时保留未完成校验的分支。',
+      ...(conditional.some(c=>c.actionId===FUTURE_CHECK_RULES.actionId)?['从零建设未来校验席第34年仍须实际测量或教学人手有效，31年新培训可赶上期限；条件不符则取消且材料成本不退。它不需要也不补造旧失败底稿，下方同时保留未建成分支。']:[]),
+      ...(!conditional.some(c=>c.actionId===FUTURE_CHECK_RULES.actionId)||conditional.some(c=>c.actionId!==FUTURE_CHECK_RULES.actionId)?['后续校验第32年仍须原失败记录与实际测量或教学人手有效。若条件不符，会取消且费用不退；下方同时保留未完成校验的分支。']:[]),
       model==='mandate'?'人手、地方授权、跨地异源校验与河港信任分别核对。同源培训人数不能冒充独立方法；共享另需信任，退出不以同意代替实际承接能力。':model==='regional'?'本局保留旧版地域规则：学校与成功校验按不同地域计数，至少两地且有学校；不追补新版本的授权要求。':'本局保留旧版累计规则：网络次数加保档、成功复核标记。不把旧承诺改算为新版本的地域或授权要求。',
       '集中协调是一种方针，不表示已完成交班；保档支点也不等于完成指令复核。培训和后续校验若用完两个名额，本轮就没有另外签署方针。第23年结果与原失败记录不会改变。'
     ]};
