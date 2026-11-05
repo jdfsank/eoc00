@@ -1,0 +1,4012 @@
+{
+  "delayed": {
+    "scope": "Headless Chromium viewport, pointer and keyboard regression checks; not physical-device or screen-reader certification.",
+    "checks": [
+      {
+        "name": "320x568: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "320x568: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "320x568: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "360x800: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "360x800: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "360x800: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "390x844: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "390x844: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "390x844: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "430x932: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "430x932: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "430x932: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "320x568: 200% text mode enabled",
+        "passed": true
+      },
+      {
+        "name": "320x568-text200: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: primary text is full 200% size",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "Text-size and navigation do not mutate world",
+        "passed": true
+      },
+      {
+        "name": "Map hook exposes focused camera coordinates",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        }
+      },
+      {
+        "name": "Actual pointer drag changes focused world center",
+        "passed": true,
+        "detail": {
+          "focused": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 136,
+            "zoom": 1.5344827586206897
+          },
+          "dragged": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "pointer": {
+            "start": {
+              "x": 195,
+              "y": 510.3125
+            },
+            "deltaX": 60,
+            "deltaY": 35
+          },
+          "afterChannel": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterActor": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterReturn": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterResize": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.706896551724138
+          },
+          "afterExplicitE4": {
+            "focus": true,
+            "centerX": 320,
+            "centerY": 152,
+            "zoom": 1.706896551724138
+          },
+          "beforeRecentLocate": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 40,
+            "zoom": 1.706896551724138
+          },
+          "afterRecentLocate": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 136,
+            "zoom": 1.706896551724138
+          },
+          "reset": {
+            "focus": false,
+            "centerX": 288,
+            "centerY": 173,
+            "zoom": 0.6827586206896552
+          }
+        }
+      },
+      {
+        "name": "Channel rerender preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Channel rerender preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "Actor rerender preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Actor rerender preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "AVG round trip preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Resize preserves world center while allowing fit zoom adjustment",
+        "passed": true
+      },
+      {
+        "name": "Resize preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "Explicit coordinate selection recenters focused camera to E4",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 320,
+          "centerY": 152,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "Explicit E4 selection replaces old pan without changing simulation",
+        "passed": true
+      },
+      {
+        "name": "Recent-event regression starts focused on A1",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 40,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "World recent-event D4 location updates selection and camera together",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "Recent-event location reuses canvas and leaves simulation unchanged",
+        "passed": true
+      },
+      {
+        "name": "Explicit full-map command resets focus and camera center",
+        "passed": true,
+        "detail": {
+          "focus": false,
+          "centerX": 288,
+          "centerY": 173,
+          "zoom": 0.6827586206896552
+        }
+      },
+      {
+        "name": "Map navigation, channel, actor, resize and reset leave world unchanged",
+        "passed": true
+      },
+      {
+        "name": "Keyboard Tab from evidence summary reaches investigation control",
+        "passed": true
+      },
+      {
+        "name": "Keyboard investigation restores focus to its summary",
+        "passed": true
+      },
+      {
+        "name": "Keyboard investigation consumes exactly one opportunity",
+        "passed": true,
+        "detail": {
+          "evidence": [
+            "independent_flood_records"
+          ],
+          "budget": 2
+        }
+      },
+      {
+        "name": "Repeated summary toggles do not spend investigation budget",
+        "passed": true
+      },
+      {
+        "name": "Tab continues to next evidence summary after investigation",
+        "passed": true
+      },
+      {
+        "name": "Investigation budget survives leaving and returning",
+        "passed": true
+      },
+      {
+        "name": "Investigation persists planning records without changing world outcomes",
+        "passed": true
+      },
+      {
+        "name": "Non-intervenable A1 offers history rather than AVG",
+        "passed": true
+      },
+      {
+        "name": "A1 primary opens selected-region history",
+        "passed": true
+      },
+      {
+        "name": "A1 selection and history leave world unchanged",
+        "passed": true
+      },
+      {
+        "name": "playback world primary has the correct destination",
+        "passed": true
+      },
+      {
+        "name": "playback primary opens playback, not AVG",
+        "passed": true
+      },
+      {
+        "name": "playback primary does not advance year or mutate world",
+        "passed": true
+      },
+      {
+        "name": "ended world primary has the correct destination",
+        "passed": true
+      },
+      {
+        "name": "ended primary opens ending, not AVG",
+        "passed": true
+      },
+      {
+        "name": "ended primary does not advance year or mutate world",
+        "passed": true
+      },
+      {
+        "name": "No browser runtime errors",
+        "passed": true,
+        "detail": []
+      }
+    ],
+    "viewports": [
+      {
+        "label": "320x568",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scrollY": 0,
+        "scrollWidth": 320,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.265625,
+          "width": 262,
+          "height": 52,
+          "bottom": 246.265625,
+          "right": 291
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "360x800",
+        "viewport": {
+          "width": 360,
+          "height": 800
+        },
+        "scrollY": 0,
+        "scrollWidth": 360,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 302,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 331
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "390x844",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollY": 0,
+        "scrollWidth": 390,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 332,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 361
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "430x932",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "scrollY": 0,
+        "scrollWidth": 430,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 372,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 401
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "320x568-text200",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scrollY": 0,
+        "scrollWidth": 320,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 460.3125,
+          "width": 262,
+          "height": 70,
+          "bottom": 530.3125,
+          "right": 291
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "32px",
+        "primaryFontSize": "32px",
+        "bigText": true
+      }
+    ],
+    "camera": {
+      "focused": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.5344827586206897
+      },
+      "dragged": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "pointer": {
+        "start": {
+          "x": 195,
+          "y": 510.3125
+        },
+        "deltaX": 60,
+        "deltaY": 35
+      },
+      "afterChannel": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterActor": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterReturn": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterResize": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.706896551724138
+      },
+      "afterExplicitE4": {
+        "focus": true,
+        "centerX": 320,
+        "centerY": 152,
+        "zoom": 1.706896551724138
+      },
+      "beforeRecentLocate": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 40,
+        "zoom": 1.706896551724138
+      },
+      "afterRecentLocate": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.706896551724138
+      },
+      "reset": {
+        "focus": false,
+        "centerX": 288,
+        "centerY": 173,
+        "zoom": 0.6827586206896552
+      }
+    },
+    "errors": [],
+    "cameraReadiness": [
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 229,
+        "stableMs": 216,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 131,
+        "stableMs": 116,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 130,
+        "stableMs": 117,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 130,
+        "stableMs": 116,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 178,
+        "stableMs": 167,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 129,
+        "stableMs": 117,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 320,
+          "centerY": 152,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 881,
+        "stableMs": 130,
+        "samples": 3,
+        "pendingSamples": 13
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 40,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 848,
+        "stableMs": 132,
+        "samples": 3,
+        "pendingSamples": 13
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 147,
+        "stableMs": 134,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": false,
+          "centerX": 288,
+          "centerY": 173,
+          "zoom": 0.6827586206896552
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 190,
+        "stableMs": 183,
+        "samples": 3,
+        "pendingSamples": 0
+      }
+    ],
+    "assetDelay": {
+      "milliseconds": 400,
+      "requests": 72
+    }
+  },
+  "normal": {
+    "scope": "Headless Chromium viewport, pointer and keyboard regression checks; not physical-device or screen-reader certification.",
+    "checks": [
+      {
+        "name": "320x568: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "320x568: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "320x568: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "360x800: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "360x800: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "360x800: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "390x844: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "390x844: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "390x844: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "430x932: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "430x932: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "430x932: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "320x568: 200% text mode enabled",
+        "passed": true
+      },
+      {
+        "name": "320x568-text200: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: primary text is full 200% size",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "Text-size and navigation do not mutate world",
+        "passed": true
+      },
+      {
+        "name": "Map hook exposes focused camera coordinates",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        }
+      },
+      {
+        "name": "Actual pointer drag changes focused world center",
+        "passed": true,
+        "detail": {
+          "focused": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 136,
+            "zoom": 1.5344827586206897
+          },
+          "dragged": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "pointer": {
+            "start": {
+              "x": 195,
+              "y": 510.3125
+            },
+            "deltaX": 60,
+            "deltaY": 35
+          },
+          "afterChannel": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterActor": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterReturn": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterResize": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.706896551724138
+          },
+          "afterExplicitE4": {
+            "focus": true,
+            "centerX": 320,
+            "centerY": 152,
+            "zoom": 1.706896551724138
+          },
+          "beforeRecentLocate": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 40,
+            "zoom": 1.706896551724138
+          },
+          "afterRecentLocate": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 136,
+            "zoom": 1.706896551724138
+          },
+          "reset": {
+            "focus": false,
+            "centerX": 288,
+            "centerY": 173,
+            "zoom": 0.6827586206896552
+          }
+        }
+      },
+      {
+        "name": "Channel rerender preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Channel rerender preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "Actor rerender preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Actor rerender preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "AVG round trip preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Resize preserves world center while allowing fit zoom adjustment",
+        "passed": true
+      },
+      {
+        "name": "Resize preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "Explicit coordinate selection recenters focused camera to E4",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 320,
+          "centerY": 152,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "Explicit E4 selection replaces old pan without changing simulation",
+        "passed": true
+      },
+      {
+        "name": "Recent-event regression starts focused on A1",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 40,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "World recent-event D4 location updates selection and camera together",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "Recent-event location reuses canvas and leaves simulation unchanged",
+        "passed": true
+      },
+      {
+        "name": "Explicit full-map command resets focus and camera center",
+        "passed": true,
+        "detail": {
+          "focus": false,
+          "centerX": 288,
+          "centerY": 173,
+          "zoom": 0.6827586206896552
+        }
+      },
+      {
+        "name": "Map navigation, channel, actor, resize and reset leave world unchanged",
+        "passed": true
+      },
+      {
+        "name": "Keyboard Tab from evidence summary reaches investigation control",
+        "passed": true
+      },
+      {
+        "name": "Keyboard investigation restores focus to its summary",
+        "passed": true
+      },
+      {
+        "name": "Keyboard investigation consumes exactly one opportunity",
+        "passed": true,
+        "detail": {
+          "evidence": [
+            "independent_flood_records"
+          ],
+          "budget": 2
+        }
+      },
+      {
+        "name": "Repeated summary toggles do not spend investigation budget",
+        "passed": true
+      },
+      {
+        "name": "Tab continues to next evidence summary after investigation",
+        "passed": true
+      },
+      {
+        "name": "Investigation budget survives leaving and returning",
+        "passed": true
+      },
+      {
+        "name": "Investigation persists planning records without changing world outcomes",
+        "passed": true
+      },
+      {
+        "name": "Non-intervenable A1 offers history rather than AVG",
+        "passed": true
+      },
+      {
+        "name": "A1 primary opens selected-region history",
+        "passed": true
+      },
+      {
+        "name": "A1 selection and history leave world unchanged",
+        "passed": true
+      },
+      {
+        "name": "playback world primary has the correct destination",
+        "passed": true
+      },
+      {
+        "name": "playback primary opens playback, not AVG",
+        "passed": true
+      },
+      {
+        "name": "playback primary does not advance year or mutate world",
+        "passed": true
+      },
+      {
+        "name": "ended world primary has the correct destination",
+        "passed": true
+      },
+      {
+        "name": "ended primary opens ending, not AVG",
+        "passed": true
+      },
+      {
+        "name": "ended primary does not advance year or mutate world",
+        "passed": true
+      },
+      {
+        "name": "No browser runtime errors",
+        "passed": true,
+        "detail": []
+      }
+    ],
+    "viewports": [
+      {
+        "label": "320x568",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scrollY": 0,
+        "scrollWidth": 320,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.265625,
+          "width": 262,
+          "height": 52,
+          "bottom": 246.265625,
+          "right": 291
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "360x800",
+        "viewport": {
+          "width": 360,
+          "height": 800
+        },
+        "scrollY": 0,
+        "scrollWidth": 360,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 302,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 331
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "390x844",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollY": 0,
+        "scrollWidth": 390,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 332,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 361
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "430x932",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "scrollY": 0,
+        "scrollWidth": 430,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 372,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 401
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "320x568-text200",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scrollY": 0,
+        "scrollWidth": 320,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 460.3125,
+          "width": 262,
+          "height": 70,
+          "bottom": 530.3125,
+          "right": 291
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "32px",
+        "primaryFontSize": "32px",
+        "bigText": true
+      }
+    ],
+    "camera": {
+      "focused": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.5344827586206897
+      },
+      "dragged": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "pointer": {
+        "start": {
+          "x": 195,
+          "y": 510.3125
+        },
+        "deltaX": 60,
+        "deltaY": 35
+      },
+      "afterChannel": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterActor": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterReturn": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterResize": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.706896551724138
+      },
+      "afterExplicitE4": {
+        "focus": true,
+        "centerX": 320,
+        "centerY": 152,
+        "zoom": 1.706896551724138
+      },
+      "beforeRecentLocate": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 40,
+        "zoom": 1.706896551724138
+      },
+      "afterRecentLocate": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.706896551724138
+      },
+      "reset": {
+        "focus": false,
+        "centerX": 288,
+        "centerY": 173,
+        "zoom": 0.6827586206896552
+      }
+    },
+    "errors": [],
+    "cameraReadiness": [
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 179,
+        "stableMs": 167,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 130,
+        "stableMs": 116,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 112,
+        "stableMs": 100,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 128,
+        "stableMs": 117,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 124,
+        "stableMs": 117,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 131,
+        "stableMs": 117,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 320,
+          "centerY": 152,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 196,
+        "stableMs": 184,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 40,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 132,
+        "stableMs": 117,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 129,
+        "stableMs": 117,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": false,
+          "centerX": 288,
+          "centerY": 173,
+          "zoom": 0.6827586206896552
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 198,
+        "stableMs": 183,
+        "samples": 3,
+        "pendingSamples": 0
+      }
+    ],
+    "assetDelay": {
+      "milliseconds": 0,
+      "requests": 0
+    }
+  },
+  "default": {
+    "scope": "Headless Chromium viewport, pointer and keyboard regression checks; not physical-device or screen-reader certification.",
+    "checks": [
+      {
+        "name": "320x568: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "320x568: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "320x568: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "360x800: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "360x800: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "360x800: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "390x844: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "390x844: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "390x844: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "430x932: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "430x932: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "430x932: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "320x568: 200% text mode enabled",
+        "passed": true
+      },
+      {
+        "name": "320x568-text200: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: primary text is full 200% size",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "Text-size and navigation do not mutate world",
+        "passed": true
+      },
+      {
+        "name": "Map hook exposes focused camera coordinates",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        }
+      },
+      {
+        "name": "Actual pointer drag changes focused world center",
+        "passed": true,
+        "detail": {
+          "focused": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 136,
+            "zoom": 1.5344827586206897
+          },
+          "dragged": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "pointer": {
+            "start": {
+              "x": 195,
+              "y": 510.3125
+            },
+            "deltaX": 60,
+            "deltaY": 35
+          },
+          "afterChannel": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterActor": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterReturn": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterResize": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.706896551724138
+          },
+          "afterExplicitE4": {
+            "focus": true,
+            "centerX": 320,
+            "centerY": 152,
+            "zoom": 1.706896551724138
+          },
+          "beforeRecentLocate": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 40,
+            "zoom": 1.706896551724138
+          },
+          "afterRecentLocate": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 136,
+            "zoom": 1.706896551724138
+          },
+          "reset": {
+            "focus": false,
+            "centerX": 288,
+            "centerY": 173,
+            "zoom": 0.6827586206896552
+          }
+        }
+      },
+      {
+        "name": "Channel rerender preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Channel rerender preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "Actor rerender preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Actor rerender preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "AVG round trip preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Resize preserves world center while allowing fit zoom adjustment",
+        "passed": true
+      },
+      {
+        "name": "Resize preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "Explicit coordinate selection recenters focused camera to E4",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 320,
+          "centerY": 152,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "Explicit E4 selection replaces old pan without changing simulation",
+        "passed": true
+      },
+      {
+        "name": "Recent-event regression starts focused on A1",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 40,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "World recent-event D4 location updates selection and camera together",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.706896551724138
+        }
+      },
+      {
+        "name": "Recent-event location reuses canvas and leaves simulation unchanged",
+        "passed": true
+      },
+      {
+        "name": "Explicit full-map command resets focus and camera center",
+        "passed": true,
+        "detail": {
+          "focus": false,
+          "centerX": 288,
+          "centerY": 173,
+          "zoom": 0.6827586206896552
+        }
+      },
+      {
+        "name": "Map navigation, channel, actor, resize and reset leave world unchanged",
+        "passed": true
+      },
+      {
+        "name": "Keyboard Tab from evidence summary reaches investigation control",
+        "passed": true
+      },
+      {
+        "name": "Keyboard investigation restores focus to its summary",
+        "passed": true
+      },
+      {
+        "name": "Keyboard investigation consumes exactly one opportunity",
+        "passed": true,
+        "detail": {
+          "evidence": [
+            "independent_flood_records"
+          ],
+          "budget": 2
+        }
+      },
+      {
+        "name": "Repeated summary toggles do not spend investigation budget",
+        "passed": true
+      },
+      {
+        "name": "Tab continues to next evidence summary after investigation",
+        "passed": true
+      },
+      {
+        "name": "Investigation budget survives leaving and returning",
+        "passed": true
+      },
+      {
+        "name": "Investigation persists planning records without changing world outcomes",
+        "passed": true
+      },
+      {
+        "name": "Non-intervenable A1 offers history rather than AVG",
+        "passed": true
+      },
+      {
+        "name": "A1 primary opens selected-region history",
+        "passed": true
+      },
+      {
+        "name": "A1 selection and history leave world unchanged",
+        "passed": true
+      },
+      {
+        "name": "playback world primary has the correct destination",
+        "passed": true
+      },
+      {
+        "name": "playback primary opens playback, not AVG",
+        "passed": true
+      },
+      {
+        "name": "playback primary does not advance year or mutate world",
+        "passed": true
+      },
+      {
+        "name": "ended world primary has the correct destination",
+        "passed": true
+      },
+      {
+        "name": "ended primary opens ending, not AVG",
+        "passed": true
+      },
+      {
+        "name": "ended primary does not advance year or mutate world",
+        "passed": true
+      },
+      {
+        "name": "No browser runtime errors",
+        "passed": true,
+        "detail": []
+      }
+    ],
+    "viewports": [
+      {
+        "label": "320x568",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scrollY": 0,
+        "scrollWidth": 320,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.265625,
+          "width": 262,
+          "height": 52,
+          "bottom": 246.265625,
+          "right": 291
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "360x800",
+        "viewport": {
+          "width": 360,
+          "height": 800
+        },
+        "scrollY": 0,
+        "scrollWidth": 360,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 302,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 331
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "390x844",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollY": 0,
+        "scrollWidth": 390,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 332,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 361
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "430x932",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "scrollY": 0,
+        "scrollWidth": 430,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 372,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 401
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "320x568-text200",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scrollY": 0,
+        "scrollWidth": 320,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 460.3125,
+          "width": 262,
+          "height": 70,
+          "bottom": 530.3125,
+          "right": 291
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "32px",
+        "primaryFontSize": "32px",
+        "bigText": true
+      }
+    ],
+    "camera": {
+      "focused": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.5344827586206897
+      },
+      "dragged": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "pointer": {
+        "start": {
+          "x": 195,
+          "y": 510.3125
+        },
+        "deltaX": 60,
+        "deltaY": 35
+      },
+      "afterChannel": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterActor": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterReturn": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterResize": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.706896551724138
+      },
+      "afterExplicitE4": {
+        "focus": true,
+        "centerX": 320,
+        "centerY": 152,
+        "zoom": 1.706896551724138
+      },
+      "beforeRecentLocate": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 40,
+        "zoom": 1.706896551724138
+      },
+      "afterRecentLocate": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.706896551724138
+      },
+      "reset": {
+        "focus": false,
+        "centerX": 288,
+        "centerY": 173,
+        "zoom": 0.6827586206896552
+      }
+    },
+    "errors": [],
+    "cameraReadiness": [
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 527,
+        "stableMs": 517,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 210,
+        "stableMs": 200,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 164,
+        "stableMs": 149,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 197,
+        "stableMs": 183,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.5344827586206897
+        },
+        "width": 356,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 164,
+        "stableMs": 151,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 248,
+          "centerY": 113,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 156,
+        "stableMs": 150,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 320,
+          "centerY": 152,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 417,
+        "stableMs": 120,
+        "samples": 3,
+        "pendingSamples": 5
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 40,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 397,
+        "stableMs": 116,
+        "samples": 3,
+        "pendingSamples": 5
+      },
+      {
+        "view": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.706896551724138
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 127,
+        "stableMs": 117,
+        "samples": 3,
+        "pendingSamples": 0
+      },
+      {
+        "view": {
+          "focus": false,
+          "centerX": 288,
+          "centerY": 173,
+          "zoom": 0.6827586206896552
+        },
+        "width": 396,
+        "height": 250,
+        "rendered": true,
+        "waitedMs": 348,
+        "stableMs": 334,
+        "samples": 3,
+        "pendingSamples": 0
+      }
+    ],
+    "assetDelay": {
+      "milliseconds": 180,
+      "requests": 72
+    }
+  },
+  "redReproduction": {
+    "scope": "Headless Chromium viewport, pointer and keyboard regression checks; not physical-device or screen-reader certification.",
+    "checks": [
+      {
+        "name": "320x568: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.265625,
+            "width": 262,
+            "height": 52,
+            "bottom": 246.265625,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "320x568: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "320x568: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "320x568: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "360x800: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 360,
+            "height": 800
+          },
+          "scrollY": 0,
+          "scrollWidth": 360,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 302,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 331
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "360x800: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "360x800: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "360x800: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "390x844: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "scrollY": 0,
+          "scrollWidth": 390,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 332,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 361
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "390x844: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "390x844: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "390x844: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "430x932: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "scrollY": 0,
+          "scrollWidth": 430,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 194.96875,
+            "width": 372,
+            "height": 52,
+            "bottom": 246.96875,
+            "right": 401
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "16px",
+          "primaryFontSize": "16px",
+          "bigText": false
+        }
+      },
+      {
+        "name": "430x932: primary opens legal AVG",
+        "passed": true
+      },
+      {
+        "name": "430x932: screen transition focuses its heading",
+        "passed": true
+      },
+      {
+        "name": "430x932: opening AVG does not mutate world",
+        "passed": true
+      },
+      {
+        "name": "320x568: 200% text mode enabled",
+        "passed": true
+      },
+      {
+        "name": "320x568-text200: exactly one primary world action",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: primary fully visible and unobscured without scrolling",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: no horizontal overflow",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "320x568-text200: primary text is full 200% size",
+        "passed": true,
+        "detail": {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "scrollY": 0,
+          "scrollWidth": 320,
+          "primaryCount": 1,
+          "bounds": {
+            "x": 29,
+            "y": 460.3125,
+            "width": 262,
+            "height": 70,
+            "bottom": 530.3125,
+            "right": 291
+          },
+          "visible": true,
+          "unobscured": true,
+          "rootFontSize": "32px",
+          "primaryFontSize": "32px",
+          "bigText": true
+        }
+      },
+      {
+        "name": "Text-size and navigation do not mutate world",
+        "passed": true
+      },
+      {
+        "name": "Map hook exposes focused camera coordinates",
+        "passed": true,
+        "detail": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        }
+      },
+      {
+        "name": "Actual pointer drag changes focused world center",
+        "passed": true,
+        "detail": {
+          "focused": {
+            "focus": true,
+            "centerX": 288,
+            "centerY": 136,
+            "zoom": 1.5344827586206897
+          },
+          "dragged": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "pointer": {
+            "start": {
+              "x": 195,
+              "y": 510.3125
+            },
+            "deltaX": 60,
+            "deltaY": 35
+          },
+          "afterChannel": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterActor": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterReturn": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.5344827586206897
+          },
+          "afterResize": {
+            "focus": true,
+            "centerX": 248,
+            "centerY": 113,
+            "zoom": 1.706896551724138
+          },
+          "afterExplicitE4": null
+        }
+      },
+      {
+        "name": "Channel rerender preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Channel rerender preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "Actor rerender preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Actor rerender preserves canvas instance",
+        "passed": true
+      },
+      {
+        "name": "AVG round trip preserves dragged camera",
+        "passed": true
+      },
+      {
+        "name": "Resize preserves world center while allowing fit zoom adjustment",
+        "passed": true
+      },
+      {
+        "name": "Resize preserves canvas instance",
+        "passed": true
+      }
+    ],
+    "viewports": [
+      {
+        "label": "320x568",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scrollY": 0,
+        "scrollWidth": 320,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.265625,
+          "width": 262,
+          "height": 52,
+          "bottom": 246.265625,
+          "right": 291
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "360x800",
+        "viewport": {
+          "width": 360,
+          "height": 800
+        },
+        "scrollY": 0,
+        "scrollWidth": 360,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 302,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 331
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "390x844",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollY": 0,
+        "scrollWidth": 390,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 332,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 361
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "430x932",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "scrollY": 0,
+        "scrollWidth": 430,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 194.96875,
+          "width": 372,
+          "height": 52,
+          "bottom": 246.96875,
+          "right": 401
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "16px",
+        "primaryFontSize": "16px",
+        "bigText": false
+      },
+      {
+        "label": "320x568-text200",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "scrollY": 0,
+        "scrollWidth": 320,
+        "primaryCount": 1,
+        "bounds": {
+          "x": 29,
+          "y": 460.3125,
+          "width": 262,
+          "height": 70,
+          "bottom": 530.3125,
+          "right": 291
+        },
+        "visible": true,
+        "unobscured": true,
+        "rootFontSize": "32px",
+        "primaryFontSize": "32px",
+        "bigText": true
+      }
+    ],
+    "camera": {
+      "focused": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.5344827586206897
+      },
+      "dragged": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "pointer": {
+        "start": {
+          "x": 195,
+          "y": 510.3125
+        },
+        "deltaX": 60,
+        "deltaY": 35
+      },
+      "afterChannel": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterActor": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterReturn": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "afterResize": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.706896551724138
+      },
+      "afterExplicitE4": null
+    },
+    "errors": [],
+    "raceReproduction": {
+      "delayMs": 400,
+      "delayedRequests": 36,
+      "oldFixedWaitView": null,
+      "samples": [
+        {
+          "elapsedMs": 288,
+          "view": null
+        },
+        {
+          "elapsedMs": 340,
+          "view": null
+        },
+        {
+          "elapsedMs": 392,
+          "view": null
+        },
+        {
+          "elapsedMs": 443,
+          "view": null
+        },
+        {
+          "elapsedMs": 495,
+          "view": null
+        },
+        {
+          "elapsedMs": 546,
+          "view": null
+        },
+        {
+          "elapsedMs": 600,
+          "view": null
+        },
+        {
+          "elapsedMs": 651,
+          "view": null
+        },
+        {
+          "elapsedMs": 702,
+          "view": null
+        },
+        {
+          "elapsedMs": 752,
+          "view": null
+        },
+        {
+          "elapsedMs": 805,
+          "view": null
+        },
+        {
+          "elapsedMs": 857,
+          "view": null
+        },
+        {
+          "elapsedMs": 908,
+          "view": null
+        },
+        {
+          "elapsedMs": 960,
+          "view": null
+        },
+        {
+          "elapsedMs": 1012,
+          "view": {
+            "focus": true,
+            "centerX": 320,
+            "centerY": 152,
+            "zoom": 1.706896551724138
+          }
+        },
+        {
+          "elapsedMs": 1069,
+          "view": {
+            "focus": true,
+            "centerX": 320,
+            "centerY": 152,
+            "zoom": 1.706896551724138
+          }
+        },
+        {
+          "elapsedMs": 1123,
+          "view": {
+            "focus": true,
+            "centerX": 320,
+            "centerY": 152,
+            "zoom": 1.706896551724138
+          }
+        }
+      ],
+      "stateUnchanged": true,
+      "canvas": {
+        "width": 396,
+        "height": 250
+      }
+    },
+    "failure": {
+      "message": "Cannot read properties of null (reading 'focus')",
+      "stack": "TypeError: Cannot read properties of null (reading 'focus')\n    at file:///workspace/scratch/52f1b40b7635/eoc00/scripts/.round10-interaction-race-repro.mjs:139:86"
+    }
+  }
+}

@@ -16,10 +16,40 @@ const check = (name, passed, detail) => {
 };
 const click = async action => page.locator(`[data-action="${action}"]`).first().click();
 const world = () => page.evaluate(() => JSON.stringify(window.afterwave.state));
-const view = () => page.evaluate(() => {
-  const result = window.afterwave.mapView;
-  return typeof result === 'function' ? result() : result;
-});
+async function view() {
+  // A mounted canvas can still be in Phaser's asynchronous asset loader. A
+  // fixed delay (or a cached mapView from before remount) is not readiness.
+  // Require actual nonempty canvas pixels and the same finite camera/size on
+  // three samples spanning at least 100ms. Do not wait for expected coordinates:
+  // a stable but incorrect camera must still fail the assertions below.
+  const sample = await page.evaluate(async () => {
+    const started = performance.now();
+    let previous = null, previousCanvas = null, stableSince = 0, matches = 0, lastSample = 0, pendingSamples = 0, last = null;
+    while (performance.now() - started < 5000) {
+      await new Promise(resolve => requestAnimationFrame(resolve));
+      const now = performance.now();
+      if (now - lastSample < 50) continue;
+      lastSample = now;
+      const canvas = document.querySelector('canvas'), result = window.afterwave.mapView;
+      const camera = typeof result === 'function' ? result() : result;
+      const finite = camera && typeof camera.focus === 'boolean' && ['centerX', 'centerY', 'zoom'].every(k => Number.isFinite(camera[k])) && camera.zoom > 0;
+      let rendered = false;
+      if (canvas?.isConnected && canvas.width > 0 && canvas.height > 0) {
+        const rgba = canvas.getContext('2d')?.getImageData(0, 0, canvas.width, canvas.height).data;
+        for (let i = 3; rgba && i < rgba.length; i += 4) if (rgba[i]) { rendered = true; break; }
+      }
+      last = { view: camera, width: canvas?.width ?? null, height: canvas?.height ?? null, rendered };
+      if (!finite || !rendered) { previous = null; previousCanvas = null; matches = 0; pendingSamples++; continue; }
+      const key = JSON.stringify(last);
+      if (canvas === previousCanvas && key === previous) matches++;
+      else { previous = key; previousCanvas = canvas; stableSince = now; matches = 1; }
+      if (matches >= 3 && now - stableSince >= 100) return { ...last, waitedMs: Math.round(now - started), stableMs: Math.round(now - stableSince), samples: matches, pendingSamples };
+    }
+    throw Error(`Map camera did not reach a rendered, finite, stable state within 5s: ${JSON.stringify(last)}`);
+  });
+  (report.cameraReadiness ??= []).push(sample);
+  return sample.view;
+}
 const settled = async () => { await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))); await page.waitForTimeout(100); };
 const snap = name => page.screenshot({ path: `${out}/interaction-${name}.png`, fullPage: true });
 const sameView = (a, b) => a.focus === b.focus && Math.abs(a.centerX - b.centerX) <= 1 && Math.abs(a.centerY - b.centerY) <= 1 && Math.abs(a.zoom - b.zoom) < .001;
@@ -129,6 +159,16 @@ try {
   check('Resize preserves world center while allowing fit zoom adjustment', sameCenter(dragged, afterResize));
   check('Resize preserves canvas instance', await page.evaluate(() => window.__interactionCanvas === document.querySelector('canvas')));
   await snap('camera-retained');
+  // Exercise real remount/loading races in every ordinary run, not only on a
+  // slow CI runner. Zero is available for the normal-speed comparison run.
+  const assetDelay = Number(process.env.AFTERWAVE_INTERACTION_ASSET_DELAY_MS ?? 180);
+  assert.ok(Number.isFinite(assetDelay) && assetDelay >= 0, 'Asset delay must be nonnegative milliseconds');
+  report.assetDelay = { milliseconds: assetDelay, requests: 0 };
+  if (assetDelay) await page.route('**/assets/props/*.png', async route => {
+    report.assetDelay.requests++;
+    await new Promise(resolve => setTimeout(resolve, assetDelay));
+    await route.continue();
+  });
   await click('list');
   await page.locator('[data-action="select"][data-cell="E4"]').click(); await settled();
   const selectedView = await view(); report.camera.afterExplicitE4 = selectedView;
@@ -138,6 +178,7 @@ try {
   // It must recenter after the map receives the new selected cell, not before.
   await click('list'); await page.locator('[data-action="select"][data-cell="A1"]').click(); await settled();
   const beforeRecentLocate = await view(); report.camera.beforeRecentLocate = beforeRecentLocate;
+  if (assetDelay) await page.unroute('**/assets/props/*.png');
   check('Recent-event regression starts focused on A1', await page.evaluate(() => window.afterwave.ui.selected === 'A1') && beforeRecentLocate.focus === true && Math.abs(beforeRecentLocate.centerX - 288) <= 1 && Math.abs(beforeRecentLocate.centerY - 40) <= 1, beforeRecentLocate);
   await page.evaluate(() => { window.__interactionCanvas = document.querySelector('canvas'); });
   await page.locator('.world-side [data-action="locate"][data-cell="D4"]').click(); await settled();
