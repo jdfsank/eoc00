@@ -1,3 +1,4 @@
+import {stationAccessVisual} from './station-access-visuals.js';
 import {monasteryVisual} from './monastery-visuals.js';
 import {getInstitutionStaffing} from './simulation.js';
 import {farPortVisual} from './far-port-visuals.js';
@@ -31,6 +32,7 @@ const PRIORITY = ['station', 'branch', 'school', 'training', 'warning', 'mutual'
 // This is a view of existing simulation facts. It must not award warning
 // coverage, repair a station, or treat a failed review's records as success.
 export function institutionVisual(state, cellId) {
+  if(cellId==='D4'){const stationAccess=stationAccessVisual(state);if(stationAccess)return {institutionId:stationAccess.stationId,kind:'station',prop:stationAccess.prop,label:stationAccess.label,stationAccess,status:stationAccess.status,halted:stationAccess.halted,maintenanceGap:stationAccess.maintenanceGap,degraded:stationAccess.maintenanceGap,staffingGap:stationAccess.staffingGap,restricted:stationAccess.restricted,recordsOnly:false,unverified:false};}
   if (cellId === 'B4') {
     const monastery=monasteryVisual(state);
     if(monastery){

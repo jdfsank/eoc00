@@ -912,8 +912,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 230,
-      "stableMs": 217,
+      "waitedMs": 229,
+      "stableMs": 216,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -927,7 +927,22 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 128,
+      "waitedMs": 143,
+      "stableMs": 133,
+      "samples": 3,
+      "pendingSamples": 0
+    },
+    {
+      "view": {
+        "focus": true,
+        "centerX": 248,
+        "centerY": 113,
+        "zoom": 1.5344827586206897
+      },
+      "width": 356,
+      "height": 250,
+      "rendered": true,
+      "waitedMs": 130,
       "stableMs": 117,
       "samples": 3,
       "pendingSamples": 0
@@ -942,22 +957,7 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 131,
-      "stableMs": 120,
-      "samples": 3,
-      "pendingSamples": 0
-    },
-    {
-      "view": {
-        "focus": true,
-        "centerX": 248,
-        "centerY": 113,
-        "zoom": 1.5344827586206897
-      },
-      "width": 356,
-      "height": 250,
-      "rendered": true,
-      "waitedMs": 129,
+      "waitedMs": 130,
       "stableMs": 117,
       "samples": 3,
       "pendingSamples": 0
@@ -972,8 +972,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 119,
-      "stableMs": 116,
+      "waitedMs": 123,
+      "stableMs": 117,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -987,7 +987,7 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 130,
+      "waitedMs": 128,
       "stableMs": 117,
       "samples": 3,
       "pendingSamples": 0
@@ -1002,10 +1002,10 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 697,
-      "stableMs": 133,
+      "waitedMs": 681,
+      "stableMs": 116,
       "samples": 3,
-      "pendingSamples": 9
+      "pendingSamples": 10
     },
     {
       "view": {
@@ -1017,10 +1017,10 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 632,
-      "stableMs": 116,
+      "waitedMs": 681,
+      "stableMs": 117,
       "samples": 3,
-      "pendingSamples": 9
+      "pendingSamples": 10
     },
     {
       "view": {
@@ -1032,8 +1032,8 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 130,
-      "stableMs": 117,
+      "waitedMs": 147,
+      "stableMs": 132,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -1047,14 +1047,14 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 186,
-      "stableMs": 179,
+      "waitedMs": 214,
+      "stableMs": 200,
       "samples": 3,
       "pendingSamples": 0
     }
   ],
   "assetDelay": {
     "milliseconds": 180,
-    "requests": 154
+    "requests": 162
   }
 }

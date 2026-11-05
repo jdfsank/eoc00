@@ -1,5 +1,5 @@
 {
-  "scope": "Actual file imports at320×568; paused-clock visible-input cases (including4500ms host delays), exact3500ms/replacement timer boundaries, and a fresh unmocked-clock expiry case. Real pointer and Tab+Enter targets; unchanged precommit world, exact year20 settlement, and200% status readability. No injected CSS, forced click, input retry, or production lifetime change.",
+  "scope": "Actual file imports at320×568 with fresh per-change receipts and separate test-only delayed File.text controls; paused-clock visible-input cases (including4500ms host delays), exact3500ms/replacement timer boundaries, and a fresh unmocked-clock expiry case. Real pointer and Tab+Enter targets; unchanged precommit world, exact year20 settlement, and200% status readability. No injected CSS, forced click, input retry, or production lifetime change.",
   "checks": [
     {
       "name": "direct import: original import status remains visible and readable",
@@ -107,7 +107,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -129,7 +129,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -151,7 +151,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -173,7 +173,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -195,7 +195,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -217,7 +217,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -239,7 +239,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -261,7 +261,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -283,7 +283,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -305,7 +305,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -327,7 +327,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -349,7 +349,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -371,7 +371,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -393,7 +393,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -415,7 +415,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -437,7 +437,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -459,7 +459,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -481,7 +481,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -598,7 +598,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -620,7 +620,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -642,7 +642,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -664,7 +664,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -686,7 +686,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -708,7 +708,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -730,7 +730,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -752,7 +752,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -774,7 +774,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -796,7 +796,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -818,7 +818,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -840,7 +840,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -862,7 +862,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -884,7 +884,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -906,7 +906,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -928,7 +928,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -950,7 +950,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -972,7 +972,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1109,7 +1109,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1131,7 +1131,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1153,7 +1153,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1211,7 +1211,7 @@
       "detail": {
         "mode": "delayed-direct",
         "requestedHostMs": 4500,
-        "elapsedHostMs": 4500.696763,
+        "elapsedHostMs": 4500.298398999999,
         "elapsedBrowserMs": 0
       }
     },
@@ -1317,7 +1317,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1339,7 +1339,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1361,7 +1361,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1383,7 +1383,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1405,7 +1405,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1427,7 +1427,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1449,7 +1449,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1471,7 +1471,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1493,7 +1493,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1515,7 +1515,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1537,7 +1537,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1559,7 +1559,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1581,7 +1581,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1603,7 +1603,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1625,7 +1625,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1647,7 +1647,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1669,7 +1669,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1691,7 +1691,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": false,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1729,7 +1729,7 @@
       "detail": {
         "mode": "delayed-keyboard-200",
         "requestedHostMs": 4500,
-        "elapsedHostMs": 4499.9012299999995,
+        "elapsedHostMs": 4500.056427000001,
         "elapsedBrowserMs": 0
       }
     },
@@ -1855,7 +1855,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1877,7 +1877,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -1899,7 +1899,7 @@
         "toastRole": "status",
         "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
         "worldUnchanged": true,
-        "time": 60630
+        "time": 60787
       }
     },
     {
@@ -2091,6 +2091,460 @@
       "passed": true
     },
     {
+      "name": "Delayed reader missing-toast: genuine file read is held after change dispatch",
+      "passed": true,
+      "detail": {
+        "mode": "missing-toast",
+        "clock": "paused Playwright clock",
+        "reader": "one genuine File.text result held by an explicit test-only Promise gate",
+        "hostHeldMs": 250.10610799999995,
+        "blocked": {
+          "entered": true,
+          "contentReady": true,
+          "released": false,
+          "calls": 1,
+          "screen": "settings",
+          "status": null,
+          "probe": {
+            "id": 12,
+            "receipt": null,
+            "sameNode": false
+          },
+          "time": 78387
+        },
+        "outcomeWhileBlocked": "pending",
+        "receipt": {
+          "id": 12,
+          "name": "toast-regression.json",
+          "freshNode": true,
+          "time": 78387,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        }
+      }
+    },
+    {
+      "name": "Delayed reader missing-toast: fresh import acknowledgment cannot pass before the reader",
+      "passed": true,
+      "detail": {
+        "mode": "missing-toast",
+        "clock": "paused Playwright clock",
+        "reader": "one genuine File.text result held by an explicit test-only Promise gate",
+        "hostHeldMs": 250.10610799999995,
+        "blocked": {
+          "entered": true,
+          "contentReady": true,
+          "released": false,
+          "calls": 1,
+          "screen": "settings",
+          "status": null,
+          "probe": {
+            "id": 12,
+            "receipt": null,
+            "sameNode": false
+          },
+          "time": 78387
+        },
+        "outcomeWhileBlocked": "pending",
+        "receipt": {
+          "id": 12,
+          "name": "toast-regression.json",
+          "freshNode": true,
+          "time": 78387,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        }
+      }
+    },
+    {
+      "name": "Delayed reader missing-toast: old missing or identical toast cannot acknowledge this change",
+      "passed": true,
+      "detail": {
+        "mode": "missing-toast",
+        "clock": "paused Playwright clock",
+        "reader": "one genuine File.text result held by an explicit test-only Promise gate",
+        "hostHeldMs": 250.10610799999995,
+        "blocked": {
+          "entered": true,
+          "contentReady": true,
+          "released": false,
+          "calls": 1,
+          "screen": "settings",
+          "status": null,
+          "probe": {
+            "id": 12,
+            "receipt": null,
+            "sameNode": false
+          },
+          "time": 78387
+        },
+        "outcomeWhileBlocked": "pending",
+        "receipt": {
+          "id": 12,
+          "name": "toast-regression.json",
+          "freshNode": true,
+          "time": 78387,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        }
+      }
+    },
+    {
+      "name": "Delayed reader missing-toast: waiting preserves whole world/autosave and application time",
+      "passed": true
+    },
+    {
+      "name": "Delayed reader missing-toast: release acknowledges this change's new status node",
+      "passed": true,
+      "detail": {
+        "id": 12,
+        "name": "toast-regression.json",
+        "freshNode": true,
+        "time": 78387,
+        "screen": "world",
+        "status": {
+          "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "role": "status",
+          "visible": true,
+          "rect": {
+            "x": 16,
+            "y": 444,
+            "width": 288,
+            "height": 104
+          },
+          "withinViewport": true,
+          "noTextOverflow": true
+        }
+      }
+    },
+    {
+      "name": "Delayed reader missing-toast completed import: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Delayed reader missing-toast at3499ms: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Delayed reader missing-toast: completed import still expires exactly at3500ms",
+      "passed": true
+    },
+    {
+      "name": "Delayed reader missing-toast: completion and expiry preserve exact world/autosave",
+      "passed": true
+    },
+    {
+      "name": "Delayed reader missing-toast: File.text descriptor and implementation are restored",
+      "passed": true
+    },
+    {
+      "name": "Delayed reader same-state-same-toast: genuine file read is held after change dispatch",
+      "passed": true,
+      "detail": {
+        "mode": "same-state-same-toast",
+        "clock": "paused Playwright clock",
+        "reader": "one genuine File.text result held by an explicit test-only Promise gate",
+        "hostHeldMs": 250.21110599999884,
+        "blocked": {
+          "entered": true,
+          "contentReady": true,
+          "released": false,
+          "calls": 1,
+          "screen": "settings",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          },
+          "probe": {
+            "id": 14,
+            "receipt": null,
+            "sameNode": true
+          },
+          "time": 81887
+        },
+        "outcomeWhileBlocked": "pending",
+        "receipt": {
+          "id": 14,
+          "name": "toast-regression.json",
+          "freshNode": true,
+          "time": 81887,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        }
+      }
+    },
+    {
+      "name": "Delayed reader same-state-same-toast: fresh import acknowledgment cannot pass before the reader",
+      "passed": true,
+      "detail": {
+        "mode": "same-state-same-toast",
+        "clock": "paused Playwright clock",
+        "reader": "one genuine File.text result held by an explicit test-only Promise gate",
+        "hostHeldMs": 250.21110599999884,
+        "blocked": {
+          "entered": true,
+          "contentReady": true,
+          "released": false,
+          "calls": 1,
+          "screen": "settings",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          },
+          "probe": {
+            "id": 14,
+            "receipt": null,
+            "sameNode": true
+          },
+          "time": 81887
+        },
+        "outcomeWhileBlocked": "pending",
+        "receipt": {
+          "id": 14,
+          "name": "toast-regression.json",
+          "freshNode": true,
+          "time": 81887,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        }
+      }
+    },
+    {
+      "name": "Delayed reader same-state-same-toast: old missing or identical toast cannot acknowledge this change",
+      "passed": true,
+      "detail": {
+        "mode": "same-state-same-toast",
+        "clock": "paused Playwright clock",
+        "reader": "one genuine File.text result held by an explicit test-only Promise gate",
+        "hostHeldMs": 250.21110599999884,
+        "blocked": {
+          "entered": true,
+          "contentReady": true,
+          "released": false,
+          "calls": 1,
+          "screen": "settings",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          },
+          "probe": {
+            "id": 14,
+            "receipt": null,
+            "sameNode": true
+          },
+          "time": 81887
+        },
+        "outcomeWhileBlocked": "pending",
+        "receipt": {
+          "id": 14,
+          "name": "toast-regression.json",
+          "freshNode": true,
+          "time": 81887,
+          "screen": "world",
+          "status": {
+            "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+            "role": "status",
+            "visible": true,
+            "rect": {
+              "x": 16,
+              "y": 444,
+              "width": 288,
+              "height": 104
+            },
+            "withinViewport": true,
+            "noTextOverflow": true
+          }
+        }
+      }
+    },
+    {
+      "name": "Delayed reader same-state-same-toast: waiting preserves whole world/autosave and application time",
+      "passed": true
+    },
+    {
+      "name": "Delayed reader same-state-same-toast: release acknowledges this change's new status node",
+      "passed": true,
+      "detail": {
+        "id": 14,
+        "name": "toast-regression.json",
+        "freshNode": true,
+        "time": 81887,
+        "screen": "world",
+        "status": {
+          "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "role": "status",
+          "visible": true,
+          "rect": {
+            "x": 16,
+            "y": 444,
+            "width": 288,
+            "height": 104
+          },
+          "withinViewport": true,
+          "noTextOverflow": true
+        }
+      }
+    },
+    {
+      "name": "Delayed reader same-state-same-toast completed import: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Delayed reader same-state-same-toast at3499ms: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "Delayed reader same-state-same-toast: completed import still expires exactly at3500ms",
+      "passed": true
+    },
+    {
+      "name": "Delayed reader same-state-same-toast: completion and expiry preserve exact world/autosave",
+      "passed": true
+    },
+    {
+      "name": "Delayed reader same-state-same-toast: File.text descriptor and implementation are restored",
+      "passed": true
+    },
+    {
       "name": "Unmocked clock: browser observer saw the readable actual import status",
       "passed": true,
       "detail": {
@@ -2098,7 +2552,7 @@
         "observations": [
           {
             "kind": "shown",
-            "time": 816.2000000029802,
+            "time": 838.7000000029802,
             "screen": "world",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2116,13 +2570,13 @@
           },
           {
             "kind": "removed",
-            "time": 4316.5,
+            "time": 4338.89999999851,
             "screen": "world",
             "status": null
           }
         ],
-        "elapsedHostMs": 4518.326956000001,
-        "visibleMs": 3500.2999999970198
+        "elapsedHostMs": 4506.00417,
+        "visibleMs": 3500.1999999955297
       }
     },
     {
@@ -2133,7 +2587,7 @@
         "observations": [
           {
             "kind": "shown",
-            "time": 816.2000000029802,
+            "time": 838.7000000029802,
             "screen": "world",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2151,13 +2605,13 @@
           },
           {
             "kind": "removed",
-            "time": 4316.5,
+            "time": 4338.89999999851,
             "screen": "world",
             "status": null
           }
         ],
-        "elapsedHostMs": 4518.326956000001,
-        "visibleMs": 3500.2999999970198
+        "elapsedHostMs": 4506.00417,
+        "visibleMs": 3500.1999999955297
       }
     },
     {
@@ -2186,14 +2640,14 @@
       "detail": {
         "replacement": {
           "requestedDelayMs": 1800,
-          "dispatchedAt": 2604.5,
+          "dispatchedAt": 2780.7000000029802,
           "priorVisible": true,
           "error": null
         },
         "observations": [
           {
             "kind": "shown",
-            "time": 793.6999999955297,
+            "time": 966,
             "screen": "world",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2211,7 +2665,7 @@
           },
           {
             "kind": "shown",
-            "time": 2604.7999999970198,
+            "time": 2781.10000000149,
             "screen": "settings",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2229,7 +2683,7 @@
           },
           {
             "kind": "shown",
-            "time": 2621.6999999955297,
+            "time": 2801,
             "screen": "world",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2247,7 +2701,7 @@
           },
           {
             "kind": "removed",
-            "time": 6121.89999999851,
+            "time": 6301.20000000298,
             "screen": "world",
             "status": null
           }
@@ -2264,14 +2718,14 @@
       "detail": {
         "replacement": {
           "requestedDelayMs": 1800,
-          "dispatchedAt": 2604.5,
+          "dispatchedAt": 2780.7000000029802,
           "priorVisible": true,
           "error": null
         },
         "observations": [
           {
             "kind": "shown",
-            "time": 793.6999999955297,
+            "time": 966,
             "screen": "world",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2289,7 +2743,7 @@
           },
           {
             "kind": "shown",
-            "time": 2604.7999999970198,
+            "time": 2781.10000000149,
             "screen": "settings",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2307,7 +2761,7 @@
           },
           {
             "kind": "shown",
-            "time": 2621.6999999955297,
+            "time": 2801,
             "screen": "world",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2325,7 +2779,7 @@
           },
           {
             "kind": "removed",
-            "time": 6121.89999999851,
+            "time": 6301.20000000298,
             "screen": "world",
             "status": null
           }
@@ -2346,14 +2800,14 @@
       "detail": {
         "replacement": {
           "requestedDelayMs": 1800,
-          "dispatchedAt": 2635.2000000029802,
+          "dispatchedAt": 2717.39999999851,
           "priorVisible": true,
           "error": null
         },
         "observations": [
           {
             "kind": "shown",
-            "time": 830,
+            "time": 909.6000000014901,
             "screen": "settings",
             "status": {
               "text": "不兼容或损坏的存档：制度结构或年度产出非法",
@@ -2371,7 +2825,7 @@
           },
           {
             "kind": "shown",
-            "time": 2635.5,
+            "time": 2717.7000000029802,
             "screen": "settings",
             "status": {
               "text": "不兼容或损坏的存档：制度结构或年度产出非法",
@@ -2389,7 +2843,7 @@
           },
           {
             "kind": "shown",
-            "time": 2675,
+            "time": 2766.89999999851,
             "screen": "world",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2407,7 +2861,7 @@
           },
           {
             "kind": "removed",
-            "time": 6175.30000000447,
+            "time": 6267.89999999851,
             "screen": "world",
             "status": null
           }
@@ -2415,7 +2869,7 @@
         "mode": "invalid→valid",
         "clock": "unmocked browser clock",
         "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
-        "replacementVisibleMs": 3500.3000000044703
+        "replacementVisibleMs": 3501
       }
     },
     {
@@ -2424,14 +2878,14 @@
       "detail": {
         "replacement": {
           "requestedDelayMs": 1800,
-          "dispatchedAt": 2635.2000000029802,
+          "dispatchedAt": 2717.39999999851,
           "priorVisible": true,
           "error": null
         },
         "observations": [
           {
             "kind": "shown",
-            "time": 830,
+            "time": 909.6000000014901,
             "screen": "settings",
             "status": {
               "text": "不兼容或损坏的存档：制度结构或年度产出非法",
@@ -2449,7 +2903,7 @@
           },
           {
             "kind": "shown",
-            "time": 2635.5,
+            "time": 2717.7000000029802,
             "screen": "settings",
             "status": {
               "text": "不兼容或损坏的存档：制度结构或年度产出非法",
@@ -2467,7 +2921,7 @@
           },
           {
             "kind": "shown",
-            "time": 2675,
+            "time": 2766.89999999851,
             "screen": "world",
             "status": {
               "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -2485,7 +2939,7 @@
           },
           {
             "kind": "removed",
-            "time": 6175.30000000447,
+            "time": 6267.89999999851,
             "screen": "world",
             "status": null
           }
@@ -2493,7 +2947,7 @@
         "mode": "invalid→valid",
         "clock": "unmocked browser clock",
         "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
-        "replacementVisibleMs": 3500.3000000044703
+        "replacementVisibleMs": 3501
       }
     },
     {
@@ -2531,7 +2985,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2549,7 +3003,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -2567,7 +3021,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -2585,7 +3039,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2603,7 +3057,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -2621,7 +3075,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -2639,7 +3093,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2657,7 +3111,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -2675,7 +3129,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -2693,7 +3147,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2711,7 +3165,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -2729,7 +3183,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -2747,7 +3201,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2765,7 +3219,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -2783,7 +3237,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -2801,7 +3255,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2819,7 +3273,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -2837,7 +3291,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         }
       ]
     },
@@ -2861,7 +3315,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2879,7 +3333,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -2897,7 +3351,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -2915,7 +3369,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2933,7 +3387,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -2951,7 +3405,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -2969,7 +3423,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -2987,7 +3441,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3005,7 +3459,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -3023,7 +3477,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -3041,7 +3495,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3059,7 +3513,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -3077,7 +3531,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -3095,7 +3549,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3113,7 +3567,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -3131,7 +3585,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -3149,7 +3603,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3167,7 +3621,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         }
       ]
     },
@@ -3191,7 +3645,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -3209,7 +3663,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3227,7 +3681,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3243,7 +3697,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3259,7 +3713,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3275,7 +3729,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3291,7 +3745,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3307,7 +3761,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3323,7 +3777,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3339,7 +3793,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3355,7 +3809,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3371,7 +3825,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3387,7 +3841,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3403,7 +3857,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3421,7 +3875,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3437,7 +3891,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3453,7 +3907,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3469,7 +3923,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3485,7 +3939,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3503,7 +3957,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3519,7 +3973,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3535,7 +3989,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3551,7 +4005,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3567,7 +4021,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3585,7 +4039,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3601,7 +4055,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3617,7 +4071,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3633,7 +4087,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3649,7 +4103,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3665,7 +4119,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3681,7 +4135,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3699,7 +4153,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3715,7 +4169,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3731,7 +4185,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3747,7 +4201,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3763,7 +4217,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3779,7 +4233,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3795,7 +4249,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3811,7 +4265,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -3827,7 +4281,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3845,7 +4299,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -3861,7 +4315,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         }
       ]
     },
@@ -3885,7 +4339,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -3903,7 +4357,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3921,7 +4375,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -3939,7 +4393,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -3957,7 +4411,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -3975,7 +4429,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -3993,7 +4447,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -4011,7 +4465,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4029,7 +4483,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -4047,7 +4501,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -4065,7 +4519,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4083,7 +4537,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -4101,7 +4555,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -4119,7 +4573,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4137,7 +4591,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerdown",
@@ -4155,7 +4609,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -4173,7 +4627,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4191,7 +4645,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         }
       ]
     },
@@ -4215,7 +4669,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "pointerup",
@@ -4233,7 +4687,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4251,7 +4705,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4267,7 +4721,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4283,7 +4737,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4299,7 +4753,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4315,7 +4769,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4331,7 +4785,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4347,7 +4801,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4363,7 +4817,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4379,7 +4833,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4395,7 +4849,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4411,7 +4865,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4427,7 +4881,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4445,7 +4899,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4461,7 +4915,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4477,7 +4931,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4493,7 +4947,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4509,7 +4963,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4527,7 +4981,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4543,7 +4997,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4559,7 +5013,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4575,7 +5029,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4591,7 +5045,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4609,7 +5063,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": true,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4625,7 +5079,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4641,7 +5095,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4657,7 +5111,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4673,7 +5127,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4689,7 +5143,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4705,7 +5159,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4723,7 +5177,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4739,7 +5193,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4755,7 +5209,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4771,7 +5225,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4787,7 +5241,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4803,7 +5257,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4819,7 +5273,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4835,7 +5289,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keydown",
@@ -4851,7 +5305,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "click",
@@ -4869,7 +5323,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         },
         {
           "type": "keyup",
@@ -4885,7 +5339,7 @@
           "toastRole": "status",
           "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
           "worldUnchanged": false,
-          "time": 60630
+          "time": 60787
         }
       ]
     },
@@ -4907,7 +5361,7 @@
           "y": 495.30999755859375,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5348.60000000149
+          "time": 5438.10000000149
         },
         {
           "type": "pointerup",
@@ -4923,7 +5377,7 @@
           "y": 495.30999755859375,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5350.10000000149
+          "time": 5439.80000000447
         },
         {
           "type": "click",
@@ -4939,7 +5393,7 @@
           "y": 495,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5351.39999999851
+          "time": 5441
         },
         {
           "type": "keydown",
@@ -4953,7 +5407,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5379.70000000298
+          "time": 5473
         },
         {
           "type": "keyup",
@@ -4967,7 +5421,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5382.60000000149
+          "time": 5476.60000000149
         },
         {
           "type": "keydown",
@@ -4981,7 +5435,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5385.39999999851
+          "time": 5485.10000000149
         },
         {
           "type": "keyup",
@@ -4995,7 +5449,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5387.79999999702
+          "time": 5492.30000000447
         },
         {
           "type": "keydown",
@@ -5009,7 +5463,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5390.20000000298
+          "time": 5498.30000000447
         },
         {
           "type": "keyup",
@@ -5023,7 +5477,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5392.39999999851
+          "time": 5502.30000000447
         },
         {
           "type": "keydown",
@@ -5037,7 +5491,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5402.70000000298
+          "time": 5509.10000000149
         },
         {
           "type": "keyup",
@@ -5051,7 +5505,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5405.79999999702
+          "time": 5510.70000000298
         },
         {
           "type": "keydown",
@@ -5065,7 +5519,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5411.89999999851
+          "time": 5513.89999999851
         },
         {
           "type": "keyup",
@@ -5079,7 +5533,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5414.79999999702
+          "time": 5516.10000000149
         },
         {
           "type": "keydown",
@@ -5093,7 +5547,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5417
+          "time": 5518.70000000298
         },
         {
           "type": "click",
@@ -5109,7 +5563,7 @@
           "y": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5417.79999999702
+          "time": 5519.70000000298
         },
         {
           "type": "keyup",
@@ -5123,7 +5577,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5433.29999999702
+          "time": 5531.60000000149
         },
         {
           "type": "keydown",
@@ -5137,7 +5591,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5438.70000000298
+          "time": 5538.80000000447
         },
         {
           "type": "keyup",
@@ -5151,7 +5605,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5440.70000000298
+          "time": 5545.39999999851
         },
         {
           "type": "keydown",
@@ -5165,7 +5619,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5444.20000000298
+          "time": 5552
         },
         {
           "type": "click",
@@ -5181,7 +5635,7 @@
           "y": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5445.10000000149
+          "time": 5553.20000000298
         },
         {
           "type": "keyup",
@@ -5195,7 +5649,7 @@
           "detail": 0,
           "toastVisible": false,
           "worldUnchanged": true,
-          "time": 5452.39999999851
+          "time": 5561.89999999851
         }
       ]
     }
@@ -5204,13 +5658,13 @@
     {
       "mode": "delayed-direct",
       "requestedHostMs": 4500,
-      "elapsedHostMs": 4500.696763,
+      "elapsedHostMs": 4500.298398999999,
       "elapsedBrowserMs": 0
     },
     {
       "mode": "delayed-keyboard-200",
       "requestedHostMs": 4500,
-      "elapsedHostMs": 4499.9012299999995,
+      "elapsedHostMs": 4500.056427000001,
       "elapsedBrowserMs": 0
     }
   ],
@@ -5219,7 +5673,7 @@
     "observations": [
       {
         "kind": "shown",
-        "time": 816.2000000029802,
+        "time": 838.7000000029802,
         "screen": "world",
         "status": {
           "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -5237,26 +5691,26 @@
       },
       {
         "kind": "removed",
-        "time": 4316.5,
+        "time": 4338.89999999851,
         "screen": "world",
         "status": null
       }
     ],
-    "elapsedHostMs": 4518.326956000001,
-    "visibleMs": 3500.2999999970198
+    "elapsedHostMs": 4506.00417,
+    "visibleMs": 3500.1999999955297
   },
   "unmockedReplacements": [
     {
       "replacement": {
         "requestedDelayMs": 1800,
-        "dispatchedAt": 2604.5,
+        "dispatchedAt": 2780.7000000029802,
         "priorVisible": true,
         "error": null
       },
       "observations": [
         {
           "kind": "shown",
-          "time": 793.6999999955297,
+          "time": 966,
           "screen": "world",
           "status": {
             "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -5274,7 +5728,7 @@
         },
         {
           "kind": "shown",
-          "time": 2604.7999999970198,
+          "time": 2781.10000000149,
           "screen": "settings",
           "status": {
             "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -5292,7 +5746,7 @@
         },
         {
           "kind": "shown",
-          "time": 2621.6999999955297,
+          "time": 2801,
           "screen": "world",
           "status": {
             "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -5310,7 +5764,7 @@
         },
         {
           "kind": "removed",
-          "time": 6121.89999999851,
+          "time": 6301.20000000298,
           "screen": "world",
           "status": null
         }
@@ -5323,14 +5777,14 @@
     {
       "replacement": {
         "requestedDelayMs": 1800,
-        "dispatchedAt": 2635.2000000029802,
+        "dispatchedAt": 2717.39999999851,
         "priorVisible": true,
         "error": null
       },
       "observations": [
         {
           "kind": "shown",
-          "time": 830,
+          "time": 909.6000000014901,
           "screen": "settings",
           "status": {
             "text": "不兼容或损坏的存档：制度结构或年度产出非法",
@@ -5348,7 +5802,7 @@
         },
         {
           "kind": "shown",
-          "time": 2635.5,
+          "time": 2717.7000000029802,
           "screen": "settings",
           "status": {
             "text": "不兼容或损坏的存档：制度结构或年度产出非法",
@@ -5366,7 +5820,7 @@
         },
         {
           "kind": "shown",
-          "time": 2675,
+          "time": 2766.89999999851,
           "screen": "world",
           "status": {
             "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
@@ -5384,7 +5838,7 @@
         },
         {
           "kind": "removed",
-          "time": 6175.30000000447,
+          "time": 6267.89999999851,
           "screen": "world",
           "status": null
         }
@@ -5392,11 +5846,449 @@
       "mode": "invalid→valid",
       "clock": "unmocked browser clock",
       "input": "native browser-scheduled File/change lifecycle test, not a real pointer test",
-      "replacementVisibleMs": 3500.3000000044703
+      "replacementVisibleMs": 3501
+    }
+  ],
+  "importReceipts": [
+    {
+      "id": 1,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 60787,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "invalid-toast-regression.json",
+      "freshNode": true,
+      "time": 60787,
+      "screen": "settings",
+      "status": {
+        "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 468,
+          "width": 288,
+          "height": 80
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 3,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 60787,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 4,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 60787,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 5,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 60787,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 6,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 60787,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 7,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 64287,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 8,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 67787,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 9,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 69587,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 10,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 73087,
+      "screen": "settings",
+      "status": {
+        "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 468,
+          "width": 288,
+          "height": 80
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 11,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 74887,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 12,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 78387,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 13,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 81887,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 14,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 81887,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 1,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 838.6000000014901,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 1,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 965.9000000059605,
+      "screen": "world",
+      "status": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "id": 1,
+      "name": "toast-regression.json",
+      "freshNode": true,
+      "time": 909.5,
+      "screen": "settings",
+      "status": {
+        "text": "不兼容或损坏的存档：制度结构或年度产出非法",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 468,
+          "width": 288,
+          "height": 80
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    }
+  ],
+  "readerControls": [
+    {
+      "mode": "missing-toast",
+      "clock": "paused Playwright clock",
+      "reader": "one genuine File.text result held by an explicit test-only Promise gate",
+      "hostHeldMs": 250.10610799999995,
+      "blocked": {
+        "entered": true,
+        "contentReady": true,
+        "released": false,
+        "calls": 1,
+        "screen": "settings",
+        "status": null,
+        "probe": {
+          "id": 12,
+          "receipt": null,
+          "sameNode": false
+        },
+        "time": 78387
+      },
+      "outcomeWhileBlocked": "pending",
+      "receipt": {
+        "id": 12,
+        "name": "toast-regression.json",
+        "freshNode": true,
+        "time": 78387,
+        "screen": "world",
+        "status": {
+          "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "role": "status",
+          "visible": true,
+          "rect": {
+            "x": 16,
+            "y": 444,
+            "width": 288,
+            "height": 104
+          },
+          "withinViewport": true,
+          "noTextOverflow": true
+        }
+      }
+    },
+    {
+      "mode": "same-state-same-toast",
+      "clock": "paused Playwright clock",
+      "reader": "one genuine File.text result held by an explicit test-only Promise gate",
+      "hostHeldMs": 250.21110599999884,
+      "blocked": {
+        "entered": true,
+        "contentReady": true,
+        "released": false,
+        "calls": 1,
+        "screen": "settings",
+        "status": {
+          "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "role": "status",
+          "visible": true,
+          "rect": {
+            "x": 16,
+            "y": 444,
+            "width": 288,
+            "height": 104
+          },
+          "withinViewport": true,
+          "noTextOverflow": true
+        },
+        "probe": {
+          "id": 14,
+          "receipt": null,
+          "sameNode": true
+        },
+        "time": 81887
+      },
+      "outcomeWhileBlocked": "pending",
+      "receipt": {
+        "id": 14,
+        "name": "toast-regression.json",
+        "freshNode": true,
+        "time": 81887,
+        "screen": "world",
+        "status": {
+          "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "role": "status",
+          "visible": true,
+          "rect": {
+            "x": 16,
+            "y": 444,
+            "width": 288,
+            "height": 104
+          },
+          "withinViewport": true,
+          "noTextOverflow": true
+        }
+      }
     }
   ],
   "runtimeHash": {
-    "before": "a1c4c4f6c91094a1a83416ccd9d98f9926657fcc7fa0d39768db1e3b7e8a07d0",
-    "after": "a1c4c4f6c91094a1a83416ccd9d98f9926657fcc7fa0d39768db1e3b7e8a07d0"
+    "before": "5a71158ebbf5e67da14733f7ecd42f1a364b9d5e6e3a328b67a5ec5916d3d0fd",
+    "after": "5a71158ebbf5e67da14733f7ecd42f1a364b9d5e6e3a328b67a5ec5916d3d0fd"
   }
 }

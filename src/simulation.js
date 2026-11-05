@@ -1,4 +1,5 @@
 import board from './data/board.json' with { type: 'json' };
+import { BRANCH_ACCESS_RULES, getFutureBranchAccess, isBranchAccessRulesVersion } from './branch-access.js';
 
 export const CHANNELS = ['politics', 'economy', 'science', 'religion'];
 export const WINDOWS = [0, 10, 20, 30];
@@ -187,7 +188,7 @@ function schedule(s, data) {
   if (!s.events.some(e => e.id === data.id)) s.events.push({ kind: 'event', status: 'pending', parentId: null, sourceActionId: null, probability: 1, conditionVersion: 1, ...data });
 }
 export function createRun(seed = 12) {
-  const s = { version: 'afterwave.run.v1', crisisRulesVersion: COVERAGE_RULES.version, staffingRulesVersion: STAFFING_RULES.version, planningRulesVersion: PLANNING_RULES.version, handoffRulesVersion: HANDOFF_RULES.version, aftermathRulesVersion: AFTERMATH_RULES.version, recruitmentRulesVersion: RECRUITMENT_RULES.version, recoveryRulesVersion: RECOVERY_RULES.version, portAccessRulesVersion: PORT_ACCESS_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
+  const s = { version: 'afterwave.run.v1', crisisRulesVersion: COVERAGE_RULES.version, staffingRulesVersion: STAFFING_RULES.version, branchAccessRulesVersion: BRANCH_ACCESS_RULES.version, planningRulesVersion: PLANNING_RULES.version, handoffRulesVersion: HANDOFF_RULES.version, aftermathRulesVersion: AFTERMATH_RULES.version, recruitmentRulesVersion: RECRUITMENT_RULES.version, recoveryRulesVersion: RECOVERY_RULES.version, portAccessRulesVersion: PORT_ACCESS_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
   s.cells.forEach(c => { c.deployable = ['D4', 'B4'].includes(c.id); if (c.name === '未命名地域') c.name = `${c.id}·${c.terrain === 'water' ? '水域' : '原野'}`; });
   record(s, { id: 'arrival', title: '第零年 · 借来的十年', text: '续史局只能在每十年的窗口介入一次。你是唯一的介入员。河港将迎来洪水，但居民并不只需要被拯救。', kind: 'arrival' });
   s.snapshots[0] = copy(s.cells); return s;
@@ -473,6 +474,16 @@ export function getActions(s, cellId, actorId = 'protagonist', evidence = null) 
     notes.renew_charter = '维持河港公开、足额维护；把现存同源培训点纳入继任与地方复核授权，保留可追溯授权记录。不改变远港收费门槛，也不凭空增加异源校验。';
     for (const policy of ['share_power', 'withdraw']) notes[policy] = handoffSummary(s, policy) + '交班需不同地域的已获授权人手与真实异源校验；原学徒可提供人手，同源人数不等于独立方法。学校提供技术人手，强制迁任本身不证明合作。共享另需河港信任。最终按第40年实际存续条件结算。';
   }
+  const merchant = out.find(a => a.id === 'build_merchant');
+  if (merchant) {
+    const futureAccess = getFutureBranchAccess(s, merchant.id);
+    if (futureAccess.open) {
+      merchant.risk = 'D4商会测站设缴费门槛，依赖单一资助方；符合原教学链条件后生成的F6分站公开。';
+      if (!usesLegacyCrisisRules(s)) notes.build_merchant = '正常维护时，D4收费测站覆盖系数为0.45；本局之后生成的公开F6分站覆盖系数为1。';
+    }
+    // Prospective display only: title/description and committed text stay put.
+    notes.build_merchant += ' ' + futureAccess.description;
+  }
   return out.filter(a => !getActorRefusals(s, actorId, cellId).some(r => r.actionId === a.id)).map(a => {
     const staffingNote = RECRUITMENT_ACTIONS.includes(a.id) ? recruitmentStaffingNote(s, a.id) : null;
     return { ...a, ...(notes[a.id] ? { modelNote: notes[a.id] } : {}), ...(staffingNote ? { staffingNote,
@@ -494,7 +505,7 @@ export function passTask(s, actorId) { assertPlanning(s, actorId); s.drafts[acto
 export function unlockTask(s, actorId) { assertPlanning(s, actorId); delete s.drafts[actorId]; return s; }
 export function getWindowReview(s) {
   const actors = getActors(s), tasks = [], costs = {}, issues = [], warnings = [], occupied = new Map();
-  if (usesAftermathRules(s) || s.staffingRulesVersion !== undefined) {
+  if (usesAftermathRules(s) || s.staffingRulesVersion !== undefined || s.branchAccessRulesVersion !== undefined) {
     const integrity = validateState(s);
     if (!integrity.valid) return { ready: false, issues: integrity.errors, warnings, costs, tasks, assigned: 0, total: actors.length };
   }
@@ -590,7 +601,7 @@ function resolve(s, e) {
     const school = institution(s, 'training', 'E4', e, '东岸学徒培训点'); institution(s, 'training', 'D5', e, '南岸读尺班');
     text = '学徒带着河港的记录抵达东岸与南岸。当地船工也贡献了自己的经验。';
     schedule(s, { id: `${e.id}:branch`, year: 12, cellId: 'F6', title: '远港分站亮灯', actionId: 'branch', parentId: e.id, sourceActionId: e.sourceActionId, requiresInstitution: school.id });
-  } else if (a === 'branch') { const branch = institution(s, 'branch', 'F6', e, '远港水文分站'); branch.open = !e.sourceActionId?.endsWith(':build_merchant'); text = '东岸学徒与远港船工共同建起分站。它来自河港，却不只是河港的功劳。'; }
+  } else if (a === 'branch') { const branch = institution(s, 'branch', 'F6', e, '远港水文分站'); branch.open = getFutureBranchAccess(s, e.sourceActionId).open ?? !e.sourceActionId?.endsWith(':build_merchant'); text = '东岸学徒与远港船工共同建起分站。它来自河港，却不只是河港的功劳。'; }
   else if (a === 'renew_charter') {
     const stations = s.institutions.filter(i => i.cellId === 'D4' && i.kind === 'station');
     const origins = new Set(stations.filter(i => i.active).map(i => i.sourceActionId));
@@ -782,6 +793,7 @@ function inspectState(s) {
   const id = value => typeof value === 'string' && value.length > 0;
   if (!object(s) || s.version !== 'afterwave.run.v1') return { valid: false, errors: ['不兼容的存档版本'] };
   if (s.staffingRulesVersion !== undefined && !validStaffingVersion(s.staffingRulesVersion)) return { valid: false, errors: ['人手结算规则版本非法'] };
+  if (s.branchAccessRulesVersion !== undefined && !isBranchAccessRulesVersion(s.branchAccessRulesVersion)) return { valid: false, errors: ['分站准入规则版本非法'] };
   if (s.portAccessRulesVersion !== undefined && s.portAccessRulesVersion !== PORT_ACCESS_RULES.version) errors.push('远港准入规则版本非法');
   if (s.recoveryRulesVersion !== undefined && s.recoveryRulesVersion !== RECOVERY_RULES.version) errors.push('后续校验规则版本非法');
   if (s.recruitmentRulesVersion !== undefined && s.recruitmentRulesVersion !== RECRUITMENT_RULES.version) errors.push('招募岗位规则版本非法');

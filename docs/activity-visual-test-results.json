@@ -241,7 +241,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 346,
+      "waitedMs": 227,
       "samples": 3,
       "bytes": 26458
     },
@@ -254,7 +254,7 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 154,
+      "waitedMs": 138,
       "samples": 3,
       "bytes": 29418
     },
@@ -267,7 +267,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 132,
+      "waitedMs": 191,
       "samples": 3,
       "bytes": 28598
     },
@@ -280,7 +280,7 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 145,
+      "waitedMs": 119,
       "samples": 3,
       "bytes": 31598
     },
@@ -293,7 +293,7 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 141,
+      "waitedMs": 138,
       "samples": 3,
       "bytes": 30982
     },
@@ -306,7 +306,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 126,
+      "waitedMs": 187,
       "samples": 3,
       "bytes": 25354
     },
@@ -319,7 +319,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 119,
+      "waitedMs": 113,
       "samples": 3,
       "bytes": 26314
     },
@@ -332,7 +332,7 @@
         "centerY": 136,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 149,
+      "waitedMs": 102,
       "samples": 3,
       "bytes": 32418
     },
@@ -345,9 +345,9 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 135,
+      "waitedMs": 139,
       "samples": 3,
-      "bytes": 32106
+      "bytes": 32302
     },
     {
       "width": 356,
@@ -358,7 +358,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 174,
+      "waitedMs": 135,
       "samples": 3,
       "bytes": 26458
     },
@@ -371,7 +371,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 121,
+      "waitedMs": 209,
       "samples": 3,
       "bytes": 21634
     },
@@ -384,7 +384,7 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 129,
+      "waitedMs": 134,
       "samples": 3,
       "bytes": 24090
     },
@@ -397,7 +397,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 125,
+      "waitedMs": 118,
       "samples": 3,
       "bytes": 23414
     },
@@ -423,7 +423,7 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 106,
+      "waitedMs": 136,
       "samples": 3,
       "bytes": 25322
     },
@@ -436,7 +436,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 142,
+      "waitedMs": 121,
       "samples": 3,
       "bytes": 20806
     },
@@ -449,7 +449,7 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 123,
+      "waitedMs": 192,
       "samples": 3,
       "bytes": 21562
     },
@@ -462,7 +462,7 @@
         "centerY": 136,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 150,
+      "waitedMs": 121,
       "samples": 3,
       "bytes": 26302
     },
@@ -475,9 +475,9 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 138,
+      "waitedMs": 121,
       "samples": 3,
-      "bytes": 26510
+      "bytes": 26722
     },
     {
       "width": 286,
@@ -488,9 +488,61 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 119,
+      "waitedMs": 124,
       "samples": 3,
       "bytes": 21634
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 120,
+      "samples": 3,
+      "bytes": 26258
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 133,
+      "samples": 3,
+      "bytes": 26258
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 187,
+      "samples": 3,
+      "bytes": 24538
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 781,
+      "samples": 3,
+      "bytes": 26258
     },
     {
       "width": 356,
@@ -514,7 +566,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 128,
+      "waitedMs": 136,
       "samples": 3,
       "bytes": 26258
     },
@@ -527,59 +579,7 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 189,
-      "samples": 3,
-      "bytes": 24538
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 818,
-      "samples": 3,
-      "bytes": 26258
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 138,
-      "samples": 3,
-      "bytes": 26258
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 119,
-      "samples": 3,
-      "bytes": 26258
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 147,
+      "waitedMs": 141,
       "samples": 3,
       "bytes": 26258
     }

@@ -38,9 +38,9 @@ test('new active team is not hidden by old closed team, regardless of institutio
  s.institutions.push(old);assert.equal(sceneArt(s,'D4').file,'river-warning-active.svg');s.institutions.reverse();assert.equal(sceneArt(s,'D4').file,'river-warning-active.svg');
 });
 test('real station history takes priority over resident bell art in every station state',()=>{
- const s=warningAt30('station'),station=s.institutions.find(i=>i.kind==='station');assert.equal(s.institutions.some(i=>i.kind==='warning'),false);assert.equal(sceneArt(s,'D4').file,'river-station-active.svg');
+ const s=warningAt30('station'),station=s.institutions.find(i=>i.kind==='station');assert.equal(s.institutions.some(i=>i.kind==='warning'),false);assert.equal(sceneArt(s,'D4').file,'river-station-public-active.svg');
  s.institutions.push(copy(warningAt30().institutions.find(i=>i.kind==='warning')));
- station.maintenance=.7;assert.equal(sceneArt(s,'D4').file,'river-station-maintenance.svg');station.active=false;assert.equal(sceneArt(s,'D4').file,'river-station-stopped.svg');
+ station.maintenance=.7;assert.equal(sceneArt(s,'D4').file,'river-station-public-maintenance.svg');station.active=false;assert.equal(sceneArt(s,'D4').file,'river-station-public-stopped.svg');
  assert.equal(sceneArt(s,'D4',{ending:true}).file,'archive-desk.svg');
 });
 test('save import, repeated viewing and unrelated scene selection do not alter warning history',()=>{

@@ -1,0 +1,2268 @@
+{
+  "scope": "Actual D4 merchant renewal and year16 lapse/vacancy routes. Actual AVG only at legal10/20/30 windows; no invented year11/16 investigation or readonly visit. Access-only, upkeep and staffing combinations are valid imported presentation boundaries, not new actions. Chromium390/320 and200% text plus grayscale, not physical-device certification.",
+  "checks": [
+    {
+      "name": "390px paid10: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px paid10: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px paid10: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px locked: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px locked: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px locked: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px pending: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px pending: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px pending: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px public11: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px public11: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px public11: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px public16: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px public16: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px public16: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px public15: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px public15: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px public15: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px fee16: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px fee16: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px fee16: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px fee-gap11: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px fee-gap11: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px fee-gap11: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px public-gap11: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px public-gap11: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px public-gap11: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px fee-stopped16: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px fee-stopped16: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px fee-stopped16: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px public-stopped16: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "390px public-stopped16: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px public-stopped16: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "390px paid10: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px paid10: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px paid10: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px paid10: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px paid10: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px locked: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px locked: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px locked: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px locked: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px locked: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px public20: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px public20: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public20: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public20: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px public20: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px fee20: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px fee20: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px fee20: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px fee20: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px fee20: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px bell: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px bell: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px bell: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px bell: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px fee-active: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px fee-active: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px fee-active: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px fee-active: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px fee-active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px fee-understaffed: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px fee-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px fee-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px fee-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px fee-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance-understaffed: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px fee-maintenance-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px fee-stopped: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px fee-stopped: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px fee-stopped: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px fee-stopped: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px fee-stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px public-active: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px public-active: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public-active: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public-active: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px public-active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px public-understaffed: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px public-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px public-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance-understaffed: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px public-maintenance-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px public-stopped: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px public-stopped: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public-stopped: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public-stopped: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px public-stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px fee-zero: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px fee-zero: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px fee-zero: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px fee-zero: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px fee-zero: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px public-zero: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "390px public-zero: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public-zero: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public-zero: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px public-zero: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px locking keeps exact native image and display, not future public access",
+      "passed": true
+    },
+    {
+      "name": "390px active: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "390px understaffed: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-understaffed: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "390px stopped: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "390px fee: zero upkeep retains exactly the closed old rule",
+      "passed": true
+    },
+    {
+      "name": "390px public: zero upkeep retains exactly the closed old rule",
+      "passed": true
+    },
+    {
+      "name": "390px fee: maintenance and staffing remain separately visible",
+      "passed": true
+    },
+    {
+      "name": "390px public: maintenance and staffing remain separately visible",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-active: legal AVG entry has unobscured focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-active: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-active: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-active: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-active: full-size text still fits",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-active: existing evidence control remains focusable without overlap",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-active: returning to map spends nothing",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-active: legal AVG entry has unobscured focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-active: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-active: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-active: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-active: full-size text still fits",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-active: existing evidence control remains focusable without overlap",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-active: returning to map spends nothing",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-maintenance-understaffed: legal AVG entry has unobscured focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-maintenance-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-maintenance-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-maintenance-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-maintenance-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-maintenance-understaffed: full-size text still fits",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-maintenance-understaffed: existing evidence control remains focusable without overlap",
+      "passed": true
+    },
+    {
+      "name": "390px200% fee-maintenance-understaffed: returning to map spends nothing",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-stopped: legal AVG entry has unobscured focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-stopped: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-stopped: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-stopped: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-stopped: full-size text still fits",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-stopped: existing evidence control remains focusable without overlap",
+      "passed": true
+    },
+    {
+      "name": "390px200% public-stopped: returning to map spends nothing",
+      "passed": true
+    },
+    {
+      "name": "320px paid10: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px paid10: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px paid10: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px locked: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px locked: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px locked: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px pending: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px pending: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px pending: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px public11: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px public11: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px public11: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px public16: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px public16: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px public16: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px public15: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px public15: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px public15: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px fee16: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px fee16: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px fee16: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px fee-gap11: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px fee-gap11: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px fee-gap11: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px public-gap11: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px public-gap11: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px public-gap11: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px fee-stopped16: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px fee-stopped16: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px fee-stopped16: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px public-stopped16: map names actual access, upkeep and staffing separately",
+      "passed": true
+    },
+    {
+      "name": "320px public-stopped16: actual coverage and state are unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px public-stopped16: no invented readonly or playback AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320px paid10: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px paid10: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px paid10: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px paid10: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px paid10: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px locked: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px locked: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px locked: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px locked: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px locked: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px public20: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px public20: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public20: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public20: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px public20: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px fee20: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px fee20: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px fee20: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px fee20: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px fee20: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px bell: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px bell: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px bell: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px bell: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px fee-active: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px fee-active: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px fee-active: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px fee-active: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px fee-active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px fee-understaffed: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px fee-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px fee-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px fee-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px fee-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance-understaffed: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px fee-maintenance-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px fee-stopped: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px fee-stopped: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px fee-stopped: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px fee-stopped: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px fee-stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px public-active: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px public-active: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public-active: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public-active: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px public-active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px public-understaffed: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px public-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px public-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance-understaffed: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px public-maintenance-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px public-stopped: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px public-stopped: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public-stopped: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public-stopped: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px public-stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px fee-zero: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px fee-zero: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px fee-zero: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px fee-zero: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px fee-zero: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px public-zero: selected map matches actual carrier",
+      "passed": true
+    },
+    {
+      "name": "320px public-zero: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public-zero: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public-zero: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px public-zero: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px locking keeps exact native image and display, not future public access",
+      "passed": true
+    },
+    {
+      "name": "320px active: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "320px understaffed: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-understaffed: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "320px stopped: actual map, near pixels and grayscale distinguish access",
+      "passed": true
+    },
+    {
+      "name": "320px fee: zero upkeep retains exactly the closed old rule",
+      "passed": true
+    },
+    {
+      "name": "320px public: zero upkeep retains exactly the closed old rule",
+      "passed": true
+    },
+    {
+      "name": "320px fee: maintenance and staffing remain separately visible",
+      "passed": true
+    },
+    {
+      "name": "320px public: maintenance and staffing remain separately visible",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-active: legal AVG entry has unobscured focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-active: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-active: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-active: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-active: full-size text still fits",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-active: existing evidence control remains focusable without overlap",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-active: returning to map spends nothing",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-active: legal AVG entry has unobscured focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-active: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-active: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-active: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-active: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-active: full-size text still fits",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-active: existing evidence control remains focusable without overlap",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-active: returning to map spends nothing",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-maintenance-understaffed: legal AVG entry has unobscured focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-maintenance-understaffed: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-maintenance-understaffed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-maintenance-understaffed: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-maintenance-understaffed: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-maintenance-understaffed: full-size text still fits",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-maintenance-understaffed: existing evidence control remains focusable without overlap",
+      "passed": true
+    },
+    {
+      "name": "320px200% fee-maintenance-understaffed: returning to map spends nothing",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-stopped: legal AVG entry has unobscured focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-stopped: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-stopped: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-stopped: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-stopped: full-size text still fits",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-stopped: existing evidence control remains focusable without overlap",
+      "passed": true
+    },
+    {
+      "name": "320px200% public-stopped: returning to map spends nothing",
+      "passed": true
+    },
+    {
+      "name": "Actual charter lock leaves fee scene and world unchanged by viewing",
+      "passed": true
+    },
+    {
+      "name": "Actual submitted charter is still fee before11",
+      "passed": true
+    },
+    {
+      "name": "Actual11 changes only the existing station to public on fulfilment",
+      "passed": true
+    },
+    {
+      "name": "New public access traces to the real11 charter outcome without spending",
+      "passed": true
+    },
+    {
+      "name": "Actual16 retained charter remains public without rewriting F6 access",
+      "passed": true
+    },
+    {
+      "name": "Actual20 legal AVG finally displays the public room",
+      "passed": true
+    },
+    {
+      "name": "Legal AVG refresh preserves actual access, history and all state",
+      "passed": true
+    },
+    {
+      "name": "Actual15→16 lapse adds fee and physical maintenance, not staff loss",
+      "passed": true
+    },
+    {
+      "name": "Year16 access change has its real historical source",
+      "passed": true
+    },
+    {
+      "name": "Actual fee import preserves all world fields",
+      "passed": true
+    },
+    {
+      "name": "Imported fee: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "Imported fee: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "Imported fee: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "Imported fee: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Actual public import preserves all world fields",
+      "passed": true
+    },
+    {
+      "name": "Imported public: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "Imported public: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "Imported public: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "Imported public: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Actual stopped import preserves all world fields",
+      "passed": true
+    },
+    {
+      "name": "Imported stopped: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "Imported stopped: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "Imported stopped: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "Imported stopped: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Actual resident-bell import preserves all world fields",
+      "passed": true
+    },
+    {
+      "name": "Imported resident-bell: exact physical scene and truthful alt/caption",
+      "passed": true
+    },
+    {
+      "name": "Imported resident-bell: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "Imported resident-bell: observation does not change any world field",
+      "passed": true
+    },
+    {
+      "name": "Imported resident-bell: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "D4 public charter does not repaint existing fee F6",
+      "passed": true
+    },
+    {
+      "name": "Runtime stayed frozen through all UI tests",
+      "passed": true
+    },
+    {
+      "name": "No browser, asset or HMR errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "imageSamples": {
+    "320": {
+      "paid10": {
+        "rgba": "87aea03b3c6913cb5c8ea5cbdc1247c5bc75c9bf6bb4aad1d1874dd79f08f0d7",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "locked": {
+        "rgba": "87aea03b3c6913cb5c8ea5cbdc1247c5bc75c9bf6bb4aad1d1874dd79f08f0d7",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public20": {
+        "rgba": "015d46524b2cbc0288e8ba2a452999d5f49ad3e434254e6705349b396598be9a",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee20": {
+        "rgba": "fe831632c2abec4a344058f7585bb6e7c791f36cfce41876a05530eedad2a8e6",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-maintenance.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "bell": {
+        "rgba": "3af859c505f4aa32ab59a86b7714b57ab561604c1bdaa1788df51a9edbda1c0b",
+        "src": "http://127.0.0.1:4215/assets/river-warning-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "unbuilt": {
+        "rgba": "e0a79f08df54cf2d7c780824a081432e48da456e87b4dbf59d4192acbcc790f9",
+        "src": "http://127.0.0.1:4215/assets/archive-desk.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-active": {
+        "rgba": "87aea03b3c6913cb5c8ea5cbdc1247c5bc75c9bf6bb4aad1d1874dd79f08f0d7",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-maintenance": {
+        "rgba": "fe831632c2abec4a344058f7585bb6e7c791f36cfce41876a05530eedad2a8e6",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-maintenance.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-understaffed": {
+        "rgba": "e058b4ac734f6e4178e07b2541fae707639e33247fe627455abd13cd8ff6371e",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-understaffed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-maintenance-understaffed": {
+        "rgba": "94aa45df65f7033a815c804a73c109c8788c556a7fc147b3820e1cf3b6b8c761",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-maintenance-understaffed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-stopped": {
+        "rgba": "1953304ade23ab304d6bd429be8ec3eeb8e73077138fc546e621b7ccf0bcfd47",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-stopped.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-active": {
+        "rgba": "015d46524b2cbc0288e8ba2a452999d5f49ad3e434254e6705349b396598be9a",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-maintenance": {
+        "rgba": "cff7191fa4f855cc6410328376d768044a1449c69485c848f1fdae87d97ebf24",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-maintenance.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-understaffed": {
+        "rgba": "e058524557037e2862b1ff3bd45ad3a4d772c27325f1ea319b20350099e1d9f1",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-understaffed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-maintenance-understaffed": {
+        "rgba": "919a337268c4c0b23e1bcac15194f724581b82fa107f810a992db043f2d6428c",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-maintenance-understaffed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-stopped": {
+        "rgba": "7512bfc86f06b852e6b724c338c84ebfbb08e4e82787f78b48ed213dc55232ba",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-stopped.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-zero": {
+        "rgba": "1953304ade23ab304d6bd429be8ec3eeb8e73077138fc546e621b7ccf0bcfd47",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-stopped.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-zero": {
+        "rgba": "7512bfc86f06b852e6b724c338c84ebfbb08e4e82787f78b48ed213dc55232ba",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-stopped.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 286,
+          "height": 150,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      }
+    },
+    "390": {
+      "paid10": {
+        "rgba": "87aea03b3c6913cb5c8ea5cbdc1247c5bc75c9bf6bb4aad1d1874dd79f08f0d7",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "locked": {
+        "rgba": "87aea03b3c6913cb5c8ea5cbdc1247c5bc75c9bf6bb4aad1d1874dd79f08f0d7",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public20": {
+        "rgba": "015d46524b2cbc0288e8ba2a452999d5f49ad3e434254e6705349b396598be9a",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee20": {
+        "rgba": "fe831632c2abec4a344058f7585bb6e7c791f36cfce41876a05530eedad2a8e6",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-maintenance.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "bell": {
+        "rgba": "3af859c505f4aa32ab59a86b7714b57ab561604c1bdaa1788df51a9edbda1c0b",
+        "src": "http://127.0.0.1:4215/assets/river-warning-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "unbuilt": {
+        "rgba": "e0a79f08df54cf2d7c780824a081432e48da456e87b4dbf59d4192acbcc790f9",
+        "src": "http://127.0.0.1:4215/assets/archive-desk.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-active": {
+        "rgba": "87aea03b3c6913cb5c8ea5cbdc1247c5bc75c9bf6bb4aad1d1874dd79f08f0d7",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-maintenance": {
+        "rgba": "fe831632c2abec4a344058f7585bb6e7c791f36cfce41876a05530eedad2a8e6",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-maintenance.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-understaffed": {
+        "rgba": "e058b4ac734f6e4178e07b2541fae707639e33247fe627455abd13cd8ff6371e",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-understaffed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-maintenance-understaffed": {
+        "rgba": "94aa45df65f7033a815c804a73c109c8788c556a7fc147b3820e1cf3b6b8c761",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-maintenance-understaffed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-stopped": {
+        "rgba": "1953304ade23ab304d6bd429be8ec3eeb8e73077138fc546e621b7ccf0bcfd47",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-stopped.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-active": {
+        "rgba": "015d46524b2cbc0288e8ba2a452999d5f49ad3e434254e6705349b396598be9a",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-active.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-maintenance": {
+        "rgba": "cff7191fa4f855cc6410328376d768044a1449c69485c848f1fdae87d97ebf24",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-maintenance.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-understaffed": {
+        "rgba": "e058524557037e2862b1ff3bd45ad3a4d772c27325f1ea319b20350099e1d9f1",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-understaffed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-maintenance-understaffed": {
+        "rgba": "919a337268c4c0b23e1bcac15194f724581b82fa107f810a992db043f2d6428c",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-maintenance-understaffed.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-stopped": {
+        "rgba": "7512bfc86f06b852e6b724c338c84ebfbb08e4e82787f78b48ed213dc55232ba",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-stopped.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "fee-zero": {
+        "rgba": "1953304ade23ab304d6bd429be8ec3eeb8e73077138fc546e621b7ccf0bcfd47",
+        "src": "http://127.0.0.1:4215/assets/river-station-fee-stopped.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      },
+      "public-zero": {
+        "rgba": "7512bfc86f06b852e6b724c338c84ebfbb08e4e82787f78b48ed213dc55232ba",
+        "src": "http://127.0.0.1:4215/assets/river-station-public-stopped.svg",
+        "native": [
+          1000,
+          500
+        ],
+        "display": {
+          "width": 356,
+          "height": 178,
+          "filter": "none",
+          "opacity": "1",
+          "transform": "none",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "imageRendering": "auto",
+          "visibility": "visible",
+          "display": "block",
+          "parentFilter": "none",
+          "parentOpacity": "1",
+          "parentTransform": "none"
+        }
+      }
+    }
+  },
+  "runtimeHash": {
+    "before": "5a71158ebbf5e67da14733f7ecd42f1a364b9d5e6e3a328b67a5ec5916d3d0fd",
+    "after": "5a71158ebbf5e67da14733f7ecd42f1a364b9d5e6e3a328b67a5ec5916d3d0fd"
+  }
+}

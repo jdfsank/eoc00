@@ -1,0 +1,4037 @@
+{
+  "failureHandling": "Every requestfailed is fatal, including net::ERR_ABORTED and blob URLs. Passive navigation/canvas observations never exempt a failure. Negative controls concern telemetry only, not application state.",
+  "scope": "Real Chromium at390×844 and320×568/200% text. Settings-file imports, genuine original/pre-fix/mixed pending and settled saves, real preview/lock/submit/annual/ending/source/refresh operations. No application-state edits, force clicks, hidden control activation or illegal AVG navigation. Screenshots are element or viewport captures below8192px. Not real-device certification.",
+  "checks": [
+    {
+      "name": "Request-failure negative control: different document and a previous destruction boundary remains fatal",
+      "passed": true
+    },
+    {
+      "name": "Request-failure negative control: same document but a boundary before this request remains fatal",
+      "passed": true
+    },
+    {
+      "name": "Request-failure negative control: only a success from before the failed request remains fatal",
+      "passed": true
+    },
+    {
+      "name": "Request-failure negative control: 200 response headers followed by aborted body remains fatal",
+      "passed": true
+    },
+    {
+      "name": "Request-failure negative control: blob URL with no independently completed load remains fatal",
+      "passed": true
+    },
+    {
+      "name": "Request-failure negative control: a click intent without actual destruction remains fatal",
+      "passed": true
+    },
+    {
+      "name": "Request-failure negative control: a later success without subsequent rendering readiness remains fatal",
+      "passed": true
+    },
+    {
+      "name": "New UI run explicitly pins source-branch-v1",
+      "passed": true
+    },
+    {
+      "name": "Settings always exposes the explicit future branch policy",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: pending future label is conditional, not a built institution",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: missing tag is a future default, never producer identification",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: pending reading is byte-for-byte read-only",
+      "passed": true
+    },
+    {
+      "name": "original-pending11390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: actual12 branch uses intended policy and unchanged source",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: complete next-year state matches current engine clone",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: next-year cells/snapshots match real historical engine",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: full mechanics match its actual original engine",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: earlier records and contracts remain byte-identical",
+      "passed": true
+    },
+    {
+      "name": "original-pending11: refresh preserves exact settled state and independent tag presence",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: pending future label is conditional, not a built institution",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: missing tag is a future default, never producer identification",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: pending reading is byte-for-byte read-only",
+      "passed": true
+    },
+    {
+      "name": "before-pending11390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: actual12 branch uses intended policy and unchanged source",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: complete next-year state matches current engine clone",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: next-year cells/snapshots match real historical engine",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: full mechanics match its actual original engine",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: earlier records and contracts remain byte-identical",
+      "passed": true
+    },
+    {
+      "name": "before-pending11: refresh preserves exact settled state and independent tag presence",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: pending future label is conditional, not a built institution",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: pending reading is byte-for-byte read-only",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: actual12 branch uses intended policy and unchanged source",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: complete next-year state matches current engine clone",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: next-year cells/snapshots match real historical engine",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: earlier records and contracts remain byte-identical",
+      "passed": true
+    },
+    {
+      "name": "original-explicit-source11: refresh preserves exact settled state and independent tag presence",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: pending future label is conditional, not a built institution",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: pending reading is byte-for-byte read-only",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: actual12 branch uses intended policy and unchanged source",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: complete next-year state matches current engine clone",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: next-year cells/snapshots match real historical engine",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: earlier records and contracts remain byte-identical",
+      "passed": true
+    },
+    {
+      "name": "before-explicit-public11: refresh preserves exact settled state and independent tag presence",
+      "passed": true
+    },
+    {
+      "name": "mixed-original-identity-paid12: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "mixed-original-identity-paid12: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "Mixed save explains public future without rewriting its already-paid branch",
+      "passed": true
+    },
+    {
+      "name": "Mixed save remains paid after actual next-year settlement with past untouched",
+      "passed": true
+    },
+    {
+      "name": "Mixed save stays byte-identical through refresh",
+      "passed": true
+    },
+    {
+      "name": "Invalid independent branch version rejects before touching current state or autosave bytes",
+      "passed": true
+    },
+    {
+      "name": "original0: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "original0: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "build_merchant: actual world entry permits this planning visit",
+      "passed": true
+    },
+    {
+      "name": "original0: free contract distinguishes paid D4 from conditional public F6",
+      "passed": true
+    },
+    {
+      "name": "original0: free preview does not mutate world or establish future branch",
+      "passed": true
+    },
+    {
+      "name": "original0preview: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "original0: locked whole-window repeats identical future contract",
+      "passed": true
+    },
+    {
+      "name": "original0: locking does not pay or create institutions",
+      "passed": true
+    },
+    {
+      "name": "original0locked: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "original0: submitted raw contracts exactly match pre-fix engine, without display text rewriting",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "Actual settings toggles200% text at320×568",
+      "passed": true
+    },
+    {
+      "name": "build_merchant: actual world entry permits this planning visit",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0: free contract distinguishes paid D4 from conditional public F6",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0: free preview does not mutate world or establish future branch",
+      "passed": true
+    },
+    {
+      "name": "Explicit public policy with coverage keeps station0.45 and branch1",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0preview: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320/200% confirm: keyboard target is focused, visible and unobscured",
+      "passed": true
+    },
+    {
+      "name": "320/200% lock: keyboard target is focused, visible and unobscured",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0: locked whole-window repeats identical future contract",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0: locking does not pay or create institutions",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0locked: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320/200% submit: keyboard target is focused, visible and unobscured",
+      "passed": true
+    },
+    {
+      "name": "coverage-explicit-public0: submitted raw contracts exactly match pre-fix engine, without display text rewriting",
+      "passed": true
+    },
+    {
+      "name": "actual-joint0: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "actual-joint0: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "Actual joint route reaches10 with successful public station",
+      "passed": true
+    },
+    {
+      "name": "Actual renewal11 preserves Linche as an unrecruited caretaker",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: actual year21 settlement matches engine clone",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: original histories and snapshots survive actual year21",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: actual year40 state matches complete engine clone",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: Linche was never recruited into the actor list",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Unrecruited Linche coda retains11 agreement and actual40 public service without lifetime employment",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: every coda source is a unique actual history record",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: source1 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: source2 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "renewed-respected: source3 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: actual year21 settlement matches engine clone",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: original histories and snapshots survive actual year21",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: actual year40 state matches complete engine clone",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: Linche was never recruited into the actor list",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Unrecruited Linche coda distinguishes stopped40 from staying public",
+      "passed": true
+    },
+    {
+      "name": "Shutdown names21 protagonist contract consequence and unknown maintenance process",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: every coda source is a unique actual history record",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: source1 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: source2 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: source3 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: source4 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: source5 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "renewed-relocated: source6 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "Stopped coda links actual11 renewal and21 relocation records",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: actual year21 settlement matches engine clone",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: original histories and snapshots survive actual year21",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: actual year40 state matches complete engine clone",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: Linche was never recruited into the actor list",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Later free warning preserves real16 fee gap without assigning permanent personal maintenance",
+      "passed": true
+    },
+    {
+      "name": "Fee16 raw source survives actual repair and ending",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: every coda source is a unique actual history record",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: source1 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: source2 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: source3 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "paid-fee16-free21: source4 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: actual year21 settlement matches engine clone",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: original histories and snapshots survive actual year21",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: actual year40 state matches complete engine clone",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: Linche was never recruited into the actor list",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Rebuilt station remains anonymous, not a fabricated Sulan or Linche appointment",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: every coda source is a unique actual history record",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: source1 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: source2 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: source3 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: source4 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "anonymous-rebuilt-relocated: source5 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "stopped-ending320: accepted settings import retains exact world bytes",
+      "passed": true
+    },
+    {
+      "name": "stopped-ending320: autosave retains exact imported state bytes",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "Final ending uses actual200% text setting",
+      "passed": true
+    },
+    {
+      "name": "Linche ending320/200%: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "stopped320/200%: every coda source is a unique actual history record",
+      "passed": true
+    },
+    {
+      "name": "stopped320/200%: source1 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "stopped320/200%: source2 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "stopped320/200%: source3 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "stopped320/200%: source4 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "stopped320/200%: source5 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "stopped320/200% last personal source: keyboard target is focused, visible and unobscured",
+      "passed": true
+    },
+    {
+      "name": "stopped320/200%: source6 reaches its actual record without rewriting history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "320/200% ending archive control: keyboard target is focused, visible and unobscured",
+      "passed": true
+    },
+    {
+      "name": "Keyboard ending control reaches archive without changing40 history",
+      "passed": true
+    },
+    {
+      "name": "Ended world routes to real ending control",
+      "passed": true
+    },
+    {
+      "name": "Refresh preserves exact ending, coda and actual200% setting",
+      "passed": true
+    },
+    {
+      "name": "Refreshed ending320/200%: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Current world canvases actually drew after asset loading",
+      "passed": true
+    },
+    {
+      "name": "Every visible scene/ending image completed and decoded at actual reading time",
+      "passed": true
+    },
+    {
+      "name": "No page, console, requestfailed, HTTP asset or HMR errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Runtime and assets stayed frozen during complete browser run",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "path": "playtest-output/round14-original-pending-public-390.png",
+      "kind": "element",
+      "selector": ".pending-branch-policy",
+      "width": 324,
+      "height": 330
+    },
+    {
+      "path": "playtest-output/round14-mixed-paid-future-public-390.png",
+      "kind": "element",
+      "selector": ".selection-card",
+      "width": 358,
+      "height": 992
+    },
+    {
+      "path": "playtest-output/round14-old-merchant-public-branch-contract-390.png",
+      "kind": "element",
+      "selector": ".building-contract",
+      "width": 358,
+      "height": 1311
+    },
+    {
+      "path": "playtest-output/round14-public-branch-keyboard-submit-320-text200.png",
+      "kind": "viewport",
+      "selector": null,
+      "width": 320,
+      "height": 568
+    },
+    {
+      "path": "playtest-output/round14-linche-stayed-public-390.png",
+      "kind": "element",
+      "selector": ".character-epilogue > article:first-of-type",
+      "width": 358,
+      "height": 398
+    },
+    {
+      "path": "playtest-output/round14-linche-relocated-stopped-390.png",
+      "kind": "element",
+      "selector": ".character-epilogue > article:first-of-type",
+      "width": 358,
+      "height": 640
+    },
+    {
+      "path": "playtest-output/round14-linche-end-controls-320-text200.png",
+      "kind": "viewport",
+      "selector": null,
+      "width": 320,
+      "height": 568
+    }
+  ],
+  "imageReadiness": [
+    {
+      "label": "original-pending-public-390",
+      "at": 1793907595781,
+      "images": []
+    },
+    {
+      "label": "mixed-paid-future-public-390",
+      "at": 1793907618121,
+      "images": []
+    },
+    {
+      "label": "old-merchant-public-branch-contract-390",
+      "at": 1793907627998,
+      "images": []
+    },
+    {
+      "label": "public-branch-keyboard-submit-320-text200",
+      "at": 1793907633114,
+      "images": []
+    },
+    {
+      "label": "actual build_joint scene",
+      "at": 1793907637753,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual renew_charter scene",
+      "at": 1793907639039,
+      "images": [
+        {
+          "src": "/assets/river-station-public-active.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual present_archive scene",
+      "at": 1793907644193,
+      "images": [
+        {
+          "src": "/assets/river-station-public-active.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "linche-stayed-public-390",
+      "at": 1793907645866,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907646331,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907646731,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907647084,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual relocate_teacher scene",
+      "at": 1793907651757,
+      "images": [
+        {
+          "src": "/assets/river-station-public-active.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "linche-relocated-stopped-390",
+      "at": 1793907653343,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907653802,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907654161,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907654536,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907654900,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907655246,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907655604,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual free_warning scene",
+      "at": 1793907660705,
+      "images": [
+        {
+          "src": "/assets/river-station-fee-maintenance.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907663126,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907663585,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907664024,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907664443,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual relocate_teacher scene",
+      "at": 1793907669253,
+      "images": [
+        {
+          "src": "/assets/river-station-fee-maintenance.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907671296,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907671655,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907672001,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907672317,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907672704,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907677275,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907677575,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907677909,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907678225,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907678507,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907678825,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907679146,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "linche-end-controls-320-text200",
+      "at": 1793907679153,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "label": "actual40 ending",
+      "at": 1793907679553,
+      "images": [
+        {
+          "src": "/assets/archive-desk.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
+    }
+  ],
+  "canvasReadiness": [
+    {
+      "at": 1793907590893,
+      "screen": "world",
+      "year": 0,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907595253,
+      "screen": "world",
+      "year": 11,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907595540,
+      "screen": "world",
+      "year": 11,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907596548,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907596961,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907601356,
+      "screen": "world",
+      "year": 11,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907601640,
+      "screen": "world",
+      "year": 11,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907602253,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907602600,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907606871,
+      "screen": "world",
+      "year": 11,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907607127,
+      "screen": "world",
+      "year": 11,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907607672,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907608001,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907612354,
+      "screen": "world",
+      "year": 11,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907612587,
+      "screen": "world",
+      "year": 11,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907613084,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907613424,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907617667,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907617936,
+      "screen": "world",
+      "year": 12,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907618844,
+      "screen": "world",
+      "year": 13,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907619187,
+      "screen": "world",
+      "year": 13,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907627585,
+      "screen": "world",
+      "year": 0,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907627867,
+      "screen": "world",
+      "year": 0,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907632689,
+      "screen": "world",
+      "year": 0,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907632935,
+      "screen": "world",
+      "year": 0,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907637414,
+      "screen": "world",
+      "year": 0,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907637684,
+      "screen": "world",
+      "year": 0,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907638352,
+      "screen": "world",
+      "year": 10,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907638745,
+      "screen": "world",
+      "year": 10,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907638988,
+      "screen": "world",
+      "year": 10,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907643853,
+      "screen": "world",
+      "year": 20,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907644132,
+      "screen": "world",
+      "year": 20,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907645060,
+      "screen": "world",
+      "year": 30,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907646261,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907646658,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907646994,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907651470,
+      "screen": "world",
+      "year": 20,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907651704,
+      "screen": "world",
+      "year": 20,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907652552,
+      "screen": "world",
+      "year": 30,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907653740,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907654091,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907654458,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907654837,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907655187,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907655538,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907660146,
+      "screen": "world",
+      "year": 20,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907660616,
+      "screen": "world",
+      "year": 20,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907661712,
+      "screen": "world",
+      "year": 30,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907663037,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907663496,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907663923,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907664358,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907668879,
+      "screen": "world",
+      "year": 20,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907669179,
+      "screen": "world",
+      "year": 20,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907670053,
+      "screen": "world",
+      "year": 30,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907671227,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907671586,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907671939,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907672241,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907672623,
+      "screen": "world",
+      "year": 40,
+      "width": 356,
+      "height": 250,
+      "drawn": true
+    },
+    {
+      "at": 1793907677189,
+      "screen": "world",
+      "year": 40,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907677519,
+      "screen": "world",
+      "year": 40,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907677853,
+      "screen": "world",
+      "year": 40,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907678171,
+      "screen": "world",
+      "year": 40,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907678453,
+      "screen": "world",
+      "year": 40,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907678772,
+      "screen": "world",
+      "year": 40,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907679086,
+      "screen": "world",
+      "year": 40,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    },
+    {
+      "at": 1793907679485,
+      "screen": "world",
+      "year": 40,
+      "width": 286,
+      "height": 210,
+      "drawn": true
+    }
+  ],
+  "requestFailures": [],
+  "canvasBoundaries": [
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907590240,
+      "documentId": "1793907589797.7",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907590990,
+      "documentId": "1793907589797.7",
+      "screen": "settings",
+      "year": 0,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907591227,
+      "documentId": "1793907589797.7",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907595182,
+      "documentId": "1793907589797.7",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907595301,
+      "documentId": "1793907589797.7",
+      "screen": "list",
+      "year": 11,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907595352,
+      "documentId": "1793907589797.7",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907596059,
+      "documentId": "1793907589797.7",
+      "screen": "playback",
+      "year": 11,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907596327,
+      "documentId": "1793907589797.7",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907596743,
+      "documentId": "1793907596554.7",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907597181,
+      "documentId": "1793907596554.7",
+      "screen": "settings",
+      "year": 12,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907597247,
+      "documentId": "1793907596554.7",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907601300,
+      "documentId": "1793907596554.7",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907601400,
+      "documentId": "1793907596554.7",
+      "screen": "list",
+      "year": 11,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907601448,
+      "documentId": "1793907596554.7",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907601861,
+      "documentId": "1793907596554.7",
+      "screen": "playback",
+      "year": 11,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907602074,
+      "documentId": "1793907596554.7",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907602426,
+      "documentId": "1793907602256.8",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907602778,
+      "documentId": "1793907602256.8",
+      "screen": "settings",
+      "year": 12,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907602826,
+      "documentId": "1793907602256.8",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907606813,
+      "documentId": "1793907602256.8",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907606913,
+      "documentId": "1793907602256.8",
+      "screen": "list",
+      "year": 11,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907606963,
+      "documentId": "1793907602256.8",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907607291,
+      "documentId": "1793907602256.8",
+      "screen": "playback",
+      "year": 11,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907607491,
+      "documentId": "1793907602256.8",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907607838,
+      "documentId": "1793907607675.5",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907608180,
+      "documentId": "1793907607675.5",
+      "screen": "settings",
+      "year": 12,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907608224,
+      "documentId": "1793907607675.5",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907612250,
+      "documentId": "1793907607675.5",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907612399,
+      "documentId": "1793907607675.5",
+      "screen": "list",
+      "year": 11,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907612448,
+      "documentId": "1793907607675.5",
+      "screen": "world",
+      "year": 11,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907612740,
+      "documentId": "1793907607675.5",
+      "screen": "playback",
+      "year": 11,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907612924,
+      "documentId": "1793907607675.5",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907613243,
+      "documentId": "1793907613088",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907613597,
+      "documentId": "1793907613088",
+      "screen": "settings",
+      "year": 12,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907613651,
+      "documentId": "1793907613088",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907617613,
+      "documentId": "1793907613088",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907617710,
+      "documentId": "1793907613088",
+      "screen": "list",
+      "year": 12,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907617758,
+      "documentId": "1793907613088",
+      "screen": "world",
+      "year": 12,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907618396,
+      "documentId": "1793907613088",
+      "screen": "playback",
+      "year": 12,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907618673,
+      "documentId": "1793907613088",
+      "screen": "world",
+      "year": 13,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907619019,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 13,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907619227,
+      "documentId": "1793907618855.4",
+      "screen": "settings",
+      "year": 13,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907623158,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907627131,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907627629,
+      "documentId": "1793907618855.4",
+      "screen": "list",
+      "year": 0,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907627710,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907627913,
+      "documentId": "1793907618855.4",
+      "screen": "avg",
+      "year": 0,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907628458,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907632424,
+      "documentId": "1793907618855.4",
+      "screen": "settings",
+      "year": 0,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907632531,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907632730,
+      "documentId": "1793907618855.4",
+      "screen": "list",
+      "year": 0,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907632773,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907632982,
+      "documentId": "1793907618855.4",
+      "screen": "avg",
+      "year": 0,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907633317,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907637311,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907637463,
+      "documentId": "1793907618855.4",
+      "screen": "list",
+      "year": 0,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907637505,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 0,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907637731,
+      "documentId": "1793907618855.4",
+      "screen": "avg",
+      "year": 0,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907638177,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 10,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907638711,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 10,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907638797,
+      "documentId": "1793907618855.4",
+      "screen": "list",
+      "year": 10,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907638846,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 10,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907639028,
+      "documentId": "1793907618855.4",
+      "screen": "avg",
+      "year": 10,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907639687,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907643798,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907643898,
+      "documentId": "1793907618855.4",
+      "screen": "list",
+      "year": 20,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907643940,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907644180,
+      "documentId": "1793907618855.4",
+      "screen": "avg",
+      "year": 20,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907644894,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 30,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907645096,
+      "documentId": "1793907618855.4",
+      "screen": "window",
+      "year": 30,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907646112,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907646316,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907646460,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907646716,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907646849,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907647048,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907647184,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907651363,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907651511,
+      "documentId": "1793907618855.4",
+      "screen": "list",
+      "year": 20,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907651563,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907651745,
+      "documentId": "1793907618855.4",
+      "screen": "avg",
+      "year": 20,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907652377,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 30,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907652595,
+      "documentId": "1793907618855.4",
+      "screen": "window",
+      "year": 30,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907653576,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907653784,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907653926,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907654147,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907654260,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907654517,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907654660,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907654884,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907655026,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907655229,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907655377,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907655588,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907655745,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907659983,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907660203,
+      "documentId": "1793907618855.4",
+      "screen": "list",
+      "year": 20,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907660258,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907660686,
+      "documentId": "1793907618855.4",
+      "screen": "avg",
+      "year": 20,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907661482,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 30,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907661764,
+      "documentId": "1793907618855.4",
+      "screen": "window",
+      "year": 30,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907662780,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907663104,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907663281,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907663568,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907663710,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907663995,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907664143,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907664422,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907664572,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907668781,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907668930,
+      "documentId": "1793907618855.4",
+      "screen": "list",
+      "year": 20,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907668972,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 20,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907669232,
+      "documentId": "1793907618855.4",
+      "screen": "avg",
+      "year": 20,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907669912,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 30,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907670092,
+      "documentId": "1793907618855.4",
+      "screen": "window",
+      "year": 30,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907671033,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907671281,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907671427,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907671636,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907671759,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907671984,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907672092,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907672299,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907672444,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907672685,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907672858,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907676880,
+      "documentId": "1793907618855.4",
+      "screen": "settings",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907677020,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907677257,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907677377,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907677563,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907677674,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907677895,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907678025,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907678212,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907678307,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907678494,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907678591,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907678810,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907678916,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907679133,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    },
+    {
+      "kind": "canvas-attached",
+      "action": "current-canvas-attached",
+      "at": 1793907679343,
+      "documentId": "1793907618855.4",
+      "screen": "world",
+      "year": 40,
+      "boardPresent": true,
+      "added": [
+        {
+          "id": 1,
+          "connected": true
+        }
+      ]
+    },
+    {
+      "kind": "canvas-detached",
+      "action": "old-canvas-removed",
+      "at": 1793907679533,
+      "documentId": "1793907618855.4",
+      "screen": "ending",
+      "year": 40,
+      "boardPresent": false,
+      "removed": [
+        {
+          "id": 1,
+          "connected": false
+        }
+      ],
+      "added": []
+    }
+  ],
+  "runtimeHash": {
+    "before": {
+      "sha256": "e306ec888138a3221c4d8c3370db88a1f743e127b0bd983e650904b7f7e260c4",
+      "files": 283
+    },
+    "after": {
+      "sha256": "e306ec888138a3221c4d8c3370db88a1f743e127b0bd983e650904b7f7e260c4",
+      "files": 283
+    }
+  },
+  "counts": {
+    "passed": 191,
+    "failed": 0,
+    "screenshots": 7,
+    "errors": 0,
+    "requestFailures": 0,
+    "imageReadiness": 39,
+    "canvasReadiness": 68
+  }
+}

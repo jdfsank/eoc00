@@ -28,7 +28,7 @@ try{
  await page.goto('http://127.0.0.1:4189');await page.locator('canvas').waitFor();await page.waitForTimeout(300);
  await snap('fresh-overview',true);
  const ready=built();await show(ready,true);await snap('operating-focus');
- check('Operating marker has equivalent text',await page.locator('.institution-status').innerText()==='制度运行中');
+ check('Operating marker has equivalent text',await page.locator('.institution-status').innerText()==='制度运行中 · 基本预警公开准入');
  const lapsed=decade(built());await show(lapsed,true);await snap('maintenance-focus');
  check('Numeric maintenance and access barriers have equivalent text',(await page.locator('.institution-status').innerText()).includes('维护不足 · 收费门槛'));
  const halted=decade(built(),'recruit_risk');await show(halted,true);await snap('halted-focus');

@@ -45,31 +45,33 @@ const personalTimings = {
 function personalEvent(state, actionIds, statuses = ['success'], eventId = null) {
   const ids = Array.isArray(actionIds) ? actionIds : [actionIds];
   return state.events.filter(event => {
-    const timing = personalTimings[event.actionId];
+    const timing = Object.hasOwn(personalTimings, event.actionId) ? personalTimings[event.actionId] : null;
     if ((eventId && event.id !== eventId) || !ids.includes(event.actionId) || !timing || typeof event.sourceActionId !== 'string') return false;
     const [year, delay] = timing, actorId = event.sourceActionId.split(':')[2];
     const sourceId = `action:${year}:${actorId}:D4:${event.actionId}`;
     const action = state.history.find(h => h.id === sourceId);
     const outcome = state.history.find(h => h.id === `resolved:${event.id}`);
-    const required = { recruit_successor: ['successor_consent'], present_archive: ['old_reality_record'], free_warning: ['resident_testimony'] }[event.actionId] || [];
+    const required = { build_joint: ['independent_flood_records', 'unfunded_maintenance'], recruit_successor: ['successor_consent'], present_archive: ['old_reality_record'], free_warning: ['resident_testimony'] }[event.actionId] || [];
+    const records = [...state.history, ...state.events];
     return event.sourceActionId === sourceId && event.id === `event:${sourceId}` && event.parentId === sourceId
       && event.kind === 'event' && event.cellId === 'D4' && statuses.includes(event.status)
       && event.year === year + delay && event.resolvedYear === event.year && event.year <= state.year
       && ['protagonist', 'linche'].includes(actorId) && (year >= 20 || actorId === 'protagonist')
-      && state.actors.some(a => a.id === actorId && a.availableFrom <= year)
+      && state.actors.filter(a => a.id === actorId).length === 1
+      && state.actors.some(a => a.id === actorId && Number.isInteger(a.availableFrom) && a.availableFrom <= year)
       && action?.kind === 'action' && action.year === year && action.cellId === 'D4'
       && action.sourceActionId === sourceId && action.parentId === null && action.status === 'confirmed'
-      && required.every(id => action.evidence?.includes(id))
-      && (event.evidence === undefined || required.every(id => event.evidence?.includes(id)))
+      && action.reality === 'R1' && Array.isArray(action.evidence) && required.every(id => action.evidence.includes(id))
+      && (event.evidence === undefined || (Array.isArray(event.evidence) && required.every(id => event.evidence.includes(id))))
       && outcome?.parentId === event.id && outcome.sourceActionId === sourceId && outcome.cellId === 'D4'
       && outcome.year === event.resolvedYear && outcome.status === event.status
-      && outcome.kind === (event.status === 'failed' ? 'failure' : 'outcome')
-      && state.events.filter(e => e.id === event.id).length === 1
-      && state.history.filter(h => h.id === sourceId).length === 1
-      && state.history.filter(h => h.id === outcome.id).length === 1
+      && outcome.kind === (event.status === 'failed' ? 'failure' : 'outcome') && outcome.reality === 'R1'
+      && [event.id, sourceId, outcome.id].every(id => records.filter(record => record.id === id).length === 1)
       && state.history.filter(h => h.kind === 'action' && typeof h.id === 'string' && h.id.startsWith(`action:${year}:${actorId}:`)).length === 1
       && !state.history.some(h => h.id === `pass:${year}:${actorId}`)
-      && [event, action, outcome].every(record => record.actorId === undefined || record.actorId === actorId);
+      && [event, action, outcome].every(record => (record.actorId === undefined || record.actorId === actorId)
+        && (record.actionId === undefined || record.actionId === event.actionId)
+        && (record.reality === undefined || record.reality === 'R1'));
   }).sort((a, b) => b.resolvedYear - a.resolvedYear)[0] || null;
 }
 function verifiedRiverportRole(state, role) {
@@ -78,7 +80,8 @@ function verifiedRiverportRole(state, role) {
   return !!origin && (origin.actionId !== 'restore_archive' || origin.status === 'success') && role.sourceEventId === origin.id && role.sourceActionId === origin.sourceActionId
     && role.id === `institution:${origin.id}:D4` && role.startYear === origin.resolvedYear
     && role.kind === (origin.status === 'failed' ? 'archive' : 'station')
-    && state.institutions.filter(i => i.id === role.id).length === 1;
+    && state.institutions.filter(i => i.id === role.id).length === 1
+    && state.institutions.filter(i => i.sourceEventId === origin.id && i.cellId === 'D4').length === 1;
 }
 function personalDeparture(state, recruit) {
   if (!recruit) return { roles: [], known: false };
@@ -339,6 +342,76 @@ export function sceneFor(state,cell,actorId='protagonist') {
   return cell==='E4'&&state.year>=30?{...scene,relationship:lincheRelationship(state)}:scene;
 }
 
+// Staying is a recorded choice, not proof of a lifetime job. Describe the
+// institution separately, using its actual source and later contracts. In
+// particular, the original engine's renewed merchant station can remain paid.
+function unrecruitedAftermath(state, { renewal, warning }) {
+  const origins = ['build_merchant', 'build_state', 'build_joint', 'restore_archive'];
+  const candidates = state.institutions.filter(i => i.cellId === 'D4' && ['station', 'archive'].includes(i.kind));
+  const roles = candidates.filter(i => verifiedRiverportRole(state, i));
+  const originEvents = state.events.filter(e => e.cellId === 'D4' && origins.includes(e.actionId));
+  const originChoices = state.history.filter(h => h.kind === 'action' && h.cellId === 'D4'
+    && typeof h.id === 'string' && origins.some(id => h.id.endsWith(`:${id}`)));
+  const paragraphs = [], sources = [];
+  const hasChoice = actionId => state.events.some(e => e.actionId === actionId)
+    || state.history.some(h => typeof h.id === 'string' && h.id.endsWith(`:D4:${actionId}`));
+  if (!renewal && hasChoice('renew_charter')) paragraphs.push('留守约定的行动或兑现来源缺失或不一致，是否完成续约仍未知；不能以今天测站运转替林澈补上留守承诺。');
+  if (!warning && hasChoice('free_warning')) paragraphs.push('免费预警协议的行动或兑现来源缺失或不一致；当前准入状态不能反过来证明当时已完成协商或恢复。');
+  const known = roles.length === candidates.length
+    && originEvents.every(e => roles.some(i => i.sourceEventId === e.id))
+    && originChoices.every(h => roles.some(i => i.sourceActionId === h.id))
+    && (!renewal || roles.some(i => i.kind === 'station' && i.startYear < renewal.year));
+  if (!known) return {
+    paragraphs: [...paragraphs, '河港机构的建成来源缺失或不一致，后来的制度去向仍有未知。不能从一份留守约定补写测站持续运转，也不能把今天的停运倒写成林澈离开所致。'], sources,
+  };
+  for (const role of roles) {
+    const name = role.kind === 'station' ? '测站' : '档案站';
+    sources.push(role.sourceActionId, `resolved:${role.sourceEventId}`);
+    if (role.sourceActionId.endsWith(':restore_archive')) paragraphs.push(`第${role.startYear}年重建测站的记录写的是新的维护小组，没有给这组人署上林澈或苏岚的姓名。`);
+    else if (role.kind === 'archive') paragraphs.push(`建站未成后，第${role.startYear}年留下的是小型档案站。保住记录不等于建成水文测站，也没有因此指定个人接班。`);
+    const validCurrent = typeof role.active === 'boolean' && typeof role.open === 'boolean'
+      && Number.isFinite(role.maintenance) && role.maintenance >= 0 && role.maintenance <= 1;
+    paragraphs.push(!validCurrent ? `第40年，河港${name}的运行或准入记录不完整，当前服务状态未知。`
+      : !role.active || role.maintenance <= 0 ? `第40年，河港${name}已没有有效运转；留下原址和旧记录，不等于仍在提供服务。`
+      : role.kind === 'archive' ? '第40年，小型档案站仍在保管记录；它不是水文测站，也不能代替预警服务。'
+      : `第40年，河港测站仍在运转，${role.open ? '基本预警向不缴费家庭开放' : '基本预警仍有收费门槛'}。${role.maintenance < 1 ? '维护仍有缺口。' : ''}这说明现存制度的状态，不证明林澈此刻仍在值班。`);
+  }
+  const fees = getFeeHistory(state);
+  if (fees) {
+    paragraphs.push(fees.summary + '经费记录中的“继任者”不能单独证明苏岚接任，也不能补写林澈离开的经过。');
+    if (fees.status !== 'unknown') sources.push(fees.original.id, ...fees.sources.map(h => h.id));
+  }
+  const relocation = getRelocationHistory(state);
+  if (relocation) {
+    paragraphs.push(relocation.summary);
+    if (relocation.status === 'recorded') {
+      const actor = relocation.original.sourceActionId.split(':')[2] === 'linche' ? '林澈' : '主角';
+      paragraphs.push(`停用属于第${relocation.original.year}年由${actor}执行的迁任合同的制度后果，不能改写成林澈入局离开造成的空岗，也不证明苏岚是唯一维护者。具体维护中断过程没有记载；不补写撤资、解散小组或调走其他人的决定。`);
+      sources.push(relocation.original.id, ...relocation.sources.map(h => h.id));
+    }
+  } else if (roles.some(i => i.active === false || i.maintenance === 0)) {
+    paragraphs.push('停运原因缺少可核实的后续合同记录；当前关着的门不能替任何人作出离开、失职或撤资的决定。');
+  }
+  if (warning) {
+    const station = roles.find(i => i.kind === 'station');
+    if (station) {
+      paragraphs.push(`第${warning.resolvedYear}年的免费预警协议另行补足河港维护与基本服务安排。${fees && fees.status !== 'unknown' ? '第16年的经费缺口仍留在原页，后来补足维护、开放基本预警没有抹去过去。' : ''}这不是林澈个人重新上岗的证明。`);
+      sources.push(`resolved:${warning.id}`);
+    } else {
+      const teams = state.institutions.filter(i => i.sourceEventId === warning.id && i.cellId === 'D4');
+      const team = teams.length === 1 ? teams[0] : null;
+      if (team?.id === `institution:${warning.id}:D4` && team.kind === 'warning'
+        && team.sourceActionId === warning.sourceActionId && team.startYear === warning.resolvedYear
+        && state.institutions.filter(i => i.id === team.id).length === 1) {
+        paragraphs.push(`第${warning.resolvedYear}年另建的居民传讯队${team.active === true && team.maintenance > 0 ? '目前仍在服务' : '当前没有可确认的有效服务'}。它不是原档案岗位，也没有补回测站或旧培训链；不能把居民轮值署作林澈个人的工作。`);
+        sources.push(`resolved:${warning.id}`);
+      } else paragraphs.push(`第${warning.resolvedYear}年的免费预警协议仍在，但没有可核实的新传讯队来源。不能把旧协议写成新增测站，也不能为林澈补出一个岗位。`);
+    }
+  }
+  if (renewal && roles.length) paragraphs.push(`第${renewal.resolvedYear}年留下带教的约定仍留在原页；后来的机构变化没有替她补写离开、重新任职或接受迁任的个人决定。`);
+  return { paragraphs, sources };
+}
+
 // Read-only personal coda: it never edits ending scores, old contracts or history.
 export function characterEpilogue(state) {
   if (state.year < 40 || state.phase !== 'ended') return [];
@@ -349,6 +422,9 @@ export function characterEpilogue(state) {
   if (!recruit) {
     linche.push(renewal ? `第${renewal.resolvedYear}年的章程留下林澈愿意带教的记录，她没有在这份历史中完成入局。留下来的选择，也不等于一份没有期限的劳动承诺。` : '这份档案没有林澈完成入局的记录。最后一册报告没有替她补写一段未曾作出的承诺，也不把未同行当成背弃。');
     if (renewal) lincheSources.push(recordId(renewal));
+    const aftermath = unrecruitedAftermath(state, { renewal, warning });
+    linche.push(...aftermath.paragraphs);
+    lincheSources.push(...aftermath.sources);
   } else {
     lincheSources.push(recordId(recruit));
     if (!departure.known) linche.push('入局记录仍在，但当时岗位的来源缺失或不一致。不能从今天的机构补写苏岚的任职，也不能把缺页当成当年没有岗位。');

@@ -1,5 +1,6 @@
 import { CHANNELS, COVERAGE_RULES, usesLegacyCrisisRules } from './simulation.js';
 import { getActionPreview } from './action-preview.js';
+import { getFutureBranchAccess, getBranchAccessRulesDescription } from './branch-access.js';
 
 export const BUILDING_ACTION_IDS = Object.freeze(['build_merchant', 'build_state', 'build_joint']);
 const channelNames = { politics: '政治', economy: '经济', science: '科学', religion: '宗教' };
@@ -25,6 +26,7 @@ export function getBuildingContract(state, actionId, { cellId = 'D4', actorId = 
   const { action, missing, canLock } = preview;
   const merchant = actionId === 'build_merchant', government = actionId === 'build_state';
   const legacy = usesLegacyCrisisRules(state), dueYear = state.year + action.dueIn;
+  const futureBranchAccess = getFutureBranchAccess(state, actionId);
   const annualSources = {
     station: { politics: government ? .5 : .1, economy: merchant ? .8 : .1, science: merchant ? 1.2 : 1.6, religion: .25 },
     archive: { politics: 0, economy: 0, science: .35, religion: .15 },
@@ -35,7 +37,7 @@ export function getBuildingContract(state, actionId, { cellId = 'D4', actorId = 
     model: COVERAGE_RULES.version,
     station: merchant ? COVERAGE_RULES.paidAccess : 1,
     training: COVERAGE_RULES.localTeaching,
-    branch: merchant ? COVERAGE_RULES.paidAccess : 1,
+    branch: futureBranchAccess.open ? 1 : COVERAGE_RULES.paidAccess,
     sourceProtection: government ? COVERAGE_RULES.stateCoordination : merchant ? 0 : COVERAGE_RULES.jointRecords,
     condition: '建站实际成功、来源可追溯、载体仍运转；联合来源还须原行动确有独立洪水记录。覆盖与来源保护均乘实际维护和人手系数，同地取最高值，不叠加。',
   };
@@ -66,17 +68,17 @@ export function getBuildingContract(state, actionId, { cellId = 'D4', actorId = 
     `统一提交成本：${costText(action.cost)}，占本角色本窗口1次介入；${Math.round(action.probability * 100)}%概率在第${dueYear}年建成测站，否则同年留下小型档案站。`,
     `若建成且足额维护、人手齐备，D4测站的年度源项为${sourceText(annualSources.station)}。这是源项，不是四通道每年的净增预测。`,
     merchant
-      ? `若成功，商会测站从第${dueYear}年启用起就有缴费门槛；当前引擎以后生成的同源F6分站也沿用收费准入。`
-      : `若成功，${government ? '官署' : '联合管理'}测站从第${dueYear}年启用起公开服务；当前引擎以后生成的同源F6分站也公开。`,
+      ? `若成功，商会测站从第${dueYear}年启用起就有缴费门槛。${futureBranchAccess.description}`
+      : `若成功，${government ? '官署' : '联合管理'}测站从第${dueYear}年启用起公开服务。${futureBranchAccess.description}`,
   ];
   if (coverage) differenceTerms.push(merchant
-    ? `足额维护、人手齐备时，测站与同源分站覆盖系数为${coverage.station}，不附加治理来源保护；缴费门槛不是人口比例。`
+    ? `足额维护、人手齐备时，D4测站覆盖系数为${coverage.station}，按本局分站规则生成的F6覆盖系数为${coverage.branch}；不附加治理来源保护；缴费门槛不是人口比例。`
     : `足额维护、人手齐备时，测站与同源分站覆盖系数为1；${government ? '可追溯的官署协调' : '可追溯且原行动保留独立洪水记录的联合来源'}减少${Math.round(coverage.sourceProtection * 100)}%的剩余共同失效损失。不能替代完整复核。`);
   else differenceTerms.push('本局沿用旧版整体危机公式，不按新的预警覆盖系数或治理来源保护计减损；公开或收费仍是服务准入事实，不等于新模型的危机收益。');
   const annualSourceNote = `足额维护、人手齐备时，每个教学点年度源项为${sourceText(annualSources.training)}；F6分站为${sourceText(annualSources.branch)}。实际源项还乘维护、人手系数，并与衰减、邻地传播等共同结算，不能把它们相加当作净增。`;
-  const compatibilityNote = legacy
-    ? '没有coverage-v1标记的本局保留旧整体危机口径。原始旧引擎曾把商会F6分站建为公开，当前引擎新生成的商会分站则收费；旧档标记不能鉴别所有生产历史，已经存在的分站须以实际保存的开放状态为准。本说明不重写旧合同或结果，也不是完整回滚旧引擎。'
-    : '本局使用coverage-v1。来源保护须由真实成功事件和原行动证据支持，失败档案站不继承成功测站的覆盖或来源保护；已存历史不会因阅读合同重算。';
+  const compatibilityNote = (legacy
+    ? '没有coverage-v1标记的本局保留旧整体危机口径，不附加新覆盖收益。'
+    : '本局使用coverage-v1。来源保护须由真实成功事件和原行动证据支持，失败档案站不继承成功测站的覆盖或来源保护。') + getBranchAccessRulesDescription(state);
   const prototypeNote = '这些时点、年度源项和服务参数是当前可调原型假设，不是历史测量或已验证的政策效果。后续链有条件，成功与失败都保留；免费阅读不取证、不扣调查轮次、不锁定、不支付，也不揭示随机结果。';
   // Current getActions keeps shared build copy even for original-rule saves.
   // Clarify that copy for display only; never rewrite a contract or its history.
@@ -95,7 +97,7 @@ export function getBuildingContract(state, actionId, { cellId = 'D4', actorId = 
     success, failure, chain, maintenance, annualSources, coverage,
     // This is explicitly a future-runtime contract, never an assertion about
     // an old institution. Legacy branch differences stay visible above.
-    futureBranchAccess: { engine: 'current-runtime', open: !merchant },
+    futureBranchAccess: { engine: 'current-runtime', ...futureBranchAccess },
     commonTerms, differenceTerms, annualSourceNote, compatibilityNote, prototypeNote,
   };
 }

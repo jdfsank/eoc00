@@ -1,3 +1,4 @@
+import { getFutureBranchAccess } from '../src/branch-access.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
@@ -456,7 +457,7 @@ function oldTasks(s, route) {
   if (s.year === 20) return [['protagonist', 'D4', 'free_warning'], ...(route.review !== false && prior.getActors(s).some(a => a.id === 'linche') ? [['linche', 'F6', 'independent_review']] : [])];
   return [['protagonist', 'D4', 'withdraw'], ...(prior.getActors(s).some(a => a.id === 'linche') ? [route.lateReview ? ['linche', 'F6', 'complete_review'] : ['linche', 'D5', 'mutual_aid']] : [])];
 }
-for (const route of oldRoutes) for (const stage of ['new', 'planning30', 'locked30', 'submitted30', 'resolved31', 'ended40']) test(`genuine round8 ${route.name}/${stage}: menus, contracts, yearly state and ending are unchanged`, () => {
+for (const route of oldRoutes) for (const stage of ['new', 'planning30', 'locked30', 'submitted30', 'resolved31', 'ended40']) test(`genuine round8 ${route.name}/${stage}: contract fields, yearly state and ending stay unchanged apart from verified prospective note`, () => {
   const old = prior.createRun(route.seed);
   if (stage !== 'new') while (old.year < 30) decade(prior, old, oldTasks(old, route));
   if (['locked30', 'submitted30', 'resolved31', 'ended40'].includes(stage)) for (const task of oldTasks(old, route)) choose(prior, old, ...task);
@@ -470,11 +471,16 @@ for (const route of oldRoutes) for (const stage of ['new', 'planning30', 'locked
   while (old.year < 40) {
     if (old.phase === 'planning') {
       for (const actor of prior.getActors(old)) for (const cell of old.cells) {
-        // Only the new staffing explanation is excluded. Original contractual
-        // fields, including risk, remain strict coverage-era equality checks.
+        // New explanations are verified exactly before removing only their added
+        // display text. Original risk/cost/probability and state remain strict.
         const contracts = sim.getActions(loaded, cell.id, actor.id).map(({ staffingNote, ...contract }) => {
           if (sim.RECRUITMENT_ACTIONS.includes(contract.id)) assert.equal(typeof staffingNote, 'string');
           else assert.equal(staffingNote, undefined);
+          if (contract.id === 'build_merchant') {
+            const original = prior.getActions(old, cell.id, actor.id).find(a => a.id === contract.id);
+            assert.equal(contract.modelNote, original.modelNote + ' ' + getFutureBranchAccess(loaded, contract.id).description);
+            contract.modelNote = original.modelNote;
+          }
           return contract;
         });
         assert.deepEqual(contracts, prior.getActions(old, cell.id, actor.id), `${old.year}/${cell.id}/${actor.id}: unchanged menu and contract`);

@@ -23,7 +23,7 @@ function fixture({staff=false,maintenance=1,active=true}={}){
  assert.equal(validateState(state).valid,true);return state;
 }
 const states={normal:fixture(),staffing:fixture({staff:true}),maintenance:fixture({maintenance:.7}),both:fixture({staff:true,maintenance:.7}),stopped:fixture({staff:true,maintenance:.7,active:false}),restored:fixture()};
-const expected={normal:'制度运行中',staffing:'维护者缺席',maintenance:'维护不足',both:'维护者缺席 · 维护不足',stopped:'停运 · 原址建筑保留',restored:'制度运行中'};
+const expected={normal:'制度运行中 · 基本预警公开准入',staffing:'维护者缺席 · 基本预警公开准入',maintenance:'维护不足 · 基本预警公开准入',both:'维护者缺席 · 维护不足 · 基本预警公开准入',stopped:'停运 · 原址建筑保留 · 旧公开规约封存（当前不提供服务）',restored:'制度运行中 · 基本预警公开准入'};
 async function show(state,bigText=false){
  await page.evaluate(({state,bigText})=>sessionStorage.setItem('afterwave.maintenance.fixture',JSON.stringify({state,ui:{selected:'D4',screen:'world',channel:'science',focus:true,bigText}})),{state,bigText});
  await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(200);

@@ -12,7 +12,7 @@ import * as sim from '../src/simulation.js';
 // Never hide/recreate a toast, force clicks, retry inputs, or extend its lifetime.
 const out='playtest-output',hostDelayMs=4500,toastDurationMs=3500;
 await fs.mkdir(out,{recursive:true});
-const report={scope:'Actual file imports at320×568; paused-clock visible-input cases (including4500ms host delays), exact3500ms/replacement timer boundaries, and a fresh unmocked-clock expiry case. Real pointer and Tab+Enter targets; unchanged precommit world, exact year20 settlement, and200% status readability. No injected CSS, forced click, input retry, or production lifetime change.',checks:[],errors:[],pointerEvents:[],hostDelays:[],ordinaryExpiry:null,unmockedReplacements:[]};
+const report={scope:'Actual file imports at320×568 with fresh per-change receipts and separate test-only delayed File.text controls; paused-clock visible-input cases (including4500ms host delays), exact3500ms/replacement timer boundaries, and a fresh unmocked-clock expiry case. Real pointer and Tab+Enter targets; unchanged precommit world, exact year20 settlement, and200% status readability. No injected CSS, forced click, input retry, or production lifetime change.',checks:[],errors:[],pointerEvents:[],hostDelays:[],ordinaryExpiry:null,unmockedReplacements:[],importReceipts:[],readerControls:[]};
 const check=(name,ok,detail)=>{report.checks.push({name,passed:!!ok,...(detail?{detail}:{})});assert.ok(ok,name);};
 async function runtimeHash(){const hash=createHash('sha256');for(const name of (await fs.readdir('src',{withFileTypes:true})).filter(f=>f.isFile()).map(f=>f.name).sort()){hash.update(name);hash.update(await fs.readFile(`src/${name}`));}return hash.digest('hex');}
 const hashBefore=await runtimeHash();
@@ -30,9 +30,22 @@ let browser,page;
 const click=a=>page.locator(`[data-action="${a}"]`).first().click();
 const worldState=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const savedState=()=>page.evaluate(()=>JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state));
-async function importFile(state,ui={}){
+async function uploadFile(state,ui={},expectedText='已导入。',name='toast-regression.json'){
+ const requestId=await page.evaluate(()=>window.toastImportSequence+1);
+ await page.locator('#import-save').setInputFiles({name,mimeType:'application/json',buffer:Buffer.from(JSON.stringify({state,ui}))});
+ // setInputFiles only dispatches change; the application's File.text is asynchronous.
+ // Await this change's latched new-node receipt, never an old equal state or toast.
+ await page.waitForFunction(({requestId,expectedText})=>{
+  const receipt=window.toastImportReceipts[requestId];
+  return receipt?.status?.role==='status'&&receipt.status.text.includes(expectedText)&&receipt.screen===(expectedText==='已导入。'?'world':'settings');
+ },{requestId,expectedText},{polling:25,timeout:10_000});
+ const receipt=await page.evaluate(id=>window.toastImportReceipts[id],requestId);
+ report.importReceipts.push(receipt);
+ return receipt;
+}
+async function importFile(state,ui={},expectedText='已导入。'){
  await click('settings');
- await page.locator('#import-save').setInputFiles({name:'toast-regression.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({state,ui}))});
+ return uploadFile(state,ui,expectedText);
 }
 const toastStatus=()=>page.evaluate(()=>window.readToastStatus());
 function readableImport(status,expectedText){return !!status&&status.visible&&status.role==='status'&&status.text.startsWith('已导入。')&&status.text.includes('不回写')&&status.text.includes('不复活')&&status.withinViewport&&status.noTextOverflow&&(!expectedText||status.text===expectedText);}
@@ -63,6 +76,13 @@ async function newPage(controlled){
  page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
  await page.addInitScript(()=>{
   window.toastInputEvents=[];window.toastObservations=[];
+  window.toastImportSequence=0;window.toastImportReceipts={};
+  let pendingImport=null;
+  document.addEventListener('change',event=>{
+   if(event.target.id!=='import-save'||!event.target.files?.length)return;
+   pendingImport={id:++window.toastImportSequence,name:event.target.files[0].name,beforeNode:document.querySelector('.toast')};
+  },true);
+  window.probeToastImport=()=>({id:pendingImport?.id,receipt:window.toastImportReceipts[pendingImport?.id]||null,sameNode:!!pendingImport?.beforeNode&&document.querySelector('.toast')===pendingImport.beforeNode});
   window.readToastStatus=()=>{
    const el=document.querySelector('.toast');if(!el)return null;
    const r=el.getBoundingClientRect(),style=getComputedStyle(el);
@@ -71,6 +91,9 @@ async function newPage(controlled){
   let previousToast=null;
   new MutationObserver(()=>{
    const current=document.querySelector('.toast');
+   if(pendingImport&&current&&current!==pendingImport.beforeNode&&!window.toastImportReceipts[pendingImport.id]){
+    window.toastImportReceipts[pendingImport.id]={id:pendingImport.id,name:pendingImport.name,freshNode:true,time:performance.now(),screen:window.afterwave?.ui.screen,status:window.readToastStatus()};
+   }
    if(current!==previousToast){window.toastObservations.push({kind:current?'shown':'removed',time:performance.now(),screen:window.afterwave?.ui.screen,status:window.readToastStatus()});previousToast=current;}
   }).observe(document,{childList:true,subtree:true});
   for(const type of ['pointerdown','pointerup','click','keydown','keyup'])document.addEventListener(type,e=>{
@@ -107,7 +130,7 @@ try{
   if(mode==='invalid-then-valid'){
    await click('settings');
    const before=await worldState(),saveBefore=await page.evaluate(()=>localStorage.getItem('afterwave.save.v1'));
-   await page.locator('#import-save').setInputFiles({name:'invalid-toast-regression.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({state:corrupt}))});
+   await uploadFile(corrupt,{},'制度结构或年度产出非法','invalid-toast-regression.json');
    await page.locator('.toast').filter({hasText:'制度结构或年度产出非法'}).waitFor();
    check('Rejected import preserves exact world and autosave',await worldState()===before&&await page.evaluate(()=>localStorage.getItem('afterwave.save.v1'))===saveBefore);
   }
@@ -158,7 +181,7 @@ try{
  check('Controlled clock: single import expires exactly at3500ms',await toastStatus()===null);
  // A prior notification must not remove its replacement before the replacement's timer.
  for(const preceding of ['valid','invalid']){
-  await importFile(preceding==='valid'?failed:corrupt);
+  await importFile(preceding==='valid'?failed:corrupt,{},preceding==='valid'?'已导入。':'制度结构或年度产出非法');
   await page.locator('.toast').waitFor();
   await page.clock.runFor(1800);
   await importFile(failed);
@@ -170,6 +193,54 @@ try{
   await page.clock.runFor(1);
   check(`Controlled ${preceding}→valid replacement expires exactly at its own3500ms`,await toastStatus()===null);
   check(`Controlled ${preceding}→valid lifecycle preserves exact world and autosave`,await worldState()===JSON.stringify(failed)&&await savedState()===JSON.stringify(failed));
+ }
+ // Reader scheduling controls are separate from native timer-lifetime evidence.
+ // Hold one genuine File.text result, without changing its bytes, state, UI or timers.
+ for(const mode of ['missing-toast','same-state-same-toast']){
+  if(mode==='same-state-same-toast')await importFile(failed);
+  const before={world:await worldState(),save:await savedState(),time:await page.evaluate(()=>performance.now())};
+  await page.evaluate(()=>{
+   const prototype=File.prototype,descriptor=Object.getOwnPropertyDescriptor(prototype,'text'),original=prototype.text;
+   let release;const gate=new Promise(resolve=>{release=resolve;});
+   const control=window.toastReaderControl={entered:false,contentReady:false,released:false,restored:false,calls:0};
+   control.release=()=>{control.released=true;release();};
+   control.restore=()=>{if(descriptor)Object.defineProperty(prototype,'text',descriptor);else delete prototype.text;control.restored=prototype.text===original&&Object.hasOwn(prototype,'text')===!!descriptor;};
+   Object.defineProperty(prototype,'text',{configurable:true,writable:true,value:function(){
+    const content=original.call(this);
+    if(this.name!=='toast-regression.json'||control.entered)return content;
+    control.entered=true;control.calls++;
+    return content.then(text=>{control.contentReady=true;return gate.then(()=>text);});
+   }});
+  });
+  let outcome='pending';
+  const pending=importFile(failed).then(receipt=>{outcome='resolved';return receipt;},error=>{outcome='rejected';throw error;});
+  pending.catch(()=>{});
+  const evidence={mode,clock:'paused Playwright clock',reader:'one genuine File.text result held by an explicit test-only Promise gate'};
+  report.readerControls.push(evidence);
+  try{
+   await page.waitForFunction(()=>window.toastReaderControl.contentReady,null,{polling:25,timeout:10_000});
+   const hostBefore=performance.now();await hostDelay(250);
+   evidence.hostHeldMs=performance.now()-hostBefore;
+   evidence.blocked=await page.evaluate(()=>({entered:window.toastReaderControl.entered,contentReady:window.toastReaderControl.contentReady,released:window.toastReaderControl.released,calls:window.toastReaderControl.calls,screen:window.afterwave.ui.screen,status:window.readToastStatus(),probe:window.probeToastImport(),time:performance.now()}));
+   evidence.outcomeWhileBlocked=outcome;
+   check(`Delayed reader ${mode}: genuine file read is held after change dispatch`,evidence.blocked.entered&&evidence.blocked.contentReady&&!evidence.blocked.released&&evidence.blocked.calls===1&&evidence.blocked.screen==='settings',evidence);
+   check(`Delayed reader ${mode}: fresh import acknowledgment cannot pass before the reader`,outcome==='pending'&&!evidence.blocked.probe.receipt,evidence);
+   check(`Delayed reader ${mode}: old missing or identical toast cannot acknowledge this change`,mode==='missing-toast'?evidence.blocked.status===null:readableImport(evidence.blocked.status)&&evidence.blocked.probe.sameNode,evidence);
+   check(`Delayed reader ${mode}: waiting preserves whole world/autosave and application time`,await worldState()===before.world&&await savedState()===before.save&&evidence.blocked.time===before.time);
+   await page.evaluate(()=>window.toastReaderControl.release());
+   evidence.receipt=await pending;
+   check(`Delayed reader ${mode}: release acknowledges this change's new status node`,outcome==='resolved'&&evidence.receipt.id===evidence.blocked.probe.id&&evidence.receipt.freshNode&&evidence.receipt.screen==='world'&&readableImport(evidence.receipt.status),evidence.receipt);
+   const text=await assertImportToast(`Delayed reader ${mode} completed import`);
+   await page.clock.runFor(toastDurationMs-1);
+   await assertImportToast(`Delayed reader ${mode} at3499ms`,text);
+   await page.clock.runFor(1);
+   check(`Delayed reader ${mode}: completed import still expires exactly at3500ms`,await toastStatus()===null);
+   check(`Delayed reader ${mode}: completion and expiry preserve exact world/autosave`,await worldState()===JSON.stringify(failed)&&await savedState()===JSON.stringify(failed));
+  }finally{
+   await page.evaluate(()=>{window.toastReaderControl.release();window.toastReaderControl.restore();});
+   await pending.catch(()=>{});
+  }
+  check(`Delayed reader ${mode}: File.text descriptor and implementation are restored`,await page.evaluate(()=>window.toastReaderControl.restored));
  }
  await page.close();
  // Separate fresh page/context, no clock installation, timer wrapper or mocked Date.
@@ -216,7 +287,7 @@ try{
    });
    observer.observe(document,{childList:true,subtree:true});
   },JSON.stringify({state:failed,ui:{bigText:true}}));
-  await importFile(preceding==='valid'?failed:corrupt,{bigText:true});
+  await importFile(preceding==='valid'?failed:corrupt,{bigText:true},preceding==='valid'?'已导入。':'制度结构或年度产出非法');
   await page.waitForFunction(()=>window.nativeReplacement.error||(window.nativeReplacement.dispatchedAt!==null&&window.toastObservations.some(o=>o.kind==='removed'&&o.time>=window.nativeReplacement.dispatchedAt)),null,{polling:100,timeout:15_000});
   const evidence=await page.evaluate(()=>({replacement:window.nativeReplacement,observations:window.toastObservations}));
   const first=evidence.observations.find(o=>o.kind==='shown'),replacement=evidence.observations.find(o=>o.kind==='shown'&&o.screen==='world'&&o.time>=evidence.replacement.dispatchedAt),removal=evidence.observations.find(o=>o.kind==='removed'&&o.time>=evidence.replacement.dispatchedAt);

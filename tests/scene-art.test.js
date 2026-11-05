@@ -2,31 +2,31 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { sceneArt } from '../src/scene-art.js';
 const state = institutions => ({institutions});
-const provider = (kind,cellId,active=true,maintenance=1) => ({kind,cellId,active,maintenance});
+const provider = (kind,cellId,active=true,maintenance=1) => ({kind,cellId,active,maintenance,open:true});
 test('unbuilt riverport and failed-build archive never invent a station',()=>{
  for(const s of [state([]),state([provider('archive','D4')])]){
   const art=sceneArt(s,'D4');assert.equal(art.file,'archive-desk.svg');assert.match(art.alt,/不表示.*建成测站/);
  }
- assert.equal(sceneArt(state([provider('station','D4')]),'D4').file,'river-station-active.svg');
+ assert.equal(sceneArt(state([provider('station','D4')]),'D4').file,'river-station-public-active.svg');
 });
 test('stopped riverport retains its actual historical station rather than returning to the unbuilt scene',()=>{
  for(const station of [provider('station','D4',false),provider('station','D4',true,0)]){
-  const art=sceneArt(state([station]),'D4');assert.equal(art.file,'river-station-stopped.svg');assert.match(art.alt,/已经停运/);assert.match(art.alt,/旧记录仍保留/);
+  const art=sceneArt(state([station]),'D4');assert.equal(art.file,'river-station-public-stopped.svg');assert.match(art.alt,/已经停运/);assert.match(art.alt,/旧记录仍保留/);
  }
 });
 test('maintenance and missing staff are separate operating station scenes',()=>{
- const worn=sceneArt(state([provider('station','D4',true,.7)]),'D4');assert.equal(worn.file,'river-station-maintenance.svg');assert.match(worn.alt,/仍在运转/);
+ const worn=sceneArt(state([provider('station','D4',true,.7)]),'D4');assert.equal(worn.file,'river-station-public-maintenance.svg');assert.match(worn.alt,/仍在运转/);
  const short={...state([provider('station','D4')]),flags:{recruited:true,successor:false}};
- assert.equal(sceneArt(short,'D4').file,'river-station-understaffed.svg');assert.doesNotMatch(sceneArt(short,'D4').alt,/屋面.*修补/);
- short.flags.successor=true;assert.equal(sceneArt(short,'D4').file,'river-station-active.svg');
+ assert.equal(sceneArt(short,'D4').file,'river-station-public-understaffed.svg');assert.doesNotMatch(sceneArt(short,'D4').alt,/屋面.*修补/);
+ short.flags.successor=true;assert.equal(sceneArt(short,'D4').file,'river-station-public-active.svg');
  const branch={...state([provider('branch','F6')]),flags:{recruited:true,successor:false}};
  assert.equal(sceneArt(branch,'F6').file,'far-port-branch-none.svg','D4 recruitment does not remove F6 staff');
 });
 test('restored or newer active station takes precedence over an older stopped institution',()=>{
  const s=state([provider('station','D4',false),{...provider('station','D4'),startYear:12}]);
- const before=structuredClone(s);assert.equal(sceneArt(s,'D4').file,'river-station-active.svg');assert.deepEqual(s,before);
- s.institutions[1].active=false;assert.equal(sceneArt(s,'D4').file,'river-station-stopped.svg');
- s.institutions[0].active=true;assert.equal(sceneArt(s,'D4').file,'river-station-active.svg');
+ const before=structuredClone(s);assert.equal(sceneArt(s,'D4').file,'river-station-public-active.svg');assert.deepEqual(s,before);
+ s.institutions[1].active=false;assert.equal(sceneArt(s,'D4').file,'river-station-public-stopped.svg');
+ s.institutions[0].active=true;assert.equal(sceneArt(s,'D4').file,'river-station-public-active.svg');
 });
 test('scene geography and educational infrastructure choose different actual illustrations',()=>{
  assert.equal(sceneArt(state([]),'B4').file,'archive-desk.svg');

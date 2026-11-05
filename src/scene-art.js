@@ -1,5 +1,5 @@
 import {monasteryVisual} from './monastery-visuals.js';
-import {getInstitutionStaffing} from './simulation.js';
+import {stationAccessVisual} from './station-access-visuals.js';
 import {farPortVisual} from './far-port-visuals.js';
 import {southBankVisual} from './south-bank-visuals.js';
 import {getLocalCrisisRecord} from './local-crisis-record.js';
@@ -14,15 +14,8 @@ function currentSceneArt(state, cellId, { ending = false } = {}) {
   if (ending) return { file: 'archive-desk.svg', alt: '档案桌上并列的记录与一盏灯，记录已经发生的四十年。', caption: '场景示意 · 留下来的历史' };
   const has = kind => state.institutions.some(i => i.cellId === cellId && i.kind === kind && i.active && i.maintenance > 0);
   if (cellId === 'D4') {
-    const stations=state.institutions.filter(i=>i.cellId==='D4'&&i.kind==='station');
-    const working=stations.filter(i=>i.active&&i.maintenance>0).sort((a,b)=>(b.startYear||0)-(a.startYear||0));
-    if (working.length) {
-      const station=working[0];
-      if (station.maintenance<1) return { file: 'river-station-maintenance.svg', alt: 'D4河港测站仍在运转。窗外是原来的站房、水尺与码头，屋面留下修补，值班牌有空格，桌灯仍亮着；这是维护不足的现场。', caption: '场景示意 · 仍在运转，维护不足' };
-      if (getInstitutionStaffing(state,station).outputReducedNow) return { file: 'river-station-understaffed.svg', alt: 'D4河港测站仍在运转，原站房、水尺与记录都在。值班牌空出班次，桌灯仍亮着，表示尚缺接班人，不表示站房已毁。', caption: '场景示意 · 测站仍在，尚缺接班人' };
-      return { file: 'river-station-active.svg', alt: 'D4河港记录室，窗外是仍在运转的原测站、水尺和码头；值班牌与记录册保持在用，桌灯亮着。', caption: '场景示意 · 持续工作的河港测站' };
-    }
-    if (stations.length) return { file: 'river-station-stopped.svg', alt: 'D4曾经建成的河港测站已经停运。原站房、水尺、码头和旧记录仍保留，窗门与值班牌被木条封起，桌灯熄灭；这里不是从未建站的河岸。', caption: '场景示意 · 测站停运，历史仍在' };
+    const station=stationAccessVisual(state);
+    if(station)return {file:station.file,alt:station.alt,caption:station.caption,captionBelow:true};
     // A real resident service is distinct from the old archive post and from
     // a water station. Flags, drafts and pending events never install its bell.
     const warnings=state.institutions.filter(i=>i.cellId==='D4'&&i.kind==='warning'&&(!Number.isFinite(state.year)||!Number.isFinite(i.startYear)||i.startYear<=state.year));

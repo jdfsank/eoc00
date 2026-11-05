@@ -209,8 +209,8 @@ for (const [name, api] of engines.slice(0, -1)) test(`${name} true producer rout
     assertRoute(state, contract, actionId, name === 'original');
     if (name === 'original') {
       assert.equal(contract.coverage, null);
-      assert.match(contract.compatibilityNote, /原始旧引擎.*商会F6分站建为公开.*当前引擎.*收费/);
-      assert.match(contract.compatibilityNote, /不能鉴别所有生产历史/);
+      assert.match(contract.compatibilityNote, /公开分站规则.*F6分站公开.*商会来源也不设缴费门槛/);
+      assert.match(contract.compatibilityNote, /不是对曾用引擎的鉴别.*可能已经混合续跑/);
     } else {
       const current = api.getWarningCoverage(state);
       assert.equal(current.D4.coverage, success ? .315 : 0);
@@ -232,7 +232,7 @@ test('true original crisis outcomes do not acquire new governance or coverage be
   }
 });
 
-test('legacy identity does not pretend to roll back current future branch generation', () => {
+test('unversioned original identity applies public future branch policy without rewriting its paid contract', () => {
   const { state: oldState } = findRoute(original, 'build_merchant', true, 3);
   // Use an actual producer state before play, not a newly created state with a
   // removed version tag. Its already-paid pending contract continues in the
@@ -247,7 +247,9 @@ test('legacy identity does not pretend to roll back current future branch genera
   assert.equal(contract.futureBranchAccess.engine, 'current-runtime');
   assert.equal(contract.coverage, null);
   assert.equal(result.events[0].status, 'success');
-  assert.equal(result.institutions.find(institution => institution.kind === 'branch').open, false);
+  assert.equal(result.institutions.find(institution => institution.kind === 'branch').open, true);
+  assert.equal(contract.futureBranchAccess.rulesVersion, 'public-branch-v1');
+  assert.equal(contract.futureBranchAccess.explicit, false);
   assert.deepEqual(result.history.find(entry => entry.kind === 'action'), paidSource);
   assert.match(contract.compatibilityNote, /不是完整回滚旧引擎/);
 });
@@ -358,3 +360,31 @@ test('unavailable contracts, actors, places and phases remain unavailable', () =
 });
 
 test('renewal disclosure explicitly requires a built operating station',()=>{for(const id of BUILDING_ACTION_IDS){const terms=getBuildingContract(sim.createRun(12),id).commonTerms;assert.ok(terms.some(t=>t.startsWith('若测站建成并仍在运转，第10年')));}});
+
+
+test('explicit branch creation policy is independent of station access and crisis accounting', () => {
+  for (const api of [original, sim]) for (const [version, open] of [['public-branch-v1', true], ['source-branch-v1', false]]) {
+    const state = api.createRun(1);state.branchAccessRulesVersion = version;
+    const before = copy(state), contract = getBuildingContract(freeze(state), 'build_merchant');
+    assert.equal(contract.success.open, false, 'D4 merchant station remains paid');
+    assert.equal(contract.futureBranchAccess.open, open);
+    assert.equal(contract.futureBranchAccess.explicit, true);
+    assert.equal(contract.futureBranchAccess.rulesVersion, version);
+    assert.match(contract.compatibilityNote, /已明确保存独立分站准入版本/);
+    assert.match(contract.differenceTerms.join(' '), open ? /同源F6分站公开服务/ : /同源F6分站沿用商会收费准入/);
+    if (contract.coverage) {assert.equal(contract.coverage.station, .45);assert.equal(contract.coverage.branch, open ? 1 : .45);}
+    else assert.equal(contract.model, 'legacy-overall');
+    assert.deepEqual(state, before);
+  }
+});
+
+test('a locked original merchant contract discloses the same future public default for both views', () => {
+  const state = original.createRun(1), before = getBuildingContract(state, 'build_merchant');
+  original.lockTask(state, 'protagonist', 'D4', 'build_merchant');
+  const snapshot = copy(state), draft = state.drafts.protagonist;
+  const locked = getBuildingContract(state, 'build_merchant', {actorId:draft.actorId,cellId:draft.cellId,legacyEvidence:draft.evidence});
+  assert.deepEqual(locked, before);
+  assert.equal(locked.futureBranchAccess.open, true);
+  assert.match(locked.compatibilityNote, /只用于尚未兑现.*已存准入.*历史不重算/);
+  assert.deepEqual(state, snapshot);
+});

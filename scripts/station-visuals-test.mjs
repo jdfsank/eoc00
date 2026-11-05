@@ -42,21 +42,21 @@ try{
  check('Unbuilt state explicitly does not imply station construction',(await page.locator('.scene-art img').getAttribute('alt')).includes('不表示'));
  await show(failed);await snapshot('failed-archive','archive-desk.svg');
  check('Failed construction remains archive-only',await page.evaluate(()=>!window.afterwave.state.institutions.some(i=>i.kind==='station')));
- await show(active);await snapshot('active','river-station-active.svg');
- await show(maintenance);await snapshot('maintenance','river-station-maintenance.svg');
+ await show(active);await snapshot('active','river-station-public-active.svg');
+ await show(maintenance);await snapshot('maintenance','river-station-fee-maintenance.svg');
  check('Maintenance scene explicitly remains operational',(await page.locator('.scene-art img').getAttribute('alt')).includes('仍在运转'));
  // Directly inspect a real year-11 simulation state. This is visual coverage,
  // not a claim that playback offers a new intervention or AVG route.
- await show(understaffed,{inspectPlayback:true});await snapshot('understaffed','river-station-understaffed.svg');
+ await show(understaffed,{inspectPlayback:true});await snapshot('understaffed','river-station-public-understaffed.svg');
  check('Missing successor does not imply a ruined station',(await page.locator('.scene-art img').getAttribute('alt')).includes('不表示站房已毁'));
- await show(stopped);await snapshot('stopped','river-station-stopped.svg');
+ await show(stopped);await snapshot('stopped','river-station-public-stopped.svg');
  check('Stopped scene retains the historical place and records',(await page.locator('.scene-art img').getAttribute('alt')).includes('旧记录仍保留'));
  check('Stopped scene and prose agree on closure',(await page.locator('.prose').innerText()).includes('门关着'));
  await page.screenshot({path:`${out}/round4-d4-stopped-avg.png`,fullPage:true});
  const before=await page.evaluate(()=>JSON.stringify(window.afterwave.state));await page.reload();
  check('Scene reload does not change the world',before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
- check('Scene reload preserves stopped history',(await page.locator('.scene-art img').getAttribute('src')).endsWith('river-station-stopped.svg'));
- await show(restored);await snapshot('restored','river-station-active.svg');
+ check('Scene reload preserves stopped history',(await page.locator('.scene-art img').getAttribute('src')).endsWith('river-station-public-stopped.svg'));
+ await show(restored);await snapshot('restored','river-station-public-active.svg');
  check('Restoring the station removes the obsolete closure scene',await page.evaluate(()=>window.afterwave.state.institutions.some(i=>i.kind==='station'&&i.active&&i.maintenance===1)));
  await show(stopped,{cell:'F6'});check('D4 closure does not imply F6 closure',(await page.locator('.scene-art img').getAttribute('src')).endsWith('far-port-branch-none.svg'));
  await show(stopped);await page.setViewportSize({width:320,height:568});await page.locator('[data-action="settings"]').click();await page.locator('[data-action="text-size"]').click();await page.locator('[data-action="home"]').first().click();await page.locator('[data-action="avg"]').click();
