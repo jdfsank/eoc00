@@ -1,3 +1,4 @@
+import {getDecadeReview} from './decade-review.js';
 import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, fulfilledEvent, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce } from './simulation.js';
 
 export const chapters = {
@@ -236,6 +237,16 @@ export function characterEpilogue(state) {
     }
     const lapse = state.history.find(h=>h.id==='charter-lapsed' && roles.some(i=>i.sourceEventId===h.parentId));
     if (lapse) { linche.push(`第${lapse.year}年，维护经费的缺口又变成收费门槛。${warning?'后来的免费预警曾重新处理这项负担，却没有让旧缺口消失。':'接班有人，并不代表当地已经获得公开、长期的支持。'}`); lincheSources.push(lapse.id); if(warning)lincheSources.push(recordId(warning)); }
+  }
+  // Read the two actual deployment windows, rather than infer her work from
+  // global flags or credit her with the protagonist's matching action.
+  if (recruit) {
+    for (const end of [30,40]) {
+      const card = getDecadeReview({...state,year:end,phase:end===40?'ended':'planning'})?.cards.find(c=>c.actorId==='linche');
+      if (!card) continue;
+      linche.push(`同行以后，${card.choice}${card.outcome}${card.responsibility}`);
+      lincheSources.push(...card.sourceIds);
+    }
   }
   const sulan = [], sulanSources = [];
   let title = '末页仍留着她的选择';

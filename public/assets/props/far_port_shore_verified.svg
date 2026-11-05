@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges" data-branch="shore" data-review="verified"><title>F6 dock and separate review history</title><desc>Original low dimetric prop. Ground anchor 32,64. Failed folio, pending order, paired ledgers and closed table are non-color alternatives, never predictions.</desc>
+<path d="M32 52L59 65 32 77 5 64Z" fill="#233C3B"/><path d="M32 55L55 65 32 74 9 64Z" fill="#6F8170"/>
+<path d="M8 61l23-11 16 8-23 12Z" fill="#B1A17B" stroke="#233C3B" stroke-width="2"/><path d="M14 59l17 8M21 55l17 8M9 62v8M31 52v8" stroke="#796C50" stroke-width="2"/>
+
+
+
+<g id="check-table"><path d="M35 62l16-8 11 6-16 9Z" fill="#B1A17B" stroke="#233C3B" stroke-width="2"/><path d="M38 65v5M57 65v5" stroke="#796C50" stroke-width="2"/>
+<g id="paired-ledgers"><path d="M40 47l7-2v14l-7 3ZM51 43l7-2v14l-7 4Z" fill="#E0D6B7" stroke="#233C3B" stroke-width="2"/><path d="M42 51l3-1M42 56l3-1M53 47l3-1M53 52l3-1" stroke="#72816A"/></g>
+</g>
+
+</svg>

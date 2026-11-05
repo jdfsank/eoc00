@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges" data-branch="branch_closed" data-review="none"><title>F6 dock and separate review history</title><desc>Original low dimetric prop. Ground anchor 32,64. Failed folio, pending order, paired ledgers and closed table are non-color alternatives, never predictions.</desc>
+<path d="M32 52L59 65 32 77 5 64Z" fill="#233C3B"/><path d="M32 55L55 65 32 74 9 64Z" fill="#6F8170"/>
+<path d="M8 61l23-11 16 8-23 12Z" fill="#B1A17B" stroke="#233C3B" stroke-width="2"/><path d="M14 59l17 8M21 55l17 8M9 62v8M31 52v8" stroke="#796C50" stroke-width="2"/>
+<g id="branch-house"><path d="M11 39l14 7v19l-14-7Z" fill="#C4B99A" stroke="#233C3B" stroke-width="2"/><path d="M25 46l13-7v19l-13 7Z" fill="#7D8271" stroke="#233C3B" stroke-width="2"/><path d="M8 39l16-14 18 13-17 11Z" fill="#365E59" stroke="#233C3B" stroke-width="2"/><path d="M15 34l17 10" stroke="#52776A" stroke-width="2"/>
+<g id="branch-shutter"><path d="M15 45l8 15M15 56l8-8M29 49l7 9M29 60l7-14" stroke="#BCAB80" stroke-width="2"/></g>
+<path d="M6 37v25" stroke="#233C3B" stroke-width="4"/><path d="M6 38v23" stroke="#E0D6B7" stroke-width="2"/><path d="M5 44h2M5 51h2M5 58h2" stroke="#796B50"/></g>
+
+
+
+
+</svg>

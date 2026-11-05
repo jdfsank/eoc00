@@ -37,7 +37,7 @@ try{
  check('Failed construction keeps records without claiming warning service',(await page.locator('.institution-status').innerText()).includes('档案不等于预警服务'));
  const community=decade(decade(decade(createRun())),'free_warning');await show(community,true);await snap('community-focus');
  check('Resident bell has equivalent text',(await page.locator('.institution-status').innerText()).includes('居民钟报运行中'));
- for(const [name,state,cell,file] of [['archive',createRun(),'D4','archive-desk.svg'],['shore',decade(createRun()),'D5','open-shore.svg'],['classroom',ready,'E4','local-classroom.svg'],['station',lapsed,'F6','river-room.svg']]){
+ for(const [name,state,cell,file] of [['archive',createRun(),'D4','archive-desk.svg'],['shore',decade(createRun()),'D5','open-shore.svg'],['classroom',ready,'E4','local-classroom.svg'],['station',lapsed,'F6','far-port-branch-none.svg']]){
   await show(state,false,cell);await page.locator('[data-action="avg"]').click();await page.locator('.scene-art img').waitFor();
   check(`${name} scene uses a state-appropriate illustration`,(await page.locator('.scene-art img').getAttribute('src')).endsWith(file));
   await page.locator('.scene-art').screenshot({path:`${out}/visual-scene-${name}.png`});

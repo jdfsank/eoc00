@@ -58,7 +58,7 @@ try{
  check('Scene reload preserves stopped history',(await page.locator('.scene-art img').getAttribute('src')).endsWith('river-station-stopped.svg'));
  await show(restored);await snapshot('restored','river-station-active.svg');
  check('Restoring the station removes the obsolete closure scene',await page.evaluate(()=>window.afterwave.state.institutions.some(i=>i.kind==='station'&&i.active&&i.maintenance===1)));
- await show(stopped,{cell:'F6'});check('D4 closure does not imply F6 closure',(await page.locator('.scene-art img').getAttribute('src')).endsWith('river-room.svg'));
+ await show(stopped,{cell:'F6'});check('D4 closure does not imply F6 closure',(await page.locator('.scene-art img').getAttribute('src')).endsWith('far-port-branch-none.svg'));
  await show(stopped);await page.setViewportSize({width:320,height:568});await page.locator('[data-action="settings"]').click();await page.locator('[data-action="text-size"]').click();await page.locator('[data-action="home"]').first().click();await page.locator('[data-action="avg"]').click();
  await page.screenshot({path:`${out}/round4-d4-stopped-320-text200.png`,fullPage:true});
  check('320px / 200% stopped scene has no horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

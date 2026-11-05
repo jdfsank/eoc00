@@ -7,7 +7,7 @@
 
 地图由真实64格数据绘制，建筑由生效制度驱动。概念PNG没有进入游戏构建。
 
-2026-11-05新增原创代码绘制SVG：`archive-desk.svg`（档案与协商）、`open-shore.svg`（无已建机构的河岸）、`local-classroom.svg`（现存教学场所）。`scene-art.js`按真实机构选择，现有`river-room.svg`仅用于活动测站/分站，结局使用档案桌。地图状态叠加符号与五档调色均为项目原生几何和配置，不引入外部游戏素材。
+2026-11-05新增原创代码绘制SVG：`archive-desk.svg`（档案与协商）、`open-shore.svg`（无已建机构的河岸）、`local-classroom.svg`（现存教学场所）。`scene-art.js`按真实机构选择，当时`river-room.svg`用于活动测站/分站；后续D4/F6已由各自状态近景替换，旧母版保留，结局使用档案桌。地图状态叠加符号与五档调色均为项目原生几何和配置，不引入外部游戏素材。
 
 本轮新增原创`props/riverside_school.svg/.png`与`props/bank_reading_circle.svg/.png`，不是交接包素材。两者64×80逻辑尺寸、锚点32,64，透明RGBA PNG为128×160，可用`node scripts/render-learning-art.mjs`重复生成。`local-classroom.svg`改为露天敞棚，`bank-reading.svg`为南岸无顶围座，`closed-*`保留旧址但没有学员。
 
@@ -18,3 +18,5 @@
 第六轮拟派遣方筹/圆筹、短虚线与待兑现沙漏均由`board.js`原生几何绘制，无新增第三方图像。它们表示草案和合同，不替代角色正式立绘，也不代表已建机构。单色与窄屏截图验证形状可区分，文字图例与地域列表同步说明。
 
 第七轮新增6套`public/assets/south-bank-*.svg`近景（1000×500），以及6套`props/south_bank_*.svg/.png`复合地图道具。SVG母版64×80、锚点32,64，RGBA PNG128×160，由`node scripts/render-south-bank-art.mjs`生成；总18文件约43KB。全部为项目原创代码绘制：无顶读尺围座与低矮高脚物资棚独立开闭，停运保留原址，不引入外部图片。
+
+第八轮F6新增20套状态组合，每套包括1000×500近景SVG、64×80地图SVG母版及锚点32,64的128×160透明PNG，共60文件约126KB。由`node scripts/render-far-port-art.mjs`生成，全部为项目原创代码绘制。分站/码头、失败底稿和双册校验台各自保留历史；地图工单不重复绘制统一待兑现沙漏。32/40年的近景图测试是明确标注的资产预览，不冒充新增可玩AVG入口。

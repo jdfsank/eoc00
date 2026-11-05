@@ -1,0 +1,186 @@
+{
+  "scope": "Real Chromium390×844 and320×568 with200% text. Actual engine fixtures, UI contracts, commitment/playback and real personal source links. Read-only planning is conditional, not a future result.",
+  "checks": [
+    {
+      "name": "train_network: current capacity stays unstaffed and not already fulfilled",
+      "passed": true
+    },
+    {
+      "name": "train_network: only training fills promised staff and mandate",
+      "passed": true
+    },
+    {
+      "name": "train_network: reading the entire comparison is pure",
+      "passed": true
+    },
+    {
+      "name": "train_network: reload retains exact locked world",
+      "passed": true
+    },
+    {
+      "name": "train_network: actual year31 follows the disclosed staff branch",
+      "passed": true
+    },
+    {
+      "name": "train_network:40year outcome reflects actual capacity",
+      "passed": true
+    },
+    {
+      "name": "mutual_aid: current capacity stays unstaffed and not already fulfilled",
+      "passed": true
+    },
+    {
+      "name": "mutual_aid: only training fills promised staff and mandate",
+      "passed": true
+    },
+    {
+      "name": "mutual_aid: reading the entire comparison is pure",
+      "passed": true
+    },
+    {
+      "name": "mutual_aid: reload retains exact locked world",
+      "passed": true
+    },
+    {
+      "name": "mutual_aid: actual year31 follows the disclosed staff branch",
+      "passed": true
+    },
+    {
+      "name": "mutual_aid:40year outcome reflects actual capacity",
+      "passed": true
+    },
+    {
+      "name": "pass: current capacity stays unstaffed and not already fulfilled",
+      "passed": true
+    },
+    {
+      "name": "pass: only training fills promised staff and mandate",
+      "passed": true
+    },
+    {
+      "name": "pass: reading the entire comparison is pure",
+      "passed": true
+    },
+    {
+      "name": "pass: reload retains exact locked world",
+      "passed": true
+    },
+    {
+      "name": "pass: actual year31 follows the disclosed staff branch",
+      "passed": true
+    },
+    {
+      "name": "pass:40year outcome reflects actual capacity",
+      "passed": true
+    },
+    {
+      "name": "Real unlock removes future comparison until the whole round is locked",
+      "passed": true
+    },
+    {
+      "name": "Real replacement by explicit pass does not retain phantom training",
+      "passed": true
+    },
+    {
+      "name": "unsupported: separate32year cancellation branch is visible",
+      "passed": true
+    },
+    {
+      "name": "unsupported: support conditions are accurately described",
+      "passed": true
+    },
+    {
+      "name": "unsupported:actual completion/cancellation fits disclosed conditions",
+      "passed": true
+    },
+    {
+      "name": "unsupported: future work preserves23year crisis",
+      "passed": true
+    },
+    {
+      "name": "training: separate32year cancellation branch is visible",
+      "passed": true
+    },
+    {
+      "name": "training: support conditions are accurately described",
+      "passed": true
+    },
+    {
+      "name": "Two capacity tasks do not invent a separately signed policy",
+      "passed": true
+    },
+    {
+      "name": "training:actual completion/cancellation fits disclosed conditions",
+      "passed": true
+    },
+    {
+      "name": "training: future work preserves23year crisis",
+      "passed": true
+    },
+    {
+      "name": "existing: separate32year cancellation branch is visible",
+      "passed": true
+    },
+    {
+      "name": "existing: support conditions are accurately described",
+      "passed": true
+    },
+    {
+      "name": "existing:actual completion/cancellation fits disclosed conditions",
+      "passed": true
+    },
+    {
+      "name": "existing: future work preserves23year crisis",
+      "passed": true
+    },
+    {
+      "name": "True original save shows old cumulative rule, not invented mandates",
+      "passed": true
+    },
+    {
+      "name": "Linche40year coda now acknowledges her own20review and30training",
+      "passed": true
+    },
+    {
+      "name": "New contributions do not erase her11departure or16fee history",
+      "passed": true
+    },
+    {
+      "name": "Personal contribution links to the real20→22 Linche source",
+      "passed": true
+    },
+    {
+      "name": "Reading personal source changes no world history",
+      "passed": true
+    },
+    {
+      "name": "Companion explicit passes are not replaced by protagonist achievements",
+      "passed": true
+    },
+    {
+      "name": "Missing outcome remains unknown rather than a verified success",
+      "passed": true
+    },
+    {
+      "name": "30year whole-window comparison fits320 at200%",
+      "passed": true
+    },
+    {
+      "name": "Commit remains reachable after expanded assumptions at200%",
+      "passed": true
+    },
+    {
+      "name": "Expanded companion coda fits320 at200%",
+      "passed": true
+    },
+    {
+      "name": "Last companion source is reachable at200%",
+      "passed": true
+    },
+    {
+      "name": "No page or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

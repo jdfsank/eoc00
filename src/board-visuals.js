@@ -1,3 +1,4 @@
+import {farPortVisual} from './far-port-visuals.js';
 import {southBankVisual} from './south-bank-visuals.js';
 // One absolute scale for the world layer and its legend. Values are capacities,
 // not percentages of four mutually exclusive factions.
@@ -62,6 +63,14 @@ export function institutionVisual(state, cellId) {
       const halted=!south.aid.active&&!south.teaching.active,maintenanceGap=south.aid.maintenanceGap||south.teaching.maintenanceGap;
       return {...result,prop:south.prop,label:south.label,compound:south,
         halted,maintenanceGap,degraded:maintenanceGap,status:halted?'halted':maintenanceGap?'degraded':'operating'};
+    }
+  }
+  if (cellId === 'F6') {
+    const port=farPortVisual(state);
+    if(port){
+      const halted=!port.branch.active&&!port.failed.active&&!port.check.active;
+      const maintenanceGap=port.branch.maintenanceGap||port.check.maintenanceGap;
+      return {...result,prop:port.prop,label:port.label,farPort:port,halted,maintenanceGap,degraded:maintenanceGap,status:halted?'halted':maintenanceGap?'degraded':'operating',unverified:port.failed.exists&&!port.check.active};
     }
   }
   return result;

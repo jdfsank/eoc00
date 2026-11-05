@@ -20,7 +20,7 @@ test('maintenance and missing staff are separate operating station scenes',()=>{
  assert.equal(sceneArt(short,'D4').file,'river-station-understaffed.svg');assert.doesNotMatch(sceneArt(short,'D4').alt,/屋面.*修补/);
  short.flags.successor=true;assert.equal(sceneArt(short,'D4').file,'river-station-active.svg');
  const branch={...state([provider('branch','F6')]),flags:{recruited:true,successor:false}};
- assert.equal(sceneArt(branch,'F6').file,'river-room.svg','D4 recruitment does not remove F6 staff');
+ assert.equal(sceneArt(branch,'F6').file,'far-port-branch-none.svg','D4 recruitment does not remove F6 staff');
 });
 test('restored or newer active station takes precedence over an older stopped institution',()=>{
  const s=state([provider('station','D4',false),{...provider('station','D4'),startYear:12}]);
@@ -33,7 +33,7 @@ test('scene geography and educational infrastructure choose different actual ill
  assert.equal(sceneArt(state([]),'E4').file,'open-shore.svg');
  assert.equal(sceneArt(state([provider('training','E4')]),'E4').file,'local-classroom.svg');
  assert.equal(sceneArt(state([]),'F6').file,'open-shore.svg');
- assert.equal(sceneArt(state([provider('branch','F6')]),'F6').file,'river-room.svg');
+ assert.equal(sceneArt(state([provider('branch','F6')]),'F6').file,'far-port-branch-none.svg');
 });
 test('ending image records history without implying station construction or future events',()=>{
  const art=sceneArt(state([]),'D4',{ending:true});assert.equal(art.file,'archive-desk.svg');assert.match(art.alt,/已经发生/);

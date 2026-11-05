@@ -1,3 +1,4 @@
+import {farPortVisual} from './far-port-visuals.js';
 import {southBankVisual} from './south-bank-visuals.js';
 // Original repo-native vector illustrations. They depict only a broad setting,
 // not evidence that an unbuilt institution, a survivor or a future event exists.
@@ -15,7 +16,7 @@ export function sceneArt(state, cellId, { ending = false } = {}) {
     }
     if (stations.length) return { file: 'river-station-stopped.svg', alt: 'D4曾经建成的河港测站已经停运。原站房、水尺、码头和旧记录仍保留，窗门与值班牌被木条封起，桌灯熄灭；这里不是从未建站的河岸。', caption: '场景示意 · 测站停运，历史仍在' };
   }
-  if (cellId === 'F6' && has('branch')) return { file: 'river-room.svg', alt: `${cellId}的记录室，窗外是河流与仍在运转的测量建筑。`, caption: '场景示意 · 现存测量机构' };
+  if (cellId === 'F6') { const port=farPortVisual(state); if(port) return {file:port.file,alt:port.alt,caption:`场景示意 · ${port.label}`,captionBelow:true}; }
   if (cellId === 'D5') {
     const south=southBankVisual(state);
     if (south.aid.exists) {

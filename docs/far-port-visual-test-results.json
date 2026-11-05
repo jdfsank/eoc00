@@ -1,0 +1,358 @@
+{
+  "checks": [
+    {
+      "name": "390px branch map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px branch rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px branch public AVG uses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "390px branch caption does not cover historical objects",
+      "passed": true
+    },
+    {
+      "name": "390px failed map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px failed rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px failed public AVG uses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "390px failed caption does not cover historical objects",
+      "passed": true
+    },
+    {
+      "name": "390px locked map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px locked rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px locked public AVG uses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "390px locked caption does not cover historical objects",
+      "passed": true
+    },
+    {
+      "name": "390px pending map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px pending rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px y31 map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px y31 rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px y32 map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px y32 rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px y40 map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px y40 rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px verified map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px verified rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px no-branch map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px no-branch rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px no-branch public AVG uses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "390px no-branch caption does not cover historical objects",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px branch-closed map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px branch-closed rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px records-closed map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "390px records-closed rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "390px20/30/40 branch history changes visibly",
+      "passed": true
+    },
+    {
+      "name": "390px pending is distinguishable from failed and fulfilled",
+      "passed": true
+    },
+    {
+      "name": "390px independent closure states do not hide the other carrier",
+      "passed": true
+    },
+    {
+      "name": "390px200% failed readable status has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% failure scene caption remains below image",
+      "passed": true
+    },
+    {
+      "name": "390px200% fulfilled readable status has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px branch map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px branch rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px branch public AVG uses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "320px branch caption does not cover historical objects",
+      "passed": true
+    },
+    {
+      "name": "320px failed map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px failed rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px failed public AVG uses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "320px failed caption does not cover historical objects",
+      "passed": true
+    },
+    {
+      "name": "320px locked map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px locked rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px locked public AVG uses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "320px locked caption does not cover historical objects",
+      "passed": true
+    },
+    {
+      "name": "320px pending map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px pending rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px y31 map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px y31 rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px y32 map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px y32 rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px y40 map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px y40 rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px verified map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px verified rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px no-branch map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px no-branch rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px no-branch public AVG uses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "320px no-branch caption does not cover historical objects",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px branch-closed map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px branch-closed rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px records-closed map names the actual branch and review history",
+      "passed": true
+    },
+    {
+      "name": "320px records-closed rendering does not change any world fact",
+      "passed": true
+    },
+    {
+      "name": "320px20/30/40 branch history changes visibly",
+      "passed": true
+    },
+    {
+      "name": "320px pending is distinguishable from failed and fulfilled",
+      "passed": true
+    },
+    {
+      "name": "320px independent closure states do not hide the other carrier",
+      "passed": true
+    },
+    {
+      "name": "320px200% failed readable status has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% failure scene caption remains below image",
+      "passed": true
+    },
+    {
+      "name": "320px200% fulfilled readable status has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Actual locking preserves failed-record scene, with no early new check",
+      "passed": true
+    },
+    {
+      "name": "Actual submitted contract is pending, not a working group",
+      "passed": true
+    },
+    {
+      "name": "At31 the same branch coexists with pending paperwork",
+      "passed": true
+    },
+    {
+      "name": "At32 the actual outcome adds the new check and retains failure",
+      "passed": true
+    },
+    {
+      "name": "Viewing and recovery do not rewrite the old failure or crisis",
+      "passed": true
+    },
+    {
+      "name": "Camera and layer controls preserve all source facts",
+      "passed": true
+    },
+    {
+      "name": "Reload preserves fulfilled history and exact pixels",
+      "passed": true
+    },
+    {
+      "name": "No runtime or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Engine-generated F6 branch, failed review, pending contract and actual32/40 recovery routes. Closed-service fixtures are legal boundary states, not a new shutdown action. At32/40 there is no public AVG entry: screenshots are real world maps and separately labelled asset previews, not a playable visit. Chromium390/320 and200% text, not physical-device certification."
+}
