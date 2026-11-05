@@ -1,0 +1,63 @@
+// Original repo-native SVG art. Keep the same room and station geometry in
+// every state: a lost maintenance service is not an erased historical place.
+import fs from 'node:fs/promises';
+
+export function stationSceneSvg(condition) {
+ const stopped=condition==='stopped',worn=condition==='maintenance',short=condition==='understaffed';
+ const filled=stopped?0:worn||short?2:4;
+ const slots=Array.from({length:4},(_,n)=>{
+  const x=656+(n%2)*108,y=88+Math.floor(n/2)*61;
+  return n<filled
+   ? `<path d="M${x} ${y}h81v40h-81Z" fill="#D3C5A0"/><path d="M${x+13} ${y+12}h53M${x+13} ${y+23}h39" stroke="#7C8873" stroke-width="4"/>`
+   : `<path d="M${x} ${y}h81v40h-81Z" fill="#2B4944" stroke="#7C8873" stroke-width="3"/><path d="M${x+14} ${y+20}h53" stroke="#52695C" stroke-width="3"/>`;
+ }).join('');
+ const roofPatch=worn?'<path d="M400 133l34 9-12 13-34-10Z" fill="#A79772"/><path d="M396 139l29 8" stroke="#6D715A" stroke-width="3"/>':'';
+ const shutters=stopped?'<path d="M365 185h29v30h-29ZM418 187h24v55h-24Z" fill="#7A7B62"/><path d="M364 189l31 20M365 211l29-20M417 194l27 37M417 231l27-37" stroke="#B3A37A" stroke-width="5"/>':'<path d="M368 185h11v25h-11ZM386 185h8v25h-8ZM422 188h14v46h-14Z" fill="#D8C69B"/>';
+ const closedNotice=stopped?'<path d="M649 169l213-65M655 109l207 66" stroke="#233F3C" stroke-width="17"/><path d="M649 169l213-65M655 109l207 66" stroke="#A3926C" stroke-width="9"/>':'';
+ const lamp=stopped?'<path d="M704 304h24v32h-24Z" fill="#697263"/><path d="M712 288h8v17h-8Z" fill="#29453F"/>':'<path d="M704 304h24v32h-24Z" fill="#C8AE71"/><path d="M712 278h8v27h-8Z" fill="#E5C87C"/>';
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" shape-rendering="crispEdges" data-station-state="${condition}">
+<title>D4 river station: ${condition}</title>
+<desc>Original illustrative record-room scene. The same station, river gauge, pier and archive shelf remain in every state. Duty-board occupancy is a visual metaphor, not a numerical staffing forecast. ${stopped?'The station is closed, records remain, and the lamp is unlit.':worn?'Roof repairs and empty duty slots accompany an operating but undermaintained station.':short?'Empty duty slots show missing maintenance staff; the roof is not depicted as broken.':'The station operates, with records and a full duty board. Operation does not imply free access or averted flood damage.'}</desc>
+<rect width="1000" height="500" fill="#163337"/>
+<path d="M0 48h1000v15H0ZM0 324h1000v15H0Z" fill="#365854"/>
+<path d="M0 365h1000v135H0Z" fill="#29453F"/>
+<path d="M0 425l1000-37v26L0 455Z" fill="#3E584B"/>
+<!-- The building and gauge never disappear after a shutdown. -->
+<path d="M68 38h505v312H68Z" fill="#B2A47C"/>
+<path d="M83 53h475v281H83Z" fill="#203E3C"/>
+<path d="M98 68h445v249H98Z" fill="#ACBDA8"/>
+<path d="M98 161l63-50 71 27 56-42 94 47 60-31 101 58v147H98Z" fill="#708B79"/>
+<path d="M98 224l445-35v128H98Z" fill="#4B7975"/>
+<path d="M98 250l445-31M140 291l310-23" stroke="#97B3A2" stroke-width="8"/>
+<path d="M340 242l159-13v16l-159 14Z" fill="#A19370"/>
+<path d="M351 250v45M477 238v43" stroke="#4E6254" stroke-width="9"/>
+<path d="M350 162h104v80H350Z" fill="#8D967D"/>
+<path d="M350 162h58v80h-58Z" fill="#B9AF8C"/>
+<path d="M340 163l61-44 66 43-58 15Z" fill="#365E59"/>
+<path d="M340 163l69 14v9l-69-15ZM409 177l58-15v9l-58 15Z" fill="#254843"/>
+${roofPatch}${shutters}
+<path d="M502 143h15v144h-15Z" fill="#284740"/>
+<path d="M506 148h7v134h-7Z" fill="#D2C5A2"/>
+<path d="M506 159h7M506 179h7M506 199h7M506 219h7M506 239h7M506 259h7M506 279h7" stroke="#657B69" stroke-width="4"/>
+<path d="M269 59v270" stroke="#284B44" stroke-width="12"/>
+<!-- Physical work records remain, even when duty slots become empty. -->
+<path d="M632 66h255v155H632Z" fill="#A3916B"/>
+<path d="M644 78h231v131H644Z" fill="#233F3C"/>
+${slots}${closedNotice}
+<path d="M607 245h323v111H607Z" fill="#1D3C39"/>
+<path d="M619 260h299v9H619ZM619 338h299v10H619Z" fill="#566D5D"/>
+<path d="M634 276h23v57h-23ZM667 288h20v45h-20ZM704 281h29v52h-29ZM772 276h22v57h-22ZM808 284h30v49h-30ZM860 278h35v55h-35Z" fill="#AAA080"/>
+<path d="M170 360l575-20 141 95-622 38Z" fill="#A79B77"/>
+<path d="M264 473l622-38v28l-622 32Z" fill="#4D5A48"/>
+<path d="M340 366l177-5 69 58-189 10Z" fill="#CDBF99"/>
+${stopped?'<path d="M350 375l176-5 50 42-177 9Z" fill="#8C8E73"/><path d="M440 366l10 58" stroke="#CEC39D" stroke-width="7"/>':'<path d="M375 380l123-4M388 393l123-4M401 407l123-5" stroke="#7B8064" stroke-width="4"/>'}
+<path d="M692 329h48v66h-48ZM680 329h73v11h-73Z" fill="#28483F"/>
+${lamp}
+${worn?'<path d="M552 383l51-5 27 24-53 6Z" fill="#8B9578"/><path d="M562 389l43 7" stroke="#5D715F" stroke-width="4"/>':''}
+</svg>`;
+}
+
+for(const condition of ['active','maintenance','understaffed','stopped']){
+ await fs.writeFile(`public/assets/river-station-${condition}.svg`,stationSceneSvg(condition));
+ console.log(`D4 ${condition}: original 1000 × 500 SVG generated`);
+}

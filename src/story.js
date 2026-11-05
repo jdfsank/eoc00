@@ -1,4 +1,4 @@
-import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary } from './simulation.js';
+import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals } from './simulation.js';
 
 export const chapters = {
   0: {
@@ -111,16 +111,18 @@ function riverportScene(state, base, chapter, actorId) {
         : station.open
           ? '今天，河港的水位记录仍向居民开放。苏岚把一张刚抄好的记录放在桌上。'
           : '今天，河港测站仍在运转，收费牌也还挂着。苏岚把一枚磨损的铜币放回孩子掌心。';
+    const upkeep = operatingStation && station.maintenance < 1 ? ' 维护经费不足，值班与修缮都有缺口；它仍在运转，不能把失修写成从未建成。' : '';
     return {
       ...base,
       speaker: operatingStation && state.flags.successor ? '苏岚 · 河港的维护者' : base.speaker,
       body: [
         (actorId === 'protagonist'
           ? '旧现实的档案里，苏岚是免费学校的教师。你记得她讲课时总开着窗。'
-          : '你读到主角保存的旧现实档案：苏岚曾是免费学校的教师。那间开着窗的教室来自主角的见证，不是你的亲历记忆。') + current,
+          : '你读到主角保存的旧现实档案：苏岚曾是免费学校的教师。那间开着窗的教室来自主角的见证，不是你的亲历记忆。') + current + upkeep,
         actorId === 'protagonist'
           ? '“那是你记得的我。”她看着那页不属于自己记忆的履历，“它没有写下我今天愿意承担什么。你要先问我。”'
           : '“那是档案里的我。”她看着那页不属于自己记忆的履历，“你认识的是现在的我。这张纸没有写下我今天愿意承担什么，你要先问我。”',
+        ...getActorRefusals(state, actorId, 'D4').map(r => r.reason),
         '远方的水位报告出现共同偏差。是否曾建成河港测站，不会替所有地方消除风险。现在仍能独立复核或争取地方停闸权，但你的介入名额有限。',
       ],
     };
@@ -130,7 +132,7 @@ function riverportScene(state, base, chapter, actorId) {
     ...base,
     body: [
       operatingStation
-        ? '四十年的报告还剩最后一册。河港测站仍在运转，下一次维护不会因为你写完报告就自动发生。'
+        ? '四十年的报告还剩最后一册。河港测站仍在运转，下一次维护不会因为你写完报告就自动发生。' + (station.maintenance < 1 ? ' 站内仍有维护缺口，继续亮灯不等于已经修复。' : '')
         : station
           ? '四十年的报告还剩最后一册。河港曾有一座测站，如今已经停运。移交文件里，不能把关着的门写成仍在提供的服务。'
           : '四十年的报告还剩最后一册。河港测站一直没有建成。空白也是这段历史的一部分，不能在最后一页补写成成功。',
@@ -172,11 +174,12 @@ export function sceneFor(state, cell, actorId = 'protagonist') {
   if (cell === 'D5') {
     const teaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind) && i.active && i.maintenance > 0);
     const hadTeaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind));
-    const aid = state.institutions.some(i => i.cellId === cell && i.kind === 'mutual' && i.active && i.maintenance > 0);
+    const aidGroups = state.institutions.filter(i => i.cellId === cell && i.kind === 'mutual' && i.active && i.maintenance > 0);
+    const aid = aidGroups.length > 0;
     return { ...base, title: '把第一声钟传到岸边', speaker: '南岸 · 居民代表', body: [
       teaching ? '南岸把长凳围在读尺架旁，没有高大的观测塔，也没有封闭校舍。轮值学员在河水边对照当天的刻度。' : hadTeaching ? '南岸的读尺围座还在，带教已经停下。留下长凳和旧水尺，不等于现在仍有人值班。' : '南岸居民正在商量，第一声险情钟报要怎样传到更远的岸边。说好一项计划，还不等于已经有人长期值班。',
       aid ? '互助仓的轮值表列着不按缴费名单分配物资的承诺。居民仍要核对经费、人手和下一次交班。' : '居民愿意商量互助，却不愿被要求承担无穷的免费劳动。培训和经费必须与责任一起到来。',
-      ...(state.year >= 30 ? [crisisRecollection(state)] : []),
+      ...(state.year >= 30 ? [crisisRecollection(state), aidGroups.some(i => i.startYear > 23) ? '后来的互助轮值正在支持眼前的生计；账册把这些新支出与第23年的损失分开，没有用新增物资改写过去的损失。' : '现在可以增设互助轮值来支持接下来的生计，但第23年的清点册不会重新结算。扩容人手也不是第二层洪水保护。'] : []),
     ], question: '这个地方的能力也会进入每一年的历史。' };
   }
   return { ...base, title: cell === 'D5' ? '把第一声钟传到岸边' : '不应消失的底稿', speaker: cell === 'D5' ? '南岸 · 居民代表' : '北岸 · 档案保管员', body: cell === 'D5' ? ['南岸没有高大的观测塔，只有一口大家轮流敲的钟。', '居民愿意组成互助队，却不愿再被要求承担无穷的免费劳动。培训和经费必须与责任一起到来。'] : ['有些纸页没有被抄进正式报告。它们不是正确答案，却记录着一种不同的判断。', '保存旧档不能让过去重新生效，但可以在所有人相信同一个数字时，提醒他们再看一眼。'], question: '这个地方的能力也会进入每一年的历史。' };

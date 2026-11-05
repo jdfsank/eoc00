@@ -10,3 +10,5 @@
 2026-11-05新增原创代码绘制SVG：`archive-desk.svg`（档案与协商）、`open-shore.svg`（无已建机构的河岸）、`local-classroom.svg`（现存教学场所）。`scene-art.js`按真实机构选择，现有`river-room.svg`仅用于活动测站/分站，结局使用档案桌。地图状态叠加符号与五档调色均为项目原生几何和配置，不引入外部游戏素材。
 
 本轮新增原创`props/riverside_school.svg/.png`与`props/bank_reading_circle.svg/.png`，不是交接包素材。两者64×80逻辑尺寸、锚点32,64，透明RGBA PNG为128×160，可用`node scripts/render-learning-art.mjs`重复生成。`local-classroom.svg`改为露天敞棚，`bank-reading.svg`为南岸无顶围座，`closed-*`保留旧址但没有学员。
+
+本轮D4近景为原创代码绘制SVG，使用同一间记录室和测站轮廓表达运转、维护不足、人手缺口、停运；由`node scripts/render-station-art.mjs`生成。未建站与失败档案仍使用档案桌，恢复服务后才切回运转图。它们是状态示意，不是额外剧情事件或实际损失证据。

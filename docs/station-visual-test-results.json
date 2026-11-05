@@ -1,0 +1,92 @@
+{
+  "checks": [
+    {
+      "name": "unbuilt chooses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "Unbuilt state explicitly does not imply station construction",
+      "passed": true
+    },
+    {
+      "name": "failed-archive chooses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "Failed construction remains archive-only",
+      "passed": true
+    },
+    {
+      "name": "active chooses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "maintenance chooses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "Maintenance scene explicitly remains operational",
+      "passed": true
+    },
+    {
+      "name": "understaffed chooses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "Missing successor does not imply a ruined station",
+      "passed": true
+    },
+    {
+      "name": "stopped chooses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "Stopped scene retains the historical place and records",
+      "passed": true
+    },
+    {
+      "name": "Stopped scene and prose agree on closure",
+      "passed": true
+    },
+    {
+      "name": "Scene reload does not change the world",
+      "passed": true
+    },
+    {
+      "name": "Scene reload preserves stopped history",
+      "passed": true
+    },
+    {
+      "name": "restored chooses the matching scene",
+      "passed": true
+    },
+    {
+      "name": "Restoring the station removes the obsolete closure scene",
+      "passed": true
+    },
+    {
+      "name": "D4 closure does not imply F6 closure",
+      "passed": true
+    },
+    {
+      "name": "320px / 200% stopped scene has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "200% historical caption stays below the picture without clipping",
+      "passed": true
+    },
+    {
+      "name": "Last stopped-station choice remains reachable",
+      "passed": true
+    },
+    {
+      "name": "No script or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "The understaffed year-11 scene is inspected directly from a real simulation state; this test does not add or claim a playback intervention route."
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "scope": "Real Chromium UI at390×844 and320×568/200% text. No physical-device certification.",
+  "checks": [
+    {
+      "name": "forged-null-source-relocation import is rejected with a visible explanation",
+      "passed": true
+    },
+    {
+      "name": "forged-null-source-relocation import preserves current world and autosave",
+      "passed": true
+    },
+    {
+      "name": "missing-recruitment-date import is rejected with a visible explanation",
+      "passed": true
+    },
+    {
+      "name": "missing-recruitment-date import preserves current world and autosave",
+      "passed": true
+    },
+    {
+      "name": "successor refusal uses the actual recruitment history",
+      "passed": true
+    },
+    {
+      "name": "successor Linche cannot select forced relocation",
+      "passed": true
+    },
+    {
+      "name": "successor refusal explains no action or investigation payment",
+      "passed": true
+    },
+    {
+      "name": "successor viewing refusal leaves actual state unchanged",
+      "passed": true
+    },
+    {
+      "name": "successor refusal links to the actual recruitment source",
+      "passed": true
+    },
+    {
+      "name": "risk refusal uses the actual recruitment history",
+      "passed": true
+    },
+    {
+      "name": "risk Linche cannot select forced relocation",
+      "passed": true
+    },
+    {
+      "name": "risk refusal explains no action or investigation payment",
+      "passed": true
+    },
+    {
+      "name": "risk viewing refusal leaves actual state unchanged",
+      "passed": true
+    },
+    {
+      "name": "risk refusal links to the actual recruitment source",
+      "passed": true
+    },
+    {
+      "name": "Protagonist still has the consequential relocation choice",
+      "passed": true
+    },
+    {
+      "name": "Protagonist relocation still applies real institutional and relationship costs",
+      "passed": true
+    },
+    {
+      "name": "True previous-version Linche contract is not silently restricted",
+      "passed": true
+    },
+    {
+      "name": "True old relocation still resolves with the original result",
+      "passed": true
+    },
+    {
+      "name": "first aid clearly distinguishes first warehouse from added shifts",
+      "passed": true
+    },
+    {
+      "name": "first late contract promises future livelihoods, not old flood protection",
+      "passed": true
+    },
+    {
+      "name": "first locked review states accurate no-stacking and no-history-rewrite terms",
+      "passed": true
+    },
+    {
+      "name": "first actual late aid creates a new productive shift at31",
+      "passed": true
+    },
+    {
+      "name": "first actual late aid preserves the complete historical crisis and year23 board",
+      "passed": true
+    },
+    {
+      "name": "first ending distinguishes present aid from irreversible loss",
+      "passed": true
+    },
+    {
+      "name": "expand aid clearly distinguishes first warehouse from added shifts",
+      "passed": true
+    },
+    {
+      "name": "expand late contract promises future livelihoods, not old flood protection",
+      "passed": true
+    },
+    {
+      "name": "expand locked review states accurate no-stacking and no-history-rewrite terms",
+      "passed": true
+    },
+    {
+      "name": "expand actual late aid creates a new productive shift at31",
+      "passed": true
+    },
+    {
+      "name": "expand actual late aid preserves the complete historical crisis and year23 board",
+      "passed": true
+    },
+    {
+      "name": "expand ending distinguishes present aid from irreversible loss",
+      "passed": true
+    },
+    {
+      "name": "320px200% refusal and remaining choices do not overflow",
+      "passed": true
+    },
+    {
+      "name": "Remaining Linche action stays reachable at320px200%",
+      "passed": true
+    },
+    {
+      "name": "Expanded aid contract remains within320px200%",
+      "passed": true
+    },
+    {
+      "name": "No browser or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}
