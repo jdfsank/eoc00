@@ -11,6 +11,12 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Install CJK fonts for visual checks
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y fonts-noto-cjk
+          fc-match 'Noto Sans CJK SC' | grep -q 'NotoSansCJK'
+          fc-match 'Noto Serif CJK SC' | grep -q 'NotoSerifCJK'
       - run: npm ci
       - run: npm test
       - run: npm run build

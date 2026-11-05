@@ -79,3 +79,10 @@ Phaser 3负责地图和相机，DOM负责中文阅读与操作。`simulation.js`
 ## 第十轮：合同阅读与人物/地方来源
 
 `action-preview.js`把免费合同阅读与实际取证、锁定分开，沿用当前规则的真实证据与概率；未知正文和随机结果不公开。`sulanIdentity`核对个人行动、兑现及原岗位，不把技术继任旗标当作苏岚任职。`local-crisis-record.js`只展示已存的地域清点，D5图旁与世界卡独立呈现历史页签，地域档案链接原始世界记录而不改归属。模拟与存档内核逐字保持cf36be7a。见[阅读与来源边界](READING_ASSUMPTIONS.md)。
+
+## 第十一轮：历史阅读与只读回访
+
+- `channel-history.js`读取已存snapshot，不调用模拟；相邻0/10/20/30/40页按通道分别校验，缺页/重复页保持未知，十进制文本差不暴露浮点尾差。
+- `scene-visit.js`独立于AVG与调查session，F6直接复用当前事实的sceneArt/farPortVisual。main的visit屏幕没有取证、锁定或提交控件；save仅增加该UI白名单及F6选择保护，导入仍回世界。
+- `fee-history.js`对charter-lapsed提供只读来源注释，核验行动、兑现、机构与历史记录，原文/ID/模拟均不改。D4第20年对白复用同一核实说明。
+- 两个独立浏览器套件：`test:history-reading`（4206）与`test:scene-visit`（4207），均加入顺序aggregate。

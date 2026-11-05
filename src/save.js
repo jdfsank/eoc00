@@ -1,6 +1,6 @@
 import { CHANNELS, EVIDENCE, WINDOWS, getActions, getActors, traceEvent, validateState, usesLegacyCrisisRules, usesTradeoffs, getInvestigation } from './simulation.js';
 
-const SCREENS = ['world', 'list', 'avg', 'choice', 'confirm', 'window', 'playback', 'review', 'archive', 'trace', 'ending', 'settings'];
+const SCREENS = ['world', 'list', 'avg', 'visit', 'choice', 'confirm', 'window', 'playback', 'review', 'archive', 'trace', 'ending', 'settings'];
 const FILTERS = ['all', 'action', 'history', 'risk'];
 const isRecord = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 
@@ -53,6 +53,7 @@ export function normalizeUi(state, saved) {
   if (ui.screen === 'playback' && state.phase !== 'playback') ui.screen = state.phase === 'ended' ? 'ending' : 'review';
   if (['avg', 'choice', 'confirm'].includes(ui.screen) && state.phase !== 'planning') ui.screen = 'world';
   if (['choice', 'confirm'].includes(ui.screen) && !ui.choice) ui.screen = 'avg';
+  if (ui.screen === 'visit' && ui.selected !== 'F6') ui.screen = 'world';
   if (ui.screen === 'ending' && state.phase !== 'ended') ui.screen = 'world';
   if (ui.screen === 'trace' && !ui.traceId) ui.screen = 'archive';
   return ui;

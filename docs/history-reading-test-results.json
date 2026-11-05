@@ -1,0 +1,190 @@
+{
+  "scope": "Real Chromium390×844 and320×568/200%. Generated natural current and original-engine histories imported through the save UI; read-only archived channel comparisons and fee-provenance annotations.",
+  "checks": [
+    {
+      "name": "D4:politicsuses exact saved endpoints and net delta",
+      "passed": true
+    },
+    {
+      "name": "D4:economyuses exact saved endpoints and net delta",
+      "passed": true
+    },
+    {
+      "name": "D4:scienceuses exact saved endpoints and net delta",
+      "passed": true
+    },
+    {
+      "name": "D4:religionuses exact saved endpoints and net delta",
+      "passed": true
+    },
+    {
+      "name": "D4:last completed10→20 window shown",
+      "passed": true
+    },
+    {
+      "name": "D4:not current balance or per-action attribution",
+      "passed": true
+    },
+    {
+      "name": "D4:reload keeps world byte-identical",
+      "passed": true
+    },
+    {
+      "name": "D4:earlier0→10 remains readable",
+      "passed": true
+    },
+    {
+      "name": "F6:politicsuses exact saved endpoints and net delta",
+      "passed": true
+    },
+    {
+      "name": "F6:economyuses exact saved endpoints and net delta",
+      "passed": true
+    },
+    {
+      "name": "F6:scienceuses exact saved endpoints and net delta",
+      "passed": true
+    },
+    {
+      "name": "F6:religionuses exact saved endpoints and net delta",
+      "passed": true
+    },
+    {
+      "name": "F6:last completed10→20 window shown",
+      "passed": true
+    },
+    {
+      "name": "F6:not current balance or per-action attribution",
+      "passed": true
+    },
+    {
+      "name": "F6:reload keeps world byte-identical",
+      "passed": true
+    },
+    {
+      "name": "F6:earlier0→10 remains readable",
+      "passed": true
+    },
+    {
+      "name": "Missing saved decade remains a valid import",
+      "passed": true
+    },
+    {
+      "name": "Missing year10 never bridges0→20 or substitutescurrent",
+      "passed": true
+    },
+    {
+      "name": "Missing historical display does not repair snapshot",
+      "passed": true
+    },
+    {
+      "name": "Only missing channel isunknown;other valid channels remain exact",
+      "passed": true
+    },
+    {
+      "name": "Actual current task cost does not rewrite archived20-yearendpoint",
+      "passed": true
+    },
+    {
+      "name": "merchant:annotation has verified governance origin",
+      "passed": true
+    },
+    {
+      "name": "merchant:raw historic sentence remains untouched",
+      "passed": true
+    },
+    {
+      "name": "merchant:context does not assert a new successor decision",
+      "passed": true
+    },
+    {
+      "name": "merchant:actual build source link opens",
+      "passed": true
+    },
+    {
+      "name": "merchant:source navigation leaves world andhistory unchanged",
+      "passed": true
+    },
+    {
+      "name": "state:annotation has verified governance origin",
+      "passed": true
+    },
+    {
+      "name": "state:raw historic sentence remains untouched",
+      "passed": true
+    },
+    {
+      "name": "state:context does not assert a new successor decision",
+      "passed": true
+    },
+    {
+      "name": "state:actual build source link opens",
+      "passed": true
+    },
+    {
+      "name": "state:source navigation leaves world andhistory unchanged",
+      "passed": true
+    },
+    {
+      "name": "joint:annotation has verified governance origin",
+      "passed": true
+    },
+    {
+      "name": "joint:raw historic sentence remains untouched",
+      "passed": true
+    },
+    {
+      "name": "joint:context does not assert a new successor decision",
+      "passed": true
+    },
+    {
+      "name": "joint:actual build source link opens",
+      "passed": true
+    },
+    {
+      "name": "joint:source navigation leaves world andhistory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy-merchant:annotation has verified governance origin",
+      "passed": true
+    },
+    {
+      "name": "legacy-merchant:raw historic sentence remains untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy-merchant:context does not assert a new successor decision",
+      "passed": true
+    },
+    {
+      "name": "legacy-merchant:actual build source link opens",
+      "passed": true
+    },
+    {
+      "name": "legacy-merchant:source navigation leaves world andhistory unchanged",
+      "passed": true
+    },
+    {
+      "name": "Genuine renewal has no inventedyear16 decline annotation",
+      "passed": true
+    },
+    {
+      "name": "Year20actualAVG states charging began at opening",
+      "passed": true
+    },
+    {
+      "name": "320px200percent history has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200percent keyboard can open true fee source",
+      "passed": true
+    },
+    {
+      "name": "No browser or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

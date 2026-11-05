@@ -1,4 +1,5 @@
 import {getDecadeReview} from './decade-review.js';
+import {getFeeHistory} from './fee-history.js';
 import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets } from './simulation.js';
 
 export const chapters = {
@@ -199,6 +200,7 @@ function riverportScene(state, base, chapter, actorId) {
   };
   if (chapter === 20) {
     const facts = personalHistory(state), identity = sulanIdentity(state);
+    const fees = getFeeHistory(state);
     const current = facts.forced
       ? `第${facts.forced.resolvedYear}年的迁任已经把苏岚带到东岸。桌上是她寄来的信，不是她重新回到河港任职的证明。`
       : !station
@@ -230,6 +232,7 @@ function riverportScene(state, base, chapter, actorId) {
         (actorId === 'protagonist'
           ? '旧现实的档案里，苏岚是免费学校的教师。你记得她讲课时总开着窗。'
           : '你读到主角保存的旧现实档案：苏岚曾是免费学校的教师。那间开着窗的教室来自主角的见证，不是你的亲历记忆。') + current + upkeep,
+        operatingStation && !station.open ? fees?.summary : null,
         roleHistory,
         facts.forced
           ? '她在信里写道：“那份旧履历没有我的同意。学校多了一个岗位，也不能把迁任改称为我的选择。”'

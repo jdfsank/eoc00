@@ -1,0 +1,1304 @@
+{
+  "checks": [
+    {
+      "name": "390px unbuilt: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px branch: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px branch: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px branch: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px branch: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px branch: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px branch: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px branch: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px branch: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px branch: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px branch: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px failed: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px failed: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px failed: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px failed: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px failed: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px failed: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px failed: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px failed: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px failed: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px failed: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px locked: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px locked: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px locked: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px locked: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px locked: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px locked: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px locked: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px locked: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px locked: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px locked: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px pending: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px pending: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px pending: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px pending: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px pending: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px pending: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px pending: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px pending: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px pending: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px pending: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px y31: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px y31: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px y31: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px y31: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px y31: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px y31: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px y31: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px y31: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px y31: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px y31: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px y32: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px y32: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px y32: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px y32: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px y32: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px y32: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px y32: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px y32: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px y32: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px y32: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px y40: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px y40: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px y40: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px y40: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px y40: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px y40: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px y40: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px y40: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px y40: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px y40: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "390px pending/fulfilled/closed have distinct displayed illustrations",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: real entry is keyboard focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: full size text and page remain in bounds",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: source has reachable unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% y31: source resolves to original history without spending",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: real entry is keyboard focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: full size text and page remain in bounds",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: source has reachable unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% y32: source resolves to original history without spending",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: real entry is keyboard focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: full size text and page remain in bounds",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: source has reachable unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% y40: source resolves to original history without spending",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px branch: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px branch: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px branch: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px branch: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px branch: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px branch: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px branch: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px branch: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px branch: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px branch: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px failed: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px failed: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px failed: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px failed: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px failed: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px failed: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px failed: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px failed: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px failed: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px failed: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px locked: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px locked: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px locked: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px locked: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px locked: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px locked: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px locked: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px locked: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px locked: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px locked: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px pending: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px pending: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px pending: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px pending: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px pending: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px pending: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px pending: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px pending: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px pending: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px pending: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px y31: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px y31: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px y31: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px y31: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px y31: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px y31: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px y31: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px y31: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px y31: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px y31: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px y32: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px y32: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px y32: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px y32: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px y32: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px y32: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px y32: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px y32: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px y32: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px y32: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px y40: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px y40: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px y40: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px y40: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px y40: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px y40: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px y40: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px y40: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px y40: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px y40: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: visit is secondary and preserves one legal primary",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: visit focuses heading without creating investigation sessions",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: layout has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed: return leaves the year, institutions, drafts and RNG unchanged",
+      "passed": true
+    },
+    {
+      "name": "320px pending/fulfilled/closed have distinct displayed illustrations",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: real entry is keyboard focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: full size text and page remain in bounds",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: source has reachable unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% y31: source resolves to original history without spending",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: real entry is keyboard focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: full size text and page remain in bounds",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: source has reachable unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% y32: source resolves to original history without spending",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: real entry is keyboard focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: full size text and page remain in bounds",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: source has reachable unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% y40: source resolves to original history without spending",
+      "passed": true
+    },
+    {
+      "name": "Regional archive has a real read-only return to the current F6 scene",
+      "passed": true
+    },
+    {
+      "name": "Refreshing current visit preserves read-only screen, exact year and state",
+      "passed": true
+    },
+    {
+      "name": "Import safely returns to world without changing40-year facts",
+      "passed": true
+    },
+    {
+      "name": "Imported year40: public view uses exact current asset, alt and caption",
+      "passed": true
+    },
+    {
+      "name": "Imported year40: facts and year match saved state",
+      "passed": true
+    },
+    {
+      "name": "Imported year40: no investigation, commitment or annual progression controls",
+      "passed": true
+    },
+    {
+      "name": "Imported year40: only actual stored local sources are linked",
+      "passed": true
+    },
+    {
+      "name": "Imported year40: caption is below physical objects",
+      "passed": true
+    },
+    {
+      "name": "Imported year40: opening scene changes no world fact",
+      "passed": true
+    },
+    {
+      "name": "Ending can explicitly visit F6 even when the prior selection was D4",
+      "passed": true
+    },
+    {
+      "name": "Cross-region ending visit resets focus to the selected F6 instead of old D4",
+      "passed": true,
+      "detail": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 200,
+        "zoom": 1.5344827586206897
+      }
+    },
+    {
+      "name": "World event can cross from D4 to current F6 without pretending to move an actor",
+      "passed": true
+    },
+    {
+      "name": "Live world camera resets after teardown when a visit changes region",
+      "passed": true,
+      "detail": {
+        "oldView": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        },
+        "eventReturn": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 200,
+          "zoom": 1.5344827586206897
+        }
+      }
+    },
+    {
+      "name": "Same-place visit preserves a manually dragged camera rather than forcing a reset",
+      "passed": true,
+      "detail": {
+        "draggedView": {
+          "focus": true,
+          "centerX": 267,
+          "centerY": 189,
+          "zoom": 1.5344827586206897
+        },
+        "samePlaceReturn": {
+          "focus": true,
+          "centerX": 267,
+          "centerY": 189,
+          "zoom": 1.5344827586206897
+        }
+      }
+    },
+    {
+      "name": "Cross-place and same-place camera visits preserve every world field",
+      "passed": true
+    },
+    {
+      "name": "A visit pauses active playback rather than advancing underneath the image",
+      "passed": true
+    },
+    {
+      "name": "Actual locking does not prematurely change the read-only scene or spend on viewing",
+      "passed": true
+    },
+    {
+      "name": "Actual year30 visit follows committed timing only",
+      "passed": true
+    },
+    {
+      "name": "Actual year30 revisit does not alter source outcomes or investigations",
+      "passed": true
+    },
+    {
+      "name": "Actual year31 visit follows committed timing only",
+      "passed": true
+    },
+    {
+      "name": "Actual year31 revisit does not alter source outcomes or investigations",
+      "passed": true
+    },
+    {
+      "name": "Actual year32 visit follows committed timing only",
+      "passed": true
+    },
+    {
+      "name": "Actual year32 revisit does not alter source outcomes or investigations",
+      "passed": true
+    },
+    {
+      "name": "Actual year40 ending leads to fulfilled on-site history, not a fabricated AVG",
+      "passed": true
+    },
+    {
+      "name": "All actual visits retain original failure and frozen crisis",
+      "passed": true
+    },
+    {
+      "name": "Unsupported B4 does not acquire a fictional local visit",
+      "passed": true
+    },
+    {
+      "name": "Actual import still accepts cross-table duplicate IDs and preserves the old history",
+      "passed": true
+    },
+    {
+      "name": "Imported visit suppresses only the ambiguous source and retains every unambiguous link",
+      "passed": true
+    },
+    {
+      "name": "Colliding queued event does not invent a new scene or leak another place or future result",
+      "passed": true
+    },
+    {
+      "name": "Imported unambiguous source resolved:event:action:0:protagonist:D4:build_state:training:branch opens actual history without leaked collision",
+      "passed": true
+    },
+    {
+      "name": "Imported unambiguous source action:20:protagonist:F6:independent_review opens actual history without leaked collision",
+      "passed": true
+    },
+    {
+      "name": "Imported unambiguous source action:30:protagonist:F6:complete_review opens actual history without leaked collision",
+      "passed": true
+    },
+    {
+      "name": "Refresh preserves imported facts and keeps the colliding source suppressed",
+      "passed": true
+    },
+    {
+      "name": "Runtime sources remained frozen during the entire visit suite",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Public, independent read-only F6 visit through actual UI entries at31/32/40, including real year-by-year fulfilment, source links, refresh/import and unchanged world/investigation data. Unbuilt and cancelled paths are natural engine routes; separately closed services are legal display boundaries, not new shutdown actions. Chromium390/320 and200% text/grayscale, not physical-device certification.",
+  "runtimeHash": {
+    "before": "951fc5d4e5f523267e0cc7bf50069b31ec6ca64f3608d4d58f078d50f39620d4",
+    "after": "951fc5d4e5f523267e0cc7bf50069b31ec6ca64f3608d4d58f078d50f39620d4"
+  }
+}

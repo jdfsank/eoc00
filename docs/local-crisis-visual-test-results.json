@@ -413,7 +413,15 @@
       "passed": true
     },
     {
+      "name": "390px200% loss: keyboard traversal starts from the AVG heading",
+      "passed": true
+    },
+    {
       "name": "390px200% loss: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% loss: keyboard outline is visible and stays inside the viewport",
       "passed": true
     },
     {
@@ -429,7 +437,15 @@
       "passed": true
     },
     {
+      "name": "390px200% zero: keyboard traversal starts from the AVG heading",
+      "passed": true
+    },
+    {
       "name": "390px200% zero: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% zero: keyboard outline is visible and stays inside the viewport",
       "passed": true
     },
     {
@@ -445,7 +461,15 @@
       "passed": true
     },
     {
+      "name": "390px200% legacy: keyboard traversal starts from the AVG heading",
+      "passed": true
+    },
+    {
       "name": "390px200% legacy: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% legacy: keyboard outline is visible and stays inside the viewport",
       "passed": true
     },
     {
@@ -873,7 +897,15 @@
       "passed": true
     },
     {
+      "name": "320px200% loss: keyboard traversal starts from the AVG heading",
+      "passed": true
+    },
+    {
       "name": "320px200% loss: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% loss: keyboard outline is visible and stays inside the viewport",
       "passed": true
     },
     {
@@ -889,7 +921,15 @@
       "passed": true
     },
     {
+      "name": "320px200% zero: keyboard traversal starts from the AVG heading",
+      "passed": true
+    },
+    {
       "name": "320px200% zero: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% zero: keyboard outline is visible and stays inside the viewport",
       "passed": true
     },
     {
@@ -905,7 +945,15 @@
       "passed": true
     },
     {
+      "name": "320px200% legacy: keyboard traversal starts from the AVG heading",
+      "passed": true
+    },
+    {
       "name": "320px200% legacy: source control has visible, unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% legacy: keyboard outline is visible and stays inside the viewport",
       "passed": true
     },
     {
@@ -1466,5 +1514,191 @@
     }
   ],
   "errors": [],
-  "scope": "Real year23 local settlement and independent current D5 services. Grayscale archive markers describe recorded loss, recorded zero and unknown old details; no population, injury or building damage is inferred. Closed-service and 0.0001 precision cases are legal display boundaries, not newly added actions or claimed natural outcomes. Only public AVG entries are exercised; world and regional archives cover every affected place. Four-region source links retain the actual shared record and its unmodified narrative. Chromium390/320 and200% text; not physical-device certification."
+  "scope": "Real year23 local settlement and independent current D5 services. Grayscale archive markers describe recorded loss, recorded zero and unknown old details; no population, injury or building damage is inferred. Closed-service and 0.0001 precision cases are legal display boundaries, not newly added actions or claimed natural outcomes. Only public AVG entries are exercised; world and regional archives cover every affected place. Four-region source links retain the actual shared record and its unmodified narrative. Chromium390/320 and200% text; not physical-device certification.",
+  "assetDelay": {
+    "milliseconds": 0,
+    "requests": 0
+  },
+  "focusObservations": [
+    {
+      "width": 390,
+      "name": "loss",
+      "rect": {
+        "x": 37,
+        "y": 371.3125,
+        "width": 316,
+        "height": 102,
+        "top": 371.3125,
+        "right": 353,
+        "bottom": 473.3125,
+        "left": 37
+      },
+      "scrollX": 0,
+      "scrollY": 1608,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "active": true,
+      "unobscured": true,
+      "focusVisible": true,
+      "outline": {
+        "style": "solid",
+        "width": 3,
+        "offset": 3
+      },
+      "scrollMarginBlock": "8px",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", system-ui, sans-serif"
+    },
+    {
+      "width": 390,
+      "name": "zero",
+      "rect": {
+        "x": 37,
+        "y": 371.3125,
+        "width": 316,
+        "height": 102,
+        "top": 371.3125,
+        "right": 353,
+        "bottom": 473.3125,
+        "left": 37
+      },
+      "scrollX": 0,
+      "scrollY": 1608,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "active": true,
+      "unobscured": true,
+      "focusVisible": true,
+      "outline": {
+        "style": "solid",
+        "width": 3,
+        "offset": 3
+      },
+      "scrollMarginBlock": "8px",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", system-ui, sans-serif"
+    },
+    {
+      "width": 390,
+      "name": "legacy",
+      "rect": {
+        "x": 37,
+        "y": 370.671875,
+        "width": 316,
+        "height": 102,
+        "top": 370.671875,
+        "right": 353,
+        "bottom": 472.671875,
+        "left": 37
+      },
+      "scrollX": 0,
+      "scrollY": 1775,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "active": true,
+      "unobscured": true,
+      "focusVisible": true,
+      "outline": {
+        "style": "solid",
+        "width": 3,
+        "offset": 3
+      },
+      "scrollMarginBlock": "8px",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", system-ui, sans-serif"
+    },
+    {
+      "width": 320,
+      "name": "loss",
+      "rect": {
+        "x": 37,
+        "y": 233.234375,
+        "width": 246,
+        "height": 102,
+        "top": 233.234375,
+        "right": 283,
+        "bottom": 335.234375,
+        "left": 37
+      },
+      "scrollX": 0,
+      "scrollY": 2024,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "active": true,
+      "unobscured": true,
+      "focusVisible": true,
+      "outline": {
+        "style": "solid",
+        "width": 3,
+        "offset": 3
+      },
+      "scrollMarginBlock": "8px",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", system-ui, sans-serif"
+    },
+    {
+      "width": 320,
+      "name": "zero",
+      "rect": {
+        "x": 37,
+        "y": 233.234375,
+        "width": 246,
+        "height": 102,
+        "top": 233.234375,
+        "right": 283,
+        "bottom": 335.234375,
+        "left": 37
+      },
+      "scrollX": 0,
+      "scrollY": 2072,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "active": true,
+      "unobscured": true,
+      "focusVisible": true,
+      "outline": {
+        "style": "solid",
+        "width": 3,
+        "offset": 3
+      },
+      "scrollMarginBlock": "8px",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", system-ui, sans-serif"
+    },
+    {
+      "width": 320,
+      "name": "legacy",
+      "rect": {
+        "x": 37,
+        "y": 232.78125,
+        "width": 246,
+        "height": 102,
+        "top": 232.78125,
+        "right": 283,
+        "bottom": 334.78125,
+        "left": 37
+      },
+      "scrollX": 0,
+      "scrollY": 2242,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "active": true,
+      "unobscured": true,
+      "focusVisible": true,
+      "outline": {
+        "style": "solid",
+        "width": 3,
+        "offset": 3
+      },
+      "scrollMarginBlock": "8px",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", system-ui, sans-serif"
+    }
+  ]
 }

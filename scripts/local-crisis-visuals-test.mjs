@@ -26,6 +26,12 @@ async function snap(name,selector='.local-crisis-history',mono=false){const targ
 async function source(record){await panel().locator('[data-action="trace"]').click();await page.locator('.crisis-history').waitFor();check(`${record.status} source link opens the real year23 record`,await page.evaluate(()=>window.afterwave.ui.traceId)==='crisis-impact'&&(await page.locator('.crisis-recorded-impact').innerText()).includes('第23年'));}
 try{
  browser=await chromium.launch({executablePath:await cb.executablePath(),args:cb.args,headless:true});page=await browser.newPage({viewport:{width:390,height:844}});page.on('pageerror',e=>report.errors.push(e.message));page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
+ // Optional network latency uses the real asset requests, without changing
+ // focus, scrolling, layout, or any assertion to accommodate the delay.
+ const assetDelay=Number(process.env.AFTERWAVE_TALLY_ASSET_DELAY_MS??0);
+ assert.ok(Number.isFinite(assetDelay)&&assetDelay>=0,'Asset delay must be nonnegative milliseconds');
+ report.assetDelay={milliseconds:assetDelay,requests:0};
+ if(assetDelay)await page.route('**/assets/**',async route=>{report.assetDelay.requests++;await new Promise(resolve=>setTimeout(resolve,assetDelay));await route.continue();});
  await page.addInitScript(()=>{const value=sessionStorage.getItem('afterwave.tally.fixture');if(value){localStorage.setItem('afterwave.save.v1',value);sessionStorage.removeItem('afterwave.tally.fixture');}});await page.goto('http://127.0.0.1:4205');await page.locator('canvas').waitFor();
  for(const width of [390,320]){
   await page.setViewportSize({width,height:width===390?844:568});const physical={},semantics={},markers={};
@@ -58,8 +64,18 @@ try{
    check(`${width}px200% ${name}: marker stays small and heading gets the full line`,await panel().locator('.crisis-tally-heading').evaluate(el=>{const icon=el.querySelector('img').getBoundingClientRect(),title=el.querySelector('h2').getBoundingClientRect(),box=el.getBoundingClientRect();return Math.abs(icon.width-48)<1&&title.top>=icon.bottom&&title.width>=box.width*.8;}));
    const record=getLocalCrisisRecord(state,'D5');await snap(`${width}-${name}-text200-tally`);
    if(record.recordId){
-    const button=panel().locator('[data-action="trace"]');await button.scrollIntoViewIfNeeded();await button.focus();
+    const button=panel().locator('[data-action="trace"]');
+    // AVG navigation focuses its heading. Traverse back to the source with a
+    // real keyboard event: programmatic focus after a pointer click does not
+    // enable :focus-visible and cannot verify the visible keyboard outline.
+    check(`${width}px200% ${name}: keyboard traversal starts from the AVG heading`,await page.locator('main h1').evaluate(el=>document.activeElement===el));
+    await button.scrollIntoViewIfNeeded();await page.keyboard.press('Shift+Tab');
+    const focus=await button.evaluate(el=>{const r=el.getBoundingClientRect(),style=getComputedStyle(el),hit=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return {rect:r.toJSON(),scrollX,scrollY,viewport:{width:innerWidth,height:innerHeight},active:document.activeElement===el,unobscured:hit===el||el.contains(hit),focusVisible:el.matches(':focus-visible'),outline:{style:style.outlineStyle,width:parseFloat(style.outlineWidth),offset:parseFloat(style.outlineOffset)},scrollMarginBlock:style.scrollMarginBlock,fontFamily:style.fontFamily};});
+    (report.focusObservations??=[]).push({width,name,...focus});
     check(`${width}px200% ${name}: source control has visible, unobscured keyboard focus`,await button.evaluate(el=>{const r=el.getBoundingClientRect(),top=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return document.activeElement===el&&(top===el||el.contains(top))&&r.height>=48&&r.top>=0&&r.bottom<=innerHeight;}));
+    const ring=focus.outline.width+Math.max(0,focus.outline.offset);
+    check(`${width}px200% ${name}: keyboard outline is visible and stays inside the viewport`,focus.focusVisible&&focus.outline.style==='solid'&&focus.outline.width>=3&&focus.rect.top-ring>=0&&focus.rect.bottom+ring<=focus.viewport.height&&focus.rect.left-ring>=0&&focus.rect.right+ring<=focus.viewport.width);
+    await page.screenshot({path:`${out}/round10-d5-${width}-${name}-text200-focus.png`});
     await page.keyboard.press('Enter');await page.locator('.crisis-history').waitFor();check(`${width}px200% ${name}: keyboard opens the real source without spending`,await page.evaluate(()=>window.afterwave.ui.traceId==='crisis-impact')&&await page.evaluate(()=>JSON.stringify(window.afterwave.state))===JSON.stringify(state));
    }
   }

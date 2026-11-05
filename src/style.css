@@ -28,3 +28,20 @@
 
 .local-crisis-history{margin:1rem 0;overflow-wrap:anywhere}.crisis-tally-heading{display:flex;align-items:center;gap:.75rem}.crisis-tally-heading img{width:3rem;height:auto;flex:none;image-rendering:pixelated}.crisis-tally-heading h2{font-size:1.125rem;margin:0;min-width:0}.local-crisis-history ul{padding-left:1.25rem}.local-crisis-history .text-button{white-space:normal;text-align:left}
 .large-text .crisis-tally-heading{flex-direction:column;align-items:flex-start}.large-text .crisis-tally-heading img{width:48px}
+
+/* Archived settlements are separate from the live four-channel balances. */
+.channel-history { margin-block:1.25rem; }
+.history-checkpoints { color:var(--muted); line-height:1.8; }
+.historical-channels { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.65rem; }
+.historical-channels>div { border:1px solid var(--line); padding:.75rem; min-width:0; }
+.historical-channels h4,.historical-channels p { margin:.2rem 0 .5rem; }
+.historical-channels p,.historical-channels strong { overflow-wrap:anywhere; }
+.channel-comparison { margin-block:1rem; }
+.earlier-channel-history>summary { cursor:pointer; padding:.6rem 0; }
+.scene-visit-sources { margin-block:1.5rem; }
+.scene-visit-sources button { display:block; text-align:left; }
+.large-text .historical-channels { grid-template-columns:1fr; }
+
+/* Leave room for the 3px focus outline plus its 3px offset when native
+   keyboard focus scrolls a control into view, including fractional pixels. */
+button,a,input,select,summary { scroll-margin-block:8px; }

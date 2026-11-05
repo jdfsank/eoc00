@@ -1,0 +1,591 @@
+{
+  "scope": "Deterministic 390px/200% legacy source-focus CI failure investigation and actual-source regression. Headless Chromium; not physical-device certification.",
+  "finding": "Missing-CJK fallback geometry plus integer native scrolling leaves 0.375px of the button clipped. Correct focus and center hit target remain intact. This is stable geometry, not a load/scroll-readiness race.",
+  "ciEvidence": {
+    "runId": "42031720536",
+    "jobId": "127259588814",
+    "artifactId": "13418400724",
+    "artifactSha256": "4ae1507d9604802a23ade488f967d411df8ebbc4eb9bb68fb689296e758ab2a9",
+    "failedCheck": "390px200% legacy: source control has visible, unobscured keyboard focus",
+    "ciAndReproductionTallyCropSize": [
+      358,
+      910
+    ],
+    "pixelIdentityClaimed": false
+  },
+  "redReproduction": {
+    "fontMode": "DejaVu Sans only, no CJK glyphs",
+    "viewport": [
+      390,
+      844
+    ],
+    "top": 784.375,
+    "bottom": 844.375,
+    "height": 60,
+    "scrollY": 745,
+    "active": true,
+    "unobscured": true,
+    "originalProgrammaticFocusVisible": false,
+    "subsequentAnimationFrames": [
+      {
+        "elapsedMs": 11.7,
+        "bottom": 844.375,
+        "scrollY": 745,
+        "originalPredicatePassed": false
+      },
+      {
+        "elapsedMs": 28.9,
+        "bottom": 844.375,
+        "scrollY": 745,
+        "originalPredicatePassed": false
+      },
+      {
+        "elapsedMs": 45.1,
+        "bottom": 844.375,
+        "scrollY": 745,
+        "originalPredicatePassed": false
+      },
+      {
+        "elapsedMs": 62.4,
+        "bottom": 844.375,
+        "scrollY": 745,
+        "originalPredicatePassed": false
+      },
+      {
+        "elapsedMs": 79.0,
+        "bottom": 844.375,
+        "scrollY": 745,
+        "originalPredicatePassed": false
+      }
+    ],
+    "realShiftTab": {
+      "bottom": 844.375,
+      "scrollY": 745,
+      "focusVisible": true,
+      "originalPredicatePassed": false
+    }
+  },
+  "changes": {
+    "runtime": "General button,a,input,select,summary scroll-margin-block:8px. The parent owns this change.",
+    "ci": "Official Ubuntu fonts-noto-cjk install plus Noto Sans/Serif CJK fc-match verification. The parent owns this change.",
+    "test": "Actual Shift+Tab from existing AVG heading focus, preserved original active/hit/min-height/top/bottom predicate verbatim, plus six heading and six visible-outline/bounds checks. Saves measured focus observations and viewport screenshots. Optional real asset-request delay.",
+    "noAddedTimingWaitsOrGeometryTolerance": true
+  },
+  "sourceHashSets": {
+    "frozen_after_scroll_margin": {
+      "src/main.js": "7d4471354caf87c93636c910b7196142d7ccc1ba80a9901f73e4b272c879c672",
+      "src/style.css": "4980864f2d4585ca74456de04366d7c85b6679c0ee6ae24ec1335d11e311a32c",
+      "src/scene-visit.js": "25d3c618e0dc0363fc730a18395c3b9c62c0884f59faf9fa7e5102da0216c370",
+      "scripts/local-crisis-visuals-test.mjs": "35b0655c854e9e787fec04a7b0a4daaad7d9f2eb3e38aaa1bd82dd032addbc7c"
+    }
+  },
+  "hashesUnchangedAcrossFinalRuns": true,
+  "finalRuns": [
+    {
+      "name": "normal",
+      "fontMode": "installed Noto Sans/Serif CJK",
+      "checks": 378,
+      "passed": 378,
+      "errors": [],
+      "assetDelay": {
+        "milliseconds": 0,
+        "requests": 0
+      },
+      "sourceHashSet": "frozen_after_scroll_margin",
+      "focusCases": [
+        {
+          "width": 390,
+          "case": "loss",
+          "top": 371.3125,
+          "bottom": 473.3125,
+          "height": 102,
+          "scrollY": 1608,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 390,
+          "case": "zero",
+          "top": 371.3125,
+          "bottom": 473.3125,
+          "height": 102,
+          "scrollY": 1608,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 390,
+          "case": "legacy",
+          "top": 370.671875,
+          "bottom": 472.671875,
+          "height": 102,
+          "scrollY": 1775,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "loss",
+          "top": 233.234375,
+          "bottom": 335.234375,
+          "height": 102,
+          "scrollY": 2024,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "zero",
+          "top": 233.234375,
+          "bottom": 335.234375,
+          "height": 102,
+          "scrollY": 2072,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "legacy",
+          "top": 232.78125,
+          "bottom": 334.78125,
+          "height": 102,
+          "scrollY": 2242,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        }
+      ]
+    },
+    {
+      "name": "no-cjk",
+      "fontMode": "DejaVu Sans only, no CJK glyphs",
+      "checks": 378,
+      "passed": 378,
+      "errors": [],
+      "assetDelay": {
+        "milliseconds": 0,
+        "requests": 0
+      },
+      "sourceHashSet": "frozen_after_scroll_margin",
+      "focusCases": [
+        {
+          "width": 390,
+          "case": "loss",
+          "top": 763,
+          "bottom": 823,
+          "height": 60,
+          "scrollY": 664,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 390,
+          "case": "zero",
+          "top": 763,
+          "bottom": 823,
+          "height": 60,
+          "scrollY": 664,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 390,
+          "case": "legacy",
+          "top": 776.375,
+          "bottom": 836.375,
+          "height": 60,
+          "scrollY": 753,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "loss",
+          "top": 254.3125,
+          "bottom": 314.3125,
+          "height": 60,
+          "scrollY": 1538,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "zero",
+          "top": 254.125,
+          "bottom": 314.125,
+          "height": 60,
+          "scrollY": 1535,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "legacy",
+          "top": 254.296875,
+          "bottom": 314.296875,
+          "height": 60,
+          "scrollY": 1602,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        }
+      ]
+    },
+    {
+      "name": "delayed-normal",
+      "fontMode": "installed Noto Sans/Serif CJK",
+      "checks": 378,
+      "passed": 378,
+      "errors": [],
+      "assetDelay": {
+        "milliseconds": 180,
+        "requests": 3251
+      },
+      "sourceHashSet": "frozen_after_scroll_margin",
+      "focusCases": [
+        {
+          "width": 390,
+          "case": "loss",
+          "top": 371.3125,
+          "bottom": 473.3125,
+          "height": 102,
+          "scrollY": 1608,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 390,
+          "case": "zero",
+          "top": 371.3125,
+          "bottom": 473.3125,
+          "height": 102,
+          "scrollY": 1608,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 390,
+          "case": "legacy",
+          "top": 370.671875,
+          "bottom": 472.671875,
+          "height": 102,
+          "scrollY": 1775,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "loss",
+          "top": 233.234375,
+          "bottom": 335.234375,
+          "height": 102,
+          "scrollY": 2024,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "zero",
+          "top": 233.234375,
+          "bottom": 335.234375,
+          "height": 102,
+          "scrollY": 2072,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "legacy",
+          "top": 232.78125,
+          "bottom": 334.78125,
+          "height": 102,
+          "scrollY": 2242,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        }
+      ]
+    },
+    {
+      "name": "delayed-no-cjk",
+      "fontMode": "DejaVu Sans only, no CJK glyphs",
+      "checks": 378,
+      "passed": 378,
+      "errors": [],
+      "assetDelay": {
+        "milliseconds": 180,
+        "requests": 3259
+      },
+      "sourceHashSet": "frozen_after_scroll_margin",
+      "focusCases": [
+        {
+          "width": 390,
+          "case": "loss",
+          "top": 763,
+          "bottom": 823,
+          "height": 60,
+          "scrollY": 664,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 390,
+          "case": "zero",
+          "top": 763,
+          "bottom": 823,
+          "height": 60,
+          "scrollY": 664,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 390,
+          "case": "legacy",
+          "top": 776.375,
+          "bottom": 836.375,
+          "height": 60,
+          "scrollY": 753,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "loss",
+          "top": 254.3125,
+          "bottom": 314.3125,
+          "height": 60,
+          "scrollY": 1538,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "zero",
+          "top": 254.125,
+          "bottom": 314.125,
+          "height": 60,
+          "scrollY": 1535,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        },
+        {
+          "width": 320,
+          "case": "legacy",
+          "top": 254.296875,
+          "bottom": 314.296875,
+          "height": 60,
+          "scrollY": 1602,
+          "active": true,
+          "unobscured": true,
+          "focusVisible": true,
+          "outline": {
+            "style": "solid",
+            "width": 3,
+            "offset": 3
+          },
+          "outlineInsideViewport": true
+        }
+      ]
+    }
+  ],
+  "negativeControls": [
+    {
+      "control": "occlusion",
+      "exitCode": 1,
+      "failure": "390px200% legacy: source control has visible, unobscured keyboard focus",
+      "active": true,
+      "unobscured": false,
+      "focusVisible": true,
+      "top": 370.671875,
+      "bottom": 472.671875,
+      "errors": []
+    },
+    {
+      "control": "wrongfocus",
+      "exitCode": 1,
+      "failure": "390px200% legacy: source control has visible, unobscured keyboard focus",
+      "active": false,
+      "unobscured": true,
+      "focusVisible": false,
+      "top": 370.671875,
+      "bottom": 472.671875,
+      "errors": []
+    }
+  ],
+  "mainRegressionReport": "playtest-output/round10-local-crisis-visual-results.json",
+  "mainArtifacts": "Restored the readable normal-font 180ms-delay run after fallback verification. All final suites use real CSS, no injected margin.",
+  "noCjkReproduction": {
+    "prerequisites": "Linux Fontconfig and the DejaVu Sans regular/bold fonts, supplied by Ubuntu fonts-dejavu-core. No system fonts are changed.",
+    "commands": [
+      "profile=$(mktemp -d /tmp/afterwave-no-cjk.XXXXXX)",
+      "mkdir -p \"$profile/font\" \"$profile/cache\"",
+      "ln -s /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf \"$profile/font/DejaVuSans.ttf\"",
+      "ln -s /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf \"$profile/font/DejaVuSans-Bold.ttf\"",
+      "printf '<?xml version=\"1.0\"?><!DOCTYPE fontconfig SYSTEM \"fonts.dtd\"><fontconfig><dir>%s/font</dir><cachedir>%s/cache</cachedir><config></config></fontconfig>\\n' \"$profile\" \"$profile\" > \"$profile/fonts.conf\"",
+      "FONTCONFIG_FILE=\"$profile/fonts.conf\" fc-match sans-serif",
+      "FONTCONFIG_FILE=\"$profile/fonts.conf\" fc-list :lang=zh",
+      "FONTCONFIG_FILE=\"$profile/fonts.conf\" node scripts/local-crisis-visuals-test.mjs",
+      "FONTCONFIG_FILE=\"$profile/fonts.conf\" AFTERWAVE_TALLY_ASSET_DELAY_MS=180 node scripts/local-crisis-visuals-test.mjs"
+    ],
+    "expectedFontPreflight": "fc-match names DejaVuSans.ttf; fc-list :lang=zh returns no entries. The fixed suite passes; reverting only scroll-margin-block reproduces the original failure."
+  },
+  "verificationBoundary": "These hashes cover the focus investigation only. Any later runtime edit needs its own relevant regression; this report does not claim a later aggregate or remote CI result."
+}
