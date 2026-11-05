@@ -1,0 +1,212 @@
+{
+  "rules": {
+    "planning": "tradeoffs-v1",
+    "handoff": "handoff-v1",
+    "coverage": "coverage-v1"
+  },
+  "seedRange": [
+    0,
+    99
+  ],
+  "notes": [
+    "Fixed deterministic samples are regression evidence, not proof of balance or estimated population probabilities.",
+    "Construction-failure seeds are reported separately; they are excluded from renewal cohorts, not silently rescued or scored as a completed route.",
+    "Each completed route is replayed with both terminal policies; prior actions and crisis damage are identical.",
+    "The no-station route has local school authorization but no riverport cooperation, so withdrawal and sharing deliberately differ."
+  ],
+  "results": [
+    {
+      "route": "build_joint → renew_charter → independent_review",
+      "seedsConsidered": 100,
+      "constructionFailed": 31,
+      "completedRuns": 69,
+      "successfulReviews": 69,
+      "failedReviews": 0,
+      "zeroDamage": 69,
+      "worstDamage": 0,
+      "endings": {
+        "share_power": {
+          "positive": 69,
+          "negative": 0,
+          "titles": {
+            "许多人签署的历史": 69
+          }
+        },
+        "withdraw": {
+          "positive": 69,
+          "negative": 0,
+          "titles": {
+            "没有唯一守夜人": 69
+          }
+        }
+      },
+      "meanDamage": 0
+    },
+    {
+      "route": "build_joint → renew_charter → train_network",
+      "seedsConsidered": 100,
+      "constructionFailed": 31,
+      "completedRuns": 69,
+      "successfulReviews": 0,
+      "failedReviews": 0,
+      "zeroDamage": 0,
+      "worstDamage": 0.6195,
+      "endings": {
+        "share_power": {
+          "positive": 0,
+          "negative": 69,
+          "titles": {
+            "纸上的共同作者": 69
+          }
+        },
+        "withdraw": {
+          "positive": 0,
+          "negative": 69,
+          "titles": {
+            "交班后的空椅子": 69
+          }
+        }
+      },
+      "meanDamage": 0.6195
+    },
+    {
+      "route": "build_state → renew_charter → independent_review",
+      "seedsConsidered": 100,
+      "constructionFailed": 20,
+      "completedRuns": 80,
+      "successfulReviews": 60,
+      "failedReviews": 20,
+      "zeroDamage": 60,
+      "worstDamage": 0.6559,
+      "endings": {
+        "share_power": {
+          "positive": 60,
+          "negative": 20,
+          "titles": {
+            "许多人签署的历史": 60,
+            "纸上的共同作者": 20
+          }
+        },
+        "withdraw": {
+          "positive": 60,
+          "negative": 20,
+          "titles": {
+            "没有唯一守夜人": 60,
+            "交班后的空椅子": 20
+          }
+        }
+      },
+      "meanDamage": 0.164
+    },
+    {
+      "route": "build_state → renew_charter → train_network",
+      "seedsConsidered": 100,
+      "constructionFailed": 20,
+      "completedRuns": 80,
+      "successfulReviews": 0,
+      "failedReviews": 0,
+      "zeroDamage": 0,
+      "worstDamage": 0.6559,
+      "endings": {
+        "share_power": {
+          "positive": 0,
+          "negative": 80,
+          "titles": {
+            "纸上的共同作者": 80
+          }
+        },
+        "withdraw": {
+          "positive": 0,
+          "negative": 80,
+          "titles": {
+            "交班后的空椅子": 80
+          }
+        }
+      },
+      "meanDamage": 0.6559
+    },
+    {
+      "route": "build_merchant → renew_charter → independent_review",
+      "seedsConsidered": 100,
+      "constructionFailed": 15,
+      "completedRuns": 85,
+      "successfulReviews": 59,
+      "failedReviews": 26,
+      "zeroDamage": 59,
+      "worstDamage": 0.7769,
+      "endings": {
+        "share_power": {
+          "positive": 59,
+          "negative": 26,
+          "titles": {
+            "许多人签署的历史": 59,
+            "纸上的共同作者": 26
+          }
+        },
+        "withdraw": {
+          "positive": 59,
+          "negative": 26,
+          "titles": {
+            "没有唯一守夜人": 59,
+            "交班后的空椅子": 26
+          }
+        }
+      },
+      "meanDamage": 0.2376
+    },
+    {
+      "route": "build_merchant → renew_charter → train_network",
+      "seedsConsidered": 100,
+      "constructionFailed": 15,
+      "completedRuns": 85,
+      "successfulReviews": 0,
+      "failedReviews": 0,
+      "zeroDamage": 0,
+      "worstDamage": 0.7769,
+      "endings": {
+        "share_power": {
+          "positive": 0,
+          "negative": 85,
+          "titles": {
+            "纸上的共同作者": 85
+          }
+        },
+        "withdraw": {
+          "positive": 0,
+          "negative": 85,
+          "titles": {
+            "交班后的空椅子": 85
+          }
+        }
+      },
+      "meanDamage": 0.7769
+    },
+    {
+      "route": "preserve_records → fund_school → independent_review (no station)",
+      "seedsConsidered": 100,
+      "constructionFailed": 0,
+      "completedRuns": 100,
+      "successfulReviews": 100,
+      "failedReviews": 0,
+      "zeroDamage": 100,
+      "worstDamage": 0,
+      "endings": {
+        "share_power": {
+          "positive": 0,
+          "negative": 100,
+          "titles": {
+            "纸上的共同作者": 100
+          }
+        },
+        "withdraw": {
+          "positive": 100,
+          "negative": 0,
+          "titles": {
+            "没有唯一守夜人": 100
+          }
+        }
+      },
+      "meanDamage": 0
+    }
+  ]
+}

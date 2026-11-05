@@ -12,3 +12,6 @@
 
 /* Shared five-band scale also remains legible without color and at 200% text. */
 .heat-legend{display:flex;flex-wrap:wrap;gap:.35rem .65rem;padding:.6rem .85rem 0;color:var(--muted);font-size:.65rem;line-height:1.4}.heat-legend span{display:inline-flex;align-items:center;gap:.25rem;white-space:nowrap}.heat-legend i{display:inline-block;width:1.2em;height:.75em;border:1px solid #b6c7ac66}.institution-status{padding:.45rem .65rem;border-left:3px solid var(--gold);background:#213a34;font-size:.85rem;line-height:1.5}
+/* Large-text reading takes priority over decorative caption overlays. */
+.large-text .scene-art>span{position:relative;bottom:auto;left:auto;display:block;padding:.5rem .625rem;background:var(--panel)}
+.large-text .scene-art:after{display:none}

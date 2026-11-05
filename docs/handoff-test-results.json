@@ -1,0 +1,86 @@
+{
+  "scope": "Headless Chromium, 390×844 and 320×568, plus 200% text. Not physical-device certification.",
+  "checks": [
+    {
+      "name": "avoided year30 narrative acknowledges its actual crisis",
+      "passed": true
+    },
+    {
+      "name": "avoided recollection and diagnosis do not change world history",
+      "passed": true
+    },
+    {
+      "name": "contained year30 narrative acknowledges its actual crisis",
+      "passed": true
+    },
+    {
+      "name": "contained recollection and diagnosis do not change world history",
+      "passed": true
+    },
+    {
+      "name": "disaster year30 narrative acknowledges its actual crisis",
+      "passed": true
+    },
+    {
+      "name": "disaster recollection and diagnosis do not change world history",
+      "passed": true
+    },
+    {
+      "name": "All three year30 consequence narratives differ",
+      "passed": true
+    },
+    {
+      "name": "Prepared handoff preview names training people, authorization and a different checking site",
+      "passed": true
+    },
+    {
+      "name": "Locked policy review uses the same three-part readiness",
+      "passed": true
+    },
+    {
+      "name": "Actual year40 shared ending rewards preserved training rather than counting it as zero",
+      "passed": true
+    },
+    {
+      "name": "Ending separates people, authorization and independent checking instead of a numeric threshold",
+      "passed": true
+    },
+    {
+      "name": "Riverport trust does not silently authorize distant trainees",
+      "passed": true
+    },
+    {
+      "name": "respected agreement history gets its own voice",
+      "passed": true
+    },
+    {
+      "name": "forced agreement history gets its own voice",
+      "passed": true
+    },
+    {
+      "name": "Real previous-version save clearly retains its original ending rules",
+      "passed": true
+    },
+    {
+      "name": "Previous-version prepared route is not silently rescored",
+      "passed": true
+    },
+    {
+      "name": "New handoff contract has no horizontal overflow at320",
+      "passed": true
+    },
+    {
+      "name": "Long consequence and readiness prose remains within320 at200% text",
+      "passed": true
+    },
+    {
+      "name": "Large caption stays below illustration without overlap",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

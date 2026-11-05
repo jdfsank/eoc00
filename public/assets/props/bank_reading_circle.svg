@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges">
+  <title>South-bank water-reading circle</title>
+  <desc>Original open-air prototype teaching point: low benches, a shared record board, reeds and portable water rulers. Ground anchor 32,64. No permanent classroom or observatory.</desc>
+  <polygon points="32,54 54,64 32,76 10,64" fill="#233C3B"/>
+  <polygon points="32,56 51,64 32,73 13,64" fill="#6F8170"/>
+  <polygon points="31,57 41,62 31,67 21,62" fill="#233C3B"/>
+  <polygon points="31,55 42,60 31,65 20,60" fill="#B5A37B"/>
+  <polygon points="27,57 32,55 37,58 32,61" fill="#E0D6B7"/>
+  <path d="M31 57v3" stroke="#65766C"/>
+  <path d="M24 63v5M38 63v5" stroke="#796B50" stroke-width="3"/>
+  <polygon points="13,58 23,53 27,55 17,60" fill="#C2B18A" stroke="#233C3B" stroke-width="2"/>
+  <polygon points="12,66 24,72 28,70 16,64" fill="#C2B18A" stroke="#233C3B" stroke-width="2"/>
+  <polygon points="38,72 51,66 47,64 34,70" fill="#C2B18A" stroke="#233C3B" stroke-width="2"/>
+  <path d="M45 41v22M50 45v20" stroke="#233C3B" stroke-width="5"/>
+  <path d="M45 41v22" stroke="#E0D6B7" stroke-width="3"/>
+  <path d="M50 45v20" stroke="#B5A37B" stroke-width="3"/>
+  <path d="M44 46h3M44 52h3M44 58h3M49 49h3M49 56h3M49 62h3" stroke="#796B50" stroke-width="1"/>
+  <path d="M11 63V49M8 58V47M14 59V46" fill="none" stroke="#839286" stroke-width="2"/>
+  <path d="M8 47v-4M14 46v-5" stroke="#B6A778" stroke-width="3"/>
+</svg>

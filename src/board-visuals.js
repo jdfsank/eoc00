@@ -21,7 +21,7 @@ export function heatColor(channel, value) {
   return (HEAT_PALETTES[channel] || HEAT_PALETTES.science)[heatBandIndex(value)];
 }
 
-const PROP = { station: 'water_station', branch: 'water_station', training: 'observatory', school: 'observatory', mutual: 'warehouse', archive: 'archive', independent: 'archive' };
+const PROP = { station: 'water_station', branch: 'water_station', training: 'riverside_school', school: 'riverside_school', mutual: 'warehouse', archive: 'archive', independent: 'archive' };
 const PRIORITY = ['station', 'branch', 'school', 'training', 'warning', 'mutual', 'archive', 'independent'];
 
 // This is a view of existing simulation facts. It must not award warning
@@ -44,5 +44,6 @@ export function institutionVisual(state, cellId) {
   if (restricted) parts.push('收费门槛');
   if (unverified) parts.push('校验尚未成功');
   else if (recordsOnly && !halted) parts.push('档案不等于预警服务');
-  return { institutionId: institution.id, kind: institution.kind, prop: PROP[institution.kind] || null, status, halted, degraded, staffingGap, restricted, recordsOnly, unverified, label: parts.join(' · ') };
+  const prop = ['school', 'training'].includes(institution.kind) && cellId === 'D5' ? 'bank_reading_circle' : PROP[institution.kind] || null;
+  return { institutionId: institution.id, kind: institution.kind, prop, status, halted, degraded, staffingGap, restricted, recordsOnly, unverified, label: parts.join(' · ') };
 }

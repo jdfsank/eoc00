@@ -1,4 +1,4 @@
-import { getWarningCoverage, usesLegacyCrisisRules } from './simulation.js';
+import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary } from './simulation.js';
 
 export const chapters = {
   0: {
@@ -59,8 +59,27 @@ export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   return base;
 }
 
+export function crisisRecollection(state) {
+  if (state.year < 23) return null;
+  const crisis = state.flags.crisis;
+  if (crisis?.status === 'averted' && crisis.damage === 0) return '第23年的共同失效被拦在错误指令发出之前。那份及时改写的水位报告仍留在桌上。避免了这次记录中的损失，不等于洪水不再上涨，也不等于下一次总会有人替地方纠错。';
+  if (crisis?.status === 'contained') return `第23年的清点册还没有收起。${state.flags.veto ? '停闸与地方保护' : '地方保护'}减轻了冲击，但剩余损失已经发生。今天恢复的产出，不能把那一页改写成从未付出代价。`;
+  if (crisis?.status === 'disaster') return '第23年的共同标准失效留下了不可逆的地方损失。报告里那一页没有被撕掉；即使后来新办学校、恢复产出或签署交班方案，也不能把已经发生的伤害抹去。';
+  return '这份档案没有完整记录第23年的结算结果。你不能用今天的机构与产出，替过去补写一场没有证据的胜利或灾难。';
+}
+function currentConsent(state) {
+  if (state.flags.trust === false) return state.flags.forced
+    ? '苏岚从东岸寄来的信没有替迁任补上同意：“岗位可以写进命令，我的签名不能。谈下一次交班之前，先承认上一次是谁替我作了决定。”'
+    : '河港仍明确拒绝当前安排。现有机构可以列出人手，却不能替居民在交班协议上签名。';
+  if (state.flags.respected) return '当年那份旧现实履历旁，留着苏岚自己写下的选择。她愿意继续核对证据，但要求你记住：合作来自现在的同意，不来自她在另一段人生里的职位。';
+  if (state.flags.freeWarning) return '居民传讯与值班协议还在执行。苏岚愿意讨论下一次交班：“把维护责任和拒绝错误指令的权利，一起写在我们能看见的地方。”';
+  if (state.flags.renewed) return '公开章程仍是苏岚愿意继续商量的根据。她指着当年写下的继任条款：“不是只有你留下来才有人会做；但你也不能把我们的名字当成现成的签字。”';
+  return '苏岚还没有承诺替你接过全部责任。听过报告不等于同意交班，现存的人手也不能替尚未作出的合作决定签名。';
+}
+
 function riverportScene(state, base, chapter, actorId) {
   const station = state.institutions.find(i => i.kind === 'station' && i.cellId === 'D4');
+  const operatingStation = station?.active && station.maintenance > 0;
   const training = state.institutions.some(i => i.kind === 'training');
   const archive = state.institutions.some(i => i.kind === 'archive' && i.cellId === 'D4');
   const failedBuild = state.events.some(e => e.actionId?.startsWith('build_') && e.status === 'failed');
@@ -77,7 +96,7 @@ function riverportScene(state, base, chapter, actorId) {
           ? '建站协议没能兑现，小型档案站保住了零散的记录。没有最初的测站，也没有随它出发的学徒。林澈把未完成的名单放回桌上。'
           : '过去十年，没有河港测站投入运转，也没有从这里出发的培训链。林澈仍在整理旧水尺和地方记录。',
       '“我愿意去看看你说的那些年代。”她停顿了一下，“但如果我的离开，只是把没有做完的工作留给下一个人，这不叫自由。”',
-      station?.active
+      operatingStation
         ? '续约会占用你的十年名额。去东岸资助学校，也许能培养更多维护者；请她入局，则必须面对原岗位的空缺。'
         : '现在可以重建地方测站，或另行资助东岸的夜校。重建不会补回错过的培训链；请林澈入局，也不能代替当地建设。',
     ],
@@ -87,14 +106,14 @@ function riverportScene(state, base, chapter, actorId) {
       ? archive
         ? '今天，苏岚把小型档案站里的散页重新编号。建站未成留下的记录还在，河港却没有正在运转的水文站。'
         : '今天，苏岚以居民的身份来到河港。这里没有建成水文站，也没有属于她的测站管理岗位。'
-      : !station.active
+      : !operatingStation
         ? '今天，河港测站的门关着。苏岚站在停运告示旁，问那些已经留下的记录要由谁保管。'
         : station.open
           ? '今天，河港的水位记录仍向居民开放。苏岚把一张刚抄好的记录放在桌上。'
           : '今天，河港测站仍在运转，收费牌也还挂着。苏岚把一枚磨损的铜币放回孩子掌心。';
     return {
       ...base,
-      speaker: station?.active && state.flags.successor ? '苏岚 · 河港的维护者' : base.speaker,
+      speaker: operatingStation && state.flags.successor ? '苏岚 · 河港的维护者' : base.speaker,
       body: [
         (actorId === 'protagonist'
           ? '旧现实的档案里，苏岚是免费学校的教师。你记得她讲课时总开着窗。'
@@ -106,20 +125,23 @@ function riverportScene(state, base, chapter, actorId) {
       ],
     };
   }
-  const teaching = state.institutions.some(i => ['training', 'school'].includes(i.kind) && i.active);
+  const teaching = state.institutions.some(i => ['training', 'school'].includes(i.kind) && i.active && i.maintenance > 0);
   return {
     ...base,
     body: [
-      station?.active
+      operatingStation
         ? '四十年的报告还剩最后一册。河港测站仍在运转，下一次维护不会因为你写完报告就自动发生。'
         : station
           ? '四十年的报告还剩最后一册。河港曾有一座测站，如今已经停运。移交文件里，不能把关着的门写成仍在提供的服务。'
           : '四十年的报告还剩最后一册。河港测站一直没有建成。空白也是这段历史的一部分，不能在最后一页补写成成功。',
+      crisisRecollection(state),
       teaching
-        ? '当地仍有人教授读尺与记录。知识已有承接者，但能否独立纠错，还要看现存网络与居民的信任。'
+        ? '沿岸仍有人教授读尺与记录。知识已有承接者，但能否独立纠错，还要看现存网络与居民的信任。'
         : '没有现存的培训点或学校替你承接教学。新的制度可以写下责任，却不能凭空创造已经受训的人手。',
+      currentConsent(state),
+      ...(usesHandoffRules(state) ? ['交班清单分开列着人手、校验与授权。' + handoffSummary(state, 'share_power')] : []),
       '监察顾问把印章推到你面前：“集中维护需要持续承担责任。共享纠错权，需要当地真正拥有纠错的能力。退出也不是把钥匙丢在桌上。”',
-    ],
+    ].filter(Boolean),
   };
 }
 
@@ -128,18 +150,34 @@ export function sceneFor(state, cell, actorId = 'protagonist') {
   const base = riverportScene(state, chapters[chapter], chapter, actorId);
   if (cell === 'D4') return base;
   if (cell === 'E4') {
-    const teaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind) && i.active);
+    const hadTeaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind));
+    const teaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind) && i.active && i.maintenance > 0);
     return { ...base, title: '不是一座站，是一群会读水的人', speaker: '东岸 · 居民代表', body: [
-      teaching ? '教室没有墙。学员坐在河堤上，拿着不同年代的水尺互相核对。' : '河堤上还没有持续运作的课堂。居民带来旧水尺，希望有人把读尺和记录的方法教给更多人。',
-      '“我们可以记住标准，也可以学会什么时候不相信它。”更多培训会增加独立判断的能力，也会消耗当地有限的经费。',
+      teaching ? '河堤上的学棚向两侧敞开，长凳可以挪到读尺架旁。学员把旧水尺与当天的记录放在一起练习。' : hadTeaching ? '河堤上的旧学棚和读尺架仍在，课已经停下。没有人值班的地方，不能在交班表里写成正在带教。' : '河堤上还没有持续运作的课堂。居民带来旧水尺，希望有人把读尺和记录的方法教给更多人。',
+      teaching ? '“会读尺，不等于手里已经有另一套可靠的记录。”带教者指着轮值表。培训可以留下承接人手，谁授权他们接班、由谁提供异源校验，还要分别说清楚。' : '居民把还未排满的轮值表递过来。先让人学会、愿意接手，再谈谁来提供另一套校验记录；一纸移交不会让空位自动坐满。',
+      ...(state.year >= 30 ? [crisisRecollection(state)] : []),
     ], question: '给学校一次机会，也意味着本窗口把有限的名额留在这里。' };
   }
   if (cell === 'F6') {
-    const branch = state.institutions.some(i => i.kind === 'branch' && i.cellId === cell && i.active);
+    const hadBranch = state.institutions.some(i => i.kind === 'branch' && i.cellId === cell);
+    const branch = state.institutions.some(i => i.kind === 'branch' && i.cellId === cell && i.active && i.maintenance > 0);
+    const corrected = state.year >= 23 && state.flags.crisis?.status === 'averted' && state.flags.crisis.damage === 0;
+    const incomplete = state.year >= 23 && state.flags.crisis?.status === 'averted' && !Number.isFinite(state.flags.crisis.damage);
     return { ...base, title: '远方的水声', speaker: branch ? '远港 · 分站值班人' : '远港 · 船工代表', body: [
-      branch ? '柜子里保存着河港协议的抄本。它经过东岸的课堂，又被带到了这座远方港口。' : '河港的培训链没有在这里建成分站。船工仍用自己的记录辨认支流水位，也收到了一份来自外地的统一标准。',
-      '“他们说，照着上游的标准做就不会错。”对方指向两条并不吻合的曲线，“可我们的支流，从来不在那份表里。”',
+      branch ? '柜子里保存着河港协议的抄本。它经过东岸的课堂，又被带到了这座远方港口。' : hadBranch ? '原来的远港分站已经停运。留下的柜子仍装着旧记录，但门口没有新的值班表。' : '河港的培训链没有在这里建成分站。船工仍用自己的记录辨认支流水位，也收到了一份来自外地的统一标准。',
+      corrected ? '对方把改写前后的两条曲线并排留下：“那次复核让支流进入了记录。下一次，也要允许我们指出这里不一样。”' : incomplete ? '两条曲线旁缺了一页结算记录。对方没有把空白填成定论：“先把能够确认的经过留下，再继续核对。”' : '“他们说，照着上游的标准做就不会错。”对方指向两条并不吻合的曲线，“可我们的支流，从来不在那份表里。”',
+      ...(state.year >= 30 ? [crisisRecollection(state)] : []),
     ], question: '真正可靠的网络，必须允许一个节点说：这里不一样。' };
+  }
+  if (cell === 'D5') {
+    const teaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind) && i.active && i.maintenance > 0);
+    const hadTeaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind));
+    const aid = state.institutions.some(i => i.cellId === cell && i.kind === 'mutual' && i.active && i.maintenance > 0);
+    return { ...base, title: '把第一声钟传到岸边', speaker: '南岸 · 居民代表', body: [
+      teaching ? '南岸把长凳围在读尺架旁，没有高大的观测塔，也没有封闭校舍。轮值学员在河水边对照当天的刻度。' : hadTeaching ? '南岸的读尺围座还在，带教已经停下。留下长凳和旧水尺，不等于现在仍有人值班。' : '南岸居民正在商量，第一声险情钟报要怎样传到更远的岸边。说好一项计划，还不等于已经有人长期值班。',
+      aid ? '互助仓的轮值表列着不按缴费名单分配物资的承诺。居民仍要核对经费、人手和下一次交班。' : '居民愿意商量互助，却不愿被要求承担无穷的免费劳动。培训和经费必须与责任一起到来。',
+      ...(state.year >= 30 ? [crisisRecollection(state)] : []),
+    ], question: '这个地方的能力也会进入每一年的历史。' };
   }
   return { ...base, title: cell === 'D5' ? '把第一声钟传到岸边' : '不应消失的底稿', speaker: cell === 'D5' ? '南岸 · 居民代表' : '北岸 · 档案保管员', body: cell === 'D5' ? ['南岸没有高大的观测塔，只有一口大家轮流敲的钟。', '居民愿意组成互助队，却不愿再被要求承担无穷的免费劳动。培训和经费必须与责任一起到来。'] : ['有些纸页没有被抄进正式报告。它们不是正确答案，却记录着一种不同的判断。', '保存旧档不能让过去重新生效，但可以在所有人相信同一个数字时，提醒他们再看一眼。'], question: '这个地方的能力也会进入每一年的历史。' };
 }

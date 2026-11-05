@@ -71,3 +71,16 @@ test('resident warning uses a bell, not a fictional station', () => {
   const visual = institutionVisual(state, 'D4');
   assert.equal(visual.prop, null); assert.equal(visual.kind, 'warning'); assert.match(visual.label, /居民钟报/);
 });
+
+test('education uses low local learning places, never the observatory silhouette', () => {
+  for (const kind of ['training', 'school']) {
+    for (const [cellId, prop] of [['E4', 'riverside_school'], ['D5', 'bank_reading_circle']]) {
+      const state = createRun();
+      state.institutions.push({ id: 'learning', kind, cellId, active: true, maintenance: 1, open: true, startYear: 7 });
+      assert.equal(institutionVisual(state, cellId).prop, prop);
+      state.institutions[0].active = false;
+      assert.equal(institutionVisual(state, cellId).prop, prop, 'stopped learning keeps its own physical place');
+      assert.equal(institutionVisual(state, cellId).halted, true);
+    }
+  }
+});

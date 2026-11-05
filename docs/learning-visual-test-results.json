@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "name": "e4-before-learning uses its actual local scene",
+      "passed": true
+    },
+    {
+      "name": "Unbuilt E4 scene does not invent current pupils",
+      "passed": true
+    },
+    {
+      "name": "e4-training uses its actual local scene",
+      "passed": true
+    },
+    {
+      "name": "E4 scene is explicitly wall-free",
+      "passed": true
+    },
+    {
+      "name": "E4 illustration and prose both use the embankment",
+      "passed": true
+    },
+    {
+      "name": "e4-school uses its actual local scene",
+      "passed": true
+    },
+    {
+      "name": "d5-reading-circle uses its actual local scene",
+      "passed": true
+    },
+    {
+      "name": "D5 scene does not invent a roof",
+      "passed": true
+    },
+    {
+      "name": "Stopped learning preserves a marked physical place",
+      "passed": true
+    },
+    {
+      "name": "e4-stopped uses its actual local scene",
+      "passed": true
+    },
+    {
+      "name": "Stopped learning has no active class claim",
+      "passed": true
+    },
+    {
+      "name": "Layer and focus changes do not mutate the world",
+      "passed": true
+    },
+    {
+      "name": "New local props actually load",
+      "passed": true
+    },
+    {
+      "name": "320px / 200% map has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px / 200% scene has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "200% scene caption flows below the image without overlap or clipping",
+      "passed": true
+    },
+    {
+      "name": "Last E4 choice remains reachable",
+      "passed": true
+    },
+    {
+      "name": "No script or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "The stopped-classroom screenshot is a valid field-boundary fixture, not a new authored gameplay route."
+  ]
+}

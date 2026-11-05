@@ -19,3 +19,20 @@ test('scene geography and educational infrastructure choose different actual ill
 test('ending image records history without implying station construction or future events',()=>{
  const art=sceneArt(state([]),'D4',{ending:true});assert.equal(art.file,'archive-desk.svg');assert.match(art.alt,/已经发生/);
 });
+
+test('east-bank teaching stays wall-free and south-bank teaching has no roof',()=>{
+ for(const kind of ['training','school']){
+  const east=sceneArt(state([provider(kind,'E4')]),'E4');
+  assert.equal(east.file,'local-classroom.svg');assert.match(east.alt,/敞开河堤.*没有围墙/);assert.doesNotMatch(east.alt,/黑板|独立异源|成功复核/);
+  const south=sceneArt(state([provider(kind,'D5')]),'D5');
+  assert.equal(south.file,'bank-reading.svg');assert.match(south.alt,/没有屋顶与围墙/);
+ }
+ for(const kind of ['training','school']){
+  for(const place of ['E4','D5']){
+   const file=place==='D5'?'closed-bank-reading.svg':'closed-classroom.svg';
+   assert.equal(sceneArt(state([provider(kind,place,false)]),place).file,file);
+   assert.equal(sceneArt(state([provider(kind,place,true,0)]),place).file,file);
+   assert.match(sceneArt(state([provider(kind,place,false)]),place).alt,/没有正在上课的人/);
+  }
+ }
+});

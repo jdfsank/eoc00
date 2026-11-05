@@ -49,7 +49,7 @@ export function makeBoard(parent,onSelect,initialView=null){
  let center=initialView&&Number.isFinite(initialView.centerX)&&Number.isFinite(initialView.centerY)?{x:initialView.centerX,y:initialView.centerY}:null;
  const rememberCenter=()=>{if(scene){const camera=scene.cameras.main;center={x:camera.scrollX+camera.width/2,y:camera.scrollY+camera.height/2};}return center;};
  class World extends Phaser.Scene{
-  preload(){ for(const name of ['agent','archive','assembly_hall','observatory','temple','tree','warehouse','water_station']) this.load.image(name,`${import.meta.env.BASE_URL}assets/props/${name}.png`); }
+  preload(){ for(const name of ['agent','archive','assembly_hall','observatory','temple','tree','warehouse','water_station','riverside_school','bank_reading_circle']) this.load.image(name,`${import.meta.env.BASE_URL}assets/props/${name}.png`); }
   create(){ scene=this; this.layer=this.add.container(0,0); this.input.on('pointerdown',p=>{drag={x:p.x,y:p.y,cx:this.cameras.main.scrollX,cy:this.cameras.main.scrollY};});
    this.input.on('pointermove',p=>{if(p.isDown&&drag&&focus){this.cameras.main.scrollX=drag.cx-(p.x-drag.x)/this.cameras.main.zoom;this.cameras.main.scrollY=drag.cy-(p.y-drag.y)/this.cameras.main.zoom;rememberCenter();}});
    this.input.on('pointerup',p=>{if(!drag)return;const moved=Math.hypot(p.x-drag.x,p.y-drag.y);drag=null;if(moved<8){const w=this.cameras.main.getWorldPoint(p.x,p.y);const id=hitTile(w.x,w.y);if(id)onSelect(id);}});

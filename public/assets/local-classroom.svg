@@ -1,1 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" shape-rendering="crispEdges"><rect width="1000" height="500" fill="#183638"/><path fill="#34554f" d="M0 0h1000v360H0z"/><path fill="#b4a27b" d="M170 40h660v250H170z"/><path fill="#203e3b" d="M190 60h620v210H190z"/><path fill="none" stroke="#bcc9aa" stroke-width="6" d="M230 225h530M260 225v-120M300 199l95-60 70 28 100-67 155 75"/><path stroke="#c9c8a5" stroke-width="5" d="M277 85h80M415 85h56M520 85h90M652 85h90"/><path fill="#25433c" d="M0 360h1000v140H0z"/><path fill="#a99c78" d="M110 320h250l70 72H65zM580 320h250l70 72H535zM330 420h290l80 80H260z"/><path fill="#d2c5a2" d="M170 334h110l34 31H135zM640 334h110l34 31H605zM414 438h118l27 33H378z"/><path stroke="#716f55" stroke-width="5" d="M165 345h100M639 345h100M408 453h120"/><path fill="#425541" d="M80 392h330v18H80zM550 392h330v18H550z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" shape-rendering="crispEdges">
+<title>Learning together on the east-bank embankment</title>
+<desc>Original open-air scene. The river remains visible behind a wall-free shade shelter; unnamed learners practise reading old water rulers and keep a shared record. No permanent school building or successful crisis correction is implied.</desc>
+<rect width="1000" height="500" fill="#A6B8A5"/>
+<path d="M0 96h48V74h70V90h48V60h70V84h70v18h62V76h68v30h74V82h82v30h76V94h76v30h80v-20h74v28h102v106H0Z" fill="#708C7D"/>
+<path d="M0 169l1000-40v201L0 346Z" fill="#4B7975"/>
+<path d="M0 211l1000-31M0 267l1000-29" fill="none" stroke="#7EA399" stroke-width="9"/>
+<path d="M67 191h100M410 228h105M780 204h95M110 285h124M621 268h150" stroke="#A4BBB0" stroke-width="4"/>
+<path d="M0 349l1000-91v242H0Z" fill="#6F8170"/>
+<path d="M0 340l1000-92v25L0 367Z" fill="#ADB49B"/>
+<path d="M0 364l1000-92v22L0 387Z" fill="#526D60"/>
+<path d="M0 389l1000-94v24L0 416Z" fill="#8B9A82"/>
+<path d="M88 367l12-24M225 355l12-24M375 341l12-24M529 326l12-24M683 312l12-24M840 297l12-24" stroke="#7C8E78" stroke-width="4"/>
+<!-- SHADE_START: optional regional shelter; it has posts, never walls. -->
+<g id="open-shade">
+<path d="M597 156v240M913 132v237" stroke="#294944" stroke-width="17"/>
+<path d="M597 156v240M913 132v237" stroke="#AC9C75" stroke-width="9"/>
+<path d="M535 116l279-42 146 62-283 50Z" fill="#C0B186"/>
+<path d="M535 116l142 70v15l-142-69ZM677 186l283-50v16l-283 49Z" fill="#8F8665"/>
+<path d="M572 110l143 70M635 100l144 68M699 91l143 66M761 83l143 65" stroke="#DDD0A7" stroke-width="5"/>
+<path d="M733 109l77-12 51 22-80 13Z" fill="#768B79"/>
+<path d="M674 189v237" stroke="#294944" stroke-width="17"/>
+<path d="M674 189v237" stroke="#B4A27B" stroke-width="9"/>
+</g>
+<!-- SHADE_END -->
+<!-- Portable table and a ledger, not a classroom blackboard. -->
+<path d="M593 327l202-29 100 42-208 34Z" fill="#A69771" stroke="#294944" stroke-width="7"/>
+<path d="M609 346v65M861 359v55M704 374v57" stroke="#796C50" stroke-width="11"/>
+<path d="M698 319l55-8 40 17-57 10Z" fill="#E0D6B7"/>
+<path d="M750 315l-15 20M712 322l26-4M745 330l26-4" stroke="#768675" stroke-width="3"/>
+<!-- Inherited tools have different worn and repaired marks, not proof of independent methods. -->
+<path d="M478 193v159M510 217v140M544 204v148" stroke="#294944" stroke-width="15"/>
+<path d="M478 193v159M544 204v148" stroke="#D2C5A2" stroke-width="9"/>
+<path d="M510 217v140" stroke="#B39E73" stroke-width="9"/>
+<path d="M474 214h8M474 238h8M474 262h8M474 286h8M474 310h8M506 233h8M506 264h8M506 295h8M506 326h8M540 223h8M540 245h8M540 267h8M540 311h8M540 333h8" stroke="#60786D" stroke-width="4"/>
+<path d="M468 351l85-6" stroke="#8C795B" stroke-width="9"/>
+<!-- Unnamed local learners occupy low riverbank benches. -->
+<path d="M181 342l176-20 65 28-179 24Z" fill="#B1A17B"/>
+<path d="M216 365v42M390 355v42" stroke="#71684F" stroke-width="11"/>
+<!-- LEARNERS_START -->
+<g id="learners">
+<path d="M298 260h31v34h-31Z" fill="#BCA888"/>
+<path d="M294 255h36v14h-36Z" fill="#294944"/>
+<path d="M291 290h45v58h-45Z" fill="#9A8F76"/>
+<path d="M291 343h18v43h-14ZM319 343h17v43h-14Z" fill="#294944"/>
+<path d="M339 306l34 13 57-36" fill="none" stroke="#BCA888" stroke-width="11"/>
+<path d="M411 236l-3 77" stroke="#D2C5A2" stroke-width="9"/>
+<path d="M406 249h9M406 269h9M405 289h9" stroke="#60786D" stroke-width="3"/>
+<path d="M813 248h29v31h-29Z" fill="#BCA888"/>
+<path d="M809 242h34v14h-34Z" fill="#294944"/>
+<path d="M803 276h49v54h-49Z" fill="#52746B"/>
+<path d="M804 292l-30 25-22 1" fill="none" stroke="#52746B" stroke-width="13"/>
+</g>
+<!-- LEARNERS_END -->
+<path d="M91 431v-51M76 424v-38M106 419v-49M932 408v-50M951 414v-37" stroke="#83966F" stroke-width="7"/>
+<path d="M76 386v-15M106 370v-18M932 358v-17" stroke="#C0B186" stroke-width="8"/>
+</svg>

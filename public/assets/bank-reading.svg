@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" shape-rendering="crispEdges">
+<title>The south-bank reading circle</title>
+<desc>Original open-air scene. The river remains visible behind an open riverbank reading circle; unnamed learners practise reading old water rulers and keep a shared record. No permanent school building or successful crisis correction is implied.</desc>
+<rect width="1000" height="500" fill="#A6B8A5"/>
+<path d="M0 96h48V74h70V90h48V60h70V84h70v18h62V76h68v30h74V82h82v30h76V94h76v30h80v-20h74v28h102v106H0Z" fill="#708C7D"/>
+<path d="M0 169l1000-40v201L0 346Z" fill="#4B7975"/>
+<path d="M0 211l1000-31M0 267l1000-29" fill="none" stroke="#7EA399" stroke-width="9"/>
+<path d="M67 191h100M410 228h105M780 204h95M110 285h124M621 268h150" stroke="#A4BBB0" stroke-width="4"/>
+<path d="M0 349l1000-91v242H0Z" fill="#6F8170"/>
+<path d="M0 340l1000-92v25L0 367Z" fill="#ADB49B"/>
+<path d="M0 364l1000-92v22L0 387Z" fill="#526D60"/>
+<path d="M0 389l1000-94v24L0 416Z" fill="#8B9A82"/>
+<path d="M88 367l12-24M225 355l12-24M375 341l12-24M529 326l12-24M683 312l12-24M840 297l12-24" stroke="#7C8E78" stroke-width="4"/>
+<!-- South-bank learning has no shade or walls. -->
+<!-- Portable table and a ledger, not a classroom blackboard. -->
+<path d="M593 327l202-29 100 42-208 34Z" fill="#A69771" stroke="#294944" stroke-width="7"/>
+<path d="M609 346v65M861 359v55M704 374v57" stroke="#796C50" stroke-width="11"/>
+<path d="M698 319l55-8 40 17-57 10Z" fill="#E0D6B7"/>
+<path d="M750 315l-15 20M712 322l26-4M745 330l26-4" stroke="#768675" stroke-width="3"/>
+<!-- Inherited tools have different worn and repaired marks, not proof of independent methods. -->
+<path d="M478 193v159M510 217v140M544 204v148" stroke="#294944" stroke-width="15"/>
+<path d="M478 193v159M544 204v148" stroke="#D2C5A2" stroke-width="9"/>
+<path d="M510 217v140" stroke="#B39E73" stroke-width="9"/>
+<path d="M474 214h8M474 238h8M474 262h8M474 286h8M474 310h8M506 233h8M506 264h8M506 295h8M506 326h8M540 223h8M540 245h8M540 267h8M540 311h8M540 333h8" stroke="#60786D" stroke-width="4"/>
+<path d="M468 351l85-6" stroke="#8C795B" stroke-width="9"/>
+<!-- Unnamed local learners occupy low riverbank benches. -->
+<path d="M181 342l176-20 65 28-179 24Z" fill="#B1A17B"/>
+<path d="M216 365v42M390 355v42" stroke="#71684F" stroke-width="11"/>
+<!-- LEARNERS_START -->
+<g id="learners">
+<path d="M298 260h31v34h-31Z" fill="#BCA888"/>
+<path d="M294 255h36v14h-36Z" fill="#294944"/>
+<path d="M291 290h45v58h-45Z" fill="#9A8F76"/>
+<path d="M291 343h18v43h-14ZM319 343h17v43h-14Z" fill="#294944"/>
+<path d="M339 306l34 13 57-36" fill="none" stroke="#BCA888" stroke-width="11"/>
+<path d="M411 236l-3 77" stroke="#D2C5A2" stroke-width="9"/>
+<path d="M406 249h9M406 269h9M405 289h9" stroke="#60786D" stroke-width="3"/>
+<path d="M813 248h29v31h-29Z" fill="#BCA888"/>
+<path d="M809 242h34v14h-34Z" fill="#294944"/>
+<path d="M803 276h49v54h-49Z" fill="#52746B"/>
+<path d="M804 292l-30 25-22 1" fill="none" stroke="#52746B" stroke-width="13"/>
+</g>
+<!-- LEARNERS_END -->
+<path d="M91 431v-51M76 424v-38M106 419v-49M932 408v-50M951 414v-37" stroke="#83966F" stroke-width="7"/>
+<path d="M76 386v-15M106 370v-18M932 358v-17" stroke="#C0B186" stroke-width="8"/>
+</svg>
