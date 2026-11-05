@@ -1,3 +1,4 @@
+import {southBankVisual} from './south-bank-visuals.js';
 // One absolute scale for the world layer and its legend. Values are capacities,
 // not percentages of four mutually exclusive factions.
 export const HEAT_BANDS = Object.freeze([
@@ -52,7 +53,18 @@ export function institutionVisual(state, cellId) {
   if (unverified) parts.push('校验尚未成功');
   else if (recordsOnly && !halted) parts.push('档案不等于预警服务');
   const prop = ['school', 'training'].includes(institution.kind) && cellId === 'D5' ? 'bank_reading_circle' : PROP[institution.kind] || null;
-  return { institutionId: institution.id, kind: institution.kind, prop, status, halted, degraded, maintenanceGap, staffingGap, restricted, recordsOnly, unverified, label: parts.join(' · ') };
+  const result = { institutionId: institution.id, kind: institution.kind, prop, status, halted, degraded, maintenanceGap, staffingGap, restricted, recordsOnly, unverified, label: parts.join(' · ') };
+  if (cellId === 'D5') {
+    const south=southBankVisual(state);
+    if (south.aid.exists) {
+      // Each service's open/closed shape is baked from its own real state.
+      // A generic tint or one duty board would wrongly merge those states.
+      const halted=!south.aid.active&&!south.teaching.active,maintenanceGap=south.aid.maintenanceGap||south.teaching.maintenanceGap;
+      return {...result,prop:south.prop,label:south.label,compound:south,
+        halted,maintenanceGap,degraded:maintenanceGap,status:halted?'halted':maintenanceGap?'degraded':'operating'};
+    }
+  }
+  return result;
 }
 
 // Intent is a separate overlay, never a building or an outcome prediction.

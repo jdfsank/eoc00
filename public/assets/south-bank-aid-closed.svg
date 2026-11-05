@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" shape-rendering="crispEdges" data-teaching-state="absent" data-aid-state="stopped">
+<title>D5 south-bank commons: south_bank_aid_closed</title>
+<desc>Original riverbank illustration. A low raised supply shed and an open-air reading circle, when present, remain independent services. Closed services retain their physical history. People, supplies and ledger marks are illustrative, not measured population, inventory or flood protection.</desc>
+<rect width="1000" height="500" fill="#A6B8A5"/>
+<path d="M0 96h48V74h70V90h48V60h70V84h70v18h62V76h68v30h74V82h82v30h76V94h76v30h80v-20h74v28h102v106H0Z" fill="#708C7D"/>
+<path d="M0 169l1000-40v201L0 346Z" fill="#4B7975"/>
+<path d="M0 211l1000-31M0 267l1000-29" stroke="#7EA399" stroke-width="9"/>
+<path d="M67 191h100M410 228h105M780 204h95M110 285h124" stroke="#A4BBB0" stroke-width="4"/>
+<path d="M0 349l1000-91v242H0Z" fill="#6F8170"/>
+<path d="M0 340l1000-92v25L0 367Z" fill="#ADB49B"/>
+<path d="M0 364l1000-92v22L0 387Z" fill="#526D60"/>
+<path d="M0 389l1000-94v24L0 416Z" fill="#8B9A82"/>
+<!-- The shed stands on short floodplain posts, not a station tower. -->
+<g id="mutual-shed">
+<path d="M558 329l272-19 109 48-280 31Z" fill="#3B5750"/>
+<path d="M590 274v79M744 286v90M881 267v76" stroke="#4C5C48" stroke-width="14"/>
+<path d="M576 278l174 15 150-29v30l-150 31-174-17Z" fill="#8F805D" stroke="#294944" stroke-width="6"/>
+<path d="M577 184l173 26v97l-173-21Z" fill="#B6AA85" stroke="#294944" stroke-width="6"/>
+<path d="M750 210l140-35v111l-140 21Z" fill="#7D8A70" stroke="#294944" stroke-width="6"/>
+<path d="M566 186l136-66 207 54-159 48Z" fill="#365E59" stroke="#294944" stroke-width="7"/>
+<path d="M566 186l184 36 159-48v15l-159 48-184-36Z" fill="#294944"/>
+<path d="M613 166l177 35M650 148l182 40M689 131l187 43" stroke="#52776A" stroke-width="6"/>
+<path d="M596 221l131 17v61l-131-16Z" fill="#294944"/>
+<g id="aid-shutter"><path d="M595 222l135 17v64l-135-17Z" fill="#7B8268"/><path d="M607 225v61M632 230v60M657 231v61M682 236v59M707 239v59" stroke="#9F9A77" stroke-width="5"/><path d="M600 236l124 53M600 276l124-29" stroke="#294944" stroke-width="14"/><path d="M600 236l124 53M600 276l124-29" stroke="#BCAB80" stroke-width="8"/></g>
+<path d="M785 223l69-16v53l-69 15Z" fill="#294944"/>
+<path d="M794 229l51-11v10l-51 11ZM794 247l51-11v10l-51 11Z" fill="#7D8A70"/>
+</g>
+<!-- Distribution table is not a ruler board or a classroom blackboard. -->
+<g id="aid-register"><path d="M625 366l175-28 93 40-183 36Z" fill="#B1A17B" stroke="#294944" stroke-width="6"/><path d="M647 386v59M851 399v49M716 414v45" stroke="#796C50" stroke-width="10"/>
+<path d="M704 365l62-9 35 16-63 10Z" fill="#E0D6B7"/>
+<path d="M719 360l35 21" stroke="#796C50" stroke-width="6"/></g>
+
+
+<path d="M70 432v-51M52 424v-38M88 419v-49M947 448v-50M966 454v-37" stroke="#83966F" stroke-width="7"/><path d="M52 386v-15M88 370v-18M947 398v-17" stroke="#C0B186" stroke-width="8"/>
+</svg>

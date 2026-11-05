@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges" data-teaching-state="absent" data-aid-state="stopped">
+<title>D5 raised supply shed</title><desc>Original low riverbank prop. Ground anchor 32,64. Open hatches and closed crossbars show each service independently; this is not a station or a numerical capacity meter.</desc>
+<path d="M32 51L59 64 32 77 5 64Z" fill="#233C3B"/><path d="M32 54L55 64 32 74 9 64Z" fill="#6F8170"/>
+<g id="mutual-shed"><path d="M17 43l17.6 7v19l-17.6-7Z" fill="#B6AA85" stroke="#233C3B" stroke-width="2"/><path d="M34.6 50l14.4-7v19l-14.4 7Z" fill="#7D8A70" stroke="#233C3B" stroke-width="2"/>
+<path d="M14 43l16-13 22 11-17.4 11Z" fill="#365E59" stroke="#233C3B" stroke-width="2"/>
+<path d="M20 38l19.2 10" stroke="#52776A" stroke-width="2"/>
+<path d="M20 48l11.84 5v11l-11.84-5Z" fill="#233C3B"/>
+<g id="aid-shutter"><path d="M20 49l11.84 14M20 59l11.84-7" stroke="#BCAB80" stroke-width="2"/></g>
+<path d="M19 63v7M36.2 69v5M48 62v6" stroke="#796C50" stroke-width="2"/>
+</g>
+<path d="M11 62V48M7 59V46M15 58V44" stroke="#839286" stroke-width="2"/><path d="M7 46v-4M15 44v-4" stroke="#B6A778" stroke-width="3"/>
+</svg>

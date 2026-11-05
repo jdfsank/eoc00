@@ -1,4 +1,4 @@
-import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, fulfilledEvent, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture } from './simulation.js';
+import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, fulfilledEvent, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce } from './simulation.js';
 
 export const chapters = {
   0: {
@@ -33,6 +33,7 @@ export const evidenceText={
 export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   const base = evidenceText[id];
   if (!base) return { title: id, text: '一份有关当地制度的材料。' };
+  if(id==='anomaly_records' && state.year>=30 && usesRecoveryRules(state) && getRecoverySource(state,cellId,{requireActive:false})) return {...base,title:'重读未完成的异源校验',text:'这份曲线曾在第23年冲击前被送来，却没有及时形成可靠结论。今天可以重新核对遗留记录，为今后的指令补上校验能力；原失败与已经发生的损失不能改写。是否有人在第32年真正读尺、整理记录，要以届时运转的测量或教学岗位为准。'};
   if (id === 'old_reality_record' && actorId !== 'protagonist') {
     return { ...base, text: base.text + '这份材料由主角从亲历的旧现实中保存；对你而言，它是可查阅的他人见证，不是入局锚定后凭空获得的记忆。' };
   }
@@ -162,6 +163,15 @@ export function sceneFor(state, cell, actorId = 'protagonist') {
       ...(state.year >= 30 ? [crisisRecollection(state)] : []),
     ], question: '给学校一次机会，也意味着本窗口把有限的名额留在这里。' };
   }
+  if(['B4','F6'].includes(cell) && state.year===30 && usesRecoveryRules(state) && getRecoverySource(state,cell)) {
+    const staff=getRecoveryWorkforce(state);
+    return {...base,title:'没赶上的那份校验',speaker:cell==='F6'?'远港 · 记录保管员':'北岸 · 档案保管员',body:[
+      '没有及时完成的校验仍留在原来的纸页上。它没有被偷偷改成成功，记录旁也没有抹去第23年的损失。',
+      '“迟到的核对，不能让那一年重来。”保管员把空白的轮值表放在旁边，“但下一份指令来到时，我们还可以让它经过另一双眼睛。”',
+      staff.length?'已有测量或教学人手仍在运转。新的校验合同仍需支付经费、科学能力和一个名额；它不会替这些人取得交班授权，也不会替你签署方针。':'现在还没有可用的测量或教学人手。如果另一位介入员在本轮安排培训，第31年到位的人手可以参与第32年校验；两个名额用在这里，就不能同时签署交班方针。',
+      crisisRecollection(state),
+    ],question:'把未完成的工作接下去，也要承认它没有赶上过去。'};
+  }
   if (cell === 'F6') {
     const hadBranch = state.institutions.some(i => i.kind === 'branch' && i.cellId === cell);
     const branch = state.institutions.some(i => i.kind === 'branch' && i.cellId === cell && i.active && i.maintenance > 0);
@@ -178,9 +188,10 @@ export function sceneFor(state, cell, actorId = 'protagonist') {
     const hadTeaching = state.institutions.some(i => i.cellId === cell && ['training', 'school'].includes(i.kind));
     const aidGroups = state.institutions.filter(i => i.cellId === cell && i.kind === 'mutual' && i.active && i.maintenance > 0);
     const aid = aidGroups.length > 0;
+    const hadAid = state.institutions.some(i=>i.cellId===cell&&i.kind==='mutual');
     return { ...base, title: '把第一声钟传到岸边', speaker: '南岸 · 居民代表', body: [
       teaching ? '南岸把长凳围在读尺架旁，没有高大的观测塔，也没有封闭校舍。轮值学员在河水边对照当天的刻度。' : hadTeaching ? '南岸的读尺围座还在，带教已经停下。留下长凳和旧水尺，不等于现在仍有人值班。' : '南岸居民正在商量，第一声险情钟报要怎样传到更远的岸边。说好一项计划，还不等于已经有人长期值班。',
-      aid ? '互助仓的轮值表列着不按缴费名单分配物资的承诺。居民仍要核对经费、人手和下一次交班。' : '居民愿意商量互助，却不愿被要求承担无穷的免费劳动。培训和经费必须与责任一起到来。',
+      aid ? '互助仓的轮值表列着不按缴费名单分配物资的承诺。居民仍要核对经费、人手和下一次交班。' : hadAid ? '原来的互助物资棚还在，分配窗口已经封起，轮值也停下了。重新筹措一组人手与经费后才能恢复支持；空着的仓门不是正在运行的服务。' : '居民愿意商量互助，却不愿被要求承担无穷的免费劳动。培训和经费必须与责任一起到来。',
       ...(state.year >= 30 ? [crisisRecollection(state), aidGroups.some(i => i.startYear > 23) ? '后来的互助轮值正在支持眼前的生计；账册把这些新支出与第23年的损失分开，没有用新增物资改写过去的损失。' : '现在可以增设互助轮值来支持接下来的生计，但第23年的清点册不会重新结算。扩容人手也不是第二层洪水保护。'] : []),
     ], question: '这个地方的能力也会进入每一年的历史。' };
   }

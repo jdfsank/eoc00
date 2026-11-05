@@ -70,7 +70,7 @@ try{
  check('Actual commit replaces both drafts with pending events',await page.evaluate(()=>Object.keys(window.afterwave.state.drafts).length===0&&window.afterwave.state.events.filter(e=>e.status==='pending').length===2));
  check('B4 wait is not labelled as an outcome or institution',await page.locator('.map-activity').innerText()===mapActivity(pending,'B4')[0].label&&!await page.locator('.institution-status').count());
  await snap('390-committed-b4');await select('D5');check('D5 wait is visible before any warehouse exists',(await page.locator('.map-activity').innerText()).includes('第21年待兑现')&&!await page.locator('.institution-status').count());
- await click('playback');await click('step');await click('pause-world');check('Year21 aid resolution replaces the wait with a real institution',!await page.locator('.map-activity li').count()&&(await page.locator('.institution-status').innerText()).includes('制度运行中'));
+ await click('playback');await click('step');await click('pause-world');check('Year21 aid resolution replaces the wait with a real institution',!await page.locator('.map-activity li').count()&&(await page.locator('.institution-status').innerText()).includes('互助仓运行中'));
  await select('B4');check('B4 remains pending while D5 has resolved',(await page.locator('.map-activity').innerText()).includes('第22年待兑现'));
  await click('playback');await click('step');await click('pause-world');check('Year22 review resolution removes its waiting mark',!await page.locator('.map-activity li').count()&&await page.locator('.institution-status').count()===1);
  await snap('390-resolved-b4');

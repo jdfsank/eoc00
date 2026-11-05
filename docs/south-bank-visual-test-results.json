@@ -1,0 +1,462 @@
+{
+  "checks": [
+    {
+      "name": "390px unbuilt map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px unbuilt viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px locked map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px locked scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px locked caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px locked viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px aid map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px aid scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px aid caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px aid standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "390px aid viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px teaching map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px teaching scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px teaching caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px teaching viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px both map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px both scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px both caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px both standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "390px both viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px aid-closed map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px aid-closed scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px aid-closed caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px aid-closed standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "390px aid-closed viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px learning-closed map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px learning-closed scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px learning-closed caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px learning-closed standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "390px learning-closed viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px shed-closed map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px shed-closed scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px shed-closed caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px shed-closed standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "390px shed-closed viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "390px both-closed viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px restarted map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "390px restarted scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "390px restarted caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "390px restarted standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "390px restarted viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "390px a real aid outcome visibly changes the map",
+      "passed": true
+    },
+    {
+      "name": "390px coexisting aid is visible beyond the teaching silhouette",
+      "passed": true
+    },
+    {
+      "name": "390px independently closed services use different shapes",
+      "passed": true
+    },
+    {
+      "name": "390px 200% map has no overflow",
+      "passed": true
+    },
+    {
+      "name": "390px 200% caption is below the illustration",
+      "passed": true
+    },
+    {
+      "name": "390px 200% scene has no overflow",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px unbuilt viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px locked map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px locked scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px locked caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px locked viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px aid map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px aid scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px aid caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px aid standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "320px aid viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px teaching map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px teaching scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px teaching caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px teaching viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px both map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px both scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px both caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px both standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "320px both viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px aid-closed map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px aid-closed scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px aid-closed caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px aid-closed standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "320px aid-closed viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px learning-closed map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px learning-closed scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px learning-closed caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px learning-closed standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "320px learning-closed viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px shed-closed map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px shed-closed scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px shed-closed caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px shed-closed standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "320px shed-closed viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "320px both-closed viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px restarted map text names only existing service states",
+      "passed": true
+    },
+    {
+      "name": "320px restarted scene chooses the correct physical history",
+      "passed": true
+    },
+    {
+      "name": "320px restarted caption agrees with independent states",
+      "passed": true
+    },
+    {
+      "name": "320px restarted standard caption does not hide either service",
+      "passed": true
+    },
+    {
+      "name": "320px restarted viewing has no simulation side effects",
+      "passed": true
+    },
+    {
+      "name": "320px a real aid outcome visibly changes the map",
+      "passed": true
+    },
+    {
+      "name": "320px coexisting aid is visible beyond the teaching silhouette",
+      "passed": true
+    },
+    {
+      "name": "320px independently closed services use different shapes",
+      "passed": true
+    },
+    {
+      "name": "320px 200% map has no overflow",
+      "passed": true
+    },
+    {
+      "name": "320px 200% caption is below the illustration",
+      "passed": true
+    },
+    {
+      "name": "320px 200% scene has no overflow",
+      "passed": true
+    },
+    {
+      "name": "Actual lock shows only intent and no mutual institution",
+      "passed": true
+    },
+    {
+      "name": "Locked contract retains the unbuilt shore",
+      "passed": true
+    },
+    {
+      "name": "Submitted contract remains a wait rather than an operating shed",
+      "passed": true
+    },
+    {
+      "name": "Actual year11 outcome creates the aid visual and removes waiting",
+      "passed": true
+    },
+    {
+      "name": "Actual year20 return retains the working aid shed",
+      "passed": true
+    },
+    {
+      "name": "Same-canvas reopening removes the shed closure but retains stopped teaching",
+      "passed": true
+    },
+    {
+      "name": "Focus and layer controls preserve independent service states",
+      "passed": true
+    },
+    {
+      "name": "No runtime or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Real engine routes build aid at11 and revisit at20. Separate legal boundary fixtures turn teaching/aid off independently; the game does not expose a shutdown button. Restart then follows the actual mutual-aid action. Chromium390/320 and200% text, not device/accessibility certification."
+}

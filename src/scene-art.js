@@ -1,3 +1,4 @@
+import {southBankVisual} from './south-bank-visuals.js';
 // Original repo-native vector illustrations. They depict only a broad setting,
 // not evidence that an unbuilt institution, a survivor or a future event exists.
 export function sceneArt(state, cellId, { ending = false } = {}) {
@@ -15,6 +16,18 @@ export function sceneArt(state, cellId, { ending = false } = {}) {
     if (stations.length) return { file: 'river-station-stopped.svg', alt: 'D4曾经建成的河港测站已经停运。原站房、水尺、码头和旧记录仍保留，窗门与值班牌被木条封起，桌灯熄灭；这里不是从未建站的河岸。', caption: '场景示意 · 测站停运，历史仍在' };
   }
   if (cellId === 'F6' && has('branch')) return { file: 'river-room.svg', alt: `${cellId}的记录室，窗外是河流与仍在运转的测量建筑。`, caption: '场景示意 · 现存测量机构' };
+  if (cellId === 'D5') {
+    const south=southBankVisual(state);
+    if (south.aid.exists) {
+      const teaching=south.teaching.exists
+        ? south.teaching.active?'左侧露天读尺围座继续使用，没有屋顶与围墙；学员在旧水尺旁练习。':'左侧停办的读尺围座仍保留长凳和旧水尺，记录桌封起，没有正在上课的人。'
+        : '左侧保留开阔河岸，没有凭空出现课堂或测站。';
+      const aid=south.aid.active
+        ? '右侧低矮高脚互助物资棚开着分发口，轮值人员在桌边登记物资；物资和人数只是场景示意，不表示额外减灾次数。'
+        : '右侧曾经建成的互助物资棚与木箱仍在，分发口用木条封起，登记册捆好，没有人在分发物资。';
+      return {file:south.file,alt:`D5南岸。${teaching}${aid}`,caption:`场景示意 · ${south.label}`,captionBelow:true};
+    }
+  }
   if (has('school') || has('training')) return cellId === 'D5'
     ? { file: 'bank-reading.svg', alt: 'D5南岸的露天读尺围座，没有屋顶与围墙；学员使用旧水尺和便携记录桌练习。', caption: '场景示意 · 南岸读尺班' }
     : { file: 'local-classroom.svg', alt: `${cellId}的敞开河堤课堂，没有围墙；学员使用旧水尺练习读尺，遮雨棚下的便携桌上放着轮值记录。`, caption: '场景示意 · 河堤上的课堂' };

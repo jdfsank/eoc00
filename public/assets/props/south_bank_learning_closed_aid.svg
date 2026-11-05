@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges" data-teaching-state="stopped" data-aid-state="active">
+<title>D5 supply shed and open-air reading circle</title><desc>Original low riverbank prop. Ground anchor 32,64. Open hatches and closed crossbars show each service independently; this is not a station or a numerical capacity meter.</desc>
+<path d="M32 51L59 64 32 77 5 64Z" fill="#233C3B"/><path d="M32 54L55 64 32 74 9 64Z" fill="#6F8170"/>
+<g id="mutual-shed"><path d="M30 43l13.750000000000002 7v19l-13.750000000000002-7Z" fill="#B6AA85" stroke="#233C3B" stroke-width="2"/><path d="M43.75 50l11.25-7v19l-11.25 7Z" fill="#7D8A70" stroke="#233C3B" stroke-width="2"/>
+<path d="M27 43l12.5-13 18.5 11-14.25 11Z" fill="#365E59" stroke="#233C3B" stroke-width="2"/>
+<path d="M33 38l15 10" stroke="#52776A" stroke-width="2"/>
+<path d="M33 48l9.25 5v11l-9.25-5Z" fill="#233C3B"/>
+<g id="aid-open-hatch"><path d="M33 48l9.25 5" stroke="#E0D6B7" stroke-width="3"/><path d="M34 55l7.000000000000001 4v4l-7.000000000000001-4Z" fill="#C2B18A"/></g>
+<path d="M32 63v7M45 69v5M54 62v6" stroke="#796C50" stroke-width="2"/>
+</g>
+<g id="reading-circle"><path d="M8 59l11-5 6 3-11 5Z M8 66l13 6 5-3-12-6Z" fill="#C2B18A" stroke="#233C3B" stroke-width="2"/>
+<path d="M19 60l9-4 7 4-10 5Z" fill="#B5A37B" stroke="#233C3B" stroke-width="2"/>
+<path d="M18 39v19M23 42v15" stroke="#233C3B" stroke-width="4"/><path d="M18 39v19M23 42v15" stroke="#E0D6B7" stroke-width="2"/><path d="M17 45h2M17 50h2M17 55h2M22 47h2M22 52h2" stroke="#796B50"/>
+<g id="teaching-closure"><path d="M20 57l13 7M20 64l12-7" stroke="#233C3B" stroke-width="3"/><path d="M20 57l13 7M20 64l12-7" stroke="#BCAB80" stroke-width="1.5"/></g></g>
+</svg>

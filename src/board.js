@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import {SOUTH_BANK_ASSETS} from './south-bank-visuals.js';
 import {heatColor,institutionVisual,mapActivity} from './board-visuals.js';
 
 // Small, hard-edged physical traces stay within their owner's footprint.
@@ -64,6 +65,17 @@ function drawActivity(scene,layer,p,activities){
   }
  });
 }
+function drawSouthBankUpkeep(scene,layer,p,south){
+ const g=scene.add.graphics();layer.add(g);
+ // Keep each repair on its own object. A teaching gap never damages the shed.
+ if(south.aid.maintenanceGap){
+  const x=p.x+(south.teaching.exists?11:0),y=p.y-27;
+  g.fillStyle(0xb5a37b);g.fillPoints([{x:x-5,y:y-3},{x:x+1,y:y-6},{x:x+7,y:y-3},{x:x+1,y}],true);
+  g.lineStyle(1,0x233c3b);g.lineBetween(x-1,y-4,x+4,y-1);
+ }
+ if(south.teaching.maintenanceGap){g.lineStyle(2,0xb5a37b);g.lineBetween(p.x-20,p.y+1,p.x-10,p.y+6);}
+ return g;
+}
 export const project = (c,r) => ({x:288+(c-r)*32,y:60+(c+r)*16});
 export function hitTile(x,y){ const a=(x-288)/32,b=(y-60)/16;const c=Math.floor((a+b)/2+0.5),r=Math.floor((b-a)/2+0.5);return c>=0&&c<8&&r>=0&&r<8?String.fromCharCode(65+c)+(r+1):null; }
 export function makeBoard(parent,onSelect,initialView=null){
@@ -71,7 +83,7 @@ export function makeBoard(parent,onSelect,initialView=null){
  let center=initialView&&Number.isFinite(initialView.centerX)&&Number.isFinite(initialView.centerY)?{x:initialView.centerX,y:initialView.centerY}:null;
  const rememberCenter=()=>{if(scene){const camera=scene.cameras.main;center={x:camera.scrollX+camera.width/2,y:camera.scrollY+camera.height/2};}return center;};
  class World extends Phaser.Scene{
-  preload(){ for(const name of ['agent','archive','assembly_hall','observatory','temple','tree','warehouse','water_station','riverside_school','bank_reading_circle']) this.load.image(name,`${import.meta.env.BASE_URL}assets/props/${name}.png`); }
+  preload(){ for(const name of ['agent','archive','assembly_hall','observatory','temple','tree','warehouse','water_station','riverside_school','bank_reading_circle',...SOUTH_BANK_ASSETS]) this.load.image(name,`${import.meta.env.BASE_URL}assets/props/${name}.png`); }
   create(){ scene=this; this.layer=this.add.container(0,0); this.input.on('pointerdown',p=>{drag={x:p.x,y:p.y,cx:this.cameras.main.scrollX,cy:this.cameras.main.scrollY};});
    this.input.on('pointermove',p=>{if(p.isDown&&drag&&focus){this.cameras.main.scrollX=drag.cx-(p.x-drag.x)/this.cameras.main.zoom;this.cameras.main.scrollY=drag.cy-(p.y-drag.y)/this.cameras.main.zoom;rememberCenter();}});
    this.input.on('pointerup',p=>{if(!drag)return;const moved=Math.hypot(p.x-drag.x,p.y-drag.y);drag=null;if(moved<8){const w=this.cameras.main.getWorldPoint(p.x,p.y);const id=hitTile(w.x,w.y);if(id)onSelect(id);}});
@@ -91,8 +103,9 @@ export function makeBoard(parent,onSelect,initialView=null){
    const chosen=state.cells.find(c=>c.id===selected),anchor=chosen?project(chosen.col,chosen.row):null;
    for(const c of cells){const p=project(c.col,c.row),visual=institutionVisual(state,c.id),prop=visual?.prop||c.prop;
     const obscures=focus&&anchor&&c.id!==selected&&p.y>anchor.y&&Math.abs(p.x-anchor.x)<56&&p.y-54<anchor.y+8;
-    if(prop&&this.textures.exists(prop)){const spr=this.add.image(p.x,p.y,prop).setOrigin(.5,.8).setDisplaySize(64,80);this.layer.add(spr);if(visual?.halted)spr.setTint(0x7d8981);else if(visual?.maintenanceGap)spr.setTint(0xc3b394);if(obscures)spr.setAlpha(.35);}
-    if(visual)drawInstitutionTrace(this,this.layer,p,visual).setAlpha(obscures?.35:1);
+    if(prop&&this.textures.exists(prop)){const spr=this.add.image(p.x,p.y,prop).setOrigin(.5,.8).setDisplaySize(64,80);this.layer.add(spr);if(!visual?.compound&&visual?.halted)spr.setTint(0x7d8981);else if(!visual?.compound&&visual?.maintenanceGap)spr.setTint(0xc3b394);if(obscures)spr.setAlpha(.35);}
+    if(visual&&!visual.compound)drawInstitutionTrace(this,this.layer,p,visual).setAlpha(obscures?.35:1);
+    if(visual?.compound)drawSouthBankUpkeep(this,this.layer,p,visual.compound).setAlpha(obscures?.35:1);
    }
    {const c=state.cells.find(c=>c.id===selected); if(c){const p=project(c.col,c.row);    if(c.id===selected){const sel=this.add.graphics();sel.lineStyle(3,0xf6ecc8);sel.strokePoints([{x:p.x,y:p.y-16},{x:p.x+32,y:p.y},{x:p.x,y:p.y+16},{x:p.x-32,y:p.y}],true);this.layer.add(sel);this.layer.add(this.add.text(p.x,p.y+23,c.id,{fontFamily:'monospace',fontSize:'15px',color:'#f6ecc8',backgroundColor:'#18383e'}).setOrigin(.5,0).setPadding(4,1));}
 }}
