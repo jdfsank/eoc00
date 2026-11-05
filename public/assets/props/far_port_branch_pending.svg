@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges" data-branch="branch" data-review="pending"><title>F6 dock and separate review history</title><desc>Original low dimetric prop. Ground anchor 32,64. Failed folio, pending order, paired ledgers and closed table are non-color alternatives, never predictions.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80" shape-rendering="crispEdges" data-branch="branch" data-review="pending" data-access="public"><title>F6 dock and separate review history</title><desc>Original low dimetric prop. Ground anchor 32,64. Failed folio, pending order, paired ledgers and closed table are non-color alternatives, never predictions.</desc>
 <path d="M32 52L59 65 32 77 5 64Z" fill="#233C3B"/><path d="M32 55L55 65 32 74 9 64Z" fill="#6F8170"/>
 <path d="M8 61l23-11 16 8-23 12Z" fill="#B1A17B" stroke="#233C3B" stroke-width="2"/><path d="M14 59l17 8M21 55l17 8M9 62v8M31 52v8" stroke="#796C50" stroke-width="2"/>
 <g id="branch-house"><path d="M11 39l14 7v19l-14-7Z" fill="#C4B99A" stroke="#233C3B" stroke-width="2"/><path d="M25 46l13-7v19l-13 7Z" fill="#7D8271" stroke="#233C3B" stroke-width="2"/><path d="M8 39l16-14 18 13-17 11Z" fill="#365E59" stroke="#233C3B" stroke-width="2"/><path d="M15 34l17 10" stroke="#52776A" stroke-width="2"/>
@@ -8,5 +8,11 @@
 </g>
 <g id="pending-order"><path d="M55 31v32" stroke="#796C50" stroke-width="2"/><path d="M47 31h14v16H47Z" fill="#E0D6B7" stroke="#233C3B" stroke-width="2"/><path d="M50 34h4v3h-4ZM50 40h4v3h-4Z" fill="none" stroke="#233C3B"/></g>
 
+<g id="branch-access" data-access="public" data-access-current="public">
+ <path d="M12 64v10M28 70v9" stroke="#233C3B" stroke-width="3"/>
+ <g id="access-raised"><path d="M12 65V51" stroke="#233C3B" stroke-width="5"/><path d="M12 65V51" stroke="#D2C5A2" stroke-width="2"/></g>
+ <g id="public-notice"><path d="M17 57l9 4v8l-9-4Z" fill="#E0D6B7" stroke="#233C3B" stroke-width="1"/>
+ <path d="M19 60l5 2M19 63l5 2M19 66l5 2" stroke="#233C3B"/>
+ </g></g>
 
 </svg>

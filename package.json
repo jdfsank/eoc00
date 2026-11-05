@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/*.test.js",
-    "test:browser": "node scripts/browser-test.mjs && node scripts/interactions-test.mjs && node scripts/tradeoffs-test.mjs && node scripts/visuals-test.mjs && node scripts/handoff-test.mjs && node scripts/learning-visuals-test.mjs && node scripts/aftermath-test.mjs && node scripts/station-visuals-test.mjs && node scripts/recruitment-test.mjs && node scripts/maintenance-visuals-test.mjs && node scripts/outlook-test.mjs && node scripts/activity-visuals-test.mjs && node scripts/recovery-test.mjs && node scripts/south-bank-visuals-test.mjs && node scripts/handoff-outlook-test.mjs && node scripts/far-port-visuals-test.mjs && node scripts/port-access-test.mjs && node scripts/river-warning-visuals-test.mjs && node scripts/contract-preview-test.mjs && node scripts/local-crisis-visuals-test.mjs && node scripts/history-reading-test.mjs && node scripts/scene-visit-test.mjs",
+    "test:browser": "node scripts/browser-test.mjs && node scripts/interactions-test.mjs && node scripts/tradeoffs-test.mjs && node scripts/visuals-test.mjs && node scripts/handoff-test.mjs && node scripts/learning-visuals-test.mjs && node scripts/aftermath-test.mjs && node scripts/station-visuals-test.mjs && node scripts/recruitment-test.mjs && node scripts/maintenance-visuals-test.mjs && node scripts/outlook-test.mjs && node scripts/activity-visuals-test.mjs && node scripts/recovery-test.mjs && node scripts/south-bank-visuals-test.mjs && node scripts/handoff-outlook-test.mjs && node scripts/far-port-visuals-test.mjs && node scripts/port-access-test.mjs && node scripts/river-warning-visuals-test.mjs && node scripts/contract-preview-test.mjs && node scripts/local-crisis-visuals-test.mjs && node scripts/history-reading-test.mjs && node scripts/scene-visit-test.mjs && node scripts/staffing-history-test.mjs && node scripts/port-access-visuals-test.mjs && node scripts/toast-input-test.mjs",
     "test:interactions": "node scripts/interactions-test.mjs",
     "test:tradeoffs": "node scripts/tradeoffs-test.mjs",
     "test:visuals": "node scripts/visuals-test.mjs",
@@ -32,7 +32,10 @@
     "test:contract-preview": "node scripts/contract-preview-test.mjs",
     "test:local-crisis-visuals": "node scripts/local-crisis-visuals-test.mjs",
     "test:history-reading": "node scripts/history-reading-test.mjs",
-    "test:scene-visit": "node scripts/scene-visit-test.mjs"
+    "test:scene-visit": "node scripts/scene-visit-test.mjs",
+    "test:staffing-history": "node scripts/staffing-history-test.mjs",
+    "test:port-access-visuals": "node scripts/port-access-visuals-test.mjs",
+    "test:toast-input": "node scripts/toast-input-test.mjs"
   },
   "dependencies": {
     "phaser": "3.90.0"

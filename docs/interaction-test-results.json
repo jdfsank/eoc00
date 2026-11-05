@@ -912,8 +912,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 527,
-      "stableMs": 517,
+      "waitedMs": 410,
+      "stableMs": 400,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -927,7 +927,7 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 210,
+      "waitedMs": 214,
       "stableMs": 200,
       "samples": 3,
       "pendingSamples": 0
@@ -942,8 +942,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 164,
-      "stableMs": 149,
+      "waitedMs": 297,
+      "stableMs": 283,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -957,8 +957,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 197,
-      "stableMs": 183,
+      "waitedMs": 347,
+      "stableMs": 333,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -972,8 +972,8 @@
       "width": 356,
       "height": 250,
       "rendered": true,
-      "waitedMs": 164,
-      "stableMs": 151,
+      "waitedMs": 346,
+      "stableMs": 328,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -987,8 +987,8 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 156,
-      "stableMs": 150,
+      "waitedMs": 262,
+      "stableMs": 248,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -1002,10 +1002,10 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 417,
-      "stableMs": 120,
+      "waitedMs": 963,
+      "stableMs": 193,
       "samples": 3,
-      "pendingSamples": 5
+      "pendingSamples": 7
     },
     {
       "view": {
@@ -1017,10 +1017,10 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 397,
-      "stableMs": 116,
+      "waitedMs": 547,
+      "stableMs": 113,
       "samples": 3,
-      "pendingSamples": 5
+      "pendingSamples": 7
     },
     {
       "view": {
@@ -1032,8 +1032,8 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 127,
-      "stableMs": 117,
+      "waitedMs": 404,
+      "stableMs": 402,
       "samples": 3,
       "pendingSamples": 0
     },
@@ -1047,14 +1047,14 @@
       "width": 396,
       "height": 250,
       "rendered": true,
-      "waitedMs": 348,
-      "stableMs": 334,
+      "waitedMs": 833,
+      "stableMs": 809,
       "samples": 3,
       "pendingSamples": 0
     }
   ],
   "assetDelay": {
     "milliseconds": 180,
-    "requests": 72
+    "requests": 100
   }
 }

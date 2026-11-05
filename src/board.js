@@ -80,7 +80,8 @@ function drawSouthBankUpkeep(scene,layer,p,south){
 function drawFarPortUpkeep(scene,layer,p,port){
  const g=scene.add.graphics();layer.add(g);
  if(port.branch.maintenanceGap){g.fillStyle(0xb5a37b);g.fillPoints([{x:p.x-17,y:p.y-31},{x:p.x-11,y:p.y-35},{x:p.x-4,y:p.y-31},{x:p.x-10,y:p.y-27}],true);g.lineStyle(1,0x233c3b);g.lineBetween(p.x-13,p.y-32,p.x-7,p.y-29);}
- if(port.branch.restricted){g.lineStyle(3,0xe0b65f);g.lineBetween(p.x-15,p.y-4,p.x-6,p.y+1);g.lineStyle(2,0x796c50);g.lineBetween(p.x-15,p.y-6,p.x-15,p.y+4);g.lineBetween(p.x-6,p.y-1,p.x-6,p.y+8);}
+ // Access gates are baked into the branch's own prop, independently of
+ // maintenance and checking. Do not duplicate them with a generic fee bar.
  if(port.check.maintenanceGap){g.lineStyle(2,0xb5a37b);g.lineBetween(p.x+6,p.y+1,p.x+18,p.y-5);}
  return g;
 }

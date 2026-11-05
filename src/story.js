@@ -1,5 +1,6 @@
 import {getDecadeReview} from './decade-review.js';
 import {getFeeHistory} from './fee-history.js';
+import {getRelocationHistory} from './relocation-history.js';
 import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets } from './simulation.js';
 
 export const chapters = {
@@ -201,6 +202,7 @@ function riverportScene(state, base, chapter, actorId) {
   if (chapter === 20) {
     const facts = personalHistory(state), identity = sulanIdentity(state);
     const fees = getFeeHistory(state);
+    const relocation = getRelocationHistory(state);
     const current = facts.forced
       ? `第${facts.forced.resolvedYear}年的迁任已经把苏岚带到东岸。桌上是她寄来的信，不是她重新回到河港任职的证明。`
       : !station
@@ -234,6 +236,7 @@ function riverportScene(state, base, chapter, actorId) {
           : '你读到主角保存的旧现实档案：苏岚曾是免费学校的教师。那间开着窗的教室来自主角的见证，不是你的亲历记忆。') + current + upkeep,
         operatingStation && !station.open ? fees?.summary : null,
         roleHistory,
+        relocation ? [relocation.summary, relocation.context, relocation.processNote].filter(Boolean).join('') : null,
         facts.forced
           ? '她在信里写道：“那份旧履历没有我的同意。学校多了一个岗位，也不能把迁任改称为我的选择。”'
           : actorId === 'protagonist'
@@ -245,6 +248,7 @@ function riverportScene(state, base, chapter, actorId) {
     };
   }
   const teaching = state.institutions.some(i => ['training', 'school'].includes(i.kind) && i.active && i.maintenance > 0);
+  const relocation = getRelocationHistory(state);
   return {
     ...base,
     body: [
@@ -253,6 +257,7 @@ function riverportScene(state, base, chapter, actorId) {
         : station
           ? '四十年的报告还剩最后一册。河港曾有一座测站，如今已经停运。移交文件里，不能把关着的门写成仍在提供的服务。'
           : '四十年的报告还剩最后一册。河港测站一直没有建成。'+(warnings.length?(warnings.some(i=>i.active&&i.maintenance>0)?'居民传讯队正在原钟架旁轮值；这是实际服务，不是补建了一座测站，也没有恢复旧档案岗位。':'居民传讯队留下的钟架与旧轮值板还在，但当前服务已经停下；旧址不等于仍有人传话。'):'空白也是这段历史的一部分，不能在最后一页补写成成功。'),
+      relocation ? [relocation.summary, relocation.context, relocation.processNote].filter(Boolean).join('') : null,
       crisisRecollection(state),
       teaching
         ? '沿岸仍有人教授读尺与记录。知识已有承接者，但能否独立纠错，还要看现存网络与居民的信任。'

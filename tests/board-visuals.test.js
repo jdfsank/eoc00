@@ -57,7 +57,7 @@ test('missing successor has an empty duty slot, then a retained closed station',
 test('staffing, upkeep, both causes, halt and restoration stay independently visible', () => {
   const state = built(), station = state.institutions.find(i => i.kind === 'station');
   const initial = structuredClone(state);
-  state.flags.recruited = true; state.flags.successor = false;
+  investigateAndLock(state, 'protagonist', 'D4', 'recruit_risk'); commitWindow(state); advanceYear(state);
   let visual = institutionVisual(state, 'D4');
   assert.equal(visual.staffingGap, true); assert.equal(visual.maintenanceGap, false); assert.equal(visual.degraded, false);
   assert.equal(visual.label, '维护者缺席');
@@ -80,7 +80,7 @@ test('staffing, upkeep, both causes, halt and restoration stay independently vis
 
 test('staffing-only failed-build archive has empty record duty without invented roof damage', () => {
   const state = built(false);
-  state.flags.recruited = true; state.flags.successor = false;
+  investigateAndLock(state, 'protagonist', 'D4', 'recruit_risk'); commitWindow(state); advanceYear(state);
   const before = structuredClone(state), visual = institutionVisual(state, 'D4');
   assert.equal(visual.recordsOnly, true); assert.equal(visual.staffingGap, true); assert.equal(visual.maintenanceGap, false);
   assert.match(visual.label, /维护者缺席.*档案不等于预警服务/); assert.deepEqual(state, before);

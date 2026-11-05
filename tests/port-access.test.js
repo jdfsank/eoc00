@@ -470,7 +470,14 @@ for (const route of oldRoutes) for (const stage of ['new', 'planning30', 'locked
   while (old.year < 40) {
     if (old.phase === 'planning') {
       for (const actor of prior.getActors(old)) for (const cell of old.cells) {
-        assert.deepEqual(sim.getActions(loaded, cell.id, actor.id), prior.getActions(old, cell.id, actor.id), `${old.year}/${cell.id}/${actor.id}: unchanged menu and contract`);
+        // Only the new staffing explanation is excluded. Original contractual
+        // fields, including risk, remain strict coverage-era equality checks.
+        const contracts = sim.getActions(loaded, cell.id, actor.id).map(({ staffingNote, ...contract }) => {
+          if (sim.RECRUITMENT_ACTIONS.includes(contract.id)) assert.equal(typeof staffingNote, 'string');
+          else assert.equal(staffingNote, undefined);
+          return contract;
+        });
+        assert.deepEqual(contracts, prior.getActions(old, cell.id, actor.id), `${old.year}/${cell.id}/${actor.id}: unchanged menu and contract`);
         assert.deepEqual(sim.getEvidenceIds(loaded, cell.id, actor.id), prior.getEvidenceIds(old, cell.id, actor.id));
       }
       assert.equal(portChoice(loaded), undefined);

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" shape-rendering="crispEdges" data-branch="branch" data-review="recovered" data-access="fee">
+<title>F6 tributary landing: branch, recovered</title><desc>Original fixed-location illustration. The branch and checking service are distinct. A tied unresolved folio is not successful correction; an unfilled work order is not a new institution. Later checking keeps the old failure and cannot reverse past flood loss. Ledger marks are illustrative, not numerical measurements.</desc>
+<rect width="1000" height="500" fill="#A6B8A5"/><path d="M0 106h90V85h88v26h90V70h95v49h101V91h86v42h105v-24h123v33h110v-31h112v244H0Z" fill="#718D7D"/>
+<!-- A side channel meets the main river beside the same short landing. -->
+<path d="M0 184l1000-42v214L0 393Z" fill="#4B7975"/><path d="M640 142l-82 214h112l112-218Z" fill="#3F6967"/>
+<path d="M0 231l535-24M714 201l286-13M0 290l510-33M690 274l310-18" stroke="#91B1A4" stroke-width="7"/>
+<path d="M0 370l1000-52v182H0Z" fill="#748673"/><path d="M0 357l1000-53v23L0 382Z" fill="#ADB49B"/>
+<path d="M63 333l333-27 107 49-343 36Z" fill="#A69771" stroke="#294944" stroke-width="7"/>
+<path d="M91 331l99 51M143 326l103 52M197 322l102 50M251 318l103 50M304 313l107 49" stroke="#766F52" stroke-width="5"/>
+<path d="M77 330v82M383 310v69M479 353v53" stroke="#4F6254" stroke-width="12"/>
+<path d="M76 326l22-2M382 305l21-2" stroke="#D3C5A0" stroke-width="8"/>
+<g id="branch-house"><path d="M144 180l131 20v134l-131-21Z" fill="#B7AC88" stroke="#294944" stroke-width="7"/><path d="M275 200l116-29v140l-116 23Z" fill="#7C8C74" stroke="#294944" stroke-width="7"/>
+<path d="M128 180l125-65 154 55-132 44Z" fill="#365E59" stroke="#294944" stroke-width="8"/><path d="M128 180l147 34 132-44v15l-132 44-147-34Z" fill="#294944"/>
+<path d="M170 157l141 42M212 136l143 46" stroke="#52776A" stroke-width="7"/>
+<path d="M164 221l82 12v65l-82-11ZM304 234l52-12v84l-52 13Z" fill="#294944"/>
+<g id="branch-open"><path d="M171 231l27 4v47l-27-4ZM210 237l27 4v47l-27-4ZM314 241l30-6v63l-30 7Z" fill="#D2C5A2"/></g>
+<path d="M425 190v158" stroke="#294944" stroke-width="17"/><path d="M425 194v147" stroke="#D2C5A2" stroke-width="9"/><path d="M421 212h8M421 238h8M421 264h8M421 290h8M421 316h8" stroke="#657B69" stroke-width="4"/></g>
+<g id="branch-access" data-access="fee" data-access-current="fee">
+ <path d="M132 343v73M338 364v62" stroke="#294944" stroke-width="12"/><path d="M132 343v62M338 364v52" stroke="#A69771" stroke-width="6"/>
+ <g id="access-barrier"><path d="M132 350l206 24" stroke="#294944" stroke-width="18"/><path d="M132 350l206 24" stroke="#B7A67C" stroke-width="9"/></g>
+ <g id="fee-notice"><path d="M79 257v119" stroke="#796C50" stroke-width="9"/><path d="M48 264h64v70H48Z" fill="#D2C5A2" stroke="#294944" stroke-width="6"/>
+ <circle cx="80" cy="286" r="12" fill="none" stroke="#294944" stroke-width="5"/><path d="M80 278v16M63 314h34" stroke="#294944" stroke-width="5"/>
+ </g></g>
+<g id="record-platform"><path d="M548 385l324-31 91 49-326 39Z" fill="#526D60"/>
+<g id="failed-folio"><path d="M558 312l102-12 48 23-103 17Z" fill="#9F916D"/><path d="M573 333v75M685 335v69" stroke="#796C50" stroke-width="9"/><path d="M588 241l83-9v86l-83 12Z" fill="#C7B992" stroke="#294944" stroke-width="6"/><path d="M588 241l62-7 21 17-22 3-2-20" fill="#E0D6B7"/><path d="M600 267l16-8 12 14M638 274l20-10M601 299l22-5M642 290l16-4" fill="none" stroke="#6D755C" stroke-width="5"/><path d="M622 239v84" stroke="#8D7755" stroke-width="7"/>
+</g>
+
+<g id="check-table"><path d="M704 348l158-20 93 40-164 29Z" fill="#AD9F77" stroke="#294944" stroke-width="6"/><path d="M721 367v68M924 380v55M795 397v47" stroke="#796C50" stroke-width="10"/>
+<g id="paired-ledgers"><path d="M724 272l61-8 5 86-62 11Z M805 258l63-8 8 88-65 11Z" fill="#E0D6B7" stroke="#294944" stroke-width="5"/><path d="M736 291l39-5M738 311l38-5M740 331l37-5M817 277l40-5M819 297l40-5M821 317l40-5" stroke="#72816A" stroke-width="4"/><path d="M754 270l6 86M837 254l8 89" stroke="#A3916B" stroke-width="3"/></g><g id="check-worker"><path d="M888 259h25v29h-25Z" fill="#BCA888"/><path d="M884 254h31v12h-31Z" fill="#294944"/><path d="M881 287h40v60h-40Z" fill="#52746B"/><path d="M883 307l-31 28-26-1" fill="none" stroke="#52746B" stroke-width="11"/></g></g>
+</g>
+<path d="M38 446v-50M53 439v-39M970 445v-44M950 450v-35" stroke="#83966F" stroke-width="7"/><path d="M38 396v-17M970 401v-15" stroke="#C0B186" stroke-width="8"/>
+</svg>

@@ -49,7 +49,7 @@ test('view reads no random inputs or unpublished result fields',()=>{
  const s=portRecovery(),before=farPortVisual(s);Object.defineProperty(s,'seed',{get(){throw Error('seed');}});for(const e of s.events)for(const key of ['roll','probability'])Object.defineProperty(e,key,{get(){throw Error(key);}});assert.deepEqual(farPortVisual(s),before);
 });
 test('all source/raster combinations keep projection and explicit stage geometry',()=>{
- assert.equal(FAR_PORT_ASSETS.length,20);
+ assert.equal(FAR_PORT_ASSETS.length,34);
  for(const name of FAR_PORT_ASSETS){const svg=fs.readFileSync(new URL(`../public/assets/${name.replaceAll('_','-')}.svg`,import.meta.url),'utf8'),prop=fs.readFileSync(new URL(`../public/assets/props/${name}.svg`,import.meta.url),'utf8'),png=fs.readFileSync(new URL(`../public/assets/props/${name}.png`,import.meta.url));
   assert.match(svg,/viewBox="0 0 1000 500"/);assert.match(prop,/Ground anchor 32,64/);assert.equal(png.readUInt32BE(16),128);assert.equal(png.readUInt32BE(20),160);assert.equal(png[25],6);
   if(name.includes('_shore_'))assert.doesNotMatch(svg,/id="branch-house"/);if(name.endsWith('_pending')){assert.match(svg,/id="pending-order"/);assert.doesNotMatch(svg,/id="paired-ledgers"|id="check-worker"/);}if(name.endsWith('_recovered')){assert.match(svg,/id="failed-folio"/);assert.match(svg,/id="paired-ledgers"/);}
@@ -58,19 +58,25 @@ test('all source/raster combinations keep projection and explicit stage geometry
 test('every place and review stage has independent physical geometry, including ambiguous closed names',()=>{
  // Build the expected matrix directly, never using the asset generator parser.
  const expected=[];
- for(const place of ['shore','branch','branch_closed'])for(const stage of FAR_PORT_STAGES){
+ for(const place of ['shore','branch','branch_closed'])for(const access of place==='shore'?[null]:['public','fee'])for(const stage of FAR_PORT_STAGES){
   if(place==='shore'&&stage==='none')continue;
-  const name=`far_port_${place}_${stage}`;expected.push(name);
+  const name=`far_port_${place}${access==='fee'?'_fee':''}_${stage}`;expected.push(name);
   const checked=['verified','recovered'].includes(stage),table=checked||stage==='closed';
   for(const type of ['scene','prop']){
    const file=type==='scene'?`../public/assets/${name.replaceAll('_','-')}.svg`:`../public/assets/props/${name}.svg`;
    const svg=fs.readFileSync(new URL(file,import.meta.url),'utf8');
    assert.equal(svg.match(/data-branch="([^"]*)"/)?.[1],place,`${name} ${type} branch`);
    assert.equal(svg.match(/data-review="([^"]*)"/)?.[1],stage,`${name} ${type} review`);
+   assert.equal(svg.match(/data-access="([^"]*)"/)?.[1],access||'none',`${name} ${type} access`);
    const geometry=(id,present)=>assert.equal(svg.includes(`id="${id}"`),present,`${name} ${type} ${id}`);
    geometry('branch-house',place!=='shore');
    geometry('branch-open',place==='branch');
    geometry('branch-shutter',place==='branch_closed');
+   geometry('branch-access',place!=='shore');
+   geometry('fee-notice',access==='fee');geometry('public-notice',access==='public');
+   geometry('access-barrier',place==='branch'&&access==='fee');
+   geometry('access-raised',place==='branch'&&access==='public');
+   geometry('access-shut',place==='branch_closed');geometry('access-notice-tied',place==='branch_closed');
    geometry('check-table',table);
    geometry('check-closure',stage==='closed');
    geometry('paired-ledgers',checked);

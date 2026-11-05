@@ -1,0 +1,775 @@
+{
+  "scope": "Actual file imports at320×568, direct and invalid→valid; real pointer targets, unchanged precommit world, exact year20 settlement, and200% keyboard/status readability. No injected CSS, forced click, retry, or toast-dismissal wait.",
+  "checks": [
+    {
+      "name": "direct import: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "direct: actual imported world is byte-identical",
+      "passed": true
+    },
+    {
+      "name": "direct: free preview preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "direct before confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "direct: first real confirm input reaches lock review",
+      "passed": true
+    },
+    {
+      "name": "direct after confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "direct: confirmation still has no draft, cost, history or investigation side effect",
+      "passed": true
+    },
+    {
+      "name": "direct: pointerdown targets confirm, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "time": 1300
+      }
+    },
+    {
+      "name": "direct: pointerup targets confirm, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "time": 1300.1999999955297
+      }
+    },
+    {
+      "name": "direct: click targets confirm, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 443,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "time": 1300.1999999955297
+      }
+    },
+    {
+      "name": "direct: locking only adds the expected draft without paying or settling",
+      "passed": true
+    },
+    {
+      "name": "direct: submit pays exactly once and records the expected event",
+      "passed": true
+    },
+    {
+      "name": "direct: entire year20 world matches independent engine settlement",
+      "passed": true
+    },
+    {
+      "name": "direct: archive halts at16 and recruit is available at20",
+      "passed": true
+    },
+    {
+      "name": "Rejected import preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid import: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "invalid-then-valid: actual imported world is byte-identical",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid: free preview preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid before confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "invalid-then-valid: first real confirm input reaches lock review",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid after confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 444,
+          "width": 288,
+          "height": 104
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "invalid-then-valid: confirmation still has no draft, cost, history or investigation side effect",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid: pointerdown targets confirm, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerdown",
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "time": 2249.39999999851
+      }
+    },
+    {
+      "name": "invalid-then-valid: pointerup targets confirm, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "pointerup",
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 0,
+        "x": 160,
+        "y": 443.010009765625,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "time": 2249.60000000149
+      }
+    },
+    {
+      "name": "invalid-then-valid: click targets confirm, never the toast",
+      "passed": true,
+      "detail": {
+        "type": "click",
+        "screen": "choice",
+        "action": "confirm",
+        "id": null,
+        "targetClass": "primary",
+        "pointerType": "mouse",
+        "detail": 1,
+        "x": 160,
+        "y": 443,
+        "toastVisible": true,
+        "toastRole": "status",
+        "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "time": 2249.60000000149
+      }
+    },
+    {
+      "name": "invalid-then-valid: locking only adds the expected draft without paying or settling",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid: submit pays exactly once and records the expected event",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid: entire year20 world matches independent engine settlement",
+      "passed": true
+    },
+    {
+      "name": "invalid-then-valid: archive halts at16 and recruit is available at20",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200 import: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "keyboard-200: actual imported world is byte-identical",
+      "passed": true
+    },
+    {
+      "name": "320px200%: font setting and whole document stay within viewport",
+      "passed": true
+    },
+    {
+      "name": "200%: recruit_risk is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: free preview preserves exact world and autosave",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200 before confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "200%: confirm is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: first real confirm input reaches lock review",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200 after confirm: original import status remains visible and readable",
+      "passed": true,
+      "detail": {
+        "text": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+        "role": "status",
+        "visible": true,
+        "rect": {
+          "x": 16,
+          "y": 228,
+          "width": 288,
+          "height": 320
+        },
+        "withinViewport": true,
+        "noTextOverflow": true
+      }
+    },
+    {
+      "name": "keyboard-200: confirmation still has no draft, cost, history or investigation side effect",
+      "passed": true
+    },
+    {
+      "name": "200%: Enter activates confirm while status is visible",
+      "passed": true
+    },
+    {
+      "name": "200%: lock is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: locking only adds the expected draft without paying or settling",
+      "passed": true
+    },
+    {
+      "name": "200%: commit is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: submit pays exactly once and records the expected event",
+      "passed": true
+    },
+    {
+      "name": "200%: skip is reachable with Tab",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: entire year20 world matches independent engine settlement",
+      "passed": true
+    },
+    {
+      "name": "keyboard-200: archive halts at16 and recruit is available at20",
+      "passed": true
+    },
+    {
+      "name": "No runtime, asset or hot-reload errors",
+      "passed": true
+    },
+    {
+      "name": "Runtime stayed frozen throughout the regression",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "pointerEvents": [
+    {
+      "mode": "direct",
+      "events": [
+        {
+          "type": "pointerdown",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 220.25999450683594,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1154.1000000014901
+        },
+        {
+          "type": "pointerup",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 220.25999450683594,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1154.5
+        },
+        {
+          "type": "click",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 220,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1154.6000000014901
+        },
+        {
+          "type": "pointerdown",
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 283.67999267578125,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1219.1999999955297
+        },
+        {
+          "type": "pointerup",
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 283.67999267578125,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1219.5
+        },
+        {
+          "type": "click",
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 283,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1219.5
+        },
+        {
+          "type": "pointerdown",
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1300
+        },
+        {
+          "type": "pointerup",
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1300.1999999955297
+        },
+        {
+          "type": "click",
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 443,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 1300.1999999955297
+        }
+      ]
+    },
+    {
+      "mode": "invalid-then-valid",
+      "events": [
+        {
+          "type": "pointerdown",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 220.25999450683594,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2154.6999999955297
+        },
+        {
+          "type": "pointerup",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 220.25999450683594,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2155
+        },
+        {
+          "type": "click",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 220,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2155
+        },
+        {
+          "type": "pointerdown",
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 283.67999267578125,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2199.6999999955297
+        },
+        {
+          "type": "pointerup",
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 283.67999267578125,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2199.89999999851
+        },
+        {
+          "type": "click",
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 283,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2200
+        },
+        {
+          "type": "pointerdown",
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2249.39999999851
+        },
+        {
+          "type": "pointerup",
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 443.010009765625,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2249.60000000149
+        },
+        {
+          "type": "click",
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 443,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2249.60000000149
+        }
+      ]
+    },
+    {
+      "mode": "keyboard-200",
+      "events": [
+        {
+          "type": "pointerdown",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 495.30999755859375,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2751.6999999955297
+        },
+        {
+          "type": "pointerup",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 0,
+          "x": 160,
+          "y": 495.30999755859375,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2752
+        },
+        {
+          "type": "click",
+          "screen": "world",
+          "action": "avg",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": "mouse",
+          "detail": 1,
+          "x": 160,
+          "y": 495,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2752.10000000149
+        },
+        {
+          "type": "click",
+          "screen": "avg",
+          "action": "choose",
+          "id": "recruit_risk",
+          "targetClass": "choice-card",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2784.1999999955297
+        },
+        {
+          "type": "click",
+          "screen": "choice",
+          "action": "confirm",
+          "id": null,
+          "targetClass": "primary",
+          "pointerType": null,
+          "detail": 0,
+          "x": 0,
+          "y": 0,
+          "toastVisible": true,
+          "toastRole": "status",
+          "toastText": "已导入。后续缺岗规则：D4测站与档案站；既有结算不回写，已停运机构不复活。详情见设置。",
+          "time": 2820.60000000149
+        }
+      ]
+    }
+  ],
+  "runtimeHash": {
+    "before": "4e0a582ce25a5259f76dbc2cd0cd5e63cf17ce46833dc44e38b2de0f351b0eab",
+    "after": "4e0a582ce25a5259f76dbc2cd0cd5e63cf17ce46833dc44e38b2de0f351b0eab"
+  }
+}

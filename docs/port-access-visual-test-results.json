@@ -1,0 +1,1394 @@
+{
+  "scope": "Real F6 merchant opening and independent review routes, actual30→31 UI resolution, 390/320/200% and grayscale. Closure/upkeep combinations are valid presentation boundaries. A same-year paid control removes only the pending opening contract after its costs to isolate gate pixels from annual channel changes; it is not a separate gameplay action. No physical-device certification.",
+  "checks": [
+    {
+      "name": "390px paid: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px paid: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px paid: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px paid: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px paid: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px paid: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px paid: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px locked: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px locked: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px locked: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px locked: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px locked: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px locked: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px locked: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px pending: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px pending: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px pending: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px pending: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px pending: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px pending: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px pending: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px opened: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px opened: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px opened: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px opened: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px opened: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px opened: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px opened: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px control: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px control: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px control: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px control: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px control: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px control: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px control: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px failed: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px failed: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px failed: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px failed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px failed: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px failed: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px failed: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px failed-open: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px failed-open: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px failed-open: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px failed-open: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px failed-open: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px failed-open: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px failed-open: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px no-check: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px no-check: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px no-check: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px no-check: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px no-check: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px no-check: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px no-check: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px no-check-open: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px no-check-open: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px no-check-open: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px no-check-open: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px no-check-open: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px no-check-open: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px no-check-open: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px check-pending: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px check-pending: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px check-pending: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px check-pending: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px check-pending: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px check-pending: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px check-pending: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px recovered: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px recovered: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px recovered: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px recovered: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px recovered: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px recovered: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px recovered: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px public-pending: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px public-pending: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px public-pending: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public-pending: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public-pending: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px public-pending: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px public-pending: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px public-recovered: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px public-recovered: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px public-recovered: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px public-recovered: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px public-recovered: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px public-recovered: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px public-recovered: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-fee: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-fee: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-fee: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-fee: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-fee: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-fee: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-fee: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-public: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-public: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-public: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-public: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-public: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-public: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-public: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-fee: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-fee: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-fee: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-fee: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-fee: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-fee: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-fee: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-public: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-public: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-public: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-public: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-public: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-public: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-public: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-fee: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-fee: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-fee: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-fee: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-fee: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-fee: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-fee: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-public: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-public: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-public: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-public: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-public: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-public: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px maintenance-public: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "390px cancelled: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "390px lock and pending opening keep the same fee prop apart from separate intent chips",
+      "passed": true
+    },
+    {
+      "name": "390px equal-year/equal-channel control isolates visibly different access on the real map",
+      "passed": true
+    },
+    {
+      "name": "390px the real near image distinguishes fee/public without relying on caption",
+      "passed": true
+    },
+    {
+      "name": "390px paid/opened: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "390px check-pending/public-pending: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "390px recovered/public-recovered: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "390px stopped-fee/stopped-public: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "390px check-closed-fee/check-closed-public: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "390px200% paid: real entry is focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "390px200% paid: full-size text has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% paid: caption does not cover the entrance or review table",
+      "passed": true
+    },
+    {
+      "name": "390px200% paid: source is keyboard reachable without obstruction",
+      "passed": true
+    },
+    {
+      "name": "390px200% paid: actual source opens without changing world",
+      "passed": true
+    },
+    {
+      "name": "390px200% opened: real entry is focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "390px200% opened: full-size text has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% opened: caption does not cover the entrance or review table",
+      "passed": true
+    },
+    {
+      "name": "390px200% opened: source is keyboard reachable without obstruction",
+      "passed": true
+    },
+    {
+      "name": "390px200% opened: actual source opens without changing world",
+      "passed": true
+    },
+    {
+      "name": "390px200% check-pending: real entry is focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "390px200% check-pending: full-size text has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% check-pending: caption does not cover the entrance or review table",
+      "passed": true
+    },
+    {
+      "name": "390px200% check-pending: source is keyboard reachable without obstruction",
+      "passed": true
+    },
+    {
+      "name": "390px200% check-pending: actual source opens without changing world",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped-public: real entry is focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped-public: full-size text has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped-public: caption does not cover the entrance or review table",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped-public: source is keyboard reachable without obstruction",
+      "passed": true
+    },
+    {
+      "name": "390px200% stopped-public: actual source opens without changing world",
+      "passed": true
+    },
+    {
+      "name": "320px paid: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px paid: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px paid: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px paid: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px paid: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px paid: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px paid: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px locked: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px locked: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px locked: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px locked: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px locked: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px locked: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px locked: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px pending: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px pending: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px pending: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px pending: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px pending: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px pending: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px pending: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px opened: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px opened: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px opened: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px opened: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px opened: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px opened: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px opened: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px control: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px control: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px control: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px control: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px control: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px control: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px control: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px failed: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px failed: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px failed: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px failed: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px failed: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px failed: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px failed: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px failed-open: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px failed-open: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px failed-open: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px failed-open: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px failed-open: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px failed-open: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px failed-open: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px no-check: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px no-check: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px no-check: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px no-check: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px no-check: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px no-check: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px no-check: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px no-check-open: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px no-check-open: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px no-check-open: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px no-check-open: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px no-check-open: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px no-check-open: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px no-check-open: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px check-pending: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px check-pending: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px check-pending: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px check-pending: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px check-pending: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px check-pending: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px check-pending: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px recovered: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px recovered: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px recovered: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px recovered: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px recovered: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px recovered: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px recovered: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px public-pending: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px public-pending: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px public-pending: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public-pending: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public-pending: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px public-pending: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px public-pending: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px public-recovered: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px public-recovered: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px public-recovered: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px public-recovered: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px public-recovered: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px public-recovered: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px public-recovered: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-fee: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-fee: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-fee: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-fee: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-fee: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-fee: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-fee: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-public: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-public: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-public: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-public: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-public: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-public: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-public: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-fee: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-fee: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-fee: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-fee: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-fee: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-fee: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-fee: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-public: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-public: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-public: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-public: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-public: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-public: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-public: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-fee: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-fee: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-fee: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-fee: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-fee: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-fee: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-fee: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-public: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-public: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-public: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-public: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-public: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-public: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px maintenance-public: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: map describes actual access independently of review",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: coverage remains the true service result",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: public visit chooses exact factual asset/alt/caption",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: caption stays below all physical objects",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: source list contains only actual known history",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: viewing changes no state and offers no task controls",
+      "passed": true
+    },
+    {
+      "name": "320px cancelled: page fits horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px lock and pending opening keep the same fee prop apart from separate intent chips",
+      "passed": true
+    },
+    {
+      "name": "320px equal-year/equal-channel control isolates visibly different access on the real map",
+      "passed": true
+    },
+    {
+      "name": "320px the real near image distinguishes fee/public without relying on caption",
+      "passed": true
+    },
+    {
+      "name": "320px paid/opened: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "320px check-pending/public-pending: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "320px recovered/public-recovered: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "320px stopped-fee/stopped-public: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "320px check-closed-fee/check-closed-public: access shapes remain distinct in grayscale",
+      "passed": true
+    },
+    {
+      "name": "320px200% paid: real entry is focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "320px200% paid: full-size text has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% paid: caption does not cover the entrance or review table",
+      "passed": true
+    },
+    {
+      "name": "320px200% paid: source is keyboard reachable without obstruction",
+      "passed": true
+    },
+    {
+      "name": "320px200% paid: actual source opens without changing world",
+      "passed": true
+    },
+    {
+      "name": "320px200% opened: real entry is focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "320px200% opened: full-size text has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% opened: caption does not cover the entrance or review table",
+      "passed": true
+    },
+    {
+      "name": "320px200% opened: source is keyboard reachable without obstruction",
+      "passed": true
+    },
+    {
+      "name": "320px200% opened: actual source opens without changing world",
+      "passed": true
+    },
+    {
+      "name": "320px200% check-pending: real entry is focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "320px200% check-pending: full-size text has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% check-pending: caption does not cover the entrance or review table",
+      "passed": true
+    },
+    {
+      "name": "320px200% check-pending: source is keyboard reachable without obstruction",
+      "passed": true
+    },
+    {
+      "name": "320px200% check-pending: actual source opens without changing world",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped-public: real entry is focused and unobscured",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped-public: full-size text has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped-public: caption does not cover the entrance or review table",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped-public: source is keyboard reachable without obstruction",
+      "passed": true
+    },
+    {
+      "name": "320px200% stopped-public: actual source opens without changing world",
+      "passed": true
+    },
+    {
+      "name": "Actual lock retains the fee gate and does not claim public access",
+      "passed": true
+    },
+    {
+      "name": "Actual submitted opening still has a lowered fee gate before31",
+      "passed": true
+    },
+    {
+      "name": "Actual31 fulfillment raises the original entrance and changes only future access",
+      "passed": true
+    },
+    {
+      "name": "Actual opening does not alter old flood, snapshot or preexisting history",
+      "passed": true
+    },
+    {
+      "name": "The newly open sign is traceable to actual30→31 fulfilment",
+      "passed": true
+    },
+    {
+      "name": "Refresh retains exact opened state and artwork",
+      "passed": true
+    },
+    {
+      "name": "Actual fee import keeps truthful access and exact facts",
+      "passed": true
+    },
+    {
+      "name": "Actual public import keeps truthful access and exact facts",
+      "passed": true
+    },
+    {
+      "name": "Runtime sources stayed frozen throughout the suite",
+      "passed": true
+    },
+    {
+      "name": "No runtime, asset or hot-update errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "runtimeHash": {
+    "before": "4e0a582ce25a5259f76dbc2cd0cd5e63cf17ce46833dc44e38b2de0f351b0eab",
+    "after": "4e0a582ce25a5259f76dbc2cd0cd5e63cf17ce46833dc44e38b2de0f351b0eab"
+  }
+}

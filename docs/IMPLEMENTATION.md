@@ -86,3 +86,10 @@ Phaser 3负责地图和相机，DOM负责中文阅读与操作。`simulation.js`
 - `scene-visit.js`独立于AVG与调查session，F6直接复用当前事实的sceneArt/farPortVisual。main的visit屏幕没有取证、锁定或提交控件；save仅增加该UI白名单及F6选择保护，导入仍回世界。
 - `fee-history.js`对charter-lapsed提供只读来源注释，核验行动、兑现、机构与历史记录，原文/ID/模拟均不改。D4第20年对白复用同一核实说明。
 - 两个独立浏览器套件：`test:history-reading`（4206）与`test:scene-visit`（4207），均加入顺序aggregate。
+
+## 第十二轮：人手版本与制度责任
+
+- simulation 独立保存/解析人手规则。无标签是前向兼容默认，不识别未知生产者；实际年度倍率、年16停运、地图与近景共享规则，过去不回写、停运不复活。
+- `relocation-history.js` 只读核验迁任的制度范围与实际来源；免费合同和整轮核对均说明范围，原历史措辞旁补注未记录的中断过程。
+- F6准入与校验/运行状态显式组合，真实兑现才改变横杆与公开告示，不再以同一收费场景掩盖公开协商结果。
+- 两套新浏览器专项加入顺序 aggregate，详细兼容范围见 [第十二轮说明](STAFFING_ASSUMPTIONS.md)。

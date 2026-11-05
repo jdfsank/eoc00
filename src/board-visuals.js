@@ -1,3 +1,4 @@
+import {getInstitutionStaffing} from './simulation.js';
 import {farPortVisual} from './far-port-visuals.js';
 import {southBankVisual} from './south-bank-visuals.js';
 // One absolute scale for the world layer and its legend. Values are capacities,
@@ -35,7 +36,7 @@ export function institutionVisual(state, cellId) {
   const candidates = working.length ? working : all;
   const institution = [...candidates].sort((a, b) => PRIORITY.indexOf(a.kind) - PRIORITY.indexOf(b.kind) || b.startYear - a.startYear)[0];
   const halted = institution.active === false || institution.maintenance <= 0;
-  const staffingGap = !halted && cellId === 'D4' && ['station', 'archive'].includes(institution.kind) && !!state.flags.recruited && !state.flags.successor;
+  const staffingGap = !halted && getInstitutionStaffing(state,institution).outputReducedNow;
   // Missing people and insufficient physical upkeep are independent facts.
   // Keep degraded as a compatibility alias for physical maintenance only.
   const maintenanceGap = !halted && institution.maintenance < 1;

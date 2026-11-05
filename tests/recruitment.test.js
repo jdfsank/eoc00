@@ -282,7 +282,11 @@ for (const route of oldRoutes) for (const stage of ['planning','locked','submitt
   if (loaded.year === 10 && loaded.phase === 'planning') {
     assert.deepEqual(contracts(loaded).map(a=>a.id), ['recruit_successor','recruit_risk']);
     for (const action of ['recruit_successor','recruit_risk']) {
-      assert.deepEqual(sim.getActions(loaded,'D4').find(a=>a.id===action), prior.getActions(old,'D4').find(a=>a.id===action));
+      // The added staffing note is read-only presentation; every original
+      // contract field, including risk, still matches this coverage-era engine.
+      const { staffingNote, ...contract } = sim.getActions(loaded,'D4').find(a=>a.id===action);
+      assert.equal(typeof staffingNote, 'string');
+      assert.deepEqual(contract, prior.getActions(old,'D4').find(a=>a.id===action));
     }
   }
   while (old.year < 40) {

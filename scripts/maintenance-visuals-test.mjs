@@ -3,7 +3,7 @@ import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import {createRun,commitWindow,advanceToNextWindow,randomFor,validateState} from '../src/simulation.js';
+import {createRun,commitWindow,advanceToNextWindow,advanceYear,randomFor,validateState} from '../src/simulation.js';
 import {investigateAndLock} from '../tests/helpers/play.js';
 
 const out='playtest-output';await fs.mkdir(out,{recursive:true});
@@ -16,9 +16,10 @@ await page.addInitScript(()=>{const fixture=sessionStorage.getItem('afterwave.ma
 const check=(name,ok)=>{assert.ok(ok,name);checks.push({name,passed:true});};
 let seed=0;while(randomFor(seed,'event:action:0:protagonist:D4:build_joint')>=.7)seed++;
 const base=createRun(seed);investigateAndLock(base,'protagonist','D4','build_joint');commitWindow(base);advanceToNextWindow(base);
+investigateAndLock(base,'protagonist','D4','recruit_risk');commitWindow(base);advanceYear(base);advanceYear(base);
 function fixture({staff=false,maintenance=1,active=true}={}){
  const state=structuredClone(base),station=state.institutions.find(i=>i.kind==='station');
- state.flags.recruited=staff;state.flags.successor=!staff;station.maintenance=maintenance;station.active=active;
+ state.flags.recruited=true;state.flags.successor=!staff;station.maintenance=maintenance;station.active=active;
  assert.equal(validateState(state).valid,true);return state;
 }
 const states={normal:fixture(),staffing:fixture({staff:true}),maintenance:fixture({maintenance:.7}),both:fixture({staff:true,maintenance:.7}),stopped:fixture({staff:true,maintenance:.7,active:false}),restored:fixture()};
@@ -82,6 +83,6 @@ try{
   check(`${width}px layer and camera controls preserve both status causes`,await page.locator('.institution-status').innerText()===expected.both);
  }
  check('No script or asset errors',errors.length===0);
- const result={checks,errors,notes:['The six images use validated same-year field-boundary fixtures so only staffing, maintenance and operation differ. They are not six new authored gameplay branches. Monochrome views are visual checks, not accessibility certification.']};
+ const result={checks,errors,notes:['The six images use validated same-year field-boundary fixtures after a real risky recruitment, so only staffing, maintenance and operation differ. They are not six new authored gameplay branches. Monochrome views are visual checks, not accessibility certification.']};
  await fs.writeFile(`${out}/round5-maintenance-visual-results.json`,JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
 }finally{await browser.close();await server.close();}

@@ -9,6 +9,22 @@ export const COVERAGE_RULES = Object.freeze({
   warningProtection: .35, stateCoordination: .1, jointRecords: .15, mutualAid: .3,
 });
 export const usesLegacyCrisisRules = s => s.crisisRulesVersion !== COVERAGE_RULES.version;
+export const STAFFING_RULES = Object.freeze({ stationOnly: 'station-only-v1', riverCarriers: 'river-carriers-v1', version: 'river-carriers-v1' });
+const validStaffingVersion = version => [STAFFING_RULES.stationOnly, STAFFING_RULES.riverCarriers].includes(version);
+export function getStaffingRulesVersion(s) {
+  if (s.staffingRulesVersion !== undefined) {
+    if (!validStaffingVersion(s.staffingRulesVersion)) throw new Error('人手结算规则版本非法');
+    return s.staffingRulesVersion;
+  }
+  // This is a prospective compatibility policy, not producer identification.
+  // Unversioned originals may already contain results from a newer runtime.
+  return usesLegacyCrisisRules(s) ? STAFFING_RULES.stationOnly : STAFFING_RULES.riverCarriers;
+}
+export function getStaffingRulesDescription(s) {
+  const original = getStaffingRulesVersion(s) === STAFFING_RULES.stationOnly;
+  const scope = original ? '原版人手结算：缺岗减产与第16年停运只作用于测站，不作用于档案站。' : '河港人手结算：缺岗减产与第16年停运适用于D4测站和档案站。';
+  return scope + (s.staffingRulesVersion === undefined ? '未保存独立人手版本，按本局危机规则身份采用兼容默认；这不是对曾用引擎的鉴别。' : '本局已明确保存独立人手版本。') + '规则只用于之后的结算；已存产出、停运、危机与历史不重算，已停运机构不会因此复活。这不是完整回滚旧引擎。';
+}
 export const PLANNING_RULES = Object.freeze({ version: 'tradeoffs-v1', investigationBudget: 3, emergencyReview: .55, partialReview: .8, surveyedVeto: .2 });
 export const usesTradeoffs = s => s.planningRulesVersion === PLANNING_RULES.version;
 export const HANDOFF_RULES = Object.freeze({ version: 'handoff-v1' });
@@ -42,7 +58,35 @@ export function randomFor(seed, key) {
 }
 const sources = { station: [0.1, 0.1, 1.6, 0.25], archive: [0, 0, .35, .15], training: [.1, .25, .7, .1], branch: [.15, .4, 1, .15], school: [.1, .25, .65, .2], mutual: [.1, .6, .1, .55], independent: [.2, .1, .65, .2], warning: [.05, .1, .2, .1] };
 const coefficient = value => Math.round(Math.max(0, Math.min(1, value)) * 10000) / 10000;
-const staffingFor = (s, i) => i.cellId === 'D4' && ['station', 'archive'].includes(i.kind) && hasRecruitmentVacancy(s) ? .5 : 1;
+export function getInstitutionStaffing(s, i, { assumedRecruitmentActionId } = {}) {
+  const rulesVersion = getStaffingRulesVersion(s), original = rulesVersion === STAFFING_RULES.stationOnly;
+  const hypothetical = assumedRecruitmentActionId !== undefined;
+  if (hypothetical && !RECRUITMENT_ACTIONS.includes(assumedRecruitmentActionId)) throw new Error('招募人手推算的行动非法');
+  const vacancy = hypothetical ? assumedRecruitmentActionId === 'recruit_risk'
+    : original ? !!s.flags?.recruited && !s.flags?.successor : s.flags ? hasRecruitmentVacancy(s) : false;
+  const eligible = original ? i.kind === 'station' : i.cellId === 'D4' && ['station', 'archive'].includes(i.kind);
+  const sourceMultiplier = eligible && vacancy ? .5 : 1;
+  // The original milestone stopped its first active station only. Production
+  // applied to every station; do not accidentally merge those two scopes.
+  const shutdownTarget = vacancy && eligible && i.active && (!original || active(s, 'station')?.id === i.id);
+  return { rulesVersion, sourceMultiplier,
+    outputReducedNow: !hypothetical && !!i.active && i.maintenance > 0 && sourceMultiplier < 1,
+    shutdownIfUnchangedYear: s.year < 16 && vacancy && shutdownTarget ? 16 : null };
+}
+const staffingFor = (s, i) => getInstitutionStaffing(s, i).sourceMultiplier;
+
+function recruitmentStaffingNote(s, actionId) {
+  const original = getStaffingRulesVersion(s) === STAFFING_RULES.stationOnly;
+  const rule = original ? '本局原版缺岗规则只作用于测站，档案站不因此减产或在第16年停运。' : '本局缺岗规则作用于D4测站和档案站。';
+  if (actionId === 'recruit_volunteer') return '没有正在交接的岗位；自愿同行不制造减产或停运，也不补建机构或授予继任。';
+  if (actionId === 'recruit_successor') return rule + (getRecruitmentRoles(s).length
+    ? '安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。'
+    : '当前没有可交接的河港岗位；原继任合同保留，但不能据此补写任职、机构或已落实的人手。');
+  const targets = s.institutions.filter(i => i.active && i.maintenance > 0 && getInstitutionStaffing(s, i, { assumedRecruitmentActionId: actionId }).sourceMultiplier < 1);
+  return rule + (targets.length
+    ? `若本合同兑现，当前有效载体${targets.map(i => `${i.cellId}${i.kind === 'station' ? '测站' : '档案站'}`).join('、')}的年度来源产出减半；若届时仍缺继任，第16年按本局规则停运。`
+    : '当前没有有效载体会因本合同减少现有产出；不能把不存在或已停下的产出写成损失。') + '这只是合同条件说明，尚未兑现；真实离岗和原继任合同仍会保留。';
+}
 
 function governanceFor(s, i) {
   const origin = s.history.find(event => event.id === i.sourceActionId && event.kind === 'action');
@@ -143,7 +187,7 @@ function schedule(s, data) {
   if (!s.events.some(e => e.id === data.id)) s.events.push({ kind: 'event', status: 'pending', parentId: null, sourceActionId: null, probability: 1, conditionVersion: 1, ...data });
 }
 export function createRun(seed = 12) {
-  const s = { version: 'afterwave.run.v1', crisisRulesVersion: COVERAGE_RULES.version, planningRulesVersion: PLANNING_RULES.version, handoffRulesVersion: HANDOFF_RULES.version, aftermathRulesVersion: AFTERMATH_RULES.version, recruitmentRulesVersion: RECRUITMENT_RULES.version, recoveryRulesVersion: RECOVERY_RULES.version, portAccessRulesVersion: PORT_ACCESS_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
+  const s = { version: 'afterwave.run.v1', crisisRulesVersion: COVERAGE_RULES.version, staffingRulesVersion: STAFFING_RULES.version, planningRulesVersion: PLANNING_RULES.version, handoffRulesVersion: HANDOFF_RULES.version, aftermathRulesVersion: AFTERMATH_RULES.version, recruitmentRulesVersion: RECRUITMENT_RULES.version, recoveryRulesVersion: RECOVERY_RULES.version, portAccessRulesVersion: PORT_ACCESS_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
   s.cells.forEach(c => { c.deployable = ['D4', 'B4'].includes(c.id); if (c.name === '未命名地域') c.name = `${c.id}·${c.terrain === 'water' ? '水域' : '原野'}`; });
   record(s, { id: 'arrival', title: '第零年 · 借来的十年', text: '续史局只能在每十年的窗口介入一次。你是唯一的介入员。河港将迎来洪水，但居民并不只需要被拯救。', kind: 'arrival' });
   s.snapshots[0] = copy(s.cells); return s;
@@ -429,7 +473,12 @@ export function getActions(s, cellId, actorId = 'protagonist', evidence = null) 
     notes.renew_charter = '维持河港公开、足额维护；把现存同源培训点纳入继任与地方复核授权，保留可追溯授权记录。不改变远港收费门槛，也不凭空增加异源校验。';
     for (const policy of ['share_power', 'withdraw']) notes[policy] = handoffSummary(s, policy) + '交班需不同地域的已获授权人手与真实异源校验；原学徒可提供人手，同源人数不等于独立方法。学校提供技术人手，强制迁任本身不证明合作。共享另需河港信任。最终按第40年实际存续条件结算。';
   }
-  return out.filter(a => !getActorRefusals(s, actorId, cellId).some(r => r.actionId === a.id)).map(a => ({ ...a, ...(notes[a.id] ? { modelNote: notes[a.id] } : {}) }));
+  return out.filter(a => !getActorRefusals(s, actorId, cellId).some(r => r.actionId === a.id)).map(a => {
+    const staffingNote = RECRUITMENT_ACTIONS.includes(a.id) ? recruitmentStaffingNote(s, a.id) : null;
+    return { ...a, ...(notes[a.id] ? { modelNote: notes[a.id] } : {}), ...(staffingNote ? { staffingNote,
+      ...(a.id === 'recruit_risk' && getStaffingRulesVersion(s) === STAFFING_RULES.stationOnly
+        ? { risk: '本局原版缺岗规则只作用于测站；档案站不因此减产或在第16年停运。真实离岗与未安排继任的记录仍保留。' } : {}) } : {}) };
+  });
 }
 function assertPlanning(s, actorId) { require(s.phase === 'planning', '当前不在介入窗口'); require(getActors(s).some(a => a.id === actorId), '该棋子本轮不可部署'); }
 export function lockTask(s, actorId, cellId, actionId, evidence = []) {
@@ -445,7 +494,7 @@ export function passTask(s, actorId) { assertPlanning(s, actorId); s.drafts[acto
 export function unlockTask(s, actorId) { assertPlanning(s, actorId); delete s.drafts[actorId]; return s; }
 export function getWindowReview(s) {
   const actors = getActors(s), tasks = [], costs = {}, issues = [], warnings = [], occupied = new Map();
-  if (usesAftermathRules(s)) {
+  if (usesAftermathRules(s) || s.staffingRulesVersion !== undefined) {
     const integrity = validateState(s);
     if (!integrity.valid) return { ready: false, issues: integrity.errors, warnings, costs, tasks, assigned: 0, total: actors.length };
   }
@@ -597,8 +646,12 @@ function milestone(s) {
   }
   if (s.year === 16) {
     const station = active(s, 'station');
-    if (hasRecruitmentVacancy(s)) {
-      for (const institution of s.institutions.filter(i => i.cellId === 'D4' && ['station', 'archive'].includes(i.kind) && i.active)) {
+    const originalStaffing = getStaffingRulesVersion(s) === STAFFING_RULES.stationOnly;
+    if (originalStaffing ? station && s.flags.recruited && !s.flags.successor : hasRecruitmentVacancy(s)) {
+      if (originalStaffing) {
+        station.active = false;
+        record(s, { id: 'station-unattended', title: '无人接班的测站', text: '林澈离开后无人维护，河港测站停运。东岸与远港已经学会的知识没有消失。', parentId: station.sourceEventId, kind: 'maintenance' });
+      } else for (const institution of s.institutions.filter(i => i.cellId === 'D4' && ['station', 'archive'].includes(i.kind) && i.active)) {
         institution.active = false;
         const label = institution.kind === 'archive' ? '档案站' : '测站';
         record(s, { id: `${institution.kind}-unattended`, title: `无人接班的${label}`, text: `林澈离开后无人维护，河港${label}停运。已经保存或传播的知识没有消失。`, parentId: institution.sourceEventId, kind: 'maintenance' });
@@ -728,6 +781,7 @@ function inspectState(s) {
   const bounded = (value, min = 0, max = 100) => Number.isFinite(value) && value >= min && value <= max;
   const id = value => typeof value === 'string' && value.length > 0;
   if (!object(s) || s.version !== 'afterwave.run.v1') return { valid: false, errors: ['不兼容的存档版本'] };
+  if (s.staffingRulesVersion !== undefined && !validStaffingVersion(s.staffingRulesVersion)) return { valid: false, errors: ['人手结算规则版本非法'] };
   if (s.portAccessRulesVersion !== undefined && s.portAccessRulesVersion !== PORT_ACCESS_RULES.version) errors.push('远港准入规则版本非法');
   if (s.recoveryRulesVersion !== undefined && s.recoveryRulesVersion !== RECOVERY_RULES.version) errors.push('后续校验规则版本非法');
   if (s.recruitmentRulesVersion !== undefined && s.recruitmentRulesVersion !== RECRUITMENT_RULES.version) errors.push('招募岗位规则版本非法');

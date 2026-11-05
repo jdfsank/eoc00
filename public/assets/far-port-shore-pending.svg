@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" shape-rendering="crispEdges" data-branch="shore" data-review="pending">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" shape-rendering="crispEdges" data-branch="shore" data-review="pending" data-access="none">
 <title>F6 tributary landing: shore, pending</title><desc>Original fixed-location illustration. The branch and checking service are distinct. A tied unresolved folio is not successful correction; an unfilled work order is not a new institution. Later checking keeps the old failure and cannot reverse past flood loss. Ledger marks are illustrative, not numerical measurements.</desc>
 <rect width="1000" height="500" fill="#A6B8A5"/><path d="M0 106h90V85h88v26h90V70h95v49h101V91h86v42h105v-24h123v33h110v-31h112v244H0Z" fill="#718D7D"/>
 <!-- A side channel meets the main river beside the same short landing. -->
@@ -9,6 +9,7 @@
 <path d="M91 331l99 51M143 326l103 52M197 322l102 50M251 318l103 50M304 313l107 49" stroke="#766F52" stroke-width="5"/>
 <path d="M77 330v82M383 310v69M479 353v53" stroke="#4F6254" stroke-width="12"/>
 <path d="M76 326l22-2M382 305l21-2" stroke="#D3C5A0" stroke-width="8"/>
+
 
 <g id="record-platform"><path d="M548 385l324-31 91 49-326 39Z" fill="#526D60"/>
 <g id="failed-folio"><path d="M558 312l102-12 48 23-103 17Z" fill="#9F916D"/><path d="M573 333v75M685 335v69" stroke="#796C50" stroke-width="9"/><path d="M588 241l83-9v86l-83 12Z" fill="#C7B992" stroke="#294944" stroke-width="6"/><path d="M588 241l62-7 21 17-22 3-2-20" fill="#E0D6B7"/><path d="M600 267l16-8 12 14M638 274l20-10M601 299l22-5M642 290l16-4" fill="none" stroke="#6D755C" stroke-width="5"/><path d="M622 239v84" stroke="#8D7755" stroke-width="7"/>
