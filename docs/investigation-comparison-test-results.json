@@ -1,0 +1,1122 @@
+{
+  "scope": "Real headless Chromium. Main route is clicked from fresh seed12 through pass0 → voluntary companion10 → linche D4 resident warning20, then compare before protagonist research. Additional states come from legal engine paths; malformed/pending cases are explicitly labelled. Engine clones are used only as independent action/settlement oracles, not to drive the main UI. Desktop, 390px, 320px/200% text; not a physical-device or human playtest certification.",
+  "checks": [
+    {
+      "name": "Natural click route reaches year20 with only linche warning locked and protagonist budget3",
+      "passed": true
+    },
+    {
+      "name": "Comparison is labelled read-only and placed before any real investigation control",
+      "passed": true
+    },
+    {
+      "name": "Comparison retains linche actual warning and separates it from hypothetical protagonist choices",
+      "passed": true
+    },
+    {
+      "name": "Comparison does not reveal unread anomaly text",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: review visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: review does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: review actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: review shows the real rounded average 0.9431",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: surveyed_veto visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: surveyed_veto does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: surveyed_veto actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: surveyed_veto shows the real rounded average 0.1886",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: basic_veto visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: basic_veto does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: basic_veto actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: basic_veto shows the real rounded average 0.2830",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: exact preparation probability 55%",
+      "passed": true
+    },
+    {
+      "name": "Natural seed12 pass/voluntary: surveyed/basic retained-warning losses match 0.1886/0.283",
+      "passed": true
+    },
+    {
+      "name": "Visible review conditions include nonrefundable cost and both possible branches",
+      "passed": true
+    },
+    {
+      "name": "Contract is freely readable while authoritative confirm is still disabled",
+      "passed": true
+    },
+    {
+      "name": "Contract repeats the same clearly labelled hypothesis rather than issuing a draft",
+      "passed": true
+    },
+    {
+      "name": "Reading, switching alternatives, closing details and reloading preserve world and stored world bytes",
+      "passed": true
+    },
+    {
+      "name": "Actual anomaly investigation spends exactly two rounds",
+      "passed": true
+    },
+    {
+      "name": "After spending, two-round survey is unreachable and has no invented whole-round outcome",
+      "passed": true
+    },
+    {
+      "name": "Real route-survey control remains disabled with only one round left",
+      "passed": true
+    },
+    {
+      "name": "Cross-location comparison cannot refund the spent portable evidence",
+      "passed": true
+    },
+    {
+      "name": "Reopening the basic fallback never rewrites acquired evidence or returns rounds",
+      "passed": true
+    },
+    {
+      "name": "Only actual lock produces review draft, and does not pay costs",
+      "passed": true
+    },
+    {
+      "name": "True locked-plan outlook is still separate and ready only after both actors lock",
+      "passed": true
+    },
+    {
+      "name": "Real clicked submission settles the displayed review branch without rerolling",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: review visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: review does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: review actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: review shows the real rounded average 0.9431",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: surveyed_veto visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: surveyed_veto does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: surveyed_veto actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: surveyed_veto shows the real rounded average 0.1886",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: basic_veto visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: basic_veto does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: basic_veto actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: basic_veto shows the real rounded average 0.2830",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: exact preparation probability 55%",
+      "passed": true
+    },
+    {
+      "name": "Seed0 pass/voluntary failed review: surveyed/basic retained-warning losses match 0.1886/0.283",
+      "passed": true
+    },
+    {
+      "name": "Independent review oracles exercise both possible outcomes, not just successful seeds",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: review visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: review does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: review actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: review shows the real rounded average 0.9431",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: surveyed_veto visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: surveyed_veto does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: surveyed_veto actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: surveyed_veto shows the real rounded average 0.1886",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: basic_veto visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: basic_veto does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: basic_veto actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: basic_veto shows the real rounded average 0.2830",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: exact preparation probability 80%",
+      "passed": true
+    },
+    {
+      "name": "Seed1 preserve/voluntary: surveyed/basic retained-warning losses match 0.1886/0.283",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: review visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: review does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: review actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: surveyed_veto visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: surveyed_veto does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: surveyed_veto actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: surveyed_veto shows the real rounded average 0.1239",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: basic_veto visibly ready with real costs and timing",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: basic_veto does not expose lock or investigate controls",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: basic_veto actual settlement equals displayed conditional model",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: basic_veto shows the real rounded average 0.1859",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: exact preparation probability 100%",
+      "passed": true
+    },
+    {
+      "name": "Seed12 joint/successor: surveyed/basic retained-warning losses match 0.1239/0.1859",
+      "passed": true
+    },
+    {
+      "name": "Certain review has no impossible failure branch",
+      "passed": true
+    },
+    {
+      "name": "Retained Linche review: surveyed_veto identifies her55% year22 contract instead of implying a certain review",
+      "passed": true
+    },
+    {
+      "name": "Retained Linche review: basic_veto identifies her55% year22 contract instead of implying a certain review",
+      "passed": true
+    },
+    {
+      "name": "Reading retained-review alternatives never replaces the other actor contract or grants protagonist evidence",
+      "passed": true
+    },
+    {
+      "name": "Labelled fixture missing actor: explains blocker without whole-round branches",
+      "passed": true
+    },
+    {
+      "name": "Labelled fixture missing actor: reading never repairs or mutates the input",
+      "passed": true
+    },
+    {
+      "name": "Labelled fixture same-cell conflict: explains blocker without whole-round branches",
+      "passed": true
+    },
+    {
+      "name": "Labelled fixture same-cell conflict: reading never repairs or mutates the input",
+      "passed": true
+    },
+    {
+      "name": "Labelled fixture unfunded retained warning: explains blocker without whole-round branches",
+      "passed": true
+    },
+    {
+      "name": "Labelled fixture unfunded retained warning: reading never repairs or mutates the input",
+      "passed": true
+    },
+    {
+      "name": "Labelled fixture unknown pending contract: explains blocker without whole-round branches",
+      "passed": true
+    },
+    {
+      "name": "Labelled fixture unknown pending contract: reading never repairs or mutates the input",
+      "passed": true
+    },
+    {
+      "name": "Unaffordable review withholds only its numbers and preserves payable alternatives",
+      "passed": true
+    },
+    {
+      "name": "Acquired route evidence never offers a fictitious new basic lock",
+      "passed": true
+    },
+    {
+      "name": "Existing basic snapshot remains0.30 until real relock despite newly acquired route evidence",
+      "passed": true
+    },
+    {
+      "name": "Genuine old save has no new comparison and retains its original contract preview",
+      "passed": true
+    },
+    {
+      "name": "Reading old contract does not migrate, grant evidence, or change stored world",
+      "passed": true
+    },
+    {
+      "name": "320px/200% uses the real accessibility toggle with no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "name": "320px/200% keeps comparison and every row within the viewport",
+      "passed": true
+    },
+    {
+      "name": "320px/200% expanded regional explanation never overflows horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px/200% expanded regional explanation never overflows horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px/200% expanded regional explanation never overflows horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px/200% expanded regional explanation never overflows horizontally",
+      "passed": true
+    },
+    {
+      "name": "320px/200% never wraps any average loss number across lines",
+      "passed": true
+    },
+    {
+      "name": "Keyboard can reach unread contract at320/200% without crossing the actual evidence boundary",
+      "passed": true
+    },
+    {
+      "name": "Keyboard return still focuses the exact unpaid evidence summary after comparison",
+      "passed": true
+    },
+    {
+      "name": "Accessibility toggles, keyboard expansion and navigation preserve every world byte",
+      "passed": true
+    },
+    {
+      "name": "No browser script or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "oracles": [
+    {
+      "label": "Natural seed12 pass/voluntary",
+      "alternatives": [
+        {
+          "id": "review",
+          "probability": 0.55,
+          "success": {
+            "available": true,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 1,
+            "damageByCell": {
+              "D4": 0.7725,
+              "E4": 1,
+              "D5": 1,
+              "F6": 1
+            },
+            "damage": 0.9431
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "averted",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            }
+          }
+        },
+        {
+          "id": "surveyed_veto",
+          "probability": 1,
+          "success": {
+            "available": false,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 0.2,
+            "damageByCell": {
+              "D4": 0.1545,
+              "E4": 0.2,
+              "D5": 0.2,
+              "F6": 0.2
+            },
+            "damage": 0.1886
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "contained",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.1886,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0.1545,
+              "E4": 0.2,
+              "D5": 0.2,
+              "F6": 0.2
+            }
+          }
+        },
+        {
+          "id": "basic_veto",
+          "probability": 1,
+          "success": {
+            "available": false,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 0.3,
+            "damageByCell": {
+              "D4": 0.2318,
+              "E4": 0.3,
+              "D5": 0.3,
+              "F6": 0.3
+            },
+            "damage": 0.283
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "contained",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.283,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0.2318,
+              "E4": 0.3,
+              "D5": 0.3,
+              "F6": 0.3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "Seed0 pass/voluntary failed review",
+      "alternatives": [
+        {
+          "id": "review",
+          "probability": 0.55,
+          "success": {
+            "available": true,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 1,
+            "damageByCell": {
+              "D4": 0.7725,
+              "E4": 1,
+              "D5": 1,
+              "F6": 1
+            },
+            "damage": 0.9431
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "disaster",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.9431,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0.7725,
+              "E4": 1,
+              "D5": 1,
+              "F6": 1
+            }
+          }
+        },
+        {
+          "id": "surveyed_veto",
+          "probability": 1,
+          "success": {
+            "available": false,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 0.2,
+            "damageByCell": {
+              "D4": 0.1545,
+              "E4": 0.2,
+              "D5": 0.2,
+              "F6": 0.2
+            },
+            "damage": 0.1886
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "contained",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.1886,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0.1545,
+              "E4": 0.2,
+              "D5": 0.2,
+              "F6": 0.2
+            }
+          }
+        },
+        {
+          "id": "basic_veto",
+          "probability": 1,
+          "success": {
+            "available": false,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 0.3,
+            "damageByCell": {
+              "D4": 0.2318,
+              "E4": 0.3,
+              "D5": 0.3,
+              "F6": 0.3
+            },
+            "damage": 0.283
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "contained",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.283,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0.2318,
+              "E4": 0.3,
+              "D5": 0.3,
+              "F6": 0.3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "Seed1 preserve/voluntary",
+      "alternatives": [
+        {
+          "id": "review",
+          "probability": 0.8,
+          "success": {
+            "available": true,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 1,
+            "damageByCell": {
+              "D4": 0.7725,
+              "E4": 1,
+              "D5": 1,
+              "F6": 1
+            },
+            "damage": 0.9431
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "averted",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            }
+          }
+        },
+        {
+          "id": "surveyed_veto",
+          "probability": 1,
+          "success": {
+            "available": false,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 0.2,
+            "damageByCell": {
+              "D4": 0.1545,
+              "E4": 0.2,
+              "D5": 0.2,
+              "F6": 0.2
+            },
+            "damage": 0.1886
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "contained",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.1886,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0.1545,
+              "E4": 0.2,
+              "D5": 0.2,
+              "F6": 0.2
+            }
+          }
+        },
+        {
+          "id": "basic_veto",
+          "probability": 1,
+          "success": {
+            "available": false,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 0.3,
+            "damageByCell": {
+              "D4": 0.2318,
+              "E4": 0.3,
+              "D5": 0.3,
+              "F6": 0.3
+            },
+            "damage": 0.283
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "contained",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.283,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 0.65,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "protectionByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damageByCell": {
+              "D4": 0.2318,
+              "E4": 0.3,
+              "D5": 0.3,
+              "F6": 0.3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "Seed12 joint/successor",
+      "alternatives": [
+        {
+          "id": "review",
+          "probability": 1,
+          "success": {
+            "available": true,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": false,
+            "base": 1,
+            "damageByCell": {
+              "D4": 0.5525,
+              "E4": 0.6864,
+              "D5": 0.6864,
+              "F6": 0.5525
+            },
+            "damage": 0.6195
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "averted",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 1,
+              "E4": 0.55,
+              "D5": 0.55,
+              "F6": 1
+            },
+            "protectionByCell": {
+              "D4": 0.15,
+              "E4": 0.15,
+              "D5": 0.15,
+              "F6": 0.15
+            },
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            }
+          }
+        },
+        {
+          "id": "surveyed_veto",
+          "probability": 1,
+          "success": {
+            "available": false,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 0.2,
+            "damageByCell": {
+              "D4": 0.1105,
+              "E4": 0.1373,
+              "D5": 0.1373,
+              "F6": 0.1105
+            },
+            "damage": 0.1239
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "contained",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.1239,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 1,
+              "E4": 0.55,
+              "D5": 0.55,
+              "F6": 1
+            },
+            "protectionByCell": {
+              "D4": 0.15,
+              "E4": 0.15,
+              "D5": 0.15,
+              "F6": 0.15
+            },
+            "damageByCell": {
+              "D4": 0.1105,
+              "E4": 0.1373,
+              "D5": 0.1373,
+              "F6": 0.1105
+            }
+          }
+        },
+        {
+          "id": "basic_veto",
+          "probability": 1,
+          "success": {
+            "available": false,
+            "damageByCell": {
+              "D4": 0,
+              "E4": 0,
+              "D5": 0,
+              "F6": 0
+            },
+            "damage": 0
+          },
+          "fallback": {
+            "possible": true,
+            "base": 0.3,
+            "damageByCell": {
+              "D4": 0.1658,
+              "E4": 0.2059,
+              "D5": 0.2059,
+              "F6": 0.1658
+            },
+            "damage": 0.1859
+          },
+          "actual": {
+            "warningYear": 14,
+            "irreversibleYear": 23,
+            "status": "contained",
+            "dependency": "统一水文标准",
+            "affectedCells": [
+              "D4",
+              "E4",
+              "D5",
+              "F6"
+            ],
+            "damage": 0.1859,
+            "model": "coverage-v1",
+            "coverageByCell": {
+              "D4": 1,
+              "E4": 0.55,
+              "D5": 0.55,
+              "F6": 1
+            },
+            "protectionByCell": {
+              "D4": 0.15,
+              "E4": 0.15,
+              "D5": 0.15,
+              "F6": 0.15
+            },
+            "damageByCell": {
+              "D4": 0.1658,
+              "E4": 0.2059,
+              "D5": 0.2059,
+              "F6": 0.1658
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "playtest-output/round-17/comparison-before-research-390.png",
+    "playtest-output/round-17/comparison-before-research-desktop.png",
+    "playtest-output/round-17/comparison-after-two-rounds-390.png",
+    "playtest-output/round-17/comparison-certain-review-390.png",
+    "playtest-output/round-17/comparison-retained-review-390.png",
+    "playtest-output/round-17/comparison-other-actor-missing-390.png",
+    "playtest-output/round-17/comparison-320-text200-heading.png",
+    "playtest-output/round-17/comparison-320-text200-review.png"
+  ]
+}

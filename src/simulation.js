@@ -121,6 +121,20 @@ export function getWarningCoverage(s) {
   }));
 }
 
+// Public consequence arithmetic shared by settlement and read-only planning.
+// Callers supply issued facts or explicitly conditional service assumptions;
+// this function neither resolves contracts nor consults random outcomes.
+export function getCrisisLosses(s, mitigation, affectedCells = FLOOD_REGIONS) {
+  const coverage = getWarningCoverage(s), damageByCell = {}, coverageByCell = {}, protectionByCell = {};
+  for (const id of affectedCells) {
+    const service = coverage[id];
+    const hasAid = s.institutions.some(i => i.cellId === id && i.kind === 'mutual' && i.active && (!usesAftermathRules(s) || i.maintenance > 0));
+    coverageByCell[id] = service.coverage; protectionByCell[id] = service.protection;
+    damageByCell[id] = coefficient(mitigation * (1 - COVERAGE_RULES.warningProtection * service.coverage) * (1 - service.protection) * (hasAid ? 1 - COVERAGE_RULES.mutualAid : 1));
+  }
+  return {damage: coefficient(Object.values(damageByCell).reduce((sum, value) => sum + value, 0) / affectedCells.length), damageByCell, coverageByCell, protectionByCell};
+}
+
 export function reviewPreparation(s) {
   const records = s.institutions.some(i => i.active && i.maintenance > 0 && (i.sourceActionId?.endsWith(':preserve_records') || (governanceFor(s, i).kind === 'joint' && governanceFor(s, i).protection > 0)));
   const workforce = s.institutions.some(i => i.active && i.maintenance > 0 && ['station', 'branch', 'training', 'school'].includes(i.kind));
@@ -516,7 +530,7 @@ export function getAidPlan(s) {
   const description = mode === 'expand' ? '现有互助仓继续运转，另组织一组居民轮值，增加物资调配人手；分配不只按缴费名单。'
     : mode === 'restart' ? '原互助轮值已经停下。为新一组居民筹措经费与物资，重新组织不只按缴费名单的分配。'
       : '筹措第一组互助仓经费与物资，由居民轮值分配，而不是只按缴费名单。';
-  const outcome = s.flags.crisis?.damage > 0 ? '第23年已有损失，后续扶助不能让伤害消失。'
+  const outcome = !later ? '' : s.flags.crisis?.damage > 0 ? '第23年已有损失，后续扶助不能让伤害消失。'
     : s.flags.crisis?.damage === 0 ? '第23年记录中的损失已避免，后续互助仍支持日常生计。'
       : '第23年的历史不能由今天的互助补算，缺少明细时也不补造损失。';
   return { mode, later, title, description,
@@ -560,8 +574,8 @@ export function getActions(s, cellId, actorId = 'protagonist', evidence = null) 
     action('local_veto', '授予地方停闸权', '居民可以在异常水位时拒绝中央开闸令，先行撤离。', { politics: 4 }, 1, 1, [], '只能减轻损失，无法修正错误标准。', '第23年损失显著降低。'));
   if (cellId === 'E4' && y >= 20) out.push(action('train_network', '培育轮值维护者', '培养能够独立接班、公开记录的地方小组。', { economy: 4, science: 2 }, 1, 1, [], '人手需要时间成长，不会立即改变当年的危机。', '增加独立网络与退出独占控制的条件。'));
   if (y === 30 && getRecoverySource(s,cellId)) out.push(action('complete_review', '完成遗留校验 · 面向今后', '重新整理当年未完成的异源测量记录，把尚存的底稿与实际读尺工作接起来。', {economy:4,science:3}, 1, 2, ['anomaly_records'], '第32年仍需运转中的测量或教学人手；无人或原记录停运则取消，成本不退。不会改写第23年的损失。', '条件齐备后，新增面向未来的真实校验载体；不自动获得培训人手、授权、信任或交班方针。'));
-  if (cellId==='B4'&&getFutureCheckPlan(s).available) out.push(action(FUTURE_CHECK_RULES.actionId,'建立未来校验席','购置新刻水尺与对照抄本，结合修院居民重新指认的水痕，留出连续比对的工作席。',{economy:6,science:4},1,4,['anomaly_records','resident_testimony'],'第34年仍需真实运转的测量或教学人手；无人则取消，已付材料与场地成本不退。不补造早年的失败或改写第23年。','条件成立后新建B4未来异源校验载体；不附送培训、地方授权、信任或交班方针。'));
-  if (cellId==='B4'&&getArchiveUpgradePlan(s).available) out.push(action(ARCHIVE_UPGRADE_RULES.actionId,'把地方保档接成校验席','沿用修院保留的异源刻度，添置比对器具与工作席，并请居民重新指认水痕；旧档原页继续保留。',{economy:5,science:3},1,3,['anomaly_records','resident_testimony'],'第33年原保档与真实测量或教学人手都须仍在运转；任一缺失就取消，费用不退。不会改写原档或第23年。','成功后新增面向未来的指令校验，不赠人手、授权、信任或交班方针。'));
+  if (cellId==='B4'&&y===30&&getFutureCheckPlan(s).available) out.push(action(FUTURE_CHECK_RULES.actionId,'建立未来校验席','购置新刻水尺与对照抄本，结合修院居民重新指认的水痕，留出连续比对的工作席。',{economy:6,science:4},1,4,['anomaly_records','resident_testimony'],'第34年仍需真实运转的测量或教学人手；无人则取消，已付材料与场地成本不退。不补造早年的失败或改写第23年。','条件成立后新建B4未来异源校验载体；不附送培训、地方授权、信任或交班方针。'));
+  if (cellId==='B4'&&y===30&&getArchiveUpgradePlan(s).available) out.push(action(ARCHIVE_UPGRADE_RULES.actionId,'把地方保档接成校验席','沿用修院保留的异源刻度，添置比对器具与工作席，并请居民重新指认水痕；旧档原页继续保留。',{economy:5,science:3},1,3,['anomaly_records','resident_testimony'],'第33年原保档与真实测量或教学人手都须仍在运转；任一缺失就取消，费用不退。不会改写原档或第23年。','成功后新增面向未来的指令校验，不赠人手、授权、信任或交班方针。'));
   if (cellId==='F6'&&y===30&&usesPortAccessRules(s)&&usesTradeoffs(s)&&getPortWarningTargets(s).length) out.push(action('open_port_warning','协商远港公开预警','听取远港居民证词，为既有分站的基本预警筹措本地经费，取消缴费名单的准入门槛。',{economy:4,politics:2},1,1,['resident_testimony'],'第31年目标分站须仍在有效运转且尚未开放，否则取消，费用不退。不会重开停运机构、补足维护或改写第23年。','第31年起只向未缴费家庭开放既有远港分站；不新增教学、异源校验、授权、河港信任或交班方针。'));
   if (cellId === 'D4' && y === 30 && actorId === 'protagonist') out.push(
     action('share_power', '共享档案与纠错权', '把历史干预的证据与否决权交给现实中的维护网络。', { politics: 3, economy: 3 }, 1, 1, [], '没有独立网络与地方信任，权利将停留在纸上。', '有准备的地区可自治并互相复核。'),
@@ -630,7 +644,7 @@ export function getActions(s, cellId, actorId = 'protagonist', evidence = null) 
   }
   if (usesHandoffRules(s)) {
     notes.renew_charter = '维持河港公开、足额维护；把现存同源培训点纳入继任与地方复核授权，保留可追溯授权记录。不改变远港收费门槛，也不凭空增加异源校验。';
-    for (const policy of ['share_power', 'withdraw']) notes[policy] = handoffSummary(s, policy) + '交班需不同地域的已获授权人手与真实异源校验；原学徒可提供人手，同源人数不等于独立方法。学校提供技术人手，强制迁任本身不证明合作。共享另需河港信任。最终按第40年实际存续条件结算。';
+    for (const policy of out.filter(a=>['share_power','withdraw'].includes(a.id)).map(a=>a.id)) notes[policy] = handoffSummary(s, policy) + '交班需不同地域的已获授权人手与真实异源校验；原学徒可提供人手，同源人数不等于独立方法。学校提供技术人手，强制迁任本身不证明合作。共享另需河港信任。最终按第40年实际存续条件结算。';
   }
   const merchant = out.find(a => a.id === 'build_merchant');
   if (merchant) {
@@ -661,38 +675,102 @@ export function lockTask(s, actorId, cellId, actionId, evidence = []) {
 }
 export function passTask(s, actorId) { assertPlanning(s, actorId); s.drafts[actorId] = { actorId, status: 'passed', window: s.year }; return s; }
 export function unlockTask(s, actorId) { assertPlanning(s, actorId); delete s.drafts[actorId]; return s; }
-export function getWindowReview(s) {
-  const actors = getActors(s), tasks = [], costs = {}, issues = [], warnings = [], occupied = new Map();
-  if (usesAftermathRules(s) || s.staffingRulesVersion !== undefined || s.branchAccessRulesVersion !== undefined || s.futureCheckRulesVersion !== undefined || s.archiveUpgradeRulesVersion !== undefined || s.events.some(archiveMarker) || s.history.some(archiveMarker)) {
-    const integrity = validateState(s);
-    if (!integrity.valid) return { ready: false, issues: integrity.errors, warnings, costs, tasks, assigned: 0, total: actors.length };
-  }
-  if (s.phase !== 'planning' || !WINDOWS.includes(s.year) || s.committedWindows.includes(s.year)) {
-    return { ready: false, issues: ['本轮已提交或不在介入窗口'], warnings, costs, tasks, assigned: 0, total: actors.length };
-  }
-  let assigned = 0;
-  for (const actor of actors) {
+// Read only actual locked snapshots. There is deliberately no assumed-evidence
+// or skip-validation option: hypothetical contracts never enter this collector.
+export function getLockedPlanningFacts(s, actorIds = getActors(s).map(a => a.id)) {
+  const tasks = [], assignedActorIds = [], issues = [], warnings = [];
+  for (const actor of getActors(s).filter(a => actorIds.includes(a.id))) {
     const d = s.drafts[actor.id];
-    if (!d || d.window !== s.year || !['locked', 'passed'].includes(d.status)) {
-      issues.push(`${actor.name}尚未安排。请先为全部棋子锁定任务或明确放弃。`); continue;
-    }
-    assigned++;
+    if (!d || d.actorId !== actor.id || d.window !== s.year || !['locked', 'passed'].includes(d.status)) continue;
+    assignedActorIds.push(actor.id);
     if (d.status === 'passed') continue;
+    if (!Array.isArray(d.evidence) || !s.cells.some(c => c.id === d.cellId)) { issues.push(`${actor.name}的草案条件已经失效，请修改安排。`); continue; }
     const a = getActions(s, d.cellId, actor.id, d.evidence).find(a => a.id === d.actionId);
     if (usesTradeoffs(s) && !d.evidence.every(id => getInvestigation(s, actor.id, d.cellId).evidence.includes(id))) { issues.push(`${actor.name}的草案取证记录缺失，请修改安排。`); continue; }
     const refusal = getActorRefusals(s, actor.id, d.cellId).find(r => r.actionId === d.actionId);
     if (refusal) { issues.push(refusal.reason); continue; }
     if (!a || !a.requireEvidence.every(e => d.evidence.includes(e))) { issues.push(`${actor.name}的草案条件已经失效，请修改安排。`); continue; }
-    if (occupied.has(d.cellId)) issues.push(`${d.cellId}同格任务冲突：${occupied.get(d.cellId)}与${actor.name}不能使用未定义的联合行动。`);
-    occupied.set(d.cellId, actor.name);
     if (usesTradeoffs(s) && a.id === 'local_veto' && !d.evidence.includes('evacuation_routes') && getInvestigation(s, actor.id, d.cellId).evidence.includes('evacuation_routes')) warnings.push(`${actor.name}新调查的撤离路线尚未纳入已锁定草案：当前仍为基本停闸0.30。请修改并重新锁定，才会采用强化停闸0.20。调查不需要重复支付。`);
-    tasks.push({ d: copy(d), a: copy(a) }); costs[d.cellId] ||= {};
-    for (const [k, v] of Object.entries(a.cost)) costs[d.cellId][k] = (costs[d.cellId][k] || 0) + v;
+    tasks.push({d: {actorId:actor.id, cellId:d.cellId, actionId:d.actionId, evidence:[...d.evidence], status:d.status, window:d.window}, a});
   }
-  const names = { politics: '政治', economy: '经济', science: '科学', religion: '宗教' };
-  for (const [id, spend] of Object.entries(costs)) for (const [k, v] of Object.entries(spend)) {
-    if (cell(s, id).channels[k] < v) issues.push(`${id}的${names[k]}能力不足：现有${cell(s, id).channels[k].toFixed(1)}，需支付${v}。整轮未提交。`);
+  return {tasks, assignedActorIds, issues, warnings};
+}
+
+// Shared public planning constraints, not a submission API. Contract facts have
+// no locked/passed status, evidence grants or preparation side effects.
+// Deliberately narrower than validateState: only public facts needed to plan.
+// Private seed, rolls, prose, baseline, snapshots and future result fields are
+// outside this contract. Full save integrity remains mandatory at real commit.
+export function getPublicPlanningStateIssues(s) {
+  const issues = [], object = v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
+  if (![s.cells,s.actors,s.events,s.history,s.institutions,s.committedWindows].every(Array.isArray) || !object(s.drafts) || !object(s.flags)) return ['公开规划资料缺失，暂不能给出整轮数值。'];
+  const unique = rows=>rows.every(row=>object(row)&&typeof row.id==='string')&&new Set(rows.map(row=>row.id)).size===rows.length;
+  if (![s.cells,s.actors,s.events,s.history,s.institutions].every(unique)) issues.push('公开规划资料有重复或缺失的身份，暂不能给出整轮数值。');
+  const cells = new Set(s.cells.map(c=>c.id));
+  if (s.cells.length!==64 || FLOOD_REGIONS.some(id=>!cells.has(id)) || s.cells.some(c=>!object(c.channels)||CHANNELS.some(k=>!Number.isFinite(c.channels[k])||c.channels[k]<0||c.channels[k]>100))) issues.push('地域能力资料缺失或非法，暂不能给出整轮数值。');
+  if (s.actors.some(a=>typeof a.alive!=='boolean'||!Number.isInteger(a.availableFrom)||a.availableFrom<0||a.availableFrom>40||typeof a.name!=='string')) issues.push('棋子可用资料非法，暂不能给出整轮数值。');
+  if (s.institutions.some(i=>!Object.hasOwn(sources,i.kind)||!cells.has(i.cellId)||typeof i.active!=='boolean'||typeof i.open!=='boolean'||!Number.isFinite(i.maintenance)||i.maintenance<0||i.maintenance>1)) issues.push('地方服务资料非法，暂不能给出整轮数值。');
+  const publicId = value=>typeof value==='string'&&value.length>0;
+  const chronology = (value,min,max)=>Number.isInteger(value)&&value>=min&&value<=max;
+  if (s.events.some(e=>!['pending','success','failed','cancelled'].includes(e.status)||!Number.isFinite(e.probability)||e.probability<0||e.probability>1||!chronology(e.year,1,40)||!cells.has(e.cellId)||!publicId(e.actionId)||(e.status==='pending'?e.year<=s.year:e.year>s.year))) issues.push('既有合同的公开状态、概率或到期年非法，暂不能给出整轮数值。');
+  if (s.history.some(h=>!chronology(h.year,0,s.year)||!cells.has(h.cellId))) issues.push('历史记录的公开年代或坐标非法，暂不能给出整轮数值。');
+  if ([...s.events,...s.history].some(h=>['parentId','sourceActionId'].some(key=>h[key]!=null&&!publicId(h[key]))||['kind','status'].some(key=>h[key]!==undefined&&typeof h[key]!=='string'))) issues.push('公开历史来源字段非法，暂不能给出整轮数值。');
+  if (s.institutions.some(i=>!publicId(i.sourceActionId)||!publicId(i.sourceEventId)||!chronology(i.startYear,0,s.year))) issues.push('地方服务的公开来源或启用年非法，暂不能给出整轮数值。');
+  const expectedWindows=WINDOWS.filter(year=>year<s.year||(year===s.year&&s.phase==='playback'));
+  if(new Set(s.committedWindows).size!==s.committedWindows.length||expectedWindows.length!==s.committedWindows.length||expectedWindows.some(year=>!s.committedWindows.includes(year))) issues.push('已提交窗口与当前年代不一致，暂不能给出整轮数值。');
+  if (['review','veto','aid','freeWarning','successor','recruited'].some(key=>Object.hasOwn(s.flags,key)&&typeof s.flags[key]!=='boolean')) issues.push('公开保护标记非法，暂不能给出整轮数值。');
+  if (s.staffingRulesVersion!==undefined&&!validStaffingVersion(s.staffingRulesVersion)) issues.push('人手结算规则版本非法。');
+  if (s.recruitmentRulesVersion!==undefined&&!usesRecruitmentRules(s)) issues.push('招募岗位规则版本非法。');
+  if (s.aftermathRulesVersion!==undefined&&!usesAftermathRules(s)) issues.push('角色与后续互助规则版本非法。');
+  if (s.flags.vetoMitigation!==undefined&&![.2,.3].includes(s.flags.vetoMitigation)) issues.push('停闸保护资料非法。');
+  for(const [actorId,draft] of Object.entries(s.drafts)) {
+    if(!object(draft)||draft.actorId!==actorId||!s.actors.some(a=>a.id===actorId&&a.alive&&a.availableFrom<=s.year)||draft.window!==s.year||!['passed','locked'].includes(draft.status)||draft.status==='locked'&&(!cells.has(draft.cellId)||typeof draft.actionId!=='string'||!Array.isArray(draft.evidence)||draft.evidence.some(id=>!Object.hasOwn(EVIDENCE,id))||new Set(draft.evidence).size!==draft.evidence.length)) issues.push('已存草案结构非法，暂不能给出整轮数值。');
   }
+  if(usesTradeoffs(s)) {
+    if(!object(s.investigations)) issues.push('取证记录缺失，暂不能给出整轮数值。');
+    else for(const [key,entries] of Object.entries(s.investigations)) {
+      const [year,actorId,extra]=key.split(':');
+      if(extra!==undefined||!WINDOWS.some(y=>String(y)===year)||Number(year)>s.year||!s.actors.some(a=>a.id===actorId&&a.availableFrom<=Number(year))||!Array.isArray(entries)) {issues.push('取证会话非法，暂不能给出整轮数值。');continue;}
+      if(entries.some(e=>!object(e)||!cells.has(e.cellId)||!Object.hasOwn(EVIDENCE,e.evidenceId))||new Set(entries.map(e=>`${PORTABLE_EVIDENCE.includes(e.evidenceId)?'portable':e.cellId}:${e.evidenceId}`)).size!==entries.length||entries.reduce((n,e)=>n+evidenceCost(s,e.evidenceId),0)>PLANNING_RULES.investigationBudget) issues.push('取证预算或材料非法，暂不能给出整轮数值。');
+    }
+  }
+  return [...new Set(issues)];
+}
+
+export function getPublicPlanningChecks(s, contracts, assignedActorIds) {
+  const actors = getActors(s), costs = {}, issues = getPublicPlanningStateIssues(s), occupied = new Map();
+  if (s.phase !== 'planning' || !WINDOWS.includes(s.year) || s.committedWindows.includes(s.year)) issues.push('本轮已提交或不在介入窗口');
+  for (const actor of actors) if (!assignedActorIds.includes(actor.id)) issues.push(`${actor.name}尚未安排。请先为全部棋子锁定任务或明确放弃。`);
+  for (const contract of contracts) {
+    const actor = actors.find(a => a.id === contract.actorId), location = cell(s, contract.cellId);
+    if (!actor || !location) { issues.push('该棋子或地域本轮不可部署。'); continue; }
+    if (occupied.has(contract.cellId)) issues.push(`${contract.cellId}同格任务冲突：${occupied.get(contract.cellId)}与${actor.name}不能使用未定义的联合行动。`);
+    occupied.set(contract.cellId, actor.name);
+    costs[contract.cellId] ||= {};
+    for (const [k,v] of Object.entries(contract.cost)) costs[contract.cellId][k] = (costs[contract.cellId][k] || 0) + v;
+  }
+  const names = { politics:'政治', economy:'经济', science:'科学', religion:'宗教' };
+  for (const [id,spend] of Object.entries(costs)) for (const [k,v] of Object.entries(spend)) {
+    const balance = cell(s,id).channels[k];
+    if (!Number.isFinite(balance) || !Number.isFinite(v) || v < 0) issues.push(`${id}的${names[k] || k}能力或成本未知，暂不能给出整轮数值。`);
+    else if (balance < v) issues.push(`${id}的${names[k]}能力不足：现有${balance.toFixed(1)}，需支付${v}。整轮未提交。`);
+  }
+  return {ready:issues.length===0, issues, costs, assigned:actors.filter(a=>assignedActorIds.includes(a.id)).length, total:actors.length};
+}
+
+export function getWindowReview(s) {
+  const actors = getActors(s), warnings = [];
+  if (usesAftermathRules(s) || s.staffingRulesVersion !== undefined || s.branchAccessRulesVersion !== undefined || s.futureCheckRulesVersion !== undefined || s.archiveUpgradeRulesVersion !== undefined || s.events.some(archiveMarker) || s.history.some(archiveMarker)) {
+    const integrity = validateState(s);
+    if (!integrity.valid) return { ready: false, issues: integrity.errors, warnings, costs:{}, tasks:[], assigned: 0, total: actors.length };
+  }
+  if (s.phase !== 'planning' || !WINDOWS.includes(s.year) || s.committedWindows.includes(s.year)) {
+    return { ready: false, issues: ['本轮已提交或不在介入窗口'], warnings, costs:{}, tasks:[], assigned: 0, total: actors.length };
+  }
+  const facts = getLockedPlanningFacts(s), tasks = facts.tasks;
+  const checks = getPublicPlanningChecks(s, tasks.map(({d,a})=>({actorId:d.actorId,cellId:d.cellId,cost:a.cost})), facts.assignedActorIds);
+  const {costs, assigned} = checks, issues = [...facts.issues, ...checks.issues];
+  warnings.push(...facts.warnings);
   if(tasks.some(t=>t.a.id==='complete_review')) {
     const staff=getRecoveryWorkforce(s);
     warnings.push(staff.length ? '后续校验第32年核对实际人手与原记录；成功只增加未来校验能力。交班方针仍按第40年的授权、人手、跨地关系与信任核对。' : tasks.some(t=>t.a.id==='train_network') ? '本轮培训可在第31年提供人手，后续校验第32年再核对。两项各占一个名额，不能同时用这些名额签署交班方针；第23年的损失不变。' : '当前没有测量或教学人手，本轮也未锁定培训。第32年若仍无人到位，后续校验会取消且成本不退；可修改另一角色的安排。');
@@ -869,16 +947,11 @@ function milestone(s) {
       record(s, { id: 'crisis-impact', parentId: 'crisis-warning', title: damage === 0 ? '错误被拦在指令之前' : damage < .5 ? '停闸之后的清点' : '共同标准，共同失效', text: damage === 0 ? '独立记录揭穿偏差，预警及时改写。水位上涨，没有同步开错闸。' : '洪水留下不可逆的地方损失。已经失去的生活不能用通道回升抵消；人类并未灭绝。', kind: 'crisis' });
       return;
     }
-    const coverage = getWarningCoverage(s), damageByCell = {}, coverageByCell = {}, protectionByCell = {};
+    const {damage, damageByCell, coverageByCell, protectionByCell} = getCrisisLosses(s, mitigation, s.flags.crisis.affectedCells);
     for (const id of s.flags.crisis.affectedCells) {
-      const service = coverage[id];
-      const hasAid = s.institutions.some(i => i.cellId === id && i.kind === 'mutual' && i.active && (!usesAftermathRules(s) || i.maintenance > 0));
-      coverageByCell[id] = service.coverage; protectionByCell[id] = service.protection;
-      const loss = coefficient(mitigation * (1 - COVERAGE_RULES.warningProtection * service.coverage) * (1 - service.protection) * (hasAid ? 1 - COVERAGE_RULES.mutualAid : 1));
-      damageByCell[id] = loss;
-      const c = cell(s, id); c.channels.economy = clamp(c.channels.economy - 14 * loss); c.channels.politics = clamp(c.channels.politics - 7 * loss);
+      const loss = damageByCell[id], c = cell(s, id);
+      c.channels.economy = clamp(c.channels.economy - 14 * loss); c.channels.politics = clamp(c.channels.politics - 7 * loss);
     }
-    const damage = coefficient(Object.values(damageByCell).reduce((sum, value) => sum + value, 0) / s.flags.crisis.affectedCells.length);
     s.flags.crisis.status = damage === 0 ? 'averted' : damage < .5 ? 'contained' : 'disaster'; s.flags.crisis.damage = damage;
     Object.assign(s.flags.crisis, { model: COVERAGE_RULES.version, coverageByCell, protectionByCell, damageByCell });
     const impact = damage === 0 ? '独立记录揭穿偏差，预警及时改写。水位上涨，没有同步开错闸。' : '洪水留下不可逆的地方损失。已经失去的生活不能用通道回升抵消；人类并未灭绝。';
