@@ -1,3 +1,4 @@
+import {readEndingDetails} from './helpers/ending-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -8,7 +9,7 @@ const server=await createServer({server:{host:'127.0.0.1',port:4174,strictPort:t
 const browser=await chromium.launch({executablePath:await chromiumBinary.executablePath(),args:chromiumBinary.args,headless:true});
 const page=await browser.newPage({viewport:{width:390,height:844}}), errors=[], checks=[];
 page.on('pageerror',e=>errors.push(e.message));
-const click=async a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();if(a==='ending')await readEndingDetails(page);};
 const snap=async(name)=>{await page.screenshot({path:`${out}/${name}.png`,fullPage:true});};
 const check=(name,passed)=>{assert.ok(passed,name);checks.push({name,passed:true});};
 try{

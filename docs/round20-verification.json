@@ -1,0 +1,805 @@
+{
+  "round": 20,
+  "baseCommit": "4d6a1fbcec99b3757d276a29d93f09157314d124",
+  "runtimeHash": "d75b2e288df944e94e636a07a45b986b2b8ad6648359bf3d8075e018e431f582",
+  "productionFilesChecked": 322,
+  "unit": {
+    "passed": 2326,
+    "failed": 0
+  },
+  "build": {
+    "passed": true,
+    "warning": "Existing Phaser chunk size warning"
+  },
+  "browser": {
+    "suites": 38,
+    "checks": 6758,
+    "passed": 6758,
+    "failed": 0,
+    "executionNote": "The initial aggregate completed suites1-33, then its executor connection was replaced and the process plus temporary stdout became unavailable. The322 frozen production files remained byte-identical. Suites34-38 were rerun sequentially with exit0 and core checks were rerun. All38 final reports were generated after the same freeze. The interrupted original aggregate is not claimed to have exited successfully. Older content regressions now explicitly click the new native reading disclosures; the independent round20 suite checks the closed-first experience. No exploratory or stale report is counted.",
+    "reports": [
+      {
+        "script": "scripts/browser-test.mjs",
+        "report": "playtest-output/results.json",
+        "checks": 46,
+        "passed": 46,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 46
+        },
+        "reportSHA256": "0440aaad2d3cffc72810c528a5df6c25cffd82099241adf55b1c34341e83933a"
+      },
+      {
+        "script": "scripts/interactions-test.mjs",
+        "report": "playtest-output/interaction-results.json",
+        "checks": 63,
+        "passed": 63,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 63
+        },
+        "reportSHA256": "57bd7a652e1f70acfa6c9f936c6773c0843ae63aaa84b824ac73ecfcade57a4e"
+      },
+      {
+        "script": "scripts/tradeoffs-test.mjs",
+        "report": "playtest-output/tradeoffs-results.json",
+        "checks": 22,
+        "passed": 22,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 22
+        },
+        "reportSHA256": "5d8050393300a8e18f04ffd8cd9d0109a160298aeefe7d5fc6a352533f5dbc6b"
+      },
+      {
+        "script": "scripts/visuals-test.mjs",
+        "report": "playtest-output/visual-results.json",
+        "checks": 20,
+        "passed": 20,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 20
+        },
+        "reportSHA256": "ef95400e407b33cb7a013950a21ad9cae3d27a1cda8c8c72157307c781141b34"
+      },
+      {
+        "script": "scripts/handoff-test.mjs",
+        "report": "playtest-output/round3-handoff-results.json",
+        "checks": 20,
+        "passed": 20,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 20
+        },
+        "reportSHA256": "b840c44ec69dabc6f1bddf08dc845662d90900114b001269b4ca51122d3be781"
+      },
+      {
+        "script": "scripts/learning-visuals-test.mjs",
+        "report": "playtest-output/round3-learning-visual-results.json",
+        "checks": 18,
+        "passed": 18,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 18
+        },
+        "reportSHA256": "778632f85134bf6e67fa266de248d849e51fc5be2a59acb718f5dd0d6c9472a7"
+      },
+      {
+        "script": "scripts/aftermath-test.mjs",
+        "report": "playtest-output/round4-aftermath-results.json",
+        "checks": 34,
+        "passed": 34,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 34
+        },
+        "reportSHA256": "dde0b4e27522ce17e8f84310e8b71431f3186363b5585ce145973c4ee18cb13c"
+      },
+      {
+        "script": "scripts/station-visuals-test.mjs",
+        "report": "playtest-output/round4-station-visual-results.json",
+        "checks": 21,
+        "passed": 21,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 21
+        },
+        "reportSHA256": "2d0974665278a65c771312ddcd11f5412c10a1474362c64ee1f519de5d4fce0e"
+      },
+      {
+        "script": "scripts/recruitment-test.mjs",
+        "report": "playtest-output/round5-recruitment-results.json",
+        "checks": 32,
+        "passed": 32,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 32
+        },
+        "reportSHA256": "d2feaeb242ad6e8c6a36f7d0a6a8f70e8b2c0182d7aa6d0fe663992fabae585c"
+      },
+      {
+        "script": "scripts/maintenance-visuals-test.mjs",
+        "report": "playtest-output/round5-maintenance-visual-results.json",
+        "checks": 35,
+        "passed": 35,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 35
+        },
+        "reportSHA256": "ef13a518ec1501f0278c0150c60d76dae15cfcd7d5724ed23fe5886c578502cd"
+      },
+      {
+        "script": "scripts/outlook-test.mjs",
+        "report": "playtest-output/round6-outlook-results.json",
+        "checks": 29,
+        "passed": 29,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 29
+        },
+        "reportSHA256": "d14c85b3af40d286151581eecd8543c3d62a476129b5dfc1ff71d4f2424409ba"
+      },
+      {
+        "script": "scripts/activity-visuals-test.mjs",
+        "report": "playtest-output/round6-activity-visual-results.json",
+        "checks": 57,
+        "passed": 57,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 57
+        },
+        "reportSHA256": "4d8ff2ad47ff156e463b261bc69994284ecae67f57dd47132aa42cb58dcf0967"
+      },
+      {
+        "script": "scripts/recovery-test.mjs",
+        "report": "playtest-output/round7-recovery-results.json",
+        "checks": 33,
+        "passed": 33,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 33
+        },
+        "reportSHA256": "11b2e57a5bf07f5442ad32dc8928c196d399e6a503868e81071fa54e4c665bf7"
+      },
+      {
+        "script": "scripts/south-bank-visuals-test.mjs",
+        "report": "playtest-output/round7-south-bank-visual-results.json",
+        "checks": 114,
+        "passed": 114,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 114
+        },
+        "reportSHA256": "64117f7ece314b7e5765f68fa155eee85ca65376b15f93bc4db2d6ab45e2d1ca"
+      },
+      {
+        "script": "scripts/handoff-outlook-test.mjs",
+        "report": "playtest-output/round8-handoff-outlook-results.json",
+        "checks": 45,
+        "passed": 45,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 45
+        },
+        "reportSHA256": "99f73edf2a1594d706f190432d34c7f95eb28110b9edd87ea0a42f3b0c3b53eb"
+      },
+      {
+        "script": "scripts/far-port-visuals-test.mjs",
+        "report": "playtest-output/round8-far-port-visual-results.json",
+        "checks": 88,
+        "passed": 88,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 88
+        },
+        "reportSHA256": "42c2e50618607668a60985f5faa3fc9879b59048c71436cdb328ce50b078d8c2"
+      },
+      {
+        "script": "scripts/port-access-test.mjs",
+        "report": "playtest-output/round9-port-access-results.json",
+        "checks": 31,
+        "passed": 31,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 31
+        },
+        "reportSHA256": "450addb2c2d67daa0d53ec59fa2142a7f1012bd0fa83af4b29c02573f8b85eb9"
+      },
+      {
+        "script": "scripts/river-warning-visuals-test.mjs",
+        "report": "playtest-output/round9-river-warning-visual-results.json",
+        "checks": 84,
+        "passed": 84,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 84
+        },
+        "reportSHA256": "c47de077afbdb6bea129e6956753226d3b666d07c9ffdc942416d41483f59a23"
+      },
+      {
+        "script": "scripts/contract-preview-test.mjs",
+        "report": "playtest-output/round10-contract-preview-results.json",
+        "checks": 33,
+        "passed": 33,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 33
+        },
+        "reportSHA256": "8086feccf6fc12ced871a55c9c614f8309b0c1bffff593bb051a5e71055ff043"
+      },
+      {
+        "script": "scripts/local-crisis-visuals-test.mjs",
+        "report": "playtest-output/round10-local-crisis-visual-results.json",
+        "checks": 384,
+        "passed": 384,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 384
+        },
+        "reportSHA256": "3f3aea756b381c46fa901522694b51931bd453759de30caef82d4e2d8951114a"
+      },
+      {
+        "script": "scripts/history-reading-test.mjs",
+        "report": "playtest-output/round11-history-reading-results.json",
+        "checks": 46,
+        "passed": 46,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 46
+        },
+        "reportSHA256": "13e85837f07bb35b4621cfaae5352dcbd281606155efafa07ac956c6e138cbc5"
+      },
+      {
+        "script": "scripts/scene-visit-test.mjs",
+        "report": "playtest-output/round11-scene-visit-results.json",
+        "checks": 315,
+        "passed": 315,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 315
+        },
+        "reportSHA256": "5cbf9b7e7568930b8393655e066a4706dd2b2d5e763221f21a2390fe0ce22598"
+      },
+      {
+        "script": "scripts/staffing-history-test.mjs",
+        "report": "playtest-output/round12-staffing-history-results.json",
+        "checks": 50,
+        "passed": 50,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 50
+        },
+        "reportSHA256": "70920ae1ae06f997ff02e3f52acd6fe590b35eee74afe0781161855cea1d271e"
+      },
+      {
+        "script": "scripts/port-access-visuals-test.mjs",
+        "report": "playtest-output/round12-port-access-visual-results.json",
+        "checks": 352,
+        "passed": 352,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 352
+        },
+        "reportSHA256": "ad8d1087dca385f12d13dac62e77b509195277ad877a161fae5139c8f5cb3017"
+      },
+      {
+        "script": "scripts/toast-input-test.mjs",
+        "report": "playtest-output/round12-toast-input-results.json",
+        "checks": 203,
+        "passed": 203,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 203
+        },
+        "reportSHA256": "48644ff73723485d08388f655f1e7cef30cb50519b91d73c0f05362c16f99120"
+      },
+      {
+        "script": "scripts/building-review-test.mjs",
+        "report": "playtest-output/round13-building-review-results.json",
+        "checks": 63,
+        "passed": 63,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 63
+        },
+        "reportSHA256": "4a049bd49c12ace4e26795ba7665ff54df363d015c8ee3d5b7a14589787f9364"
+      },
+      {
+        "script": "scripts/monastery-visuals-test.mjs",
+        "report": "playtest-output/round13-monastery-visual-results.json",
+        "checks": 578,
+        "passed": 578,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 578
+        },
+        "reportSHA256": "318ea68b7eddcadeb02713a2b00d707ca736c8a5e78532eb5d41e8d16103da10"
+      },
+      {
+        "script": "scripts/branch-caretaker-test.mjs",
+        "report": "playtest-output/round14-branch-caretaker-results.json",
+        "checks": 191,
+        "passed": 191,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": {
+            "sha256": "2903019396c59c69ffe6e3c434cbd004f71709e0c6b074cacaf9095e52c62c9e",
+            "files": 320
+          },
+          "after": {
+            "sha256": "2903019396c59c69ffe6e3c434cbd004f71709e0c6b074cacaf9095e52c62c9e",
+            "files": 320
+          }
+        },
+        "checkGroups": {
+          "checks": 191
+        },
+        "reportSHA256": "d6b9bd5f93eea0ce37d720b209df927a83affe6c6575e779359c5b186aec0cd9"
+      },
+      {
+        "script": "scripts/station-access-visuals-test.mjs",
+        "report": "playtest-output/round14-station-access-visual-results.json",
+        "checks": 356,
+        "passed": 356,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 356
+        },
+        "reportSHA256": "9d7157e9c85e8fb4c30da7fe63e28359eb10e48f4cd63fb5533bffb6d3090e21"
+      },
+      {
+        "script": "scripts/future-check-destination-test.mjs",
+        "report": "playtest-output/round15-future-check-destination-results.json",
+        "checks": 181,
+        "passed": 181,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": {
+            "sha256": "2903019396c59c69ffe6e3c434cbd004f71709e0c6b074cacaf9095e52c62c9e",
+            "files": 320
+          },
+          "after": {
+            "sha256": "2903019396c59c69ffe6e3c434cbd004f71709e0c6b074cacaf9095e52c62c9e",
+            "files": 320
+          }
+        },
+        "checkGroups": {
+          "checks": 175,
+          "focusNegativeControls": 6
+        },
+        "reportSHA256": "7709f7227d2e5c4170046901816f6fdfa33ee74feeb23290927287db3c37724e"
+      },
+      {
+        "script": "scripts/south-bank-visit-test.mjs",
+        "report": "playtest-output/round15-d5-visit-results.json",
+        "checks": 1417,
+        "passed": 1417,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 1257,
+          "b4Checks": 157,
+          "oracleNegativeControls": 3
+        },
+        "reportSHA256": "4dfce0e7588f8372027e5eb26889358c5e1a94070cb732d15a9f115b8d4887e8"
+      },
+      {
+        "script": "scripts/board-readiness-test.mjs",
+        "report": "playtest-output/round16-board-readiness-results.json",
+        "checks": 10,
+        "passed": 10,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 10
+        },
+        "reportSHA256": "3860531ff537e5440250c5c549518ae37c3afe4e96c6fa29be9af0eb97deea46"
+      },
+      {
+        "script": "scripts/crisis-map-test.mjs",
+        "report": "playtest-output/round16-crisis-map-report.json",
+        "checks": 175,
+        "passed": 175,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 175
+        },
+        "reportSHA256": "05c7bd0cc484793a9c1606dcd2a53d355f55be945998e2da42400a1eaaf4e11e"
+      },
+      {
+        "script": "scripts/archive-upgrade-test.mjs",
+        "report": "playtest-output/round16-archive-upgrade-results.json",
+        "checks": 50,
+        "passed": 50,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 50
+        },
+        "reportSHA256": "545bd3ae41a43f139bb2c7e67bd6f11d397a8583f927fa63b5b6647afc7b14d3"
+      },
+      {
+        "script": "scripts/investigation-comparison-test.mjs",
+        "report": "playtest-output/round-17/investigation-comparison-results.json",
+        "checks": 100,
+        "passed": 100,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": null,
+        "checkGroups": {
+          "checks": 100
+        },
+        "reportSHA256": "de5d1c5a3a8b6121fbad026acff4594a7f9b82594348ae6710860178dc92a12a"
+      },
+      {
+        "script": "scripts/round18-return-consequences-test.mjs",
+        "report": "playtest-output/round-18/return-consequences-results.json",
+        "checks": 450,
+        "passed": 450,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 450
+        },
+        "reportSHA256": "c08e35003efa965f14226d248d428cd6938b73245070bad3bafd43c07e90f228"
+      },
+      {
+        "script": "scripts/round19-investigation-choices-test.mjs",
+        "report": "playtest-output/round-19/investigation-choices-results.json",
+        "checks": 318,
+        "passed": 318,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 318
+        },
+        "reportSHA256": "e5db13a18a5ed39e2b19358315240c7c1e0bfe32866ebda264c03aa8e4047ee1"
+      },
+      {
+        "script": "scripts/round20-final-decade-test.mjs",
+        "report": "playtest-output/round-20/final-decade-results.json",
+        "checks": 694,
+        "passed": 694,
+        "errors": [],
+        "failure": null,
+        "runtimeHash": {
+          "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+          "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+        },
+        "checkGroups": {
+          "checks": 694
+        },
+        "reportSHA256": "a0e031138f2add5ed6fa0a9ffcbe4af48e5febf1fcbef5be1be921df2381d248"
+      }
+    ]
+  },
+  "executionInterruption": {
+    "completedPrefixSuites": 33,
+    "resumedTailSuites": 5,
+    "productionFilesUnchanged": 322,
+    "originalAggregateExit": "unavailable",
+    "resumedTailExit": 0
+  },
+  "outlookMatrix": {
+    "checked": 888,
+    "failed": 0,
+    "skipped": 0,
+    "branches": {
+      "success": 282,
+      "fallback": 606
+    }
+  },
+  "engineCompatibility": {
+    "change": "Only one pure source-reading export was added; remove that exact function and its comment to recover the published engine byte for byte.",
+    "baselineGitBlob": "8474fd893b32f7fc1a0a8cd1d16fcf63cce5e249",
+    "costProbabilitySettlementAndSaveRulesChanged": false
+  },
+  "naturalBalanceAudit": {
+    "scope": "Deterministic natural-route audit, not completed balance validation or human playtesting. Synthetic boundaries are labelled and are not natural affordability evidence.",
+    "balanced": false,
+    "seeds": "0-19",
+    "pairs": 644,
+    "failedBuilds": 14,
+    "unavailable": 92,
+    "allGreater": true,
+    "sameTitles": 644,
+    "sameCoverage": 644,
+    "sameCrisis": 644,
+    "sameReadiness": 644,
+    "allValid": true,
+    "ranges": {
+      "politics": {
+        "min": 2.4126,
+        "max": 2.413
+      },
+      "economy": {
+        "min": 0.8348,
+        "max": 0.8353
+      },
+      "science": {
+        "min": 3.9215,
+        "max": 3.9218
+      },
+      "religion": {
+        "min": 1.5432,
+        "max": 1.5434
+      }
+    },
+    "at30Minimum": {
+      "politics": 50.6725,
+      "economy": 41.264,
+      "science": 39.6093,
+      "religion": 50.0108
+    },
+    "reviewFailures": 52,
+    "titles": [
+      "许多人签署的历史",
+      "纸上的共同作者"
+    ],
+    "boundary": [
+      {
+        "name": "economy_only_authorization",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的经济能力不足：现有2.0，需支付4。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "science_only_authorization",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的科学能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "politics_only_training",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": false,
+          "error": "E4的政治能力不足：现有2.0，需支付3。整轮未提交。",
+          "atomic": true
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "both_exact",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "neither",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": false,
+          "error": "E4的政治能力不足：现有1.0，需支付3。整轮未提交。 E4的经济能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的经济能力不足：现有1.0，需支付4。整轮未提交。 E4的科学能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "target_inactive",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "target_zero_maintenance",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "source_missing",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      }
+    ],
+    "legacy": [
+      {
+        "phase": "planning",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "version": null
+      },
+      {
+        "phase": "locked",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "version": null
+      },
+      {
+        "phase": "committed",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "version": null
+      },
+      {
+        "phase": "ended",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "version": null
+      }
+    ]
+  },
+  "limits": [
+    "No human playtest or completed balance certification",
+    "Headless Chromium viewports and application200% font setting, not physical touch devices or screen-reader certification",
+    "Poverty, cancelled original target and reduced maintenance are explicitly synthetic legal-import boundaries, not claimed natural player actions",
+    "Return-to-ending context is transient; reloading keeps the existing trace/visit route but not the old scroll context"
+  ]
+}

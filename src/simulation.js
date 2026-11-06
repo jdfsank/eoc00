@@ -66,6 +66,11 @@ export function randomFor(seed, key) {
   return (h >>> 0) / 4294967296;
 }
 const sources = { station: [0.1, 0.1, 1.6, 0.25], archive: [0, 0, .35, .15], training: [.1, .25, .7, .1], branch: [.15, .4, 1, .15], school: [.1, .25, .65, .2], mutual: [.1, .6, .1, .55], independent: [.2, .1, .65, .2], warning: [.05, .1, .2, .1] };
+// Public contract source, not a future channel balance. Return a fresh object so
+// comparisons cannot alter institution creation or the annual settlement rules.
+export function getInstitutionAnnualSource(kind) {
+  return Object.hasOwn(sources, kind) ? Object.fromEntries(CHANNELS.map((key, index) => [key, sources[kind][index]])) : null;
+}
 const coefficient = value => Math.round(Math.max(0, Math.min(1, value)) * 10000) / 10000;
 export function getInstitutionStaffing(s, i, { assumedRecruitmentActionId } = {}) {
   const rulesVersion = getStaffingRulesVersion(s), original = rulesVersion === STAFFING_RULES.stationOnly;

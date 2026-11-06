@@ -1,0 +1,3569 @@
+{
+  "startedAt": "2026-11-06T07:10:36.966Z",
+  "scope": "Independent Chromium QA. Fresh seed0 route uses visible controls for every0→40 choice. Other natural routes are produced by genuine simulation actions and imported through the actual file input. The cancelled-target fixture alone changes a legal imported target before settlement and is explicitly not a naturally reachable player shutdown. Tests never write docs. 390/320px and native200% typography are browser checks, not physical-device or human-playtest certification.",
+  "exploratory": false,
+  "checks": [
+    {
+      "name": "Cancellation boundary before settlement is a legal imported save, not a natural player action",
+      "passed": true
+    },
+    {
+      "name": "authorized: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "authorized: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "training: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "training: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "missing: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "missing: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "withdraw: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "withdraw: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "central: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "central: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "pass: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "pass: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "untrusted: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "untrusted: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "unchecked: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "unchecked: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "volunteer: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "volunteer: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "alone: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "alone: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "old: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "old: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "prior: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "prior: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "cancelled: complete state validates",
+      "passed": true
+    },
+    {
+      "name": "cancelled: save restores all state bytes",
+      "passed": true
+    },
+    {
+      "name": "Natural0→10: visible unified submit matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Natural0→10: visible decade advance matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Natural10→20: visible unified submit matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Natural10→20: visible decade advance matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Natural20→30: visible unified submit matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Natural20→30: visible decade advance matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Real-click natural30 exactly matches independently generated route",
+      "passed": true
+    },
+    {
+      "name": "Natural30 E4 exposes honest two-contract comparison",
+      "passed": true
+    },
+    {
+      "name": "Repeated training comparison disclosure: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Natural30→40: visible unified submit matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Natural30→40: visible decade advance matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Fresh complete UI0→40 exactly equals independently generated authorization route",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fresh full UI route: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:0:protagonist:D4:build_joint:training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:0:protagonist:D4:build_joint:training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 0/resolved:event:action:0:protagonist:D4:build_joint:training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 0/resolved:event:action:0:protagonist:D4:build_joint:training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:0:protagonist:D4:build_joint:training: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 1/action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 1/action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return action:30:linche:E4:authorize_training: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 2/resolved:event:action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 2/resolved:event:action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:30:linche:E4:authorize_training: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus action:30:protagonist:D4:share_power",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly action:30:protagonist:D4:share_power",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 3/action:30:protagonist:D4:share_power",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 3/action:30:protagonist:D4:share_power",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return action:30:protagonist:D4:share_power: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:30:protagonist:D4:share_power",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:30:protagonist:D4:share_power",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 4/resolved:event:action:30:protagonist:D4:share_power",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 4/resolved:event:action:30:protagonist:D4:share_power",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:30:protagonist:D4:share_power: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 5/action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 5/action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return action:30:linche:E4:authorize_training: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 6/resolved:event:action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 6/resolved:event:action:30:linche:E4:authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:30:linche:E4:authorize_training: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:10:protagonist:D4:recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:10:protagonist:D4:recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 7/resolved:event:action:10:protagonist:D4:recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 7/resolved:event:action:10:protagonist:D4:recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:10:protagonist:D4:recruit_successor: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus charter-lapsed",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly charter-lapsed",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 8/charter-lapsed",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 8/charter-lapsed",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return charter-lapsed: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 9/resolved:event:action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 9/resolved:event:action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:20:linche:D4:free_warning: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 10/action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 10/action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return action:20:linche:D4:free_warning: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 11/resolved:event:action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 11/resolved:event:action:20:linche:D4:free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:20:linche:D4:free_warning: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:10:protagonist:D4:recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:10:protagonist:D4:recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 12/resolved:event:action:10:protagonist:D4:recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 12/resolved:event:action:10:protagonist:D4:recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:10:protagonist:D4:recruit_successor: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus crisis-impact",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly crisis-impact",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 13/crisis-impact",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 13/crisis-impact",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return crisis-impact: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus action:20:protagonist:B4:independent_review",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly action:20:protagonist:B4:independent_review",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 14/action:20:protagonist:B4:independent_review",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 14/action:20:protagonist:B4:independent_review",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return action:20:protagonist:B4:independent_review: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source keyboard focus resolved:event:action:20:protagonist:B4:independent_review",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace navigates to exactly resolved:event:action:20:protagonist:B4:independent_review",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores exact keyboard origin 15/resolved:event:action:20:protagonist:B4:independent_review",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: source return restores scroll 15/resolved:event:action:20:protagonist:B4:independent_review",
+      "passed": true
+    },
+    {
+      "name": "Fresh full UI route: trace and return resolved:event:action:20:protagonist:B4:independent_review: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported30 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "Actual alternate training30→40: visible unified submit matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Actual alternate training30→40: visible decade advance matches full independent state",
+      "passed": true
+    },
+    {
+      "name": "Actual training submission yields exact independent training state",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "authorized: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "authorized: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "authorized: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "authorized/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "authorized/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "authorized: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "authorized: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "authorized: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "authorized: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "authorized: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "training: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "training: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "training: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "training/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "training/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "training: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "training: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "training: source action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source resolved:event:action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source resolved:event:action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "training: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "training: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "missing: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "missing: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "missing: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "missing/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "missing/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "missing: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "missing: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "missing: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source pass:30:linche resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "missing: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "withdraw: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "withdraw: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "withdraw: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "withdraw/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "withdraw/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "withdraw: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "withdraw: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "withdraw: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source action:30:protagonist:D4:withdraw resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source resolved:event:action:30:protagonist:D4:withdraw resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "withdraw: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "withdraw: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "central: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "central: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "central: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "central/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "central/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "central: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "central: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "central: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source action:30:protagonist:D4:central_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source resolved:event:action:30:protagonist:D4:central_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "central: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "central: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "pass: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "pass: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "pass: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "pass/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "pass/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "pass: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "pass: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "pass: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source pass:30:protagonist resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source pass:30:linche resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pass: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "pass: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "untrusted: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "untrusted: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "untrusted: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "untrusted/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "untrusted/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "untrusted: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "untrusted: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "untrusted: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source pass:20:linche resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "untrusted: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "untrusted: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "unchecked: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "unchecked: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "unchecked: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "unchecked/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "unchecked/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "unchecked: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "unchecked: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "unchecked: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unchecked: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "unchecked: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "volunteer: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "volunteer: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "volunteer: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "volunteer/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "volunteer/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "volunteer: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "volunteer: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "volunteer: source action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source resolved:event:action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source resolved:event:action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source resolved:event:action:10:protagonist:D4:recruit_volunteer resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "volunteer: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "volunteer: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "alone: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "alone: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "alone: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "alone/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "alone: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "alone: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "alone: source pass:30:protagonist resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alone: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alone: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alone: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "alone: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "alone: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "old: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "old: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "old: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "old/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "old/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "old: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "old: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "old: source action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source resolved:event:action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source resolved:event:action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "old: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "prior: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "prior: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "prior: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "prior/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "prior/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "prior: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "prior: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "prior: source action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source resolved:event:action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source resolved:event:action:30:linche:E4:train_network resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "prior: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "cancelled: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "cancelled: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "cancelled: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "cancelled/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "cancelled/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "cancelled: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "cancelled: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "cancelled: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cancelled: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "cancelled: opening read: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "Refreshing trace keeps exact world but does not invent an ending return origin",
+      "passed": true
+    },
+    {
+      "name": "Refresh on source: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "Importing another complete state invalidates old ending return context",
+      "passed": true
+    },
+    {
+      "name": "Import then unrelated visit: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "390-text100: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: native typography mode is actual16px root",
+      "passed": true
+    },
+    {
+      "name": "390-text100: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "390-text100: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "390-text100/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "390-text100/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "390-text100: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "390-text100: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "390-text100: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text100: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text100 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text100 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text100 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text100 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: ledger visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100: ledger opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text100 technical ledger open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: complete original engine explanatory paragraphs remain accessible",
+      "passed": true
+    },
+    {
+      "name": "390-text100: final intervention source unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100: source return preserves open disclosures and ledger",
+      "passed": true
+    },
+    {
+      "name": "390-text100: E4 visit visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100: actual E4 read-only scene opens",
+      "passed": true
+    },
+    {
+      "name": "390-text100: visit return restores original visit keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100: visit return restores exact scroll position",
+      "passed": true
+    },
+    {
+      "name": "390-text100: keyboard disclosures/source/visit loops: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100: downloaded archive contains exact complete state",
+      "passed": true
+    },
+    {
+      "name": "390-text100: actual export: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100: reload on ending: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100 reloaded: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "Imported30 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "390-text100: comparison keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text100 comparison: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: compare reading: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "390-text200: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: native typography mode is actual32px root",
+      "passed": true
+    },
+    {
+      "name": "390-text200: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "390-text200: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "390-text200/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "390-text200/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "390-text200: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "390-text200: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "390-text200: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390-text200: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text200 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text200 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text200 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text200 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: ledger visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200: ledger opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "390-text200 technical ledger open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: complete original engine explanatory paragraphs remain accessible",
+      "passed": true
+    },
+    {
+      "name": "390-text200: final intervention source unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200: source return preserves open disclosures and ledger",
+      "passed": true
+    },
+    {
+      "name": "390-text200: E4 visit visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200: actual E4 read-only scene opens",
+      "passed": true
+    },
+    {
+      "name": "390-text200: visit return restores original visit keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200: visit return restores exact scroll position",
+      "passed": true
+    },
+    {
+      "name": "390-text200: keyboard disclosures/source/visit loops: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200: downloaded archive contains exact complete state",
+      "passed": true
+    },
+    {
+      "name": "390-text200: actual export: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200: reload on ending: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200 reloaded: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "Imported30 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "390-text200: comparison keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390-text200 comparison: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: compare reading: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "320-text100: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: native typography mode is actual16px root",
+      "passed": true
+    },
+    {
+      "name": "320-text100: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "320-text100: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "320-text100/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "320-text100/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "320-text100: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "320-text100: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "320-text100: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text100: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text100 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text100 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text100 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text100 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: ledger visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100: ledger opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text100 technical ledger open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: complete original engine explanatory paragraphs remain accessible",
+      "passed": true
+    },
+    {
+      "name": "320-text100: final intervention source unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100: source return preserves open disclosures and ledger",
+      "passed": true
+    },
+    {
+      "name": "320-text100: E4 visit visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100: actual E4 read-only scene opens",
+      "passed": true
+    },
+    {
+      "name": "320-text100: visit return restores original visit keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100: visit return restores exact scroll position",
+      "passed": true
+    },
+    {
+      "name": "320-text100: keyboard disclosures/source/visit loops: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100: downloaded archive contains exact complete state",
+      "passed": true
+    },
+    {
+      "name": "320-text100: actual export: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100: reload on ending: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100 reloaded: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "Imported30 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "320-text100: comparison keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text100 comparison: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: compare reading: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Imported40 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "320-text200: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: native typography mode is actual32px root",
+      "passed": true
+    },
+    {
+      "name": "320-text200: actual engine ending title unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200: opening is visible and matches pure narrative API",
+      "passed": true
+    },
+    {
+      "name": "320-text200: final choices belong to actual actors",
+      "passed": true
+    },
+    {
+      "name": "320-text200/protagonist: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "320-text200/linche: real choice and resolved outcome visible",
+      "passed": true
+    },
+    {
+      "name": "320-text200: ledger starts closed",
+      "passed": true
+    },
+    {
+      "name": "320-text200: no hidden random value or future-marker prose",
+      "passed": true
+    },
+    {
+      "name": "320-text200: source resolved:event:action:0:protagonist:D4:build_joint:training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source resolved:event:action:30:protagonist:D4:share_power resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source resolved:event:action:30:linche:E4:authorize_training resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source charter-lapsed resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source resolved:event:action:20:linche:D4:free_warning resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source resolved:event:action:10:protagonist:D4:recruit_successor resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source crisis-impact resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: source resolved:event:action:20:protagonist:B4:independent_review resolves uniquely to actual history",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320-text200: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text200 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text200 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text200 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: character disclosure visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200: character disclosure opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text200 character open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: ledger visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200: ledger opens with keyboard",
+      "passed": true
+    },
+    {
+      "name": "320-text200 technical ledger open: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: complete original engine explanatory paragraphs remain accessible",
+      "passed": true
+    },
+    {
+      "name": "320-text200: final intervention source unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200: source return preserves open disclosures and ledger",
+      "passed": true
+    },
+    {
+      "name": "320-text200: E4 visit visible keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200: actual E4 read-only scene opens",
+      "passed": true
+    },
+    {
+      "name": "320-text200: visit return restores original visit keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200: visit return restores exact scroll position",
+      "passed": true
+    },
+    {
+      "name": "320-text200: keyboard disclosures/source/visit loops: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200: downloaded archive contains exact complete state",
+      "passed": true
+    },
+    {
+      "name": "320-text200: actual export: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200: reload on ending: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200 reloaded: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "Imported30 archive safely opens world without mutation",
+      "passed": true
+    },
+    {
+      "name": "320-text200: comparison keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320-text200 comparison: document and ending panels fit width",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: compare reading: entire world and saved state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Production sources remained frozen throughout formal browser run",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime, missing asset or hot-reload errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "path": "playtest-output/round-20/screenshots/training-last-interventions-390.png",
+      "bytes": 126783,
+      "sha256": "596ff9163e3d7cc16200b2e3902a1a1ac305f853e0660b408b4c08bb3c7aa34b"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/missing-last-interventions-390.png",
+      "bytes": 127021,
+      "sha256": "fc373ba6c9db0f980aa7b679be0ee1fbbb2ccce20cbf61f0fe624633ef7e76d3"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/withdraw-last-interventions-390.png",
+      "bytes": 135788,
+      "sha256": "a7fa795f69879702ff8bc3c5609c616220d51494c6c2863e31819a9eae86fed9"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/central-last-interventions-390.png",
+      "bytes": 134174,
+      "sha256": "fba28c56dd5cd2759fe13ccbd34e8841a66561b88cdb28f967ccc7e555dc112f"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/cancelled-last-interventions-390.png",
+      "bytes": 132439,
+      "sha256": "12cb1d0b3e8887b832874990aa1a9bcc997183253ebf43a70784d2b67a38ab0a"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-opening-390-text100.png",
+      "bytes": 156031,
+      "sha256": "e9d203c323f7dc05dbd5d1b0f9797a83de676120ed4c6dd32b2c3f3466fcaec4"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-last-interventions-390-text100.png",
+      "bytes": 138727,
+      "sha256": "2f50dfd93f1847e20004eeae21412913989e14bbed5f52ac977fd38c514893a8"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-people-390-text100.png",
+      "bytes": 237893,
+      "sha256": "4d29f8ff0b6ff573cfabd05e3b29c4b60ac1a8da9622378406f1d6f0e450ae4f"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-ledger-390-text100.png",
+      "bytes": 323300,
+      "sha256": "bf306b9ff4eb2f2b725bc08e490ebe73ea78fbd26e3a7c344af40f27d0cf1a13"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/training-comparison-390-text100.png",
+      "bytes": 330276,
+      "sha256": "45dbb7c085fd9ab11d9d0f8c69610b83b8470131872365049031252a377c6b7d"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-opening-390-text200.png",
+      "bytes": 144086,
+      "sha256": "b68b6df3a196df3bded66aa892826a7961dcdfd76c346924c850b27637873fb9"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-last-interventions-390-text200.png",
+      "bytes": 324289,
+      "sha256": "7a4e49bab223487ee99522db958505607b58bab2d3103efb1c436d11efcfd836"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-people-390-text200.png",
+      "bytes": 551459,
+      "sha256": "16b17cad289acdb0ee22ee036e271f1cac46c38d8b316d2c4de1fad20b2470f1"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-ledger-390-text200.png",
+      "bytes": 706157,
+      "sha256": "ca7708a3d25070443537fde1c3dbd73e93cf8af2b3c79e26b419344b3fe4c7b8"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/training-comparison-390-text200.png",
+      "bytes": 779061,
+      "sha256": "00b2dab668209ee31604855ffb8e6e5aa14710a64aa11ca047bfcdaa4d27bc87"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-opening-320-text100.png",
+      "bytes": 89982,
+      "sha256": "e3f34deb43fece333f0a9fa0e6d7c2094442e777a6908e65e44adb5568cb12cd"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-last-interventions-320-text100.png",
+      "bytes": 135797,
+      "sha256": "bcc65936a3daa8aeac6a83110e5d42954b323a8e28a5566414caa7f212ce43fd"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-people-320-text100.png",
+      "bytes": 229101,
+      "sha256": "b0774ba39aaaf6a9dadce3e91ba3db647c9c5daec2b44eafdb1094952c9f0b71"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-ledger-320-text100.png",
+      "bytes": 309406,
+      "sha256": "4bfd618324735de9d4db7b01a4fc4bb4951e80a121177af511ff5af468dcdb81"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/training-comparison-320-text100.png",
+      "bytes": 317400,
+      "sha256": "5f52b4bf94f02f41be83bb2f3e4b8bb88a3e7ac303027549fc1b619f8011e9d6"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-opening-320-text200.png",
+      "bytes": 88542,
+      "sha256": "e82062fd8855510b874d4434d2bc9835928d36bc58e3c799eb89fb75cc6b9761"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-last-interventions-320-text200.png",
+      "bytes": 308082,
+      "sha256": "73f60e93b36a8f036e83fa5a7ea1a8617fedfe61bd954ccf4121412c33365a18"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-people-320-text200.png",
+      "bytes": 547530,
+      "sha256": "681894daee177988c18f8c73f89165fca1e78527d1c97fb159a6b6d54e598d0e"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/ending-ledger-320-text200.png",
+      "bytes": 680799,
+      "sha256": "298593982a3fdc7e9024e089accb794fc8aea392f8a5ea044d7cf594ab364933"
+    },
+    {
+      "path": "playtest-output/round-20/screenshots/training-comparison-320-text200.png",
+      "bytes": 779162,
+      "sha256": "4ff89d6ab85ad5f67bc859153150e75bb5884f9a1de024402a624605394224ed"
+    }
+  ],
+  "routes": {
+    "authorized": {
+      "natural": true,
+      "ending": "许多人签署的历史",
+      "authorization": "authorized",
+      "year": 40,
+      "policy": "share_power"
+    },
+    "training": {
+      "natural": true,
+      "ending": "许多人签署的历史",
+      "authorization": "unavailable",
+      "year": 40,
+      "policy": "share_power"
+    },
+    "missing": {
+      "natural": true,
+      "ending": "纸上的共同作者",
+      "authorization": "unavailable",
+      "year": 40,
+      "policy": "share_power"
+    },
+    "withdraw": {
+      "natural": true,
+      "ending": "没有唯一守夜人",
+      "authorization": "authorized",
+      "year": 40,
+      "policy": "withdraw"
+    },
+    "central": {
+      "natural": true,
+      "ending": "仍亮着灯的续史局",
+      "authorization": "authorized",
+      "year": 40,
+      "policy": "central_review"
+    },
+    "pass": {
+      "natural": true,
+      "ending": "未签署的下一页",
+      "authorization": "unavailable",
+      "year": 40,
+      "policy": null
+    },
+    "untrusted": {
+      "natural": true,
+      "ending": "纸上的共同作者",
+      "authorization": "authorized",
+      "year": 40,
+      "policy": "share_power"
+    },
+    "unchecked": {
+      "natural": true,
+      "ending": "纸上的共同作者",
+      "authorization": "authorized",
+      "year": 40,
+      "policy": "share_power"
+    },
+    "volunteer": {
+      "natural": true,
+      "ending": "纸上的共同作者",
+      "authorization": "unavailable",
+      "year": 40,
+      "policy": "share_power"
+    },
+    "alone": {
+      "natural": true,
+      "ending": "未签署的下一页",
+      "authorization": "unavailable",
+      "year": 40,
+      "policy": null
+    },
+    "old": {
+      "natural": true,
+      "ending": "许多人签署的历史",
+      "authorization": "unavailable",
+      "year": 40,
+      "policy": "share_power"
+    },
+    "prior": {
+      "natural": true,
+      "ending": "许多人签署的历史",
+      "authorization": "unavailable",
+      "year": 40,
+      "policy": "share_power"
+    },
+    "cancelled": {
+      "natural": false,
+      "ending": "纸上的共同作者",
+      "authorization": "cancelled",
+      "year": 40,
+      "policy": "share_power"
+    }
+  },
+  "runtimeHash": {
+    "before": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d",
+    "after": "5b696b2e916ddb6b665724135158c35fc51b7455d07a2788c3955133eab5f76d"
+  },
+  "browserVersion": "138.0.7204.0",
+  "completedAt": "2026-11-06T07:11:52.786Z"
+}

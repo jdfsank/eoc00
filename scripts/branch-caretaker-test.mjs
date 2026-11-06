@@ -1,3 +1,4 @@
+import {readEndingDetails} from './helpers/ending-reading.mjs';
 import { chromium } from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import { createServer } from 'vite';
@@ -101,7 +102,7 @@ async function settleWorld() {
     report.canvasReadiness.push(await page.locator('#board canvas').evaluate(c => ({ at: Date.now(), screen: window.afterwave.ui.screen, year: window.afterwave.state.year, width: c.width, height: c.height, drawn: true })));
   }
 }
-const click = async a => { await page.locator(`[data-action="${a}"]`).first().click(); await settleWorld(); };
+const click = async a => { await page.locator(`[data-action="${a}"]`).first().click(); await settleWorld(); if(a==='ending')await readEndingDetails(page); };
 const readState = () => page.evaluate(() => structuredClone(window.afterwave.state));
 const stateBytes = () => page.evaluate(() => JSON.stringify(window.afterwave.state));
 const savedBytes = () => page.evaluate(() => localStorage.getItem('afterwave.save.v1'));
@@ -170,7 +171,7 @@ async function uiLock(id) {
 }
 async function uiToNext() { await click('commit'); await click('skip'); await world(); }
 function linche() { return page.locator('.character-epilogue > article').filter({ has: page.locator('span.eyebrow', { hasText: /^林澈$/ }) }); }
-async function ending() { await world(); check('Ended world routes to real ending control', await page.locator('[data-primary-action]').getAttribute('data-action') === 'ending'); await page.locator('[data-primary-action]').click(); await visibleImages('actual40 ending'); }
+async function ending() { await world(); check('Ended world routes to real ending control', await page.locator('[data-primary-action]').getAttribute('data-action') === 'ending'); await page.locator('[data-primary-action]').click(); await visibleImages('actual40 ending'); await readEndingDetails(page); }
 async function readSources(label, { keyboard = false } = {}) {
   const raw = await stateBytes();
   const ids = await linche().locator('[data-action="trace"]').evaluateAll(els => els.map(el => el.dataset.id));
@@ -349,7 +350,7 @@ try {
   await archiveControl.focus(); await snap('linche-end-controls-320-text200');
   await keyboardActivate(archiveControl, '320/200% ending archive control');
   check('Keyboard ending control reaches archive without changing40 history', await page.locator('.archive-grid').count() === 1 && await stateBytes() === JSON.stringify(stopped.state));
-  await ending(); const finalRaw = await stateBytes(); await page.reload(); await page.locator('.character-epilogue').waitFor();
+  await ending(); const finalRaw = await stateBytes(); await page.reload(); await page.locator('.character-epilogue').waitFor(); await readEndingDetails(page);
   check('Refresh preserves exact ending, coda and actual200% setting', await stateBytes() === finalRaw && (await linche().innerText()) === stopped.text && await page.evaluate(() => getComputedStyle(document.documentElement).fontSize === '32px'));
   await width('Refreshed ending320/200%');
   }

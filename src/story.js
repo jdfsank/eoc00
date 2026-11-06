@@ -490,7 +490,7 @@ function unrecruitedAftermath(state, { renewal, warning }) {
 }
 
 // Read-only personal coda: it never edits ending scores, old contracts or history.
-export function characterEpilogue(state) {
+export function characterEpilogue(state, { includeDeploymentRecollections = true } = {}) {
   if (state.year < 40 || state.phase !== 'ended') return [];
   const recordId = e => e ? `resolved:${e.id}` : null;
   const { recruit, departure, warning, renewal, respect, forced } = personalHistory(state);
@@ -529,7 +529,7 @@ export function characterEpilogue(state) {
   }
   // Read the two actual deployment windows, rather than infer her work from
   // global flags or credit her with the protagonist's matching action.
-  if (recruit) {
+  if (recruit && includeDeploymentRecollections) {
     for (const end of [30,40]) {
       const card = getDecadeReview({...state,year:end,phase:end===40?'ended':'planning'})?.cards.find(c=>c.actorId==='linche');
       if (!card) continue;

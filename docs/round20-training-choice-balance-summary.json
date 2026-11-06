@@ -1,0 +1,377 @@
+{
+  "referenceCommit": "4d6a1fbcec99b3757d276a29d93f09157314d124",
+  "script": "scripts/round20-training-choice-balance.mjs",
+  "command": "npm run test:training-choice-balance",
+  "summary": {
+    "scope": "Deterministic natural-route audit, not completed balance validation or human playtesting. Synthetic boundaries are labelled and are not natural affordability evidence.",
+    "balanced": false,
+    "seeds": "0-19",
+    "pairs": 644,
+    "failedBuilds": 14,
+    "unavailable": 92,
+    "allGreater": true,
+    "sameTitles": 644,
+    "sameCoverage": 644,
+    "sameCrisis": 644,
+    "sameReadiness": 644,
+    "allValid": true,
+    "ranges": {
+      "politics": {
+        "min": 2.4126,
+        "max": 2.413
+      },
+      "economy": {
+        "min": 0.8348,
+        "max": 0.8353
+      },
+      "science": {
+        "min": 3.9215,
+        "max": 3.9218
+      },
+      "religion": {
+        "min": 1.5432,
+        "max": 1.5434
+      }
+    },
+    "at30Minimum": {
+      "politics": 50.6725,
+      "economy": 41.264,
+      "science": 39.6093,
+      "religion": 50.0108
+    },
+    "reviewFailures": 52,
+    "titles": [
+      "许多人签署的历史",
+      "纸上的共同作者"
+    ],
+    "boundary": [
+      {
+        "name": "economy_only_authorization",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的经济能力不足：现有2.0，需支付4。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "science_only_authorization",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的科学能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "politics_only_training",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": false,
+          "error": "E4的政治能力不足：现有2.0，需支付3。整轮未提交。",
+          "atomic": true
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "both_exact",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "neither",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": false,
+          "error": "E4的政治能力不足：现有1.0，需支付3。整轮未提交。 E4的经济能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的经济能力不足：现有1.0，需支付4。整轮未提交。 E4的科学能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "target_inactive",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "target_zero_maintenance",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "source_missing",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      }
+    ],
+    "legacy": [
+      {
+        "phase": "planning",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "version": null
+      },
+      {
+        "phase": "locked",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "version": null
+      },
+      {
+        "phase": "committed",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "version": null
+      },
+      {
+        "phase": "ended",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "version": null
+      }
+    ]
+  },
+  "boundary": [
+    {
+      "name": "economy_only_authorization",
+      "synthetic": true,
+      "validBefore": true,
+      "authorize_training": {
+        "available": true,
+        "committed": true,
+        "error": null,
+        "atomic": null
+      },
+      "train_network": {
+        "available": true,
+        "committed": false,
+        "error": "E4的经济能力不足：现有2.0，需支付4。整轮未提交。",
+        "atomic": true
+      }
+    },
+    {
+      "name": "science_only_authorization",
+      "synthetic": true,
+      "validBefore": true,
+      "authorize_training": {
+        "available": true,
+        "committed": true,
+        "error": null,
+        "atomic": null
+      },
+      "train_network": {
+        "available": true,
+        "committed": false,
+        "error": "E4的科学能力不足：现有1.0，需支付2。整轮未提交。",
+        "atomic": true
+      }
+    },
+    {
+      "name": "politics_only_training",
+      "synthetic": true,
+      "validBefore": true,
+      "authorize_training": {
+        "available": true,
+        "committed": false,
+        "error": "E4的政治能力不足：现有2.0，需支付3。整轮未提交。",
+        "atomic": true
+      },
+      "train_network": {
+        "available": true,
+        "committed": true,
+        "error": null,
+        "atomic": null
+      }
+    },
+    {
+      "name": "both_exact",
+      "synthetic": true,
+      "validBefore": true,
+      "authorize_training": {
+        "available": true,
+        "committed": true,
+        "error": null,
+        "atomic": null
+      },
+      "train_network": {
+        "available": true,
+        "committed": true,
+        "error": null,
+        "atomic": null
+      }
+    },
+    {
+      "name": "neither",
+      "synthetic": true,
+      "validBefore": true,
+      "authorize_training": {
+        "available": true,
+        "committed": false,
+        "error": "E4的政治能力不足：现有1.0，需支付3。整轮未提交。 E4的经济能力不足：现有1.0，需支付2。整轮未提交。",
+        "atomic": true
+      },
+      "train_network": {
+        "available": true,
+        "committed": false,
+        "error": "E4的经济能力不足：现有1.0，需支付4。整轮未提交。 E4的科学能力不足：现有1.0，需支付2。整轮未提交。",
+        "atomic": true
+      }
+    },
+    {
+      "name": "target_inactive",
+      "synthetic": true,
+      "validBefore": true,
+      "authorize_training": {
+        "available": false,
+        "committed": false,
+        "error": "unavailable authorize_training",
+        "atomic": null
+      },
+      "train_network": {
+        "available": true,
+        "committed": true,
+        "error": null,
+        "atomic": null
+      }
+    },
+    {
+      "name": "target_zero_maintenance",
+      "synthetic": true,
+      "validBefore": true,
+      "authorize_training": {
+        "available": false,
+        "committed": false,
+        "error": "unavailable authorize_training",
+        "atomic": null
+      },
+      "train_network": {
+        "available": true,
+        "committed": true,
+        "error": null,
+        "atomic": null
+      }
+    },
+    {
+      "name": "source_missing",
+      "synthetic": true,
+      "validBefore": true,
+      "authorize_training": {
+        "available": false,
+        "committed": false,
+        "error": "unavailable authorize_training",
+        "atomic": null
+      },
+      "train_network": {
+        "available": true,
+        "committed": true,
+        "error": null,
+        "atomic": null
+      }
+    }
+  ],
+  "legacy": [
+    {
+      "phase": "planning",
+      "identicalOnRestore": true,
+      "identicalAfter": true,
+      "version": null
+    },
+    {
+      "phase": "locked",
+      "identicalOnRestore": true,
+      "identicalAfter": true,
+      "version": null
+    },
+    {
+      "phase": "committed",
+      "identicalOnRestore": true,
+      "identicalAfter": true,
+      "version": null
+    },
+    {
+      "phase": "ended",
+      "identicalOnRestore": true,
+      "identicalAfter": true,
+      "version": null
+    }
+  ],
+  "limits": "This is a reproducible natural-route audit and explicitly labelled synthetic boundary checks, not completed balance or human playtesting."
+}

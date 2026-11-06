@@ -1,3 +1,4 @@
+import {readEndingDetails} from './helpers/ending-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -7,7 +8,7 @@ import * as sim from '../src/simulation.js';
 import * as old from '../tests/fixtures/pre-recruitment-simulation.js';
 const out='playtest-output';await fs.mkdir(out,{recursive:true});const server=await createServer({server:{host:'127.0.0.1',port:4194,strictPort:true}});await server.listen();
 let browser,page;const report={scope:'Real Chromium,390×844 and320×568/200% text. Engine-generated branch fixtures; not device certification.',checks:[],errors:[]};
-const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name);};const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name);};const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();if(a==='ending')await readEndingDetails(page);};
 const lock=(api,s,c,id)=>{for(const e of api.getActions(s,c).find(a=>a.id===id).requireEvidence)api.investigate(s,'protagonist',c,e);api.lockTask(s,'protagonist',c,id);};
 const next=(api,s)=>{for(const a of api.getActors(s))if(!s.drafts[a.id])api.passTask(s,a.id);api.commitWindow(s);api.advanceToNextWindow(s);return s;};
 function at10(records=false,api=sim){const s=api.createRun(0);if(records)lock(api,s,'B4','preserve_records');return next(api,s);}
@@ -33,13 +34,13 @@ try{
  await snap('neutral-personal-ending-390','.character-epilogue');
  const needles={repaired:'恢复不等于从未停过',archive:'没有重新打开原来的档案站',successor:'维护经费的缺口又变成收费门槛',forced:'不证明她曾同意',respected:'保留了决定今天生活的权利'};
  for(const [name,needle] of Object.entries(needles)){
-  await restore(fixtures[name]);const before=await page.evaluate(()=>JSON.stringify(window.afterwave.state));await page.locator('[data-primary-action]').click();check(`${name} personal coda follows its real consequence`,(await page.locator('.character-epilogue').innerText()).includes(needle));check(`${name} personal coda does not mutate the ending history`,before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
+  await restore(fixtures[name]);const before=await page.evaluate(()=>JSON.stringify(window.afterwave.state));await page.locator('[data-primary-action]').click();await readEndingDetails(page);check(`${name} personal coda follows its real consequence`,(await page.locator('.character-epilogue').innerText()).includes(needle));check(`${name} personal coda does not mutate the ending history`,before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
   if(['repaired','archive','forced'].includes(name))await snap(`${name}-personal-ending-390`,'.character-epilogue');
   await page.locator('.character-epilogue [data-action="trace"]').first().click();check(`${name} personal coda source link reaches actual history`,await page.locator('.causal-chain .event-card').count()>0);
  }
  await restore(fixtures.old);await page.locator('[data-primary-action]').click();check('True f9 prior save retains both issued recruitment alternatives',await page.locator('[data-action="choose"][data-id^="recruit_"]').count()===2&&await page.locator('[data-id="recruit_volunteer"]').count()===0);
  await page.locator('[data-id="recruit_risk"]').click();await click('confirm');await click('lock');await click('commit');await click('skip');check('True f9 old low-cost contract continues without silent migration',await page.evaluate(()=>window.afterwave.state.recruitmentRulesVersion===undefined&&window.afterwave.state.actors.some(a=>a.id==='linche')));
- await page.setViewportSize({width:320,height:568});await restore(fixtures.repaired,{bigText:true});await page.locator('[data-primary-action]').click();check('Personal coda stays within320 at200% text',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.locator('.character-epilogue [data-action="trace"]').last().scrollIntoViewIfNeeded();check('Last personal-source button is reachable at320px200%',await page.locator('.character-epilogue [data-action="trace"]').last().isVisible());await snap('personal-ending-320-text200','.character-epilogue');
+ await page.setViewportSize({width:320,height:568});await restore(fixtures.repaired,{bigText:true});await page.locator('[data-primary-action]').click();await readEndingDetails(page);check('Personal coda stays within320 at200% text',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.locator('.character-epilogue [data-action="trace"]').last().scrollIntoViewIfNeeded();check('Last personal-source button is reachable at320px200%',await page.locator('.character-epilogue [data-action="trace"]').last().isVisible());await snap('personal-ending-320-text200','.character-epilogue');
  check('No runtime or asset errors',report.errors.length===0);
 }catch(e){report.failure={message:e.message,stack:e.stack};process.exitCode=1;if(page)await snap('failure').catch(()=>{});}
 finally{await fs.writeFile(`${out}/round5-recruitment-results.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(browser)await browser.close();await server.close();}

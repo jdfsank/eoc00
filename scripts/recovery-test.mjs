@@ -1,3 +1,4 @@
+import {readEndingDetails} from './helpers/ending-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -8,7 +9,7 @@ import * as old from '../tests/fixtures/pre-recovery-simulation.js';
 const out='playtest-output';await fs.mkdir(out,{recursive:true});const server=await createServer({server:{host:'127.0.0.1',port:4198,strictPort:true}});await server.listen();let browser,page;
 const report={scope:'Real Chromium390×844 and320×568/200% text; true engine fixtures then real UI contract and playback. Not physical-device or human balance certification.',checks:[],errors:[]};
 const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name);};
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();if(a==='ending')await readEndingDetails(page);};
 function lock(s,actor,c,id,api=sim){const a=api.getActions(s,c,actor).find(a=>a.id===id);for(const e of a.requireEvidence)if(!api.getInvestigation(s,actor,c).evidence.includes(e))api.investigate(s,actor,c,e);api.lockTask(s,actor,c,id);}
 function next(s,api=sim){for(const a of api.getActors(s))if(!s.drafts[a.id])api.passTask(s,a.id);api.commitWindow(s);api.advanceToNextWindow(s);return s;}
 function failed30({seed=1,staff=false,api=sim}={}){const s=api.createRun(seed);next(s,api);lock(s,'protagonist','D4','recruit_volunteer',api);next(s,api);lock(s,'protagonist','F6','independent_review',api);lock(s,'linche',staff?'E4':'D4',staff?'train_network':'free_warning',api);next(s,api);assert.equal(s.events.find(e=>e.actionId==='independent_review').status,'failed');return s;}

@@ -1,3 +1,4 @@
+import {readEndingDetails} from './helpers/ending-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -9,7 +10,7 @@ const out='playtest-output';await fs.mkdir(out,{recursive:true});
 const server=await createServer({server:{host:'127.0.0.1',port:4193,strictPort:true}});await server.listen();
 let browser,page;const report={scope:'Real Chromium UI at390×844 and320×568/200% text. No physical-device certification.',checks:[],errors:[]};
 const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name);};
-const click=action=>page.locator(`[data-action="${action}"]`).first().click();
+const click=async action=>{await page.locator(`[data-action="${action}"]`).first().click();if(action==='ending')await readEndingDetails(page);};
 function lock(s,actor,cell,id,api=sim){for(const e of api.getActions(s,cell,actor).find(a=>a.id===id).requireEvidence)if(!api.getInvestigation(s,actor,cell).evidence.includes(e))api.investigate(s,actor,cell,e);api.lockTask(s,actor,cell,id);}
 function next(s,api=sim){for(const a of api.getActors(s))if(!s.drafts[a.id])api.passTask(s,a.id);api.commitWindow(s);api.advanceToNextWindow(s);return s;}
 function recruited(action,api=sim){const s=api.createRun(0);lock(s,'protagonist','D4','build_joint',api);next(s,api);lock(s,'protagonist','D4',action,api);return next(s,api);}
