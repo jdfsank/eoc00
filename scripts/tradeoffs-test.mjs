@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import { chromium } from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import { createServer } from 'vite';
@@ -8,7 +9,7 @@ const server=await createServer({server:{host:'127.0.0.1',port:4176,strictPort:t
 const report={scope:'Real headless Chromium at 390×844 and 320×568 CSS pixels; not physical device certification.',checks:[],errors:[]};
 let browser,page;
 const check=(name,value)=>{report.checks.push({name,passed:!!value});assert.ok(value,name);};
-const click=action=>page.locator(`[data-action="${action}"]`).first().click();
+const click=async action=>{await page.locator(`[data-action="${action}"]`).first().click();await readDecisionDetails(page);};
 const select=async cell=>{await click('home');await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();await page.locator('[data-primary-action]').click();};
 const investigate=async id=>{const details=page.locator(`[data-evidence-id="${id}"]`);if(!await details.evaluate(e=>e.open))await details.locator('summary').click();await details.locator('[data-action="evidence"]').click();};
 const lock=async id=>{await page.locator(`[data-action="choose"][data-id="${id}"]`).click();await click('confirm');await click('lock');};

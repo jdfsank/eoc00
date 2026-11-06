@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import { chromium } from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import { createServer } from 'vite';
@@ -19,7 +20,7 @@ const report = {
   checks: [], errors: [], oracles: [], screenshots: [],
 };
 const check = (name, ok) => { report.checks.push({ name, passed: !!ok }); assert.ok(ok, name); };
-const click = action => page.locator(`[data-action="${action}"]`).first().click();
+const click = async action => {await page.locator(`[data-action="${action}"]`).first().click();await readDecisionDetails(page);};
 const choose = id => page.locator(`[data-action="choose"][data-id="${id}"]`).click();
 const stateBytes = () => page.evaluate(() => JSON.stringify(window.afterwave.state));
 const savedBytes = () => page.evaluate(() => JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state));
@@ -43,7 +44,7 @@ function oracle(state, id) {
 }
 const restore = async (state, ui = {}) => {
   await page.evaluate(({ state, ui }) => sessionStorage.setItem('investigation-comparison.fixture', JSON.stringify({ state, ui })), { state, ui });
-  await page.reload(); await page.locator('main h1,[data-primary-action]').first().waitFor();
+  await page.reload(); await page.locator('main h1,[data-primary-action]').first().waitFor();await readDecisionDetails(page);
 };
 const select = async (cell, actor = null) => {
   await click('home');

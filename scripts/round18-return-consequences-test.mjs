@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -59,7 +60,7 @@ const probePlugin={name:'round18-read-only-probe',enforce:'pre',transform(code,i
 await fs.mkdir(out,{recursive:true});const frozen=await runtimeHash();
 const server=await createServer({plugins:[probePlugin,boardReadinessPlugin()],server:{host:'127.0.0.1',port:4218,strictPort:true}});await server.listen();
 let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const stateBytes=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const sessions=()=>page.evaluate(()=>JSON.stringify(window.afterwave.ui.sessions));
 const probes=()=>page.evaluate(()=>JSON.stringify([globalThis.__planningSceneCalls||0,globalThis.__sessionCalls||0]));

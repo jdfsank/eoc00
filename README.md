@@ -140,3 +140,9 @@ D4与E4新增只读现场回访，显示实际已付合同、兑现/取消、当
 新局第30年可与原东岸学徒协商轮值职责：保留基本读尺与预警，把部分深入带教转为议事和生计协调，政治、经济年度来源提高，科学来源减少。另选新培训则保留原点，新增教学载体。免费比较把科学代价、取消不退费和最后名额放在同层；主角选择其中一项，就不能同时签署交班方针。所有旧局保留原授权合同与年度结算，不自动改排。
 
 这修正了已发现的自然样本全通道支配，不是完成全局或真人平衡的声明。设计见[本轮评估](docs/ROUND21_DESIGN_REVIEW.md)、[职责规则与兼容边界](docs/TRAINING_WORKLOAD_DESIGN.md)、[叙事](docs/TRAINING_WORKLOAD_NARRATIVE.md)和[移动端比较](docs/TRAINING_WORKLOAD_VISUALS.md)。`npm run test:training-choice-balance`重跑当前自然对照；`npm run test:training-choice-balance:round20`用冻结的真实旧生产者复现第20轮结论。
+
+## 第二十二轮：清楚地作出最后决定
+
+预览、锁定草稿与整轮提交现在各有职责。必要成本、概率、失败与取消风险保留在主层；重复合同和逐项数值可展开重读。整轮可直接返回角色安排修改，提交只进入逐年演变，不再误称已经推进十年。第30年在调查前说明主角独占方针名额，区分未安排、已锁方针、已锁其他工作与明确放弃；建设、培训和校验仍是可自主保留的合法取舍。
+
+本轮不改变模拟、旧档或历史结果。见[实际体验与设计](docs/ROUND22_DESIGN_REVIEW.md)、[阶段叙事说明](docs/DECISION_STAGES.md)与[自然角色分配对照](docs/ROUND22_ROLE_OPPORTUNITY_AUDIT.md)。

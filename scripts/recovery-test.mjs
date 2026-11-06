@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {readEndingDetails} from './helpers/ending-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
@@ -9,12 +10,12 @@ import * as old from '../tests/fixtures/pre-recovery-simulation.js';
 const out='playtest-output';await fs.mkdir(out,{recursive:true});const server=await createServer({server:{host:'127.0.0.1',port:4198,strictPort:true}});await server.listen();let browser,page;
 const report={scope:'Real Chromium390×844 and320×568/200% text; true engine fixtures then real UI contract and playback. Not physical-device or human balance certification.',checks:[],errors:[]};
 const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name);};
-const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();if(a==='ending')await readEndingDetails(page);};
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);if(a==='ending')await readEndingDetails(page);};
 function lock(s,actor,c,id,api=sim){const a=api.getActions(s,c,actor).find(a=>a.id===id);for(const e of a.requireEvidence)if(!api.getInvestigation(s,actor,c).evidence.includes(e))api.investigate(s,actor,c,e);api.lockTask(s,actor,c,id);}
 function next(s,api=sim){for(const a of api.getActors(s))if(!s.drafts[a.id])api.passTask(s,a.id);api.commitWindow(s);api.advanceToNextWindow(s);return s;}
 function failed30({seed=1,staff=false,api=sim}={}){const s=api.createRun(seed);next(s,api);lock(s,'protagonist','D4','recruit_volunteer',api);next(s,api);lock(s,'protagonist','F6','independent_review',api);lock(s,'linche',staff?'E4':'D4',staff?'train_network':'free_warning',api);next(s,api);assert.equal(s.events.find(e=>e.actionId==='independent_review').status,'failed');return s;}
 const bare=failed30(),staffed=failed30({seed:6,staff:true}),legacy=failed30({api:old});
-const restore=async(state,ui={})=>{await page.evaluate(({state,ui})=>sessionStorage.setItem('recovery.fixture',JSON.stringify({state,ui})),{state,ui});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();};
+const restore=async(state,ui={})=>{await page.evaluate(({state,ui})=>sessionStorage.setItem('recovery.fixture',JSON.stringify({state,ui})),{state,ui});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();await readDecisionDetails(page);};
 const snap=(name,selector)=>selector?page.locator(selector).screenshot({path:`${out}/round7-${name}.png`}):page.screenshot({path:`${out}/round7-${name}.png`,fullPage:true});
 const choose=async id=>{await page.locator(`[data-action="choose"][data-id="${id}"]`).click();await click('confirm');await click('lock');};
 const investigate=async id=>{await page.locator(`[data-evidence-id="${id}"] > summary`).click();await page.locator(`[data-action="evidence"][data-id="${id}"]`).click();};

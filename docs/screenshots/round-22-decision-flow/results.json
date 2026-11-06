@@ -1,0 +1,4884 @@
+{
+  "startedAt": "2026-11-06T10:20:34.319Z",
+  "scope": "Independent real-control Chromium UI; natural simulation-produced initial fixtures. Measures default layers before opening disclosures. Native 320/200 and 390/100. Not physical-device or accessibility certification.",
+  "errors": [],
+  "checks": [
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 all four contract fields default visible",
+      "passed": true,
+      "detail": [
+        {
+          "text": "提交成本与名额经济 −6；本窗口 1 次介入",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "结果与发生时间70% · 第 3 年一次性判定",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "值得争取的结果开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "风险、代价与维护成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。",
+          "visible": true,
+          "hiddenBy": false
+        }
+      ]
+    },
+    {
+      "name": "y0-390-100 real native font",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100-confirmation-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100-confirmation-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 48,
+        "hit": true
+      }
+    },
+    {
+      "name": "y0-390-100-confirmation-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100-confirmation-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 task risks visible without unfolding",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100-task-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100-task-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 48,
+        "hit": true
+      }
+    },
+    {
+      "name": "y0-390-100-task-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100-task-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 bottom modification link returns without changing state",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y0-390-100 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 all four contract fields default visible",
+      "passed": true,
+      "detail": [
+        {
+          "text": "提交成本与名额经济 −6；本窗口 1 次介入",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "结果与发生时间70% · 第 3 年一次性判定",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "值得争取的结果开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "风险、代价与维护成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。",
+          "visible": true,
+          "hiddenBy": false
+        }
+      ]
+    },
+    {
+      "name": "y0-320-200 real native font",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200-confirmation-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200-confirmation-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 76.78125,
+        "hit": true
+      }
+    },
+    {
+      "name": "y0-320-200-confirmation-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200-confirmation-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 task risks visible without unfolding",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200-task-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200-task-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 76.78125,
+        "hit": true
+      }
+    },
+    {
+      "name": "y0-320-200-task-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200-task-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 bottom modification link returns without changing state",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y0-320-200 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 all four contract fields default visible",
+      "passed": true,
+      "detail": [
+        {
+          "text": "提交成本与名额经济 −5 · 科学 −2；本窗口 1 次介入",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "结果与发生时间第 11 年生效",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "值得争取的结果第20年起获得第二名介入员；保留维护人手。",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "风险、代价与维护当地仍需补充长期经费；这不等于续约公开章程。",
+          "visible": true,
+          "hiddenBy": false
+        }
+      ]
+    },
+    {
+      "name": "y10-390-100 real native font",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 task risks visible without unfolding",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100-task-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100-task-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 48,
+        "hit": true
+      }
+    },
+    {
+      "name": "y10-390-100-task-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100-task-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 bottom modification link returns without changing state",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y10-390-100 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 all four contract fields default visible",
+      "passed": true,
+      "detail": [
+        {
+          "text": "提交成本与名额经济 −5 · 科学 −2；本窗口 1 次介入",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "结果与发生时间第 11 年生效",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "值得争取的结果第20年起获得第二名介入员；保留维护人手。",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "风险、代价与维护当地仍需补充长期经费；这不等于续约公开章程。",
+          "visible": true,
+          "hiddenBy": false
+        }
+      ]
+    },
+    {
+      "name": "y10-320-200 real native font",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 task risks visible without unfolding",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200-task-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200-task-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 76.78125,
+        "hit": true
+      }
+    },
+    {
+      "name": "y10-320-200-task-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200-task-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 bottom modification link returns without changing state",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y10-320-200 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 all four contract fields default visible",
+      "passed": true,
+      "detail": [
+        {
+          "text": "提交成本与名额政治 −3 · 经济 −2；本窗口 1 次介入",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "结果与发生时间第 31 年核对条件，原培训点失效、被替换或已获授权则取消",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "值得争取的结果第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "风险、代价与维护第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。",
+          "visible": true,
+          "hiddenBy": false
+        }
+      ]
+    },
+    {
+      "name": "y30-390-100 real native font",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-confirmation-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-confirmation-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 48,
+        "hit": true
+      }
+    },
+    {
+      "name": "y30-390-100-confirmation-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-confirmation-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 task risks visible without unfolding",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-task-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-task-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 48,
+        "hit": true
+      }
+    },
+    {
+      "name": "y30-390-100-task-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-task-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-window-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-window-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 48,
+        "hit": true
+      }
+    },
+    {
+      "name": "y30-390-100-window-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100-window-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 bottom modification link returns without changing state",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y30-390-100 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 all four contract fields default visible",
+      "passed": true,
+      "detail": [
+        {
+          "text": "提交成本与名额政治 −3 · 经济 −2；本窗口 1 次介入",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "结果与发生时间第 31 年核对条件，原培训点失效、被替换或已获授权则取消",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "值得争取的结果第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。",
+          "visible": true,
+          "hiddenBy": false
+        },
+        {
+          "text": "风险、代价与维护第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。",
+          "visible": true,
+          "hiddenBy": false
+        }
+      ]
+    },
+    {
+      "name": "y30-320-200 real native font",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-confirmation-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-confirmation-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 127.96875,
+        "hit": true
+      }
+    },
+    {
+      "name": "y30-320-200-confirmation-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-confirmation-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 task risks visible without unfolding",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 234,
+        "covered": 234.15625
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 738,
+        "covered": 802
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 1242,
+        "covered": 1306
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 1746,
+        "covered": 1810
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 2250,
+        "covered": 2314
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 2754,
+        "covered": 2818
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 3258,
+        "covered": 3322
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 3762,
+        "covered": 3826
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 4266,
+        "covered": 4330
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 4770,
+        "covered": 4834
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 5274,
+        "covered": 5338
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 5778,
+        "covered": 5842
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 6282,
+        "covered": 6346
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 6786,
+        "covered": 6850
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 7290,
+        "covered": 7354
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 7794,
+        "covered": 7858
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 8298,
+        "covered": 8362
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segment advances without skipping",
+      "passed": true,
+      "detail": {
+        "actual": 8765,
+        "covered": 8866
+      }
+    },
+    {
+      "name": "y30-320-200-window-default segmented real screenshots preserve state",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-task-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-task-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 76.78125,
+        "hit": true
+      }
+    },
+    {
+      "name": "y30-320-200-task-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-task-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-window-source dossier starts closed",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-window-source native disclosure focus and target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "outline": "solid",
+        "height": 127.96875,
+        "hit": true
+      }
+    },
+    {
+      "name": "y30-320-200-window-source Enter opens full source",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200-window-source Enter closes without mutation",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 bottom modification link returns without changing state",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y30-320-200 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 real submit equals simulation",
+      "passed": true
+    }
+  ],
+  "screens": [
+    {
+      "label": "y0-390-100-scene",
+      "screen": "avg",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2709,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 2487,
+        "width": 358,
+        "text": "← 返回世界\nD4 · 第 0 年\n主角\n尚未提交\n第一卷 · 河港的水位线 · 场景示意 · 记录与协商\n林澈 · 河港测量员\n谁拥有洪水预警？\n\n雨停了，旧档案室仍有一股潮湿的纸味。林澈把两本账册并排放下：一份记着商船的损失，另一份只有死者的姓名。\n\n“你们的报告说，修一座站就能救很多人。”她按住被水泡皱的页角，“可河水不会先问，谁付过钱。”\n\n这次介入会留下一套制度。先决定相信哪些证据，再决定把预警交给谁。\n\n资金、指令与共同维护，没有一种选择不留下债务。\n\n你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n更快开站、统一公开预警，还是共同维护？先决定想谈哪种办法，再挑要查的材料。\n\n先免费读合同，再决定调查什么。阅读不消耗轮次，也不锁定任务"
+      },
+      "headline": {
+        "top": 507,
+        "height": 38,
+        "width": 358,
+        "text": "谁拥有洪水预警？"
+      },
+      "choices": {
+        "top": 1010,
+        "height": 914,
+        "width": 358,
+        "text": "你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n更快开站、统一公开预警，还是共同维护？先决定想谈哪种办法，再挑要查的材料。\n\n先免费读合同，再决定调查什么。阅读不消耗轮次，也不锁定任务。\n\n商会独资\n↗\n商会愿意先付运输费用，但收费港口享有优先预警。\n经济 −3 · 85% · 第 2 年一次性判定\n无需取证 · 保留现有轮数\n官署独办\n↗\n统一撤离指令覆盖河港，复核权暂留官署。\n政治 −3 · 经济 −4 · 80% · 第 3 年一次性判定\n无需取证 · 保留现有轮数\n联合管理\n↗\n公开水文资料，由官署、商会和档案院共同维护。\n经济 −6 · 70% · 第 3 年一次性判定\n取证还需 2 轮 · 之后余 1 轮\n比对修会的旧洪水记录 · 1"
+      },
+      "materials": {
+        "top": 1954,
+        "height": 572,
+        "width": 358,
+        "text": "现场取证\n剩余 3 / 3 轮\n\n每角色每窗口共用3轮，换地点不补充。展开材料先看用途；点击调查才花轮数。 返回与重读不会重置。\n\n本地无需取证的方案：商会独资、官署独办。费用与其他条件仍须核对。\n\n比对修会的旧洪水记录\n用于：联合管理\n1轮\n打开商会的经费账簿\n用于：联合管理\n1轮\n听取岸边居民的证词\n本窗口无对应方案 · 了解背景\n1轮"
+      },
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 1270,
+          "height": 203,
+          "width": 358,
+          "text": "商会独资\n↗\n商会愿意先付运输费用，但收费港口享有优先预警。\n经济 −3 · 85% · 第 2 年一次性判定\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 1485,
+          "height": 178,
+          "width": 358,
+          "text": "官署独办\n↗\n统一撤离指令覆盖河港，复核权暂留官署。\n政治 −3 · 经济 −4 · 80% · 第 3 年一次性判定\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 1675,
+          "height": 249,
+          "width": 358,
+          "text": "联合管理\n↗\n公开水文资料，由官署、商会和档案院共同维护。\n经济 −6 · 70% · 第 3 年一次性判定\n取证还需 2 轮 · 之后余 1 轮\n比对修会的旧洪水记录 · 1轮；打开商会的经费账簿 · 1轮",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 2381,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 2503,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 2648,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 2564,
+          "height": 48,
+          "width": 358,
+          "text": "核对本轮安排",
+          "action": "window",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-390-100-preview",
+      "screen": "choice",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2916,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 2728,
+        "width": 358,
+        "text": "方案预览\n联合管理\nD4 · 第 0 年\n主角\n\n免费预览，不改动原有安排\n\n← 返回现场\n\n公开水文资料，由官署、商会和档案院共同维护。\n\n先读清这份安排，再决定是否调查或锁定。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n提交成本与名额\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n合同条件与原型假设\n正常维护时，公开测站覆盖系数为1；成功建立并保留独立旧记录的载体减少15%的剩余"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "联合管理"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 692,
+        "height": 530,
+        "width": 358,
+        "text": "提交成本与名额\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n合同条件与原型假设\n正常维护时，公开测站覆盖系数为1；成功建立并保留独立旧记录的载体减少15%的剩余共同失效损失。 参数可调，尚未经过真人平衡验证。"
+      },
+      "risk": {
+        "top": 975,
+        "height": 111,
+        "width": 358,
+        "text": "风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 294,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 2707,
+          "height": 56,
+          "width": 358,
+          "text": "继续核对这项任务",
+          "action": "confirm",
+          "disabled": false
+        },
+        {
+          "top": 2771,
+          "height": 48,
+          "width": 358,
+          "text": "返回现场，继续比较",
+          "action": "avg",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-390-100-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1840,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1652,
+        "width": 358,
+        "text": "锁定审阅\n联合管理\nD4 · 第 0 年\n主角\n\n这一步只保存草稿\n\n← 返回方案\n所需材料已取得 · 无需再调查\n提交成本与名额\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公开服务，不设缴费门槛。这是未来条件说明，不是"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "联合管理"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 460,
+        "height": 394,
+        "width": 358,
+        "text": "提交成本与名额\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。"
+      },
+      "risk": {
+        "top": 742,
+        "height": 111,
+        "width": 358,
+        "text": "风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 294,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回方案",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 1631,
+          "height": 56,
+          "width": 358,
+          "text": "锁定草稿，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        },
+        {
+          "top": 1695,
+          "height": 48,
+          "width": 358,
+          "text": "返回方案，暂不锁定",
+          "action": "choose",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-390-100-first-lock",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2020,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1832,
+        "width": 358,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n修改安排\n\n若合同兑现的目标：开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n仍需承担：成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 379,
+          "height": 943,
+          "width": 358,
+          "text": "主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n修改安排\n\n若合同兑现的目标：开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n仍需承担：成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公开服务，不设缴费门槛。这是未来条件说明，不是已经兑现；既有分站以实际保存的准入状态为准。\n\n测站续约另占第10年的1次介入、经济3，第11年兑现。未续约且未先停运"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 1350,
+        "height": 205,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n52.0 − 6 → 46.0"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 545,
+          "height": 48,
+          "width": 356,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 1755,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 1875,
+          "height": 48,
+          "width": 358,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-390-100-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2020,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1832,
+        "width": 358,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n修改安排\n\n若合同兑现的目标：开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n仍需承担：成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 379,
+          "height": 943,
+          "width": 358,
+          "text": "主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n修改安排\n\n若合同兑现的目标：开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n仍需承担：成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公开服务，不设缴费门槛。这是未来条件说明，不是已经兑现；既有分站以实际保存的准入状态为准。\n\n测站续约另占第10年的1次介入、经济3，第11年兑现。未续约且未先停运"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 1350,
+        "height": 205,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n52.0 − 6 → 46.0"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 545,
+          "height": 48,
+          "width": 356,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 1755,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 1875,
+          "height": 48,
+          "width": 358,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-390-100-committed",
+      "screen": "playback",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1290,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 1068,
+        "width": 358,
+        "text": "THE YEARS BETWEEN\n余波，正在发生。\n0\nYEAR\n\n已提交，按约定年份兑现\n\n本轮安排已经提交。承诺仍要等到约定年份核对，写下计划不等于工作已经完成。 播放速度不会改变结果。\n\n自动播放\n逐年推进\n到下一窗口 →\n第 0 年\nD4\n玩家行动\n联合管理\n\n公开水文资料，由官署、商会和档案院共同维护。 确定成本已支付；70%概率在第3年兑现。\n\n追溯来源 ↗\n定位 D4\nD4 · 只读现场回访\n第 0 年\nD4\n预设叙事 / 制度事件\n第零年 · 借来的十年\n\n续史局只能在每十年的窗口介入一次。你是唯一的介入员。河港将迎来洪水，但居民并不只需要被拯救。\n\n追溯来源 ↗\n定位 D4\nD4 · 只读现场回访\n暂停并查看世界"
+      },
+      "headline": {
+        "top": 185,
+        "height": 38,
+        "width": 358,
+        "text": "余波，正在发生。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 544,
+          "height": 48,
+          "width": 113,
+          "text": "自动播放",
+          "action": "auto",
+          "disabled": false
+        },
+        {
+          "top": 544,
+          "height": 48,
+          "width": 113,
+          "text": "逐年推进",
+          "action": "step",
+          "disabled": false
+        },
+        {
+          "top": 533,
+          "height": 70,
+          "width": 113,
+          "text": "到下一窗口 →",
+          "action": "skip",
+          "disabled": false
+        },
+        {
+          "top": 786,
+          "height": 48,
+          "width": 83,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 786,
+          "height": 48,
+          "width": 59,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 786,
+          "height": 48,
+          "width": 132,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 1044,
+          "height": 48,
+          "width": 83,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 1044,
+          "height": 48,
+          "width": 59,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 1044,
+          "height": 48,
+          "width": 132,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 1145,
+          "height": 48,
+          "width": 358,
+          "text": "暂停并查看世界",
+          "action": "pause-world",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-320-200-scene",
+      "screen": "avg",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 7446,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 6930,
+        "width": 288,
+        "text": "← 返回世界\nD4 · 第 0 年\n主角\n尚未提交\n第一卷 · 河港的水位线 · 场景示意 · 记录与协商\n林澈 · 河港测量员\n谁拥有洪水预警？\n\n雨停了，旧档案室仍有一股潮湿的纸味。林澈把两本账册并排放下：一份记着商船的损失，另一份只有死者的姓名。\n\n“你们的报告说，修一座站就能救很多人。”她按住被水泡皱的页角，“可河水不会先问，谁付过钱。”\n\n这次介入会留下一套制度。先决定相信哪些证据，再决定把预警交给谁。\n\n资金、指令与共同维护，没有一种选择不留下债务。\n\n你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n更快开站、统一公开预警，还是共同维护？先决定想谈哪种办法，再挑要查的材料。\n\n先免费读合同，再决定调查什么。阅读不消耗轮次，也不锁定任务"
+      },
+      "headline": {
+        "top": 981,
+        "height": 151,
+        "width": 288,
+        "text": "谁拥有洪水预警？"
+      },
+      "choices": {
+        "top": 2811,
+        "height": 2561,
+        "width": 288,
+        "text": "你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n更快开站、统一公开预警，还是共同维护？先决定想谈哪种办法，再挑要查的材料。\n\n先免费读合同，再决定调查什么。阅读不消耗轮次，也不锁定任务。\n\n商会独资\n↗\n商会愿意先付运输费用，但收费港口享有优先预警。\n经济 −3 · 85% · 第 2 年一次性判定\n无需取证 · 保留现有轮数\n官署独办\n↗\n统一撤离指令覆盖河港，复核权暂留官署。\n政治 −3 · 经济 −4 · 80% · 第 3 年一次性判定\n无需取证 · 保留现有轮数\n联合管理\n↗\n公开水文资料，由官署、商会和档案院共同维护。\n经济 −6 · 70% · 第 3 年一次性判定\n取证还需 2 轮 · 之后余 1 轮\n比对修会的旧洪水记录 · 1"
+      },
+      "materials": {
+        "top": 5402,
+        "height": 1791,
+        "width": 288,
+        "text": "现场取证\n剩余 3 / 3 轮\n\n每角色每窗口共用3轮，换地点不补充。展开材料先看用途；点击调查才花轮数。 返回与重读不会重置。\n\n本地无需取证的方案：商会独资、官署独办。费用与其他条件仍须核对。\n\n比对修会的旧洪水记录\n用于：联合管理\n1轮\n打开商会的经费账簿\n用于：联合管理\n1轮\n听取岸边居民的证词\n本窗口无对应方案 · 了解背景\n1轮"
+      },
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 3685,
+          "height": 495,
+          "width": 288,
+          "text": "商会独资\n↗\n商会愿意先付运输费用，但收费港口享有优先预警。\n经济 −3 · 85% · 第 2 年一次性判定\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 4193,
+          "height": 539,
+          "width": 288,
+          "text": "官署独办\n↗\n统一撤离指令覆盖河港，复核权暂留官署。\n政治 −3 · 经济 −4 · 80% · 第 3 年一次性判定\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 4744,
+          "height": 628,
+          "width": 288,
+          "text": "联合管理\n↗\n公开水文资料，由官署、商会和档案院共同维护。\n经济 −6 · 70% · 第 3 年一次性判定\n取证还需 2 轮 · 之后余 1 轮\n比对修会的旧洪水记录 · 1轮；打开商会的经费账簿 · 1轮",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 6819,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 7141,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 7600,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 7231,
+          "height": 70,
+          "width": 288,
+          "text": "核对本轮安排",
+          "action": "window",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-320-200-preview",
+      "screen": "choice",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 10267,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 9918,
+        "width": 288,
+        "text": "方案预览\n联合管理\nD4 · 第 0 年\n主角\n\n免费预览，不改动原有安排\n\n← 返回现场\n\n公开水文资料，由官署、商会和档案院共同维护。\n\n先读清这份安排，再决定是否调查或锁定。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n提交成本与名额\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n合同条件与原型假设\n正常维护时，公开测站覆盖系数为1；成功建立并保留独立旧记录的载体减少15%的剩余"
+      },
+      "headline": {
+        "top": 283,
+        "height": 76,
+        "width": 288,
+        "text": "联合管理"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 1661,
+        "height": 1479,
+        "width": 288,
+        "text": "提交成本与名额\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n合同条件与原型假设\n正常维护时，公开测站覆盖系数为1；成功建立并保留独立旧记录的载体减少15%的剩余共同失效损失。 参数可调，尚未经过真人平衡验证。"
+      },
+      "risk": {
+        "top": 2364,
+        "height": 285,
+        "width": 288,
+        "text": "风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 592,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 9870,
+          "height": 118,
+          "width": 288,
+          "text": "继续核对这项任务",
+          "action": "confirm",
+          "disabled": false
+        },
+        {
+          "top": 10004,
+          "height": 118,
+          "width": 288,
+          "text": "返回现场，继续比较",
+          "action": "avg",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-320-200-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 5058,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 4709,
+        "width": 288,
+        "text": "锁定审阅\n联合管理\nD4 · 第 0 年\n主角\n\n这一步只保存草稿\n\n← 返回方案\n所需材料已取得 · 无需再调查\n提交成本与名额\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公开服务，不设缴费门槛。这是未来条件说明，不是"
+      },
+      "headline": {
+        "top": 283,
+        "height": 76,
+        "width": 288,
+        "text": "联合管理"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 844,
+        "height": 989,
+        "width": 288,
+        "text": "提交成本与名额\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。"
+      },
+      "risk": {
+        "top": 1547,
+        "height": 285,
+        "width": 288,
+        "text": "风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 541,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回方案",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 4661,
+          "height": 118,
+          "width": 288,
+          "text": "锁定草稿，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        },
+        {
+          "top": 4795,
+          "height": 118,
+          "width": 288,
+          "text": "返回方案，暂不锁定",
+          "action": "choose",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-320-200-first-lock",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 6103,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 5754,
+        "width": 288,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n修改安排\n\n若合同兑现的目标：开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n仍需承担：成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公"
+      },
+      "headline": {
+        "top": 283,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1024,
+          "height": 3371,
+          "width": 288,
+          "text": "主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n修改安排\n\n若合同兑现的目标：开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n仍需承担：成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公开服务，不设缴费门槛。这是未来条件说明，不是已经兑现；既有分站以实际保存的准入状态为准。\n\n测站续约另占第10年的1次介入、经济3，第11年兑现。未续约且未先停运"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 4424,
+        "height": 582,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n52.0 − 6 → 46.0"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 1389,
+          "height": 70,
+          "width": 286,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 5554,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 5840,
+          "height": 118,
+          "width": 288,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-320-200-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 6103,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 5754,
+        "width": 288,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n修改安排\n\n若合同兑现的目标：开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n仍需承担：成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公"
+      },
+      "headline": {
+        "top": 283,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1024,
+          "height": 3371,
+          "width": 288,
+          "text": "主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n修改安排\n\n若合同兑现的目标：开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n仍需承担：成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n\n失败与后续责任\n\n第3年只判定一次。失败留下D4小型档案站，成本不退，原教学与分站链不启动。\n\n若建站成功，且各步来源仍运转，第7年接续E4、D5教学，第12年接续F6分站。若原建站与教学链成功，且来源E4培训点在第12年仍运转，本局之后生成的同源F6分站公开服务，不设缴费门槛。这是未来条件说明，不是已经兑现；既有分站以实际保存的准入状态为准。\n\n测站续约另占第10年的1次介入、经济3，第11年兑现。未续约且未先停运"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 4424,
+        "height": 582,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n52.0 − 6 → 46.0"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 1389,
+          "height": 70,
+          "width": 286,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 5554,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 5840,
+          "height": 118,
+          "width": 288,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-320-200-committed",
+      "screen": "playback",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 3404,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 2889,
+        "width": 288,
+        "text": "THE YEARS BETWEEN\n余波，正在发生。\n0\nYEAR\n\n已提交，按约定年份兑现\n\n本轮安排已经提交。承诺仍要等到约定年份核对，写下计划不等于工作已经完成。 播放速度不会改变结果。\n\n自动播放\n逐年推进\n到下一窗口 →\n第 0 年\nD4\n玩家行动\n联合管理\n\n公开水文资料，由官署、商会和档案院共同维护。 确定成本已支付；70%概率在第3年兑现。\n\n追溯来源 ↗\n定位 D4\nD4 · 只读现场回访\n第 0 年\nD4\n预设叙事 / 制度事件\n第零年 · 借来的十年\n\n续史局只能在每十年的窗口介入一次。你是唯一的介入员。河港将迎来洪水，但居民并不只需要被拯救。\n\n追溯来源 ↗\n定位 D4\nD4 · 只读现场回访\n暂停并查看世界"
+      },
+      "headline": {
+        "top": 487,
+        "height": 151,
+        "width": 288,
+        "text": "余波，正在发生。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 1420,
+          "height": 70,
+          "width": 288,
+          "text": "自动播放",
+          "action": "auto",
+          "disabled": false
+        },
+        {
+          "top": 1500,
+          "height": 70,
+          "width": 288,
+          "text": "逐年推进",
+          "action": "step",
+          "disabled": false
+        },
+        {
+          "top": 1580,
+          "height": 70,
+          "width": 288,
+          "text": "到下一窗口 →",
+          "action": "skip",
+          "disabled": false
+        },
+        {
+          "top": 2143,
+          "height": 60,
+          "width": 254,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 2213,
+          "height": 60,
+          "width": 254,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 2283,
+          "height": 60,
+          "width": 254,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 2936,
+          "height": 60,
+          "width": 254,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 3006,
+          "height": 60,
+          "width": 254,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 3076,
+          "height": 60,
+          "width": 254,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 3189,
+          "height": 70,
+          "width": 288,
+          "text": "暂停并查看世界",
+          "action": "pause-world",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-390-100-scene",
+      "screen": "avg",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2768,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 2546,
+        "width": 358,
+        "text": "← 返回世界\nD4 · 第 10 年\n主角\n尚未提交\n第二卷 · 继任者的姓名 · 场景示意 · 河港原测站 · 制度运行中 · 基本预警公开准入\n林澈 · 河港测量员\n留下来的人，离开的人\n\n第一批学徒已经会独自读水尺。林澈翻着东岸送回的练习记录，问下一轮该由谁带教。\n\n“我愿意去看看你说的那些年代。”她停顿了一下，“但如果我的离开，只是把没有做完的工作留给下一个人，这不叫自由。”\n\n续约会占用你的十年名额。去东岸资助学校，也许能培养更多维护者；请她入局，则必须面对原岗位的空缺。\n\n这一回，你要带走一个人，还是让一套规则不再依赖一个人？\n\n你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n留下林澈续约，还是邀请她同行？如果同行，要先与谁谈清接班的"
+      },
+      "headline": {
+        "top": 562,
+        "height": 38,
+        "width": 358,
+        "text": "留下来的人，离开的人"
+      },
+      "choices": {
+        "top": 1064,
+        "height": 919,
+        "width": 358,
+        "text": "你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n留下林澈续约，还是邀请她同行？如果同行，要先与谁谈清接班的条件？\n\n先免费读合同，再决定调查什么。阅读不消耗轮次，也不锁定任务。\n\n续约公开章程\n↗\n补足维护基金并明确继任权。林澈留在河港照料测站。\n经济 −3 · 第 11 年生效\n无需取证 · 保留现有轮数\n招募林澈 · 安排继任\n↗\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。\n经济 −5 · 科学 −2 · 第 11 年生效\n取证还需 1 轮 · 之后余 2 轮\n与苏岚商量培训与接班 · 1轮\n招募林澈 · 暂缺继任\n↗\n林澈自愿锚定记忆，但河港没有准备好的接班人。\n经济 −1 · 第 11 年生效\n无需取证 · 保留现有轮数"
+      },
+      "materials": {
+        "top": 2014,
+        "height": 572,
+        "width": 358,
+        "text": "现场取证\n剩余 3 / 3 轮\n\n每角色每窗口共用3轮，换地点不补充。展开材料先看用途；点击调查才花轮数。 返回与重读不会重置。\n\n本地无需取证的方案：续约公开章程、招募林澈 · 暂缺继任。费用与其他条件仍须核对。\n\n与苏岚商量培训与接班\n用于：招募林澈 · 安排继任\n1轮\n听取岸边居民的证词\n本窗口无对应方案 · 了解背景\n1轮\n打开商会的经费账簿\n本窗口无对应方案 · 了解背景\n1轮"
+      },
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 1324,
+          "height": 203,
+          "width": 358,
+          "text": "续约公开章程\n↗\n补足维护基金并明确继任权。林澈留在河港照料测站。\n经济 −3 · 第 11 年生效\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 1540,
+          "height": 228,
+          "width": 358,
+          "text": "招募林澈 · 安排继任\n↗\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。\n经济 −5 · 科学 −2 · 第 11 年生效\n取证还需 1 轮 · 之后余 2 轮\n与苏岚商量培训与接班 · 1轮",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 1780,
+          "height": 203,
+          "width": 358,
+          "text": "招募林澈 · 暂缺继任\n↗\n林澈自愿锚定记忆，但河港没有准备好的接班人。\n经济 −1 · 第 11 年生效\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 2464,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 2586,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 2683,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 2623,
+          "height": 48,
+          "width": 358,
+          "text": "核对本轮安排",
+          "action": "window",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-390-100-preview",
+      "screen": "choice",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1566,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1378,
+        "width": 358,
+        "text": "方案预览\n招募林澈 · 安排继任\nD4 · 第 10 年\n主角\n\n免费预览，不改动原有安排\n\n← 返回现场\n\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。\n\n先读清这份安排，再决定是否调查或锁定。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n提交成本与名额\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n阅读不取证、不"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "招募林澈 · 安排继任"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 722,
+        "height": 343,
+        "width": 358,
+        "text": "提交成本与名额\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "risk": {
+        "top": 979,
+        "height": 85,
+        "width": 358,
+        "text": "风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 294,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 1357,
+          "height": 56,
+          "width": 358,
+          "text": "继续核对这项任务",
+          "action": "confirm",
+          "disabled": false
+        },
+        {
+          "top": 1421,
+          "height": 48,
+          "width": 358,
+          "text": "返回现场，继续比较",
+          "action": "avg",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-390-100-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1403,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1215,
+        "width": 358,
+        "text": "锁定审阅\n招募林澈 · 安排继任\nD4 · 第 10 年\n主角\n\n这一步只保存草稿\n\n← 返回方案\n所需材料已取得 · 无需再调查\n提交成本与名额\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n邀请林澈同行，也要为接班的人留出真实的岗位与条件。接班有人，经费仍是另一份责任。\n\n锁定不支付成本、不建立制度，也不揭示随机结果。整轮提交前仍可修改；已花的调查轮次不会退回。\n\n锁定草稿，核对本轮安排\n返回方案，暂不锁定"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "招募林澈 · 安排继任"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 460,
+        "height": 343,
+        "width": 358,
+        "text": "提交成本与名额\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "risk": {
+        "top": 717,
+        "height": 85,
+        "width": 358,
+        "text": "风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 294,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回方案",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 1194,
+          "height": 56,
+          "width": 358,
+          "text": "锁定草稿，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        },
+        {
+          "top": 1258,
+          "height": 48,
+          "width": 358,
+          "text": "返回方案，暂不锁定",
+          "action": "choose",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-390-100-first-lock",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1725,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1537,
+        "width": 358,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n修改安排\n\n若合同兑现的目标：第20年起获得第二名介入员；保留维护人手。\n\n仍需承担：当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n完整合同与依据\n本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40."
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 379,
+          "height": 615,
+          "width": 358,
+          "text": "主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n修改安排\n\n若合同兑现的目标：第20年起获得第二名介入员；保留维护人手。\n\n仍需承担：当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n完整合同与依据"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 1021,
+        "height": 239,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40.5 − 2 → 38.5"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 545,
+          "height": 48,
+          "width": 356,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 1460,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 1580,
+          "height": 48,
+          "width": 358,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-390-100-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1725,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1537,
+        "width": 358,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n修改安排\n\n若合同兑现的目标：第20年起获得第二名介入员；保留维护人手。\n\n仍需承担：当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n完整合同与依据\n本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40."
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 379,
+          "height": 615,
+          "width": 358,
+          "text": "主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n修改安排\n\n若合同兑现的目标：第20年起获得第二名介入员；保留维护人手。\n\n仍需承担：当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n完整合同与依据"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 1021,
+        "height": 239,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40.5 − 2 → 38.5"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 545,
+          "height": 48,
+          "width": 356,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 1460,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 1580,
+          "height": 48,
+          "width": 358,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-390-100-committed",
+      "screen": "playback",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1290,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 1068,
+        "width": 358,
+        "text": "THE YEARS BETWEEN\n余波，正在发生。\n10\nYEAR\n\n已提交，按约定年份兑现\n\n本轮安排已经提交。承诺仍要等到约定年份核对，写下计划不等于工作已经完成。 播放速度不会改变结果。\n\n自动播放\n逐年推进\n到下一窗口 →\n第 10 年\nD4\n玩家行动\n招募林澈 · 安排继任\n\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。 确定成本已支付；确定在第11年兑现。\n\n追溯来源 ↗\n定位 D4\nD4 · 只读现场回访\n第 10 年\nD4\n预设叙事 / 制度事件\n谁来守住下一次洪水\n\n林澈愿意入局，但带走维护者也会改变河港。招募、继任与续约争夺同一名额。\n\n追溯来源 ↗\n定位 D4\nD4 · 只读现场回访\n暂停并查看世界"
+      },
+      "headline": {
+        "top": 185,
+        "height": 38,
+        "width": 358,
+        "text": "余波，正在发生。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 544,
+          "height": 48,
+          "width": 113,
+          "text": "自动播放",
+          "action": "auto",
+          "disabled": false
+        },
+        {
+          "top": 544,
+          "height": 48,
+          "width": 113,
+          "text": "逐年推进",
+          "action": "step",
+          "disabled": false
+        },
+        {
+          "top": 533,
+          "height": 70,
+          "width": 113,
+          "text": "到下一窗口 →",
+          "action": "skip",
+          "disabled": false
+        },
+        {
+          "top": 810,
+          "height": 48,
+          "width": 83,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 810,
+          "height": 48,
+          "width": 59,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 810,
+          "height": 48,
+          "width": 132,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 1044,
+          "height": 48,
+          "width": 83,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 1044,
+          "height": 48,
+          "width": 59,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 1044,
+          "height": 48,
+          "width": 132,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 1145,
+          "height": 48,
+          "width": 358,
+          "text": "暂停并查看世界",
+          "action": "pause-world",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-320-200-scene",
+      "screen": "avg",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 7945,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 7429,
+        "width": 288,
+        "text": "← 返回世界\nD4 · 第 10 年\n主角\n尚未提交\n第二卷 · 继任者的姓名 · 场景示意 · 河港原测站 · 制度运行中 · 基本预警公开准入\n林澈 · 河港测量员\n留下来的人，离开的人\n\n第一批学徒已经会独自读水尺。林澈翻着东岸送回的练习记录，问下一轮该由谁带教。\n\n“我愿意去看看你说的那些年代。”她停顿了一下，“但如果我的离开，只是把没有做完的工作留给下一个人，这不叫自由。”\n\n续约会占用你的十年名额。去东岸资助学校，也许能培养更多维护者；请她入局，则必须面对原岗位的空缺。\n\n这一回，你要带走一个人，还是让一套规则不再依赖一个人？\n\n你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n留下林澈续约，还是邀请她同行？如果同行，要先与谁谈清接班的"
+      },
+      "headline": {
+        "top": 1058,
+        "height": 227,
+        "width": 288,
+        "text": "留下来的人，离开的人"
+      },
+      "choices": {
+        "top": 3100,
+        "height": 2648,
+        "width": 288,
+        "text": "你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n留下林澈续约，还是邀请她同行？如果同行，要先与谁谈清接班的条件？\n\n先免费读合同，再决定调查什么。阅读不消耗轮次，也不锁定任务。\n\n续约公开章程\n↗\n补足维护基金并明确继任权。林澈留在河港照料测站。\n经济 −3 · 第 11 年生效\n无需取证 · 保留现有轮数\n招募林澈 · 安排继任\n↗\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。\n经济 −5 · 科学 −2 · 第 11 年生效\n取证还需 1 轮 · 之后余 2 轮\n与苏岚商量培训与接班 · 1轮\n招募林澈 · 暂缺继任\n↗\n林澈自愿锚定记忆，但河港没有准备好的接班人。\n经济 −1 · 第 11 年生效\n无需取证 · 保留现有轮数"
+      },
+      "materials": {
+        "top": 5779,
+        "height": 1913,
+        "width": 288,
+        "text": "现场取证\n剩余 3 / 3 轮\n\n每角色每窗口共用3轮，换地点不补充。展开材料先看用途；点击调查才花轮数。 返回与重读不会重置。\n\n本地无需取证的方案：续约公开章程、招募林澈 · 暂缺继任。费用与其他条件仍须核对。\n\n与苏岚商量培训与接班\n用于：招募林澈 · 安排继任\n1轮\n听取岸边居民的证词\n本窗口无对应方案 · 了解背景\n1轮\n打开商会的经费账簿\n本窗口无对应方案 · 了解背景\n1轮"
+      },
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 3913,
+          "height": 556,
+          "width": 288,
+          "text": "续约公开章程\n↗\n补足维护基金并明确继任权。林澈留在河港照料测站。\n经济 −3 · 第 11 年生效\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 4482,
+          "height": 699,
+          "width": 288,
+          "text": "招募林澈 · 安排继任\n↗\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。\n经济 −5 · 科学 −2 · 第 11 年生效\n取证还需 1 轮 · 之后余 2 轮\n与苏岚商量培训与接班 · 1轮",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 5192,
+          "height": 556,
+          "width": 288,
+          "text": "招募林澈 · 暂缺继任\n↗\n林澈自愿锚定记忆，但河港没有准备好的接班人。\n经济 −1 · 第 11 年生效\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 7277,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 7688,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 8051,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 7730,
+          "height": 70,
+          "width": 288,
+          "text": "核对本轮安排",
+          "action": "window",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-320-200-preview",
+      "screen": "choice",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 3757,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 3408,
+        "width": 288,
+        "text": "方案预览\n招募林澈 · 安排继任\nD4 · 第 10 年\n主角\n\n免费预览，不改动原有安排\n\n← 返回现场\n\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。\n\n先读清这份安排，再决定是否调查或锁定。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n提交成本与名额\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n阅读不取证、不"
+      },
+      "headline": {
+        "top": 283,
+        "height": 151,
+        "width": 288,
+        "text": "招募林澈 · 安排继任"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 1795,
+        "height": 835,
+        "width": 288,
+        "text": "提交成本与名额\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "risk": {
+        "top": 2396,
+        "height": 234,
+        "width": 288,
+        "text": "风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 668,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 3360,
+          "height": 118,
+          "width": 288,
+          "text": "继续核对这项任务",
+          "action": "confirm",
+          "disabled": false
+        },
+        {
+          "top": 3494,
+          "height": 118,
+          "width": 288,
+          "text": "返回现场，继续比较",
+          "action": "avg",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-320-200-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 3364,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 3015,
+        "width": 288,
+        "text": "锁定审阅\n招募林澈 · 安排继任\nD4 · 第 10 年\n主角\n\n这一步只保存草稿\n\n← 返回方案\n所需材料已取得 · 无需再调查\n提交成本与名额\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n邀请林澈同行，也要为接班的人留出真实的岗位与条件。接班有人，经费仍是另一份责任。\n\n锁定不支付成本、不建立制度，也不揭示随机结果。整轮提交前仍可修改；已花的调查轮次不会退回。\n\n锁定草稿，核对本轮安排\n返回方案，暂不锁定"
+      },
+      "headline": {
+        "top": 283,
+        "height": 151,
+        "width": 288,
+        "text": "招募林澈 · 安排继任"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 919,
+        "height": 835,
+        "width": 288,
+        "text": "提交成本与名额\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "risk": {
+        "top": 1521,
+        "height": 234,
+        "width": 288,
+        "text": "风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 617,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回方案",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 2967,
+          "height": 118,
+          "width": 288,
+          "text": "锁定草稿，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        },
+        {
+          "top": 3101,
+          "height": 118,
+          "width": 288,
+          "text": "返回方案，暂不锁定",
+          "action": "choose",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-320-200-first-lock",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 4460,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 4111,
+        "width": 288,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n修改安排\n\n若合同兑现的目标：第20年起获得第二名介入员；保留维护人手。\n\n仍需承担：当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n完整合同与依据\n本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40."
+      },
+      "headline": {
+        "top": 283,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1024,
+          "height": 1606,
+          "width": 288,
+          "text": "主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n修改安排\n\n若合同兑现的目标：第20年起获得第二名介入员；保留维护人手。\n\n仍需承担：当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n完整合同与依据"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 2658,
+        "height": 704,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40.5 − 2 → 38.5"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 1395,
+          "height": 70,
+          "width": 286,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 3911,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 4197,
+          "height": 118,
+          "width": 288,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-320-200-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 4460,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 4111,
+        "width": 288,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n修改安排\n\n若合同兑现的目标：第20年起获得第二名介入员；保留维护人手。\n\n仍需承担：当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n完整合同与依据\n本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40."
+      },
+      "headline": {
+        "top": 283,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1024,
+          "height": 1606,
+          "width": 288,
+          "text": "主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n修改安排\n\n若合同兑现的目标：第20年起获得第二名介入员；保留维护人手。\n\n仍需承担：当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n完整合同与依据"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 2658,
+        "height": 704,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40.5 − 2 → 38.5"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 1395,
+          "height": 70,
+          "width": 286,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 3911,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 4197,
+          "height": 118,
+          "width": 288,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-320-200-committed",
+      "screen": "playback",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 3454,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 2939,
+        "width": 288,
+        "text": "THE YEARS BETWEEN\n余波，正在发生。\n10\nYEAR\n\n已提交，按约定年份兑现\n\n本轮安排已经提交。承诺仍要等到约定年份核对，写下计划不等于工作已经完成。 播放速度不会改变结果。\n\n自动播放\n逐年推进\n到下一窗口 →\n第 10 年\nD4\n玩家行动\n招募林澈 · 安排继任\n\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。 确定成本已支付；确定在第11年兑现。\n\n追溯来源 ↗\n定位 D4\nD4 · 只读现场回访\n第 10 年\nD4\n预设叙事 / 制度事件\n谁来守住下一次洪水\n\n林澈愿意入局，但带走维护者也会改变河港。招募、继任与续约争夺同一名额。\n\n追溯来源 ↗\n定位 D4\nD4 · 只读现场回访\n暂停并查看世界"
+      },
+      "headline": {
+        "top": 487,
+        "height": 151,
+        "width": 288,
+        "text": "余波，正在发生。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 1420,
+          "height": 70,
+          "width": 288,
+          "text": "自动播放",
+          "action": "auto",
+          "disabled": false
+        },
+        {
+          "top": 1500,
+          "height": 70,
+          "width": 288,
+          "text": "逐年推进",
+          "action": "step",
+          "disabled": false
+        },
+        {
+          "top": 1580,
+          "height": 70,
+          "width": 288,
+          "text": "到下一窗口 →",
+          "action": "skip",
+          "disabled": false
+        },
+        {
+          "top": 2241,
+          "height": 60,
+          "width": 254,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 2311,
+          "height": 60,
+          "width": 254,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 2381,
+          "height": 60,
+          "width": 254,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 2986,
+          "height": 60,
+          "width": 254,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 3056,
+          "height": 60,
+          "width": 254,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 3126,
+          "height": 60,
+          "width": 254,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 3239,
+          "height": 70,
+          "width": 288,
+          "text": "暂停并查看世界",
+          "action": "pause-world",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-390-100-scene",
+      "screen": "avg",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 3447,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 3224,
+        "width": 358,
+        "text": "← 返回世界\nE4 · 第 30 年\n林澈\n尚未提交\n第四卷 · 把钥匙交给谁 · 场景示意 · 河堤上的课堂\n东岸 · 居民代表\n不是一座站，是一群会读水的人\n\n河堤上的学棚向两侧敞开，长凳可以挪到读尺架旁。学员把旧水尺与当天的记录放在一起练习。\n\n“会读尺，不等于手里已经有另一套可靠的记录。”带教者指着轮值表。培训可以留下承接人手，谁授权他们接班、由谁提供异源校验，还要分别说清楚。\n\n第7年留下的原学徒仍在工作，却还没有本地承接授权。桌前的轮值表提出另一条路：协商轮值职责与承接权，多做议事与生计协调、提高政治和经济来源，少排深入教学、降低科学来源，保留日常读尺。\n\n第31年只核对这批原学徒的原培训点；目标停运、缺失或已经获得授权，就取消，费用不退。新学校不能替他们签名。\n\n第23年的共同"
+      },
+      "headline": {
+        "top": 507,
+        "height": 76,
+        "width": 358,
+        "text": "不是一座站，是一群会读水的人"
+      },
+      "choices": {
+        "top": 1507,
+        "height": 1087,
+        "width": 358,
+        "text": "你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n先与原学徒商量承接权，还是另办一组轮值教学？这次取证要为哪条路服务？\n\n先免费读合同，再决定调查什么。阅读不消耗轮次，也不锁定任务。\n\n主角的最后一个名额\n\n方针仅主角可在D4签署，林澈不能代签。\n\n尚未安排，未决定是否签方针。\n\n此地行动用林澈名额，不占主角名额，也不代签。\n\n取证、锁定与提交的区别\n承接原学徒，还是新增培训？\n原学徒增协调、减带教；新培训扩容。\n协商学徒承接权\n↗\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。\n政治 −3 · 经济 −2 · 第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n取"
+      },
+      "materials": {
+        "top": 2623,
+        "height": 572,
+        "width": 358,
+        "text": "现场取证\n剩余 3 / 3 轮\n\n每角色每窗口共用3轮，换地点不补充。展开材料先看用途；点击调查才花轮数。 返回与重读不会重置。\n\n本地无需取证的方案：培育轮值维护者。费用与其他条件仍须核对。\n\n听取原学徒的承接条件\n用于：协商学徒承接权\n1轮\n交叉核对远港的异常曲线\n本窗口无对应方案 · 了解背景\n2轮\n阅读 R0 的教师履历\n本窗口无对应方案 · 了解背景\n1轮"
+      },
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 2128,
+          "height": 276,
+          "width": 358,
+          "text": "协商学徒承接权\n↗\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。\n政治 −3 · 经济 −2 · 第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n取证还需 1 轮 · 之后余 2 轮\n听取原学徒的承接条件 · 1轮",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 2415,
+          "height": 178,
+          "width": 358,
+          "text": "培育轮值维护者\n↗\n培养能够独立接班、公开记录的地方小组。\n经济 −4 · 科学 −2 · 第 31 年生效\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 3050,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 3171,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 3293,
+          "height": 48,
+          "width": 324,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 3599,
+          "height": 48,
+          "width": 180,
+          "text": "",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 3302,
+          "height": 48,
+          "width": 358,
+          "text": "核对本轮安排",
+          "action": "window",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 1,
+      "overflow": []
+    },
+    {
+      "label": "y30-390-100-preview",
+      "screen": "choice",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2116,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1928,
+        "width": 358,
+        "text": "方案预览\n协商学徒承接权\nE4 · 第 30 年\n林澈\n\n免费预览，不改动原有安排\n\n← 返回现场\n\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。\n\n先读清这份安排，再决定是否调查或锁定。\n\n主角的最后一个名额\n\n方针仅主角可在D4签署，林澈不能代签。\n\n尚未安排，未决定是否签方针。\n\n本项用林澈名额，不占主角名额，也不代签。\n\n取证、锁定与提交的区别\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n提交成本与名额\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "协商学徒承接权"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 996,
+        "height": 761,
+        "width": 358,
+        "text": "提交成本与名额\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n合同条件与原型假设\n政治3、经济2，本地居民证词1轮、一个介入名额。标准原年度来源（政治/经济/科学/宗教）0.1/0.25/0.7/0.1，兑现后0.5/0.45/0.1/0.1；变化+0.4/+0.2/−0.6/0，按该原点实际维护缩放。这是带教转入轮值职责的可调原型，不是"
+      },
+      "risk": {
+        "top": 1330,
+        "height": 137,
+        "width": 358,
+        "text": "风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 294,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 1907,
+          "height": 56,
+          "width": 358,
+          "text": "继续核对这项任务",
+          "action": "confirm",
+          "disabled": false
+        },
+        {
+          "top": 1971,
+          "height": 48,
+          "width": 358,
+          "text": "返回现场，继续比较",
+          "action": "avg",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-390-100-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1711,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 1523,
+        "width": 358,
+        "text": "锁定审阅\n协商学徒承接权\nE4 · 第 30 年\n林澈\n\n这一步只保存草稿\n\n← 返回方案\n主角的最后一个名额\n\n方针仅主角可在D4签署，林澈不能代签。\n\n尚未安排，未决定是否签方针。\n\n本项用林澈名额，不占主角名额，也不代签。\n\n取证、锁定与提交的区别\n所需材料已取得 · 无需再调查\n提交成本与名额\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "协商学徒承接权"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 700,
+        "height": 471,
+        "width": 358,
+        "text": "提交成本与名额\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。"
+      },
+      "risk": {
+        "top": 1034,
+        "height": 137,
+        "width": 358,
+        "text": "风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 294,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回方案",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 1502,
+          "height": 56,
+          "width": 358,
+          "text": "锁定草稿，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        },
+        {
+          "top": 1566,
+          "height": 48,
+          "width": 358,
+          "text": "返回方案，暂不锁定",
+          "action": "choose",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-390-100-first-lock",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2870,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 2682,
+        "width": 358,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n未安排\n\n还需要为这位棋子锁定一个任务，或明确放弃。\n\n安排任务\n放弃本窗口\n林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n修改安排\n\n若合同兑现的目标：第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n仍需承担：第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n\n完整合同与依据\n本轮成本与余"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 379,
+          "height": 163,
+          "width": 358,
+          "text": "主角\n未安排\n\n还需要为这位棋子锁定一个任务，或明确放弃。\n\n安排任务\n放弃本窗口"
+        },
+        {
+          "top": 558,
+          "height": 589,
+          "width": 358,
+          "text": "林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n修改安排\n\n若合同兑现的目标：第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n仍需承担：第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n\n完整合同与依据"
+        }
+      ],
+      "handoff": {
+        "top": 2192,
+        "height": 217,
+        "width": 358,
+        "text": "第30年 · 整轮交班对照\n\n先完成全员安排并解决冲突，再对照已锁合同。现在不预测未锁定的选择。\n\n主角尚未安排。请先为全部棋子锁定任务或明确放弃。"
+      },
+      "costs": {
+        "top": 1174,
+        "height": 239,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nE4 · 东岸商埠\n\n政治\n54.6 − 3 → 51.6\n\n经济\n48.1 − 2 → 46.1"
+      },
+      "warnings": {
+        "top": 1937,
+        "height": 231,
+        "width": 358,
+        "text": "这轮安排的取舍\n原点年度来源仍乘实际维护；不新建学校，D5同源学徒不会连带取得E4授权。\n重读承接条件原文"
+      },
+      "buttons": [
+        {
+          "top": 477,
+          "height": 48,
+          "width": 173,
+          "text": "安排任务",
+          "action": "assign",
+          "disabled": false
+        },
+        {
+          "top": 477,
+          "height": 48,
+          "width": 173,
+          "text": "放弃本窗口",
+          "action": "pass",
+          "disabled": false
+        },
+        {
+          "top": 746,
+          "height": 48,
+          "width": 356,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 2605,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": true
+        },
+        {
+          "top": 2725,
+          "height": 48,
+          "width": 358,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-390-100-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 3318,
+      "scrollWidth": 390,
+      "main": {
+        "top": 121,
+        "height": 3130,
+        "width": 358,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n共享档案与纠错权 · D4\n\n政治 −3 · 经济 −3\n第 31 年生效\n\n修改安排\n\n若合同兑现的目标：有准备的地区可自治并互相复核。\n\n仍需承担：没有独立网络与地方信任，权利将停留在纸上。\n\n完整合同与依据\n林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n修改安排\n\n若合同兑现的目标：第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n仍需承担：第31年"
+      },
+      "headline": {
+        "top": 150,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 379,
+          "height": 464,
+          "width": 358,
+          "text": "主角\n已锁定\n\n共享档案与纠错权 · D4\n\n政治 −3 · 经济 −3\n第 31 年生效\n\n修改安排\n\n若合同兑现的目标：有准备的地区可自治并互相复核。\n\n仍需承担：没有独立网络与地方信任，权利将停留在纸上。\n\n完整合同与依据"
+        },
+        {
+          "top": 859,
+          "height": 589,
+          "width": 358,
+          "text": "林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n修改安排\n\n若合同兑现的目标：第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n仍需承担：第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n\n完整合同与依据"
+        }
+      ],
+      "handoff": {
+        "top": 2852,
+        "height": 1550,
+        "width": 332,
+        "text": ""
+      },
+      "costs": {
+        "top": 1475,
+        "height": 373,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n政治\n49.5 − 3 → 46.5\n\n经济\n52.2 − 3 → 49.2\n\nE4 · 东岸商埠\n\n政治\n54.6 − 3 → 51.6\n\n经济\n48.1 − 2 → 46.1"
+      },
+      "warnings": {
+        "top": 2150,
+        "height": 231,
+        "width": 358,
+        "text": "这轮安排的取舍\n原点年度来源仍乘实际维护；不新建学校，D5同源学徒不会连带取得E4授权。\n重读承接条件原文"
+      },
+      "buttons": [
+        {
+          "top": 545,
+          "height": 48,
+          "width": 356,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 1047,
+          "height": 48,
+          "width": 356,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 3053,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 3173,
+          "height": 48,
+          "width": 358,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-390-100-committed",
+      "screen": "playback",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1362,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 1140,
+        "width": 358,
+        "text": "THE YEARS BETWEEN\n余波，正在发生。\n30\nYEAR\n\n已提交，按约定年份兑现\n\n本轮安排已经提交。承诺仍要等到约定年份核对，写下计划不等于工作已经完成。 播放速度不会改变结果。\n\n自动播放\n逐年推进\n到下一窗口 →\n第 30 年\nE4\n玩家行动\n协商学徒承接权\n\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。 政治3、经济2的协商与登记成本已支付；第31年原培训点仍须有效运转且尚未获授权，否则取消不退费。未兑现前不代表已经签署。\n\n追溯来源 ↗\n定位 E4\nE4 · 只读现场回访\n第 30 年\nD4\n玩家行动\n共享档案与纠错权\n\n把历史干预的证据与否决权交给现实中的维护网络。 确定成本已支付；确定在"
+      },
+      "headline": {
+        "top": 185,
+        "height": 38,
+        "width": 358,
+        "text": "余波，正在发生。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 544,
+          "height": 48,
+          "width": 113,
+          "text": "自动播放",
+          "action": "auto",
+          "disabled": false
+        },
+        {
+          "top": 544,
+          "height": 48,
+          "width": 113,
+          "text": "逐年推进",
+          "action": "step",
+          "disabled": false
+        },
+        {
+          "top": 533,
+          "height": 70,
+          "width": 113,
+          "text": "到下一窗口 →",
+          "action": "skip",
+          "disabled": false
+        },
+        {
+          "top": 882,
+          "height": 48,
+          "width": 83,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 882,
+          "height": 48,
+          "width": 57,
+          "text": "定位 E4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 882,
+          "height": 48,
+          "width": 130,
+          "text": "E4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 1116,
+          "height": 48,
+          "width": 83,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 1116,
+          "height": 48,
+          "width": 59,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 1116,
+          "height": 48,
+          "width": 132,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 1217,
+          "height": 48,
+          "width": 358,
+          "text": "暂停并查看世界",
+          "action": "pause-world",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-320-200-scene",
+      "screen": "avg",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 10822,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 10306,
+        "width": 288,
+        "text": "← 返回世界\nE4 · 第 30 年\n林澈\n尚未提交\n第四卷 · 把钥匙交给谁 · 场景示意 · 河堤上的课堂\n东岸 · 居民代表\n不是一座站，是一群会读水的人\n\n河堤上的学棚向两侧敞开，长凳可以挪到读尺架旁。学员把旧水尺与当天的记录放在一起练习。\n\n“会读尺，不等于手里已经有另一套可靠的记录。”带教者指着轮值表。培训可以留下承接人手，谁授权他们接班、由谁提供异源校验，还要分别说清楚。\n\n第7年留下的原学徒仍在工作，却还没有本地承接授权。桌前的轮值表提出另一条路：协商轮值职责与承接权，多做议事与生计协调、提高政治和经济来源，少排深入教学、降低科学来源，保留日常读尺。\n\n第31年只核对这批原学徒的原培训点；目标停运、缺失或已经获得授权，就取消，费用不退。新学校不能替他们签名。\n\n第23年的共同"
+      },
+      "headline": {
+        "top": 981,
+        "height": 227,
+        "width": 288,
+        "text": "不是一座站，是一群会读水的人"
+      },
+      "choices": {
+        "top": 4899,
+        "height": 3580,
+        "width": 288,
+        "text": "你想留下什么规则？\n·\n·\n·\n\n剩余 3 / 3 轮\n本角色本窗口共用 · 换地点不补充\n\n先与原学徒商量承接权，还是另办一组轮值教学？这次取证要为哪条路服务？\n\n先免费读合同，再决定调查什么。阅读不消耗轮次，也不锁定任务。\n\n主角的最后一个名额\n\n方针仅主角可在D4签署，林澈不能代签。\n\n尚未安排，未决定是否签方针。\n\n此地行动用林澈名额，不占主角名额，也不代签。\n\n取证、锁定与提交的区别\n承接原学徒，还是新增培训？\n原学徒增协调、减带教；新培训扩容。\n协商学徒承接权\n↗\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。\n政治 −3 · 经济 −2 · 第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n取"
+      },
+      "materials": {
+        "top": 8509,
+        "height": 1872,
+        "width": 288,
+        "text": "现场取证\n剩余 3 / 3 轮\n\n每角色每窗口共用3轮，换地点不补充。展开材料先看用途；点击调查才花轮数。 返回与重读不会重置。\n\n本地无需取证的方案：培育轮值维护者。费用与其他条件仍须核对。\n\n听取原学徒的承接条件\n用于：协商学徒承接权\n1轮\n交叉核对远港的异常曲线\n本窗口无对应方案 · 了解背景\n2轮\n阅读 R0 的教师履历\n本窗口无对应方案 · 了解背景\n1轮"
+      },
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 6919,
+          "height": 991,
+          "width": 288,
+          "text": "协商学徒承接权\n↗\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。\n政治 −3 · 经济 −2 · 第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n取证还需 1 轮 · 之后余 2 轮\n听取原学徒的承接条件 · 1轮",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 7922,
+          "height": 556,
+          "width": 288,
+          "text": "培育轮值维护者\n↗\n培养能够独立接班、公开记录的地方小组。\n经济 −4 · 科学 −2 · 第 31 年生效\n无需取证 · 保留现有轮数",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 9966,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 10377,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 10787,
+          "height": 118,
+          "width": 254,
+          "text": "",
+          "action": "evidence",
+          "disabled": false
+        },
+        {
+          "top": 11905,
+          "height": 102,
+          "width": 246,
+          "text": "",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 10607,
+          "height": 70,
+          "width": 288,
+          "text": "核对本轮安排",
+          "action": "window",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 1,
+      "overflow": []
+    },
+    {
+      "label": "y30-320-200-preview",
+      "screen": "choice",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 6044,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 5694,
+        "width": 288,
+        "text": "方案预览\n协商学徒承接权\nE4 · 第 30 年\n林澈\n\n免费预览，不改动原有安排\n\n← 返回现场\n\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。\n\n先读清这份安排，再决定是否调查或锁定。\n\n主角的最后一个名额\n\n方针仅主角可在D4签署，林澈不能代签。\n\n尚未安排，未决定是否签方针。\n\n本项用林澈名额，不占主角名额，也不代签。\n\n取证、锁定与提交的区别\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n提交成本与名额\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权"
+      },
+      "headline": {
+        "top": 283,
+        "height": 151,
+        "width": 288,
+        "text": "协商学徒承接权"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 2787,
+        "height": 2605,
+        "width": 288,
+        "text": "提交成本与名额\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n合同条件与原型假设\n政治3、经济2，本地居民证词1轮、一个介入名额。标准原年度来源（政治/经济/科学/宗教）0.1/0.25/0.7/0.1，兑现后0.5/0.45/0.1/0.1；变化+0.4/+0.2/−0.6/0，按该原点实际维护缩放。这是带教转入轮值职责的可调原型，不是"
+      },
+      "risk": {
+        "top": 3696,
+        "height": 439,
+        "width": 288,
+        "text": "风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 668,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 5647,
+          "height": 118,
+          "width": 288,
+          "text": "继续核对这项任务",
+          "action": "confirm",
+          "disabled": false
+        },
+        {
+          "top": 5781,
+          "height": 118,
+          "width": 288,
+          "text": "返回现场，继续比较",
+          "action": "avg",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-320-200-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 4311,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 3962,
+        "width": 288,
+        "text": "锁定审阅\n协商学徒承接权\nE4 · 第 30 年\n林澈\n\n这一步只保存草稿\n\n← 返回方案\n主角的最后一个名额\n\n方针仅主角可在D4签署，林澈不能代签。\n\n尚未安排，未决定是否签方针。\n\n本项用林澈名额，不占主角名额，也不代签。\n\n取证、锁定与提交的区别\n所需材料已取得 · 无需再调查\n提交成本与名额\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居"
+      },
+      "headline": {
+        "top": 283,
+        "height": 151,
+        "width": 288,
+        "text": "协商学徒承接权"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 1734,
+        "height": 1347,
+        "width": 288,
+        "text": "提交成本与名额\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。"
+      },
+      "risk": {
+        "top": 2642,
+        "height": 439,
+        "width": 288,
+        "text": "风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 617,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回方案",
+          "action": "choose",
+          "disabled": false
+        },
+        {
+          "top": 3914,
+          "height": 118,
+          "width": 288,
+          "text": "锁定草稿，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        },
+        {
+          "top": 4048,
+          "height": 118,
+          "width": 288,
+          "text": "返回方案，暂不锁定",
+          "action": "choose",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-320-200-first-lock",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 8017,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 7668,
+        "width": 288,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n未安排\n\n还需要为这位棋子锁定一个任务，或明确放弃。\n\n安排任务\n放弃本窗口\n林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n修改安排\n\n若合同兑现的目标：第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n仍需承担：第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n\n完整合同与依据\n本轮成本与余"
+      },
+      "headline": {
+        "top": 283,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1024,
+          "height": 468,
+          "width": 288,
+          "text": "主角\n未安排\n\n还需要为这位棋子锁定一个任务，或明确放弃。\n\n安排任务\n放弃本窗口"
+        },
+        {
+          "top": 1508,
+          "height": 1724,
+          "width": 288,
+          "text": "林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n修改安排\n\n若合同兑现的目标：第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n仍需承担：第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n\n完整合同与依据"
+        }
+      ],
+      "handoff": {
+        "top": 6115,
+        "height": 809,
+        "width": 288,
+        "text": "第30年 · 整轮交班对照\n\n先完成全员安排并解决冲突，再对照已锁合同。现在不预测未锁定的选择。\n\n主角尚未安排。请先为全部棋子锁定任务或明确放弃。"
+      },
+      "costs": {
+        "top": 3260,
+        "height": 704,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nE4 · 东岸商埠\n\n政治\n54.6 − 3 → 51.6\n\n经济\n48.1 − 2 → 46.1"
+      },
+      "warnings": {
+        "top": 5387,
+        "height": 704,
+        "width": 288,
+        "text": "这轮安排的取舍\n原点年度来源仍乘实际维护；不新建学校，D5同源学徒不会连带取得E4授权。\n重读承接条件原文"
+      },
+      "buttons": [
+        {
+          "top": 1309,
+          "height": 70,
+          "width": 286,
+          "text": "安排任务",
+          "action": "assign",
+          "disabled": false
+        },
+        {
+          "top": 1389,
+          "height": 70,
+          "width": 286,
+          "text": "放弃本窗口",
+          "action": "pass",
+          "disabled": false
+        },
+        {
+          "top": 1969,
+          "height": 70,
+          "width": 286,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 7468,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": true
+        },
+        {
+          "top": 7754,
+          "height": 118,
+          "width": 288,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-320-200-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 9333,
+      "scrollWidth": 320,
+      "main": {
+        "top": 234,
+        "height": 8984,
+        "width": 288,
+        "text": "本轮安排\n下一次见面，是十年以后。\n\n草稿尚未提交，介入成本尚未支付\n\n先看清谁去做什么，再一起提交。每份安排都要有人承担，锁定还不是兑现。\n\n安排\n成本\n风险\n主角\n已锁定\n\n共享档案与纠错权 · D4\n\n政治 −3 · 经济 −3\n第 31 年生效\n\n修改安排\n\n若合同兑现的目标：有准备的地区可自治并互相复核。\n\n仍需承担：没有独立网络与地方信任，权利将停留在纸上。\n\n完整合同与依据\n林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n修改安排\n\n若合同兑现的目标：第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n仍需承担：第31年"
+      },
+      "headline": {
+        "top": 283,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1024,
+          "height": 1122,
+          "width": 288,
+          "text": "主角\n已锁定\n\n共享档案与纠错权 · D4\n\n政治 −3 · 经济 −3\n第 31 年生效\n\n修改安排\n\n若合同兑现的目标：有准备的地区可自治并互相复核。\n\n仍需承担：没有独立网络与地方信任，权利将停留在纸上。\n\n完整合同与依据"
+        },
+        {
+          "top": 2163,
+          "height": 1724,
+          "width": 288,
+          "text": "林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n修改安排\n\n若合同兑现的目标：第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n仍需承担：第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n\n完整合同与依据"
+        }
+      ],
+      "handoff": {
+        "top": 8229,
+        "height": 6692,
+        "width": 238,
+        "text": ""
+      },
+      "costs": {
+        "top": 3914,
+        "height": 1050,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n政治\n49.5 − 3 → 46.5\n\n经济\n52.2 − 3 → 49.2\n\nE4 · 东岸商埠\n\n政治\n54.6 − 3 → 51.6\n\n经济\n48.1 − 2 → 46.1"
+      },
+      "warnings": {
+        "top": 5913,
+        "height": 704,
+        "width": 288,
+        "text": "这轮安排的取舍\n原点年度来源仍乘实际维护；不新建学校，D5同源学徒不会连带取得E4授权。\n重读承接条件原文"
+      },
+      "buttons": [
+        {
+          "top": 1395,
+          "height": 70,
+          "width": 286,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 2623,
+          "height": 70,
+          "width": 286,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 8784,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交，进入逐年演变 →",
+          "action": "commit",
+          "disabled": false
+        },
+        {
+          "top": 9070,
+          "height": 118,
+          "width": 288,
+          "text": "暂不提交，返回世界",
+          "action": "home",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-320-200-committed",
+      "screen": "playback",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 3838,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 3322,
+        "width": 288,
+        "text": "THE YEARS BETWEEN\n余波，正在发生。\n30\nYEAR\n\n已提交，按约定年份兑现\n\n本轮安排已经提交。承诺仍要等到约定年份核对，写下计划不等于工作已经完成。 播放速度不会改变结果。\n\n自动播放\n逐年推进\n到下一窗口 →\n第 30 年\nE4\n玩家行动\n协商学徒承接权\n\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。 政治3、经济2的协商与登记成本已支付；第31年原培训点仍须有效运转且尚未获授权，否则取消不退费。未兑现前不代表已经签署。\n\n追溯来源 ↗\n定位 E4\nE4 · 只读现场回访\n第 30 年\nD4\n玩家行动\n共享档案与纠错权\n\n把历史干预的证据与否决权交给现实中的维护网络。 确定成本已支付；确定在"
+      },
+      "headline": {
+        "top": 487,
+        "height": 151,
+        "width": 288,
+        "text": "余波，正在发生。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 1420,
+          "height": 70,
+          "width": 288,
+          "text": "自动播放",
+          "action": "auto",
+          "disabled": false
+        },
+        {
+          "top": 1500,
+          "height": 70,
+          "width": 288,
+          "text": "逐年推进",
+          "action": "step",
+          "disabled": false
+        },
+        {
+          "top": 1580,
+          "height": 70,
+          "width": 288,
+          "text": "到下一窗口 →",
+          "action": "skip",
+          "disabled": false
+        },
+        {
+          "top": 2624,
+          "height": 60,
+          "width": 254,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 2694,
+          "height": 60,
+          "width": 254,
+          "text": "定位 E4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 2764,
+          "height": 60,
+          "width": 254,
+          "text": "E4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 3370,
+          "height": 60,
+          "width": 254,
+          "text": "追溯来源 ↗",
+          "action": "trace",
+          "disabled": false
+        },
+        {
+          "top": 3440,
+          "height": 60,
+          "width": 254,
+          "text": "定位 D4",
+          "action": "locate",
+          "disabled": false
+        },
+        {
+          "top": 3510,
+          "height": 60,
+          "width": 254,
+          "text": "D4 · 只读现场回访",
+          "action": "visit",
+          "disabled": false
+        },
+        {
+          "top": 3623,
+          "height": 70,
+          "width": 288,
+          "text": "暂停并查看世界",
+          "action": "pause-world",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    }
+  ],
+  "shots": [
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-scene.png",
+      "sha256": "055840d5aee3f090274c88c144c04c417901fafbeaec79d02c42a8972d7bb46a",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-preview-top.png",
+      "sha256": "f0627a8fb2c006905c581c9edf2677136f792d0b3278e0a92694b2f9000dfe2e",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-preview-action.png",
+      "sha256": "64cf562fbec123115b95e2266909d75938a573067cc54b5f2a7bb05385255063",
+      "scrollY": 2072,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-confirm-top.png",
+      "sha256": "850a99a20221291909dd54fa8507094664c969e69113b4d8c7a7d689cd2a5661",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-confirm-risk.png",
+      "sha256": "fe16d53a5c6ab99e9a68e3cb20f5600cd9ed3d53fb277f972165185c929bc201",
+      "scrollY": 742,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-confirm-building-risk.png",
+      "sha256": "276749ae7255ff9b16d76634e6252e3ab3b832fb6082323f0727b7e9dd24a3aa",
+      "scrollY": 881,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-confirm-action.png",
+      "sha256": "fe74f1b28c9032191be0d57ebe5412becb0b7a6847f2995e8dbf5baad664ea23",
+      "scrollY": 996,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-confirmation-source-expanded.png",
+      "sha256": "b721dea52fbb2ea57915a0aadc7d22281b0e0a15abc960c8d3acdb24ec7030cd",
+      "scrollY": 1327,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-first-lock-top.png",
+      "sha256": "1016e458fe81155b3bb1ba48a0c84ad024760815a79f039078b2f01e8910bd2f",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-all-locked-top.png",
+      "sha256": "1016e458fe81155b3bb1ba48a0c84ad024760815a79f039078b2f01e8910bd2f",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-submit.png",
+      "sha256": "ee2f0de8d1b4e6f53c4711737624d416c0ddcfe0ea38cf647440f1e7c327d786",
+      "scrollY": 1176,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-task-source-expanded.png",
+      "sha256": "48ae2c831567dd6a6a55cc1165cff907b417175da9588043ed8dfd24ca79b53f",
+      "scrollY": 1223,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-390-100-committed.png",
+      "sha256": "41c473dfeaf388f4da7dbdc01e7ca47c0adf716af9c701276fc74b0fc0269d3c",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-scene.png",
+      "sha256": "dfd815bd07817eff8a0873e87ed031850726d08c7ba5f3b6d5b11edddc285328",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-preview-top.png",
+      "sha256": "7157dbd93e6bae5a728bdc77a7fb2841911e5917dca5aeda6ed0959b915c3070",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-preview-action.png",
+      "sha256": "417416d076d98163cc491e06643e79f58046efdc60e23d465ecd5b12ddd31a0a",
+      "scrollY": 9699,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-confirm-top.png",
+      "sha256": "a4c9c404ef1df4802af3dd05cc9bb4676a9653d8029524d04c30936bbf00de2c",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-confirm-risk.png",
+      "sha256": "46e0db47cb0582e742eebde35c5db1e48497cd5d73542cabbb2007592061e265",
+      "scrollY": 1547,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-confirm-building-risk.png",
+      "sha256": "c31b86528a648fb23a60157efb00bf7d7629b1b5e24c5dbfe64772dcf8a03f5b",
+      "scrollY": 1861,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-confirm-action.png",
+      "sha256": "2961086e1efd12648b14f300f2229017e56c647bdfdc8043c1cb55b413df2bc6",
+      "scrollY": 4490,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-confirmation-source-expanded.png",
+      "sha256": "cfaea49dfbcdc12419e7470a4654a7926b3a26ce7d72e2c737f9b2f84e18a244",
+      "scrollY": 3911,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-first-lock-top.png",
+      "sha256": "49fa13953692725900cfb07ed2763d41b8b0a1599ca893e52054a8a51ee2a31a",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-all-locked-top.png",
+      "sha256": "49fa13953692725900cfb07ed2763d41b8b0a1599ca893e52054a8a51ee2a31a",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-submit.png",
+      "sha256": "aa97bffd62ac85b37730ab8635cdc1b6162a5856ec906b37985b275097703e5a",
+      "scrollY": 5535,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-task-source-expanded.png",
+      "sha256": "a59a8c73c2c25bfacf891944150a9ec4d255d69befc12f9c7ae50a780263c4dd",
+      "scrollY": 4220,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y0-320-200-committed.png",
+      "sha256": "a6199e9bf83892d9ffec95b39475630de44dd35cffe487293a2cd656905a038a",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-scene.png",
+      "sha256": "58b253c05518c7963bc57a01f923678df79536c274ecb1bd423d9e0cf86b85f9",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-preview-top.png",
+      "sha256": "0e4138cf34174b1719f4a7d20d046731993dab887897cd9b926254d0be765859",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-preview-action.png",
+      "sha256": "248c12c04505618a20629d6c2e15d99487e262d90a3ac452a3287d1402be7211",
+      "scrollY": 722,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-confirm-top.png",
+      "sha256": "fb6d90377de7851976d8fe7dfc224f364bf1bacd2de23adb38789dafa8da41c0",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-confirm-risk.png",
+      "sha256": "247e4a4f0c274926990f9be58538a2286a9113cb6e3376e6524d2af9b5788833",
+      "scrollY": 559,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-confirm-action.png",
+      "sha256": "2735a1bfbe13c138f7c065fb2a20cf22659697b2b2dd0099b2f0f4ae1941cba9",
+      "scrollY": 559,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-first-lock-top.png",
+      "sha256": "0052d3c02f1ae4b9b0f94de81b318e824af63249c7daaa43ac2fbded2ce4fdc1",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-all-locked-top.png",
+      "sha256": "0052d3c02f1ae4b9b0f94de81b318e824af63249c7daaa43ac2fbded2ce4fdc1",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-submit.png",
+      "sha256": "abe154347b2ac0472f09ac3405cdc42b2dea1f9b715ff22c835ad088e510cba3",
+      "scrollY": 881,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-task-source-expanded.png",
+      "sha256": "ca316f58ac4657872b39d10a85e3980f38726a10b601d46c438d6aca7e7f25bb",
+      "scrollY": 894,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-390-100-committed.png",
+      "sha256": "f2e6967f64c5d18c71a4fad292cce71d4647a843f391021d851ab372a976621d",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-scene.png",
+      "sha256": "b5a8fca417b16b6496184800bb8d072c093f16374b7697eee1e6067af97c5b0d",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-preview-top.png",
+      "sha256": "6dc647f24baecab8a4f8bc13db6442903bb3e8260b041cea4e042ea381a79571",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-preview-action.png",
+      "sha256": "26dd32377ae736ffac40281fd6fc83354fc089c215107b3958881fb369112658",
+      "scrollY": 3189,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-confirm-top.png",
+      "sha256": "0b8cf91e86d83abb4b11f0a950203da93fc8ea180bcc127a418804cfeb0f8884",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-confirm-risk.png",
+      "sha256": "00fe8d9901935147ac384a02cfbad9b6144116192ee3552d9d1d754c60fb7a28",
+      "scrollY": 1521,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-confirm-action.png",
+      "sha256": "37421e64ab17d431a0f92d74b5ee7853167958b0f2bc3b46a7e4ccf648e95103",
+      "scrollY": 2796,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-first-lock-top.png",
+      "sha256": "465d864cb13fa7119ce4aef31089454258e2bc7a1fcee4ddf6d4498f1e94928b",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-all-locked-top.png",
+      "sha256": "465d864cb13fa7119ce4aef31089454258e2bc7a1fcee4ddf6d4498f1e94928b",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-submit.png",
+      "sha256": "ca0f27ca7bd144b2708d09eeacc68153827e9079f7ce902cdd5f61b8af8c7b16",
+      "scrollY": 3892,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-task-source-expanded.png",
+      "sha256": "b403d26bed0ce2edd9f652153180ab6fea8a57cc3fde3ba88f5617845ef8d8f4",
+      "scrollY": 2454,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y10-320-200-committed.png",
+      "sha256": "2261909d19ff9604ac824d6ab8bc28fe6bfb242615c2b621c6a66916bc500f48",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-scene.png",
+      "sha256": "062f9ad49bcfd526d88f6109696e637a0370bb3324f2a4c38e739e57b589637e",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-preview-top.png",
+      "sha256": "612ddbd2aeee13727e00992c8cf4ce48aa198e0a5465b1fd49678fa5335f31c0",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-preview-action.png",
+      "sha256": "1f583f3168df72a2f45fca248eff9bb01ac71343f50643d8de8c7468f54306b2",
+      "scrollY": 1272,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-confirm-top.png",
+      "sha256": "3c0b532e86d87f2bb8686ec0cccd3801d39c39110e34744c1c57b2ad07df32cc",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-confirm-risk.png",
+      "sha256": "762695d4a6892e163d1490a3199fdaf581924d58fd3608285870915b9df79be1",
+      "scrollY": 867,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-confirm-action.png",
+      "sha256": "2c88aa1ab4e25a87cdcf076ba6c7e622a76b364ce9750aaee36e8a7fa429e1a3",
+      "scrollY": 867,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-confirmation-source-expanded.png",
+      "sha256": "77d1d295ef4857879a6928cd0793e15f1a944ca7830b41612d3f1f35064f9e36",
+      "scrollY": 1100,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-first-lock-top.png",
+      "sha256": "18fa89bccae712be37a83f638e21afb917b1e357d33d80c7e963205766800f72",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-all-locked-top.png",
+      "sha256": "3685ee3dee349b3c30ae7878befbf0ebf77e42ed911a5108fcda635634a493d0",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-risk-summary.png",
+      "sha256": "d9c97b529d7e436c25f98f8d95d0190e74d7ba1bc840f18eb6d98106bdd2a14b",
+      "scrollY": 2406,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-costs.png",
+      "sha256": "f2f10b7b0f52755d028edb1b6a5f30c69afb145488059e553baef0d3c4d00d67",
+      "scrollY": 1463,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-warnings.png",
+      "sha256": "1325df160b4b11aae0529e9d41fc994d1fe249da9668d30c19627a7214c0debe",
+      "scrollY": 2150,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-submit.png",
+      "sha256": "1b79182745127a5539c2a67f6bf6e9fa162d5bf9cf9038971c8e2f018743041a",
+      "scrollY": 2474,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-task-source-expanded.png",
+      "sha256": "55afa6c117cf0bb0542a13be797538af97ce1160503d8a8d4302704025c35f19",
+      "scrollY": 744,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-window-source-expanded.png",
+      "sha256": "a94d52ba06b261814fa533cbc422bea6348da59944e011b1308b0c7d471f542f",
+      "scrollY": 2779,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-390-100-committed.png",
+      "sha256": "cd7951a36c2e9faa017ab261d430733dbaab06fea04d7928d08b76e61bd5dca7",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-scene.png",
+      "sha256": "4fcfbc18a6fd0b128c7bfa409ed26783969e2694655ba4fce0405a024a97ef0e",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-preview-top.png",
+      "sha256": "c83f95070328c31e3863782d00700d3271cb329a4c06c1f6912f7f5566daa8f9",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-preview-action.png",
+      "sha256": "d7c0befaccced807ca2b3389070e9f8b3bbacaa38082185186fba1545a127efb",
+      "scrollY": 5476,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-confirm-top.png",
+      "sha256": "7fdb07a28ba2065d5f8cf463a3fad725d6d87f08d0fc6c57b0e6898a1623cce5",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-confirm-risk.png",
+      "sha256": "28deb51a47f058de922a3574ef4c9cda241626756be1c6b05a91f37726324dfb",
+      "scrollY": 2642,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-confirm-action.png",
+      "sha256": "c281bcfa672fc7040f32fe663b2bf26a11034a52b648b714b6c6ef0ce5c209d9",
+      "scrollY": 3743,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-confirmation-source-expanded.png",
+      "sha256": "7af632e51ca0ab6dd47b861cd73739bf48a7e8e14c89a8f86ae7bb3f8d3b99be",
+      "scrollY": 3113,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-first-lock-top.png",
+      "sha256": "31617f30af699ebbed4fd7b791d712e8253e03d8b61ceddeb632985c837aeda5",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-all-locked-top.png",
+      "sha256": "1105fce4e7a2a13793be9761b4505829e4292d6c35bf04bb35f5a2c3f6dec7fc",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-risk-summary.png",
+      "sha256": "c96d0440a622e5faa8ee00ea76cc4ec6df5c6056e686c49932fb1f7af2aec9c8",
+      "scrollY": 6642,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-costs.png",
+      "sha256": "18cd722a13e189bc203672f498ba5b6c757302d30d561cceefbba9e18df9139e",
+      "scrollY": 3902,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-warnings.png",
+      "sha256": "7b8b7858c64d3dd9535f1e2b9ad12ed43851d10880fa8b7e8e7ba3b7106ea949",
+      "scrollY": 5913,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-submit.png",
+      "sha256": "0b14803b8a95bfd400cb8f329710505bdb4d321279c128e5a5f12ea3af9dd5de",
+      "scrollY": 8765,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-01.png",
+      "sha256": "34041d5095ad624467f501226c07ecd4cea50e28598bb11c81d6768d05d308f7",
+      "scrollY": 234,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-02.png",
+      "sha256": "fec98efc13e3d9ae476ca4d71f923b7bcdf4968bf0d4e5d06acbee816565198f",
+      "scrollY": 738,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-03.png",
+      "sha256": "5d7c82381cf11ae3bcd7f8c93519a07f7287591e3889242c72b8212b55a8d2af",
+      "scrollY": 1242,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-04.png",
+      "sha256": "a9c79b073317a2f1bd04c6aa034c6d64844ffa41a5162584c29f076a68250ced",
+      "scrollY": 1746,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-05.png",
+      "sha256": "bd0136ea0bea7777b3d7d16dba7487743083fd0035e39cd6609d7891c6ba21e9",
+      "scrollY": 2250,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-06.png",
+      "sha256": "e0d8c48b8e579f0f512b502160c7b6ab8b717c08d0b937e45afc056d1285dfe2",
+      "scrollY": 2754,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-07.png",
+      "sha256": "b791a2c71785515992512429f47c11814a18649b9ebbf3189e589db396868904",
+      "scrollY": 3258,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-08.png",
+      "sha256": "51f9c194c8b2521f5d74d48308b35f7dc5f4cc1a7807706da1c9fef427fba6a5",
+      "scrollY": 3762,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-09.png",
+      "sha256": "49348571e6b1403d12e313222e2b2fd5d62e67c4d4e4d95bd026a94601526229",
+      "scrollY": 4266,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-10.png",
+      "sha256": "40cd97b3477baa8fe2beea1b4c0be48d213d16944f296d94d98b6e1653545916",
+      "scrollY": 4770,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-11.png",
+      "sha256": "0bfc8722bee59b89057693198a90c81f59eb2a989c443745c06570589e9451d6",
+      "scrollY": 5274,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-12.png",
+      "sha256": "062cee5eabf32cf16b0ef03838d4630394da69d66daf65a79134c9f80f874755",
+      "scrollY": 5778,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-13.png",
+      "sha256": "68e63ef86bfda00fc569e7499a9f4e998bdaf8844ce005863389161a11b89e59",
+      "scrollY": 6282,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-14.png",
+      "sha256": "e57a4651ea49e8570c1085b85ae3d8f673d6bca72bc50b495904cde12fe92720",
+      "scrollY": 6786,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-15.png",
+      "sha256": "20b07987f61027b58bd67f2037c7a42759793581974ab3587e6a1e9787470478",
+      "scrollY": 7290,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-16.png",
+      "sha256": "cc1df169da8fb4277ed90610dfc2d0030de87eaa1ba986da422307e08eabfbde",
+      "scrollY": 7794,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-17.png",
+      "sha256": "e9337b9215166d268f4b3961eaa137b2095701eb2ee5cde96e236c74e4068d67",
+      "scrollY": 8298,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-18.png",
+      "sha256": "0b14803b8a95bfd400cb8f329710505bdb4d321279c128e5a5f12ea3af9dd5de",
+      "scrollY": 8765,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-task-source-expanded.png",
+      "sha256": "16fa9080228c7382625708b5ce8a8e223b566373aa272fb531e4fb7aadb9c377",
+      "scrollY": 1971,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-source-expanded.png",
+      "sha256": "3f31adb7ada74dc77d557af26c0f7e1e167bcf93f884bbfa4f5f71c2b7b43bcd",
+      "scrollY": 8052,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "path": "playtest-output/round-22/decision-flow-visuals/y30-320-200-committed.png",
+      "sha256": "f7e6c52aa99a73db9eb39e68bd0cd9237eb2bb45344b754fdde22f40c36e9acf",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    }
+  ],
+  "sourceBefore": "cb6e007a24b193198c9c479c86943859df47a88772134b09dc1eb71f6cb4309c",
+  "browser": "138.0.7204.0",
+  "sourceAfter": "cb6e007a24b193198c9c479c86943859df47a88772134b09dc1eb71f6cb4309c",
+  "sourceStable": true,
+  "finishedAt": "2026-11-06T10:21:18.233Z"
+}

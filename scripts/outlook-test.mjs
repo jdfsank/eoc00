@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -13,8 +14,8 @@ const next=(api,s)=>{for(const a of api.getActors(s))if(!s.drafts[a.id])api.pass
 function empty20(seed=0,api=sim){const s=api.createRun(seed);next(api,s);lock(api,s,'protagonist','D4',api===sim?'recruit_volunteer':'recruit_risk');next(api,s);return s;}
 function reviewWarning(seed){const s=empty20(seed);lock(sim,s,'protagonist','F6','independent_review');lock(sim,s,'linche','D4','free_warning');return s;}
 function completed(seed=0,review=true){const s=sim.createRun(seed);lock(sim,s,'protagonist','D4','build_joint');next(sim,s);lock(sim,s,'protagonist','D4','renew_charter');next(sim,s);if(review)lock(sim,s,'protagonist','F6','independent_review');next(sim,s);return s;}
-const restore=async(state,ui={})=>{await page.evaluate(({state,ui})=>sessionStorage.setItem('outlook.fixture',JSON.stringify({state,ui})),{state,ui});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();};
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const restore=async(state,ui={})=>{await page.evaluate(({state,ui})=>sessionStorage.setItem('outlook.fixture',JSON.stringify({state,ui})),{state,ui});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();await readDecisionDetails(page);};
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const snap=async(name,selector)=>selector?page.locator(selector).screenshot({path:`${out}/round6-${name}.png`}):page.screenshot({path:`${out}/round6-${name}.png`,fullPage:true});
 try{
  browser=await chromium.launch({executablePath:await chromiumBinary.executablePath(),args:chromiumBinary.args,headless:true});page=await browser.newPage({viewport:{width:390,height:844}});page.on('pageerror',e=>report.errors.push(e.message));page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
@@ -25,7 +26,7 @@ try{
   check(`Seed${seed} shows55% and the uncorrected.9431 branch`,text.includes('55%')&&text.includes('0.9431')&&text.includes('0.7725')&&text.includes('未安排停闸后备'));
   check(`Seed${seed} separates current0 from promisedD4.65`,(await page.locator('[data-risk-cell="D4"]').innerText()).includes('当前0.00 → 合同兑现后0.65'));
   check(`Seed${seed} reading outlook leaves world byte-identical`,before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
-  await page.reload();check(`Seed${seed} reload preserves locked contracts`,before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
+  await page.reload();await page.locator('[data-decision-stage="window"]').waitFor();await readDecisionDetails(page);check(`Seed${seed} reload preserves locked contracts`,before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
   if(seed===1)await snap('risk-review-warning-390','.crisis-outlook');
   await click('commit');await click('skip');const damage=await page.evaluate(()=>window.afterwave.state.flags.crisis.damage);check(`Seed${seed} actual resolution fits its disclosed branch`,damage===(seed===0?0:.9431));
  }

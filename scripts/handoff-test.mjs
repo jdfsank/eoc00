@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {readEndingDetails} from './helpers/ending-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
@@ -8,7 +9,7 @@ const out='playtest-output';await fs.mkdir(out,{recursive:true});
 const server=await createServer({server:{host:'127.0.0.1',port:4191,strictPort:true}});await server.listen();
 let browser,page;const report={scope:'Headless Chromium, 390×844 and 320×568, plus 200% text. Not physical-device certification.',checks:[],errors:[]};
 const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name);};
-const click=async action=>{await page.locator(`[data-action="${action}"]`).first().click();if(action==='ending')await readEndingDetails(page);};
+const click=async action=>{await page.locator(`[data-action="${action}"]`).first().click();await readDecisionDetails(page);if(action==='ending')await readEndingDetails(page);};
 const restore=async (state,ui={})=>{await page.evaluate(({state,ui})=>sessionStorage.setItem('handoff.fixture',JSON.stringify({state,ui})),{state,ui});await page.reload();await page.locator('canvas').waitFor();};
 const snap=name=>page.screenshot({path:`${out}/round3-handoff-${name}.png`,fullPage:true});
 try{

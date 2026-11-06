@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -26,7 +27,7 @@ if(process.argv.includes('--fixtures-only')){console.log(bytes(report));process.
 async function runtimeHash(){const h=createHash('sha256');for(const f of(await fs.readdir('src',{withFileTypes:true})).filter(f=>f.isFile()).map(f=>f.name).sort()){h.update(f);h.update(await fs.readFile(`src/${f}`));}return h.digest('hex');}
 await fs.mkdir(shots,{recursive:true});report.runtimeHash.before=await runtimeHash();
 const server=await createServer({server:{host:'127.0.0.1',port:4223,strictPort:true}});await server.listen();let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const stateBytes=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const savedBytes=()=>page.evaluate(()=>JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state));
 const ending=()=>page.locator('.ending');

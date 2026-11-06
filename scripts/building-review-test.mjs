@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import cb from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -13,11 +14,11 @@ async function runtimeHash(){const h=createHash('sha256');for(const f of (await 
 const hashBefore=await runtimeHash(),report={scope:'Real Chromium 390×844 and320×568/200%. Free parallel building terms and locked snapshot; true legacy save; seed5 B4 failure/F6 success with zero23 settlement; later32 review preserves raw historical text and adds a sourced correction. No simulation or score changes.',checks:[],errors:[]};
 const check=(name,ok,detail)=>{report.checks.push({name,passed:!!ok,...(detail?{detail}:{})});assert.ok(ok,name);};
 const server=await createServer({server:{host:'127.0.0.1',port:4212,strictPort:true}});await server.listen();let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const choose=id=>page.locator(`[data-action="choose"][data-id="${id}"]`).click();
 const world=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const ui=()=>page.evaluate(()=>window.afterwave.ui);
-async function restore(state,options={}){await page.evaluate(payload=>sessionStorage.setItem('round13.fixture',JSON.stringify(payload)),{state,ui:options});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();}
+async function restore(state,options={}){await page.evaluate(payload=>sessionStorage.setItem('round13.fixture',JSON.stringify(payload)),{state,ui:options});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();await readDecisionDetails(page);}
 async function investigate(id){const d=page.locator(`[data-evidence-id="${id}"]`);if(!await d.evaluate(e=>e.open))await d.locator('summary').click();await d.locator('[data-action="evidence"]').click();}
 function next(s){for(const a of sim.getActors(s))if(!s.drafts[a.id])sim.passTask(s,a.id);sim.commitWindow(s);sim.advanceToNextWindow(s);return s;}
 function scenario(second=true){const s=sim.createRun(5);investigateAndLock(s,'protagonist','D4','build_merchant');next(s);investigateAndLock(s,'protagonist','D4','recruit_successor');next(s);investigateAndLock(s,'protagonist','B4','independent_review');if(second)investigateAndLock(s,'linche','F6','independent_review');return next(s);}
@@ -33,7 +34,7 @@ try{
   check(`${label}/${id}: missing real evidence still prevents locking`,expected.missing.length?await page.locator('[data-action="confirm"]').isDisabled():await page.locator('[data-action="confirm"]').isEnabled());
   await panel.locator('summary').click();check(`${label}/${id}: expanded assumptions remain read-only and do not import coverage into old rules`,await world()===before&&(label==='current'||(await panel.innerText()).includes('旧版整体危机公式')));await snap(`building-${label}-${id}-390`,'.building-contract');
   await click('avg');for(const evidence of expected.requiredEvidence)await investigate(evidence);await choose(id);const finalText=await panel.innerText();await click('confirm');await click('lock');check(`${label}/${id}: locked whole-window card carries the same contract`,await page.locator('.task-card .building-contract').innerText()===finalText);
-  const locked=await world();await page.reload();await page.locator('.task-card .building-contract').waitFor();check(`${label}/${id}: refresh preserves frozen lock and contract`,await world()===locked&&(await page.locator('.task-card .building-contract').innerText())===finalText);
+  const locked=await world();await page.reload();await page.locator('[data-task-actor]').first().waitFor();await readDecisionDetails(page);await page.locator('.task-card .building-contract').waitFor();check(`${label}/${id}: refresh preserves frozen lock and contract`,await world()===locked&&(await page.locator('.task-card .building-contract').innerText())===finalText);
  }
  const zero=scenario();check('Natural seed5 has local B4 failure but F6 success and frozen global zero',zero.events.some(e=>e.cellId==='B4'&&e.actionId==='independent_review'&&e.status==='failed')&&zero.events.some(e=>e.cellId==='F6'&&e.actionId==='independent_review'&&e.status==='success')&&zero.flags.crisis.damage===0);
  await restore(zero,{selected:'B4',screen:'avg'});const original=await world(),prose=await page.locator('.prose').innerText();check('30-year B4 story preserves local failure without inventing global loss',prose.includes('失败')&&prose.includes('损失系数为0')&&!prose.includes('没有抹去第23年的损失'));

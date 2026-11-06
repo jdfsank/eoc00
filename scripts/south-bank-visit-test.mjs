@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -125,7 +126,7 @@ await fs.mkdir(out,{recursive:true});
 const frozenRuntime=await runtimeHash();
 const server=await createServer({server:{host:'127.0.0.1',port:4217,strictPort:true}});await server.listen();
 let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const savedState=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const sessions=()=>page.evaluate(()=>JSON.stringify(window.afterwave.ui.sessions));
 const section=()=>page.locator('.scene-visit[data-visit-cell="D5"]');

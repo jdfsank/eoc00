@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {readEndingDetails} from './helpers/ending-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
@@ -9,7 +10,7 @@ const server=await createServer({server:{host:'127.0.0.1',port:4174,strictPort:t
 const browser=await chromium.launch({executablePath:await chromiumBinary.executablePath(),args:chromiumBinary.args,headless:true});
 const page=await browser.newPage({viewport:{width:390,height:844}}), errors=[], checks=[];
 page.on('pageerror',e=>errors.push(e.message));
-const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();if(a==='ending')await readEndingDetails(page);};
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);if(a==='ending')await readEndingDetails(page);};
 const snap=async(name)=>{await page.screenshot({path:`${out}/${name}.png`,fullPage:true});};
 const check=(name,passed)=>{assert.ok(passed,name);checks.push({name,passed:true});};
 try{
@@ -88,7 +89,7 @@ check('No-build year20 offers a real community warning action',(await page.locat
 const resident=page.locator('[data-action="evidence"][data-id="resident_testimony"]');await resident.locator('xpath=ancestor::details').locator('summary').click();await resident.click();
 check('No-build resident evidence does not thank a nonexistent service',(await page.locator('.evidence[open]').innerText()).includes('还没有持续运转的预警载体'));
 await page.locator('[data-action="choose"][data-id="free_warning"]').click();
-check('Action preview discloses tunable coverage assumptions',(await page.locator('.contract').innerText()).includes('本轮原型假设')&&(await page.locator('.contract').innerText()).includes('0.65'));
+check('Action preview discloses tunable coverage assumptions',(await page.locator('.contract').innerText()).includes('合同条件与原型假设')&&(await page.locator('.contract').innerText()).includes('参数可调')&&(await page.locator('.contract').innerText()).includes('0.65'));
 await click('confirm');await click('lock');await click('commit');await click('skip');await click('home');
 check('Community action creates a visible local service without inventing a station',await page.evaluate(()=>window.afterwave.state.institutions.some(i=>i.kind==='warning'&&i.active)&&!window.afterwave.state.institutions.some(i=>i.kind==='station'))&&(await page.locator('.coverage-report').innerText()).includes('0.65 / 1'));
 await page.locator('.toast').waitFor({state:'detached'});await snap('12-community-coverage');

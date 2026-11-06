@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -18,7 +19,7 @@ await fs.mkdir(root,{recursive:true});report.before=await hash();
 const server=await createServer({server:{host:'127.0.0.1',port:4232,strictPort:true}});await server.listen();let browser,page;
 try{
  browser=await chromium.launch({executablePath:await chromiumBinary.executablePath(),args:chromiumBinary.args,headless:true});report.browser=await browser.version();page=await browser.newPage({viewport:{width:390,height:844}});page.setDefaultTimeout(15000);page.on('pageerror',e=>report.errors.push(e.message));await page.goto('http://127.0.0.1:4232');await page.locator('.selection-card').waitFor();
- const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+ const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
  const state=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
  async function enter(s,big,actor){await click('settings');await page.locator('#import-save').setInputFiles({name:'training-workload-y30.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({state:s,ui:{screen:'world',selected:'E4',bigText:big}}))});await page.locator('.selection-card').waitFor();await click('settings');const rules=page.locator('[data-training-workload-rules]');check('Settings names actual new or preserved workload rules',await rules.getAttribute('data-training-workload-rules')===(s.trainingWorkloadRulesVersion?'training-workload-v1':'preserved'));await click('home');await page.locator(`[data-action="actor"][data-actor="${actor}"]`).click();await click('list');await page.locator('[data-action="select"][data-cell="E4"]').click();await page.locator('[data-primary-action]').click();await page.locator('[data-training-choice-comparison]').waitFor();await page.locator('.toast').first().waitFor({state:'hidden',timeout:6000}).catch(()=>{});}
  async function capture(name,locator){const path=`${root}/${name}.png`;await page.mouse.move(0,0);if(locator)await locator.screenshot({path});else await page.screenshot({path});const b=await fs.readFile(path);report.shots.push({path,sha256:createHash('sha256').update(b).digest('hex')});}

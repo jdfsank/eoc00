@@ -1,0 +1,208 @@
+{
+  "scope": "Independent Chromium real-control 0→40 runs, genuine previous and older producer JSON, real file import/export/reload, investigation/lock/unlock/payment boundaries, publicly sourced opportunity notices, 390/320px and native 100/200% typography. Not physical-device, screen-reader, human-playtest, universal-balance or unpublished future-result certification.",
+  "independentRun": {
+    "startedAt": "2026-11-06T10:19:22.291Z",
+    "completedAt": "2026-11-06T10:20:33.812Z",
+    "browserVersion": "138.0.7204.0",
+    "checks": 732,
+    "passed": 732,
+    "failures": 0,
+    "runtimeErrors": 0,
+    "sourceHash": {
+      "before": "df6be3c04a56e408fc304365c12edb48a36dd0bf1862de2361e23556e342bbed",
+      "after": "df6be3c04a56e408fc304365c12edb48a36dd0bf1862de2361e23556e342bbed"
+    },
+    "rawScreenshotCount": 21,
+    "rawReportSha256": "f7aa983ed54145d790a119169966eccbbf802d19b7685b8178532d2a71fb6866",
+    "runContext": "Final decision-flow run within the complete 42-suite sequential browser aggregate."
+  },
+  "unitTests": {
+    "command": "node --test tests/round22-decision-flow.test.js",
+    "tests": 34,
+    "passed": 34,
+    "failed": 0,
+    "naturalProducerRoutes": 24,
+    "liveUiRoutes": 2,
+    "persistedStaleUiFixtures": 4
+  },
+  "productionFreeze": {
+    "base": "aed5154c1848b794a2053ee2706d3f61764b6a9f",
+    "frozenAt": "2026-11-06T09:16:20.480575+00:00",
+    "filesVerified": 326,
+    "runtimeHash": "93f6e1e8788f41f5ff1515fe017a88b1defd31b751211d13dafc7df83be11fe8",
+    "changedFiles": []
+  },
+  "previousProducerCoreUnchanged": {
+    "simulation.js": true,
+    "branch-access.js": true,
+    "training-authorization.js": true,
+    "training-workload.js": true,
+    "save.js": true,
+    "data/board.json": true
+  },
+  "defaultLayoutMetrics": [
+    {
+      "label": "390-text100 B4 planning",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "16px",
+      "bodyHeight": 3052,
+      "overflow": []
+    },
+    {
+      "label": "390-text100 future-check preview",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "16px",
+      "bodyHeight": 2215,
+      "overflow": []
+    },
+    {
+      "label": "390-text100 complete window",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "16px",
+      "bodyHeight": 3369,
+      "overflow": []
+    },
+    {
+      "label": "390-text200 B4 planning",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "32px",
+      "bodyHeight": 8200,
+      "overflow": []
+    },
+    {
+      "label": "390-text200 future-check preview",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "32px",
+      "bodyHeight": 5471,
+      "overflow": []
+    },
+    {
+      "label": "390-text200 complete window",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "32px",
+      "bodyHeight": 7929,
+      "overflow": []
+    },
+    {
+      "label": "320-text100 B4 planning",
+      "width": 320,
+      "scrollWidth": 320,
+      "font": "16px",
+      "bodyHeight": 3334,
+      "overflow": []
+    },
+    {
+      "label": "320-text100 future-check preview",
+      "width": 320,
+      "scrollWidth": 320,
+      "font": "16px",
+      "bodyHeight": 2446,
+      "overflow": []
+    },
+    {
+      "label": "320-text100 complete window",
+      "width": 320,
+      "scrollWidth": 320,
+      "font": "16px",
+      "bodyHeight": 3613,
+      "overflow": []
+    },
+    {
+      "label": "320-text200 B4 planning",
+      "width": 320,
+      "scrollWidth": 320,
+      "font": "32px",
+      "bodyHeight": 9521,
+      "overflow": []
+    },
+    {
+      "label": "320-text200 future-check preview",
+      "width": 320,
+      "scrollWidth": 320,
+      "font": "32px",
+      "bodyHeight": 6311,
+      "overflow": []
+    },
+    {
+      "label": "320-text200 complete window",
+      "width": 320,
+      "scrollWidth": 320,
+      "font": "32px",
+      "bodyHeight": 9589,
+      "overflow": []
+    },
+    {
+      "label": "previous/committed persisted stale window",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "16px",
+      "bodyHeight": 844,
+      "overflow": []
+    },
+    {
+      "label": "previous/40 persisted stale window",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "16px",
+      "bodyHeight": 844,
+      "overflow": []
+    },
+    {
+      "label": "older/committed persisted stale window",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "16px",
+      "bodyHeight": 844,
+      "overflow": []
+    },
+    {
+      "label": "older/40 persisted stale window",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "16px",
+      "bodyHeight": 844,
+      "overflow": []
+    }
+  ],
+  "reviewedScreenshots": [
+    {
+      "path": "docs/screenshots/round-22/qa-unprepared-review-risk-390.png",
+      "sha256": "35a9b8fc8774581bf490c0c974a7051a928b4b37694d774cfd2b90d0cc4432e5",
+      "bytes": 119221,
+      "actualPixelsReviewed": true,
+      "matchesFinalAggregateSha256": true
+    },
+    {
+      "path": "docs/screenshots/round-22/qa-opportunity-b4-390-text100.png",
+      "sha256": "20222b8c84f57c0d79429f2ab2316cce17a720438c0ab4f7ee2d4269ea687bf7",
+      "bytes": 50240,
+      "actualPixelsReviewed": true,
+      "matchesFinalAggregateSha256": true
+    },
+    {
+      "path": "docs/screenshots/round-22/qa-window-tasks-320-text200.png",
+      "sha256": "ab2964d3e4cc87cf02dcfd7a0d3a13f8c2a103f287b510c2393eb4ad47e071f8",
+      "bytes": 147377,
+      "actualPixelsReviewed": true,
+      "matchesFinalAggregateSha256": true
+    },
+    {
+      "path": "docs/screenshots/round-22/qa-stale-window-older-committed-390.png",
+      "sha256": "652840d168789812793220524202293ad91be2b203028df36aba198f15a470a9",
+      "bytes": 62307,
+      "actualPixelsReviewed": true,
+      "matchesFinalAggregateSha256": true
+    }
+  ],
+  "limits": [
+    "This independent report does not replace the complete aggregate browser run.",
+    "No physical-device, screen-reader or human-playtest certification.",
+    "No universal balance or future actual outcome claim."
+  ]
+}

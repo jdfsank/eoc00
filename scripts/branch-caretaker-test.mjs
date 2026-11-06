@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {readEndingDetails} from './helpers/ending-reading.mjs';
 import { chromium } from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
@@ -102,7 +103,7 @@ async function settleWorld() {
     report.canvasReadiness.push(await page.locator('#board canvas').evaluate(c => ({ at: Date.now(), screen: window.afterwave.ui.screen, year: window.afterwave.state.year, width: c.width, height: c.height, drawn: true })));
   }
 }
-const click = async a => { await page.locator(`[data-action="${a}"]`).first().click(); await settleWorld(); if(a==='ending')await readEndingDetails(page); };
+const click = async a => { await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page); await settleWorld(); if(a==='ending')await readEndingDetails(page); };
 const readState = () => page.evaluate(() => structuredClone(window.afterwave.state));
 const stateBytes = () => page.evaluate(() => JSON.stringify(window.afterwave.state));
 const savedBytes = () => page.evaluate(() => localStorage.getItem('afterwave.save.v1'));
@@ -306,6 +307,7 @@ try {
     if (!c.large) await snap('old-merchant-public-branch-contract-390', '.building-contract');
     if (c.large) await keyboardActivate(page.locator('[data-action="confirm"]'), '320/200% confirm'); else await click('confirm');
     if (c.large) await keyboardActivate(page.locator('[data-action="lock"]'), '320/200% lock'); else await click('lock');
+    if (c.large) await keyboardActivate(page.locator('[data-task-contract-details] > summary').first(), '320/200% read locked contract');
     check(`${c.label}: locked whole-window repeats identical future contract`, await page.locator('.task-card .building-contract').innerText() === note);
     check(`${c.label}: locking does not pay or create institutions`, same((await readState()).cells, c.s.cells) && same((await readState()).institutions, c.s.institutions));
     await width(`${c.label}locked`);

@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -20,7 +21,7 @@ const aidClosed=boundary(aid20,{aid:false}),learningClosed=boundary(both20,{teac
 const restarted=structuredClone(bothClosed);investigateAndLock(restarted,'protagonist','D5','mutual_aid');next(restarted);
 const cases={unbuilt:empty20,locked:aid10,aid:aid20,teaching:teaching20,both:both20,'aid-closed':aidClosed,'learning-closed':learningClosed,'shed-closed':shedClosed,'both-closed':bothClosed,restarted};
 const server=await createServer({server:{host:'127.0.0.1',port:4199,strictPort:true}});await server.listen();let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 async function show(state,bigText=false){await page.evaluate(({state,bigText})=>sessionStorage.setItem('afterwave.south.fixture',JSON.stringify({state,ui:{screen:'world',selected:'D5',actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText});await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(130);}
 async function shot(name,selector='.map-frame',mono=false){const target=page.locator(selector);if(mono)await target.evaluate(el=>el.style.filter='grayscale(1)');await target.screenshot({path:`${out}/round7-d5-${name}${mono?'-mono':''}.png`});if(mono)await target.evaluate(el=>el.style.filter='');}
 async function pixels(){await page.waitForTimeout(70);return page.locator('canvas').evaluate(c=>c.toDataURL());}

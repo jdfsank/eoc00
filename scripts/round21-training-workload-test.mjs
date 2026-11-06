@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 // Independent browser QA. Never writes production or docs. --explore uses a
 // separate output directory; --fixtures-only runs only the route preflight.
 import {chromium} from 'playwright';
@@ -32,7 +33,7 @@ if(process.argv.includes('--fixtures-only')){console.log(JSON.stringify(report,n
 async function runtimeHash(){const h=createHash('sha256');async function walk(path){for(const d of(await fs.readdir(path,{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){const f=`${path}/${d.name}`;if(d.isDirectory())await walk(f);else{h.update(f);h.update(await fs.readFile(f));}}}await walk('src');return h.digest('hex');}
 await fs.mkdir(shots,{recursive:true});report.runtimeHash.before=await runtimeHash();
 const server=await createServer({server:{host:'127.0.0.1',port:4224,strictPort:true}});await server.listen();let browser,page;
-const click=action=>page.locator(`[data-action="${action}"]`).first().click();
+const click=async action=>{await page.locator(`[data-action="${action}"]`).first().click();await readDecisionDetails(page);};
 const stateBytes=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const savedBytes=()=>page.evaluate(()=>JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state));
 async function unchanged(before,label){check(`${label}: entire memory and saved world unchanged`,await stateBytes()===before&&await savedBytes()===before);}

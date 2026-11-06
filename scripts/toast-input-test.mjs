@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -27,7 +28,7 @@ const expectedSettled=structuredClone(expectedCommitted);sim.advanceToNextWindow
 const corrupt=structuredClone(failed);delete corrupt.institutions[0].annualSource;
 const server=await createServer({server:{host:'127.0.0.1',port:4211,strictPort:true}});await server.listen();
 let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const worldState=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const savedState=()=>page.evaluate(()=>JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state));
 async function uploadFile(state,ui={},expectedText='已导入。',name='toast-regression.json'){

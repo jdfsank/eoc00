@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import { chromium } from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import { createServer } from 'vite';
@@ -102,7 +103,7 @@ async function settle(label = 'navigation') {
   await page.evaluate(() => document.fonts.ready);
   report.readiness.push(await page.evaluate(label => ({ label, year: window.afterwave.state.year, screen: window.afterwave.ui.screen, canvas: !!document.querySelector('#board canvas'), images: [...document.querySelectorAll('main img')].map(i => ({ src: i.getAttribute('src'), width: i.naturalWidth, height: i.naturalHeight })) }), label));
 }
-async function click(action) { await page.locator(`[data-action="${action}"]`).first().click(); await settle(action); }
+async function click(action) { await page.locator(`[data-action="${action}"]`).first().click();await readDecisionDetails(page); await settle(action); }
 async function world() { await click('home'); await page.locator('.selection-card').waitFor(); }
 async function select(cell, actor = 'protagonist') {
   await world(); await click('list'); await page.locator(`[data-action="select"][data-cell="${cell}"]`).click(); await settle(`select ${cell}`);
@@ -149,15 +150,30 @@ function verifyFocusPredicate() {
   }
 }
 async function keyboard(locator, label) {
+  const beforeKeyboardReading = await stateBytes();
   let tabs = 0;
   do { await page.keyboard.press('Tab'); tabs++; } while (tabs < 100 && !await locator.evaluate(el => document.activeElement === el));
-  const geometry = await locator.evaluate(el => {
+  const readGeometry = () => locator.evaluate(el => {
     const r = el.getBoundingClientRect(), upper = Math.max(0, r.top), lower = Math.min(innerHeight, r.bottom), visibleHeight = Math.max(0, lower - upper);
     const ys = [upper + Math.min(8, visibleHeight / 4), (upper + lower) / 2, lower - Math.min(8, visibleHeight / 4)];
     return { focused: document.activeElement === el, focusVisible: el.matches(':focus-visible'), choiceCard: el.matches('.choice-card'), left: r.left, right: r.right, top: r.top, bottom: r.bottom, height: r.height, viewportWidth: innerWidth, viewportHeight: innerHeight, visibleHeight, horizontalOverflow: document.documentElement.scrollWidth > innerWidth || document.body.scrollWidth > innerWidth, hits: ys.map(y => { const top = document.elementFromPoint(r.x + r.width / 2, y); return top === el || el.contains(top); }) };
   });
-  report.keyboardTargets.push({ label, tabs, ...geometry });
-  check(`${label}: native Tab reaches visible, outlined and unobscured keyboard target`, strictFocusPredicate(geometry), geometry);
+  let geometry = await readGeometry();
+  const tabGeometry = { ...geometry };
+  let arrowDownKeys = 0;
+  // Native Tab may leave a small reading margin above an oversized card.
+  // Read further using real keys, without changing the visibility predicate,
+  // forcing focus/scroll/style, or masking an obstruction or lost focus.
+  const canReadFurther = g => g.focused && g.focusVisible && g.choiceCard && g.height > g.viewportHeight && g.top > 0 && g.bottom > g.viewportHeight && !g.horizontalOverflow && g.left >= 0 && g.right <= g.viewportWidth && g.visibleHeight > 0 && g.hits.every(Boolean);
+  while (!strictFocusPredicate(geometry) && canReadFurther(geometry) && arrowDownKeys < 5) {
+    const topBefore = geometry.top;
+    await page.keyboard.press('ArrowDown'); arrowDownKeys++;
+    await page.waitForFunction(top => document.activeElement?.getBoundingClientRect().top < top, topBefore, {timeout: 1000});
+    geometry = await readGeometry();
+  }
+  check(`${label}: native keyboard reading leaves the entire world unchanged`, await stateBytes() === beforeKeyboardReading);
+  report.keyboardTargets.push({ label, tabs, tabGeometry, arrowDownKeys, ...geometry });
+  check(`${label}: native Tab${arrowDownKeys ? ' and arrow reading of the oversized card' : ''} reaches visible, outlined and unobscured keyboard target`, strictFocusPredicate(geometry), geometry);
   await page.keyboard.press('Enter'); await settle(label);
 }
 async function snap(name, selector) {

@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import {boardReadinessPlugin,renderedBoard,assertReloadPreserved} from './helpers/board-readiness.mjs';
 import cb from '@sparticuz/chromium';
@@ -21,7 +22,7 @@ const recordsClosed=structuredClone(noBranch);recordsClosed.institutions.filter(
 const cases={branch,failed,locked,pending,y31,y32,y40,verified,'no-branch':noBranch,cancelled,'branch-closed':branchClosed,'check-closed':checkClosed,'records-closed':recordsClosed};
 for(const [name,s] of Object.entries(cases))assert.equal(validateState(s).valid,true,name);
 const server=await createServer({plugins:[boardReadinessPlugin()],server:{host:'127.0.0.1',port:4201,strictPort:true}});await server.listen();let browser,page,artPage;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 async function show(state,bigText=false){await page.evaluate(({state,bigText})=>sessionStorage.setItem('afterwave.port.fixture',JSON.stringify({state,ui:{screen:'world',selected:'F6',actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText});await page.reload();await renderedBoard(page);}
 async function snap(name,selector='.map-frame',mono=false){const target=page.locator(selector);if(mono)await target.evaluate(el=>el.style.filter='grayscale(1)');await target.screenshot({path:`${out}/round8-f6-${name}${mono?'-mono':''}.png`});if(mono)await target.evaluate(el=>el.style.filter='');}
 async function pixels(){return (await renderedBoard(page)).pixels;}

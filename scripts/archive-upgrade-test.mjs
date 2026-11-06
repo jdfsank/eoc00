@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import {boardReadinessPlugin,renderedBoard} from './helpers/board-readiness.mjs';
 import cb from '@sparticuz/chromium';
@@ -25,7 +26,7 @@ let server,browser,page;
 const state=()=>page.evaluate(()=>structuredClone(window.afterwave.state));
 const bytes=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 async function ready(){await page.waitForFunction(()=>!!window.afterwave);await page.evaluate(()=>document.fonts.ready);await page.locator('main img').evaluateAll(imgs=>Promise.all(imgs.map(img=>img.decode())));if(await page.locator('#board').count())await renderedBoard(page);}
-async function click(a){await page.locator(`[data-action="${a}"]`).first().click();await ready();}
+async function click(a){await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);await ready();}
 async function load(s,label){await click('settings');await page.locator('#import-save').setInputFiles({name:`${label}.json`,mimeType:'application/json',buffer:Buffer.from(JSON.stringify({state:s}))});await page.waitForFunction(expected=>window.afterwave.ui.screen==='world'&&JSON.stringify(window.afterwave.state)===expected,JSON.stringify(s));await page.locator('.toast').waitFor({state:'detached'});await ready();check(`${label}: native import preserves exact world`,await bytes()===JSON.stringify(s));}
 async function select(cell,actor='protagonist'){await click('home');await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();await ready();await page.locator(`[data-action="actor"][data-actor="${actor}"]`).click();await ready();}
 async function enter(cell,actor='protagonist'){await select(cell,actor);check(`${cell}/${actor} has real legal AVG entry`,await page.locator('[data-primary-action]').getAttribute('data-action')==='avg');await page.locator('[data-primary-action]').click();await ready();}

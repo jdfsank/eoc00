@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import { chromium } from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import { createServer } from 'vite';
@@ -14,7 +15,7 @@ const check = (name, passed, detail) => {
   report.checks.push({ name, passed: !!passed, ...(detail === undefined ? {} : { detail }) });
   assert.ok(passed, name);
 };
-const click = async action => page.locator(`[data-action="${action}"]`).first().click();
+const click=async action=>{await page.locator(`[data-action="${action}"]`).first().click();await readDecisionDetails(page);};
 const world = () => page.evaluate(() => JSON.stringify(window.afterwave.state));
 async function view() {
   // A mounted canvas can still be in Phaser's asynchronous asset loader. A

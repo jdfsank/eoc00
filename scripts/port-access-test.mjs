@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {readEndingDetails} from './helpers/ending-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
@@ -13,8 +14,8 @@ function lock(s,actor,c,id,api=sim){const a=api.getActions(s,c,actor).find(a=>a.
 function next(s,api=sim){for(const a of api.getActors(s))if(!s.drafts[a.id])api.passTask(s,a.id);api.commitWindow(s);api.advanceToNextWindow(s);return s;}
 function port(seed=1,api=sim){const s=api.createRun(seed);lock(s,'protagonist','D4','build_merchant',api);next(s,api);lock(s,'protagonist','D4','recruit_successor',api);next(s,api);lock(s,'protagonist','D4','free_warning',api);lock(s,'linche','F6','independent_review',api);return next(s,api);}
 function relationship(choice){const s=sim.createRun(0);lock(s,'protagonist','D4','build_joint');next(s);lock(s,'protagonist','D4','recruit_successor');next(s);lock(s,'protagonist','D4',choice);lock(s,'linche','B4','independent_review');return next(s);}
-const restore=async(state,ui={})=>{await page.evaluate(({state,ui})=>sessionStorage.setItem('port-access.fixture',JSON.stringify({state,ui})),{state,ui});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();if(ui.screen==='ending')await readEndingDetails(page);};
-const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();if(a==='ending')await readEndingDetails(page);};
+const restore=async(state,ui={})=>{await page.evaluate(({state,ui})=>sessionStorage.setItem('port-access.fixture',JSON.stringify({state,ui})),{state,ui});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();await readDecisionDetails(page);if(ui.screen==='ending')await readEndingDetails(page);};
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);if(a==='ending')await readEndingDetails(page);};
 const snap=(name,selector)=>selector?page.locator(selector).screenshot({path:`${out}/round9-${name}.png`}):page.screenshot({path:`${out}/round9-${name}.png`,fullPage:true});
 try{
  browser=await chromium.launch({executablePath:await chromiumBinary.executablePath(),args:chromiumBinary.args,headless:true});page=await browser.newPage({viewport:{width:390,height:844}});page.on('pageerror',e=>report.errors.push(e.message));page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});await page.addInitScript(()=>{const f=sessionStorage.getItem('port-access.fixture');if(f){localStorage.setItem('afterwave.save.v1',f);sessionStorage.removeItem('port-access.fixture');}});await page.goto('http://127.0.0.1:4202');await page.locator('canvas').waitFor();

@@ -1,0 +1,1035 @@
+{
+  "scope": "Independent read-only app evaluation; real visible interactions; natural simulation-produced initial fixtures. Headless Chromium not physical device.",
+  "errors": [],
+  "checks": [
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y0-390-100 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y0-390-100 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y0-320-200 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y0-320-200 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y10-390-100 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y10-390-100 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y10-320-200 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y10-320-200 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y30-390-100 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y30-390-100 real submit equals simulation",
+      "passed": true
+    },
+    {
+      "name": "Import preserves world",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 read preview/confirm no state change",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 return from confirmation preserves state",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 modify draft preserves evidence and other state",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 no horizontal overflow",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "y30-320-200 leave/return lock summary stays exact",
+      "passed": true
+    },
+    {
+      "name": "y30-320-200 real submit equals simulation",
+      "passed": true
+    }
+  ],
+  "screens": [
+    {
+      "label": "y0-390-100-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2894,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 2672,
+        "width": 358,
+        "text": "← 返回现场\nCOMMITMENT REVIEW\n联合管理\nD4 · 第 0 年\n主角\n\n公开水文资料，由官署、商会和档案院共同维护。\n\n免费预览，不取证、不扣调查轮次，也不改变已锁定任务。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n统一提交时的确定成本\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n本轮原型假设\n正常维护时，公开测站覆盖系数为1；成功建立并保留独立旧记录的载体减少1"
+      },
+      "headline": {
+        "top": 243,
+        "height": 38,
+        "width": 358,
+        "text": "联合管理"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 693,
+        "height": 530,
+        "width": 358,
+        "text": "统一提交时的确定成本\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n本轮原型假设\n正常维护时，公开测站覆盖系数为1；成功建立并保留独立旧记录的载体减少15%的剩余共同失效损失。 参数可调，尚未经过真人平衡验证。"
+      },
+      "risk": {
+        "top": 976,
+        "height": 111,
+        "width": 358,
+        "text": "风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 2741,
+          "height": 56,
+          "width": 358,
+          "text": "锁定方案，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-390-100-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 2834,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 2612,
+        "width": 358,
+        "text": "← 返回世界\nWINDOW 0 · ATOMIC COMMIT\n下一次见面，是十年以后。\n\n所有人的任务从同一份当前现实出发。一并提交，一并承担后果。\n\n主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n已锁定结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n三种建站都要承担的后续责任\n三种方案到期都只判定一次。若失败，仍在D4留下小型档案站，已付成本不退，原教学与分站链不启动；足额维护时档案站年度源项为科学+0.35、宗教+0.15。\n若建站成功，且各步所需来源机构到期仍在运转，第7年建立E4东岸培训点和D5南岸读尺班，第12年再建F6远港分站。这是三种方案共有的预设链，不是联合管理独有，也不是已经兑现。\n若"
+      },
+      "headline": {
+        "top": 243,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 384,
+          "height": 1881,
+          "width": 358,
+          "text": "主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n已锁定结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n三种建站都要承担的后续责任\n三种方案到期都只判定一次。若失败，仍在D4留下小型档案站，已付成本不退，原教学与分站链不启动；足额维护时档案站年度源项为科学+0.35、宗教+0.15。\n若建站成功，且各步所需来源机构到期仍在运转，第7年建立E4东岸培训点和D5南岸读尺班，第12年再建F6远港分站。这是三种方案共有的预设链，不是联合管理独有，也不是已经兑现。\n若测站建成并仍在运转，第10年可另用一次介入、经济3续约，第11年兑现。若未续约，到第16年仍运转且未先因缺继任停运的测站，维护系数降为0.70并收费。商会"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 2293,
+        "height": 205,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n52.0 − 6 → 46.0"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 2194,
+          "height": 48,
+          "width": 312,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 2681,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交并推进十年 →",
+          "action": "commit",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-320-200-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 10435,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 9920,
+        "width": 288,
+        "text": "← 返回现场\nCOMMITMENT REVIEW\n联合管理\nD4 · 第 0 年\n主角\n\n公开水文资料，由官署、商会和档案院共同维护。\n\n免费预览，不取证、不扣调查轮次，也不改变已锁定任务。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n统一提交时的确定成本\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n本轮原型假设\n正常维护时，公开测站覆盖系数为1；成功建立并保留独立旧记录的载体减少1"
+      },
+      "headline": {
+        "top": 567,
+        "height": 76,
+        "width": 288,
+        "text": "联合管理"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 1764,
+        "height": 1479,
+        "width": 288,
+        "text": "统一提交时的确定成本\n经济 −6；本窗口 1 次介入\n结果与发生时间\n70% · 第 3 年一次性判定\n值得争取的结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。\n本轮原型假设\n正常维护时，公开测站覆盖系数为1；成功建立并保留独立旧记录的载体减少15%的剩余共同失效损失。 参数可调，尚未经过真人平衡验证。"
+      },
+      "risk": {
+        "top": 2468,
+        "height": 285,
+        "width": 288,
+        "text": "风险、代价与维护\n成本高；第10年需要续约，占用一次行动。失败仍保留小档案站。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 10172,
+          "height": 118,
+          "width": 288,
+          "text": "锁定方案，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y0-320-200-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 11338,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 10822,
+        "width": 288,
+        "text": "← 返回世界\nWINDOW 0 · ATOMIC COMMIT\n下一次见面，是十年以后。\n\n所有人的任务从同一份当前现实出发。一并提交，一并承担后果。\n\n主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n已锁定结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n三种建站都要承担的后续责任\n三种方案到期都只判定一次。若失败，仍在D4留下小型档案站，已付成本不退，原教学与分站链不启动；足额维护时档案站年度源项为科学+0.35、宗教+0.15。\n若建站成功，且各步所需来源机构到期仍在运转，第7年建立E4东岸培训点和D5南岸读尺班，第12年再建F6远港分站。这是三种方案共有的预设链，不是联合管理独有，也不是已经兑现。\n若"
+      },
+      "headline": {
+        "top": 567,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1093,
+          "height": 8967,
+          "width": 288,
+          "text": "主角\n已锁定\n\n联合管理 · D4\n\n经济 −6\n70% · 第 3 年一次性判定\n\n已锁定结果\n开放档案与培训连接；独立旧记录提供有限保护，不能替代完整复核。成功后第7年传播至东岸。\n\n三种建站都要承担的后续责任\n三种方案到期都只判定一次。若失败，仍在D4留下小型档案站，已付成本不退，原教学与分站链不启动；足额维护时档案站年度源项为科学+0.35、宗教+0.15。\n若建站成功，且各步所需来源机构到期仍在运转，第7年建立E4东岸培训点和D5南岸读尺班，第12年再建F6远港分站。这是三种方案共有的预设链，不是联合管理独有，也不是已经兑现。\n若测站建成并仍在运转，第10年可另用一次介入、经济3续约，第11年兑现。若未续约，到第16年仍运转且未先因缺继任停运的测站，维护系数降为0.70并收费。商会"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 10088,
+        "height": 582,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n52.0 − 6 → 46.0"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 9967,
+          "height": 70,
+          "width": 242,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 11075,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交并推进十年 →",
+          "action": "commit",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-390-100-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1545,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 1322,
+        "width": 358,
+        "text": "← 返回现场\nCOMMITMENT REVIEW\n招募林澈 · 安排继任\nD4 · 第 10 年\n主角\n\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。\n\n免费预览，不取证、不扣调查轮次，也不改变已锁定任务。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n统一提交时的确定成本\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n"
+      },
+      "headline": {
+        "top": 243,
+        "height": 38,
+        "width": 358,
+        "text": "招募林澈 · 安排继任"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 723,
+        "height": 343,
+        "width": 358,
+        "text": "统一提交时的确定成本\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "risk": {
+        "top": 980,
+        "height": 85,
+        "width": 358,
+        "text": "风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 1392,
+          "height": 56,
+          "width": 358,
+          "text": "锁定方案，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-390-100-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1500,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 1277,
+        "width": 358,
+        "text": "← 返回世界\nWINDOW 10 · ATOMIC COMMIT\n下一次见面，是十年以后。\n\n所有人的任务从同一份当前现实出发。一并提交，一并承担后果。\n\n主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n已锁定结果\n第20年起获得第二名介入员；保留维护人手。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n修改安排\n本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40.5 − 2 → 38.5\n\n整轮条件已通过，可以提交。\n\n提交会一次性扣除成本、登记承诺"
+      },
+      "headline": {
+        "top": 243,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 384,
+          "height": 513,
+          "width": 358,
+          "text": "主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n已锁定结果\n第20年起获得第二名介入员；保留维护人手。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n修改安排"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 924,
+        "height": 239,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40.5 − 2 → 38.5"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 825,
+          "height": 48,
+          "width": 312,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 1347,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交并推进十年 →",
+          "action": "commit",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-320-200-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 3925,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 3409,
+        "width": 288,
+        "text": "← 返回现场\nCOMMITMENT REVIEW\n招募林澈 · 安排继任\nD4 · 第 10 年\n主角\n\n林澈同意加入续史局，先训练苏岚接班；下一窗口才能部署。\n\n免费预览，不取证、不扣调查轮次，也不改变已锁定任务。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n统一提交时的确定成本\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n"
+      },
+      "headline": {
+        "top": 567,
+        "height": 151,
+        "width": 288,
+        "text": "招募林澈 · 安排继任"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 1899,
+        "height": 835,
+        "width": 288,
+        "text": "统一提交时的确定成本\n经济 −5 · 科学 −2；本窗口 1 次介入\n结果与发生时间\n第 11 年生效\n值得争取的结果\n第20年起获得第二名介入员；保留维护人手。\n风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "risk": {
+        "top": 2500,
+        "height": 234,
+        "width": 288,
+        "text": "风险、代价与维护\n当地仍需补充长期经费；这不等于续约公开章程。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 3662,
+          "height": 118,
+          "width": 288,
+          "text": "锁定方案，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y10-320-200-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 3753,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 3238,
+        "width": 288,
+        "text": "← 返回世界\nWINDOW 10 · ATOMIC COMMIT\n下一次见面，是十年以后。\n\n所有人的任务从同一份当前现实出发。一并提交，一并承担后果。\n\n主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n已锁定结果\n第20年起获得第二名介入员；保留维护人手。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n修改安排\n本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40.5 − 2 → 38.5\n\n整轮条件已通过，可以提交。\n\n提交会一次性扣除成本、登记承诺"
+      },
+      "headline": {
+        "top": 567,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1093,
+          "height": 1261,
+          "width": 288,
+          "text": "主角\n已锁定\n\n招募林澈 · 安排继任 · D4\n\n经济 −5 · 科学 −2\n第 11 年生效\n\n已锁定结果\n第20年起获得第二名介入员；保留维护人手。\n\n本局缺岗规则作用于D4测站和档案站。安排继任针对现有岗位；接班有人不等于长期维护经费已足额，也不等于续约公开章程。\n\n修改安排"
+        }
+      ],
+      "handoff": null,
+      "costs": {
+        "top": 2382,
+        "height": 704,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n经济\n49.9 − 5 → 44.9\n\n科学\n40.5 − 2 → 38.5"
+      },
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 2261,
+          "height": 70,
+          "width": 242,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 3490,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交并推进十年 →",
+          "action": "commit",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-390-100-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 1849,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 1627,
+        "width": 358,
+        "text": "← 返回现场\nCOMMITMENT REVIEW\n协商学徒承接权\nE4 · 第 30 年\n林澈\n\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。\n\n免费预览，不取证、不扣调查轮次，也不改变已锁定任务。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n统一提交时的确定成本\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n"
+      },
+      "headline": {
+        "top": 243,
+        "height": 38,
+        "width": 358,
+        "text": "协商学徒承接权"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 752,
+        "height": 761,
+        "width": 358,
+        "text": "统一提交时的确定成本\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n本轮原型假设\n政治3、经济2，本地居民证词1轮、一个介入名额。标准原年度来源（政治/经济/科学/宗教）0.1/0.25/0.7/0.1，兑现后0.5/0.45/0.1/0.1；变化+0.4/+0.2/−0.6/0，按该原点实际维护缩放。这是带教转入轮值职责的可调原型，不是"
+      },
+      "risk": {
+        "top": 1086,
+        "height": 137,
+        "width": 358,
+        "text": "风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 1696,
+          "height": 56,
+          "width": 358,
+          "text": "锁定方案，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-390-100-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "font": "16px",
+      "documentHeight": 4067,
+      "scrollWidth": 390,
+      "main": {
+        "top": 156,
+        "height": 3844,
+        "width": 358,
+        "text": "← 返回世界\nWINDOW 30 · ATOMIC COMMIT\n下一次见面，是十年以后。\n\n所有人的任务从同一份当前现实出发。一并提交，一并承担后果。\n\n主角\n已锁定\n\n共享档案与纠错权 · D4\n\n政治 −3 · 经济 −3\n第 31 年生效\n\n已锁定结果\n有准备的地区可自治并互相复核。\n\n当前承接人手：E4、D5；已获地方授权：无；异源校验：B4。仍需：现有人手尚缺地方承接授权。交班需不同地域的已获授权人手与真实异源校验；原学徒可提供人手，同源人数不等于独立方法。学校提供技术人手，强制迁任本身不证明合作。共享另需河港信任。最终按第40年实际存续条件结算。\n\n修改安排\n林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获"
+      },
+      "headline": {
+        "top": 243,
+        "height": 38,
+        "width": 358,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 384,
+          "height": 506,
+          "width": 358,
+          "text": "主角\n已锁定\n\n共享档案与纠错权 · D4\n\n政治 −3 · 经济 −3\n第 31 年生效\n\n已锁定结果\n有准备的地区可自治并互相复核。\n\n当前承接人手：E4、D5；已获地方授权：无；异源校验：B4。仍需：现有人手尚缺地方承接授权。交班需不同地域的已获授权人手与真实异源校验；原学徒可提供人手，同源人数不等于独立方法。学校提供技术人手，强制迁任本身不证明合作。共享另需河港信任。最终按第40年实际存续条件结算。\n\n修改安排"
+        },
+        {
+          "top": 906,
+          "height": 410,
+          "width": 358,
+          "text": "林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n已锁定结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n修改安排"
+        }
+      ],
+      "handoff": {
+        "top": 1339,
+        "height": 1639,
+        "width": 358,
+        "text": "第30年 · 整轮交班对照\n\n当前与按已锁定合同兑现后的条件分开列出。尚未支付或兑现，也不保证第40年的结局。\n\n本轮方针：共享纠错权。\n\n当前能力\n\n承接人手：E4、D5\n\n地方授权：无\n\n异源校验：B4\n\n跨地承接：尚未形成\n\n河港信任：有合作记录\n\n未来指令校验：按本局记录已有校验。保档支点与已完成的指令比对分别核对。\n\n按这一组条件，所选交班方针仍有缺口。\n\n现有人手尚缺地方承接授权\n若确定合同落实，且各项条件按期成立\n\n承接人手：E4、D5\n\n地方授权：E4\n\n异源校验：B4\n\n跨地承接：E4 → B4\n\n河港信任：有合作记录\n\n未来指令校验：按本局记录已有校验。保档支点与已完成的指令比对分别核对。\n\n按这一组条件，共享所需承接与信任齐备。\n\n第31年 · 主角 · D4：共享档案"
+      },
+      "costs": {
+        "top": 3006,
+        "height": 373,
+        "width": 358,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n政治\n49.5 − 3 → 46.5\n\n经济\n52.2 − 3 → 49.2\n\nE4 · 东岸商埠\n\n政治\n54.6 − 3 → 51.6\n\n经济\n48.1 − 2 → 46.1"
+      },
+      "warnings": {
+        "top": 3407,
+        "height": 327,
+        "width": 358,
+        "text": "这轮安排的取舍\n东岸承接协商第31年只向指定原培训点赋予本地授权，并把大部分深入带教转入议事与生计轮值：政治、经济年度来源提高，科学来源减少，仍按该原点实际维护缩放。目标失效或已有授权则取消且政治3、经济2不退。不新建学校或增加人手、预警覆盖、异源校验与河港信任，D5同源学徒不获连带授权。\n\n可以返回调整，也可以保留这份安排。"
+      },
+      "buttons": [
+        {
+          "top": 156,
+          "height": 48,
+          "width": 102,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 819,
+          "height": 48,
+          "width": 312,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 1244,
+          "height": 48,
+          "width": 312,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 3914,
+          "height": 56,
+          "width": 358,
+          "text": "统一提交并推进十年 →",
+          "action": "commit",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-320-200-confirm",
+      "screen": "confirm",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 5397,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 4881,
+        "width": 288,
+        "text": "← 返回现场\nCOMMITMENT REVIEW\n协商学徒承接权\nE4 · 第 30 年\n林澈\n\n请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。\n\n免费预览，不取证、不扣调查轮次，也不改变已锁定任务。\n\n这份合同的取证安排\n所需材料已取得 · 无需再调查\n\n只核对调查轮数；费用、名额及同格安排仍须在提交前核对。查看材料入口不会调查。\n\n统一提交时的确定成本\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n"
+      },
+      "headline": {
+        "top": 567,
+        "height": 151,
+        "width": 288,
+        "text": "协商学徒承接权"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": {
+        "top": 2076,
+        "height": 2605,
+        "width": 288,
+        "text": "统一提交时的确定成本\n政治 −3 · 经济 −2；本窗口 1 次介入\n结果与发生时间\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n值得争取的结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。\n本轮原型假设\n政治3、经济2，本地居民证词1轮、一个介入名额。标准原年度来源（政治/经济/科学/宗教）0.1/0.25/0.7/0.1，兑现后0.5/0.45/0.1/0.1；变化+0.4/+0.2/−0.6/0，按该原点实际维护缩放。这是带教转入轮值职责的可调原型，不是"
+      },
+      "risk": {
+        "top": 2985,
+        "height": 439,
+        "width": 288,
+        "text": "风险、代价与维护\n第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。"
+      },
+      "taskCards": [],
+      "handoff": null,
+      "costs": null,
+      "warnings": null,
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回现场",
+          "action": "avg",
+          "disabled": false
+        },
+        {
+          "top": 5134,
+          "height": 118,
+          "width": 288,
+          "text": "锁定方案，核对本轮安排",
+          "action": "lock",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    },
+    {
+      "label": "y30-320-200-all-locked",
+      "screen": "window",
+      "scrollY": 0,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "font": "32px",
+      "documentHeight": 13384,
+      "scrollWidth": 320,
+      "main": {
+        "top": 401,
+        "height": 12868,
+        "width": 288,
+        "text": "← 返回世界\nWINDOW 30 · ATOMIC COMMIT\n下一次见面，是十年以后。\n\n所有人的任务从同一份当前现实出发。一并提交，一并承担后果。\n\n主角\n已锁定\n\n共享档案与纠错权 · D4\n\n政治 −3 · 经济 −3\n第 31 年生效\n\n已锁定结果\n有准备的地区可自治并互相复核。\n\n当前承接人手：E4、D5；已获地方授权：无；异源校验：B4。仍需：现有人手尚缺地方承接授权。交班需不同地域的已获授权人手与真实异源校验；原学徒可提供人手，同源人数不等于独立方法。学校提供技术人手，强制迁任本身不证明合作。共享另需河港信任。最终按第40年实际存续条件结算。\n\n修改安排\n林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获"
+      },
+      "headline": {
+        "top": 567,
+        "height": 227,
+        "width": 288,
+        "text": "下一次见面，是十年以后。"
+      },
+      "choices": null,
+      "materials": null,
+      "contract": null,
+      "risk": null,
+      "taskCards": [
+        {
+          "top": 1093,
+          "height": 1687,
+          "width": 288,
+          "text": "主角\n已锁定\n\n共享档案与纠错权 · D4\n\n政治 −3 · 经济 −3\n第 31 年生效\n\n已锁定结果\n有准备的地区可自治并互相复核。\n\n当前承接人手：E4、D5；已获地方授权：无；异源校验：B4。仍需：现有人手尚缺地方承接授权。交班需不同地域的已获授权人手与真实异源校验；原学徒可提供人手，同源人数不等于独立方法。学校提供技术人手，强制迁任本身不证明合作。共享另需河港信任。最终按第40年实际存续条件结算。\n\n修改安排"
+        },
+        {
+          "top": 2797,
+          "height": 1124,
+          "width": 288,
+          "text": "林澈\n已锁定\n\n协商学徒承接权 · E4\n\n政治 −3 · 经济 −2\n第 31 年核对条件，原培训点失效、被替换或已获授权则取消\n\n已锁定结果\n第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。\n\n修改安排"
+        }
+      ],
+      "handoff": {
+        "top": 3945,
+        "height": 6299,
+        "width": 288,
+        "text": "第30年 · 整轮交班对照\n\n当前与按已锁定合同兑现后的条件分开列出。尚未支付或兑现，也不保证第40年的结局。\n\n本轮方针：共享纠错权。\n\n当前能力\n\n承接人手：E4、D5\n\n地方授权：无\n\n异源校验：B4\n\n跨地承接：尚未形成\n\n河港信任：有合作记录\n\n未来指令校验：按本局记录已有校验。保档支点与已完成的指令比对分别核对。\n\n按这一组条件，所选交班方针仍有缺口。\n\n现有人手尚缺地方承接授权\n若确定合同落实，且各项条件按期成立\n\n承接人手：E4、D5\n\n地方授权：E4\n\n异源校验：B4\n\n跨地承接：E4 → B4\n\n河港信任：有合作记录\n\n未来指令校验：按本局记录已有校验。保档支点与已完成的指令比对分别核对。\n\n按这一组条件，共享所需承接与信任齐备。\n\n第31年 · 主角 · D4：共享档案"
+      },
+      "costs": {
+        "top": 10272,
+        "height": 1050,
+        "width": 288,
+        "text": "本轮成本与余额\n\n按地域支付，不是可在全图通用的钱。下列余额只扣本次确定成本，尚未包含自然演化。\n\nD4 · 河港\n\n政治\n49.5 − 3 → 46.5\n\n经济\n52.2 − 3 → 49.2\n\nE4 · 东岸商埠\n\n政治\n54.6 − 3 → 51.6\n\n经济\n48.1 − 2 → 46.1"
+      },
+      "warnings": {
+        "top": 11350,
+        "height": 1371,
+        "width": 288,
+        "text": "这轮安排的取舍\n东岸承接协商第31年只向指定原培训点赋予本地授权，并把大部分深入带教转入议事与生计轮值：政治、经济年度来源提高，科学来源减少，仍按该原点实际维护缩放。目标失效或已有授权则取消且政治3、经济2不退。不新建学校或增加人手、预警覆盖、异源校验与河港信任，D5同源学徒不获连带授权。\n\n可以返回调整，也可以保留这份安排。"
+      },
+      "buttons": [
+        {
+          "top": 401,
+          "height": 70,
+          "width": 185,
+          "text": "← 返回世界",
+          "action": "home",
+          "disabled": false
+        },
+        {
+          "top": 2688,
+          "height": 70,
+          "width": 242,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 3828,
+          "height": 70,
+          "width": 242,
+          "text": "修改安排",
+          "action": "unlock",
+          "disabled": false
+        },
+        {
+          "top": 13121,
+          "height": 118,
+          "width": 288,
+          "text": "统一提交并推进十年 →",
+          "action": "commit",
+          "disabled": false
+        }
+      ],
+      "cancelCount": 0,
+      "overflow": []
+    }
+  ],
+  "browser": "138.0.7204.0"
+}

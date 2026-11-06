@@ -1,0 +1,13 @@
+{
+  "description": "Genuine round-21 producer. Exact unedited source copied from the verified production baseline before round-22 UI changes. All simulation and restore dependencies are local; no imports from current production. This fixture does not manufacture legacy state by removing rule markers.",
+  "sourceCommit": "aed5154c1848b794a2053ee2706d3f61764b6a9f",
+  "sourceDirectory": "round22-baseline/src",
+  "files": {
+    "simulation.js": "08fab00c7ba363112e455733cc4820953479617b1322e53f407f49c22f237fee",
+    "branch-access.js": "2ef0fc66b6ad1300c2e7d6c72e0dea3e0203c9339b4d195bb3610c700634bc80",
+    "training-authorization.js": "b1689c31cf5d07e38cbca4ad0c04c6489594e5b7cdd4ec002c0630587b97e194",
+    "training-workload.js": "284ac9c61304a3162ac672a6d67eef7797c674d7d491a947964cf560d3ad0d1d",
+    "save.js": "3d223c8e34e0b09c7e02f769bff23d110730de463313f1d2312893d54726b768",
+    "data/board.json": "07fed22503bbaecb5f6f8c60b6aad99b6b61d47cf86065547a52889ae4c97f42"
+  }
+}

@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -13,7 +14,7 @@ const report={scope:'Real Chromium390×844 and320×568/200%. Generated natural c
 const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name);};
 function next(s,api=sim){for(const a of api.getActors(s))if(!s.drafts[a.id])api.passTask(s,a.id);api.commitWindow(s);api.advanceToNextWindow(s);return s;}
 function route(seed,build,ten='fund_school',api=sim){const s=api.createRun(seed);if(api===sim)investigateAndLock(s,'protagonist','D4',build);else{const a=api.getActions(s,'D4','protagonist').find(a=>a.id===build);api.lockTask(s,'protagonist','D4',build,a.requireEvidence);}next(s,api);if(api===sim)investigateAndLock(s,'protagonist',ten==='fund_school'?'E4':'D4',ten);else{const cell=ten==='fund_school'?'E4':'D4',a=api.getActions(s,cell,'protagonist').find(a=>a.id===ten);api.lockTask(s,'protagonist',cell,ten,a.requireEvidence);}return next(s,api);}
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const state=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const restore=async(s)=>{await click('settings');await page.locator('#import-save').setInputFiles({name:'history.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({state:s}))});await page.locator('.toast').waitFor();await page.waitForTimeout(3550);};
 const archive=async(cell)=>{await click('home');await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();await page.locator('.selection-card [data-action="cell-history"]').click();await page.locator('.channel-history').waitFor();};

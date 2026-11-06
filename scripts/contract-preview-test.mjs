@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -13,7 +14,7 @@ const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name
 function next(s,api=sim){for(const a of api.getActors(s))if(!s.drafts[a.id])api.passTask(s,a.id);api.commitWindow(s);api.advanceToNextWindow(s);return s;}
 function bare(api=sim){const s=api.createRun(12);next(s,api);return next(s,api);}
 function identity(seed,build,ten){const s=sim.createRun(seed);if(build)investigateAndLock(s,'protagonist','D4',build);next(s);investigateAndLock(s,'protagonist','D4',ten);return next(s);}
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const choose=id=>page.locator(`[data-action="choose"][data-id="${id}"]`).click();
 const worldState=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const restore=async(state,ui={})=>{await page.evaluate(({state,ui})=>sessionStorage.setItem('contract-preview.fixture',JSON.stringify({state,ui})),{state,ui});await page.reload();await page.locator('main h1,[data-primary-action]').first().waitFor();};

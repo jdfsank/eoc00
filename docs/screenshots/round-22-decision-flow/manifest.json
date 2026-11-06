@@ -1,0 +1,72 @@
+{
+  "scope": "Selected images actually inspected at native pixels. All are original 320×568 Chromium viewport PNGs; no resized or stitched tall image. Baseline was independently rerun before edits. The complete 98 current raw PNGs remain in playtest-output.",
+  "images": [
+    {
+      "path": "docs/screenshots/round-22-decision-flow/baseline-y0-lock.png",
+      "sha256": "430f37e05792a7e15877af810b1a9618bd6660918ec9f5ca3d19a00eb0490a50"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/baseline-y30-submit.png",
+      "sha256": "df92c86d78148857b9cb54f78c2a4f8c236d0cc6148f8dee8d861a62e01075be"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/baseline-y30-window-top.png",
+      "sha256": "3ebb08a5e5c055ae8e53e76d4a33bb74e916a51d6af7d2c295c0cb199d9560c5"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/current-y0-building-risk.png",
+      "sha256": "c31b86528a648fb23a60157efb00bf7d7629b1b5e24c5dbfe64772dcf8a03f5b",
+      "finalAggregateSource": "playtest-output/round-22/decision-flow-visuals/y0-320-200-confirm-building-risk.png"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/current-y0-keyboard-dossier.png",
+      "sha256": "cfaea49dfbcdc12419e7470a4654a7926b3a26ce7d72e2c737f9b2f84e18a244",
+      "finalAggregateSource": "playtest-output/round-22/decision-flow-visuals/y0-320-200-confirmation-source-expanded.png"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/current-y30-conditional-outcomes.png",
+      "sha256": "20b07987f61027b58bd67f2037c7a42759793581974ab3587e6a1e9787470478",
+      "finalAggregateSource": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-15.png"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/current-y30-confirm.png",
+      "sha256": "7fdb07a28ba2065d5f8cf463a3fad725d6d87f08d0fc6c57b0e6898a1623cce5",
+      "finalAggregateSource": "playtest-output/round-22/decision-flow-visuals/y30-320-200-confirm-top.png"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/current-y30-costs.png",
+      "sha256": "18cd722a13e189bc203672f498ba5b6c757302d30d561cceefbba9e18df9139e",
+      "finalAggregateSource": "playtest-output/round-22/decision-flow-visuals/y30-320-200-costs.png"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/current-y30-failed-authorization.png",
+      "sha256": "cc1df169da8fb4277ed90610dfc2d0030de87eaa1ba986da422307e08eabfbde",
+      "finalAggregateSource": "playtest-output/round-22/decision-flow-visuals/y30-320-200-window-default-segment-16.png"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/current-y30-submit.png",
+      "sha256": "0b14803b8a95bfd400cb8f329710505bdb4d321279c128e5a5f12ea3af9dd5de",
+      "finalAggregateSource": "playtest-output/round-22/decision-flow-visuals/y30-320-200-submit.png"
+    },
+    {
+      "path": "docs/screenshots/round-22-decision-flow/current-y30-window-top.png",
+      "sha256": "1105fce4e7a2a13793be9761b4505829e4292d6c35bf04bb35f5a2c3f6dec7fc",
+      "finalAggregateSource": "playtest-output/round-22/decision-flow-visuals/y30-320-200-all-locked-top.png"
+    }
+  ],
+  "finalAggregateRun": {
+    "suite": 42,
+    "startedAt": "2026-11-06T10:20:34.319Z",
+    "finishedAt": "2026-11-06T10:21:18.233Z",
+    "checks": 133,
+    "failed": 0,
+    "errors": [],
+    "rawScreenshots": 98,
+    "sourceBefore": "cb6e007a24b193198c9c479c86943859df47a88772134b09dc1eb71f6cb4309c",
+    "sourceAfter": "cb6e007a24b193198c9c479c86943859df47a88772134b09dc1eb71f6cb4309c",
+    "sourceStable": true,
+    "resultsSha256": "d9ecdc83b3c9f49d72faa59f87e2f3963e8bbb551a1f3c67fedf93f0d6c64d25",
+    "currentImagesMatchPreviouslyInspected": true,
+    "baselineImagesPreserved": true
+  }
+}

@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import cb from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -21,7 +22,7 @@ const bothClosed=structuredClone(checkClosed);bothClosed.institutions.filter(i=>
 const cases={unbuilt:createRun(0),branch:portAt20(),failed,locked,pending,y31,y32,y40,cancelled,'check-closed':checkClosed,'both-closed':bothClosed};
 for(const [name,state] of Object.entries(cases))assert.equal(validateState(state).valid,true,name);
 const server=await createServer({server:{host:'127.0.0.1',port:4207,strictPort:true}});await server.listen();let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const state=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const sessions=()=>page.evaluate(()=>JSON.stringify(window.afterwave.ui.sessions));
 const section=()=>page.locator('.scene-visit[data-visit-cell="F6"]');

@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -21,7 +22,7 @@ const y21=structuredClone(pending);advanceYear(y21);const y22=structuredClone(y2
 const collision=pair();investigateAndLock(collision,'linche','B4','local_veto');
 const build=createRun(0);investigateAndLock(build,'protagonist','D4','build_joint');
 const born=structuredClone(build);commitWindow(born);advanceYear(born);advanceYear(born);advanceYear(born);
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 async function show(state,cell='B4',bigText=false,focus=true){
  await page.evaluate(({state,cell,bigText,focus})=>sessionStorage.setItem('afterwave.activity.fixture',JSON.stringify({state,ui:{screen:'world',selected:cell,actor:'protagonist',channel:'science',focus,bigText}})),{state,cell,bigText,focus});
  await page.reload();await page.locator('canvas').waitFor();await canvas();

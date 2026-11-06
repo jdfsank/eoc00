@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import cb from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -15,7 +16,7 @@ maintenance.institutions.find(i=>i.kind==='warning').maintenance=.5;stopped.inst
 const cases={before,locked,active,archive,maintenance,stopped,zero,'station-restored':warningAt30('station'),'station-stopped':warningAt20('station')};
 for(const [name,state]of Object.entries({...cases,pending}))assert.equal(validateState(state).valid,true,name);
 const server=await createServer({server:{host:'127.0.0.1',port:4203,strictPort:true}});await server.listen();let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 async function show(state,bigText=false){
  await click('settings');await page.locator('#import-save').setInputFiles({name:'river-warning.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({state,ui:{selected:'D4',screen:'world',actor:'protagonist',channel:'science',focus:true,bigText}}))});
  await page.waitForFunction(expected=>window.afterwave.ui.screen==='world'&&JSON.stringify(window.afterwave.state)===expected,JSON.stringify(state));await page.locator('canvas').waitFor();await page.locator('.toast').waitFor({state:'detached'});await page.waitForTimeout(80);

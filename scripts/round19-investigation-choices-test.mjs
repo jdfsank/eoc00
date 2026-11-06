@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -31,7 +32,7 @@ const engineBytes=await fs.readFile('src/simulation.js'),engineBlob=createHash('
 report.baselineEngine={referenceCommit:'96a941c9344f6529f5a53f1bbbdd219be4d7d1ae',expectedGitBlob:'8474fd893b32f7fc1a0a8cd1d16fcf63cce5e249',actualGitBlob:engineBlob,unchanged:engineBlob==='8474fd893b32f7fc1a0a8cd1d16fcf63cce5e249'};
 const server=await createServer({server:{host:'127.0.0.1',port:4221,strictPort:true}});await server.listen();
 let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async a=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);};
 const choose=id=>page.locator(`[data-action="choose"][data-id="${id}"]`).click();
 const stateBytes=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const savedBytes=()=>page.evaluate(()=>JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state));

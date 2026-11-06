@@ -1,3 +1,4 @@
+import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import cb from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -19,7 +20,7 @@ const late=structuredClone(closed);lock(late,'protagonist','D5','mutual_aid');de
 const cases={before,y22,y23,loss,zero,legacy,missing,partial,closed,'aid-only':localAt30({teaching:false}),'teaching-only':localAt30({aid:false}),empty:localAt30({teaching:false,aid:false}),late};
 for(const [name,s]of Object.entries(cases))assert.equal(validateState(s).valid,true,name);
 const server=await createServer({server:{host:'127.0.0.1',port:4205,strictPort:true}});await server.listen();let browser,page;
-const click=async (a,openHistory=true)=>{await page.locator(`[data-action="${a}"]`).first().click();if(a==='avg'&&openHistory){const past=page.locator('details.planning-history');if(await past.count()&&!await past.evaluate(el=>el.open))await past.locator(':scope > summary').click();}};
+const click=async (a,openHistory=true)=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);if(a==='avg'&&openHistory){const past=page.locator('details.planning-history');if(await past.count()&&!await past.evaluate(el=>el.open))await past.locator(':scope > summary').click();}};
 const panel=(cell='D5')=>page.locator(`.local-crisis-history[data-crisis-cell="${cell}"]`);
 async function show(state,bigText=false,cell='D5'){await page.evaluate(({state,bigText,cell})=>sessionStorage.setItem('afterwave.tally.fixture',JSON.stringify({state,ui:{screen:'world',selected:cell,actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText,cell});await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(130);}
 async function snap(name,selector='.local-crisis-history',mono=false){const target=page.locator(selector);if(mono)await target.evaluate(el=>el.style.filter='grayscale(1)');const data=await target.screenshot({path:`${out}/round10-d5-${name}${mono?'-mono':''}.png`});if(mono)await target.evaluate(el=>el.style.filter='');return data.toString('base64');}
