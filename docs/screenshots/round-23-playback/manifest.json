@@ -1,0 +1,169 @@
+{
+  "status": "final 44-suite sequential aggregate completed with exit code 0; representative images reconciled",
+  "completedAt": "2026-11-06T12:09:22.380Z",
+  "checks": 701,
+  "metrics": 48,
+  "allScreenshots": 111,
+  "srcTreeHash": "11ec7e92aa21fbfe656930df8affcf543d7b144474c074f6d8c09c97deed700b",
+  "productionFreezeHash": "492fcff54b6db5dc74edd56f230710fc9cb3558303201fc35b1a9e14ff4824ad",
+  "reportSHA256": "d80359445108d9afd056923a5a9184947d606deada119e3ea0703b55c333a03b",
+  "scriptSHA256": "beed314aced9a2765874b282a5ce559075783a960de27dc5f3725f9dbad6cc94",
+  "selected": [
+    {
+      "path": "docs/screenshots/round-23-playback/baseline-y14-390-100.png",
+      "source": "playtest-output/round23-playback-diagnostic/y14-390-100-top.png",
+      "sha256": "f86d5479ca1abb67f11de4296cce3c3c7c1a218b02326059a7fbc2ade7660f45",
+      "width": 390,
+      "height": 844,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/baseline-y14-320-200.png",
+      "source": "playtest-output/round23-playback-diagnostic/y14-320-200-top.png",
+      "sha256": "20800985c2cec2bd33c182843f2df08da05381bbcfa539a4a551b6a82a56b2d6",
+      "width": 320,
+      "height": 568,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y14-390-100-top.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y14-390-100-top.png",
+      "sha256": "73c8e260646d2d93301f904d4ae5f26543f5d4bd6419a0c121c06875485df59d",
+      "width": 390,
+      "height": 844,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y14-320-200-top.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y14-320-200-top.png",
+      "sha256": "61a17e40b08865074a1a4dac9d101975191db2dd3f546b25cf578f553f4c0ed2",
+      "width": 320,
+      "height": 568,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y14-320-200-result-1.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y14-320-200-result-1.png",
+      "sha256": "88e606660baf268a52341e87d5d11a4d1ff69d5ff2f45c712423f028dabf9d7a",
+      "width": 320,
+      "height": 568,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y23-390-100-top.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y23-390-100-top.png",
+      "sha256": "bc807ac4dace0860ac1c7aa56fc46d631ed8293db0f4c2f8afdf481bce651fe0",
+      "width": 390,
+      "height": 844,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y23-320-200-result-1.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y23-320-200-result-1.png",
+      "sha256": "cdc245e52d99bcd04cbeccc53767bdb4e41c020b91e9cc6a6b1c76110ec18d4d",
+      "width": 320,
+      "height": 568,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y23-320-200-result-2.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y23-320-200-result-2.png",
+      "sha256": "833eae1db439cc6c84f5e35dcc9a0bba6467313f3c67cfcd0df3e3b135573c6a",
+      "width": 320,
+      "height": 568,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y24-390-100-top.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y24-390-100-top.png",
+      "sha256": "3609ee43e517fda603450eccd6bcee44552b256cbbc6a647ef82a15f40ad5d39",
+      "width": 390,
+      "height": 844,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y30-320-200-top.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y30-320-200-top.png",
+      "sha256": "3d0ebc7ec837483030ecdad8b30621527a2e65ca3d8265144cac86cad275785d",
+      "width": 320,
+      "height": 568,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y30-320-200-result-5.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y30-320-200-result-5.png",
+      "sha256": "a164594a2333fc988b62393cb3ac651174b26e0e47aacb95bc603a9107a7a4c8",
+      "width": 320,
+      "height": 568,
+      "scope": "actual viewport; no stitching or scaling"
+    },
+    {
+      "path": "docs/screenshots/round-23-playback/y31-390-100-top.png",
+      "source": "playtest-output/round23-playback-visuals/screenshots/y31-390-100-top.png",
+      "sha256": "83a95678ecd93d17457afded42a7c81c6d95a4179fd2e19e43f6d57477f19c18",
+      "width": 390,
+      "height": 844,
+      "scope": "actual viewport; no stitching or scaling"
+    }
+  ],
+  "focusedEvidence": {
+    "completedAt": "2026-11-06T10:57:04.873Z",
+    "reportSHA256": "f2a55babfbb5e985dd9b8a45aa04cf3e93fb08f6b0f82040cd4e8a0082fc5c84",
+    "srcTreeHash": "11ec7e92aa21fbfe656930df8affcf543d7b144474c074f6d8c09c97deed700b",
+    "previousFrozenRunImageComparison": {
+      "compared": 111,
+      "identical": 90,
+      "different": [
+        "y3-390-100-result-1.png",
+        "y14-390-100-result-1.png",
+        "y23-390-100-top.png",
+        "y30-390-100-result-2.png",
+        "y40-390-100-result-2.png",
+        "y4-320-100-result-1.png",
+        "y14-320-100-result-1.png",
+        "y30-320-100-result-2.png",
+        "y40-320-100-result-2.png",
+        "y3-390-200-top.png",
+        "y21-390-200-top.png",
+        "y24-390-200-result-2.png",
+        "y40-390-200-result-2.png",
+        "y3-320-200-result-2.png",
+        "y4-320-200-result-2.png",
+        "y14-320-200-result-2.png",
+        "y21-320-200-result-2.png",
+        "y30-320-200-top.png",
+        "y30-320-200-result-7.png",
+        "y31-320-200-result-2.png",
+        "y40-320-200-top.png"
+      ]
+    }
+  },
+  "startedAt": "2026-11-06T12:08:32.368Z",
+  "aggregateReconciliation": {
+    "suiteCount": 44,
+    "exitCode": 0,
+    "productionFilesVerified": 327,
+    "selectedImages": 12,
+    "baselineImagesRetained": 2,
+    "changedSelectedImages": 1,
+    "unchangedSelectedImages": 11,
+    "changed": [
+      {
+        "path": "docs/screenshots/round-23-playback/y23-390-100-top.png",
+        "previousSHA256": "3ddd14d6df58dfb3b2592cd0cae4465ede63fd0e67b5a3e9546f898f560f9c4d",
+        "sha256": "bc807ac4dace0860ac1c7aa56fc46d631ed8293db0f4c2f8afdf481bce651fe0",
+        "actualPixelsReinspected": true,
+        "differenceBounds": [
+          16,
+          688,
+          374,
+          744
+        ],
+        "finding": "Native hover appearance within the next-record button; full original consequence text remains readable and unobscured. No crop, recoloring or tolerance applied."
+      }
+    ],
+    "all48MetricsIdenticalToFocused": true,
+    "full111ImageHashesDifferentFromFocused": 20,
+    "full111ImagesWereNotIndividuallyReinspected": true
+  }
+}

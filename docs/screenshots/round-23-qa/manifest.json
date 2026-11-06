@@ -1,0 +1,86 @@
+{
+  "title": "Round23 independently reviewed QA examples",
+  "sourceRun": {
+    "phase": "suite 43 of the final complete sequential 44-suite browser aggregate",
+    "startedAt": "2026-11-06T12:02:53.619Z",
+    "completedAt": "2026-11-06T12:08:31.853Z",
+    "checksPassed": 1619,
+    "sourceRuntimeSha256": "11ec7e92aa21fbfe656930df8affcf543d7b144474c074f6d8c09c97deed700b",
+    "productionFreezeSha256": "492fcff54b6db5dc74edd56f230710fc9cb3558303201fc35b1a9e14ff4824ad",
+    "report": "playtest-output/round-23/playback-journal-results.json",
+    "reportSha256": "49ae6d7f0dea0992783632b80d9cc9e89a241b42f46bf068c028b3533b438f45",
+    "aggregateCommand": "npm run test:browser",
+    "aggregateSuiteCount": 44,
+    "aggregateExitCode": 0,
+    "timingScope": "These timestamps belong to the round23 playback-journal suite, not the full 44-suite aggregate."
+  },
+  "method": "Byte-for-byte copies of three already viewed native Chromium PNGs. No resizing, stitching, recoloring or postprocessing. 320px viewport with the application native 200% text setting. These are bounded element screenshots, not claims of whole-page coverage.",
+  "limits": "Not physical-device, screen-reader or human-playtest certification. The maintenance explanation remains long at 200%.",
+  "images": [
+    {
+      "file": "current-crisis-320-text200.png",
+      "source": "playtest-output/round-23/screenshots/current-crisis-320-text200.png",
+      "sourceReport": "playtest-output/round-23/playback-journal-results.json",
+      "sha256": "41a9e2225ee47fa3b551a1c012dd1bdd70536d15d5f2ac03c71715048c0875d7",
+      "bytes": 129899,
+      "width": 288,
+      "height": 1499,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "nativeRootFontPx": 32,
+      "capture": "bounded-element",
+      "copiedWithoutModification": true,
+      "reviewScope": "已发生的第23年清点：原损失正文、四地覆盖/损失系数及统计边界说明完整，没有导入提示遮挡或横向裁切。",
+      "initialReviewedSourceReport": "playtest-output/round-23/focused-playback-journal-results.json",
+      "finalAggregateSourceUnchanged": true
+    },
+    {
+      "file": "retained-maintenance-320-text200.png",
+      "source": "playtest-output/round-23/screenshots/retained-maintenance-320-text200.png",
+      "sourceReport": "playtest-output/round-23/playback-journal-results.json",
+      "sha256": "c73181724b708971dc4eb4e5611aed78362fa313a486e97de3258e98417709c1",
+      "bytes": 233706,
+      "width": 288,
+      "height": 2917,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "nativeRootFontPx": 32,
+      "capture": "bounded-element",
+      "copiedWithoutModification": true,
+      "reviewScope": "第19年保留第16年维护变化：原记录与费用/人事纠正分开；没有用今天恢复覆盖过去，没有提示遮挡或横向裁切。",
+      "initialReviewedSourceReport": "playtest-output/round-23/focused-playback-journal-results.json",
+      "finalAggregateSourceUnchanged": true
+    },
+    {
+      "file": "review-cancelled-320-text200.png",
+      "source": "playtest-output/round-23/screenshots/review-cancelled-320-text200.png",
+      "sourceReport": "playtest-output/round-23/playback-journal-results.json",
+      "sha256": "9f8961aac00e0e95b848b93b4259349ad969595bac4a0ba36c19f5a95fbd2cac",
+      "bytes": 720262,
+      "width": 288,
+      "height": 4372,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "nativeRootFontPx": 32,
+      "capture": "bounded-element",
+      "copiedWithoutModification": true,
+      "reviewScope": "第40年十年回顾：第31年方针、第32年真实无人手取消、不退款与第23年清点保留，以及第40年结局。未把取消写成兑现。",
+      "initialReviewedSourceReport": "playtest-output/round-23/focused-playback-journal-results.json",
+      "finalAggregateSourceUnchanged": true
+    }
+  ],
+  "initialReviewedSourceRun": {
+    "startedAt": "2026-11-06T10:57:18.809Z",
+    "completedAt": "2026-11-06T11:03:11.574Z",
+    "checksPassed": 1619,
+    "sourceRuntimeSha256": "11ec7e92aa21fbfe656930df8affcf543d7b144474c074f6d8c09c97deed700b",
+    "productionFreezeSha256": "492fcff54b6db5dc74edd56f230710fc9cb3558303201fc35b1a9e14ff4824ad"
+  },
+  "finalPixelVerification": "All three final-aggregate source PNGs, report SHA256 entries and checked-in copies are byte-identical to the previously viewed focused screenshots. No image replacement or additional pixel review was necessary; the original viewing scope remains valid."
+}

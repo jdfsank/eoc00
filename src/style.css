@@ -142,3 +142,62 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .planning-opportunity .opportunity-status{color:var(--gold)}
 .opportunity-boundary{border-top:1px solid var(--line);margin-top:.75rem;padding-top:.35rem}
 .opportunity-boundary>summary{padding:.4rem 0;min-height:48px;cursor:pointer;line-height:1.6}
+
+/* Round 23: read the consequence before choosing how quickly to leave it.
+   These rules are confined to the journal; native 200% root typography stays intact. */
+.playback-page{min-width:0}
+.playback-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin:8px 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.playback-heading h1{font-size:1.5rem;line-height:1.4;margin:0;letter-spacing:.02em}
+.playback-heading p{margin:0;color:var(--muted);font-size:.875rem}
+.playback-latest{position:relative;min-width:0;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);padding:16px;margin:16px 0 20px}
+.playback-latest::before{content:"";display:block;width:16px;height:16px;box-sizing:border-box;border:2px solid var(--gold);margin:0 0 10px;transform:rotate(45deg)}
+.playback-latest[data-journal-kind="outcome"]::before,.playback-latest[data-journal-kind="ending"]::before{border-radius:50%;transform:none;background:var(--gold)}
+.playback-latest[data-journal-kind="failure"]::before,.playback-latest[data-journal-kind="cancelled"]::before{transform:none;border-style:dashed;background:transparent}
+.playback-latest[data-journal-kind="maintenance"]::before,.playback-latest[data-journal-kind="crisis"]::before{transform:none;border-width:2px 2px 6px;background:transparent}
+.playback-latest[data-journal-kind="warning"]::before{width:18px;height:16px;border:0;transform:none;background:var(--gold);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.playback-latest-meta{display:flex;flex-wrap:wrap;gap:4px 10px;margin:0 0 8px;color:var(--gold);font-size:.8125rem;line-height:1.65}
+.playback-latest h2,.playback-latest-title{font-size:1.125rem;line-height:1.55;margin:0 0 10px;overflow-wrap:anywhere}
+.playback-latest p{line-height:1.8;overflow-wrap:anywhere}
+.playback-latest-summary{margin:0;font-size:.9375rem;color:var(--paper)}
+.playback-latest-actions{display:flex;flex-wrap:wrap;gap:4px 12px;margin:10px 0 0}
+.playback-latest-actions>button{max-width:100%;text-align:left;white-space:normal}
+.playback-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}
+.playback-controls>button{min-width:0;width:100%;margin:0;white-space:normal}
+.playback-controls>[data-action="next-record"],.playback-controls>[data-action="skip"]{grid-column:1 / -1}
+.playback-controls>[data-action="skip"]{border-style:dashed;background:transparent;color:var(--muted);font-weight:400}
+.playback-controls>p,.playback-controls>.muted{grid-column:1 / -1;margin:0}
+.playback-page>p.muted{margin:10px 0;font-size:.8125rem;line-height:1.7}
+.playback-records{min-width:0;margin:20px 0}
+.playback-records>.history-list{margin:14px 0}
+.playback-page details[data-playback-current],.playback-page details[data-playback-past]{margin:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:8px 0}
+.playback-page details[data-playback-current]>summary,.playback-page details[data-playback-past]>summary{padding:10px 0;min-height:48px;line-height:1.7;color:var(--paper);cursor:pointer;overflow-wrap:anywhere}
+.review-turns{border-top:1px solid var(--line);margin:22px 0;padding-top:18px}
+.review-turns>h2{font-size:1.125rem;line-height:1.5;margin:0 0 12px}
+.review-turns h3{font-size:1rem;line-height:1.6;margin:4px 0}
+.review-turns p{font-size:.875rem;line-height:1.8;margin:6px 0}
+.review-turns .text-button{max-width:100%;text-align:left;white-space:normal}
+.playback-page :is(button,summary,a):focus-visible,.review-turns :is(button,summary,a):focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(max-width:340px){.playback-latest{padding:14px}.playback-heading{gap:6px 10px}.playback-heading h1{font-size:1.375rem}}
+.large-text .playback-controls{grid-template-columns:minmax(0,1fr)}
+.large-text .playback-controls>[data-action="next-record"],.large-text .playback-controls>[data-action="skip"]{grid-column:auto}
+.large-text .playback-latest-actions{flex-direction:column;align-items:stretch}
+.large-text .playback-latest-actions>button{width:100%}
+.playback-feature{margin:16px 0}
+.playback-feature>.journal-turn{padding:18px 0;border-top:1px solid var(--line)}
+.journal-record-text{font-size:.9375rem;line-height:1.85;color:var(--paper);overflow-wrap:anywhere}
+.playback-page .playback-latest-summary,.review-turns .playback-latest-summary{color:var(--muted)}
+.playback-state{border-left:2px solid var(--gold);padding-left:12px;font-size:.875rem;line-height:1.75}
+.playback-retained{font-size:.875rem;color:var(--gold);line-height:1.75}
+.playback-contract-note{font-size:.8125rem;color:var(--muted);line-height:1.75}
+.playback-skip{margin:22px 0;padding-top:14px;border-top:1px solid var(--line)}
+.playback-skip>[data-action="skip"]{border-style:dashed;color:var(--muted);background:transparent;font-weight:400}
+.playback-skip p{line-height:1.75}
+.review-turns>.journal-turn{position:relative;border-left:2px solid var(--line);margin:0;padding:0 0 24px 16px;min-width:0}
+.review-turns>.journal-turn::before{content:"";position:absolute;left:-5px;top:.5em;width:8px;height:8px;background:var(--gold);border:2px solid var(--bg);box-sizing:border-box}
+.review-turns .journal-record-text{font-size:.9375rem;line-height:1.85;color:var(--paper)}
+
+.playback-page .journal-meaning,.review-turns .journal-meaning{margin:14px 0 6px;color:var(--muted)}
+.playback-page .journal-meaning>summary,.review-turns .journal-meaning>summary{min-height:48px;padding:8px 0;cursor:pointer;line-height:1.7;overflow-wrap:anywhere}
+.playback-page .journal-meaning[open]>summary,.review-turns .journal-meaning[open]>summary{color:var(--paper)}
+.review-page>h1{font-size:1.5rem;line-height:1.4;margin:8px 0 12px}
+.review-page>.lead{margin:10px 0 18px}
