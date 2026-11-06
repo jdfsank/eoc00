@@ -70,7 +70,16 @@ try{
     // disclosure using only keyboard events. The current scene now precedes
     // this optional archive rather than putting a source before the heading.
     await click('home');await click('avg',false);
-    check(`${width}px200% ${name}: keyboard traversal starts from the AVG heading`,await page.locator('main h1').evaluate(el=>document.activeElement===el));
+    // Round24 starts at the visible reading entry, not the below-art story
+    // heading. Keep the following real Tab/Enter path and all source/ring checks.
+    const entry=await page.evaluate(()=>{
+     const matches=[...document.querySelectorAll('.scene-reading-nav [data-action="scene-section"][data-section="choices"]')],target=matches[0],r=target?.getBoundingClientRect();
+     return {count:matches.length,focused:document.activeElement===target,scrollY,
+      visible:!!r&&r.width>=44&&r.height>=44&&r.left>=0&&r.top>=0&&r.right<=innerWidth&&r.bottom<=innerHeight,
+      unobscured:!!r&&[[.15,.25],[.5,.5],[.85,.75]].every(([x,y])=>{const hit=document.elementFromPoint(r.left+r.width*x,r.top+r.height*y);return hit===target||!!hit&&target.contains(hit);})};
+    });
+    (report.sceneEntries??=[]).push({width,name,...entry});
+    check(`${width}px200% ${name}: keyboard traversal starts from the visible scene entry`,entry.count===1&&entry.focused&&entry.scrollY===0&&entry.visible&&entry.unobscured);
     const archive=page.locator('details.planning-history'),summary=archive.locator(':scope > summary');
     for(let tabs=0;tabs<60&&!await summary.evaluate(el=>document.activeElement===el);tabs++)await page.keyboard.press('Tab');
     await page.keyboard.press('Enter');

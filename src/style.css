@@ -201,3 +201,44 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .playback-page .journal-meaning[open]>summary,.review-turns .journal-meaning[open]>summary{color:var(--paper)}
 .review-page>h1{font-size:1.5rem;line-height:1.4;margin:8px 0 12px}
 .review-page>.lead{margin:10px 0 18px}
+
+/* Round 24: skip between complete scene, choices and material uses without
+   hiding prose or risks. All navigation stays in normal document flow. */
+.scene-planning-page>.back{margin-bottom:8px}
+.scene-planning-page>.reading-meta{margin:8px 0 12px}
+.scene-reading-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 20px;min-width:0}
+.scene-reading-nav>button{min-height:48px;padding:10px 12px;margin:0;font-size:.875rem;line-height:1.5;white-space:normal;overflow-wrap:anywhere;text-align:left;border-color:#829a7e}
+.scene-reading-nav>button:first-child{border-color:var(--gold);background:var(--gold);color:#18323a}
+.scene-reading-nav>p,.scene-reading-nav>small{grid-column:1/-1;display:block;margin:0;color:var(--muted);font-size:.8125rem;line-height:1.65;overflow-wrap:anywhere}
+[data-scene-section]{scroll-margin-top:12px;overflow-wrap:anywhere}
+[data-scene-section]:focus{outline:3px solid var(--gold);outline-offset:4px}
+.scene-planning-page .section-heading{flex-wrap:wrap;align-items:flex-start}
+.scene-planning-page .section-heading>h2{min-width:0;flex:1 1 12rem;font-size:1.125rem;line-height:1.5;margin:0}
+.scene-planning-page .section-heading>[data-action="scene-section"]{flex:0 1 auto;min-height:48px;margin:0;padding:8px 4px;white-space:normal;overflow-wrap:anywhere}
+.scene-planning-page .section-heading>.tag{flex:none}
+
+/* A material shows only newly closed other-place routes. Words, labels and
+   borders carry the distinction; no hidden risk text or color-only warning. */
+.cross-location-cost{min-width:0;border:1px solid #ad8975;border-left:3px solid #d3a286;padding:.8rem;margin:.8rem 0 1rem;background:#dba07809;overflow-wrap:anywhere}
+.cross-location-cost h3{font-size:1rem;line-height:1.5;margin:0 0 .55rem;color:#f0d2bb}
+.cross-location-cost h4{font-size:.9375rem;line-height:1.5;margin:0 0 .4rem;color:#e8d8bc}
+.cross-location-cost p,.cross-location-cost li{font-size:.875rem;line-height:1.7;color:#d7d9c5;margin:.4rem 0}
+.cross-location-cost ul{margin:.4rem 0;padding-left:1.1rem}
+.cross-location-loss{min-width:0;margin:.75rem 0;padding:.65rem 0 0;border-top:1px solid #a17b6666}
+.cross-location-loss strong{font-weight:600;color:#f0d2bb}
+.cross-location-loss li>span{display:block;margin-top:.15rem;color:#c5d1bf}
+.cross-location-loss [data-action],.cross-location-loss [data-cross-location-action]{overflow-wrap:anywhere}
+.cross-location-cost .cross-location-retained{border-left:2px solid #86aa98;padding-left:.6rem;color:#c9dfcc}
+.cross-location-cost>small,.cross-location-cost>.tiny,.cross-location-cost>.cross-location-boundary{display:block;font-size:.8125rem;line-height:1.7;color:#b8cabe;margin-top:.7rem}
+.choice-card .choice-card-tradeoff{display:grid;gap:.5rem;min-width:0;font-size:.9375rem;line-height:1.75}
+.choice-card-tradeoff>span{display:block;overflow-wrap:anywhere}
+.choice-card-tradeoff>span+span{border-top:1px solid #6f8a7d66;padding-top:.5rem;color:#edc7af}
+.choice-card-tradeoff strong{display:block;font-size:.875rem;line-height:1.6;font-weight:600;color:inherit;margin-bottom:.15rem}
+.large-text .scene-reading-nav{grid-template-columns:1fr}
+.large-text .scene-reading-nav>button{padding:8px 10px}
+.large-text .scene-planning-page .section-heading>h2{flex-basis:100%}
+.large-text .scene-planning-page .section-heading>[data-action="scene-section"]{text-align:left}
+.large-text .cross-location-cost{padding:.5rem}
+@media(max-width:380px){.scene-reading-nav{gap:8px}.cross-location-cost{padding:.65rem}.large-text .cross-location-cost{padding:.5rem}}
+.choice-card-scope-line{display:block;overflow-wrap:anywhere}
+.choice-card-scope-line+.choice-card-scope-line{margin-top:.5rem}

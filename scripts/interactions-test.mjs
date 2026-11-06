@@ -103,7 +103,22 @@ try {
     const before = await world();
     await page.locator('[data-primary-action]').click();
     check(`${width}x${height}: primary opens legal AVG`, await page.evaluate(() => window.afterwave.ui.screen === 'avg'));
-    check(`${width}x${height}: screen transition focuses its heading`, await page.evaluate(() => document.activeElement === document.querySelector('main h1')));
+    // Round24 deliberately focuses the visible scene navigation rather than
+    // a narrative heading below the artwork. Require a more usable destination,
+    // not just a different element type or an element somewhere in the DOM.
+    const sceneEntry = await page.evaluate(() => {
+      const matches = [...document.querySelectorAll('.scene-reading-nav [data-action="scene-section"][data-section="choices"]')];
+      const target = matches[0], r = target?.getBoundingClientRect();
+      const visible = !!r && r.width >= 44 && r.height >= 44 && r.left >= 0 && r.top >= 0 && r.right <= innerWidth && r.bottom <= innerHeight;
+      const unobscured = !!r && [[.15,.25],[.5,.5],[.85,.75]].every(([x,y]) => {
+        const hit = document.elementFromPoint(r.left+r.width*x,r.top+r.height*y);
+        return hit === target || !!hit && target.contains(hit);
+      });
+      return {count:matches.length,focused:document.activeElement===target,visible,unobscured,scrollY,
+        bounds:r&&{x:r.x,y:r.y,width:r.width,height:r.height,bottom:r.bottom,right:r.right}};
+    });
+    (report.sceneEntries ??= []).push({width,height,...sceneEntry});
+    check(`${width}x${height}: screen transition focuses one visible unobscured scene entry`, sceneEntry.count===1 && sceneEntry.focused && sceneEntry.visible && sceneEntry.unobscured && sceneEntry.scrollY===0, sceneEntry);
     check(`${width}x${height}: opening AVG does not mutate world`, before === await world());
   }
   await newPage(320, 568);

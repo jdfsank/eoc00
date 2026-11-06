@@ -1,0 +1,172 @@
+{
+  "stage": "Final fourth full aggregate: 46 suites and 11920 checks passed",
+  "startedAt": "2026-11-06T14:45:30.858Z",
+  "completedAt": "2026-11-06T14:46:15.686Z",
+  "browser": "138.0.7204.0",
+  "sourceBefore": "a9071ab725180c658adeda9e80bda4da89f617df0352f260bd90a054a06c902a",
+  "sourceAfter": "a9071ab725180c658adeda9e80bda4da89f617df0352f260bd90a054a06c902a",
+  "focusedReportSha256": "cc5e08efe8d71c19efe675d6b3fd337542becab3356c2c0522e0bf4e144fa613",
+  "selected": [
+    {
+      "path": "baseline-return-320-200.png",
+      "source": "../round24-visual-audit/y30-linche-e4-320-200-preview-return.png",
+      "description": "Baseline: preview return resets to top; original action is at y6919",
+      "sha256": "4fcfbc18a6fd0b128c7bfa409ed26783969e2694655ba4fce0405a024a97ef0e",
+      "pixelReviewed": true,
+      "focusedSha256": "4fcfbc18a6fd0b128c7bfa409ed26783969e2694655ba4fce0405a024a97ef0e",
+      "changedSinceFocused": false,
+      "reviewStatus": "Byte-identical to previously reviewed representative",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "baseline-relocation-390.png",
+      "source": "../round24-visual-audit/y20-protagonist-d4-relocate-card-390.png",
+      "description": "Baseline: relocation card omits the shutdown scope",
+      "sha256": "967f8df759c9f19862a1385879f22b4e80c895e33797d382bc9a00462344ff0e",
+      "pixelReviewed": true,
+      "focusedSha256": "967f8df759c9f19862a1385879f22b4e80c895e33797d382bc9a00462344ff0e",
+      "changedSinceFocused": false,
+      "reviewStatus": "Byte-identical to previously reviewed representative",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-opening-390.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y0-390-100-top.png",
+      "description": "Current: both free reading entries precede full scene, normal text",
+      "sha256": "3b218d995f37f0967e725fb404bbfe51ea122ef8a7ec7346c8507fb8570405c1",
+      "pixelReviewed": true,
+      "focusedSha256": "3b218d995f37f0967e725fb404bbfe51ea122ef8a7ec7346c8507fb8570405c1",
+      "changedSinceFocused": false,
+      "reviewStatus": "Byte-identical to previously reviewed representative",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-entry-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y30-320-200-top.png",
+      "description": "Current: both navigation buttons fully inside native 320 by 568 viewport",
+      "sha256": "df55c70885730f7165cfd3239cea1a0e277fe4aa3a30ff38b1b05a9c7f638786",
+      "pixelReviewed": true,
+      "focusedSha256": "82ce5ccb96219d8ffb4618a0f995b3fe674844d195d8613d7a08147bcaa48f11",
+      "changedSinceFocused": true,
+      "reviewStatus": "Final aggregate source pixels reopened and visually reviewed before replacement",
+      "focusedArchivePath": "focused-selected/current-entry-320-200.png",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-return-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y30-320-200-full-reading-returned.png",
+      "description": "Current: return to the exact long card with native keyboard focus ring",
+      "sha256": "b6aecf71e85fef490e7bd80ef80bf8e8859e58118aa2335c42d45214d692e274",
+      "pixelReviewed": true,
+      "focusedSha256": "bdf34ff439d3255bde35bcae0fd1aedfad9fac85fe30feb7215a4f0df6ad97a5",
+      "changedSinceFocused": true,
+      "reviewStatus": "Final aggregate source pixels reopened and visually reviewed before replacement",
+      "focusedArchivePath": "focused-selected/current-return-320-200.png",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-anchor-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y0-320-200-anchor-choices.png",
+      "description": "Current: keyboard anchor targets the named choices heading",
+      "sha256": "264389b79e3292cb49b4c9cc0412f9730e48264895321678c213ebe058d4a383",
+      "pixelReviewed": true,
+      "focusedSha256": "264389b79e3292cb49b4c9cc0412f9730e48264895321678c213ebe058d4a383",
+      "changedSinceFocused": false,
+      "reviewStatus": "Byte-identical to previously reviewed representative",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-cross-place-390.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-390-100-cross-place-1.png",
+      "description": "Current: B4 and F6 newly lost routes, retained basic veto, and actor boundary",
+      "sha256": "254b67b26de7a683592b16388e913203fcad53f8fe2da8a6e60fa6f006ea4eef",
+      "pixelReviewed": true,
+      "focusedSha256": "254b67b26de7a683592b16388e913203fcad53f8fe2da8a6e60fa6f006ea4eef",
+      "changedSinceFocused": false,
+      "reviewStatus": "Byte-identical to previously reviewed representative",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-cross-place-start-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-320-200-cross-place-1.png",
+      "description": "Current: native large-text cross-place warning start, not a full-card screenshot",
+      "sha256": "18a8a3a371c3d31c686cdb419f217b6740ad4d391369d8ff28e2434148eb0727",
+      "pixelReviewed": true,
+      "focusedSha256": "18a8a3a371c3d31c686cdb419f217b6740ad4d391369d8ff28e2434148eb0727",
+      "changedSinceFocused": false,
+      "reviewStatus": "Byte-identical to previously reviewed representative",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-cross-place-end-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-320-200-cross-place-5.png",
+      "description": "Current: continuous last warning segment retains actor and cost boundary before purchase",
+      "sha256": "52fe32245ba8f041fd4f8c308da8af5ad37104f528eb0a6a7d1f5d498d3faf2a",
+      "pixelReviewed": true,
+      "focusedSha256": "52fe32245ba8f041fd4f8c308da8af5ad37104f528eb0a6a7d1f5d498d3faf2a",
+      "changedSinceFocused": false,
+      "reviewStatus": "Byte-identical to previously reviewed representative",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-relocation-390.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-390-100-relocation-1.png",
+      "description": "Current: complete benefit, consequence and real destination/shutdown scope in default card",
+      "sha256": "59ff7b24574f981ce9f92d2f1ca97c8aec949eaa0f3c977f066291adacf144c1",
+      "pixelReviewed": true,
+      "focusedSha256": "e8ae567066f717cd44b9ed7c606f6c77ef78d918c5ff3ae42e43468fb09b8b86",
+      "changedSinceFocused": true,
+      "reviewStatus": "Final aggregate source pixels reopened and visually reviewed before replacement",
+      "focusedArchivePath": "focused-selected/current-relocation-390.png",
+      "finalSourceHashVerified": true
+    },
+    {
+      "path": "current-relocation-scope-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-320-200-relocation-2.png",
+      "description": "Current: second continuous large-text relocation segment, explicit shutdown scope",
+      "sha256": "044b3e0fff869dd0fc2ddd1d6310a4fa968fa13bbb24cd10a4117639aaf656e0",
+      "pixelReviewed": true,
+      "focusedSha256": "e9c0cc6218515061938bf159b7d5aa2eb19f97c1d6ebbaedd60d1fce1f3b3167",
+      "changedSinceFocused": true,
+      "reviewStatus": "Final aggregate source pixels reopened and visually reviewed before replacement",
+      "focusedArchivePath": "focused-selected/current-relocation-scope-320-200.png",
+      "finalSourceHashVerified": true
+    }
+  ],
+  "allScreenshotsVerified": 122,
+  "allScreenshotsMatchReportedHash": true,
+  "notCertification": "Not physical-device, screen-reader, or human-playtest certification",
+  "visualNotes": [
+    "Genuine legacy import screenshots contain the existing transient import toast. They are retained in the complete run artifacts, not used as clean first-screen examples in the selected gallery."
+  ],
+  "reportPath": "../../round24-investigation-visuals-results.json",
+  "reportSha256": "5969da071e84f2f54f6a396fd0196c87271a4cbadc85caf6622ac38382eddc82",
+  "script": {
+    "path": "scripts/round24-investigation-visuals-test.mjs",
+    "sha256": "8967f0e85e48929db6c4943dfb631e11227dd36e1e1b3d295f7c6bbd566eac54",
+    "matchesFrozenAggregate": true
+  },
+  "aggregate": {
+    "attempt": 4,
+    "suites": 46,
+    "checks": 11920,
+    "exit": 0,
+    "productionFiles": 330,
+    "productionHash": "c773ba836f03394882a7d30ed803779d31c086b4570795d47fb45692a9859132"
+  },
+  "focusedRun": {
+    "startedAt": "2026-11-06T12:58:54.921Z",
+    "completedAt": "2026-11-06T13:00:13.706Z",
+    "reportPath": "focused-results.json",
+    "reportSha256": "cc5e08efe8d71c19efe675d6b3fd337542becab3356c2c0522e0bf4e144fa613",
+    "manifestPath": "focused-manifest.json",
+    "changedSelectedPixelsPreservedIn": "focused-selected/"
+  },
+  "pixelReview": {
+    "selectedCount": 11,
+    "changedFinalImagesReopened": 4,
+    "unchangedSelectedByByteComparison": 7,
+    "all122ImagesVisuallyReviewed": false
+  },
+  "updatedAt": "2026-11-06T14:48:55.874Z"
+}

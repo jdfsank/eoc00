@@ -1,0 +1,105 @@
+{
+  "stage": "Frozen focused visual run; full aggregate validation pending",
+  "startedAt": "2026-11-06T12:58:54.921Z",
+  "completedAt": "2026-11-06T13:00:13.706Z",
+  "browser": "138.0.7204.0",
+  "sourceBefore": "a9071ab725180c658adeda9e80bda4da89f617df0352f260bd90a054a06c902a",
+  "sourceAfter": "a9071ab725180c658adeda9e80bda4da89f617df0352f260bd90a054a06c902a",
+  "focusedReportSha256": "cc5e08efe8d71c19efe675d6b3fd337542becab3356c2c0522e0bf4e144fa613",
+  "selected": [
+    {
+      "path": "baseline-return-320-200.png",
+      "source": "../round24-visual-audit/y30-linche-e4-320-200-preview-return.png",
+      "description": "Baseline: preview return resets to top; original action is at y6919",
+      "sha256": "4fcfbc18a6fd0b128c7bfa409ed26783969e2694655ba4fce0405a024a97ef0e",
+      "pixelReviewed": true,
+      "focusedArchivePath": "baseline-return-320-200.png"
+    },
+    {
+      "path": "baseline-relocation-390.png",
+      "source": "../round24-visual-audit/y20-protagonist-d4-relocate-card-390.png",
+      "description": "Baseline: relocation card omits the shutdown scope",
+      "sha256": "967f8df759c9f19862a1385879f22b4e80c895e33797d382bc9a00462344ff0e",
+      "pixelReviewed": true,
+      "focusedArchivePath": "baseline-relocation-390.png"
+    },
+    {
+      "path": "current-opening-390.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y0-390-100-top.png",
+      "description": "Current: both free reading entries precede full scene, normal text",
+      "sha256": "3b218d995f37f0967e725fb404bbfe51ea122ef8a7ec7346c8507fb8570405c1",
+      "pixelReviewed": true,
+      "focusedArchivePath": "current-opening-390.png"
+    },
+    {
+      "path": "current-entry-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y30-320-200-top.png",
+      "description": "Current: both navigation buttons fully inside native 320 by 568 viewport",
+      "sha256": "82ce5ccb96219d8ffb4618a0f995b3fe674844d195d8613d7a08147bcaa48f11",
+      "pixelReviewed": true,
+      "focusedArchivePath": "focused-selected/current-entry-320-200.png"
+    },
+    {
+      "path": "current-return-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y30-320-200-full-reading-returned.png",
+      "description": "Current: return to the exact long card with native keyboard focus ring",
+      "sha256": "bdf34ff439d3255bde35bcae0fd1aedfad9fac85fe30feb7215a4f0df6ad97a5",
+      "pixelReviewed": true,
+      "focusedArchivePath": "focused-selected/current-return-320-200.png"
+    },
+    {
+      "path": "current-anchor-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y0-320-200-anchor-choices.png",
+      "description": "Current: keyboard anchor targets the named choices heading",
+      "sha256": "264389b79e3292cb49b4c9cc0412f9730e48264895321678c213ebe058d4a383",
+      "pixelReviewed": true,
+      "focusedArchivePath": "current-anchor-320-200.png"
+    },
+    {
+      "path": "current-cross-place-390.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-390-100-cross-place-1.png",
+      "description": "Current: B4 and F6 newly lost routes, retained basic veto, and actor boundary",
+      "sha256": "254b67b26de7a683592b16388e913203fcad53f8fe2da8a6e60fa6f006ea4eef",
+      "pixelReviewed": true,
+      "focusedArchivePath": "current-cross-place-390.png"
+    },
+    {
+      "path": "current-cross-place-start-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-320-200-cross-place-1.png",
+      "description": "Current: native large-text cross-place warning start, not a full-card screenshot",
+      "sha256": "18a8a3a371c3d31c686cdb419f217b6740ad4d391369d8ff28e2434148eb0727",
+      "pixelReviewed": true,
+      "focusedArchivePath": "current-cross-place-start-320-200.png"
+    },
+    {
+      "path": "current-cross-place-end-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-320-200-cross-place-5.png",
+      "description": "Current: continuous last warning segment retains actor and cost boundary before purchase",
+      "sha256": "52fe32245ba8f041fd4f8c308da8af5ad37104f528eb0a6a7d1f5d498d3faf2a",
+      "pixelReviewed": true,
+      "focusedArchivePath": "current-cross-place-end-320-200.png"
+    },
+    {
+      "path": "current-relocation-390.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-390-100-relocation-1.png",
+      "description": "Current: complete benefit, consequence and real destination/shutdown scope in default card",
+      "sha256": "e8ae567066f717cd44b9ed7c606f6c77ef78d918c5ff3ae42e43468fb09b8b86",
+      "pixelReviewed": true,
+      "focusedArchivePath": "focused-selected/current-relocation-390.png"
+    },
+    {
+      "path": "current-relocation-scope-320-200.png",
+      "source": "playtest-output/round24-investigation-visuals/screenshots/y20-320-200-relocation-2.png",
+      "description": "Current: second continuous large-text relocation segment, explicit shutdown scope",
+      "sha256": "e9c0cc6218515061938bf159b7d5aa2eb19f97c1d6ebbaedd60d1fce1f3b3167",
+      "pixelReviewed": true,
+      "focusedArchivePath": "focused-selected/current-relocation-scope-320-200.png"
+    }
+  ],
+  "allScreenshotsVerified": 122,
+  "allScreenshotsMatchReportedHash": true,
+  "notCertification": "Not physical-device, screen-reader, or human-playtest certification",
+  "visualNotes": [
+    "Genuine legacy import screenshots contain the existing transient import toast. They are retained in the complete run artifacts, not used as clean first-screen examples in the selected gallery."
+  ]
+}
