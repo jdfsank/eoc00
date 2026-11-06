@@ -1,0 +1,92 @@
+{
+  "run": "aggregate-attempt-3-suite-47",
+  "aggregateExit": 0,
+  "aggregateSuites": 48,
+  "aggregateChecks": 12782,
+  "suiteChecks": 371,
+  "startedAt": "2026-11-06T16:56:23.497Z",
+  "completedAt": "2026-11-06T16:57:15.426Z",
+  "sourceHash": "595c509f70aeabe700b83710a0a88620803b7491b6963c64064900ad15a6de2f",
+  "reportSha256": "899dcf823949f4906e8976dab8f5f260de1d04423b6d5982c4b5bf84357dbb10",
+  "focusedRunPreserved": {
+    "startedAt": "2026-11-06T15:17:10.070Z",
+    "completedAt": "2026-11-06T15:18:53.580Z",
+    "sourceHash": "595c509f70aeabe700b83710a0a88620803b7491b6963c64064900ad15a6de2f",
+    "images": [
+      {
+        "path": "docs/screenshots/round-25-qa/world-320-text100-initial-entry.png",
+        "sha256": "0908068e707dcc787bb41261154b3fc490c505c9c8f64faad1a68e803446d847",
+        "bytes": 67715
+      },
+      {
+        "path": "docs/screenshots/round-25-qa/world-320-text200-initial-entry.png",
+        "sha256": "ddc16e7c7041ed8ca73db9d529c4a59639cedd8ce8510154a0822c058d4c82e0",
+        "bytes": 56950
+      },
+      {
+        "path": "docs/screenshots/round-25-qa/world-320-text200-focused-role.png",
+        "sha256": "6ce8475829d51ca5c978f3312391c4e8cc1b390df3acfd71840829c7c2dfdbcb",
+        "bytes": 48784
+      },
+      {
+        "path": "docs/screenshots/round-25-qa/world-390-text200-initial-entry.png",
+        "sha256": "b21a67132bfc92fe190f34fc4f6b352d272496ea16929095a3b3c8660a6cd309",
+        "bytes": 87258
+      },
+      {
+        "path": "docs/screenshots/round-25-qa/world-390-text100-b4-context.png",
+        "sha256": "61d2b670d55ac628280098af3f55cfde41948d76620d4af9c3e980a4ef9a40e4",
+        "bytes": 187297
+      },
+      {
+        "path": "docs/screenshots/round-25-qa/world-320-text100-returned-card.png",
+        "sha256": "f23e57dd23d22892fcb2da6854ba8cf63efbfad7ef519027b107852b7feca357",
+        "bytes": 69056
+      }
+    ]
+  },
+  "images": [
+    {
+      "path": "docs/screenshots/round-25-qa/world-320-text100-initial-entry.png",
+      "sha256": "0908068e707dcc787bb41261154b3fc490c505c9c8f64faad1a68e803446d847",
+      "bytes": 67715,
+      "changedSinceFocused": false,
+      "pixelReviewed": true
+    },
+    {
+      "path": "docs/screenshots/round-25-qa/world-320-text200-initial-entry.png",
+      "sha256": "ddc16e7c7041ed8ca73db9d529c4a59639cedd8ce8510154a0822c058d4c82e0",
+      "bytes": 56950,
+      "changedSinceFocused": false,
+      "pixelReviewed": true
+    },
+    {
+      "path": "docs/screenshots/round-25-qa/world-320-text200-focused-role.png",
+      "sha256": "6ce8475829d51ca5c978f3312391c4e8cc1b390df3acfd71840829c7c2dfdbcb",
+      "bytes": 48784,
+      "changedSinceFocused": false,
+      "pixelReviewed": true
+    },
+    {
+      "path": "docs/screenshots/round-25-qa/world-390-text200-initial-entry.png",
+      "sha256": "b21a67132bfc92fe190f34fc4f6b352d272496ea16929095a3b3c8660a6cd309",
+      "bytes": 87258,
+      "changedSinceFocused": false,
+      "pixelReviewed": true
+    },
+    {
+      "path": "docs/screenshots/round-25-qa/world-390-text100-b4-context.png",
+      "sha256": "61d2b670d55ac628280098af3f55cfde41948d76620d4af9c3e980a4ef9a40e4",
+      "bytes": 187297,
+      "changedSinceFocused": false,
+      "pixelReviewed": true
+    },
+    {
+      "path": "docs/screenshots/round-25-qa/world-320-text100-returned-card.png",
+      "sha256": "7b7c0508a3228154976af4aedaac5aa1cf8fc4767e9dea47c68874139165aeac",
+      "bytes": 69227,
+      "changedSinceFocused": true,
+      "pixelReviewed": true
+    }
+  ]
+}

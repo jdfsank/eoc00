@@ -10,7 +10,7 @@ import {institutionVisual} from '../src/board-visuals.js';
 import {advanceYear,validateState,getActions} from '../src/simulation.js';
 import {localAt20,localAt30,legacyLocalAt30,submit,lock,decade} from '../tests/helpers/local-crisis.js';
 const out='playtest-output';await fs.mkdir(out,{recursive:true});
-const report={checks:[],errors:[],scope:'Real year23 local settlement and independent current D5 services. Grayscale archive markers describe recorded loss, recorded zero and unknown old details; no population, injury or building damage is inferred. Closed-service and 0.0001 precision cases are legal display boundaries, not newly added actions or claimed natural outcomes. Only public AVG entries are exercised; world and regional archives cover every affected place. Four-region source links retain the actual shared record and its unmodified narrative. Chromium390/320 and200% text; not physical-device certification.'};
+const report={checks:[],errors:[],rasterization:{requestedFlag:'--disable-gpu-rasterization',scope:'This suite only; software rasterization for strict physical-scene PNG comparisons. Production styles and assets are unchanged.'},scope:'Real year23 local settlement and independent current D5 services. Grayscale archive markers describe recorded loss, recorded zero and unknown old details; no population, injury or building damage is inferred. Closed-service and 0.0001 precision cases are legal display boundaries, not newly added actions or claimed natural outcomes. Only public AVG entries are exercised; world and regional archives cover every affected place. Four-region source links retain the actual shared record and its unmodified narrative. Chromium390/320 and200% text; not physical-device certification.'};
 const check=(name,ok)=>{report.checks.push({name,passed:!!ok});assert.ok(ok,name);};
 const before=localAt20(),y22=structuredClone(before);submit(y22);advanceYear(y22);advanceYear(y22);const y23=structuredClone(y22);advanceYear(y23);
 const loss=localAt30(),zero=localAt30({zero:true}),legacy=legacyLocalAt30(),missing=structuredClone(loss),partial=structuredClone(loss),closed=structuredClone(loss);
@@ -23,10 +23,16 @@ const server=await createServer({server:{host:'127.0.0.1',port:4205,strictPort:t
 const click=async (a,openHistory=true)=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);if(a==='avg'&&openHistory){const past=page.locator('details.planning-history');if(await past.count()&&!await past.evaluate(el=>el.open))await past.locator(':scope > summary').click();}};
 const panel=(cell='D5')=>page.locator(`.local-crisis-history[data-crisis-cell="${cell}"]`);
 async function show(state,bigText=false,cell='D5'){await page.evaluate(({state,bigText,cell})=>sessionStorage.setItem('afterwave.tally.fixture',JSON.stringify({state,ui:{screen:'world',selected:cell,actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText,cell});await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(130);}
-async function snap(name,selector='.local-crisis-history',mono=false){const target=page.locator(selector);if(mono)await target.evaluate(el=>el.style.filter='grayscale(1)');const data=await target.screenshot({path:`${out}/round10-d5-${name}${mono?'-mono':''}.png`});if(mono)await target.evaluate(el=>el.style.filter='');return data.toString('base64');}
+async function snap(name,selector='.local-crisis-history',mono=false){const target=page.locator(selector);if(selector==='.scene-art img'){
+ await target.evaluate(img=>img.decode());await page.evaluate(()=>document.fonts.ready);await page.evaluate(()=>scrollTo(0,0));
+ await page.waitForFunction(()=>{const img=document.querySelector('.scene-art img'),r=img?.getBoundingClientRect();return scrollY===0&&img?.complete&&img.naturalWidth>0&&r&&r.top>=0&&r.bottom<=innerHeight;});
+ const captureReady=await target.evaluate(async img=>{const before=img.getBoundingClientRect().toJSON();await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);const rect=img.getBoundingClientRect().toJSON();return {scrollY,complete:img.complete,naturalWidth:img.naturalWidth,src:img.getAttribute('src'),rect,stable:JSON.stringify(before)===JSON.stringify(rect),visible:rect.top>=0&&rect.bottom<=innerHeight&&rect.left>=0&&rect.right<=innerWidth};});
+ assert.ok(captureReady.scrollY===0&&captureReady.complete&&captureReady.naturalWidth>0&&captureReady.stable&&captureReady.visible,'Physical scene is decoded, visible and stable at the real page top');(report.captureReadiness??=[]).push({name,...captureReady});
+}
+if(mono)await target.evaluate(el=>el.style.filter='grayscale(1)');const data=await target.screenshot({path:`${out}/round10-d5-${name}${mono?'-mono':''}.png`});if(mono)await target.evaluate(el=>el.style.filter='');return data.toString('base64');}
 async function source(record){await panel().locator('[data-action="trace"]').click();await page.locator('.crisis-history').waitFor();check(`${record.status} source link opens the real year23 record`,await page.evaluate(()=>window.afterwave.ui.traceId)==='crisis-impact'&&(await page.locator('.crisis-recorded-impact').innerText()).includes('第23年'));}
 try{
- browser=await chromium.launch({executablePath:await cb.executablePath(),args:cb.args,headless:true});page=await browser.newPage({viewport:{width:390,height:844}});page.on('pageerror',e=>report.errors.push(e.message));page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
+ browser=await chromium.launch({executablePath:await cb.executablePath(),args:[...cb.args,'--disable-gpu-rasterization'],headless:true});page=await browser.newPage({viewport:{width:390,height:844}});page.on('pageerror',e=>report.errors.push(e.message));page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
  // Optional network latency uses the real asset requests, without changing
  // focus, scrolling, layout, or any assertion to accommodate the delay.
  const assetDelay=Number(process.env.AFTERWAVE_TALLY_ASSET_DELAY_MS??0);
@@ -52,6 +58,7 @@ try{
      check(`${width}px ${name}: saved local coefficient precision stays intact`,(await panel().innerText()).includes(history.detail[0]));
      await snap(`${width}-${name}-tally`);
      if(['loss','zero','legacy'].includes(name)){markers[name]=await snap(`${width}-${name}-tally`,'.local-crisis-history',true);physical[name]=await snap(`${width}-${name}-current-scene`,'.scene-art img');semantics[name]=await page.locator('.scene-art').evaluate(el=>JSON.stringify({file:el.querySelector('img').getAttribute('src'),alt:el.querySelector('img').alt,caption:el.querySelector('span').textContent}));}
+     if(['aid-only','closed'].includes(name))physical[name]=await snap(`${width}-${name}-current-scene`,'.scene-art img');
      if(width===390&&name==='loss')await page.screenshot({path:`${out}/round10-d5-390-loss-avg.png`,fullPage:true});
     }
    }
@@ -59,6 +66,7 @@ try{
   }
   check(`${width}px loss and zero keep identical current asset, alt and caption`,semantics.loss===semantics.zero);
   check(`${width}px loss and zero do not manufacture different current damage scenery`,physical.loss===physical.zero);
+  for(const different of ['aid-only','closed'])check(`${width}px real ${different} scene remains visually different from loss`,typeof physical.loss==='string'&&physical.loss.length>0&&typeof physical[different]==='string'&&physical[different].length>0&&physical.loss!==physical[different]);
   check(`${width}px loss, zero and unknown are distinguishable in grayscale`,new Set(Object.values(markers)).size===3);
   for(const [name,state]of [['loss',loss],['zero',zero],['legacy',legacy],['missing',missing]]){
    await show(state,true);await click('avg');check(`${width}px200% ${name}: no horizontal overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

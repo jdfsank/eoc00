@@ -242,3 +242,17 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 @media(max-width:380px){.scene-reading-nav{gap:8px}.cross-location-cost{padding:.65rem}.large-text .cross-location-cost{padding:.5rem}}
 .choice-card-scope-line{display:block;overflow-wrap:anywhere}
 .choice-card-scope-line+.choice-card-scope-line{margin-top:.5rem}
+
+/* Round 25: choose the person beside the world entry, before the intact map.
+   The existing context and primary CTA stay first, including at 200% text. */
+.world-entry .actor-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0 0;padding-top:14px;border-top:1px solid var(--line);min-width:0}
+.world-entry .actor-picker>button{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:4px;min-width:0;min-height:64px;padding:10px 12px;margin:0;text-align:left;font-size:1rem;line-height:1.5;white-space:normal;overflow-wrap:anywhere;border-color:#78988e;color:var(--paper);background:var(--panel)}
+.world-entry .actor-picker>button[aria-pressed="true"]{border-color:var(--gold);background:#294a47;box-shadow:inset 3px 0 0 var(--gold)}
+.world-actor-name{display:block;font-weight:600;color:inherit;overflow-wrap:anywhere}
+.world-entry .actor-picker>button[aria-pressed="true"] .world-actor-name{color:var(--gold)}
+.world-actor-status{display:block;font-size:.875rem;line-height:1.6;color:#c4d4c9;overflow-wrap:anywhere}
+.world-planning-status{margin:12px 0 0;padding:0;line-height:1.7;font-size:.875rem;color:#c4d4c9;overflow-wrap:anywhere}
+.world-entry [data-action="actor"]:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.large-text .world-entry .actor-picker{grid-template-columns:1fr}
+.large-text .world-entry .actor-picker>button{padding:10px 12px}
+@media(max-width:350px){.world-entry .actor-picker{gap:8px}.world-entry .actor-picker>button{padding:10px 8px}}

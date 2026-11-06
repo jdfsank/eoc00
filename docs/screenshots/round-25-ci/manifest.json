@@ -1,0 +1,188 @@
+{
+  "scope": "Unmodified PNG evidence and exact diagnostic report summaries; no claim of universal determinism. Final integrated normal and450ms checks each388/388.",
+  "ci": {
+    "commit": "6f84bb067f325cd7375ef209be7efb624d9bcde3",
+    "run": "42237967024",
+    "artifact": "13518986554",
+    "artifact_sha256": "657451b6d58744219c0667723d1cd5f4cdc1c6f08808711e6e04a2af725104f7"
+  },
+  "images": [
+    {
+      "file": "ci-loss.png",
+      "sha256": "2d92575679b84983282b392617f087fa50c138c2552c4c82aea2e2f4692e8136"
+    },
+    {
+      "file": "ci-zero.png",
+      "sha256": "0ef9d339288e6d6c15aa925070c29d536bdbeb6529c33aaa9be8ce097cd40639"
+    },
+    {
+      "file": "same-state-variant-loss.png",
+      "sha256": "2d92575679b84983282b392617f087fa50c138c2552c4c82aea2e2f4692e8136"
+    },
+    {
+      "file": "same-state-variant-zero.png",
+      "sha256": "0ef9d339288e6d6c15aa925070c29d536bdbeb6529c33aaa9be8ce097cd40639"
+    },
+    {
+      "file": "software-aid-only.png",
+      "sha256": "a8c17d926a327a0da2b22532781c7ecf71a3af84bc9461bb0b90588eacd5dee4"
+    },
+    {
+      "file": "software-closed.png",
+      "sha256": "3a0b5637029e5683168afb92d4f13ddf36153dbd4826dc9e9e209150e6f4e004"
+    },
+    {
+      "file": "software-loss.png",
+      "sha256": "65baf5c13b1f706bb8a481bd6aeb2369d94581d1e2e0c34367cf5eac9febfd16"
+    }
+  ],
+  "diagnostics": [
+    {
+      "source": "run1-results.json",
+      "sha256": "8bd0b445ebec30ce82802c106f5403d13321c1f3337d39681d40547de2dbad1b",
+      "checks": 202,
+      "passed_checks": 202,
+      "same_as_first": 0,
+      "repeat_count": 0,
+      "failure": null,
+      "aid_only_rejected": null,
+      "closed_rejected": null
+    },
+    {
+      "source": "run2-results.json",
+      "sha256": "5325c581b2649825c4bf6f890e05236873f108d5a61e91208a8fd128c9030304",
+      "checks": 202,
+      "passed_checks": 202,
+      "same_as_first": 0,
+      "repeat_count": 0,
+      "failure": null,
+      "aid_only_rejected": null,
+      "closed_rejected": null
+    },
+    {
+      "source": "repeat-results.json",
+      "sha256": "1db3cdb2e5e560553a6385fd7255e9c5204d61a3b6c60fa8a00f68660eb657f1",
+      "checks": 0,
+      "passed_checks": 0,
+      "same_as_first": 5,
+      "repeat_count": 8,
+      "failure": null,
+      "aid_only_rejected": true,
+      "closed_rejected": null
+    },
+    {
+      "source": "top-results.json",
+      "sha256": "047855cf0d38e6a7fc2efd6d58069d7525dc773faebf5390328ff77275b8616e",
+      "checks": 0,
+      "passed_checks": 0,
+      "same_as_first": 8,
+      "repeat_count": 8,
+      "failure": null,
+      "aid_only_rejected": true,
+      "closed_rejected": null
+    },
+    {
+      "source": "top24-delayed-results.json",
+      "sha256": "05ed268150e61769735df48ba1fce70d7d721d67655e3f57264f1bb1a3a80b32",
+      "checks": 0,
+      "passed_checks": 0,
+      "same_as_first": 22,
+      "repeat_count": 24,
+      "failure": null,
+      "aid_only_rejected": true,
+      "closed_rejected": null
+    },
+    {
+      "source": "frame24-results.json",
+      "sha256": "bc868b2f836cf4542bbae8e42816d4ba0badc25e92005dd1c9705e8f3ddd1bdd",
+      "checks": 0,
+      "passed_checks": 0,
+      "same_as_first": 22,
+      "repeat_count": 24,
+      "failure": "Every unchanged scene is strictly identical",
+      "aid_only_rejected": true,
+      "closed_rejected": true
+    },
+    {
+      "source": "software-raster/round10-local-crisis-visual-results.json",
+      "sha256": "00148e8557a42b52a3fedf54166de9b8dea3994767d80990650db43dff9a38bd",
+      "checks": 0,
+      "passed_checks": 0,
+      "same_as_first": 24,
+      "repeat_count": 24,
+      "failure": null,
+      "aid_only_rejected": true,
+      "closed_rejected": true
+    },
+    {
+      "source": "software-raster-batch2/round10-local-crisis-visual-results.json",
+      "sha256": "591d0cf9a2c6b231cc5c3255a6974e025e14dc4c8f3e24043185da368106fbfe",
+      "checks": 0,
+      "passed_checks": 0,
+      "same_as_first": 24,
+      "repeat_count": 24,
+      "failure": null,
+      "aid_only_rejected": true,
+      "closed_rejected": true
+    },
+    {
+      "source": "software-whole/round10-local-crisis-visual-results.json",
+      "sha256": "f6b043b11f3a9dcf208a7ddffa99f91d02f5758f19685de1050bc8272781cda1",
+      "checks": 384,
+      "passed_checks": 384,
+      "same_as_first": 0,
+      "repeat_count": 0,
+      "failure": null,
+      "aid_only_rejected": null,
+      "closed_rejected": null
+    },
+    {
+      "source": "full-delayed-results.json",
+      "sha256": "6275bc830c42df3eeeb9415f49f57d4b138686817cc0b0167c625935709fca01",
+      "checks": 100,
+      "passed_checks": 99,
+      "same_as_first": 0,
+      "repeat_count": 0,
+      "failure": "390px loss and zero do not manufacture different current damage scenery",
+      "aid_only_rejected": null,
+      "closed_rejected": null
+    }
+  ],
+  "script": {
+    "file": "scripts/local-crisis-visuals-test.mjs",
+    "sha256": "5a0dbd8560c02ff474ce197709c6da3c30f37941b3745032713355b9bc6de318",
+    "git_blob": "c07cd6d151dbc49604c77325d44683cafca6dd48"
+  },
+  "integrated_verification": [
+    {
+      "condition": "final-default",
+      "exit_code": 0,
+      "checks": 388,
+      "passed": 388,
+      "original_384_preserved_in_order": true,
+      "capture_count": 10,
+      "all_captures_decoded_visible_stable_at_scroll_zero": true,
+      "asset_delay": {
+        "milliseconds": 0,
+        "requests": 0
+      },
+      "runtime_errors": [],
+      "report_sha256": "7bfb0670fab914baff2da138743155052f08abf560b06f5304fa07a86bb2b519"
+    },
+    {
+      "condition": "final450",
+      "exit_code": 0,
+      "checks": 388,
+      "passed": 388,
+      "original_384_preserved_in_order": true,
+      "capture_count": 10,
+      "all_captures_decoded_visible_stable_at_scroll_zero": true,
+      "asset_delay": {
+        "milliseconds": 450,
+        "requests": 5012
+      },
+      "runtime_errors": [],
+      "report_sha256": "74f9387f974783fe4ec4b8277dfafc0fe4a4112c56056e407206692a934bb822"
+    }
+  ]
+}

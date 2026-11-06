@@ -1,0 +1,108 @@
+{
+  "captureRun": "Final third full-48 aggregate, script 48",
+  "startedAt": "2026-11-06T16:57:15.906Z",
+  "completedAt": "2026-11-06T16:58:21.028Z",
+  "sourceBefore": "595c509f70aeabe700b83710a0a88620803b7491b6963c64064900ad15a6de2f",
+  "sourceAfter": "595c509f70aeabe700b83710a0a88620803b7491b6963c64064900ad15a6de2f",
+  "browserVersion": "138.0.7204.0",
+  "checks": 479,
+  "passed": 479,
+  "rawViewportPngCount": 62,
+  "reportSha256": "27cc6805339c8c60cd3f44a9241abc9089cfd607b2164626c2dfa7f075d603cb",
+  "reportPath": "playtest-output/round25-world-planning-visuals/results.json",
+  "images": [
+    {
+      "path": "natural-y30-top.png",
+      "sha256": "12c9a9d5b7ce1d7ac32a3b5a4f06e287a0d7616129232266a532617a2d29be42",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "pixelsReviewed": true,
+      "finalAggregateSha256": "12c9a9d5b7ce1d7ac32a3b5a4f06e287a0d7616129232266a532617a2d29be42"
+    },
+    {
+      "path": "320-100-selected-role.png",
+      "sha256": "8f0a44f996a415bbccd1578d4729f62116db8945e436eb39d0f96e8950515f62",
+      "width": 320,
+      "height": 568,
+      "scrollY": 260,
+      "pixelsReviewed": true,
+      "finalAggregateSha256": "8f0a44f996a415bbccd1578d4729f62116db8945e436eb39d0f96e8950515f62"
+    },
+    {
+      "path": "320-200-top.png",
+      "sha256": "eb9cb2e145fcd53ee75ff846082f68cdd6629f4fcc13e9f5f7f0088fc6fcd63a",
+      "width": 320,
+      "height": 568,
+      "scrollY": 0,
+      "pixelsReviewed": true,
+      "finalAggregateSha256": "eb9cb2e145fcd53ee75ff846082f68cdd6629f4fcc13e9f5f7f0088fc6fcd63a"
+    },
+    {
+      "path": "320-200-selected-role.png",
+      "sha256": "eabfba30e7d2b68a351df8c1fdd6afa63e0db44e2229e36830bd5ca19f9fbb86",
+      "width": 320,
+      "height": 568,
+      "scrollY": 544,
+      "pixelsReviewed": true,
+      "finalAggregateSha256": "eabfba30e7d2b68a351df8c1fdd6afa63e0db44e2229e36830bd5ca19f9fbb86"
+    },
+    {
+      "path": "390-200-locked-policy-roles.png",
+      "sha256": "e3b81a366b1bdd6747078ba1f5d65e50ff1e737d0e9d211e59ddea6dabcfa3c1",
+      "width": 390,
+      "height": 844,
+      "scrollY": 475,
+      "pixelsReviewed": true,
+      "finalAggregateSha256": "e3b81a366b1bdd6747078ba1f5d65e50ff1e737d0e9d211e59ddea6dabcfa3c1"
+    },
+    {
+      "path": "legacy-per-scene-roles.png",
+      "sha256": "2c7da54104609eae2fd083e8ed116704144fa9a61b108f595e7741ae065cad24",
+      "width": 320,
+      "height": 568,
+      "scrollY": 544,
+      "pixelsReviewed": true,
+      "finalAggregateSha256": "2c7da54104609eae2fd083e8ed116704144fa9a61b108f595e7741ae065cad24"
+    },
+    {
+      "path": "ending-intact.png",
+      "sha256": "36c78d8ebb124e6be68d76a9ad904c1a057eef1960846a3b0099bcd71378d536",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "pixelsReviewed": true,
+      "finalAggregateSha256": "36c78d8ebb124e6be68d76a9ad904c1a057eef1960846a3b0099bcd71378d536"
+    }
+  ],
+  "limits": "Browser screenshots, not physical-device, screen-reader or human playtesting certification. Viewport crops are unscaled; content continues below the viewport.",
+  "independentFocusedRun": {
+    "captureRun": "Independent frozen-source formal run",
+    "startedAt": "2026-11-06T15:19:18.452Z",
+    "completedAt": "2026-11-06T15:21:04.717Z",
+    "sourceBefore": "595c509f70aeabe700b83710a0a88620803b7491b6963c64064900ad15a6de2f",
+    "sourceAfter": "595c509f70aeabe700b83710a0a88620803b7491b6963c64064900ad15a6de2f",
+    "browserVersion": "138.0.7204.0",
+    "checks": 479,
+    "passed": 479,
+    "rawViewportPngCount": 62,
+    "reportSha256": "75c79db79dee6bc94250a04fd8a449139b3fb888bcd72f4a77b1255c2b423c6a",
+    "reportPath": "round25-visual-audit/formal/results.json (workspace evidence)"
+  },
+  "aggregate": {
+    "attempt": 3,
+    "exitCode": 0,
+    "scripts": 48,
+    "freshChecks": 12782,
+    "passed": 12782,
+    "productionFilesFrozen": 332,
+    "scriptFilesFrozen": 48,
+    "source": "Parent aggregate verification record"
+  },
+  "selectedImageComparison": {
+    "compared": 7,
+    "identical": 7,
+    "replaced": 0,
+    "note": "All seven final-aggregate PNG byte hashes match the independently focused, already pixel-reviewed images. No image replacement was necessary; independent source PNGs and report remain under round25-visual-audit/formal."
+  }
+}

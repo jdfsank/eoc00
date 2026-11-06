@@ -39,7 +39,19 @@ const savedBytes=()=>page.evaluate(()=>JSON.stringify(JSON.parse(localStorage.ge
 const material=id=>page.locator(`[data-evidence-id="${id}"]`);
 const research=id=>page.locator(`[data-action-research="${id}"]`);
 const comparisonRow=id=>page.locator(`details[data-comparison-option="${id}"]`);
-async function select(cell,actor='protagonist'){await click('home');await page.locator(`[data-action="actor"][data-actor="${actor}"]`).click();await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();await page.locator('[data-primary-action]').click();}
+async function select(cell,actor='protagonist'){
+ await click('home');await page.locator(`[data-action="actor"][data-actor="${actor}"]`).click();await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();
+ const primary=page.locator('[data-primary-action]');
+ // Round25 can explicitly offer another actor's free scene when this actor has
+ // no local contract. Do not click that opt-in while testing the requested
+ // actor's unavailable plan; its original no-paid-controls assertion remains.
+ if(await primary.getAttribute('data-action')==='plan-as'){
+  const target=await primary.getAttribute('data-actor'),before=await stateBytes(),current=JSON.parse(before),other=sim.getActors(current).find(a=>a.id===target);
+  check(`${cell}/${actor}: alternate entry is explicit and does not silently switch roles`,target!==actor&&!!other&&sim.getActions(current,cell,actor).length===0&&sim.getActions(current,cell,target).length>0&&(await primary.innerText()).includes(other.name)&&await page.evaluate(actor=>window.afterwave.ui.actor===actor&&window.afterwave.ui.screen==='world',actor)&&/免费查看/.test(await primary.getAttribute('aria-label')));
+  await unchanged(before,`${cell}/${actor} unactivated alternate entry`);return;
+ }
+ await primary.click();
+}
 async function openMaterial(id){if(!await material(id).evaluate(e=>e.open))await material(id).locator('summary').click();}
 async function investigate(id){await openMaterial(id);await material(id).locator('[data-action="evidence"]').click();}
 async function lock(id){await choose(id);await click('confirm');await click('lock');}
