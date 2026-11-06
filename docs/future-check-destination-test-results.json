@@ -217,9 +217,11 @@
           "seed": "0",
           "actorId": "protagonist",
           "cellId": "B4",
-          "actions": [],
-          "primaryAction": "cell-history",
-          "plannedNavigation": "primary-history"
+          "actions": [
+            "upgrade_archive_check"
+          ],
+          "primaryAction": "avg",
+          "plannedNavigation": "avg"
         },
         {
           "label": "current-genuine-failure30",
@@ -850,11 +852,11 @@
       "passed": true
     },
     {
-      "name": "Existing activeB4 check suppresses costly redundant construction without an illegal AVG",
+      "name": "Existing activeB4 check suppresses redundant from-zero construction while allowing its distinct upgrade",
       "passed": true
     },
     {
-      "name": "Existing B4 source remains read-only with no redundant construction menu",
+      "name": "Existing B4 source has no redundant from-zero construction menu and browsing stays read-only",
       "passed": true
     },
     {
@@ -1260,28 +1262,28 @@
     {
       "path": "playtest-output/round15-future-whole-window-390.png",
       "width": 358,
-      "height": 1400,
+      "height": 1568,
       "kind": "element",
       "selector": ".handoff-outlook"
     },
     {
       "path": "playtest-output/round15-future-positive-ending-390.png",
       "width": 358,
-      "height": 3058,
+      "height": 3304,
       "kind": "element",
       "selector": ".ending"
     },
     {
       "path": "playtest-output/round15-34-no-workforce-cancellation-projection-390.png",
       "width": 358,
-      "height": 1511,
+      "height": 1679,
       "kind": "element",
       "selector": ".handoff-outlook"
     },
     {
       "path": "playtest-output/round15-31-training-no-policy-projection-390.png",
       "width": 358,
-      "height": 1497,
+      "height": 1665,
       "kind": "element",
       "selector": ".handoff-outlook"
     },
@@ -3424,11 +3426,17 @@
       "images": []
     },
     {
-      "label": "existing B4 legal history",
+      "label": "existing B4 legal upgrade menu",
       "year": 30,
-      "screen": "archive",
+      "screen": "avg",
       "canvas": false,
-      "images": []
+      "images": [
+        {
+          "src": "/assets/monastery-kept-none.svg",
+          "width": 1000,
+          "height": 500
+        }
+      ]
     },
     {
       "label": "settings",
@@ -4771,9 +4779,11 @@
       "seed": "0",
       "actorId": "protagonist",
       "cellId": "B4",
-      "actions": [],
-      "primaryAction": "cell-history",
-      "plannedNavigation": "primary-history"
+      "actions": [
+        "upgrade_archive_check"
+      ],
+      "primaryAction": "avg",
+      "plannedNavigation": "avg"
     },
     {
       "label": "current-genuine-failure30",
@@ -5147,12 +5157,12 @@
   ],
   "runtimeHash": {
     "before": {
-      "sha256": "c60877ffd14ddb0c1dad0693ffdb96254b5fde1ade6b11f2c92018920de7c5b6",
-      "files": 284
+      "sha256": "257a6c04a95d0da098f060ae717e41efc5ca75f52ab1e330e7aa645f46b6d4c6",
+      "files": 285
     },
     "after": {
-      "sha256": "c60877ffd14ddb0c1dad0693ffdb96254b5fde1ade6b11f2c92018920de7c5b6",
-      "files": 284
+      "sha256": "257a6c04a95d0da098f060ae717e41efc5ca75f52ab1e330e7aa645f46b6d4c6",
+      "files": 285
     }
   }
 }

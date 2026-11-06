@@ -1,3 +1,4 @@
+import {getCrisisRegions,CRISIS_MARKER_OFFSET} from './crisis-regions.js';
 import {STATION_ACCESS_ASSETS} from './station-access-visuals.js';
 import {MONASTERY_ASSETS} from './monastery-visuals.js';
 import {FAR_PORT_ASSETS} from './far-port-visuals.js';
@@ -68,6 +69,27 @@ function drawActivity(scene,layer,p,activities){
   }
  });
 }
+function drawCrisisRecord(scene,layer,p,record){
+ const x=p.x+CRISIS_MARKER_OFFSET.x,y=p.y+CRISIS_MARKER_OFFSET.y,g=scene.add.graphics();layer.add(g);
+ g.setName(`map-crisis:${record.cellId}:${record.status}`);g.setData({cellId:record.cellId,status:record.status});
+ const ink=0x18383e,paper=0xf6ecc8;g.fillStyle(ink);g.lineStyle(2,paper);
+ if(record.status==='warning'){
+  g.fillTriangle(x,y-9,x-9,y+8,x+9,y+8);g.strokeTriangle(x,y-9,x-9,y+8,x+9,y+8);
+  g.lineBetween(x,y-3,x,y+2);g.fillStyle(paper);g.fillRect(x-1,y+5,2,2);
+ }else if(record.status==='unknown'){
+  g.fillRect(x-8,y-9,16,18);
+  for(let n=-7;n<8;n+=6){g.lineBetween(x+n,y-9,x+n+3,y-9);g.lineBetween(x+n,y+9,x+n+3,y+9);}
+  for(let n=-7;n<8;n+=6){g.lineBetween(x-9,y+n,x-9,y+n+3);g.lineBetween(x+9,y+n,x+9,y+n+3);}
+  g.lineBetween(x-3,y-4,x+3,y-4);g.lineBetween(x+3,y-4,x+3,y);g.lineBetween(x+3,y,x,y);g.lineBetween(x,y,x,y+3);g.fillStyle(paper);g.fillRect(x-1,y+6,2,2);
+ }else{
+  const pts=[{x:x-8,y:y-10},{x:x+3,y:y-10},{x:x+8,y:y-5},{x:x+8,y:y+10},{x:x-8,y:y+10}];
+  g.fillPoints(pts,true);g.strokePoints(pts,true);g.lineBetween(x+3,y-10,x+3,y-5);g.lineBetween(x+3,y-5,x+8,y-5);
+  g.lineBetween(x-4,y-5,x,y-5);
+  if(record.status==='zero'){g.strokeCircle(x,y+3,4);}
+  else{g.fillStyle(paper);g.fillPoints([{x,y:y-1},{x:x+4,y:y+3},{x,y:y+7},{x:x-4,y:y+3}],true);}
+ }
+ return g;
+}
 function drawSouthBankUpkeep(scene,layer,p,south){
  const g=scene.add.graphics();layer.add(g);
  // Keep each repair on its own object. A teaching gap never damages the shed.
@@ -119,11 +141,14 @@ export function makeBoard(parent,onSelect,initialView=null){
     if(visual?.compound)drawSouthBankUpkeep(this,this.layer,p,visual.compound).setAlpha(obscures?.35:1);
     if(visual?.farPort)drawFarPortUpkeep(this,this.layer,p,visual.farPort).setAlpha(obscures?.35:1);
    }
-   {const c=state.cells.find(c=>c.id===selected); if(c){const p=project(c.col,c.row);    if(c.id===selected){const sel=this.add.graphics();sel.lineStyle(3,0xf6ecc8);sel.strokePoints([{x:p.x,y:p.y-16},{x:p.x+32,y:p.y},{x:p.x,y:p.y+16},{x:p.x-32,y:p.y}],true);this.layer.add(sel);this.layer.add(this.add.text(p.x,p.y+23,c.id,{fontFamily:'monospace',fontSize:'15px',color:'#f6ecc8',backgroundColor:'#18383e'}).setOrigin(.5,0).setPadding(4,1));}
+   {const c=state.cells.find(c=>c.id===selected); if(c){const p=project(c.col,c.row);    if(c.id===selected){const sel=this.add.graphics();sel.lineStyle(3,0xf6ecc8);sel.strokePoints([{x:p.x,y:p.y-16},{x:p.x+32,y:p.y},{x:p.x,y:p.y+16},{x:p.x-32,y:p.y}],true);this.layer.add(sel);this.layer.add(this.add.text(p.x+34,p.y+17,c.id,{fontFamily:'monospace',fontSize:'15px',color:'#f6ecc8',backgroundColor:'#18383e'}).setOrigin(0,0).setPadding(4,1));}
 }}
    for(let i=0;i<8;i++){const a=project(i,0),b=project(0,i);this.layer.add(this.add.text(a.x+10,a.y-35,String.fromCharCode(65+i),{fontSize:'13px',fontFamily:'monospace',color:'#b5c9b9'}));this.layer.add(this.add.text(b.x-43,b.y-6,String(i+1),{fontSize:'13px',fontFamily:'monospace',color:'#b5c9b9'}));}
    // Render every place, including B4 and D5, above foreground buildings.
    // Existing institution traces and selection geometry remain underneath.
+   // Record badges sit on the tile's left edge, separately from dispatch
+   // chips above the roof. They never recolor or damage the real building.
+   for(const record of getCrisisRegions(state).regions){const c=state.cells.find(c=>c.id===record.cellId);if(c)drawCrisisRecord(this,this.layer,project(c.col,c.row),record);}
    const activities=mapActivity(state);
    for(const c of cells){const local=activities.filter(item=>item.cellId===c.id);if(local.length)drawActivity(this,this.layer,project(c.col,c.row),local);}
    this.frame();

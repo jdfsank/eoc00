@@ -1,7 +1,7 @@
-import { FLOOD_REGIONS, PLANNING_RULES } from './simulation.js';
+import { FLOOD_REGIONS, PLANNING_RULES, getFutureCheckContracts, getArchiveUpgradeContracts } from './simulation.js';
 import { getCrisisHistory } from './crisis-history.js';
 
-const REVIEW_ACTIONS = ['independent_review', 'complete_review'];
+const REVIEW_ACTIONS = ['independent_review', 'complete_review', 'establish_future_check', 'upgrade_archive_check'];
 const coefficient = value => Number.isFinite(value) && value >= 0 && value <= 1;
 const unique = (items, id) => {
   const found = items.filter(item => item?.id === id);
@@ -21,7 +21,7 @@ export function getReviewHistory(state, recordId = null, cellId = null) {
   if (!Number.isInteger(state?.year)) return null;
   const candidates = events.filter(event => REVIEW_ACTIONS.includes(event?.actionId));
   const historicalReviews = history.filter(item => REVIEW_ACTIONS.includes(item?.actionId)
-    || (typeof item?.id === 'string' && /:((independent|complete)_review)$/.test(item.id)));
+    || (typeof item?.id === 'string' && /:(independent_review|complete_review|establish_future_check|upgrade_archive_check)$/.test(item.id)));
   const relates = event => [event.id, event.sourceActionId, `resolved:${event.id}`].includes(recordId);
   const selected = recordId === null ? candidates : candidates.filter(relates);
   const raw = recordId === null ? null : unique(all, recordId);
@@ -92,20 +92,31 @@ export function getReviewHistory(state, recordId = null, cellId = null) {
       && event.recoveryInstitutionId === `institution:${failed.event.id}:${event.cellId}`
       && source.recoveryInstitutionId === event.recoveryInstitutionId;
   });
-  const responses = [...independent, ...recoveries].sort((a, b) => a.event.year - b.event.year || a.event.id.localeCompare(b.event.id)).map(item => {
+  let prospective = [];
+  try { prospective = [...getFutureCheckContracts(state), ...getArchiveUpgradeContracts(state)].map(contract => ({
+    event: unique(events, contract.eventId), source: unique(history, contract.sourceActionId),
+    outcome: contract.recordId ? unique(history, contract.recordId) : null, contract,
+  })).filter(item => item.event && unique(all,item.event.id) === item.event
+    && item.source && unique(all,item.source.id) === item.source && item.source.reality === 'R1'
+    && (!item.outcome || unique(all,item.outcome.id) === item.outcome && item.outcome.reality === 'R1')
+    && (!item.contract.archiveSourceRecordId || unique(all,item.contract.archiveSourceRecordId) === unique(history,item.contract.archiveSourceRecordId))); } catch { /* Partial exports retain unknown sources. */ }
+  const responses = [...independent, ...recoveries, ...prospective].sort((a, b) => a.event.year - b.event.year || a.event.id.localeCompare(b.event.id)).map(item => {
     const { event, source, outcome } = item;
     const previous = crisisView?.responses.find(response => response.eventId === event.id);
     const late = event.actionId === 'complete_review';
-    const note = late ? event.status === 'success'
+    const upgrade = event.actionId === 'upgrade_archive_check', future = event.actionId === 'establish_future_check';
+    const reason = {'archive-unavailable':'原保档未能继续运转','workforce-unavailable':'没有实际测量或教学人手','archive-and-workforce-unavailable':'原保档未能继续运转，也没有实际测量或教学人手'}[item.contract?.cancellationReason];
+    const prospectiveNote = upgrade || future ? (event.status === 'success' ? `${upgrade?'地方保档升级':'从零新建的未来校验席'}已在第${event.year}年完成，只新增面向未来的指令校验；不是冲击前复核，也不是失败底稿补做。` : event.status === 'cancelled' ? `第${event.year}年${upgrade?reason:'没有实际测量或教学人手'}，新校验席取消，已付成本不退。` : `新校验席仍待第${event.year}年核对${upgrade?'原保档与':''}实际人手，尚未完成。`) + (upgrade?'原保档原页保留，升级不增加交班地域。':'不补写此前复核成功或失败。') + '第23年原始清点不改写，也不附送授权、信任或交班方针。' : null;
+    const note = prospectiveNote || (late ? event.status === 'success'
       ? '后续校验已记为成功，只面向今后的核查；原复核失败与第23年清点各自保留。'
       : event.status === 'cancelled' ? '后续校验已经取消，已付成本与取消记录保留；它没有改变原复核结果或第23年清点。'
         : '后续校验仍待第32年核对原记录与实际人手，不能提前记为完成，也不改写第23年清点。'
       : previous?.note || (event.status === 'success' ? '复核成功，已在冲击前修正共同标准；实际损失仍须另读第23年清点。'
         : event.status === 'failed' ? '复核失败，未形成可靠结论；这条本地记录不能单独证明全局损失。'
-          : event.status === 'pending' ? '复核仍待兑现，不能提前记为成功或失败。' : '复核已经取消，没有形成已兑现的保护。');
+          : event.status === 'pending' ? '复核仍待兑现，不能提前记为成功或失败。' : '复核已经取消，没有形成已兑现的保护。'));
     return { eventId: event.id, recordId: outcome?.id || source.id, sourceActionId: source.id,
       actionId: event.actionId, cellId: event.cellId, year: event.year, status: event.status,
-      label: late ? '后续遗留校验' : '冲击前异源复核', note, chain: copy(outcome ? [source, outcome] : [source]) };
+      label: upgrade ? '地方保档升级' : future ? '从零未来校验' : late ? '后续遗留校验' : '冲击前异源复核', note, chain: copy([...(item.contract?.archiveSourceRecordId ? [unique(history,item.contract.archiveSourceRecordId)] : []),source,...(outcome ? [outcome] : [])]) };
   });
   const localReviews = responses.filter(response => response.actionId === 'independent_review' && (!localCell || response.cellId === localCell));
   const detail = responses.map(response => `第${response.year}年 · ${response.cellId}：${response.note}`);

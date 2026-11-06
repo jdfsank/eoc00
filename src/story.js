@@ -2,7 +2,7 @@ import {getDecadeReview} from './decade-review.js';
 import {getReviewHistory} from './review-history.js';
 import {getFeeHistory} from './fee-history.js';
 import {getRelocationHistory, getRelocationDestination} from './relocation-history.js';
-import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets, getFutureCheckPlan } from './simulation.js';
+import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets, getFutureCheckPlan, getFutureCheckContracts, getArchiveUpgradePlan, getArchiveUpgradeContracts } from './simulation.js';
 
 export const chapters = {
   0: {
@@ -124,9 +124,38 @@ export function sulanIdentity(state) {
   return { kind: 'resident', speaker: '苏岚 · 河港居民', sources: [] };
 }
 
+// Read-only contract recollection: paid preparation is not an accomplished check.
+export function futureCheckRecollection(state) {
+  const ids = ['establish_future_check', 'upgrade_archive_check'];
+  const events = Array.isArray(state.events) ? state.events : [];
+  const history = Array.isArray(state.history) ? state.history : [];
+  const mentioned = events.some(e => ids.includes(e.actionId)) || history.some(h => ids.some(id => h.id?.endsWith(`:${id}`)));
+  if (!mentioned) return null;
+  let contracts;
+  try { contracts = [...getFutureCheckContracts(state), ...getArchiveUpgradeContracts(state)]; }
+  catch { contracts = []; }
+  const unknown = {status:'unknown', sources:[], paragraphs:['未来校验的行动、原始来源或兑现记录缺失或不一致，结果未知；不能从今天的机构补写成功，也不把缺页当成取消。']};
+  if (contracts.length !== 1) return unknown;
+  const c = contracts[0], upgrade = c.actionId === 'upgrade_archive_check';
+  if (events.filter(e => ids.includes(e.actionId)).length !== 1) return unknown;
+  const label = upgrade ? '地方保档升级' : '从零筹建未来校验席';
+  const reason = {'archive-unavailable':'原保档未能继续运转','workforce-unavailable':'没有实际测量或教学人手','archive-and-workforce-unavailable':'原保档未能继续运转，也没有实际测量或教学人手'}[c.cancellationReason];
+  const outcome = c.status === 'pending'
+    ? `这次${label}已经付出成本，约定第${c.year}年核对${upgrade ? '原档与' : ''}实际测量或教学人手，目前仍待兑现；筹备不是已经完成校验。`
+    : c.status === 'cancelled'
+      ? `第${c.year}年，${upgrade ? reason : '没有实际测量或教学人手'}，${label}取消，没有完成新校验席；已付成本不退。`
+      : `第${c.year}年，${label}在真实来源与人手支持下完成，新增的是面向未来的指令校验；当时完成不保证此后永远有人维护。`;
+  return {status:c.status, sources:[c.sourceActionId,c.recordId,c.archiveSourceRecordId].filter(Boolean), paragraphs:[outcome,
+    upgrade ? '原保档的异源方法本已存在，升级没有增加交班地域；原档原页继续保留，不把保存记录改称为当年已经完成指令校验。' : '这是一份另行付费的新合同，不补写此前成功或失败过一次复核。',
+    '第23年的结算仍留在原页；这项工作不附送人手、地方授权、信任或交班方针，也不等于已经完成共享或退出。']};
+}
+
 export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   const base = evidenceText[id];
   if (!base) return { title: id, text: '一份有关当地制度的材料。' };
+  if(cellId==='B4' && state.year===30 && getArchiveUpgradePlan(state).available && ['anomaly_records','resident_testimony'].includes(id)) {
+    return {...base,title:id==='anomaly_records'?'重读保档中的异源刻度':'听取修院居民对保档升级的条件',text:id==='anomaly_records'?'原保档保存了不同来源的刻度，不等于曾完成指令校验。要添置比对器具、另设工作席，并核实这些刻度如何用于未来指令；原档原页不改写。':'居民重新指认本地水痕，要求把第33年仍在运转的原档与测量或教学人手分别列清。证词只为本次升级取证，不替任何人接受无限劳动，也不是交班授权。'};
+  }
   if(cellId==='B4' && state.year===30 && getFutureCheckPlan(state).available && ['anomaly_records','resident_testimony'].includes(id)) {
     if(id==='anomaly_records')return {...base,title:'核对未来校验所需的新记录',text:'这里没有可直接沿用的有效校验或可用失败底稿。保管员把来自不同河段的刻度与新测量计划分开登记：新刻水尺、对照抄本和连续比对，都还需要投入。这是面向今后的筹备，不证明此前曾完成或失败过一次复核。 '+crisisRecollection(state)};
     return {...base,title:'听取修院居民对新校验席的条件',text:'修院居民重新指认岸边水痕，愿意讨论仪器、抄本和场地怎样长期维护。他们要求把负责读尺的人手另列清楚；这份当地筹备证词不能替任何人接受无限劳动，也不代替跨地交班授权。新计划仍需到第34年核对真实测量或教学人手。'};
@@ -296,6 +325,19 @@ function locationScene(state, cell, actorId = 'protagonist') {
       teaching ? '“会读尺，不等于手里已经有另一套可靠的记录。”带教者指着轮值表。培训可以留下承接人手，谁授权他们接班、由谁提供异源校验，还要分别说清楚。' : '居民把还未排满的轮值表递过来。先让人学会、愿意接手，再谈谁来提供另一套校验记录；一纸移交不会让空位自动坐满。',
       ...(state.year >= 30 ? [crisisRecollection(state)] : []),
     ], question: '给学校一次机会，也意味着本窗口把有限的名额留在这里。' };
+  }
+  if(cell==='B4' && state.year>=30 && futureCheckRecollection(state)) {
+    const recall=futureCheckRecollection(state);
+    return {...base,title:'新工作与旧纸页分开记',speaker:'北岸 · 档案保管员',body:recall.paragraphs,sources:recall.sources,question:'完成过的工作要有来源，下一次维护仍要有人承担。'};
+  }
+  if(cell==='B4' && state.year===30 && getArchiveUpgradePlan(state).available) {
+    const source=getArchiveUpgradePlan(state).source;
+    return {...base,title:'让保留下来的刻度参与下一次判断',speaker:'北岸 · 档案保管员',sources:[source.sourceActionId,source.recordId],body:[
+      '保管员没有抽走旧纸页：“当年留下不同的刻度，是为了不让一种声音成为全部。保住它们，不等于已经有人把它们接进每一份指令。”',
+      '现在可以另付经济5、科学3，添置比对器具与工作席。异常记录占2轮，B4居民证词占1轮；这项工作用满执行者的取证轮次，也占一个介入名额。',
+      '第33年才核对原保档和真实测量或教学人手是否都仍在运转，任一缺失就取消，费用不退。第31年培训可以赶上，但培训和升级占满两名额时，就不能另签交班方针。',
+      '保档节省了从零起步的一部分成本，却不是免费得到校验。升级不增加交班地域，也不附送地方授权或信任；它让未来的集中指令多一道校验，原档和第23年的结算不改写。',
+      crisisRecollection(state)],question:'要不要把已有的保档接成新工作，并承担它可能无法兑现的成本？'};
   }
   if(cell==='B4' && state.year===30 && getFutureCheckPlan(state).available) {
     const staff=getRecoveryWorkforce(state);

@@ -241,9 +241,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 241,
+      "waitedMs": 215,
       "samples": 3,
-      "bytes": 26458
+      "bytes": 27346
     },
     {
       "width": 356,
@@ -254,9 +254,9 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 143,
+      "waitedMs": 114,
       "samples": 3,
-      "bytes": 29418
+      "bytes": 30930
     },
     {
       "width": 356,
@@ -267,9 +267,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 127,
+      "waitedMs": 201,
       "samples": 3,
-      "bytes": 28598
+      "bytes": 29446
     },
     {
       "width": 356,
@@ -280,9 +280,9 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 143,
+      "waitedMs": 131,
       "samples": 3,
-      "bytes": 31598
+      "bytes": 33090
     },
     {
       "width": 356,
@@ -293,9 +293,9 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 130,
+      "waitedMs": 144,
       "samples": 3,
-      "bytes": 30982
+      "bytes": 32798
     },
     {
       "width": 356,
@@ -306,9 +306,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 137,
+      "waitedMs": 202,
       "samples": 3,
-      "bytes": 25354
+      "bytes": 26574
     },
     {
       "width": 356,
@@ -319,9 +319,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 105,
+      "waitedMs": 124,
       "samples": 3,
-      "bytes": 26314
+      "bytes": 27734
     },
     {
       "width": 356,
@@ -332,9 +332,9 @@
         "centerY": 136,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 122,
+      "waitedMs": 136,
       "samples": 3,
-      "bytes": 32418
+      "bytes": 32474
     },
     {
       "width": 356,
@@ -345,9 +345,9 @@
         "centerY": 152,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 107,
+      "waitedMs": 138,
       "samples": 3,
-      "bytes": 32302
+      "bytes": 32094
     },
     {
       "width": 356,
@@ -358,9 +358,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 212,
+      "waitedMs": 120,
       "samples": 3,
-      "bytes": 26458
+      "bytes": 27346
     },
     {
       "width": 286,
@@ -371,9 +371,9 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 204,
+      "waitedMs": 206,
       "samples": 3,
-      "bytes": 21634
+      "bytes": 22414
     },
     {
       "width": 286,
@@ -384,9 +384,9 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 129,
+      "waitedMs": 121,
       "samples": 3,
-      "bytes": 24090
+      "bytes": 25510
     },
     {
       "width": 286,
@@ -397,9 +397,9 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 135,
+      "waitedMs": 187,
       "samples": 3,
-      "bytes": 23414
+      "bytes": 24114
     },
     {
       "width": 286,
@@ -410,9 +410,9 @@
         "centerY": 152,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 135,
+      "waitedMs": 125,
       "samples": 3,
-      "bytes": 25818
+      "bytes": 27270
     },
     {
       "width": 286,
@@ -425,7 +425,7 @@
       },
       "waitedMs": 128,
       "samples": 3,
-      "bytes": 25322
+      "bytes": 26934
     },
     {
       "width": 286,
@@ -436,9 +436,48 @@
         "centerY": 104,
         "zoom": 1.2327586206896552
       },
-      "waitedMs": 140,
+      "waitedMs": 267,
       "samples": 3,
-      "bytes": 20806
+      "bytes": 21830
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 138,
+      "samples": 3,
+      "bytes": 22742
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 288,
+        "centerY": 136,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 146,
+      "samples": 3,
+      "bytes": 26282
+    },
+    {
+      "width": 286,
+      "height": 210,
+      "view": {
+        "focus": true,
+        "centerX": 320,
+        "centerY": 152,
+        "zoom": 1.2327586206896552
+      },
+      "waitedMs": 137,
+      "samples": 3,
+      "bytes": 26538
     },
     {
       "width": 286,
@@ -451,98 +490,7 @@
       },
       "waitedMs": 126,
       "samples": 3,
-      "bytes": 21562
-    },
-    {
-      "width": 286,
-      "height": 210,
-      "view": {
-        "focus": true,
-        "centerX": 288,
-        "centerY": 136,
-        "zoom": 1.2327586206896552
-      },
-      "waitedMs": 138,
-      "samples": 3,
-      "bytes": 26302
-    },
-    {
-      "width": 286,
-      "height": 210,
-      "view": {
-        "focus": true,
-        "centerX": 320,
-        "centerY": 152,
-        "zoom": 1.2327586206896552
-      },
-      "waitedMs": 148,
-      "samples": 3,
-      "bytes": 26722
-    },
-    {
-      "width": 286,
-      "height": 210,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.2327586206896552
-      },
-      "waitedMs": 143,
-      "samples": 3,
-      "bytes": 21634
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 168,
-      "samples": 3,
-      "bytes": 26258
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 135,
-      "samples": 3,
-      "bytes": 26258
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 177,
-      "samples": 3,
-      "bytes": 24538
-    },
-    {
-      "width": 356,
-      "height": 250,
-      "view": {
-        "focus": true,
-        "centerX": 224,
-        "centerY": 104,
-        "zoom": 1.5344827586206897
-      },
-      "waitedMs": 813,
-      "samples": 3,
-      "bytes": 26258
+      "bytes": 22414
     },
     {
       "width": 356,
@@ -555,7 +503,7 @@
       },
       "waitedMs": 136,
       "samples": 3,
-      "bytes": 26258
+      "bytes": 27146
     },
     {
       "width": 356,
@@ -566,9 +514,9 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 130,
+      "waitedMs": 122,
       "samples": 3,
-      "bytes": 26258
+      "bytes": 27146
     },
     {
       "width": 356,
@@ -579,17 +527,69 @@
         "centerY": 104,
         "zoom": 1.5344827586206897
       },
-      "waitedMs": 173,
+      "waitedMs": 179,
       "samples": 3,
-      "bytes": 26258
+      "bytes": 25186
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 814,
+      "samples": 3,
+      "bytes": 27146
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 191,
+      "samples": 3,
+      "bytes": 27146
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 128,
+      "samples": 3,
+      "bytes": 27146
+    },
+    {
+      "width": 356,
+      "height": 250,
+      "view": {
+        "focus": true,
+        "centerX": 224,
+        "centerY": 104,
+        "zoom": 1.5344827586206897
+      },
+      "waitedMs": 135,
+      "samples": 3,
+      "bytes": 27146
     }
   ],
   "relockDiagnostic": {
     "assetDelay": 180,
     "pixelMatch": true,
     "cellsMatch": true,
-    "firstBytes": 26258,
-    "relockBytes": 26258,
+    "firstBytes": 27146,
+    "relockBytes": 27146,
     "firstLayout": {
       "width": 356,
       "height": 250,

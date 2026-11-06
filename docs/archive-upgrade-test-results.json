@@ -1,0 +1,213 @@
+{
+  "scope": "Round16 native Chromium contracts: actual archive route0/10/20/30, visible import and buttons, budget and one-slot costs, year33 success/cancellation, future-only history and exact reload, genuine prior-kernel continuity,390/320 and200% font. No direct world mutation to emulate play; rejection fixture explicitly labelled.",
+  "checks": [
+    {
+      "name": "real-preserved-archive: native import preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "B4/linche has real legal AVG entry",
+      "passed": true
+    },
+    {
+      "name": "Free contract preview does not take evidence, spend resources or change drafts",
+      "passed": true
+    },
+    {
+      "name": "Missing evidence leaves lock progression disabled",
+      "passed": true
+    },
+    {
+      "name": "Contract exposes economy5 science3, year33 and source/workforce risk",
+      "passed": true
+    },
+    {
+      "name": "Two actual materials consume all three investigation rounds",
+      "passed": true
+    },
+    {
+      "name": "Lock stores one draft but does not pay or build",
+      "passed": true
+    },
+    {
+      "name": "D4/protagonist has real legal AVG entry",
+      "passed": true
+    },
+    {
+      "name": "Whole-window outlook acknowledges original archive and year33 without a new geography",
+      "passed": true
+    },
+    {
+      "name": "Whole-window comparison distinguishes current/conditional/cancelled command-check ability",
+      "passed": true
+    },
+    {
+      "name": "Submit pays archive material costs exactly once",
+      "passed": true
+    },
+    {
+      "name": "Submitted contract remains pending and creates no early carrier",
+      "passed": true
+    },
+    {
+      "name": "pending contract: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "At32 archived method still has no completed conversion",
+      "passed": true
+    },
+    {
+      "name": "Actual year33 creates sourced future check with actual workforce",
+      "passed": true
+    },
+    {
+      "name": "Original archive remains byte-identical beside the new seat",
+      "passed": true
+    },
+    {
+      "name": "Actual fulfillment preserves crisis23, prior history/events/snapshots",
+      "passed": true
+    },
+    {
+      "name": "fulfilled contract: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "Year40 is reached by actual annual engine playback",
+      "passed": true
+    },
+    {
+      "name": "Decade recall names future-only paid conversion rather than generic success",
+      "passed": true
+    },
+    {
+      "name": "Real central-review ending now uses completed conversion",
+      "passed": true
+    },
+    {
+      "name": "Completed future conversion never marks past crisis reviewed",
+      "passed": true
+    },
+    {
+      "name": "real-no-workforce: native import preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "B4/linche has real legal AVG entry",
+      "passed": true
+    },
+    {
+      "name": "D4/protagonist has real legal AVG entry",
+      "passed": true
+    },
+    {
+      "name": "Unsupported whole-window contract warns cancellation and nonrefund",
+      "passed": true
+    },
+    {
+      "name": "No workforce cancels at33 without a new check",
+      "passed": true
+    },
+    {
+      "name": "Cancellation recalls specific missing workforce and sunk costs",
+      "passed": true
+    },
+    {
+      "name": "Cancelled conversion cannot claim future central-review capacity",
+      "passed": true
+    },
+    {
+      "name": "real-same-window-training: native import preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "B4/linche has real legal AVG entry",
+      "passed": true
+    },
+    {
+      "name": "E4/protagonist has real legal AVG entry",
+      "passed": true
+    },
+    {
+      "name": "Actual31 training supports year33 conversion",
+      "passed": true
+    },
+    {
+      "name": "Two infrastructure actions leave no third slot for policy",
+      "passed": true
+    },
+    {
+      "name": "genuine-da755ed-producer: native import preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "Published old run receives no new upgrade contract",
+      "passed": true
+    },
+    {
+      "name": "Settings honestly retain old action range",
+      "passed": true
+    },
+    {
+      "name": "Old-world reload retains exact original contract range",
+      "passed": true
+    },
+    {
+      "name": "Unknown upgrade version is rejected without replacing old progress",
+      "passed": true
+    },
+    {
+      "name": "narrow-readable-contract: native import preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "B4/linche has real legal AVG entry",
+      "passed": true
+    },
+    {
+      "name": "320/200% scene: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320/200% contract: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "200% contract retains requested font size",
+      "passed": true
+    },
+    {
+      "name": "Evidence-entry return focuses actual required material",
+      "passed": true
+    },
+    {
+      "name": "320/200% evidence: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Enter locks the real evidence-backed contract",
+      "passed": true
+    },
+    {
+      "name": "320/200% locked review: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "narrow locked draft: refresh preserves exact world",
+      "passed": true
+    },
+    {
+      "name": "No runtime, resource or request failures",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "round16-archive-390-contract.png",
+    "round16-archive-390-conditional-outlook.png",
+    "round16-archive-390-success-recollection.png",
+    "round16-archive-320-text200-contract.png"
+  ]
+}

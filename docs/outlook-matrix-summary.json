@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T20:24:42.763Z",
+  "generatedAt": "2026-11-05T22:55:22.215Z",
   "nodeVersion": "v24.22.1",
   "purpose": "Compare read-only year20 conditional projections with the same prototype model's actual year23 settlement.",
   "limits": [
@@ -9,7 +9,7 @@
     "Optional surveyed veto, true legacy rules, unresolved drafts, and hidden-roll access are covered separately by tests/crisis-outlook.test.js."
   ],
   "sourceHashes": {
-    "src/simulation.js": "213e67a408a3a1ee18513ce9c043b3c87c8721b4bae40d52d1c3b096b8430415",
+    "src/simulation.js": "e4d02a2344df4b148e95b91c784579ba0001c82bc69c2ed403438344937af02f",
     "src/crisis-outlook.js": "222967c284b26f5b1141f1a9fcb4f3760b837aad07b2a300bdef337f041a2564"
   },
   "seeds": [

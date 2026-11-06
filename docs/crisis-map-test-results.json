@@ -1,0 +1,706 @@
+{
+  "checks": [
+    {
+      "name": "round16-crisis-320-100-warning canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-warning legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-warning no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-warning all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-warning keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-warning inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-warning reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-warning source trace opens",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-loss canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-loss legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-loss no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-loss all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-loss keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-loss inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-loss reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-zero canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-zero legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-zero no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-zero all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-zero keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-zero inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-zero reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-unknown canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-unknown legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-unknown no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-unknown all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-unknown keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-unknown inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-unknown reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-drafted canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-drafted legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-drafted no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-drafted all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-drafted keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-drafted inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-drafted reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-pending canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-pending legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-pending no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-pending focused map pans without committing",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-pending all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-pending keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-pending inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-100-pending reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-warning canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-warning legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-warning no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-warning all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-warning keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-warning inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-warning reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-loss canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-loss legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-loss no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-loss all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-loss keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-loss inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-loss reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-zero canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-zero legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-zero no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-zero all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-zero keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-zero inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-zero reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-unknown canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-unknown legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-unknown no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-unknown all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-unknown keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-unknown inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-unknown reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-drafted canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-drafted legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-drafted no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-drafted all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-drafted keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-drafted inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-drafted reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-pending canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-pending legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-pending no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-pending focused map pans without committing",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-pending all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-pending keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-pending inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-320-200-pending reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-warning canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-warning legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-warning no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-warning all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-warning keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-warning inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-warning reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-warning source trace opens",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-loss canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-loss legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-loss no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-loss all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-loss keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-loss inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-loss reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-zero canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-zero legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-zero no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-zero all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-zero keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-zero inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-zero reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-unknown canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-unknown legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-unknown no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-unknown all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-unknown keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-unknown inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-unknown reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-drafted canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-drafted legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-drafted no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-drafted all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-drafted keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-drafted inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-drafted reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-pending canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-pending legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-pending no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-pending focused map pans without committing",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-pending all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-pending keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-pending inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-100-pending reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-warning canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-warning legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-warning no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-warning all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-warning keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-warning inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-warning reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-loss canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-loss legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-loss no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-loss all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-loss keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-loss inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-loss reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-zero canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-zero legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-zero no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-zero all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-zero keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-zero inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-zero reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-unknown canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-unknown legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-unknown no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-unknown all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-unknown keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-unknown inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-unknown reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-drafted canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-drafted legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-drafted no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-drafted all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-drafted keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-drafted inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-drafted reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-pending canvas draws all four correct stage badges",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-pending legend and selected text",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-pending no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-pending focused map pans without committing",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-pending all four recorded places accessible",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-pending keyboard selects E4",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-pending inspection preserves all facts",
+      "passed": true
+    },
+    {
+      "name": "round16-crisis-390-200-pending reload preserves facts and selection",
+      "passed": true
+    },
+    {
+      "name": "no browser errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Real Chromium 320/390 widths, app 200% text setting, grayscale, focus and source/list navigation. Legacy unknown is saved data, not zero. Not physical-device certification."
+}

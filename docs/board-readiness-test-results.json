@@ -1,0 +1,59 @@
+{
+  "checks": [
+    {
+      "name": "World facts survive delayed preload",
+      "passed": true
+    },
+    {
+      "name": "Old timer captures unfinished canvas",
+      "passed": true
+    },
+    {
+      "name": "Readiness waits for preload",
+      "passed": true
+    },
+    {
+      "name": "Delayed preload preserves exact state and pixels",
+      "passed": true
+    },
+    {
+      "name": "Readiness waits for actual postrender",
+      "passed": true
+    },
+    {
+      "name": "Delayed rendering preserves exact state and pixels",
+      "passed": true
+    },
+    {
+      "name": "Changed world facts are rejected",
+      "passed": true
+    },
+    {
+      "name": "Wrong-pixel control preserves world facts",
+      "passed": true
+    },
+    {
+      "name": "Settled wrong pixels are rejected",
+      "passed": true
+    },
+    {
+      "name": "No runtime or asset errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "negativeControls": [
+    {
+      "name": "Old timer captures unfinished canvas",
+      "passed": true
+    },
+    {
+      "name": "Changed world facts are rejected",
+      "passed": true
+    },
+    {
+      "name": "Settled wrong pixels are rejected",
+      "passed": true
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import {chromium} from 'playwright';
+import {boardReadinessPlugin,renderedBoard,assertReloadPreserved} from './helpers/board-readiness.mjs';
 import cb from '@sparticuz/chromium';
 import {createServer} from 'vite';
 import fs from 'node:fs/promises';
@@ -19,11 +20,11 @@ const checkClosed=structuredClone(y40);checkClosed.institutions.filter(i=>i.sour
 const recordsClosed=structuredClone(noBranch);recordsClosed.institutions.filter(i=>i.cellId==='F6').forEach(i=>i.active=false);
 const cases={branch,failed,locked,pending,y31,y32,y40,verified,'no-branch':noBranch,cancelled,'branch-closed':branchClosed,'check-closed':checkClosed,'records-closed':recordsClosed};
 for(const [name,s] of Object.entries(cases))assert.equal(validateState(s).valid,true,name);
-const server=await createServer({server:{host:'127.0.0.1',port:4201,strictPort:true}});await server.listen();let browser,page,artPage;
+const server=await createServer({plugins:[boardReadinessPlugin()],server:{host:'127.0.0.1',port:4201,strictPort:true}});await server.listen();let browser,page,artPage;
 const click=a=>page.locator(`[data-action="${a}"]`).first().click();
-async function show(state,bigText=false){await page.evaluate(({state,bigText})=>sessionStorage.setItem('afterwave.port.fixture',JSON.stringify({state,ui:{screen:'world',selected:'F6',actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText});await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(150);}
+async function show(state,bigText=false){await page.evaluate(({state,bigText})=>sessionStorage.setItem('afterwave.port.fixture',JSON.stringify({state,ui:{screen:'world',selected:'F6',actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText});await page.reload();await renderedBoard(page);}
 async function snap(name,selector='.map-frame',mono=false){const target=page.locator(selector);if(mono)await target.evaluate(el=>el.style.filter='grayscale(1)');await target.screenshot({path:`${out}/round8-f6-${name}${mono?'-mono':''}.png`});if(mono)await target.evaluate(el=>el.style.filter='');}
-async function pixels(){await page.waitForTimeout(70);return page.locator('canvas').evaluate(c=>c.toDataURL());}
+async function pixels(){return (await renderedBoard(page)).pixels;}
 try{
  browser=await chromium.launch({executablePath:await cb.executablePath(),args:cb.args,headless:true});page=await browser.newPage({viewport:{width:390,height:844}});artPage=await browser.newPage({viewport:{width:390,height:195}});
  page.on('pageerror',e=>report.errors.push(e.message));page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
@@ -59,7 +60,7 @@ try{
  await click('playback');await click('step');await click('pause-world');check('At32 the actual outcome adds the new check and retains failure',(await page.locator('.institution-status').innerText()).includes('第22年复核失败记录保留')&&(await page.locator('.institution-status').innerText()).includes('第32年兑现，只面向今后'));
  check('Viewing and recovery do not rewrite the old failure or crisis',frozen===await page.evaluate(()=>JSON.stringify({crisis:window.afterwave.state.flags.crisis,failure:window.afterwave.state.events.find(e=>e.actionId==='independent_review')})));await snap('390-actual-year32-map');
  const before=await page.evaluate(()=>JSON.stringify(window.afterwave.state));await page.locator('[data-action="layer"][data-layer="politics"]').click();await click('focus');await click('focus');check('Camera and layer controls preserve all source facts',before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
- const image=await pixels();await page.reload();await page.locator('canvas').waitFor();check('Reload preserves fulfilled history and exact pixels',await pixels()===image&&before===await page.evaluate(()=>JSON.stringify(window.afterwave.state)));
+ const rendered=await renderedBoard(page);await page.reload();const reloaded=await renderedBoard(page);assertReloadPreserved(rendered,reloaded);check('Reload preserves fulfilled history and exact pixels',reloaded.state===before&&reloaded.pixels===rendered.pixels);
  check('No runtime or asset errors',report.errors.length===0);
 }catch(error){report.failure={message:error.message,stack:error.stack};process.exitCode=1;if(page)await page.screenshot({path:`out/round8-f6-failure.png`.replace('out/',`${out}/`),fullPage:true}).catch(()=>{});}
 finally{await fs.writeFile(`${out}/round8-far-port-visual-results.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(browser)await browser.close();await server.close();}

@@ -1,0 +1,9 @@
+# Round 16: prospective checks and preserved archives
+
+The B4 archive upgrade is a new paid contract, not a rewrite of preserve_records. Its scene and local evidence distinguish an existing independent archive method from a completed command check. They disclose economy 5/science 3, all three investigation rounds, one actor slot, the year 33 original-archive and workforce check, nonrefundable cancellation, and the opportunity cost of using the other slot for training rather than signing a policy. The existing archive already supplies B4 handoff geography: upgrading does not add another region.
+
+`futureCheckRecollection` reads the simulation's validated contract APIs for both establish_future_check and upgrade_archive_check. It returns explicit pending, success, cancelled, or unknown states with historical source IDs. A cancelled archive upgrade distinguishes missing archive, missing workforce, and both. Missing/tampered material, testimony, original records, outcome or workforce cannot be promoted to success by an institution or flag. Successful completion is a dated accomplishment, not a promise of indefinite maintenance, consent, trust, or a signed handoff policy.
+
+The decade recap retains its stricter future-check validation and applies the archive contract validator before attributing upgrade outcomes. Upgrade cards link the original preservation outcome as well as the new action/outcome. Existing historical records and their text are never edited. Year 23 remains its own recorded settlement.
+
+Focused verification: `node --test tests/future-check-narrative.test.js tests/decade-review.test.js tests/story.test.js`. The new tests cover natural staffing success/no-staff cancellation, pending recollection, source tampering, closure/joint cancellation, real source links, immutable frozen-state reads, and unchanged pre-year-30 history/crisis.

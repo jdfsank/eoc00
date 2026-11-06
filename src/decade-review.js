@@ -1,3 +1,5 @@
+import { getFutureCheckContracts, getArchiveUpgradeContracts } from './simulation.js';
+
 // Read-only recollections. A card joins an issued choice to its own recorded
 // outcome; matching a date or a convenience flag is never enough provenance.
 const WINDOWS = [0, 10, 20, 30];
@@ -20,6 +22,8 @@ const OUTCOMES = {
   relocate_teacher: '强制迁任执行，苏岚没有因此补上同意',
   independent_review: '异源复核确认了共同标准偏差',
   complete_review: '遗留校验在实际人手支持下完成，只新增面向未来的核查能力',
+  upgrade_archive_check: '地方保档接成了面向未来的指令校验席，原档原页保留',
+  establish_future_check: '未来校验席在实际测量或教学人手支持下完成，只新增面向未来的独立校验能力',
   local_veto: '地方停闸与先行撤离权生效，统一标准仍未被这项行动纠正',
   share_power: '共享纠错权的方针已经签署',
   central_review: '集中协调的方针已经签署',
@@ -42,6 +46,8 @@ const RESPONSIBILITIES = {
   central_review: '集中协调不等于永远正确，独立纠错与持续维护仍需保留。',
   withdraw: '结束独占控制并未结束服务责任，接班能力仍需实际承接。',
   complete_review: '第23年的损失与原来的复核失败保留；未来交班仍需授权人手、跨地校验与实际方针。',
+  upgrade_archive_check: '原保档已提供异源方法，升级不增加交班地域；新增指令校验不附送人手、授权、信任或方针，第23年的结算不改写。',
+  establish_future_check: '校验完成不等于完成交班或共享，也不附送地方授权、信任或交班方针；跨地承接仍需另行核对。',
 };
 const integer = n => Number.isInteger(n) && n >= 0;
 const same = (record, key, value) => record[key] === undefined || record[key] === value;
@@ -90,7 +96,18 @@ export function getDecadeReview(state) {
     if (!event || event.parentId !== source.record.id || event.sourceActionId !== source.record.id
       || event.actionId !== source.actionId || event.cellId !== source.record.cellId || event.year <= source.year
       || !same(event, 'actorId', source.actorId)) return null;
-    return resultFor(event);
+    const result = resultFor(event);
+    if (['establish_future_check','upgrade_archive_check'].includes(source.actionId)) {
+      // Only this newer contract needs its own paid-materials and workforce
+      // proof. A partial export stays unknown here, without rejecting its
+      // other cards or changing the save's acceptance rules.
+      let contracts;
+      try { contracts = (source.actionId === 'upgrade_archive_check' ? getArchiveUpgradeContracts : getFutureCheckContracts)({ ...state, history, events, institutions, actors }); }
+      catch { return null; }
+      if (!contracts.some(contract => contract.eventId === event.id
+        && contract.sourceActionId === source.record.id)) return null;
+    }
+    return result;
   };
   const provenInstitution = institution => {
     if (!institution || unique(institutions, institution.id) !== institution || institution.cellId !== 'D4'
@@ -144,12 +161,22 @@ export function getDecadeReview(state) {
         } else {
           const { event, record } = result;
           if (record) sourceIds.push(record.id);
+          if (actionId === 'upgrade_archive_check') sourceIds.push(event.archiveSourceRecordId);
           if (event.status === 'pending') {
             card.outcome = `约定第${event.year}年兑现，目前仍待结果。`;
             card.responsibility = '承诺还不是已经得到的服务，接下来的兑现仍需核对。';
           } else if (event.status === 'cancelled') {
-            card.outcome = `第${event.year}年，行动取消，未兑现原定安排。`;
-            card.responsibility = '取消记录与已付成本保留，后续责任没有随计划一起消失。';
+            if (actionId === 'upgrade_archive_check') {
+              const reason = {'archive-unavailable':'原保档未能继续运转','workforce-unavailable':'没有实际测量或教学人手','archive-and-workforce-unavailable':'原保档未能继续运转，也没有实际测量或教学人手'}[event.archiveUpgradeCancellationReason];
+              card.outcome = `第${event.year}年，${reason}，保档升级取消，没有完成新校验席。`;
+              card.responsibility = '已付器具与工作席成本不退，原保档记录仍在；没有新增校验能力或交班授权。';
+            } else if (actionId === 'establish_future_check') {
+              card.outcome = `第${event.year}年，没有实际测量或教学人手，未来校验席取消，未完成连续比对。`;
+              card.responsibility = '已付材料与场地成本不退；没有因此取得校验能力、地方授权、信任或交班方针。';
+            } else {
+              card.outcome = `第${event.year}年，行动取消，未兑现原定安排。`;
+              card.responsibility = '取消记录与已付成本保留，后续责任没有随计划一起消失。';
+            }
           } else if (event.status === 'failed') {
             card.outcome = event.actionId.startsWith('build_')
               ? `第${event.year}年，建站未成，小型档案站保留记录，原培训链没有启动。`

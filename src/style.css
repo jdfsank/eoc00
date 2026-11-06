@@ -47,3 +47,6 @@
 button,a,input,select,summary { scroll-margin-block:8px; }
 
 .staffing-policy>summary{cursor:pointer;line-height:1.6}.staffing-policy,.staffing-contract,.relocation-contract,.relocation-history{overflow-wrap:anywhere}.relocation-contract h2{font-size:1.125rem}
+
+/* Frozen crisis records: separate from service and activity legend. */
+.crisis-map-legend,.crisis-map-selection{border:1px dashed #9fb6af;padding:12px;margin:12px 0;overflow-wrap:anywhere}.crisis-map-legend p,.crisis-map-selection p{margin:6px 0;font-size:.875rem}.crisis-map-legend ul{list-style:none;padding:0;margin:8px 0;display:flex;gap:8px 20px;flex-wrap:wrap}.crisis-map-legend li{font-size:.875rem}.crisis-map-legend li span{display:inline-block;min-width:2.5em;color:#f6ecc8;font-family:monospace}.crisis-map-row{color:#f6ecc8!important}.crisis-map-summary{margin-top:12px}.coordinate-row>span:nth-child(2){min-width:0;overflow-wrap:anywhere}
