@@ -1,0 +1,12 @@
+{
+  "description": "Genuine round-20 producer. Exact, unedited source files copied before any round-21 production edit. Every transitive simulation and restore dependency is local; no current production imports. The remote commit was verified against GitHub, independently from the local checkout HEAD.",
+  "sourceCommit": "d7a25c5965c13f78ebadf9bcab033325137e816a",
+  "sourceDirectory": "round21-baseline/src",
+  "files": {
+    "simulation.js": "43e9ed448f1b0817c8ae4ba2d196d69cdb156818d966ae0d477de19a51a1cf85",
+    "training-authorization.js": "32d703184e7c2c908bba0506d2555216be37faba6d4845572a8d1f3617ef2331",
+    "branch-access.js": "2ef0fc66b6ad1300c2e7d6c72e0dea3e0203c9339b4d195bb3610c700634bc80",
+    "save.js": "3d223c8e34e0b09c7e02f769bff23d110730de463313f1d2312893d54726b768",
+    "data/board.json": "07fed22503bbaecb5f6f8c60b6aad99b6b61d47cf86065547a52889ae4c97f42"
+  }
+}

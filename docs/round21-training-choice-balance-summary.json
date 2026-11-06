@@ -1,0 +1,736 @@
+{
+  "round": 21,
+  "baseCommit": "d7a25c5965c13f78ebadf9bcab033325137e816a",
+  "command": "npm run test:training-choice-balance",
+  "fullReport": "playtest-output/round21-training-choice-balance-results.json",
+  "fullReportSHA256": "563bb41074f2391c2819c3e3ec93f40b52a25df4fb09eee7ea18e11f9b559413",
+  "summary": {
+    "scope": "Versioned workload audit of real natural player routes. Demonstrates sampled tradeoffs, not complete game balance or human playtesting. Synthetic maintenance and affordability states are labelled.",
+    "balanced": false,
+    "seeds": "0-19",
+    "pairs": 644,
+    "failedBuilds": 14,
+    "unavailable": 92,
+    "allGreater": false,
+    "crossingPairs": 644,
+    "unchangedOriginalSources": true,
+    "maintenance": [
+      {
+        "synthetic": true,
+        "maintenance": 0.1,
+        "delta": {
+          "politics": 2.1042,
+          "economy": 0.6807,
+          "science": 4.3846,
+          "religion": 1.5433
+        },
+        "authorizationCoverage": 0.055,
+        "trainingCoverage": 0.55
+      },
+      {
+        "synthetic": true,
+        "maintenance": 0.25,
+        "delta": {
+          "politics": 1.6411,
+          "economy": 0.449,
+          "science": 5.079,
+          "religion": 1.5433
+        },
+        "authorizationCoverage": 0.1375,
+        "trainingCoverage": 0.55
+      },
+      {
+        "synthetic": true,
+        "maintenance": 0.5,
+        "delta": {
+          "politics": 0.8695,
+          "economy": 0.0634,
+          "science": 6.2364,
+          "religion": 1.5435
+        },
+        "authorizationCoverage": 0.275,
+        "trainingCoverage": 0.55
+      },
+      {
+        "synthetic": true,
+        "maintenance": 0.6,
+        "delta": {
+          "politics": 0.5608,
+          "economy": -0.0909,
+          "science": 6.6996,
+          "religion": 1.5434
+        },
+        "authorizationCoverage": 0.33,
+        "trainingCoverage": 0.55
+      },
+      {
+        "synthetic": true,
+        "maintenance": 0.75,
+        "delta": {
+          "politics": 0.0978,
+          "economy": -0.3224,
+          "science": 7.3941,
+          "religion": 1.5434
+        },
+        "authorizationCoverage": 0.4125,
+        "trainingCoverage": 0.55
+      },
+      {
+        "synthetic": true,
+        "maintenance": 1,
+        "delta": {
+          "politics": -0.6738,
+          "economy": -0.7083,
+          "science": 8.5516,
+          "religion": 1.5434
+        },
+        "authorizationCoverage": 0.55,
+        "trainingCoverage": 0.55
+      }
+    ],
+    "sameTitles": 644,
+    "sameCoverage": 644,
+    "sameCrisis": 644,
+    "sameReadiness": 644,
+    "allValid": true,
+    "ranges": {
+      "politics": {
+        "min": -0.674,
+        "max": -0.6737
+      },
+      "economy": {
+        "min": -0.7084,
+        "max": -0.708
+      },
+      "science": {
+        "min": 8.5513,
+        "max": 8.5517
+      },
+      "religion": {
+        "min": 1.5432,
+        "max": 1.5434
+      }
+    },
+    "at30Minimum": {
+      "politics": 50.6725,
+      "economy": 41.264,
+      "science": 39.6093,
+      "religion": 50.0108
+    },
+    "reviewFailures": 52,
+    "titles": [
+      "许多人签署的历史",
+      "纸上的共同作者"
+    ],
+    "boundary": [
+      {
+        "name": "economy_only_authorization",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的经济能力不足：现有2.0，需支付4。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "science_only_authorization",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的科学能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "politics_only_training",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": false,
+          "error": "E4的政治能力不足：现有2.0，需支付3。整轮未提交。",
+          "atomic": true
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "both_exact",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "neither",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": true,
+          "committed": false,
+          "error": "E4的政治能力不足：现有1.0，需支付3。整轮未提交。 E4的经济能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        },
+        "train_network": {
+          "available": true,
+          "committed": false,
+          "error": "E4的经济能力不足：现有1.0，需支付4。整轮未提交。 E4的科学能力不足：现有1.0，需支付2。整轮未提交。",
+          "atomic": true
+        }
+      },
+      {
+        "name": "target_inactive",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "target_zero_maintenance",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      },
+      {
+        "name": "source_missing",
+        "synthetic": true,
+        "validBefore": true,
+        "authorize_training": {
+          "available": false,
+          "committed": false,
+          "error": "unavailable authorize_training",
+          "atomic": null
+        },
+        "train_network": {
+          "available": true,
+          "committed": true,
+          "error": null,
+          "atomic": null
+        }
+      }
+    ],
+    "legacy": [
+      {
+        "action": "authorize_training",
+        "phase": "planning",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 31,
+            "identical": true
+          },
+          {
+            "year": 32,
+            "identical": true
+          },
+          {
+            "year": 33,
+            "identical": true
+          },
+          {
+            "year": 34,
+            "identical": true
+          },
+          {
+            "year": 35,
+            "identical": true
+          },
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "authorize_training",
+        "phase": "locked",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 31,
+            "identical": true
+          },
+          {
+            "year": 32,
+            "identical": true
+          },
+          {
+            "year": 33,
+            "identical": true
+          },
+          {
+            "year": 34,
+            "identical": true
+          },
+          {
+            "year": 35,
+            "identical": true
+          },
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "authorize_training",
+        "phase": "committed",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 31,
+            "identical": true
+          },
+          {
+            "year": 32,
+            "identical": true
+          },
+          {
+            "year": 33,
+            "identical": true
+          },
+          {
+            "year": 34,
+            "identical": true
+          },
+          {
+            "year": 35,
+            "identical": true
+          },
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "authorize_training",
+        "phase": "year31",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 32,
+            "identical": true
+          },
+          {
+            "year": 33,
+            "identical": true
+          },
+          {
+            "year": 34,
+            "identical": true
+          },
+          {
+            "year": 35,
+            "identical": true
+          },
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "authorize_training",
+        "phase": "year35",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "authorize_training",
+        "phase": "ended",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [],
+        "workloadVersion": null
+      },
+      {
+        "action": "train_network",
+        "phase": "planning",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 31,
+            "identical": true
+          },
+          {
+            "year": 32,
+            "identical": true
+          },
+          {
+            "year": 33,
+            "identical": true
+          },
+          {
+            "year": 34,
+            "identical": true
+          },
+          {
+            "year": 35,
+            "identical": true
+          },
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "train_network",
+        "phase": "locked",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 31,
+            "identical": true
+          },
+          {
+            "year": 32,
+            "identical": true
+          },
+          {
+            "year": 33,
+            "identical": true
+          },
+          {
+            "year": 34,
+            "identical": true
+          },
+          {
+            "year": 35,
+            "identical": true
+          },
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "train_network",
+        "phase": "committed",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 31,
+            "identical": true
+          },
+          {
+            "year": 32,
+            "identical": true
+          },
+          {
+            "year": 33,
+            "identical": true
+          },
+          {
+            "year": 34,
+            "identical": true
+          },
+          {
+            "year": 35,
+            "identical": true
+          },
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "train_network",
+        "phase": "year31",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 32,
+            "identical": true
+          },
+          {
+            "year": 33,
+            "identical": true
+          },
+          {
+            "year": 34,
+            "identical": true
+          },
+          {
+            "year": 35,
+            "identical": true
+          },
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "train_network",
+        "phase": "year35",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [
+          {
+            "year": 36,
+            "identical": true
+          },
+          {
+            "year": 37,
+            "identical": true
+          },
+          {
+            "year": 38,
+            "identical": true
+          },
+          {
+            "year": 39,
+            "identical": true
+          },
+          {
+            "year": 40,
+            "identical": true
+          }
+        ],
+        "workloadVersion": null
+      },
+      {
+        "action": "train_network",
+        "phase": "ended",
+        "identicalOnRestore": true,
+        "identicalAfter": true,
+        "allYearsIdentical": true,
+        "years": [],
+        "workloadVersion": null
+      }
+    ]
+  }
+}

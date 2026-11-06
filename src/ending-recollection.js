@@ -1,3 +1,4 @@
+import { getTrainingAuthorizationContracts } from './training-authorization.js';
 import { getEnding } from './simulation.js';
 import { getDecadeReview } from './decade-review.js';
 import { characterEpilogue } from './story.js';
@@ -68,10 +69,15 @@ function intervention(state, card, start, end) {
     responsibility = '这一窗口没有新增合同，已有的责任没有随之结束。';
   } else if (status === 'cancelled') {
     responsibility = actionId === 'authorize_training'
-      ? '已付协商成本不退；取消没有替原学徒补上签名。'
+      ? (getTrainingAuthorizationContracts(state).some(c=>c.sourceActionId===source.id&&c.status==='cancelled'&&c.workload)?'已付协商成本不退；取消没有替原学徒补上签名，也没有执行拟议的职责改排。':'已付协商成本不退；取消没有替原学徒补上签名。')
       : '已付成本与取消记录保留；未完成的工作没有被写成已经落实。';
   } else if (status === 'failed') {
     responsibility = '已付成本与失败记录保留，不能把后来建设写成当时成功。';
+  } else if (actionId === 'authorize_training' && getTrainingAuthorizationContracts(state).some(c=>c.sourceActionId===source.id&&c.status==='success'&&c.workload)) {
+    const contract=getTrainingAuthorizationContracts(state).find(c=>c.sourceActionId===source.id&&c.status==='success'&&c.workload);
+    const target=state.institutions.find(i=>i.id===contract.target.id);
+    const known=target&&typeof target.active==='boolean'&&Number.isFinite(target.maintenance)&&target.maintenance>=0&&target.maintenance<=1;
+    responsibility='议事和生计协调占用了深入带教，基本读尺与预警仍列在职责内；这不是给权利打分，也没有新增人手或替其他地方签名。'+(!known?'原点当前运转情况未知，不能从签署推定今天仍有来源。':!target.active||target.maintenance===0?'原点当前停运，已签记录保留，当前不再提供年度来源。':`当前政治、经济来源提高，科学来源降低，宗教不变；实际仍乘维护系数${target.maintenance}，不保证今后一直运转。`);
   } else responsibility = RESPONSIBILITIES[actionId] || '已兑现的安排仍需维护，不代替其他地方作出承诺。';
   return {actorId:card.actorId, name:card.name, actionId, cellId:source?.cellId || null,
     status, choice, outcome, responsibility, sourceIds:source || passed ? sourceIds : []};

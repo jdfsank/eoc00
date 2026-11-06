@@ -220,14 +220,14 @@ export function riverbankHistory(state,cellId,art){
     paid?relocation.sources.map(r=>r.recordId):[],paid&&relocation.status==='recorded'?'recorded':'unknown');}
   const authorization=getTrainingAuthorizationStatus(state,'E4'),c=authorization.contracts[0];
   if(c){
-   const target=local.find(i=>i.id===c.target.id),pending=c.status==='pending',cancelled=c.status==='cancelled';
-   const result=pending?'第30年已支付协商、公开轮值与记录工作的成本，约定第31年核对原学徒。现在仍待兑现，读到条件不等于已经取得他们的签名。'
+   const target=local.find(i=>i.id===c.target.id),pending=c.status==='pending',cancelled=c.status==='cancelled',workload=c.workload;
+   const result=workload ? (pending ? '第30年已支付协商、公开轮值与记录工作的成本，约定第31年核对原学徒并协商轮值职责与承接权。议事和生计协调将占用部分深入带教时段，基本读尺与预警保留；现在仍待兑现，读到条件不等于已经取得他们的签名，也没有开始改排。' : cancelled ? `第31年，${c.cancellationReason==='already-authorized'?'原学徒已有授权或本地已有实际承接授权':'原学徒目标缺失、替换或不再有效运转'}，本次协商取消，没有新增授权或执行职责改排；已付成本不退。` : '第31年，原东岸学徒按已协商的条件留下本地承接签名，并开始调整轮值：保留基本读尺与预警，减少深入带教，承担公开议事和生计协调。经费支付的是会议、公开轮值与记录工作，签名不是买来的，也不是介入员替他们签署。') : pending?'第30年已支付协商、公开轮值与记录工作的成本，约定第31年核对原学徒。现在仍待兑现，读到条件不等于已经取得他们的签名。'
     :cancelled?`第31年，${c.cancellationReason==='already-authorized'?'原学徒已有授权或本地已有实际承接授权':'原学徒目标缺失、替换或不再有效运转'}，本次协商取消，没有新增授权；已付成本不退。`
      :'第31年，原东岸学徒按已协商的条件留下本地承接签名。经费支付的是会议、公开轮值与记录工作，签名不是买来的，也不是介入员替他们签署。';
-   add('training-authorization','原学徒的承接签名',[
+   add('training-authorization',workload?'原学徒的承接签名与轮值分工':'原学徒的承接签名',[
     result,
     `对象始终是第7年原建站链留下的E4学徒，${target?currentText(target):'今天的目标载体已无法核实'}；其他学校或南岸读尺班没有因此获得这份授权。`,
-    '这项协商不新建学校、不增加人手、年度产出、预警覆盖或异源校验，也不附送河港信任和交班方针。第23年的清点留在原页。',
+    workload ? (pending ? '合同拟提高原点的政治、经济年度来源，降低科学来源，宗教不变；这项排班尚未执行。' : cancelled ? '这份拟议排班没有生效，不能把旧签名或其他学校当作已经完成改排。' : !target || activity(target)==='unknown' ? '改排的历史记录仍在，但原点当前运转情况未知，不能从签署页推定今天仍有来源。' : activity(target)==='stopped' ? '改排的历史记录仍在；原点当前停运，不再提供这份排班的年度来源。' : `原点目前仍按这份排班提供来源：政治、经济较原排班提高，科学降低，宗教不变；实际仍乘维护系数${target.maintenance}，不是通道净增预测。`) + '不新建学校、不增加人手、预警覆盖或异源校验，也不附送河港信任和交班方针。第23年的清点留在原页。' : '这项协商不新建学校、不增加人手、年度产出、预警覆盖或异源校验，也不附送河港信任和交班方针。第23年的清点留在原页。',
    ],authorization.sourceIds,pending?'pending':'recorded');
   }else if(authorization.status==='unknown')add('training-authorization','承接签名的来源待核对',[
    authorization.reason,'不能从课堂、姓名或今天的能力补写已经签署；当前服务与授权来源分开记录。',

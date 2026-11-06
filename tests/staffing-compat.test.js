@@ -113,6 +113,7 @@ for (const seed of [0, 6]) for (const choice of ['recruit_risk', 'recruit_succes
   expected.futureCheckRulesVersion = sim.FUTURE_CHECK_RULES.version;
   expected.archiveUpgradeRulesVersion = sim.ARCHIVE_UPGRADE_RULES.version;
   expected.trainingAuthorizationRulesVersion = sim.TRAINING_AUTHORIZATION_RULES.version;
+  expected.trainingWorkloadRulesVersion = sim.TRAINING_WORKLOAD_RULES.version;
   assert.deepEqual(actual, expected);
   submit(before, expected, 'build_joint'); submit(sim, actual, 'build_joint');
   continuePair(before, expected, actual, choice, true);

@@ -1,0 +1,1517 @@
+{
+  "verifiedAt": "2026-11-06T08:42:20.744653+00:00",
+  "baseCommit": "d7a25c5965c13f78ebadf9bcab033325137e816a",
+  "productionFrozenAt": "2026-11-06T08:07:16.439396+00:00",
+  "productionFreezeHash": "73dfd7a7f026e1bb755cc2a1709c1ec226c09fa1d5b3d275d558fff3f1dfffe6",
+  "productionFilesCompared": 323,
+  "productionFilesMismatched": [],
+  "browserScript": "scripts/round21-training-workload-test.mjs",
+  "browserScriptSha256": "eaaeae3ec1d7968210c8bbefa9cfe24aeb5485d59bf70373b2bf211acaeb496a",
+  "unitTest": "tests/training-workload-audit.test.js",
+  "unitTestSha256": "a087c34ec3b8ff1aca88359bfff835b28937f750a5f55813a37fb776374c8eef",
+  "unitTestsPassed": 58,
+  "unitTestsFailed": 0,
+  "unitLog": "independent-unit-tests.txt",
+  "unitLogSha256": "d08d0a82b6b8af1fc90b221409e9ddda89dab9617afc924bff4bed5961ac87d4",
+  "browserResult": "training-workload-results.json",
+  "browserResultSha256": "893ada030bcbc3ba7712a08d99a878d1b956ff0b5e05b12fc9e7813bb47b6f19",
+  "browserStartedAt": "2026-11-06T08:37:46.043Z",
+  "browserCompletedAt": "2026-11-06T08:39:40.969Z",
+  "browserChecksPassed": 610,
+  "browserChecksFailed": 0,
+  "browserErrors": [],
+  "runtimeSourceHash": {
+    "before": "ad4463a0ec30c8ba9e4857ad2249243a5f362b35cf50a369b2475760adf9e3b8",
+    "after": "ad4463a0ec30c8ba9e4857ad2249243a5f362b35cf50a369b2475760adf9e3b8"
+  },
+  "logicalScreenshotViews": 33,
+  "screenshotFiles": 95,
+  "boundedOrOrdinaryScreenshots": 29,
+  "actualViewportSegments": 66,
+  "pixelReviewedFiles": 95,
+  "pixelReviewMethod": "All 95 final screenshot files visually verified: 92 byte-identical SHA-256 matches to already visually reviewed capture-v2 evidence; the three changed files were opened and visually re-reviewed from the final aggregate run. Each changed image differed by one pixel only, with no text, layout, or coverage change. Previous long-view review used unscaled original viewport contact sheets.",
+  "captureLimitation": "Earlier >8192px element captures had repeated and missing pixels and were rejected. Those artifacts are excluded here. Current script uses actual original-size viewport scrolling with 64px overlap for elements >7000px, asserts monotonic complete coverage, and restores scroll with unchanged state/localStorage.",
+  "scopeLimits": [
+    "Chromium 138.0.7204.0 in automation, not a physical device or screen-reader certification.",
+    "Native application text-size setting 16px/32px, not browser zoom.",
+    "Six independent natural-route samples establish the tested tradeoff, not universal game balance or human playtest outcomes.",
+    "Legal imported stopped/cancelled/custom-source boundaries are synthetic, not claimed as reachable player shutdown actions."
+  ],
+  "screenshots": [
+    {
+      "file": "synthetic-cancelled-target-ending-390.png",
+      "sha256": "ebb3c73fab9b260cdb6390fe00b079e34247d640572ee04ab042eec4cec77d77",
+      "bytes": 139669,
+      "width": 358,
+      "height": 567,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "synthetic-cancelled-target-visit-390.png",
+      "sha256": "942a0563acc6d6b6ce5b59ded4534f27538c6444588807e0c9e695f7918fed17",
+      "bytes": 366882,
+      "width": 358,
+      "height": 2907,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "synthetic-stopped-after-success-ending-390.png",
+      "sha256": "070c5b336abfe0947105ed727171a6ab9b53fa9c09aa76a5e4f44e184b5eeae1",
+      "bytes": 176901,
+      "width": 358,
+      "height": 675,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "synthetic-stopped-after-success-visit-390.png",
+      "sha256": "5083f188e5c89ea89e0f0615fb3d3f2ec80d2e83af8eb4c95a5080d4d46c917b",
+      "bytes": 379500,
+      "width": 358,
+      "height": 2961,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "free-scene-390-text100.png",
+      "sha256": "ebb7e46c6f23c235c77b9295c3900e1485f8efe5024445ce92c0ac012cc67dc0",
+      "bytes": 261231,
+      "width": 358,
+      "height": 1004,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "comparison-390-text100.png",
+      "sha256": "254cd3669e2bfd90ba6453f8c49e0739f94f483785c7171a4e45c8dd485edeba",
+      "bytes": 369610,
+      "width": 358,
+      "height": 1783,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "authorization-preview-390-text100.png",
+      "sha256": "55ae230c02a589327effe7963151370d0a698d415566e73ff18dbf1a5519a12a",
+      "bytes": 347254,
+      "width": 358,
+      "height": 1628,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "authorization-confirm-390-text100.png",
+      "sha256": "1ac891568400e7745c502aa3b33a96a740ad349caaceefeb298b319050fef49f",
+      "bytes": 348187,
+      "width": 358,
+      "height": 1628,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "locked-review-390-text100.png",
+      "sha256": "5e72fd3794868ea969033511e095863b34e5b40a3e0f704aec53982100c21d3a",
+      "bytes": 662230,
+      "width": 358,
+      "height": 3845,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "ending-work-390-text100.png",
+      "sha256": "9ee4b13b3489f3eb3b4995cb7518987e6c6f4683a09a0367130b906a9e74ea3f",
+      "bytes": 186441,
+      "width": 358,
+      "height": 700,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "e4-visit-390-text100.png",
+      "sha256": "92a5e2db61be12025561bbb2317a19692c446ff5a9d1753000cd06ce62bb5f98",
+      "bytes": 375350,
+      "width": 358,
+      "height": 2926,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "free-scene-390-text200.png",
+      "sha256": "6bbe0381c485cf82bcee8ac8551fe4f5f135c948b6e3c83e3fd1789299bfdd0a",
+      "bytes": 665381,
+      "width": 358,
+      "height": 3440,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "comparison-390-text200.png",
+      "sha256": "fb491a051f2fcad3ff0782d97e273e31354a7e09df5c85ccb3ce164a753fd927",
+      "bytes": 858528,
+      "width": 358,
+      "height": 4905,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "authorization-preview-390-text200.png",
+      "sha256": "274ca33be6e7b4970064c4d0901ac1735956b5184a275409c100fac480d41192",
+      "bytes": 781034,
+      "width": 358,
+      "height": 4088,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "authorization-confirm-390-text200.png",
+      "sha256": "5bbde791d81a02cca2470cf35bb169d3de127209f6bad1ee602c84743e3782b8",
+      "bytes": 784767,
+      "width": 358,
+      "height": 4136,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "locked-review-390-text200-part-01.png",
+      "sha256": "8607f193d24a4a673b0a5afa70184599312b2d2aa020622e4768ea1f7e5f815d",
+      "bytes": 105237,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 1,
+      "scrollY": 331,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-02.png",
+      "sha256": "ec6722d3494f369051688fda1195bba10aafe1309d6ab057d5870a3be3b39749",
+      "bytes": 95282,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 2,
+      "scrollY": 1111,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-03.png",
+      "sha256": "3989621e02e6b2e87b2d86426428aa1c91a1cdd70b1d4b9e10e4129dca4f8c5b",
+      "bytes": 82374,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 3,
+      "scrollY": 1891,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-04.png",
+      "sha256": "80ece0a946ee7e2f924091184189a2bfcfeea11284d6c32d178bca6c398e2257",
+      "bytes": 98333,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 4,
+      "scrollY": 2671,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-05.png",
+      "sha256": "980030b6e199509e44f6a5039d954ff829c101100ce5d657a41fdc8376150c57",
+      "bytes": 150394,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 5,
+      "scrollY": 3451,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-06.png",
+      "sha256": "2283ac6eb483833bdae482ef78b62fb2d47e02c82bad96d253cb1a817c6bfefd",
+      "bytes": 144594,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 6,
+      "scrollY": 4231,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-07.png",
+      "sha256": "aac8f42292b393112771a2c431faa214f9ebf1b3bfee498fbe432991c7cb5187",
+      "bytes": 148393,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 7,
+      "scrollY": 5011,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-08.png",
+      "sha256": "140a088926998c27d1a9eb6905958abf3bba00a9406679a3cad3d88c0abcb883",
+      "bytes": 144795,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 8,
+      "scrollY": 5791,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-09.png",
+      "sha256": "7b902c5a49106c8f904b0977c5bdbde51ac68c6ac82d0c0f6ff23ece6b09313a",
+      "bytes": 174086,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 9,
+      "scrollY": 6571,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-10.png",
+      "sha256": "d31907303a1c4968f018d221775c7dfb54574f1934c0c9ec8422acc3c3affcbd",
+      "bytes": 127176,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 10,
+      "scrollY": 7351,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-11.png",
+      "sha256": "3012249493023a15234002e7437fa5b602f139d05a6de84a927813044bc07984",
+      "bytes": 107670,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 11,
+      "scrollY": 8131,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-12.png",
+      "sha256": "0343dcf1ff6f7f3e087bc5ff0dc310e9ca0654e81dc19a41f80703e8f6cb3a94",
+      "bytes": 113807,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 12,
+      "scrollY": 8911,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-13.png",
+      "sha256": "cf6936352fe1d533ae935ec29f51c488e1f6ee3b3f899175b5b247e86c5eae46",
+      "bytes": 102927,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 13,
+      "scrollY": 9691,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "locked-review-390-text200-part-14.png",
+      "sha256": "9283c983229bdae8de21c2b7f4e8f1eb3ff0ef4cf354f9d72229b7fd97816fe4",
+      "bytes": 70695,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-390-text200",
+      "part": 14,
+      "scrollY": 10090,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "file": "ending-work-390-text200.png",
+      "sha256": "ee896c0921a196c092c0315f3689fc6d4c50e2b82650a159a698c2da55dc5774",
+      "bytes": 443733,
+      "width": 358,
+      "height": 2104,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "e4-visit-390-text200-part-01.png",
+      "sha256": "a85d760e99be9f960fb40c35cb1f2b8955fddf54730b5e1b002c16d75cd10365",
+      "bytes": 118987,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 1,
+      "scrollY": 331,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-02.png",
+      "sha256": "7bb7f3cb5c9287c8e76e51227ad265db3cfc83fe9d6457953f66fa0385e5812d",
+      "bytes": 72376,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 2,
+      "scrollY": 1111,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-03.png",
+      "sha256": "4d3e81d5a9d8fb6307a240f36971e52ed88765c2cfd2cb91a55cbbcb4c657c08",
+      "bytes": 150244,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 3,
+      "scrollY": 1891,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-04.png",
+      "sha256": "6f1047a8fa91f903c64d9037b2089bed4f41d5041ad5a5f8a73540563386612b",
+      "bytes": 64299,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 4,
+      "scrollY": 2671,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-05.png",
+      "sha256": "d335377fabd1bbcb0b3278e112c89c84bb2c171e4ea4d7f3b965a5ed14d01891",
+      "bytes": 86443,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 5,
+      "scrollY": 3451,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-06.png",
+      "sha256": "d6fbf8f8277422a1e4d18b5a1f28776eec46b3c922317e3ba6702ffd60159254",
+      "bytes": 106477,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 6,
+      "scrollY": 4231,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-07.png",
+      "sha256": "6f8c6e31f70bae46d9cdd575c84c3e0b59adb8f54e3dabfb0d204868a55e30ac",
+      "bytes": 89772,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 7,
+      "scrollY": 5011,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-08.png",
+      "sha256": "0b41c9846303e9a0b93e0329d226a01d0fb4fde39dd3c16ab4b70040df2d5dc7",
+      "bytes": 135140,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 8,
+      "scrollY": 5791,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-09.png",
+      "sha256": "de1c5968a41a97c7bd418ef34678815050d92e2cb6fb386985c2f2eaf089d35b",
+      "bytes": 65684,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 9,
+      "scrollY": 6571,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "e4-visit-390-text200-part-10.png",
+      "sha256": "79085b845e95b55d44cb495a6f3585845a94365e86c6afee837e0c9461ba0fa6",
+      "bytes": 54523,
+      "width": 390,
+      "height": 844,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-390-text200",
+      "part": 10,
+      "scrollY": 6769,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "file": "free-scene-320-text100.png",
+      "sha256": "242877335469efe951da50e8fbe66f2c3e6d1be17309fbda1b7b0776ff3ca05f",
+      "bytes": 261460,
+      "width": 288,
+      "height": 1140,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "comparison-320-text100.png",
+      "sha256": "a360d4668be45ea68f67b2154b4052967a1f0e24030ff59fe890c5d928b9820b",
+      "bytes": 351674,
+      "width": 288,
+      "height": 1893,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "authorization-preview-320-text100.png",
+      "sha256": "ead24ab569364d3a523782b3bada6c988fe06494a870dfe716706e52da422057",
+      "bytes": 336814,
+      "width": 288,
+      "height": 1782,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "authorization-confirm-320-text100.png",
+      "sha256": "eff1f9f6a23fe44743b5766500acdc1c86fd8311173c51d70f3eb025bb59d554",
+      "bytes": 337883,
+      "width": 288,
+      "height": 1782,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "locked-review-320-text100.png",
+      "sha256": "9b3fcdef4a9c4fd61e1e5ebfdabe30c29bc71ea586334859e15117e31f1df606",
+      "bytes": 645820,
+      "width": 288,
+      "height": 4280,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "ending-work-320-text100.png",
+      "sha256": "32e167d47ef62378cc655fc332cf4c2ab48d6654998bdc599461e67798bb612a",
+      "bytes": 181320,
+      "width": 288,
+      "height": 805,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "e4-visit-320-text100.png",
+      "sha256": "e5ff64e81494426872d16c6f94ccb3e72a6343bafe6e149a6776d5b80660aa57",
+      "bytes": 366045,
+      "width": 288,
+      "height": 3129,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "free-scene-320-text200.png",
+      "sha256": "bbaf8d50faf39a6810b4b7ae42c5fb642a27741508ccf0ca5dd1a59bc25faaa3",
+      "bytes": 650043,
+      "width": 288,
+      "height": 3919,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "comparison-320-text200.png",
+      "sha256": "3fb6d6bd7169ddc3b2cecdaa6d78db2ffd220f2a76fec7cd76aac0cd39792512",
+      "bytes": 852300,
+      "width": 288,
+      "height": 5915,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "authorization-preview-320-text200.png",
+      "sha256": "e27a1e9b3380919db9a33f0fb37e14d8f1ace3a23a6467d140c0676597cffbfc",
+      "bytes": 774990,
+      "width": 288,
+      "height": 4844,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "authorization-confirm-320-text200.png",
+      "sha256": "c00a2a8836fc265dfebce4ce8f08624398f8471d9cec57ac53343cab3ef4950d",
+      "bytes": 778304,
+      "width": 288,
+      "height": 4882,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "locked-review-320-text200-part-01.png",
+      "sha256": "fb12a0609e09be2ca3d155bb33306d7d2b63c0a9f76934cd67a877e35711e37a",
+      "bytes": 74148,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 1,
+      "scrollY": 401,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-02.png",
+      "sha256": "663deaec00536b70c55fb4d54d68d756f700320c1f21020c02bc9bd280b38c3e",
+      "bytes": 49823,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 2,
+      "scrollY": 905,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-03.png",
+      "sha256": "1aa6e10bb9e4ecc5fd9d03dc07512d69fcf1f4085e03b959d7d061bb6057277d",
+      "bytes": 46784,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 3,
+      "scrollY": 1409,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-04.png",
+      "sha256": "53a74670aa885302f312c6e7abcb6db4a8c162598755d9e916e7afb230ef55aa",
+      "bytes": 59547,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 4,
+      "scrollY": 1913,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-05.png",
+      "sha256": "c4ad911e5d313f7c9835750b23db53377889ed87f53b85f3775d3bbb5ab0ba14",
+      "bytes": 43746,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 5,
+      "scrollY": 2417,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-06.png",
+      "sha256": "a7c612e6924dd5e5a9a87ca3a83c13abe77b4e285dea76af7cf1212cb3fc122d",
+      "bytes": 45607,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 6,
+      "scrollY": 2921,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-07.png",
+      "sha256": "bb8629e07de658d94c4ac9b61a44ee380ce831e9d4c484a385d597f3684bff6d",
+      "bytes": 47867,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 7,
+      "scrollY": 3425,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-08.png",
+      "sha256": "51d62ab4e7afc40f2d6f496ac9dab03437071bdc3131c8f5297a465112d358b9",
+      "bytes": 87723,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 8,
+      "scrollY": 3929,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-09.png",
+      "sha256": "831eac145e15ab0db05366daacb0cd49c8b3ba6861db0eda96080ba2e4485d8e",
+      "bytes": 75234,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 9,
+      "scrollY": 4433,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-10.png",
+      "sha256": "45aab7b1a3e6e8e969f1b5b81ac4730982da983f313a6fab8bec47e5602b7c01",
+      "bytes": 89353,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 10,
+      "scrollY": 4937,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-11.png",
+      "sha256": "50b8d20ff7b956939c11c7821266f8b7bf2c61e401ad2c2c62e20737c0b38225",
+      "bytes": 68873,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 11,
+      "scrollY": 5441,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-12.png",
+      "sha256": "a8792a5fef69f1b13b1e0794fd454779d1ca346df33df0ec538c982724ea9da3",
+      "bytes": 72087,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 12,
+      "scrollY": 5945,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-13.png",
+      "sha256": "c07bb66fb54cd9fdf6491a11d8dcf59f5b191c90b79751b5fc5e06c1bacceb39",
+      "bytes": 83909,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 13,
+      "scrollY": 6449,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-14.png",
+      "sha256": "2478672abd35193c4464549542ba988e03fbcb4198deaf71552049356d139a2c",
+      "bytes": 69183,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 14,
+      "scrollY": 6953,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-15.png",
+      "sha256": "dfb9c06d6fb7128445b1dc4f6d35f81fe55bd2199d0ec1ca71935628e558addb",
+      "bytes": 87019,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 15,
+      "scrollY": 7457,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-16.png",
+      "sha256": "cbb309de370b200f931f21793f27f4f5119ccb0208e4b672bcaca85b9452806f",
+      "bytes": 111012,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 16,
+      "scrollY": 7961,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-17.png",
+      "sha256": "1932b5a3bae165508ebac762b2e822333e19c9944546c349acb0ec2a9f5f7e98",
+      "bytes": 78663,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 17,
+      "scrollY": 8465,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-18.png",
+      "sha256": "06a9c44d73683889706ddd9d09293710506fc55f66048227c8ce39cfab4b8683",
+      "bytes": 71754,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 18,
+      "scrollY": 8969,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-19.png",
+      "sha256": "045e941639def737494d8f7fca002754d0d21c256ef7f4d2b9bec6ea86cbdfff",
+      "bytes": 70055,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 19,
+      "scrollY": 9473,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-20.png",
+      "sha256": "4cd1f111828782d8e02a6e53c6ae00ac0ddc845f80f2dccb3677c8d9186440d9",
+      "bytes": 68946,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 20,
+      "scrollY": 9977,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-21.png",
+      "sha256": "10ce9c0d98f942a62e3d03efa37045882e6fac787dace48ade2697d1de97315a",
+      "bytes": 58332,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 21,
+      "scrollY": 10481,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-22.png",
+      "sha256": "6741a83f26278d279c1e482db61a1e106b9ef819244714d2492c494bb1f7cc6a",
+      "bytes": 48007,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 22,
+      "scrollY": 10985,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-23.png",
+      "sha256": "f51e3673c230cee5f6201f77858418b5e877263772cf2065e7d2cb73528fd65c",
+      "bytes": 74620,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 23,
+      "scrollY": 11489,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-24.png",
+      "sha256": "66f675436bc911aa8cac57817ede3e850f232c90e47cf215b8c8b1f32dbd6695",
+      "bytes": 59899,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 24,
+      "scrollY": 11993,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-25.png",
+      "sha256": "9ebc42e2553a130d6d7ac6438c063a4429abe07abe876bbf3059b06afc13d913",
+      "bytes": 48528,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 25,
+      "scrollY": 12497,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "locked-review-320-text200-part-26.png",
+      "sha256": "00b9c719a89dd20e47552f40265069bde2de0ffb074880460472ce21eb39f82d",
+      "bytes": 41727,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "locked-review-320-text200",
+      "part": 26,
+      "scrollY": 12816,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "file": "ending-work-320-text200.png",
+      "sha256": "5a2af692f777063eba26dad16b5e20f178804cff560c2af11a6ef81833237c52",
+      "bytes": 429070,
+      "width": 288,
+      "height": 2527,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    },
+    {
+      "file": "e4-visit-320-text200-part-01.png",
+      "sha256": "137e18fc69ffea862a928109987aa583fc5ae492bc548593f75b0fcc62fee9b0",
+      "bytes": 73283,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 1,
+      "scrollY": 439,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-02.png",
+      "sha256": "f079fcbae5a37746ea0b8bdf133c327dcc4e65f721e70a935c66c71a61c586c2",
+      "bytes": 57290,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 2,
+      "scrollY": 943,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-03.png",
+      "sha256": "2c48fc0299a3a5b671384b295a8829ee614e9b59303a1eda8adcf420f86d1cd7",
+      "bytes": 50924,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 3,
+      "scrollY": 1447,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-04.png",
+      "sha256": "b0c82b138e0c729dfa4b15e74236dc207dc63f1f683ac092b6faf8c25357b34e",
+      "bytes": 100561,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 4,
+      "scrollY": 1951,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-05.png",
+      "sha256": "1b97b8b821cbcdbe5aba1c1f94cf94f24b66c073d615c4459fd98b4581b507b2",
+      "bytes": 81460,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 5,
+      "scrollY": 2455,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-06.png",
+      "sha256": "fd3f61811098cc1cfbb2bf816eaedf09206b7f2ceddfed0c1ca9c8f38189dac3",
+      "bytes": 42969,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 6,
+      "scrollY": 2959,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-07.png",
+      "sha256": "2ce64458bcdb2a56491a515ce47e50bfd1c754e6ef5027ed23a6db68afa7af6d",
+      "bytes": 44344,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 7,
+      "scrollY": 3463,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-08.png",
+      "sha256": "3f74f13774e6e4f9f31b027b755f796e96eee7862d5f7ef3a23c7024fd8dfe1d",
+      "bytes": 45933,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 8,
+      "scrollY": 3967,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-09.png",
+      "sha256": "67ebf136f4bed9ce554fa667bd7af9ee09ab512ba3c6effe32a1eb24e1c11b66",
+      "bytes": 56171,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 9,
+      "scrollY": 4471,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-10.png",
+      "sha256": "3a47dae795918bd0f988268b72b078636f5bb37ddbfcf5ae869bea49558a0156",
+      "bytes": 57422,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 10,
+      "scrollY": 4975,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-11.png",
+      "sha256": "9bf7bd1f3fc9894f78a52552218fae3e6c503ff3caf4949ab8a26fdfcf334b73",
+      "bytes": 61678,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 11,
+      "scrollY": 5479,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-12.png",
+      "sha256": "0f91d3f3c99a92a7b764f6e9aa09beebf71a4f28951cbe6ff42cf7cea24f4131",
+      "bytes": 42936,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 12,
+      "scrollY": 5983,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-13.png",
+      "sha256": "c8c8de2f0b07cf2e527873ef72ce80fa9afdd48b7a73c7916347ac8825ad823c",
+      "bytes": 75871,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 13,
+      "scrollY": 6487,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-14.png",
+      "sha256": "49cd98830b75cb5fa9dcb44368cb46c056f2d5f0495d183537ad5cc79d3928e8",
+      "bytes": 68163,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 14,
+      "scrollY": 6991,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-15.png",
+      "sha256": "75b3acf08a3c7cbf44dfd90917818bd16f02b2efa57891a8bd1a44367efa9210",
+      "bytes": 43790,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 15,
+      "scrollY": 7495,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "e4-visit-320-text200-part-16.png",
+      "sha256": "0e6ff16743c0c120887d2c4da985ff11b6b3a62ec72faea390bc3f238fa5f788",
+      "bytes": 35156,
+      "width": 320,
+      "height": 568,
+      "capture": "actual-viewport-segment",
+      "pixelReviewed": true,
+      "group": "e4-visit-320-text200",
+      "part": 16,
+      "scrollY": 7999,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "file": "old-contract-comparison-390.png",
+      "sha256": "1416b38075091fcbb75dc66329630dc54e012126b19d075e2358961f9d97f513",
+      "bytes": 178501,
+      "width": 358,
+      "height": 972,
+      "capture": "bounded-element",
+      "pixelReviewed": true
+    }
+  ],
+  "fixtureMetadataVerification": {
+    "verifiedAt": "2026-11-06T08:35:51.642028+00:00",
+    "reason": "Public provenance description clarified; producer code, source commit, and declared source hashes unchanged. Original full 58-test log retained.",
+    "manifestSha256": "7d6a882c3be92c8989e70154428bbffc1cd03f6a72e5a73cee33b4c67c263aa1",
+    "testsPassed": 1,
+    "testsFailed": 0,
+    "log": "fixture-metadata-verification.txt",
+    "logSha256": "29ac9720c1ab10f6f02322c302c83f654edfa3212338d2edac391ab847b6ced1"
+  },
+  "finalAggregateReconciliation": {
+    "browserSuite": 39,
+    "previousReviewedRunCompletedAt": "2026-11-06T08:17:40.476Z",
+    "finalRunStartedAt": "2026-11-06T08:37:46.043Z",
+    "finalRunCompletedAt": "2026-11-06T08:39:40.969Z",
+    "unchangedScreenshots": 92,
+    "changedScreenshots": [
+      "locked-review-320-text200-part-23.png",
+      "e4-visit-320-text200-part-01.png",
+      "e4-visit-320-text200-part-02.png"
+    ],
+    "changedScreenshotsReviewed": 3,
+    "productionFilesRechecked": 323,
+    "scriptUnchanged": true,
+    "testScriptUnchanged": true,
+    "result": "610/610 checks, 95/95 screenshot files verified; zero browser errors; latest report and images copied."
+  }
+}

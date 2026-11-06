@@ -3,7 +3,9 @@
 // completed balance or human-playtest certification. Synthetic boundaries are
 // labelled separately; old producer saves must continue byte-for-byte.
 import fs from "node:fs/promises";
-import * as sim from "../src/simulation.js";
+// Reproduce the published round-20 audit with its frozen, genuine producer.
+// Current balance work runs round21-training-choice-balance.mjs instead.
+import * as sim from "../tests/fixtures/pre-training-workload-producer/simulation.js";
 import * as prior from "../tests/fixtures/pre-training-authorization-simulation.js";
 import { restoreSave } from "../src/save.js";
 const cp = structuredClone;

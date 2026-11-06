@@ -86,6 +86,7 @@ test('new runs explicitly pin source access and future checks; only explicit tag
   expected.futureCheckRulesVersion = sim.FUTURE_CHECK_RULES.version;
   expected.archiveUpgradeRulesVersion = sim.ARCHIVE_UPGRADE_RULES.version;
   expected.trainingAuthorizationRulesVersion = sim.TRAINING_AUTHORIZATION_RULES.version;
+  expected.trainingWorkloadRulesVersion = sim.TRAINING_WORKLOAD_RULES.version;
   assert.deepEqual(state, expected);
   assert.deepEqual(reload(state), state);
   submit(before, expected, 'build_merchant'); submit(sim, state, 'build_merchant');

@@ -42,7 +42,7 @@ export function getHandoffOutlook(state) {
   if(issues.length)return {ready:false,issues,model,policy,current};
   const training=review.tasks.filter(t=>t.a.id==='train_network');
   const staff=[...currentStaff,...training.map(t=>t.d.cellId)], authorized=[...(readiness?.authorizedCells||[]),...training.map(t=>t.d.cellId)];
-  const authorizationConditional=review.tasks.filter(t=>t.a.id===TRAINING_AUTHORIZATION_RULES.actionId).map(t=>{const plan=getTrainingAuthorizationPlan(state,t.d.cellId);return {actionId:t.a.id,actorId:t.d.actorId,cellId:t.d.cellId,dueYear:31,target:plan.target?{...plan.target}:null,supported:plan.available};});
+  const authorizationConditional=review.tasks.filter(t=>t.a.id===TRAINING_AUTHORIZATION_RULES.actionId).map(t=>{const plan=getTrainingAuthorizationPlan(state,t.d.cellId);return {actionId:t.a.id,actorId:t.d.actorId,cellId:t.d.cellId,dueYear:31,target:plan.target?{...plan.target}:null,supported:plan.available,...(plan.workload?{workload:structuredClone(plan.workload)}:{})};});
   const authorizedWithMandate=[...authorized,...authorizationConditional.filter(c=>c.supported).map(c=>c.cellId)];
   const workforce=getRecoveryWorkforce(state).length>0;
   const conditional=review.tasks.filter(t=>['complete_review',FUTURE_CHECK_RULES.actionId,ARCHIVE_UPGRADE_RULES.actionId].includes(t.a.id)).map(t=>({actorId:t.d.actorId,cellId:t.d.cellId,dueYear:30+t.a.dueIn,supported:(t.a.id===ARCHIVE_UPGRADE_RULES.actionId?getArchiveUpgradeWorkforce(state).length>0:workforce)||training.some(plan=>30+plan.a.dueIn<30+t.a.dueIn),...([FUTURE_CHECK_RULES.actionId,ARCHIVE_UPGRADE_RULES.actionId].includes(t.a.id)?{actionId:t.a.id}:{})}));
@@ -57,7 +57,7 @@ export function getHandoffOutlook(state) {
     notes:[
       '这只是已锁定合同的条件对照，不提前兑现、不抽随机，也不预告结局标题。最终按第40年的真实存续状态核对。',
       '假设当前载体继续运行，确定合同按时落实。新增培训第31年提供本地人手；互助改善生计，不替代教学、异源校验或交班方针。',
-      ...(authorizationConditional.length?['东岸承接协商第31年仍须指定原培训点运转、来源对应且尚未获授权；失效或已有授权则取消不退费。成功只赋予该E4原学徒本地承接权，不新增人手、产出、覆盖、异源校验或河港信任。下方同时保留未取得授权的分支；若校验与授权都未落实，应查看两者均未落实的条件。']:[]),
+      ...(authorizationConditional.length?[authorizationConditional.some(c=>c.workload)?'东岸承接协商第31年仍须指定原培训点运转、来源对应且尚未获授权；失效或已有授权则取消不退费。若新合同兑现，原学徒取得本地承接权，并保留基本读尺与预警、减少深入带教，承担公开议事和生计协调。原点政治、经济年度来源提高，科学降低，宗教不变；实际仍乘维护系数，不是通道净增预测。不新增人手、覆盖、异源校验或河港信任。下方保留授权未兑现的分支；届时也不执行职责改排。':'东岸承接协商第31年仍须指定原培训点运转、来源对应且尚未获授权；失效或已有授权则取消不退费。成功只赋予该E4原学徒本地承接权，不新增人手、产出、覆盖、异源校验或河港信任。下方同时保留未取得授权的分支；若校验与授权都未落实，应查看两者均未落实的条件。']:[]),
       '远港公开预警第31年仍须原分站有效运转且尚未开放；条件失效则取消不退费。它只改变当地准入，不改变本表的人手、授权、校验、信任或方针。',
       ...(conditional.some(c=>c.actionId===FUTURE_CHECK_RULES.actionId)?['从零建设未来校验席第34年仍须实际测量或教学人手有效，31年新培训可赶上期限；条件不符则取消且材料成本不退。它不需要也不补造旧失败底稿，下方同时保留未建成分支。']:[]),
       ...(conditional.some(c=>c.actionId===ARCHIVE_UPGRADE_RULES.actionId)?['保档升级第33年仍须原B4保档与实际测量或教学人手有效；31年培训可赶上，任一条件失效则取消不退费。已有保档本就提供B4交班方法，升级不新增地域、授权或信任，只让它接成未来指令校验。']:[]),

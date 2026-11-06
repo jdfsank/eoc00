@@ -1,0 +1,1095 @@
+{
+  "schema_version": "afterwave.board.v0.3",
+  "kind": "illustrative_fixture",
+  "coordinate_rule": "A-H columns, 1-8 rows; logical coordinates never rotate",
+  "cells": [
+    {
+      "id": "A1",
+      "col": 0,
+      "row": 0,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 43.92,
+        "economy": 29.36,
+        "science": 25.66,
+        "religion": 55.89
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "B1",
+      "col": 1,
+      "row": 0,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 56.55,
+        "economy": 37.42,
+        "science": 30.67,
+        "religion": 40.37
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "C1",
+      "col": 2,
+      "row": 0,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 52.9,
+        "economy": 52.47,
+        "science": 12.02,
+        "religion": 46.24
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "D1",
+      "col": 3,
+      "row": 0,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 52.69,
+        "economy": 53.68,
+        "science": 21.33,
+        "religion": 46.05
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "E1",
+      "col": 4,
+      "row": 0,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 63.43,
+        "economy": 29.56,
+        "science": 51.73,
+        "religion": 34.98
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "F1",
+      "col": 5,
+      "row": 0,
+      "name": "未命名地域",
+      "terrain": "water",
+      "channels": {
+        "politics": 29.53,
+        "economy": 25.4,
+        "science": 30.42,
+        "religion": 56.81
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "G1",
+      "col": 6,
+      "row": 0,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 36.48,
+        "economy": 44.21,
+        "science": 24.7,
+        "religion": 41.0
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "H1",
+      "col": 7,
+      "row": 0,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 28.15,
+        "economy": 45.74,
+        "science": 16.74,
+        "religion": 35.57
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "A2",
+      "col": 0,
+      "row": 1,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 42.71,
+        "economy": 47.41,
+        "science": 38.97,
+        "religion": 22.89
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "B2",
+      "col": 1,
+      "row": 1,
+      "name": "旧城档案馆",
+      "terrain": "paved",
+      "channels": {
+        "politics": 55.99,
+        "economy": 56.06,
+        "science": 39.9,
+        "religion": 27.82
+      },
+      "prop": "archive",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "C2",
+      "col": 2,
+      "row": 1,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 43.74,
+        "economy": 62.75,
+        "science": 35.08,
+        "religion": 61.31
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "D2",
+      "col": 3,
+      "row": 1,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 49.95,
+        "economy": 50.77,
+        "science": 27.33,
+        "religion": 29.32
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "E2",
+      "col": 4,
+      "row": 1,
+      "name": "星历观测台",
+      "terrain": "paved",
+      "channels": {
+        "politics": 21.07,
+        "economy": 55.35,
+        "science": 35.67,
+        "religion": 48.15
+      },
+      "prop": "observatory",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "F2",
+      "col": 5,
+      "row": 1,
+      "name": "未命名地域",
+      "terrain": "water",
+      "channels": {
+        "politics": 45.76,
+        "economy": 34.86,
+        "science": 36.58,
+        "religion": 38.59
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "G2",
+      "col": 6,
+      "row": 1,
+      "name": "未命名地域",
+      "terrain": "paved",
+      "channels": {
+        "politics": 33.12,
+        "economy": 33.88,
+        "science": 23.83,
+        "religion": 49.14
+      },
+      "prop": "tree",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "H2",
+      "col": 7,
+      "row": 1,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 65.3,
+        "economy": 50.83,
+        "science": 39.47,
+        "religion": 50.23
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "A3",
+      "col": 0,
+      "row": 2,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 54.64,
+        "economy": 55.98,
+        "science": 10.0,
+        "religion": 33.68
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "B3",
+      "col": 1,
+      "row": 2,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 55.39,
+        "economy": 56.71,
+        "science": 16.53,
+        "religion": 39.5
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "C3",
+      "col": 2,
+      "row": 2,
+      "name": "联合议事厅",
+      "terrain": "paved",
+      "channels": {
+        "politics": 43.31,
+        "economy": 55.11,
+        "science": 28.35,
+        "religion": 44.19
+      },
+      "prop": "assembly_hall",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "D3",
+      "col": 3,
+      "row": 2,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 51.35,
+        "economy": 57.41,
+        "science": 30.7,
+        "religion": 44.37
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "E3",
+      "col": 4,
+      "row": 2,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 51.89,
+        "economy": 57.72,
+        "science": 18.03,
+        "religion": 42.66
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "F3",
+      "col": 5,
+      "row": 2,
+      "name": "未命名地域",
+      "terrain": "paved",
+      "channels": {
+        "politics": 39.87,
+        "economy": 26.97,
+        "science": 35.94,
+        "religion": 39.24
+      },
+      "prop": "warehouse",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "G3",
+      "col": 6,
+      "row": 2,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 38.03,
+        "economy": 39.19,
+        "science": 44.67,
+        "religion": 50.55
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "H3",
+      "col": 7,
+      "row": 2,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 42.62,
+        "economy": 53.46,
+        "science": 37.41,
+        "religion": 58.81
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "A4",
+      "col": 0,
+      "row": 3,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 36.73,
+        "economy": 55.16,
+        "science": 34.69,
+        "religion": 49.49
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "B4",
+      "col": 1,
+      "row": 3,
+      "name": "修会藏书院",
+      "terrain": "paved",
+      "channels": {
+        "politics": 36.87,
+        "economy": 29.85,
+        "science": 41.94,
+        "religion": 34.12
+      },
+      "prop": "temple",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "C4",
+      "col": 2,
+      "row": 3,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 40.6,
+        "economy": 62.08,
+        "science": 36.85,
+        "religion": 47.75
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "D4",
+      "col": 3,
+      "row": 3,
+      "name": "河港",
+      "terrain": "paved",
+      "channels": {
+        "politics": 48.0,
+        "economy": 52.0,
+        "science": 30.0,
+        "religion": 44.0
+      },
+      "prop": "archive",
+      "inspectable": true,
+      "deployable": true,
+      "content_status": "authored_example"
+    },
+    {
+      "id": "E4",
+      "col": 4,
+      "row": 3,
+      "name": "东岸商埠",
+      "terrain": "paved",
+      "channels": {
+        "politics": 53.2,
+        "economy": 45.21,
+        "science": 29.57,
+        "religion": 48.54
+      },
+      "prop": "warehouse",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "F4",
+      "col": 5,
+      "row": 3,
+      "name": "未命名地域",
+      "terrain": "water",
+      "channels": {
+        "politics": 24.85,
+        "economy": 51.29,
+        "science": 47.5,
+        "religion": 65.14
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "G4",
+      "col": 6,
+      "row": 3,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 53.88,
+        "economy": 57.0,
+        "science": 18.35,
+        "religion": 40.43
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "H4",
+      "col": 7,
+      "row": 3,
+      "name": "未命名地域",
+      "terrain": "paved",
+      "channels": {
+        "politics": 36.49,
+        "economy": 30.8,
+        "science": 32.75,
+        "religion": 42.86
+      },
+      "prop": "tree",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "A5",
+      "col": 0,
+      "row": 4,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 37.45,
+        "economy": 59.88,
+        "science": 27.33,
+        "religion": 32.36
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "B5",
+      "col": 1,
+      "row": 4,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 27.79,
+        "economy": 48.93,
+        "science": 21.22,
+        "religion": 39.53
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "C5",
+      "col": 2,
+      "row": 4,
+      "name": "未命名地域",
+      "terrain": "paved",
+      "channels": {
+        "politics": 42.27,
+        "economy": 38.75,
+        "science": 19.86,
+        "religion": 36.17
+      },
+      "prop": "tree",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "D5",
+      "col": 3,
+      "row": 4,
+      "name": "南岸聚落",
+      "terrain": "paved",
+      "channels": {
+        "politics": 41.03,
+        "economy": 44.7,
+        "science": 33.21,
+        "religion": 62.2
+      },
+      "prop": "tree",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "E5",
+      "col": 4,
+      "row": 4,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 46.3,
+        "economy": 21.77,
+        "science": 35.78,
+        "religion": 46.65
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "F5",
+      "col": 5,
+      "row": 4,
+      "name": "未命名地域",
+      "terrain": "water",
+      "channels": {
+        "politics": 37.59,
+        "economy": 40.23,
+        "science": 35.71,
+        "religion": 36.14
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "G5",
+      "col": 6,
+      "row": 4,
+      "name": "未命名地域",
+      "terrain": "paved",
+      "channels": {
+        "politics": 45.13,
+        "economy": 50.18,
+        "science": 14.65,
+        "religion": 66.15
+      },
+      "prop": "warehouse",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "H5",
+      "col": 7,
+      "row": 4,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 65.84,
+        "economy": 39.49,
+        "science": 28.54,
+        "religion": 27.06
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "A6",
+      "col": 0,
+      "row": 5,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 48.91,
+        "economy": 44.06,
+        "science": 36.15,
+        "religion": 53.34
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "B6",
+      "col": 1,
+      "row": 5,
+      "name": "未命名地域",
+      "terrain": "paved",
+      "channels": {
+        "politics": 37.12,
+        "economy": 46.24,
+        "science": 43.36,
+        "religion": 55.19
+      },
+      "prop": "tree",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "C6",
+      "col": 2,
+      "row": 5,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 55.44,
+        "economy": 48.58,
+        "science": 40.07,
+        "religion": 49.89
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "D6",
+      "col": 3,
+      "row": 5,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 42.45,
+        "economy": 60.25,
+        "science": 41.98,
+        "religion": 39.87
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "E6",
+      "col": 4,
+      "row": 5,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 51.13,
+        "economy": 47.7,
+        "science": 45.17,
+        "religion": 41.45
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "F6",
+      "col": 5,
+      "row": 5,
+      "name": "远港",
+      "terrain": "paved",
+      "channels": {
+        "politics": 51.35,
+        "economy": 44.88,
+        "science": 41.89,
+        "religion": 38.88
+      },
+      "prop": "warehouse",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "G6",
+      "col": 6,
+      "row": 5,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 39.31,
+        "economy": 54.46,
+        "science": 22.22,
+        "religion": 52.43
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "H6",
+      "col": 7,
+      "row": 5,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 20.84,
+        "economy": 72.92,
+        "science": 32.7,
+        "religion": 15.05
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "A7",
+      "col": 0,
+      "row": 6,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 39.83,
+        "economy": 43.89,
+        "science": 23.44,
+        "religion": 36.87
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "B7",
+      "col": 1,
+      "row": 6,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 50.62,
+        "economy": 54.15,
+        "science": 10.0,
+        "religion": 44.82
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "C7",
+      "col": 2,
+      "row": 6,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 39.44,
+        "economy": 29.07,
+        "science": 11.83,
+        "religion": 36.03
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "D7",
+      "col": 3,
+      "row": 6,
+      "name": "未命名地域",
+      "terrain": "paved",
+      "channels": {
+        "politics": 49.27,
+        "economy": 64.15,
+        "science": 57.07,
+        "religion": 21.19
+      },
+      "prop": "temple",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "E7",
+      "col": 4,
+      "row": 6,
+      "name": "未命名地域",
+      "terrain": "water",
+      "channels": {
+        "politics": 55.75,
+        "economy": 55.91,
+        "science": 18.59,
+        "religion": 40.09
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "F7",
+      "col": 5,
+      "row": 6,
+      "name": "未命名地域",
+      "terrain": "water",
+      "channels": {
+        "politics": 37.47,
+        "economy": 63.99,
+        "science": 10.0,
+        "religion": 33.94
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "G7",
+      "col": 6,
+      "row": 6,
+      "name": "未命名地域",
+      "terrain": "paved",
+      "channels": {
+        "politics": 58.78,
+        "economy": 47.29,
+        "science": 24.98,
+        "religion": 52.6
+      },
+      "prop": "tree",
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "H7",
+      "col": 7,
+      "row": 6,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 63.46,
+        "economy": 35.49,
+        "science": 50.24,
+        "religion": 59.77
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "A8",
+      "col": 0,
+      "row": 7,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 56.95,
+        "economy": 58.63,
+        "science": 31.46,
+        "religion": 43.83
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "B8",
+      "col": 1,
+      "row": 7,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 57.99,
+        "economy": 57.04,
+        "science": 36.9,
+        "religion": 19.79
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "C8",
+      "col": 2,
+      "row": 7,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 57.16,
+        "economy": 37.6,
+        "science": 28.76,
+        "religion": 40.65
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "D8",
+      "col": 3,
+      "row": 7,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 71.05,
+        "economy": 30.32,
+        "science": 31.0,
+        "religion": 31.91
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "E8",
+      "col": 4,
+      "row": 7,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 46.23,
+        "economy": 53.39,
+        "science": 47.2,
+        "religion": 51.18
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "F8",
+      "col": 5,
+      "row": 7,
+      "name": "未命名地域",
+      "terrain": "water",
+      "channels": {
+        "politics": 44.03,
+        "economy": 45.94,
+        "science": 41.55,
+        "religion": 63.3
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "G8",
+      "col": 6,
+      "row": 7,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 51.24,
+        "economy": 79.35,
+        "science": 30.96,
+        "religion": 46.81
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    },
+    {
+      "id": "H8",
+      "col": 7,
+      "row": 7,
+      "name": "未命名地域",
+      "terrain": "grass",
+      "channels": {
+        "politics": 33.1,
+        "economy": 40.63,
+        "science": 42.7,
+        "religion": 67.42
+      },
+      "prop": null,
+      "inspectable": true,
+      "deployable": false,
+      "content_status": "world_fixture_without_avg"
+    }
+  ]
+}

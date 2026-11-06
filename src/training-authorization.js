@@ -1,3 +1,4 @@
+import {usesTrainingWorkloadRules, trainingWorkloadMarker, supportsTrainingWorkload, makeTrainingWorkload, validTrainingWorkloadContract} from './training-workload.js';
 // Public source facts only. These helpers never read a seed, roll, future prose,
 // or simulate time. Returned plans/contracts are detached from the saved world.
 // Display proves the issued records. Import/settlement separately verify private
@@ -11,7 +12,7 @@ const unique=(s,id)=>[...s.events,...s.history].filter(e=>e.id===id).length===1;
 const goodState=s=>object(s)&&[s.events,s.history,s.institutions,s.actors].every(Array.isArray);
 const live=i=>i?.active===true&&Number.isFinite(i.maintenance)&&i.maintenance>0&&i.maintenance<=1;
 export const usesTrainingAuthorizationRules=s=>s?.trainingAuthorizationRulesVersion===R.version;
-export const trainingAuthorizationMarker=e=>object(e)&&(['trainingAuthorizationRulesVersion','trainingAuthorizationTarget','trainingAuthorizationCancellationReason'].some(k=>k in e)||e.actionId===R.actionId||e.sourceActionId?.endsWith(`:${R.actionId}`)||e.id?.endsWith(`:${R.actionId}`));
+export const trainingAuthorizationMarker=e=>object(e)&&(trainingWorkloadMarker(e)||['trainingAuthorizationRulesVersion','trainingAuthorizationTarget','trainingAuthorizationCancellationReason'].some(k=>k in e)||e.actionId===R.actionId||e.sourceActionId?.endsWith(`:${R.actionId}`)||e.id?.endsWith(`:${R.actionId}`));
 function consistent(row,actorId,actionId){return !!row&&(row.actorId===undefined||row.actorId===actorId)&&(row.actionId===undefined||row.actionId===actionId)&&(row.reality===undefined||row.reality==='R1');}
 // Prove the original year7 E4 training chain, not a same-kind substitute or an
 // anonymous school. Current existence/operation is deliberately checked apart.
@@ -37,8 +38,8 @@ function oldMandate(s,i){
  const g=i.handoffAuthorization;
  return i.kind==='training'&&object(g)&&g.sourceActionId===i.sourceActionId&&s.events.some(e=>e.id===g.eventId&&e.actionId==='renew_charter'&&e.status==='success'&&e.resolvedYear===g.year&&e.authorizedTrainingSources?.includes(g.sourceActionId));
 }
-export function trainingAuthorizationMetadata(target){return {trainingAuthorizationRulesVersion:R.version,trainingAuthorizationTarget:snapshot(target)};}
-export function makeTrainingAuthorizationGrant(e){return {version:R.version,eventId:e.id,year:31,sourceActionId:e.sourceActionId,targetId:e.trainingAuthorizationTarget.id};}
+export function trainingAuthorizationMetadata(target,workload){return {trainingAuthorizationRulesVersion:R.version,trainingAuthorizationTarget:snapshot(target),...(workload?{trainingWorkload:structuredClone(workload)}:{})};}
+export function makeTrainingAuthorizationGrant(e){return {version:R.version,eventId:e.id,year:31,sourceActionId:e.sourceActionId,targetId:e.trainingAuthorizationTarget.id,...(e.trainingWorkload?{trainingWorkloadVersion:e.trainingWorkload.version}:{})};}
 function grantMatches(g,e){const expected=makeTrainingAuthorizationGrant(e);return object(g)&&Object.keys(g).length===Object.keys(expected).length&&Object.entries(expected).every(([k,v])=>g[k]===v);}
 function currentTarget(s,t){const all=s.institutions.filter(i=>i.id===t.id);return all.length===1&&same(all[0],t)?all[0]:null;}
 export function trainingAuthorizationFailure(s,target){
@@ -54,6 +55,7 @@ function verifyContract(s,e,strict=false){
  if(!goodState(s)||e.actionId!==R.actionId||!usesTrainingAuthorizationRules(s)||s.planningRulesVersion!=='tradeoffs-v1'||s.handoffRulesVersion!=='handoff-v1')return false;
  const [prefix,year,actorId,place,actionId,extra]=(e.sourceActionId||'').split(':');
  const target=e.trainingAuthorizationTarget,action=s.history.find(h=>h.id===e.sourceActionId),outcome=s.history.find(h=>h.id===`resolved:${e.id}`);
+ if(!validTrainingWorkloadContract(s,e,action,outcome,s.institutions.find(i=>i.id===target?.id)))return false;
  if(prefix!=='action'||year!=='30'||place!=='E4'||actionId!==R.actionId||extra!==undefined||s.actors.filter(a=>a.id===actorId&&a.availableFrom<=30).length!==1)return false;
  if(e.kind!=='event'||e.id!==`event:${e.sourceActionId}`||e.parentId!==e.sourceActionId||e.cellId!=='E4'||e.year!==31||(strict&&e.probability!==1)||e.trainingAuthorizationRulesVersion!==R.version||!validTrainingAuthorizationOrigin(s,target))return false;
  if(action?.kind!=='action'||action.status!=='confirmed'||action.parentId!==null||action.sourceActionId!==action.id||action.year!==30||action.cellId!=='E4'||action.reality!=='R1'||action.trainingAuthorizationRulesVersion!==R.version||action.trainingAuthorizationCancellationReason!==undefined||!same(action.trainingAuthorizationTarget,target)||Object.keys(action.trainingAuthorizationTarget).length!==keys.length)return false;
@@ -81,11 +83,12 @@ export function hasTrainingAuthorization(s,i,{strict=true}={}){
 }
 export function getTrainingAuthorizationContracts(s){
  if(!goodState(s)||!usesTrainingAuthorizationRules(s))return [];
- return s.events.filter(e=>e.actionId===R.actionId&&verifyContract(s,e)).map(e=>({actionId:e.actionId,status:e.status,cellId:'E4',year:31,eventId:e.id,sourceActionId:e.sourceActionId,recordId:e.status==='pending'?null:`resolved:${e.id}`,target:snapshot(e.trainingAuthorizationTarget),cancellationReason:e.trainingAuthorizationCancellationReason||null}));
+ return s.events.filter(e=>e.actionId===R.actionId&&verifyContract(s,e)).map(e=>({actionId:e.actionId,status:e.status,cellId:'E4',year:31,eventId:e.id,sourceActionId:e.sourceActionId,recordId:e.status==='pending'?null:`resolved:${e.id}`,target:snapshot(e.trainingAuthorizationTarget),cancellationReason:e.trainingAuthorizationCancellationReason||null,...(e.trainingWorkload?{workload:structuredClone(e.trainingWorkload)}:{})}));
 }
 export function getTrainingAuthorizationPlan(s,cellId='E4'){
  const enabled=usesTrainingAuthorizationRules(s)&&s.planningRulesVersion==='tradeoffs-v1'&&s.handoffRulesVersion==='handoff-v1';
  const result=(available,reason,target=null)=>({enabled,available,reason,target:target?snapshot(target):null});
+ if(s?.trainingWorkloadRulesVersion!==undefined&&!usesTrainingWorkloadRules(s))return result(false,'学徒轮值分工规则版本未知，不能据此提供协商合同。');
  if(!enabled)return result(false,'本局保留原合同，不补发地方承接协商。');
  if(!goodState(s)||cellId!=='E4'||s.year!==30||s.phase!=='planning')return result(false,'承接协商只在第30年东岸安排。');
  if([...s.history,...s.events].some(trainingAuthorizationMarker))return result(false,'本轮承接协商已经提交，不重复收费。');
@@ -94,6 +97,10 @@ export function getTrainingAuthorizationPlan(s,cellId='E4'){
  if(candidates.length!==1)return result(false,'东岸原学徒来源缺失或不唯一，不能替不存在或不明的人员签署。');
  const target=snapshot(candidates[0]);
  if(trainingAuthorizationFailure(s,target))return result(false,'原学徒必须仍在运转且来源明确，已有授权或缺失资料不能重签。');
+ if(usesTrainingWorkloadRules(s)){
+  if(!supportsTrainingWorkload(candidates[0]))return result(false,'原培训点使用自定义年度来源，无法套用这份固定轮值分工；保留当前运作，也可另选新增培训。');
+  return {...result(true,'原学徒承接本地职责后，将大部分深入带教时间转入议事与生计协调；不新增人手、预警覆盖、异源校验或河港信任。',target),workload:makeTrainingWorkload(candidates[0])};
+ }
  return result(true,'协商只赋予原东岸学徒本地承接权，不新建学校、不增加人手、产出、校验或河港信任。',target);
 }
 export function getTrainingAuthorizationStatus(s,cellId='E4'){

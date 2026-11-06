@@ -26,11 +26,11 @@ const freeze=o=>{if(o&&typeof o==='object'){Object.values(o).forEach(freeze);Obj
 test('eligible E4 scene compares extending teaching with negotiating existing trainees own bounded responsibility',()=>{
  const s=at30(),before=structuredClone(s),scene=sceneFor(s,'E4');
  assert.match(scene.body.join(''),/原学徒仍在工作.*还没有本地承接授权/);
- assert.match(scene.body.join(''),/政治3、经济2.*会议、公开轮值与记录工作.*1轮E4居民证词/);
+ const contract=sim.getActions(s,'E4','linche').find(a=>a.id==='authorize_training');assert.deepEqual(contract.cost,{politics:3,economy:2});assert.deepEqual(contract.requireEvidence,['resident_testimony']);assert.match(contract.modelNote,/政治3、经济2.*本地居民证词1轮/);assert.match(scene.body.join(''),/提高政治和经济来源.*降低科学来源/);
  assert.match(scene.body.join(''),/第31年.*目标停运、缺失或已经获得授权.*取消，费用不退/);
- assert.match(scene.question,/新增教学.*已有学徒/);assert.match(scene.body.join(''),/签名不是买来的/);
+ assert.match(scene.question,/新增教学.*已有学徒/);
  const e=evidenceFor(s,'resident_testimony','E4','linche');assert.match(e.title,/原学徒的承接条件/);
- assert.match(e.text,/记录公开.*拒绝不安全指令.*责任必须有边界/);assert.match(e.text,/主角或林澈代签/);
+ assert.match(e.text,/记录公开.*拒绝不安全指令.*责任必须有边界/);assert.match(e.text,/主角或林澈代签/);assert.match(e.text,/不是购买权利或同意/);
  assert.notEqual(evidenceFor(s,'resident_testimony','D4','linche').title,e.title);
  assert.equal(auth(s),undefined);assert.deepEqual(s,before);
 });
@@ -52,7 +52,7 @@ test('submitted30 reads paid costs and frozen original target without promising 
 test('the actual31 signatures remain a local mandate, not purchased consent, extra people or Sulan employment',()=>{
  const s=resolved(),before=structuredClone(s),card=auth(s);assert.equal(card.status,'recorded');
  assert.match(body(card),/第31年.*原东岸学徒.*本地承接签名/);assert.match(body(card),/签名不是买来的.*不是介入员替他们签署/);
- assert.match(body(card),/不新建学校、不增加人手、年度产出、预警覆盖或异源校验/);assert.doesNotMatch(body(card),/苏岚/);
+ assert.match(body(card),/不新建学校、不增加人手、预警覆盖或异源校验/);assert.match(body(card),/政治、经济较原排班提高，科学降低/);assert.doesNotMatch(body(card),/苏岚/);
  assert.ok(card.sourceIds.includes('resolved:event:action:30:linche:E4:authorize_training'));
  for(const id of card.sourceIds){const r=s.history.find(r=>r.id===id);assert.ok(r);assert.ok(r.year<=31);assert.ok(sim.traceEvent(s,id).every(row=>row.year<=31));}
  assert.deepEqual(s,before);sim.advanceToNextWindow(s);

@@ -1,0 +1,67 @@
+{
+  "scope": "Final 40-suite aggregate run, suite 40. Representative screenshots were compared byte-for-byte with the previously visually inspected frozen-run screenshots; all ten are identical.",
+  "frozenAt": "2026-11-06T08:07:16.439396+00:00",
+  "frozenRuntimeHash": "73dfd7a7f026e1bb755cc2a1709c1ec226c09fa1d5b3d275d558fff3f1dfffe6",
+  "frozenFilesVerified": 323,
+  "startedAt": "2026-11-06T08:39:41.483Z",
+  "finishedAt": "2026-11-06T08:40:35.449Z",
+  "sourceHash": "545dec7e2ab7b05cc016ca2f9788b825892a1fbfe39e3479e9ad648ba1f1b138",
+  "sourceStable": true,
+  "checks": 213,
+  "generatedScreenshots": 62,
+  "resultSha256": "72659676fe563a28a935646fcd2dd7e13873cf9f92b9c208843eb3322ba48609",
+  "screenshots": [
+    {
+      "file": "new-320-200-sources-viewport.png",
+      "sha256": "88d1a0ce78084d3bc449ab5508fff73499a3be9dd3019b97492c05319da39c8e",
+      "bytes": 85759
+    },
+    {
+      "file": "protagonist-320-200-viewport.png",
+      "sha256": "fa9b37039324b6c729dda48014255986ef71b19989c52c195ba004a7be38988d",
+      "bytes": 84889
+    },
+    {
+      "file": "new-320-100-main.png",
+      "sha256": "c555d564d05999e3d2c4ef86fd241b5696b8a6fd5335fd0edbbde0345e4b037c",
+      "bytes": 170216
+    },
+    {
+      "file": "new-320-200-original-source.png",
+      "sha256": "4fe10d2672c87495a62814cf505d5b89e9daf0e4bd818857f2bf44b918802d85",
+      "bytes": 102265
+    },
+    {
+      "file": "half-320-200-original-source.png",
+      "sha256": "b1a34c2d475bec686a3e850829a33f9711adbc7ca3c553e1330242fc19a44912",
+      "bytes": 107699
+    },
+    {
+      "file": "half-320-200-sources-viewport.png",
+      "sha256": "d1b756f7e9afe293b1fef848fd2ed47ca01521eec4a3565763451e9182e21e94",
+      "bytes": 85527
+    },
+    {
+      "file": "old-320-200-original-source.png",
+      "sha256": "a690528b23d19dd452398e715192d156118d9c69f33c2d3478f862ff4e678faa",
+      "bytes": 100121
+    },
+    {
+      "file": "old-320-200-settings.png",
+      "sha256": "4459c84465c37364ed75a0942286ce703c1f5b9f6a4a83a4f9c6381d62280633",
+      "bytes": 23993
+    },
+    {
+      "file": "new-320-200-settings.png",
+      "sha256": "e882cea11503fa9744e34c5b508c017717fec07f5def3e02a904cc59483f7352",
+      "bytes": 24789
+    },
+    {
+      "file": "new-320-200-authorization-conditions.png",
+      "sha256": "18df01ff08950ec16c56c6de2c2f20ce2cef353ad6480c0bf6be90bb85bcf955",
+      "bytes": 158164
+    }
+  ],
+  "aggregateSuite": 40,
+  "representativeImagesIdenticalToReviewedRun": true
+}

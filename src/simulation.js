@@ -2,6 +2,8 @@ import board from './data/board.json' with { type: 'json' };
 import { BRANCH_ACCESS_RULES, getFutureBranchAccess, isBranchAccessRulesVersion } from './branch-access.js';
 import {TRAINING_AUTHORIZATION_RULES,usesTrainingAuthorizationRules,getTrainingAuthorizationPlan,getTrainingAuthorizationContracts,getTrainingAuthorizationStatus,trainingAuthorizationMarker,trainingAuthorizationMetadata,trainingAuthorizationFailure,makeTrainingAuthorizationGrant,validTrainingAuthorizationContract,hasTrainingAuthorization} from './training-authorization.js';
 export {TRAINING_AUTHORIZATION_RULES,usesTrainingAuthorizationRules,getTrainingAuthorizationPlan,getTrainingAuthorizationContracts,getTrainingAuthorizationStatus} from './training-authorization.js';
+import {TRAINING_WORKLOAD_RULES,usesTrainingWorkloadRules,validAnnualSource,trainingWorkloadMarker} from './training-workload.js';
+export {TRAINING_WORKLOAD_RULES,usesTrainingWorkloadRules} from './training-workload.js';
 
 export const CHANNELS = ['politics', 'economy', 'science', 'religion'];
 export const WINDOWS = [0, 10, 20, 30];
@@ -70,6 +72,18 @@ const sources = { station: [0.1, 0.1, 1.6, 0.25], archive: [0, 0, .35, .15], tra
 // comparisons cannot alter institution creation or the annual settlement rules.
 export function getInstitutionAnnualSource(kind) {
   return Object.hasOwn(sources, kind) ? Object.fromEntries(CHANNELS.map((key, index) => [key, sources[kind][index]])) : null;
+}
+// One source of truth for both annual settlement and public displays. Retain
+// each institution's historical base; a proven new contract changes its work.
+export function getInstitutionEffectiveAnnualSource(s, i) {
+  if (!i || !Array.isArray(s?.institutions) || s.institutions.filter(row => row.id === i.id).length !== 1
+    || !s.institutions.includes(i) || !validAnnualSource(i.annualSource)) return null;
+  if (i.localHandoffAuthorization !== undefined && !hasTrainingAuthorization(s, i, {strict:false})) return null;
+  if (usesTrainingWorkloadRules(s) && i.active && i.maintenance > 0 && hasTrainingAuthorization(s, i, {strict:false})) {
+    const contract = getTrainingAuthorizationContracts(s).find(row => row.status === 'success' && row.target.id === i.id && row.workload);
+    if (contract) return {...contract.workload.after};
+  }
+  return Object.fromEntries(CHANNELS.map(key => [key, i.annualSource[key]]));
 }
 const coefficient = value => Math.round(Math.max(0, Math.min(1, value)) * 10000) / 10000;
 export function getInstitutionStaffing(s, i, { assumedRecruitmentActionId } = {}) {
@@ -215,7 +229,7 @@ function schedule(s, data) {
   if (!s.events.some(e => e.id === data.id)) s.events.push({ kind: 'event', status: 'pending', parentId: null, sourceActionId: null, probability: 1, conditionVersion: 1, ...data });
 }
 export function createRun(seed = 12) {
-  const s = { version: 'afterwave.run.v1', trainingAuthorizationRulesVersion: TRAINING_AUTHORIZATION_RULES.version, crisisRulesVersion: COVERAGE_RULES.version, staffingRulesVersion: STAFFING_RULES.version, branchAccessRulesVersion: BRANCH_ACCESS_RULES.version, planningRulesVersion: PLANNING_RULES.version, handoffRulesVersion: HANDOFF_RULES.version, aftermathRulesVersion: AFTERMATH_RULES.version, recruitmentRulesVersion: RECRUITMENT_RULES.version, recoveryRulesVersion: RECOVERY_RULES.version, futureCheckRulesVersion: FUTURE_CHECK_RULES.version, archiveUpgradeRulesVersion: ARCHIVE_UPGRADE_RULES.version, portAccessRulesVersion: PORT_ACCESS_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
+  const s = { version: 'afterwave.run.v1', trainingWorkloadRulesVersion: TRAINING_WORKLOAD_RULES.version, trainingAuthorizationRulesVersion: TRAINING_AUTHORIZATION_RULES.version, crisisRulesVersion: COVERAGE_RULES.version, staffingRulesVersion: STAFFING_RULES.version, branchAccessRulesVersion: BRANCH_ACCESS_RULES.version, planningRulesVersion: PLANNING_RULES.version, handoffRulesVersion: HANDOFF_RULES.version, aftermathRulesVersion: AFTERMATH_RULES.version, recruitmentRulesVersion: RECRUITMENT_RULES.version, recoveryRulesVersion: RECOVERY_RULES.version, futureCheckRulesVersion: FUTURE_CHECK_RULES.version, archiveUpgradeRulesVersion: ARCHIVE_UPGRADE_RULES.version, portAccessRulesVersion: PORT_ACCESS_RULES.version, investigations: {}, seed: String(seed), year: 0, phase: 'planning', cells: copy(board.cells), actors: [{ id: 'protagonist', name: '主角', availableFrom: 0, anchored: true, alive: true }], drafts: {}, events: [], institutions: [], history: [], flags: {}, committedWindows: [], snapshots: {}, baseline: Object.fromEntries(board.cells.map(c => [c.id, copy(c.channels)])), promises: [], reality: 'R1' };
   s.cells.forEach(c => { c.deployable = ['D4', 'B4'].includes(c.id); if (c.name === '未命名地域') c.name = `${c.id}·${c.terrain === 'water' ? '水域' : '原野'}`; });
   record(s, { id: 'arrival', title: '第零年 · 借来的十年', text: '续史局只能在每十年的窗口介入一次。你是唯一的介入员。河港将迎来洪水，但居民并不只需要被拯救。', kind: 'arrival' });
   s.snapshots[0] = copy(s.cells); return s;
@@ -581,6 +595,14 @@ export function getActions(s, cellId, actorId = 'protagonist', evidence = null) 
     action('local_veto', '授予地方停闸权', '居民可以在异常水位时拒绝中央开闸令，先行撤离。', { politics: 4 }, 1, 1, [], '只能减轻损失，无法修正错误标准。', '第23年损失显著降低。'));
   if (cellId === 'E4' && y >= 20) out.push(action('train_network', '培育轮值维护者', '培养能够独立接班、公开记录的地方小组。', { economy: 4, science: 2 }, 1, 1, [], '人手需要时间成长，不会立即改变当年的危机。', '增加独立网络与退出独占控制的条件。'));
   if(cellId==='E4'&&y===30&&getTrainingAuthorizationPlan(s,cellId).available)out.push({...action(TRAINING_AUTHORIZATION_RULES.actionId,'协商学徒承接权','请仍在东岸带教的原学徒与当地居民协商公开轮值、承接职责及拒绝错误指令的权限；签署只约束本地原培训点。',{politics:3,economy:2},1,1,['resident_testimony'],'第31年原培训点须仍在运转、来源有效且尚未获授权；目标失效或已有授权则取消，费用不退。取证不是签署，也不代替河港居民同意。','条件成立后，仅原东岸学徒获得地方承接权；不新建学校、不增加人手、产出、预警覆盖、异源校验或河港信任。'),conditional:true,modelNote:'政治3、经济2用于本地职责协商与公开登记；E4居民证词需1轮，另占一个介入名额。第31年只核对提交时冻结的原培训点，不给D5同源学徒连带授权。与经济4、科学2的新培训相比，这不增加产出或人员。异源校验、河港信任与交班方针仍须分别成立。'});
+  const workloadContract = out.find(a => a.id === TRAINING_AUTHORIZATION_RULES.actionId);
+  if (workloadContract && usesTrainingWorkloadRules(s)) {
+    Object.assign(workloadContract, {
+      description:'请原学徒与东岸居民协商承接、公开轮值及拒绝错误指令的权限，并约定把大部分深入带教时间转入本地议事与生计协调；保留常规读尺。',
+      reward:'第31年条件成立后，只重排原东岸培训点的工作；政治与经济来源提高，科学来源减少。人手、预警覆盖、异源校验和河港信任不增加。',
+      modelNote:'政治3、经济2，本地居民证词1轮、一个介入名额。标准原年度来源（政治/经济/科学/宗教）0.1/0.25/0.7/0.1，兑现后0.5/0.45/0.1/0.1；变化+0.4/+0.2/−0.6/0，按该原点实际维护缩放。这是带教转入轮值职责的可调原型，不是凭授权加人或赠产出；来源不是未来通道净增。第31年目标仍须有效运转、来源对应且未获授权，否则取消不退费。旧来源字段与第23年记录保留。',
+    });
+  }
   if (y === 30 && getRecoverySource(s,cellId)) out.push(action('complete_review', '完成遗留校验 · 面向今后', '重新整理当年未完成的异源测量记录，把尚存的底稿与实际读尺工作接起来。', {economy:4,science:3}, 1, 2, ['anomaly_records'], '第32年仍需运转中的测量或教学人手；无人或原记录停运则取消，成本不退。不会改写第23年的损失。', '条件齐备后，新增面向未来的真实校验载体；不自动获得培训人手、授权、信任或交班方针。'));
   if (cellId==='B4'&&y===30&&getFutureCheckPlan(s).available) out.push(action(FUTURE_CHECK_RULES.actionId,'建立未来校验席','购置新刻水尺与对照抄本，结合修院居民重新指认的水痕，留出连续比对的工作席。',{economy:6,science:4},1,4,['anomaly_records','resident_testimony'],'第34年仍需真实运转的测量或教学人手；无人则取消，已付材料与场地成本不退。不补造早年的失败或改写第23年。','条件成立后新建B4未来异源校验载体；不附送培训、地方授权、信任或交班方针。'));
   if (cellId==='B4'&&y===30&&getArchiveUpgradePlan(s).available) out.push(action(ARCHIVE_UPGRADE_RULES.actionId,'把地方保档接成校验席','沿用修院保留的异源刻度，添置比对器具与工作席，并请居民重新指认水痕；旧档原页继续保留。',{economy:5,science:3},1,3,['anomaly_records','resident_testimony'],'第33年原保档与真实测量或教学人手都须仍在运转；任一缺失就取消，费用不退。不会改写原档或第23年。','成功后新增面向未来的指令校验，不赠人手、授权、信任或交班方针。'));
@@ -727,6 +749,7 @@ export function getPublicPlanningStateIssues(s) {
   const expectedWindows=WINDOWS.filter(year=>year<s.year||(year===s.year&&s.phase==='playback'));
   if(new Set(s.committedWindows).size!==s.committedWindows.length||expectedWindows.length!==s.committedWindows.length||expectedWindows.some(year=>!s.committedWindows.includes(year))) issues.push('已提交窗口与当前年代不一致，暂不能给出整轮数值。');
   if (['review','veto','aid','freeWarning','successor','recruited'].some(key=>Object.hasOwn(s.flags,key)&&typeof s.flags[key]!=='boolean')) issues.push('公开保护标记非法，暂不能给出整轮数值。');
+  if(s.trainingWorkloadRulesVersion!==undefined&&!usesTrainingWorkloadRules(s))issues.push('学徒轮值分工规则版本非法。');
   if(s.trainingAuthorizationRulesVersion!==undefined&&!usesTrainingAuthorizationRules(s))issues.push('地方承接协商规则版本非法。');
   if (s.staffingRulesVersion!==undefined&&!validStaffingVersion(s.staffingRulesVersion)) issues.push('人手结算规则版本非法。');
   if (s.recruitmentRulesVersion!==undefined&&!usesRecruitmentRules(s)) issues.push('招募岗位规则版本非法。');
@@ -785,7 +808,7 @@ export function getWindowReview(s) {
     warnings.push(staff.length ? '后续校验第32年核对实际人手与原记录；成功只增加未来校验能力。交班方针仍按第40年的授权、人手、跨地关系与信任核对。' : tasks.some(t=>t.a.id==='train_network') ? '本轮培训可在第31年提供人手，后续校验第32年再核对。两项各占一个名额，不能同时用这些名额签署交班方针；第23年的损失不变。' : '当前没有测量或教学人手，本轮也未锁定培训。第32年若仍无人到位，后续校验会取消且成本不退；可修改另一角色的安排。');
   }
   if(tasks.some(t=>t.a.id===FUTURE_CHECK_RULES.actionId))warnings.push(getRecoveryWorkforce(s).length?'新建未来校验席第34年仍核对真实测量或教学人手；成本经济6、科学4不退。校验不提供授权、信任或方针，第23年记录保留。':tasks.some(t=>t.a.id==='train_network')?'本轮培训第31年到位可支持第34年未来校验；两项占满两个名额，不能同时签署方针。材料成本不退，第23年不变。':'当前没有测量或教学人手，本轮也未锁定培训。第34年若仍无人到位，新建校验取消，经济6、科学4不退。');
-  if(tasks.some(t=>t.a.id===TRAINING_AUTHORIZATION_RULES.actionId))warnings.push('东岸承接协商第31年只向原培训点赋予本地授权；目标失效或已有授权则取消且政治3、经济2不退。不新建学校、增加产出、校验或河港信任，D5同源学徒不获连带授权。');
+  if(tasks.some(t=>t.a.id===TRAINING_AUTHORIZATION_RULES.actionId))warnings.push(usesTrainingWorkloadRules(s) ? '东岸承接协商第31年只向指定原培训点赋予本地授权，并把大部分深入带教转入议事与生计轮值：政治、经济年度来源提高，科学来源减少，仍按该原点实际维护缩放。目标失效或已有授权则取消且政治3、经济2不退。不新建学校或增加人手、预警覆盖、异源校验与河港信任，D5同源学徒不获连带授权。' : '东岸承接协商第31年只向原培训点赋予本地授权；目标失效或已有授权则取消且政治3、经济2不退。不新建学校、增加产出、校验或河港信任，D5同源学徒不获连带授权。');
   const reviewCount = tasks.filter(t => t.a.id === 'independent_review').length;
   if(tasks.some(t=>t.a.id===ARCHIVE_UPGRADE_RULES.actionId))warnings.push(getArchiveUpgradeWorkforce(s).length?'保档升级第33年仍核对原档与真实测量/教学人手；经济5、科学3不退。原档只是异源方法，成功升级才提供未来指令校验，第23年不变。':tasks.some(t=>t.a.id==='train_network')?'第31年培训可支持第33年保档升级，届时原档也须仍运转；两项占满两个名额，不能同时签方针。经济5、科学3不退。':'当前没有测量或教学人手，也未锁定培训。第33年原档或人手任一不到位，升级取消，经济5、科学3不退。');
   const vetoCount = tasks.filter(t => t.a.id === 'local_veto').length;
@@ -802,7 +825,8 @@ export function commitWindow(s) {
   // Every validation precedes writes. No event RNG is consumed during planning or submission.
   for (const { d, a } of tasks) {
     const sourceActionId = `action:${s.year}:${d.actorId}:${d.cellId}:${a.id}`;
-    const trainingAuthorization=a.id===TRAINING_AUTHORIZATION_RULES.actionId?trainingAuthorizationMetadata(getTrainingAuthorizationPlan(s,d.cellId).target):{};
+    const trainingPlan=a.id===TRAINING_AUTHORIZATION_RULES.actionId?getTrainingAuthorizationPlan(s,d.cellId):null;
+    const trainingAuthorization=trainingPlan?trainingAuthorizationMetadata(trainingPlan.target,trainingPlan.workload):{};
     const port = a.id==='open_port_warning'?{portBranchIds:getPortWarningTargets(s).map(i=>i.id)}:{};
     const futureCheck = a.id===FUTURE_CHECK_RULES.actionId?{futureCheckRulesVersion:FUTURE_CHECK_RULES.version}:{};
     const archiveSource=a.id===ARCHIVE_UPGRADE_RULES.actionId?getArchiveUpgradePlan(s).source:null;
@@ -821,10 +845,11 @@ function resolve(s, e) {
   if(e.actionId===TRAINING_AUTHORIZATION_RULES.actionId){
     const reason=trainingAuthorizationFailure(s,e.trainingAuthorizationTarget);
     e.resolvedYear=s.year;e.status=reason?'cancelled':'success';
-    const metadata=trainingAuthorizationMetadata(e.trainingAuthorizationTarget);
+    const metadata=trainingAuthorizationMetadata(e.trainingAuthorizationTarget,e.trainingWorkload);
     if(reason)e.trainingAuthorizationCancellationReason=reason;
     else s.institutions.find(i=>i.id===e.trainingAuthorizationTarget.id).localHandoffAuthorization=makeTrainingAuthorizationGrant(e);
     e.text=reason?(reason==='already-authorized'?'第31年原培训点或当地人手已获授权，重复协商取消。':'第31年原培训点已无法有效运转或目标来源不再对应，协商取消。')+'政治3、经济2的筹备成本不退；没有替换人手或补签授权。':'第31年，东岸原学徒与当地居民完成公开轮值与拒绝错误指令的职责协商。只有这处原培训点获得地方承接权；D5学徒不获连带授权，没有新增学校、产出、校验或河港信任。';
+    if (!reason && e.trainingWorkload) e.text='第31年，东岸原学徒与当地居民签署承接和轮值分工。大部分深入带教时间转入议事与生计协调，常规读尺仍在；原点年度来源由0.1/0.25/0.7/0.1变为0.5/0.45/0.1/0.1（政治/经济/科学/宗教），实际贡献仍按维护缩放。只有这处原培训点获得本地承接权；没有新增人手、预警覆盖、异源校验或河港信任，D5学徒不获连带授权。';
     record(s,{id:`resolved:${e.id}`,title:reason?'东岸承接协商未落实':'东岸原学徒取得本地承接权',text:e.text,cellId:'E4',parentId:e.id,sourceActionId:e.sourceActionId,kind:reason?'cancelled':'outcome',status:e.status,...metadata,...(reason?{trainingAuthorizationCancellationReason:reason}:{})});return;
   }
 
@@ -898,7 +923,7 @@ function resolve(s, e) {
   else if (a?.startsWith('recruit_')) { s.flags.recruited = true; s.flags.successor = a === 'recruit_successor'; s.actors.push({ id: 'linche', name: '林澈', availableFrom: 20, anchored: true, alive: true }); text = s.flags.successor ? '林澈自愿锚定，苏岚同意接班。第20年起林澈可部署；家人与身份仍受当前现实影响。' : '林澈自愿锚定。河港暂缺维护者：产出减半，第16年将停运。第20年起林澈可部署。'; }
   else if (a === 'restore_archive') { institution(s, 'station', 'D4', e, '重建水文站'); s.flags.successor = true; text = '新的维护小组重建测站。错过的旧培训链不会凭空补回。'; }
   else if (a === 'preserve_records') { institution(s, 'independent', 'B4', e, '修会校验档案'); s.flags.independentArchive = true; text = '不同来源的洪水刻度被保留，没有被统一标准覆盖。'; }
-  else if (a === 'fund_school' || a === 'train_network') { institution(s, 'school', e.cellId, e, a === 'fund_school' ? '东岸夜校' : '轮值维护网络'); s.flags.networks = (s.flags.networks || 0) + 1; text = '新的维护者学会公开记录与独立校验。承接历史的人手来自多年积累。'; }
+  else if (a === 'fund_school' || a === 'train_network') { institution(s, 'school', e.cellId, e, a === 'fund_school' ? '东岸夜校' : '轮值维护网络'); s.flags.networks = (s.flags.networks || 0) + 1; text = usesTrainingWorkloadRules(s) ? '新的维护者学习公开记录与独立读尺；教学人手不等于异源校验载体。承接历史的人手来自多年积累。' : '新的维护者学会公开记录与独立校验。承接历史的人手来自多年积累。'; }
   else if (a === 'mutual_aid') {
     const name = usesAftermathRules(s) && e.title.startsWith('扩充') ? '南岸互助增设轮值' : usesAftermathRules(s) && e.title.startsWith('重启') ? '南岸互助重启轮值' : '南岸互助仓';
     institution(s, 'mutual', 'D5', e, name); s.flags.aid = true;
@@ -1001,7 +1026,7 @@ export function advanceYear(s, options = {}) {
       let source = 0;
       for (const i of [...s.institutions].sort((a, b) => a.id.localeCompare(b.id))) if (i.active && i.cellId === c.id) {
         const staffing = staffingFor(s, i);
-        source += i.annualSource[k] * i.maintenance * staffing;
+        source += getInstitutionEffectiveAnnualSource(s, i)[k] * i.maintenance * staffing;
       }
       // Remote teaching only runs through an existing, active carrier; no arbitrary global science bonus.
       let remote = 0;
@@ -1065,12 +1090,14 @@ export function validateState(s) {
 }
 function inspectState(s) {
   const errors = [];
+  if(s?.trainingWorkloadRulesVersion!==undefined&&(!usesTrainingWorkloadRules(s)||!usesTrainingAuthorizationRules(s)))errors.push('学徒轮值分工规则版本非法或缺少承接协商规则');
   if(s?.trainingAuthorizationRulesVersion!==undefined&&!usesTrainingAuthorizationRules(s))errors.push('地方承接协商规则版本非法');
   if(s?.archiveUpgradeRulesVersion!==undefined&&s.archiveUpgradeRulesVersion!==ARCHIVE_UPGRADE_RULES.version)errors.push('保档升级规则版本非法');
   const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
   const integer = (value, min, max) => Number.isInteger(value) && value >= min && value <= max;
   const bounded = (value, min = 0, max = 100) => Number.isFinite(value) && value >= min && value <= max;
   const id = value => typeof value === 'string' && value.length > 0;
+  if(s?.trainingWorkload!==undefined||s?.trainingWorkloadVersion!==undefined)errors.push('轮值分工元数据只能属于真实承接合同');
   if (!object(s) || s.version !== 'afterwave.run.v1') return { valid: false, errors: ['不兼容的存档版本'] };
   if (s.staffingRulesVersion !== undefined && !validStaffingVersion(s.staffingRulesVersion)) return { valid: false, errors: ['人手结算规则版本非法'] };
   if (s.branchAccessRulesVersion !== undefined && !isBranchAccessRulesVersion(s.branchAccessRulesVersion)) return { valid: false, errors: ['分站准入规则版本非法'] };
@@ -1144,6 +1171,7 @@ function inspectState(s) {
   }
   if (s.flags.vetoMitigation !== undefined && ![.2, .3].includes(s.flags.vetoMitigation)) errors.push('停闸保护非法');
   for (const [actorId, draft] of Object.entries(s.drafts)) {
+    if(trainingWorkloadMarker(draft))errors.push('轮值分工元数据不能预先写入草稿');
     if (!object(draft) || draft.actorId !== actorId || !s.actors.some(a => a.id === actorId && a.alive && a.availableFrom <= s.year) || draft.window !== s.year || s.phase !== 'planning' || !['passed', 'locked'].includes(draft.status)) { errors.push('任务草稿非法'); continue; }
     if(draft.status==='locked'&&draft.actionId===TRAINING_AUTHORIZATION_RULES.actionId&&!getActions(s,draft.cellId,actorId,draft.evidence).some(a=>a.id===TRAINING_AUTHORIZATION_RULES.actionId))errors.push('地方承接协商草稿缺少对应规则或真实可用原培训点');
     if(draft.status==='locked'&&draft.actionId===ARCHIVE_UPGRADE_RULES.actionId&&!getActions(s,draft.cellId,actorId,draft.evidence).some(a=>a.id===ARCHIVE_UPGRADE_RULES.actionId))errors.push('保档升级草稿缺少对应规则或真实可用原档');

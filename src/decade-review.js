@@ -173,7 +173,7 @@ export function getDecadeReview(state) {
             if (actionId === 'authorize_training') {
               const contract=getTrainingAuthorizationContracts(state).find(c=>c.eventId===event.id);
               card.outcome=`第${event.year}年，${contract.cancellationReason==='already-authorized'?'已有实际承接授权，无需重复签署':'原学徒目标缺失、替换或不再有效运转'}，本次承接协商取消，没有新增授权。`;
-              card.responsibility='已付会议、公开轮值与记录工作成本不退；新学校不能替原学徒履约，也不能补写他们的同意。';
+              card.responsibility=contract.workload?'已付会议、公开轮值与记录工作成本不退；拟议的职责改排没有执行，新学校不能替原学徒履约，也不能补写他们的同意。':'已付会议、公开轮值与记录工作成本不退；新学校不能替原学徒履约，也不能补写他们的同意。';
             } else if (actionId === 'upgrade_archive_check') {
               const reason = {'archive-unavailable':'原保档未能继续运转','workforce-unavailable':'没有实际测量或教学人手','archive-and-workforce-unavailable':'原保档未能继续运转，也没有实际测量或教学人手'}[event.archiveUpgradeCancellationReason];
               card.outcome = `第${event.year}年，${reason}，保档升级取消，没有完成新校验席。`;
@@ -231,6 +231,12 @@ export function getDecadeReview(state) {
                 card.responsibility = `第16年的${role.institution.kind === 'station' ? '测站' : '档案站'}停运告示仍在，后来恢复的产出不能抹去这段空缺。`;
               }
             }
+          } else if (actionId === 'authorize_training' && getTrainingAuthorizationContracts(state).find(c=>c.eventId===event.id)?.workload) {
+            const contract=getTrainingAuthorizationContracts(state).find(c=>c.eventId===event.id);
+            const target=institutions.find(i=>i.id===contract.target.id);
+            const known=target&&typeof target.active==='boolean'&&Number.isFinite(target.maintenance)&&target.maintenance>=0&&target.maintenance<=1;
+            card.outcome=`第${event.year}年，原东岸学徒按已协商的条件留下本地承接签名，并重排原点职责：保留基本读尺与预警，减少深入带教，承担公开议事和生计协调，没有新建学校或增加人手。`;
+            card.responsibility='协商经费不是购买或代签同意；政治、经济来源提高，科学来源降低，是这份具体排班的取舍，不是给权利打分。不新建学校或增加人手、预警覆盖、异源校验、河港信任或交班方针。'+(!known?'当前运转情况未知，不能从签署推定今天仍有来源。':!target.active||target.maintenance===0?'原点当前停运，改排记录仍在，当前不再提供年度来源。':`当前排班的实际来源仍乘原点维护系数${target.maintenance}，不保证今后一直运转。`);
           } else {
             card.outcome = `第${event.year}年，${OUTCOMES[actionId] || '这项安排已有成功兑现记录'}。`;
             card.responsibility = RESPONSIBILITIES[actionId] || '兑现过的安排仍需持续承担，不等于未来的工作已经完成。';

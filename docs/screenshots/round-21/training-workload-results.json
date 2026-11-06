@@ -1,0 +1,4283 @@
+{
+  "startedAt": "2026-11-06T08:37:46.043Z",
+  "scope": "Independent Chromium real-control play from fresh 0 to 40, actual file-import restoration of new and genuine old producer states, per-year complete state comparisons, read-only disclosure/navigation/export/reload, 390/320px with native 100/200% text. Not physical-device, screen-reader, human-playtest or universal-balance certification.",
+  "exploratory": false,
+  "checks": [
+    {
+      "name": "new-authorize_training/planning: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/ended: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/ended: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/ended: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/ended: valid and exact restore",
+      "passed": true
+    },
+    {
+      "name": "New runs explicitly identify workload-v1",
+      "passed": true
+    },
+    {
+      "name": "True old producer does not carry workload version",
+      "passed": true
+    },
+    {
+      "name": "Natural seed0 offers actual coordination versus teaching outcome, without changing the title",
+      "passed": true,
+      "detail": {
+        "politics": 0.6738,
+        "economy": 0.7083,
+        "science": -8.5516,
+        "religion": -1.5434
+      }
+    },
+    {
+      "name": "Available UI choice protagonist/D4/build_joint",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: exact unified submission",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 1 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 2 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 3 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 4 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 5 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 6 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 7 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 8 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 9 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh0→10: visible annual 10 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/recruit_successor",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: exact unified submission",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 11 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 12 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 13 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 14 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 15 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 16 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 17 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 18 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 19 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh10→20: visible annual 20 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/B4/independent_review",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice linche/D4/free_warning",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: exact unified submission",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 21 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 22 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 23 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 24 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 25 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 26 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 27 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 28 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 29 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh20→30: visible annual 30 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh visible0→30 exactly matches natural independent route",
+      "passed": true
+    },
+    {
+      "name": "Fresh comparison: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 72.765625,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "Fresh comparison limits: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 48,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "Real comparison contains both concrete annual-source alternatives",
+      "passed": true
+    },
+    {
+      "name": "Fresh comparison reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice linche/E4/authorize_training",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: exact unified submission",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Fresh30→40: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "Real-click complete0→40 equals entire independent new authorization state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice linche/E4/authorize_training",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: lock order preserves complete state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: browser submission exact",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/planning reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: browser submission exact",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/locked reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/committed reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/settled reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35 settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35 ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/year35 reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/ended: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/ended: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/ended settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/ended: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/ended ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-authorize_training/ended reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice linche/E4/train_network",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: lock order preserves complete state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: browser submission exact",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/planning reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: browser submission exact",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/locked reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/committed reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/settled reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35 settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35 ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/year35 reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/ended: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/ended: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/ended settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/ended: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/ended ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "new-train_network/ended reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice linche/E4/authorize_training",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: lock order preserves complete state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: browser submission exact",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/planning reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: browser submission exact",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/locked reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/committed reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/settled reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35 settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35 ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/year35 reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/ended: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/ended: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/ended settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/ended: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/ended ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-authorize_training/ended reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice linche/E4/train_network",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: lock order preserves complete state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: browser submission exact",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/planning reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: browser submission exact",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/locked reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/committed reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/settled reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35 settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35 ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/year35 reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/ended: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/ended: settings identifies the original rule, without upgrading",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/ended settings reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/ended: ending matches original producer",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/ended ending: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old-train_network/ended reload: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Synthetic cancelled-target: legal before file import",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 31 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 32 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 33 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 34 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 35 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-cancelled-target ending reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Synthetic cancelled-target: settled status is not invented success",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "name": "synthetic-cancelled-target visit reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Synthetic stopped-after-success: legal before file import",
+      "passed": true
+    },
+    {
+      "name": "synthetic-stopped-after-success: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "synthetic-stopped-after-success: visible annual 36 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-stopped-after-success: visible annual 37 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-stopped-after-success: visible annual 38 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-stopped-after-success: visible annual 39 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-stopped-after-success: visible annual 40 equals entire independent producer state",
+      "passed": true
+    },
+    {
+      "name": "synthetic-stopped-after-success ending reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Synthetic stopped-after-success: settled status is not invented success",
+      "passed": true,
+      "detail": "authorized"
+    },
+    {
+      "name": "synthetic-stopped-after-success visit reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "synthetic-custom-source: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "Legal custom source UI preserves new training and offers no fixed reassignment",
+      "passed": true
+    },
+    {
+      "name": "Synthetic custom source read: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "390-text100 free scene: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100 comparison: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 72.765625,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "390-text100 conditions: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 48,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "390-text100 comparison: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: actual root typography",
+      "passed": true
+    },
+    {
+      "name": "390-text100 repeated comparison: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100 choice: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100 choice reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100 confirmation: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100 confirmation reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "390-text100 locked review: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100 locked archive: actual downloaded state exact",
+      "passed": true
+    },
+    {
+      "name": "390-text100 export: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100 finished: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "390-text100 ending: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100: return focuses the original workload source",
+      "passed": true
+    },
+    {
+      "name": "390-text100 ending source loop: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text100 E4 visit: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text100 E4 visit loop: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "390-text200 free scene: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200 comparison: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 238.34375,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "390-text200 conditions: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 83.1875,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "390-text200 comparison: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: actual root typography",
+      "passed": true
+    },
+    {
+      "name": "390-text200 repeated comparison: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200 choice: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200 choice reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200 confirmation: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200 confirmation reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "390-text200 locked review: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 1 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 331,
+        "previousCovered": 330.921875
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 2 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 1111,
+        "previousCovered": 1175
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 3 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 1891,
+        "previousCovered": 1955
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 4 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 2671,
+        "previousCovered": 2735
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 5 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 3451,
+        "previousCovered": 3515
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 6 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 4231,
+        "previousCovered": 4295
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 7 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 5011,
+        "previousCovered": 5075
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 8 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 5791,
+        "previousCovered": 5855
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 9 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 6571,
+        "previousCovered": 6635
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 10 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 7351,
+        "previousCovered": 7415
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 11 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 8131,
+        "previousCovered": 8195
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 12 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 8911,
+        "previousCovered": 8975
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 13 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 9691,
+        "previousCovered": 9755
+      }
+    },
+    {
+      "name": "locked-review-390-text200: segment 14 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 10090,
+        "previousCovered": 10535
+      }
+    },
+    {
+      "name": "locked-review-390-text200: bounded screenshot scrolling: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200 locked archive: actual downloaded state exact",
+      "passed": true
+    },
+    {
+      "name": "390-text200 export: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200 finished: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "390-text200 ending: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "390-text200: return focuses the original workload source",
+      "passed": true
+    },
+    {
+      "name": "390-text200 ending source loop: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200 E4 visit: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 1 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 331,
+        "previousCovered": 330.921875
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 2 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 1111,
+        "previousCovered": 1175
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 3 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 1891,
+        "previousCovered": 1955
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 4 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 2671,
+        "previousCovered": 2735
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 5 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 3451,
+        "previousCovered": 3515
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 6 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 4231,
+        "previousCovered": 4295
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 7 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 5011,
+        "previousCovered": 5075
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 8 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 5791,
+        "previousCovered": 5855
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 9 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 6571,
+        "previousCovered": 6635
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: segment 10 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 6769,
+        "previousCovered": 7415
+      }
+    },
+    {
+      "name": "e4-visit-390-text200: bounded screenshot scrolling: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "390-text200 E4 visit loop: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "320-text100 free scene: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100 comparison: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 72.765625,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "320-text100 conditions: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 48,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "320-text100 comparison: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: actual root typography",
+      "passed": true
+    },
+    {
+      "name": "320-text100 repeated comparison: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100 choice: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100 choice reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100 confirmation: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100 confirmation reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "320-text100 locked review: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100 locked archive: actual downloaded state exact",
+      "passed": true
+    },
+    {
+      "name": "320-text100 export: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100 finished: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "320-text100 ending: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100: return focuses the original workload source",
+      "passed": true
+    },
+    {
+      "name": "320-text100 ending source loop: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text100 E4 visit: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "16px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text100 E4 visit loop: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "320-text200 free scene: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200 comparison: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 238.34375,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "320-text200 conditions: visible keyboard focus and hit target",
+      "passed": true,
+      "detail": {
+        "focused": true,
+        "height": 124.78125,
+        "uncovered": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "name": "320-text200 comparison: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: actual root typography",
+      "passed": true
+    },
+    {
+      "name": "320-text200 repeated comparison: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200 choice: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200 choice reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200 confirmation: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200 confirmation reading: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Available UI choice protagonist/D4/share_power",
+      "passed": true
+    },
+    {
+      "name": "320-text200 locked review: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 1 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 401,
+        "previousCovered": 400.515625
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 2 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 905,
+        "previousCovered": 969
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 3 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 1409,
+        "previousCovered": 1473
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 4 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 1913,
+        "previousCovered": 1977
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 5 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 2417,
+        "previousCovered": 2481
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 6 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 2921,
+        "previousCovered": 2985
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 7 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 3425,
+        "previousCovered": 3489
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 8 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 3929,
+        "previousCovered": 3993
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 9 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 4433,
+        "previousCovered": 4497
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 10 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 4937,
+        "previousCovered": 5001
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 11 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 5441,
+        "previousCovered": 5505
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 12 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 5945,
+        "previousCovered": 6009
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 13 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 6449,
+        "previousCovered": 6513
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 14 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 6953,
+        "previousCovered": 7017
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 15 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 7457,
+        "previousCovered": 7521
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 16 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 7961,
+        "previousCovered": 8025
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 17 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 8465,
+        "previousCovered": 8529
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 18 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 8969,
+        "previousCovered": 9033
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 19 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 9473,
+        "previousCovered": 9537
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 20 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 9977,
+        "previousCovered": 10041
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 21 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 10481,
+        "previousCovered": 10545
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 22 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 10985,
+        "previousCovered": 11049
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 23 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 11489,
+        "previousCovered": 11553
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 24 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 11993,
+        "previousCovered": 12057
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 25 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 12497,
+        "previousCovered": 12561
+      }
+    },
+    {
+      "name": "locked-review-320-text200: segment 26 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 12816,
+        "previousCovered": 13065
+      }
+    },
+    {
+      "name": "locked-review-320-text200: bounded screenshot scrolling: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200 locked archive: actual downloaded state exact",
+      "passed": true
+    },
+    {
+      "name": "320-text200 export: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200 finished: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "320-text200 ending: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "320-text200: return focuses the original workload source",
+      "passed": true
+    },
+    {
+      "name": "320-text200 ending source loop: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200 E4 visit: document and components fit viewport",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "font": "32px",
+        "overflow": []
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 1 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 439,
+        "previousCovered": 438.90625
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 2 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 943,
+        "previousCovered": 1007
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 3 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 1447,
+        "previousCovered": 1511
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 4 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 1951,
+        "previousCovered": 2015
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 5 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 2455,
+        "previousCovered": 2519
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 6 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 2959,
+        "previousCovered": 3023
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 7 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 3463,
+        "previousCovered": 3527
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 8 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 3967,
+        "previousCovered": 4031
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 9 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 4471,
+        "previousCovered": 4535
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 10 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 4975,
+        "previousCovered": 5039
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 11 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 5479,
+        "previousCovered": 5543
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 12 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 5983,
+        "previousCovered": 6047
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 13 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 6487,
+        "previousCovered": 6551
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 14 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 6991,
+        "previousCovered": 7055
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 15 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 7495,
+        "previousCovered": 7559
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: segment 16 advances without skipped pixels",
+      "passed": true,
+      "detail": {
+        "scrollY": 7999,
+        "previousCovered": 8063
+      }
+    },
+    {
+      "name": "e4-visit-320-text200: bounded screenshot scrolling: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "320-text200 E4 visit loop: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "old comparison: actual file import is byte exact and safely opens world",
+      "passed": true
+    },
+    {
+      "name": "Old comparison read: entire memory and saved world unchanged",
+      "passed": true
+    },
+    {
+      "name": "Old comparison does not promise the new coordination vector",
+      "passed": true
+    },
+    {
+      "name": "All production source bytes remained frozen during formal run",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime, missing asset or hot reload errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "path": "playtest-output/round-21/screenshots/synthetic-cancelled-target-ending-390.png",
+      "bytes": 139669,
+      "sha256": "ebb3c73fab9b260cdb6390fe00b079e34247d640572ee04ab042eec4cec77d77",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/synthetic-cancelled-target-visit-390.png",
+      "bytes": 366882,
+      "sha256": "942a0563acc6d6b6ce5b59ded4534f27538c6444588807e0c9e695f7918fed17",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/synthetic-stopped-after-success-ending-390.png",
+      "bytes": 176901,
+      "sha256": "070c5b336abfe0947105ed727171a6ab9b53fa9c09aa76a5e4f44e184b5eeae1",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/synthetic-stopped-after-success-visit-390.png",
+      "bytes": 379500,
+      "sha256": "5083f188e5c89ea89e0f0615fb3d3f2ec80d2e83af8eb4c95a5080d4d46c917b",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/free-scene-390-text100.png",
+      "bytes": 261231,
+      "sha256": "ebb7e46c6f23c235c77b9295c3900e1485f8efe5024445ce92c0ac012cc67dc0",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/comparison-390-text100.png",
+      "bytes": 369610,
+      "sha256": "254cd3669e2bfd90ba6453f8c49e0739f94f483785c7171a4e45c8dd485edeba",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/authorization-preview-390-text100.png",
+      "bytes": 347254,
+      "sha256": "55ae230c02a589327effe7963151370d0a698d415566e73ff18dbf1a5519a12a",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/authorization-confirm-390-text100.png",
+      "bytes": 348187,
+      "sha256": "1ac891568400e7745c502aa3b33a96a740ad349caaceefeb298b319050fef49f",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text100.png",
+      "bytes": 662230,
+      "sha256": "5e72fd3794868ea969033511e095863b34e5b40a3e0f704aec53982100c21d3a",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/ending-work-390-text100.png",
+      "bytes": 186441,
+      "sha256": "9ee4b13b3489f3eb3b4995cb7518987e6c6f4683a09a0367130b906a9e74ea3f",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text100.png",
+      "bytes": 375350,
+      "sha256": "92a5e2db61be12025561bbb2317a19692c446ff5a9d1753000cd06ce62bb5f98",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/free-scene-390-text200.png",
+      "bytes": 665381,
+      "sha256": "6bbe0381c485cf82bcee8ac8551fe4f5f135c948b6e3c83e3fd1789299bfdd0a",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/comparison-390-text200.png",
+      "bytes": 858528,
+      "sha256": "fb491a051f2fcad3ff0782d97e273e31354a7e09df5c85ccb3ce164a753fd927",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/authorization-preview-390-text200.png",
+      "bytes": 781034,
+      "sha256": "274ca33be6e7b4970064c4d0901ac1735956b5184a275409c100fac480d41192",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/authorization-confirm-390-text200.png",
+      "bytes": 784767,
+      "sha256": "5bbde791d81a02cca2470cf35bb169d3de127209f6bad1ee602c84743e3782b8",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-01.png",
+      "bytes": 105237,
+      "sha256": "8607f193d24a4a673b0a5afa70184599312b2d2aa020622e4768ea1f7e5f815d",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 1,
+      "scrollY": 331,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-02.png",
+      "bytes": 95282,
+      "sha256": "ec6722d3494f369051688fda1195bba10aafe1309d6ab057d5870a3be3b39749",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 2,
+      "scrollY": 1111,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-03.png",
+      "bytes": 82374,
+      "sha256": "3989621e02e6b2e87b2d86426428aa1c91a1cdd70b1d4b9e10e4129dca4f8c5b",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 3,
+      "scrollY": 1891,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-04.png",
+      "bytes": 98333,
+      "sha256": "80ece0a946ee7e2f924091184189a2bfcfeea11284d6c32d178bca6c398e2257",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 4,
+      "scrollY": 2671,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-05.png",
+      "bytes": 150394,
+      "sha256": "980030b6e199509e44f6a5039d954ff829c101100ce5d657a41fdc8376150c57",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 5,
+      "scrollY": 3451,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-06.png",
+      "bytes": 144594,
+      "sha256": "2283ac6eb483833bdae482ef78b62fb2d47e02c82bad96d253cb1a817c6bfefd",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 6,
+      "scrollY": 4231,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-07.png",
+      "bytes": 148393,
+      "sha256": "aac8f42292b393112771a2c431faa214f9ebf1b3bfee498fbe432991c7cb5187",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 7,
+      "scrollY": 5011,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-08.png",
+      "bytes": 144795,
+      "sha256": "140a088926998c27d1a9eb6905958abf3bba00a9406679a3cad3d88c0abcb883",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 8,
+      "scrollY": 5791,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-09.png",
+      "bytes": 174086,
+      "sha256": "7b902c5a49106c8f904b0977c5bdbde51ac68c6ac82d0c0f6ff23ece6b09313a",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 9,
+      "scrollY": 6571,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-10.png",
+      "bytes": 127176,
+      "sha256": "d31907303a1c4968f018d221775c7dfb54574f1934c0c9ec8422acc3c3affcbd",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 10,
+      "scrollY": 7351,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-11.png",
+      "bytes": 107670,
+      "sha256": "3012249493023a15234002e7437fa5b602f139d05a6de84a927813044bc07984",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 11,
+      "scrollY": 8131,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-12.png",
+      "bytes": 113807,
+      "sha256": "0343dcf1ff6f7f3e087bc5ff0dc310e9ca0654e81dc19a41f80703e8f6cb3a94",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 12,
+      "scrollY": 8911,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-13.png",
+      "bytes": 102927,
+      "sha256": "cf6936352fe1d533ae935ec29f51c488e1f6ee3b3f899175b5b247e86c5eae46",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 13,
+      "scrollY": 9691,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-390-text200-part-14.png",
+      "bytes": 70695,
+      "sha256": "9283c983229bdae8de21c2b7f4e8f1eb3ff0ef4cf354f9d72229b7fd97816fe4",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-390-text200",
+      "part": 14,
+      "scrollY": 10090,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 10818.5
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/ending-work-390-text200.png",
+      "bytes": 443733,
+      "sha256": "ee896c0921a196c092c0315f3689fc6d4c50e2b82650a159a698c2da55dc5774",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-01.png",
+      "bytes": 118987,
+      "sha256": "a85d760e99be9f960fb40c35cb1f2b8955fddf54730b5e1b002c16d75cd10365",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 1,
+      "scrollY": 331,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-02.png",
+      "bytes": 72376,
+      "sha256": "7bb7f3cb5c9287c8e76e51227ad265db3cfc83fe9d6457953f66fa0385e5812d",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 2,
+      "scrollY": 1111,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-03.png",
+      "bytes": 150244,
+      "sha256": "4d3e81d5a9d8fb6307a240f36971e52ed88765c2cfd2cb91a55cbbcb4c657c08",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 3,
+      "scrollY": 1891,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-04.png",
+      "bytes": 64299,
+      "sha256": "6f1047a8fa91f903c64d9037b2089bed4f41d5041ad5a5f8a73540563386612b",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 4,
+      "scrollY": 2671,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-05.png",
+      "bytes": 86443,
+      "sha256": "d335377fabd1bbcb0b3278e112c89c84bb2c171e4ea4d7f3b965a5ed14d01891",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 5,
+      "scrollY": 3451,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-06.png",
+      "bytes": 106477,
+      "sha256": "d6fbf8f8277422a1e4d18b5a1f28776eec46b3c922317e3ba6702ffd60159254",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 6,
+      "scrollY": 4231,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-07.png",
+      "bytes": 89772,
+      "sha256": "6f8c6e31f70bae46d9cdd575c84c3e0b59adb8f54e3dabfb0d204868a55e30ac",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 7,
+      "scrollY": 5011,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-08.png",
+      "bytes": 135140,
+      "sha256": "0b41c9846303e9a0b93e0329d226a01d0fb4fde39dd3c16ab4b70040df2d5dc7",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 8,
+      "scrollY": 5791,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-09.png",
+      "bytes": 65684,
+      "sha256": "de1c5968a41a97c7bd418ef34678815050d92e2cb6fb386985c2f2eaf089d35b",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 9,
+      "scrollY": 6571,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-390-text200-part-10.png",
+      "bytes": 54523,
+      "sha256": "79085b845e95b55d44cb495a6f3585845a94365e86c6afee837e0c9461ba0fa6",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-390-text200",
+      "part": 10,
+      "scrollY": 6769,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "elementStart": 330.921875,
+      "elementEnd": 7497.53125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/free-scene-320-text100.png",
+      "bytes": 261460,
+      "sha256": "242877335469efe951da50e8fbe66f2c3e6d1be17309fbda1b7b0776ff3ca05f",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/comparison-320-text100.png",
+      "bytes": 351674,
+      "sha256": "a360d4668be45ea68f67b2154b4052967a1f0e24030ff59fe890c5d928b9820b",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/authorization-preview-320-text100.png",
+      "bytes": 336814,
+      "sha256": "ead24ab569364d3a523782b3bada6c988fe06494a870dfe716706e52da422057",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/authorization-confirm-320-text100.png",
+      "bytes": 337883,
+      "sha256": "eff1f9f6a23fe44743b5766500acdc1c86fd8311173c51d70f3eb025bb59d554",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text100.png",
+      "bytes": 645820,
+      "sha256": "9b3fcdef4a9c4fd61e1e5ebfdabe30c29bc71ea586334859e15117e31f1df606",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/ending-work-320-text100.png",
+      "bytes": 181320,
+      "sha256": "32e167d47ef62378cc655fc332cf4c2ab48d6654998bdc599461e67798bb612a",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text100.png",
+      "bytes": 366045,
+      "sha256": "e5ff64e81494426872d16c6f94ccb3e72a6343bafe6e149a6776d5b80660aa57",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/free-scene-320-text200.png",
+      "bytes": 650043,
+      "sha256": "bbaf8d50faf39a6810b4b7ae42c5fb642a27741508ccf0ca5dd1a59bc25faaa3",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/comparison-320-text200.png",
+      "bytes": 852300,
+      "sha256": "3fb6d6bd7169ddc3b2cecdaa6d78db2ffd220f2a76fec7cd76aac0cd39792512",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/authorization-preview-320-text200.png",
+      "bytes": 774990,
+      "sha256": "e27a1e9b3380919db9a33f0fb37e14d8f1ace3a23a6467d140c0676597cffbfc",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/authorization-confirm-320-text200.png",
+      "bytes": 778304,
+      "sha256": "c00a2a8836fc265dfebce4ce8f08624398f8471d9cec57ac53343cab3ef4950d",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-01.png",
+      "bytes": 74148,
+      "sha256": "fb12a0609e09be2ca3d155bb33306d7d2b63c0a9f76934cd67a877e35711e37a",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 1,
+      "scrollY": 401,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-02.png",
+      "bytes": 49823,
+      "sha256": "663deaec00536b70c55fb4d54d68d756f700320c1f21020c02bc9bd280b38c3e",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 2,
+      "scrollY": 905,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-03.png",
+      "bytes": 46784,
+      "sha256": "1aa6e10bb9e4ecc5fd9d03dc07512d69fcf1f4085e03b959d7d061bb6057277d",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 3,
+      "scrollY": 1409,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-04.png",
+      "bytes": 59547,
+      "sha256": "53a74670aa885302f312c6e7abcb6db4a8c162598755d9e916e7afb230ef55aa",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 4,
+      "scrollY": 1913,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-05.png",
+      "bytes": 43746,
+      "sha256": "c4ad911e5d313f7c9835750b23db53377889ed87f53b85f3775d3bbb5ab0ba14",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 5,
+      "scrollY": 2417,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-06.png",
+      "bytes": 45607,
+      "sha256": "a7c612e6924dd5e5a9a87ca3a83c13abe77b4e285dea76af7cf1212cb3fc122d",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 6,
+      "scrollY": 2921,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-07.png",
+      "bytes": 47867,
+      "sha256": "bb8629e07de658d94c4ac9b61a44ee380ce831e9d4c484a385d597f3684bff6d",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 7,
+      "scrollY": 3425,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-08.png",
+      "bytes": 87723,
+      "sha256": "51d62ab4e7afc40f2d6f496ac9dab03437071bdc3131c8f5297a465112d358b9",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 8,
+      "scrollY": 3929,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-09.png",
+      "bytes": 75234,
+      "sha256": "831eac145e15ab0db05366daacb0cd49c8b3ba6861db0eda96080ba2e4485d8e",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 9,
+      "scrollY": 4433,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-10.png",
+      "bytes": 89353,
+      "sha256": "45aab7b1a3e6e8e969f1b5b81ac4730982da983f313a6fab8bec47e5602b7c01",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 10,
+      "scrollY": 4937,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-11.png",
+      "bytes": 68873,
+      "sha256": "50b8d20ff7b956939c11c7821266f8b7bf2c61e401ad2c2c62e20737c0b38225",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 11,
+      "scrollY": 5441,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-12.png",
+      "bytes": 72087,
+      "sha256": "a8792a5fef69f1b13b1e0794fd454779d1ca346df33df0ec538c982724ea9da3",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 12,
+      "scrollY": 5945,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-13.png",
+      "bytes": 83909,
+      "sha256": "c07bb66fb54cd9fdf6491a11d8dcf59f5b191c90b79751b5fc5e06c1bacceb39",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 13,
+      "scrollY": 6449,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-14.png",
+      "bytes": 69183,
+      "sha256": "2478672abd35193c4464549542ba988e03fbcb4198deaf71552049356d139a2c",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 14,
+      "scrollY": 6953,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-15.png",
+      "bytes": 87019,
+      "sha256": "dfb9c06d6fb7128445b1dc4f6d35f81fe55bd2199d0ec1ca71935628e558addb",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 15,
+      "scrollY": 7457,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-16.png",
+      "bytes": 111012,
+      "sha256": "cbb309de370b200f931f21793f27f4f5119ccb0208e4b672bcaca85b9452806f",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 16,
+      "scrollY": 7961,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-17.png",
+      "bytes": 78663,
+      "sha256": "1932b5a3bae165508ebac762b2e822333e19c9944546c349acb0ec2a9f5f7e98",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 17,
+      "scrollY": 8465,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-18.png",
+      "bytes": 71754,
+      "sha256": "06a9c44d73683889706ddd9d09293710506fc55f66048227c8ce39cfab4b8683",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 18,
+      "scrollY": 8969,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-19.png",
+      "bytes": 70055,
+      "sha256": "045e941639def737494d8f7fca002754d0d21c256ef7f4d2b9bec6ea86cbdfff",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 19,
+      "scrollY": 9473,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-20.png",
+      "bytes": 68946,
+      "sha256": "4cd1f111828782d8e02a6e53c6ae00ac0ddc845f80f2dccb3677c8d9186440d9",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 20,
+      "scrollY": 9977,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-21.png",
+      "bytes": 58332,
+      "sha256": "10ce9c0d98f942a62e3d03efa37045882e6fac787dace48ade2697d1de97315a",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 21,
+      "scrollY": 10481,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-22.png",
+      "bytes": 48007,
+      "sha256": "6741a83f26278d279c1e482db61a1e106b9ef819244714d2492c494bb1f7cc6a",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 22,
+      "scrollY": 10985,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-23.png",
+      "bytes": 74620,
+      "sha256": "f51e3673c230cee5f6201f77858418b5e877263772cf2065e7d2cb73528fd65c",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 23,
+      "scrollY": 11489,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-24.png",
+      "bytes": 59899,
+      "sha256": "66f675436bc911aa8cac57817ede3e850f232c90e47cf215b8c8b1f32dbd6695",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 24,
+      "scrollY": 11993,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-25.png",
+      "bytes": 48528,
+      "sha256": "9ebc42e2553a130d6d7ac6438c063a4429abe07abe876bbf3059b06afc13d913",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 25,
+      "scrollY": 12497,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/locked-review-320-text200-part-26.png",
+      "bytes": 41727,
+      "sha256": "00b9c719a89dd20e47552f40265069bde2de0ffb074880460472ce21eb39f82d",
+      "capture": "actual-viewport-segment",
+      "group": "locked-review-320-text200",
+      "part": 26,
+      "scrollY": 12816,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 400.515625,
+      "elementEnd": 13268.953125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/ending-work-320-text200.png",
+      "bytes": 429070,
+      "sha256": "5a2af692f777063eba26dad16b5e20f178804cff560c2af11a6ef81833237c52",
+      "capture": "bounded-element"
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-01.png",
+      "bytes": 73283,
+      "sha256": "137e18fc69ffea862a928109987aa583fc5ae492bc548593f75b0fcc62fee9b0",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 1,
+      "scrollY": 439,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-02.png",
+      "bytes": 57290,
+      "sha256": "f079fcbae5a37746ea0b8bdf133c327dcc4e65f721e70a935c66c71a61c586c2",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 2,
+      "scrollY": 943,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-03.png",
+      "bytes": 50924,
+      "sha256": "2c48fc0299a3a5b671384b295a8829ee614e9b59303a1eda8adcf420f86d1cd7",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 3,
+      "scrollY": 1447,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-04.png",
+      "bytes": 100561,
+      "sha256": "b0c82b138e0c729dfa4b15e74236dc207dc63f1f683ac092b6faf8c25357b34e",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 4,
+      "scrollY": 1951,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-05.png",
+      "bytes": 81460,
+      "sha256": "1b97b8b821cbcdbe5aba1c1f94cf94f24b66c073d615c4459fd98b4581b507b2",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 5,
+      "scrollY": 2455,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-06.png",
+      "bytes": 42969,
+      "sha256": "fd3f61811098cc1cfbb2bf816eaedf09206b7f2ceddfed0c1ca9c8f38189dac3",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 6,
+      "scrollY": 2959,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-07.png",
+      "bytes": 44344,
+      "sha256": "2ce64458bcdb2a56491a515ce47e50bfd1c754e6ef5027ed23a6db68afa7af6d",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 7,
+      "scrollY": 3463,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-08.png",
+      "bytes": 45933,
+      "sha256": "3f74f13774e6e4f9f31b027b755f796e96eee7862d5f7ef3a23c7024fd8dfe1d",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 8,
+      "scrollY": 3967,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-09.png",
+      "bytes": 56171,
+      "sha256": "67ebf136f4bed9ce554fa667bd7af9ee09ab512ba3c6effe32a1eb24e1c11b66",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 9,
+      "scrollY": 4471,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-10.png",
+      "bytes": 57422,
+      "sha256": "3a47dae795918bd0f988268b72b078636f5bb37ddbfcf5ae869bea49558a0156",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 10,
+      "scrollY": 4975,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-11.png",
+      "bytes": 61678,
+      "sha256": "9bf7bd1f3fc9894f78a52552218fae3e6c503ff3caf4949ab8a26fdfcf334b73",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 11,
+      "scrollY": 5479,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-12.png",
+      "bytes": 42936,
+      "sha256": "0f91d3f3c99a92a7b764f6e9aa09beebf71a4f28951cbe6ff42cf7cea24f4131",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 12,
+      "scrollY": 5983,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-13.png",
+      "bytes": 75871,
+      "sha256": "c8c8de2f0b07cf2e527873ef72ce80fa9afdd48b7a73c7916347ac8825ad823c",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 13,
+      "scrollY": 6487,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-14.png",
+      "bytes": 68163,
+      "sha256": "49cd98830b75cb5fa9dcb44368cb46c056f2d5f0495d183537ad5cc79d3928e8",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 14,
+      "scrollY": 6991,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-15.png",
+      "bytes": 43790,
+      "sha256": "75b3acf08a3c7cbf44dfd90917818bd16f02b2efa57891a8bd1a44367efa9210",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 15,
+      "scrollY": 7495,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/e4-visit-320-text200-part-16.png",
+      "bytes": 35156,
+      "sha256": "0e6ff16743c0c120887d2c4da985ff11b6b3a62ec72faea390bc3f238fa5f788",
+      "capture": "actual-viewport-segment",
+      "group": "e4-visit-320-text200",
+      "part": 16,
+      "scrollY": 7999,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "elementStart": 438.90625,
+      "elementEnd": 8562.28125
+    },
+    {
+      "path": "playtest-output/round-21/screenshots/old-contract-comparison-390.png",
+      "bytes": 178501,
+      "sha256": "1416b38075091fcbb75dc66329630dc54e012126b19d075e2358961f9d97f513",
+      "capture": "bounded-element"
+    }
+  ],
+  "routes": {
+    "new-authorize_training": {
+      "ending": "许多人签署的历史",
+      "channels": {
+        "politics": 56.1978,
+        "economy": 49.2121,
+        "science": 38.2526,
+        "religion": 50.4912
+      },
+      "workloadVersion": "training-workload-v1",
+      "institutions": [
+        {
+          "id": "institution:event:action:0:protagonist:D4:build_joint:training:E4",
+          "kind": "training",
+          "savedSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.7,
+            "religion": 0.1
+          },
+          "effectiveSource": {
+            "politics": 0.5,
+            "economy": 0.45,
+            "science": 0.1,
+            "religion": 0.1
+          }
+        }
+      ]
+    },
+    "new-train_network": {
+      "ending": "许多人签署的历史",
+      "channels": {
+        "politics": 55.524,
+        "economy": 48.5038,
+        "science": 46.8042,
+        "religion": 52.0346
+      },
+      "workloadVersion": "training-workload-v1",
+      "institutions": [
+        {
+          "id": "institution:event:action:0:protagonist:D4:build_joint:training:E4",
+          "kind": "training",
+          "savedSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.7,
+            "religion": 0.1
+          },
+          "effectiveSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.7,
+            "religion": 0.1
+          }
+        },
+        {
+          "id": "institution:event:action:30:linche:E4:train_network:E4",
+          "kind": "school",
+          "savedSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.65,
+            "religion": 0.2
+          },
+          "effectiveSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.65,
+            "religion": 0.2
+          }
+        }
+      ]
+    },
+    "old-authorize_training": {
+      "ending": "许多人签署的历史",
+      "channels": {
+        "politics": 53.1112,
+        "economy": 47.6689,
+        "science": 42.8826,
+        "religion": 50.4912
+      },
+      "workloadVersion": null,
+      "institutions": [
+        {
+          "id": "institution:event:action:0:protagonist:D4:build_joint:training:E4",
+          "kind": "training",
+          "savedSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.7,
+            "religion": 0.1
+          },
+          "effectiveSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.7,
+            "religion": 0.1
+          }
+        }
+      ]
+    },
+    "old-train_network": {
+      "ending": "许多人签署的历史",
+      "channels": {
+        "politics": 55.524,
+        "economy": 48.5038,
+        "science": 46.8042,
+        "religion": 52.0346
+      },
+      "workloadVersion": null,
+      "institutions": [
+        {
+          "id": "institution:event:action:0:protagonist:D4:build_joint:training:E4",
+          "kind": "training",
+          "savedSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.7,
+            "religion": 0.1
+          },
+          "effectiveSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.7,
+            "religion": 0.1
+          }
+        },
+        {
+          "id": "institution:event:action:30:linche:E4:train_network:E4",
+          "kind": "school",
+          "savedSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.65,
+            "religion": 0.2
+          },
+          "effectiveSource": {
+            "politics": 0.1,
+            "economy": 0.25,
+            "science": 0.65,
+            "religion": 0.2
+          }
+        }
+      ]
+    },
+    "synthetic-cancelled-target": {
+      "natural": false,
+      "authorization": "cancelled",
+      "ending": "纸上的共同作者"
+    },
+    "synthetic-stopped-after-success": {
+      "natural": false,
+      "authorization": "authorized",
+      "ending": "纸上的共同作者"
+    }
+  },
+  "runtimeHash": {
+    "before": "ad4463a0ec30c8ba9e4857ad2249243a5f362b35cf50a369b2475760adf9e3b8",
+    "after": "ad4463a0ec30c8ba9e4857ad2249243a5f362b35cf50a369b2475760adf9e3b8"
+  },
+  "naturalDifference": {
+    "politics": 0.6738,
+    "economy": 0.7083,
+    "science": -8.5516,
+    "religion": -1.5434
+  },
+  "browserVersion": "138.0.7204.0",
+  "completedAt": "2026-11-06T08:39:40.969Z"
+}
