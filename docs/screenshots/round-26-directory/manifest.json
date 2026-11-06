@@ -1,0 +1,78 @@
+{
+  "suite": "round26-choice-directory-visuals",
+  "sourceSha256": "013ebb32735202d690b7ed6ebe12f5a48d7fce0ba3d3920339a26e0c27c864f8",
+  "production335Sha256": "a5b9bb3c078beac986ff539d6003c4447d8a723ae601e3a5537df9f39615cf68",
+  "scriptSha256": "cdf51b64416cb6eb2ae11f152a6f2b1704050bba0b43cc0f8ef0fcbaca7a30e6",
+  "checks": 1475,
+  "passed": true,
+  "screenshotsCaptured": 80,
+  "annualSteps": 40,
+  "completedAt": "2026-11-06T18:05:38.521Z",
+  "pixelInspection": "All eight selected original PNGs were viewed at original pixels. No image resizing or repainting.",
+  "images": [
+    {
+      "file": "y0-D4-protagonist-320-200-directory.png",
+      "width": 320,
+      "height": 568,
+      "scrollY": 2863,
+      "sha256": "b313a288847a3d40081183e74a40d7cc2775ef5ea8c1c5f0c990273e8764750b",
+      "bytes": 88065
+    },
+    {
+      "file": "y0-D4-protagonist-320-100-build_joint-target.png",
+      "width": 320,
+      "height": 568,
+      "scrollY": 2144,
+      "sha256": "6145abaeb35325a2068b73d0ff1202fc5ac10ccf321b28c0ca3844f877df73df",
+      "bytes": 52731
+    },
+    {
+      "file": "y0-D4-protagonist-1280-100-directory.png",
+      "width": 1280,
+      "height": 900,
+      "scrollY": 1059,
+      "sha256": "085fb2625b803ba1e50775478dacaf1d1b3bc4d3eb1f0d6b6409e1be93f84a7c",
+      "bytes": 250022
+    },
+    {
+      "file": "y20-B4-protagonist-390-200-directory.png",
+      "width": 390,
+      "height": 844,
+      "scrollY": 2748,
+      "sha256": "25f3cf1a546f069deb250f691b4bb89b144ea91005b8576093bd67e870bfa98f",
+      "bytes": 140524
+    },
+    {
+      "file": "y30-D4-protagonist-320-200-directory.png",
+      "width": 320,
+      "height": 568,
+      "scrollY": 5107,
+      "sha256": "6c154c35bbc8dc1652c96c95d989e97feaf2e09411978b7162cd96cc94035071",
+      "bytes": 84783
+    },
+    {
+      "file": "y30-D4-protagonist-320-200-share_power-target.png",
+      "width": 320,
+      "height": 568,
+      "scrollY": 7585,
+      "sha256": "2f252e7a05f9cafe51ff3558cddea26c1f28a92337ef4411355cd98bf45ee71b",
+      "bytes": 43526
+    },
+    {
+      "file": "y30-B4-linche-390-200-directory.png",
+      "width": 390,
+      "height": 844,
+      "scrollY": 4281,
+      "sha256": "7b9e87c5dbe3f9781b240f0dd67fffb19b82d48aee0d06a11876087e1682b060",
+      "bytes": 135610
+    },
+    {
+      "file": "ending-320-200.png",
+      "width": 320,
+      "height": 568,
+      "scrollY": 0,
+      "sha256": "b628c77c1fbd3f3a07c19c9a324976d807c75903b82350c94c22f62cf1346b27",
+      "bytes": 88691
+    }
+  ]
+}

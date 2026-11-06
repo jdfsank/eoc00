@@ -1,0 +1,47 @@
+{
+  "round": 26,
+  "attempt": 4,
+  "productionFreeze": "v3 final",
+  "baseCommit": "f781b25e0b03aa550540b8f9fb631943078fe461",
+  "productionFileCount": 335,
+  "productionHash": "a5b9bb3c078beac986ff539d6003c4447d8a723ae601e3a5537df9f39615cf68",
+  "sourceBefore": "013ebb32735202d690b7ed6ebe12f5a48d7fce0ba3d3920339a26e0c27c864f8",
+  "sourceAfter": "013ebb32735202d690b7ed6ebe12f5a48d7fce0ba3d3920339a26e0c27c864f8",
+  "focusedCommand": "ROUND26_IMPORT_QA_OUTPUT=../round26-qa/integration node scripts/round26-import-safety-test.mjs",
+  "scriptSHA256": "9a89c160b1ca86075b48aac8fe790a7742c9b47d111fe9bd72c7569b8ac3d823",
+  "focusedExitCode": 0,
+  "checks": 181,
+  "passed": 181,
+  "requestFailures": [],
+  "errors": [],
+  "reportSHA256": "b80898c77a6d5cecb03c5370cd845f581fd99a0c9798a3a4fff7ec738da8aa17",
+  "startedAt": "2026-11-06T18:03:47.883Z",
+  "completedAt": "2026-11-06T18:05:06.774Z",
+  "pixelReviewScope": "Both selected final-v3 PNGs viewed as actual image pixels; complete loading instruction readable without horizontal clipping. Real native 32px root text. Capture scrolls to loading status, not an assertion that all settings fit in one viewport. Native file input abbreviates its filename. No resizing, stitching, cropping or editing. 390px previous success toast remains visible but does not cover loading instructions. Not physical-device, OS/page-zoom, BFCache or screen-reader certification.",
+  "images": [
+    {
+      "path": "docs/screenshots/round-26-import/reading-320-200.png",
+      "source": "../round26-qa/integration/reading-320-200.png",
+      "sha256": "fd8b5d9ae046f419e6d39792736234f77348c5e2d3f933c5f61fe4aeafd9af6e",
+      "bytes": 90919,
+      "width": 320,
+      "height": 568,
+      "rootTextPx": 32,
+      "originalUnmodified": true,
+      "actualPixelsReviewed": true,
+      "identicalToV2": true
+    },
+    {
+      "path": "docs/screenshots/round-26-import/reading-390-200.png",
+      "source": "../round26-qa/integration/reading-390-200.png",
+      "sha256": "6357a542a7a4626206e35722ff944c1c8a864b0036d685ca8c57e35d6b7bec1c",
+      "bytes": 113992,
+      "width": 390,
+      "height": 844,
+      "rootTextPx": 32,
+      "originalUnmodified": true,
+      "actualPixelsReviewed": true,
+      "identicalToV2": true
+    }
+  ]
+}

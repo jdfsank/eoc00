@@ -1,0 +1,62 @@
+{
+  "round": 26,
+  "verificationReport": "../round26-comparison-focused/results.json",
+  "productionRuntimeHash": "a5b9bb3c078beac986ff539d6003c4447d8a723ae601e3a5537df9f39615cf68",
+  "sourceTreeHash": "013ebb32735202d690b7ed6ebe12f5a48d7fce0ba3d3920339a26e0c27c864f8",
+  "sourceHashScope": "Sorted relative paths and bytes under src, as recorded by the browser script. Production runtime hash has the broader 335-file freeze scope.",
+  "checks": 417,
+  "errors": [],
+  "manualReview": "Each selected PNG viewed directly after capture; no image edits, scaling, restitching or redraw. Native tall element capture is distinguished from actual viewport captures.",
+  "files": [
+    {
+      "path": "docs/screenshots/round-26-guidance/guidance-390-text100.png",
+      "source": "../round26-comparison-focused/screenshots/guidance-390-text100.png",
+      "sha256": "42c3290f092615032ea9b4e61bc2cd223f732ab741343f3784795a18edb122dc",
+      "bytes": 106825,
+      "width": 390,
+      "height": 844,
+      "description": "390×844 native viewport. Default pending-role guidance precedes the original comparison. Current protagonist still has no research or locked draft.",
+      "unedited": true
+    },
+    {
+      "path": "docs/screenshots/round-26-guidance/guidance-320-text200-full.png",
+      "source": "../round26-comparison-focused/screenshots/guidance-320-text200-full.png",
+      "sha256": "22e9f476e80aa9aa29e3d24271116b1df605baf61ed0cb63fd4b725402a354c3",
+      "bytes": 73857,
+      "width": 288,
+      "height": 679,
+      "description": "320px viewport, native 32px root font. Whole-element browser screenshot of the tall guidance, not resized and not claimed to fit one viewport.",
+      "unedited": true
+    },
+    {
+      "path": "docs/screenshots/round-26-guidance/guidance-320-text200-keyboard-action.png",
+      "source": "../round26-comparison-focused/screenshots/guidance-320-text200-keyboard-action.png",
+      "sha256": "b07288b2e893bc8b15cc3044349c48968944a91c761bcfa24c73c8fb89684115",
+      "bytes": 49519,
+      "width": 320,
+      "height": 568,
+      "description": "320×568 native viewport at 200% type. Keyboard-focused navigation button remains readable and visibly outlined.",
+      "unedited": true
+    },
+    {
+      "path": "docs/screenshots/round-26-guidance/natural-y20-resolved-comparison.png",
+      "source": "../round26-comparison-focused/screenshots/natural-y20-resolved-comparison.png",
+      "sha256": "405991d62462f281dd129967daa30b5b11953ab736746fd6b4fca5e48b38c643",
+      "bytes": 108046,
+      "width": 390,
+      "height": 844,
+      "description": "Natural route after Linche locks the D4 warning, before protagonist research/lock. Original 0/0.9431, 0.1886 and 0.283 branches remain.",
+      "unedited": true
+    },
+    {
+      "path": "docs/screenshots/round-26-guidance/succession-archive.png",
+      "source": "../round26-comparison-focused/screenshots/succession-archive.png",
+      "sha256": "c9909886e463362ba1b52aa04f2a1de2b3f338e45440af35829e2a2bbde4ee6b",
+      "bytes": 175018,
+      "width": 390,
+      "height": 844,
+      "description": "Genuine year10 failed-build archive state. Supplementary current-work context follows the unchanged story and precedes the contract directory.",
+      "unedited": true
+    }
+  ]
+}

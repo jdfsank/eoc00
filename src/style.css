@@ -256,3 +256,27 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .large-text .world-entry .actor-picker{grid-template-columns:1fr}
 .large-text .world-entry .actor-picker>button{padding:10px 12px}
 @media(max-width:350px){.world-entry .actor-picker{gap:8px}.world-entry .actor-picker>button{padding:10px 8px}}
+
+/* Round 26: a compact, free index into the original complete contracts.
+   Rem-based text still doubles with the native 200% setting. No clipped
+   titles, sticky overlays, hidden conditions, or secondary commit controls. */
+.scene-choice-directory{min-width:0;margin:0 0 20px;padding:0 0 14px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.scene-choice-directory>p{margin:0 0 4px;line-height:1.4}
+.scene-choice-directory-label{font-size:.875rem;font-weight:600;color:var(--gold)}
+.scene-choice-directory-meta{font-size:.875rem;color:var(--paper)}
+.scene-choice-directory-note{font-size:.8125rem;color:#c4d4c9}
+.scene-choice-links{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;margin:10px 0 0;min-width:0}
+.scene-choice-link{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;min-width:0;width:100%;min-height:48px;margin:0;padding:10px 12px;border:1px solid #78988e;border-radius:3px;background:transparent;color:var(--paper);text-align:left;font-size:1rem;line-height:1.45;white-space:normal;overflow-wrap:anywhere}
+.scene-choice-link>span:first-child{min-width:0;flex:1;text-decoration:underline;text-underline-offset:.2em;text-decoration-color:#78988e}
+.scene-choice-link>span[aria-hidden]{flex:none;color:var(--gold)}
+.scene-choice-link:hover{background:#294a47;border-color:var(--gold)}
+.scene-choice-link:focus-visible{outline:3px solid var(--gold);outline-offset:3px;background:#294a47}
+.scene-planning-page .choice-card{scroll-margin-top:12px}
+.scene-planning-page .choice-card:focus{outline:3px solid var(--gold);outline-offset:3px}
+@media(min-width:900px){.scene-choice-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.large-text .scene-choice-links{grid-template-columns:minmax(0,1fr)}
+/* Optional contextual notes use the same low-noise reading hierarchy. */
+[data-comparison-guidance],[data-succession-context]{min-width:0;margin:16px 0;padding:12px 14px;border-left:3px solid #90ab9b;background:#203c3b;overflow-wrap:anywhere}
+[data-comparison-guidance]>h2,[data-comparison-guidance]>h3,[data-succession-context]>h2,[data-succession-context]>h3{font-size:1rem;line-height:1.5;margin:0 0 8px}
+[data-comparison-guidance] p,[data-succession-context] p{font-size:.875rem;line-height:1.65;margin:6px 0;color:#d4dfd1}
+[data-comparison-guidance] button,[data-succession-context] button{max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:left}
