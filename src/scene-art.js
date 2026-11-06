@@ -1,3 +1,4 @@
+import {eastBankVisitArt,eastBankAuthorizationArt} from './east-bank-visit-art.js';
 import {monasteryVisual} from './monastery-visuals.js';
 import {stationAccessVisual} from './station-access-visuals.js';
 import {farPortVisual} from './far-port-visuals.js';
@@ -5,8 +6,9 @@ import {southBankVisual} from './south-bank-visuals.js';
 import {getLocalCrisisRecord} from './local-crisis-record.js';
 // Original repo-native vector illustrations. They depict only a broad setting,
 // not evidence that an unbuilt institution, a survivor or a future event exists.
-export function sceneArt(state, cellId, { ending = false } = {}) {
-  const art=currentSceneArt(state,cellId,{ending});
+export function sceneArt(state, cellId, { ending = false, visit = false } = {}) {
+  const art=cellId==='E4'&&visit&&!ending?eastBankVisitArt(state):currentSceneArt(state,cellId,{ending});
+  if(cellId==='E4'&&!ending){const detail=eastBankAuthorizationArt(state);if(detail)return {...art,detail};}
   if(cellId==='D5'&&!ending){const history=getLocalCrisisRecord(state,cellId);if(history)return {...art,history};}
   return art;
 }

@@ -10,7 +10,8 @@ const aidId='action:30:protagonist:D5:mutual_aid',aidEvent=`event:${aidId}`,aidR
 
 test('D5 readonly visit is available without inventing a carrier, and unrelated regions remain unsupported',()=>{
  const s=createRun(0),v=getSceneVisit(s,'D5');assert.equal(v.available,true);assert.equal(v.cellId,'D5');assert.equal(v.art.file,'open-shore.svg');assert.deepEqual(v.sourceIds,[]);assert.match(v.summary.join(''),/尚无已存/);
- for(const cell of ['D4','E4','A1',null])assert.equal(getSceneVisit(s,cell),null);
+ for(const cell of ['D4','E4'])assert.equal(getSceneVisit(s,cell).available,true);
+ for(const cell of ['A1',null])assert.equal(getSceneVisit(s,cell),null);
 });
 test('locked and pending aid preserve the real shore/teaching artwork until actual31 fulfilment',()=>{
  for(const teaching of [false,true]){

@@ -1,0 +1,1968 @@
+{
+  "scope": "Independent Chromium end-to-end checks. Natural engine fixtures at21/31/40 plus a fresh seed0 route driven by visible controls. Only malformed-import and service-closure cases are synthetic and explicitly labelled. No production module is edited or replaced; read-only probes count entry into existing planning functions. 390/320px and200% text are browser checks, not physical-device or human certification.",
+  "checks": [
+    {
+      "name": "joint-y21-D4: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y21-E4: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y31-D4: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y31-E4: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y40-D4: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y40-E4: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "resident-warning-y21: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "anonymous-restored-station-y21: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "failed-build-archive-y21: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "fee-stopped-y31: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "forced-relocation-D4-y21: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "forced-relocation-E4-y21: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "respected-choice-y40: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "locked-unpaid-warning-y20: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed-original-teaching: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed-new-network: save independently validates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Natural E4 fixture has distinct original year7 training and year21 network",
+      "passed": true
+    },
+    {
+      "name": "Natural anonymous station route has no personal succession contract",
+      "passed": true
+    },
+    {
+      "name": "Fresh seed0 clicked route actually reaches21 with paid warning, pending22 review and no authorizations",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Natural21 D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Natural21 D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: source action:0:protagonist:D4:build_joint opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: source resolved:event:action:0:protagonist:D4:build_joint opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: source action:10:protagonist:D4:recruit_successor opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: source resolved:event:action:10:protagonist:D4:recruit_successor opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: source action:20:linche:D4:free_warning opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: source resolved:event:action:20:linche:D4:free_warning opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 D4: source charter-lapsed opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Natural21 E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Natural21 E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: source action:0:protagonist:D4:build_joint opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: source resolved:event:action:0:protagonist:D4:build_joint opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Natural21 E4: source resolved:event:action:0:protagonist:D4:build_joint:training opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Year30 original unpaid E4 training offers a genuine local authorization choice",
+      "passed": true
+    },
+    {
+      "name": "Authorization preview alone creates no grant, cost or evidence",
+      "passed": true
+    },
+    {
+      "name": "Real authorization investigation spends one local round and lock pays nothing or grants nothing",
+      "passed": true
+    },
+    {
+      "name": "Locked authorization30: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Locked authorization30: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Locked authorization30: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Locked authorization30: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Locked authorization30: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Locked authorization30: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Locked authorization30: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Locked authorization30: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Locked authorization30: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Locked authorization30: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "Real unified submit deducts the exact authoritative two-action costs atomically",
+      "passed": true
+    },
+    {
+      "name": "Independent arithmetic confirms E4 politics3/economy2 and D4 policy politics3/economy3 paid only once",
+      "passed": true
+    },
+    {
+      "name": "Paid pending authorization30: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Paid pending authorization30: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Paid pending authorization30: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Paid pending authorization30: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Paid pending authorization30: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Paid pending authorization30: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Paid pending authorization30: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Paid pending authorization30: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Paid pending authorization30: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Paid pending authorization30: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "Paid authorization card distinguishes unfulfilled contract from present service",
+      "passed": true
+    },
+    {
+      "name": "Year31 actual settlement matches independent engine oracle exactly",
+      "passed": true
+    },
+    {
+      "name": "Local grant authorizes only original E4 carrier, creates no carrier and preserves original provenance",
+      "passed": true
+    },
+    {
+      "name": "Independent no-authorization control has exactly the same carriers, annual output, coverage and trust",
+      "passed": true
+    },
+    {
+      "name": "Authorization preserves the frozen23 crisis and enables shared handoff only with real B4 check and trust",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Granted authorization31: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Granted authorization31: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: source action:0:protagonist:D4:build_joint opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: source resolved:event:action:0:protagonist:D4:build_joint opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: source resolved:event:action:0:protagonist:D4:build_joint:training opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: source action:30:linche:E4:authorize_training opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: source resolved:event:action:30:linche:E4:authorize_training opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Granted authorization31: source crisis-impact opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Reload restores exact E4 visit and authoritative31 world",
+      "passed": true
+    },
+    {
+      "name": "Ending40 D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Ending40 D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Ending40 D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Ending40 D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Ending40 D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Ending40 D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Ending40 D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Ending40 D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Ending40 D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Ending40 D4 changes selection to explicit destination",
+      "passed": true
+    },
+    {
+      "name": "Ending40 E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Ending40 E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Ending40 E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Ending40 E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Ending40 E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Ending40 E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Ending40 E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Ending40 E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Ending40 E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Ending40 E4 changes selection to explicit destination",
+      "passed": true
+    },
+    {
+      "name": "Stopped paid target remains a valid import boundary",
+      "passed": true
+    },
+    {
+      "name": "Interrupted paid target30: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Interrupted paid target30: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Interrupted paid target30: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Interrupted paid target30: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Interrupted paid target30: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Interrupted paid target30: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Interrupted paid target30: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Interrupted paid target30: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Interrupted paid target30: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Actual interrupted playback cancels without refund or substitute target and matches oracle",
+      "passed": true
+    },
+    {
+      "name": "Cancelled target31: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Cancelled target31: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Cancelled target31: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Cancelled target31: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Cancelled target31: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Cancelled target31: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Cancelled target31: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Cancelled target31: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Cancelled target31: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Cancelled outcome remains visibly distinct from successful authorization",
+      "passed": true
+    },
+    {
+      "name": "Pending, granted and cancelled authority use three distinct decoded pixel images",
+      "passed": true
+    },
+    {
+      "name": "Genuine pre-version year30 save remains valid",
+      "passed": true
+    },
+    {
+      "name": "Genuine old save retains training but receives no new authorization action",
+      "passed": true
+    },
+    {
+      "name": "Genuine old30 E4 visit: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Genuine old30 E4 visit: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Genuine old30 E4 visit: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Genuine old30 E4 visit: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Genuine old30 E4 visit: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Genuine old30 E4 visit: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Genuine old30 E4 visit: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Genuine old30 E4 visit: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Genuine old30 E4 visit: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y21-D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y21-D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-D4: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y21-E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y21-E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "joint-y21-E4: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y31-D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y31-D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-D4: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y31-E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y31-E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "joint-y31-E4: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y40-D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y40-D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-D4: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y40-E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "joint-y40-E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "joint-y40-E4: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "resident-warning-y21: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "resident-warning-y21: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "resident-warning-y21: anonymous provision does not assign Sulan an unrecorded current job",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "anonymous-restored-station-y21: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "anonymous-restored-station-y21: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "anonymous-restored-station-y21: anonymous provision does not assign Sulan an unrecorded current job",
+      "passed": true
+    },
+    {
+      "name": "failed-build-archive-y21: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "failed-build-archive-y21: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "failed-build-archive-y21: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "failed-build-archive-y21: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "failed-build-archive-y21: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "failed-build-archive-y21: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "failed-build-archive-y21: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "failed-build-archive-y21: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "failed-build-archive-y21: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "failed-build-archive-y21: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "fee-stopped-y31: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "fee-stopped-y31: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "fee-stopped-y31: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "fee-stopped-y31: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "fee-stopped-y31: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "fee-stopped-y31: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "fee-stopped-y31: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "fee-stopped-y31: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "fee-stopped-y31: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "fee-stopped-y31: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-D4-y21: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-D4-y21: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-D4-y21: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-D4-y21: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "forced-relocation-D4-y21: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-D4-y21: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "forced-relocation-D4-y21: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-D4-y21: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-D4-y21: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-D4-y21: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-E4-y21: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-E4-y21: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-E4-y21: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-E4-y21: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "forced-relocation-E4-y21: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-E4-y21: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "forced-relocation-E4-y21: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-E4-y21: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-E4-y21: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "forced-relocation-E4-y21: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "E4 relocation retains a real D4 source instead of inventing E4 personal history",
+      "passed": true
+    },
+    {
+      "name": "respected-choice-y40: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "respected-choice-y40: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "respected-choice-y40: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "respected-choice-y40: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "respected-choice-y40: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "respected-choice-y40: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "respected-choice-y40: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "respected-choice-y40: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "respected-choice-y40: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "respected-choice-y40: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "paid-unfulfilled-warning-y20: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "locked-unpaid-warning-y20: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "locked-unpaid-warning-y20: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "locked-unpaid-warning-y20: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "locked-unpaid-warning-y20: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "locked-unpaid-warning-y20: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "locked-unpaid-warning-y20: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "locked-unpaid-warning-y20: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "locked-unpaid-warning-y20: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "locked-unpaid-warning-y20: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "locked-unpaid-warning-y20: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "closed-original-teaching: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "closed-original-teaching: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "closed-original-teaching: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "closed-original-teaching: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed-original-teaching: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "closed-original-teaching: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed-original-teaching: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "closed-original-teaching: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "closed-original-teaching: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "closed-original-teaching: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "closed-new-network: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "closed-new-network: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "closed-new-network: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "closed-new-network: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed-new-network: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "closed-new-network: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed-new-network: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "closed-new-network: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "closed-new-network: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "closed-new-network: opening focuses heading without creating sessions or calling planning scenes",
+      "passed": true
+    },
+    {
+      "name": "Cross-place world event: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Cross-place world event: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Cross-place world event: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Cross-place world event: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Cross-place world event: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Cross-place world event: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Cross-place world event: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Cross-place world event: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Cross-place world event: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Returning from cross-place event retains destination selection",
+      "passed": true
+    },
+    {
+      "name": "Cross-region D4 visit resets focused camera to actual D4 instead of the previous B4",
+      "passed": true,
+      "detail": {
+        "priorView": {
+          "focus": true,
+          "centerX": 224,
+          "centerY": 104,
+          "zoom": 1.5344827586206897
+        },
+        "returnedView": {
+          "focus": true,
+          "centerX": 288,
+          "centerY": 136,
+          "zoom": 1.5344827586206897
+        }
+      }
+    },
+    {
+      "name": "Regional archive entry: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Regional archive entry: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Regional archive entry: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Regional archive entry: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Regional archive entry: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Regional archive entry: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Regional archive entry: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Regional archive entry: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Regional archive entry: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Opening visit stops active annual timer rather than advancing behind the scene",
+      "passed": true
+    },
+    {
+      "name": "Imported40 D4 safely returns to world and preserves all original facts",
+      "passed": true
+    },
+    {
+      "name": "Imported40 D4 persists a supported read-only visit across reload",
+      "passed": true
+    },
+    {
+      "name": "Imported40 E4 safely returns to world and preserves all original facts",
+      "passed": true
+    },
+    {
+      "name": "Imported40 E4 persists a supported read-only visit across reload",
+      "passed": true
+    },
+    {
+      "name": "Source collision is an importable boundary, not a rejected save",
+      "passed": true
+    },
+    {
+      "name": "Imported ambiguous warning: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "Imported ambiguous warning: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "Imported ambiguous warning: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "Imported ambiguous warning: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Imported ambiguous warning: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "Imported ambiguous warning: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Imported ambiguous warning: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "Imported ambiguous warning: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "Imported ambiguous warning: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Ambiguous warning outcome is not advertised as a verified source",
+      "passed": true
+    },
+    {
+      "name": "Imported safe retained links: source action:0:protagonist:D4:build_joint opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Imported safe retained links: source resolved:event:action:0:protagonist:D4:build_joint opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Imported safe retained links: source action:10:protagonist:D4:recruit_successor opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Imported safe retained links: source resolved:event:action:10:protagonist:D4:recruit_successor opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "Imported safe retained links: source charter-lapsed opens its actual saved destination read-only",
+      "passed": true
+    },
+    {
+      "name": "390px D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "390px D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "390px D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "390px D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390px D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "390px D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390px D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "390px D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "390px D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "390px E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "390px E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "390px E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390px E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "390px E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390px E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "390px E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "390px E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390px200% D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390px200% D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: native200% font stays in bounds",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: last source has visible unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% D4: keyboard source opens original record without spending",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390px200% E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390px200% E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: native200% font stays in bounds",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: last source has visible unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "390px200% E4: keyboard source opens original record without spending",
+      "passed": true
+    },
+    {
+      "name": "320px D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "320px D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "320px D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "320px D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320px D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "320px D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320px D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "320px D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "320px D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "320px E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "320px E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "320px E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320px E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "320px E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320px E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "320px E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "320px E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320px200% D4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320px200% D4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: native200% font stays in bounds",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: last source has visible unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% D4: keyboard source opens original record without spending",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: visit exists at the current year and selected place",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: browser art, alt and caption match the sourced current view",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: visit includes no investigation, policy, lock or advance controls",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: new current service and consequence cards are actually rendered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320px200% E4: every advertised API card/source has a real visible link",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: each visible source independently has unique fulfilled current-reality ancestry",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320px200% E4: no imported contaminant leaks",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: exact world bytes preserve costs, evidence, RNG, drafts, promises and history",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: native200% font stays in bounds",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: last source has visible unobscured keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "320px200% E4: keyboard source opens original record without spending",
+      "passed": true
+    },
+    {
+      "name": "Production sources remained frozen during this entire suite",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime or asset errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "playtest-output/round-18/authorization-pending-detail-390.png",
+    "playtest-output/round-18/authorization-pending-detail-390-mono.png",
+    "playtest-output/round-18/authorization-granted31-390.png",
+    "playtest-output/round-18/authorization-authorized-detail-390.png",
+    "playtest-output/round-18/authorization-authorized-detail-390-mono.png",
+    "playtest-output/round-18/authorization-cancelled31-390.png",
+    "playtest-output/round-18/authorization-cancelled-detail-390.png",
+    "playtest-output/round-18/authorization-cancelled-detail-390-mono.png",
+    "playtest-output/round-18/d4-31-390.png",
+    "playtest-output/round-18/d4-31-390-scene.png",
+    "playtest-output/round-18/e4-31-390.png",
+    "playtest-output/round-18/e4-31-390-scene.png",
+    "playtest-output/round-18/closed-original-teaching-390.png",
+    "playtest-output/round-18/closed-new-network-390.png",
+    "playtest-output/round-18/d4-31-390-text200-heading.png",
+    "playtest-output/round-18/d4-31-390-text200-current.png",
+    "playtest-output/round-18/e4-31-390-text200-heading.png",
+    "playtest-output/round-18/e4-31-390-text200-current.png",
+    "playtest-output/round-18/d4-31-320.png",
+    "playtest-output/round-18/d4-31-320-scene.png",
+    "playtest-output/round-18/e4-31-320.png",
+    "playtest-output/round-18/e4-31-320-scene.png",
+    "playtest-output/round-18/closed-original-teaching-320.png",
+    "playtest-output/round-18/closed-new-network-320.png",
+    "playtest-output/round-18/d4-31-320-text200-heading.png",
+    "playtest-output/round-18/d4-31-320-text200-current.png",
+    "playtest-output/round-18/e4-31-320-text200-heading.png",
+    "playtest-output/round-18/e4-31-320-text200-current.png"
+  ],
+  "mandatePixels": {
+    "pending": {
+      "width": 1000,
+      "height": 390,
+      "src": "http://127.0.0.1:4218/assets/east-bank-mandate-pending.svg",
+      "hash": "89864b08ff1e6dc5cd999215824d19a7c5191876ea14185e92dc39b4dbbab5fa"
+    },
+    "authorized": {
+      "width": 1000,
+      "height": 390,
+      "src": "http://127.0.0.1:4218/assets/east-bank-mandate-authorized.svg",
+      "hash": "fd19c44014c200332411b4934f8d3096b68e7852ee4856f9472779b375ab5e78"
+    },
+    "cancelled": {
+      "width": 1000,
+      "height": 390,
+      "src": "http://127.0.0.1:4218/assets/east-bank-mandate-cancelled.svg",
+      "hash": "7e418c6d3692c4c2df385ab58f1a1909760825fdabd5f8ff3e22495178f88fd3"
+    }
+  },
+  "runtimeHash": {
+    "before": "657b45c1744e20a98e87fd393d5e49b4cf43597f012dca18c7037eff048ab516",
+    "after": "657b45c1744e20a98e87fd393d5e49b4cf43597f012dca18c7037eff048ab516"
+  }
+}

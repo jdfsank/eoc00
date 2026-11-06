@@ -320,7 +320,7 @@ try{
   if(crisis)check(`${name}: refresh cannot restore an unsafe crisis button`,await section().locator('.local-crisis-history [data-action="trace"]').count()===0);
  }
  await verifyFutureCheckVisit();
- await show(taught.y40,false,'E4');check('Unsupported E4 does not acquire a fictional visit',await page.locator('.selection-card [data-action="visit"]').count()===0);
+ await show(taught.y40,false,'A1');check('Unsupported A1 does not acquire a fictional visit',await page.locator('.selection-card [data-action="visit"]').count()===0);
  report.runtimeHash={before:frozenRuntime,after:await runtimeHash()};check('Runtime sources stayed frozen for the complete browser suite',report.runtimeHash.before===report.runtimeHash.after);
  check('No browser runtime, hot-update or asset errors',report.errors.length===0);
 }catch(error){report.failure={message:error.message,stack:error.stack};process.exitCode=1;if(page)await page.screenshot({path:`${out}/${prefix}-visit-failure.png`,fullPage:true}).catch(()=>{});}

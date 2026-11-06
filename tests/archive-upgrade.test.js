@@ -52,8 +52,8 @@ test('frozen published kernel matches baseline bytes apart from import locations
  assert.equal(createHash('sha256').update(bytes).digest('hex'),'213e67a408a3a1ee18513ce9c043b3c87c8721b4bae40d52d1c3b096b8430415');
  assert.equal(createHash('sha256').update(readFileSync(new URL('./fixtures/pre-archive-upgrade-branch-access.js',import.meta.url))).digest('hex'),'2ef0fc66b6ad1300c2e7d6c72e0dea3e0203c9339b4d195bb3610c700634bc80');
 });
-test('new factory adds only explicit archive version, never migrates actual old saves',()=>{
- const old=prior.createRun(0),current=sim.createRun(0);assert.deepEqual(current,{...old,archiveUpgradeRulesVersion:'archive-upgrade-v1'});assert.deepEqual(reload(old),old);assert.equal(sim.getArchiveUpgradePlan(at30({},prior)).available,false);
+test('new factory adds explicit prospective versions, never migrates actual old saves',()=>{
+ const old=prior.createRun(0),current=sim.createRun(0);assert.deepEqual(current,{...old,archiveUpgradeRulesVersion:'archive-upgrade-v1',trainingAuthorizationRulesVersion:'training-authorization-v1'});assert.deepEqual(reload(old),old);assert.equal(sim.getArchiveUpgradePlan(at30({},prior)).available,false);
 });
 test('natural paid conversion preserves archive and crisis, adds central review without another geography',()=>{
  const s=at30(),pastBefore=past(s),old=copy(s.institutions),cost=copy(s.cells.find(c=>c.id==='B4').channels);

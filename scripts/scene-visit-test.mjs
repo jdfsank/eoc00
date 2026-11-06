@@ -104,7 +104,7 @@ try{
  await click('playback');await click('skip');await click('home');await click('ending');await page.locator('.ending [data-action="visit"][data-cell="F6"]').click();
  check('Actual year40 ending leads to fulfilled on-site history, not a fabricated AVG',await page.evaluate(()=>window.afterwave.state.year)===40&&(await section().locator('.scene-art img').getAttribute('src')).endsWith('far-port-branch-recovered.svg')&&!await section().locator('[data-action="evidence"],[data-action="lock"]').count());
  check('All actual visits retain original failure and frozen crisis',frozen===await page.evaluate(()=>JSON.stringify({crisis:window.afterwave.state.flags.crisis,failure:window.afterwave.state.events.find(e=>e.actionId==='independent_review')})));
- await show(y40,false,'E4');check('Unsupported E4 does not acquire a fictional local visit',!await page.locator('.selection-card [data-action="visit"]').count());
+ await show(y40,false,'E4');const eastBefore=await state();await page.locator('.selection-card [data-action="visit"][data-cell="E4"]').click();check('Supported E4 remains a read-only current-site return at40',await page.locator('.scene-visit[data-visit-cell="E4"]').count()===1&&!await page.locator('.scene-visit [data-action="evidence"],.scene-visit [data-action="lock"]').count()&&await state()===eastBefore);
  // A valid old/imported state may reuse a history ID in the event queue.
  // traceEvent indexes events last. Keep the data and import compatibility,
  // but never advertise a link that would resolve to a future/other-place row.

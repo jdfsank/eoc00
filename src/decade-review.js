@@ -1,4 +1,4 @@
-import { getFutureCheckContracts, getArchiveUpgradeContracts } from './simulation.js';
+import { getFutureCheckContracts, getArchiveUpgradeContracts, getTrainingAuthorizationContracts } from './simulation.js';
 
 // Read-only recollections. A card joins an issued choice to its own recorded
 // outcome; matching a date or a convenience flag is never enough provenance.
@@ -16,6 +16,7 @@ const OUTCOMES = {
   preserve_records: '不同来源的洪水刻度进入校验档案',
   fund_school: '夜校开始培养新的维护者',
   train_network: '新的轮值维护网络开始工作',
+  authorize_training: '原东岸学徒按已协商的条件留下本地承接签名，没有新建学校或增加人手',
   mutual_aid: '南岸互助轮值开始分配物资、支持生计',
   free_warning: '河港基本预警方案兑现',
   present_archive: '苏岚留下当前的证词，拒绝让旧现实替她作决定',
@@ -36,6 +37,7 @@ const RESPONSIBILITIES = {
   preserve_records: '底稿需要有人继续比对，留档本身不能替代预警与撤离。',
   fund_school: '学会读尺不是替地方作出同意，异源校验也仍需真实来源。',
   train_network: '维护人手不能替代异源记录，下一次交班仍要分别核对。',
+  authorize_training: '协商经费用于会议、公开轮值与记录工作，不是购买或代签同意；授权只属于这批原学徒，不增加产出、预警覆盖、异源校验、河港信任或交班方针。',
   mutual_aid: '互助仍需经费与人手，也不能替代教学或异源校验。',
   free_warning: '这份服务不自动覆盖其他地方，公开承诺仍需维护与值班。',
   present_archive: '今天的合作仍需她同意，旧履历不是她欠下的人生。',
@@ -97,6 +99,8 @@ export function getDecadeReview(state) {
       || event.actionId !== source.actionId || event.cellId !== source.record.cellId || event.year <= source.year
       || !same(event, 'actorId', source.actorId)) return null;
     const result = resultFor(event);
+    if(source.actionId==='authorize_training'&&!getTrainingAuthorizationContracts(state).some(contract=>contract.eventId===event.id
+      &&contract.sourceActionId===source.record.id))return null;
     if (['establish_future_check','upgrade_archive_check'].includes(source.actionId)) {
       // Only this newer contract needs its own paid-materials and workforce
       // proof. A partial export stays unknown here, without rejecting its
@@ -166,7 +170,11 @@ export function getDecadeReview(state) {
             card.outcome = `约定第${event.year}年兑现，目前仍待结果。`;
             card.responsibility = '承诺还不是已经得到的服务，接下来的兑现仍需核对。';
           } else if (event.status === 'cancelled') {
-            if (actionId === 'upgrade_archive_check') {
+            if (actionId === 'authorize_training') {
+              const contract=getTrainingAuthorizationContracts(state).find(c=>c.eventId===event.id);
+              card.outcome=`第${event.year}年，${contract.cancellationReason==='already-authorized'?'已有实际承接授权，无需重复签署':'原学徒目标缺失、替换或不再有效运转'}，本次承接协商取消，没有新增授权。`;
+              card.responsibility='已付会议、公开轮值与记录工作成本不退；新学校不能替原学徒履约，也不能补写他们的同意。';
+            } else if (actionId === 'upgrade_archive_check') {
               const reason = {'archive-unavailable':'原保档未能继续运转','workforce-unavailable':'没有实际测量或教学人手','archive-and-workforce-unavailable':'原保档未能继续运转，也没有实际测量或教学人手'}[event.archiveUpgradeCancellationReason];
               card.outcome = `第${event.year}年，${reason}，保档升级取消，没有完成新校验席。`;
               card.responsibility = '已付器具与工作席成本不退，原保档记录仍在；没有新增校验能力或交班授权。';

@@ -16,7 +16,8 @@ function freeze(value){if(value&&typeof value==='object'){Object.freeze(value);f
 
 test('supported F6 shore remains real while unrelated sites stay unavailable',()=>{
  const s=createRun(0),v=getSceneVisit(s,'F6');assert.equal(v.available,true);assert.equal(v.art.file,'open-shore.svg');assert.equal(v.sourceIds.length,0);assert.match(v.summary.join(''),/尚无可核实/);
- for(const cell of ['D4','E4','Z9',null])assert.equal(getSceneVisit(s,cell),null);
+ for(const cell of ['D4','E4'])assert.equal(getSceneVisit(s,cell).available,true);
+ for(const cell of ['A1','Z9',null])assert.equal(getSceneVisit(s,cell),null);
  for(const year of [-1,41,1.5,null])assert.equal(getSceneVisit({...s,year},'F6'),null);
  assert.equal(getSceneVisit({...s,cells:[]},'F6'),null);assert.equal(getSceneVisit(null,'F6'),null);
 });
@@ -55,7 +56,8 @@ test('read-only visit survives safe refresh at31/32/40 while import returns to w
  const {y31,y32,y40}=dates();for(const state of [y31,y32,y40]){
   const saved={state,ui:{screen:'visit',selected:'F6'}},before=JSON.stringify(state);assert.equal(normalizeUi(state,saved.ui).screen,'visit');assert.equal(restoreSave(saved).ui.screen,'visit');assert.equal(restoreSave(saved,{imported:true}).ui.screen,'world');assert.equal(JSON.stringify(state),before);
  }
- assert.equal(normalizeUi(createRun(0),{screen:'visit',selected:'D4'}).screen,'world');
+ assert.equal(normalizeUi(createRun(0),{screen:'visit',selected:'D4'}).screen,'visit');
+ assert.equal(normalizeUi(createRun(0),{screen:'visit',selected:'A1'}).screen,'world');
 });
 
 test('imported cross-table ID collisions cannot turn local visit sources into future or other-region events',()=>{

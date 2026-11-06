@@ -2,14 +2,19 @@ import {monasteryVisual} from './monastery-visuals.js';
 import {sceneArt} from './scene-art.js';
 import {farPortVisual} from './far-port-visuals.js';
 import {southBankHistory} from './south-bank-history.js';
+import {riverbankHistory} from './riverbank-history.js';
 
 // A separate read-only view, not an AVG action or a new investigation session.
-// Supported sites B4, D5 and F6 distinguish
+// Supported sites distinguish
 // a submitted order from a realised institution and retain earlier failures.
 export function getSceneVisit(state,cellId){
- if(!['B4','D5','F6'].includes(cellId)||!Number.isInteger(state?.year)||state.year<0||state.year>40
+ if(!['B4','D4','E4','D5','F6'].includes(cellId)||!Number.isInteger(state?.year)||state.year<0||state.year>40
   ||!Array.isArray(state.cells)||!state.cells.some(c=>c.id===cellId)||!Array.isArray(state.institutions)
   ||!Array.isArray(state.events)||!Array.isArray(state.history))return null;
+ if(['D4','E4'].includes(cellId))return {available:true,cellId,year:state.year,
+  title:cellId==='D4'?'D4 · 河港现场回访':'E4 · 东岸现场回访',
+  notice:'只读现场回访。这里不取证、不锁定或提交任务，也不推进年份。',
+  ...riverbankHistory(state,cellId,sceneArt(state,cellId,{visit:true}))};
  if(cellId==='D5'){
   const facts=southBankHistory(state,sceneArt(state,cellId));
   return {available:true,cellId,year:state.year,title:'D5 · 南岸现场回访',

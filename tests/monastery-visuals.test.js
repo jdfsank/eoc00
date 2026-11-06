@@ -49,7 +49,7 @@ test('view is pure, accepts old actual sources, and never reads seed or pending 
 });
 test('B4 readonly visit is real and safely refreshable at1/22/32/40, without broadening other regions',()=>{
  const s=createRun(0);lock(s,'protagonist','B4','preserve_records');submit(s);advanceYear(s);const y22=monasteryAt20(2);lock(y22,'protagonist','B4','independent_review');submit(y22);advanceYear(y22);advanceYear(y22);const y32=monasteryRecovery();advanceYear(y32);advanceYear(y32);const y40=structuredClone(y32);advanceToNextWindow(y40);
- for(const state of [s,y22,y32,y40]){const before=JSON.stringify(state),v=getSceneVisit(state,'B4');assert.equal(v.available,true);assert.deepEqual(v.art,sceneArt(state,'B4'));assert.equal(normalizeUi(state,{screen:'visit',selected:'B4'}).screen,'visit');assert.equal(restoreSave({state,ui:{screen:'visit',selected:'B4'}},{imported:true}).ui.screen,'world');assert.equal(JSON.stringify(state),before);}assert.equal(getSceneVisit(s,'D4'),null);
+ for(const state of [s,y22,y32,y40]){const before=JSON.stringify(state),v=getSceneVisit(state,'B4');assert.equal(v.available,true);assert.deepEqual(v.art,sceneArt(state,'B4'));assert.equal(normalizeUi(state,{screen:'visit',selected:'B4'}).screen,'visit');assert.equal(restoreSave({state,ui:{screen:'visit',selected:'B4'}},{imported:true}).ui.screen,'world');assert.equal(JSON.stringify(state),before);}assert.equal(getSceneVisit(s,'A1'),null);
 });
 test('all27 original scene/prop pairs preserve landmark and independent non-color state geometry',()=>{
  const expected=[];for(const archive of ['none','kept','closed'])for(const review of ['none','pending','failed','failed_closed','renewing','verified','recovered','closed','closed_recovered']){

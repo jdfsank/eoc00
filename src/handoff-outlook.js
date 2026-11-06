@@ -1,4 +1,4 @@
-import {getWindowReview,getHandoffReadiness,getRecoveryWorkforce,getArchiveUpgradeWorkforce,hasCompletedRecovery,hasCompletedFutureCheck,hasCompletedArchiveUpgrade,FUTURE_CHECK_RULES,ARCHIVE_UPGRADE_RULES,usesHandoffRules,usesTradeoffs} from './simulation.js';
+import {getWindowReview,getHandoffReadiness,getRecoveryWorkforce,getArchiveUpgradeWorkforce,hasCompletedRecovery,hasCompletedFutureCheck,hasCompletedArchiveUpgrade,FUTURE_CHECK_RULES,ARCHIVE_UPGRADE_RULES,usesHandoffRules,usesTradeoffs,TRAINING_AUTHORIZATION_RULES,getTrainingAuthorizationPlan} from './simulation.js';
 
 const unique = values => [...new Set(values)];
 const POLICIES = ['share_power','withdraw','central_review'];
@@ -38,20 +38,26 @@ export function getHandoffOutlook(state) {
   const current=capability(currentStaff,readiness?.authorizedCells||[],currentChecks);
   const issues=[...review.issues];
   if(state.events.some(e=>e.status==='pending'&&e.year<=40))issues.push('仍有尚未兑现的既有合同，暂不猜测它们对交班的影响。请核对年度记录。');
-  if(review.tasks.some(t=>!['train_network','mutual_aid','complete_review',FUTURE_CHECK_RULES.actionId,ARCHIVE_UPGRADE_RULES.actionId,'open_port_warning',...POLICIES].includes(t.a.id)||t.a.probability!==1))issues.push('存在本对照尚未定义的合同，暂不承诺兑现后的交班能力。');
+  if(review.tasks.some(t=>!['train_network','mutual_aid','complete_review',FUTURE_CHECK_RULES.actionId,ARCHIVE_UPGRADE_RULES.actionId,TRAINING_AUTHORIZATION_RULES.actionId,'open_port_warning',...POLICIES].includes(t.a.id)||t.a.probability!==1))issues.push('存在本对照尚未定义的合同，暂不承诺兑现后的交班能力。');
   if(issues.length)return {ready:false,issues,model,policy,current};
   const training=review.tasks.filter(t=>t.a.id==='train_network');
   const staff=[...currentStaff,...training.map(t=>t.d.cellId)], authorized=[...(readiness?.authorizedCells||[]),...training.map(t=>t.d.cellId)];
+  const authorizationConditional=review.tasks.filter(t=>t.a.id===TRAINING_AUTHORIZATION_RULES.actionId).map(t=>{const plan=getTrainingAuthorizationPlan(state,t.d.cellId);return {actionId:t.a.id,actorId:t.d.actorId,cellId:t.d.cellId,dueYear:31,target:plan.target?{...plan.target}:null,supported:plan.available};});
+  const authorizedWithMandate=[...authorized,...authorizationConditional.filter(c=>c.supported).map(c=>c.cellId)];
   const workforce=getRecoveryWorkforce(state).length>0;
   const conditional=review.tasks.filter(t=>['complete_review',FUTURE_CHECK_RULES.actionId,ARCHIVE_UPGRADE_RULES.actionId].includes(t.a.id)).map(t=>({actorId:t.d.actorId,cellId:t.d.cellId,dueYear:30+t.a.dueIn,supported:(t.a.id===ARCHIVE_UPGRADE_RULES.actionId?getArchiveUpgradeWorkforce(state).length>0:workforce)||training.some(plan=>30+plan.a.dueIn<30+t.a.dueIn),...([FUTURE_CHECK_RULES.actionId,ARCHIVE_UPGRADE_RULES.actionId].includes(t.a.id)?{actionId:t.a.id}:{})}));
-  const withoutRecovery=capability(staff,authorized,currentChecks,training.length);
-  const projected=capability(staff,authorized,[...currentChecks,...conditional.filter(c=>c.supported).map(c=>c.cellId)],training.length,currentCommandCheck||conditional.some(c=>c.supported));
+  const projectedChecks=[...currentChecks,...conditional.filter(c=>c.supported).map(c=>c.cellId)];
+  const withoutRecovery=capability(staff,authorizedWithMandate,currentChecks,training.length);
+  const withoutAuthorization=capability(staff,authorized,projectedChecks,training.length,currentCommandCheck||conditional.some(c=>c.supported));
+  const withoutConditional=capability(staff,authorized,currentChecks,training.length);
+  const projected=capability(staff,authorizedWithMandate,projectedChecks,training.length,currentCommandCheck||conditional.some(c=>c.supported));
   const contracts=review.tasks.map(({d,a})=>({actorId:d.actorId,cellId:d.cellId,actionId:a.id,title:a.title,dueYear:30+a.dueIn,conditional:!!a.conditional}));
   const serviceConditional=contracts.filter(c=>c.actionId==='open_port_warning');
-  return {ready:true,issues:[],model,policy,current,projected,withoutRecovery,withoutConditionalChecks:withoutRecovery,contracts,conditional,serviceConditional,
+  return {ready:true,issues:[],model,policy,current,projected,withoutRecovery,withoutConditionalChecks:withoutRecovery,contracts,conditional,serviceConditional,authorizationConditional,withoutAuthorization,withoutConditional,
     notes:[
       '这只是已锁定合同的条件对照，不提前兑现、不抽随机，也不预告结局标题。最终按第40年的真实存续状态核对。',
       '假设当前载体继续运行，确定合同按时落实。新增培训第31年提供本地人手；互助改善生计，不替代教学、异源校验或交班方针。',
+      ...(authorizationConditional.length?['东岸承接协商第31年仍须指定原培训点运转、来源对应且尚未获授权；失效或已有授权则取消不退费。成功只赋予该E4原学徒本地承接权，不新增人手、产出、覆盖、异源校验或河港信任。下方同时保留未取得授权的分支；若校验与授权都未落实，应查看两者均未落实的条件。']:[]),
       '远港公开预警第31年仍须原分站有效运转且尚未开放；条件失效则取消不退费。它只改变当地准入，不改变本表的人手、授权、校验、信任或方针。',
       ...(conditional.some(c=>c.actionId===FUTURE_CHECK_RULES.actionId)?['从零建设未来校验席第34年仍须实际测量或教学人手有效，31年新培训可赶上期限；条件不符则取消且材料成本不退。它不需要也不补造旧失败底稿，下方同时保留未建成分支。']:[]),
       ...(conditional.some(c=>c.actionId===ARCHIVE_UPGRADE_RULES.actionId)?['保档升级第33年仍须原B4保档与实际测量或教学人手有效；31年培训可赶上，任一条件失效则取消不退费。已有保档本就提供B4交班方法，升级不新增地域、授权或信任，只让它接成未来指令校验。']:[]),

@@ -54,7 +54,7 @@ test('7fd0ee703d9339f7c2ef68c63f38819c221b8d27 baseline is the exact published s
   assert.equal(createHash('sha1').update(`blob ${helper.length}\0`).update(helper).digest('hex'),'b3e40a27d89e7a65bdcc2a9fe17f0ecd9f1b2341');
 });
 test('new factory adds only the explicit future-check-v1 identity; no save migration',()=>{
-  const s=sim.createRun(0),old=prior.createRun(0);old.futureCheckRulesVersion='future-check-v1';old.archiveUpgradeRulesVersion='archive-upgrade-v1';
+  const s=sim.createRun(0),old=prior.createRun(0);old.futureCheckRulesVersion='future-check-v1';old.archiveUpgradeRulesVersion='archive-upgrade-v1';old.trainingAuthorizationRulesVersion='training-authorization-v1';
   assert.deepEqual(s,old);assert.deepEqual(reload(s),s);
   const oldSave=prior.createRun(0);assert.deepEqual(reload(oldSave),oldSave);assert.equal(reload(oldSave).futureCheckRulesVersion,undefined);
 });
