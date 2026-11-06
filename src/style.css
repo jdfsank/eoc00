@@ -280,3 +280,21 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 [data-comparison-guidance]>h2,[data-comparison-guidance]>h3,[data-succession-context]>h2,[data-succession-context]>h3{font-size:1rem;line-height:1.5;margin:0 0 8px}
 [data-comparison-guidance] p,[data-succession-context] p{font-size:.875rem;line-height:1.65;margin:6px 0;color:#d4dfd1}
 [data-comparison-guidance] button,[data-succession-context] button{max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:left}
+
+/* Round 27: keep submitted promises, recorded results and archived play apart.
+   Stage words remain explicit: neither colour nor a chronological arrow alone
+   proves success, and original source prose remains fully visible. */
+.causal-chain [data-record-stage]{min-width:0;overflow-wrap:anywhere}
+.causal-chain .record-stage-label{font-size:.875rem;font-weight:600;line-height:1.5;margin:12px 0 6px;color:var(--gold)}
+.causal-chain .record-stage-note{font-size:.875rem;line-height:1.6;margin:0 0 12px;padding:8px 10px;border-left:2px solid #8da99d;background:#183537;color:#d2dfd4}
+.causal-chain .record-stage-scheduled{border-left-style:dashed;border-left-color:#a7a98b}
+.causal-chain .record-stage-scheduled .record-stage-label{color:#d7d5b5}
+.causal-chain .record-stage-success{border-left-color:#9fc9ad}
+.causal-chain .record-stage-success .record-stage-label{color:#b6d8bd}
+.causal-chain .record-stage-failed,.causal-chain .record-stage-cancelled{border-left-color:#e3ada5}
+.causal-chain .record-stage-failed .record-stage-label,.causal-chain .record-stage-cancelled .record-stage-label{color:#edbdb6}
+.window-card[data-world-phase="playback"],.window-card[data-world-phase="ended"]{border-top:3px solid #9eb8aa}
+.window-card[data-world-phase="playback"] h3,.window-card[data-world-phase="ended"] h3{color:#c5d9cb}
+.ending-policy-checkpoint{min-width:0;margin:14px 0;padding:12px 14px;border-left:3px solid #9eb8aa;background:#203c3b;overflow-wrap:anywhere}
+.ending-policy-checkpoint h4{font-size:.875rem;line-height:1.5;margin:0 0 8px;color:#c5d9cb}
+.ending-policy-checkpoint p{font-size:1rem;line-height:1.7;margin:0;color:var(--paper)}

@@ -1,0 +1,293 @@
+{
+  "round": 27,
+  "imageEditing": "none; byte-identical copies of original Chromium screenshots",
+  "run": "round27-visual-focused attempt4",
+  "images": [
+    {
+      "file": "world-playback-320-100-viewport.png",
+      "source": "../round27-visual-focused/world-playback-320-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 320,
+      "height": 568,
+      "bytes": 41458,
+      "sha256": "2f90cae29ea5aab80e474dbd6bd11289e9b260c259f62678dfb6ce91589b3b42",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "trace-success-320-100-viewport.png",
+      "source": "../round27-visual-focused/trace-success-320-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 320,
+      "height": 568,
+      "bytes": 46308,
+      "sha256": "8a5c7463f3a73b05a56bee45735cfb1623742dfcff31d54435a9af5223bd75b3",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-share-320-100-viewport.png",
+      "source": "../round27-visual-focused/ending-share-320-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 320,
+      "height": 568,
+      "bytes": 91185,
+      "sha256": "0baf500a670b1ed187523beeb78069b4aad0cd5119aae450376f3b7fc54174f8",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "world-playback-390-100-viewport.png",
+      "source": "../round27-visual-focused/world-playback-390-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 390,
+      "height": 844,
+      "bytes": 80603,
+      "sha256": "371de0bcd92d4375df4a984613a2978db9dbfed529d41b21b136df1eab756113",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "trace-success-390-100-viewport.png",
+      "source": "../round27-visual-focused/trace-success-390-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 390,
+      "height": 844,
+      "bytes": 82612,
+      "sha256": "ab9a900344ef7ebf13a848111467b3d84ef6c0babb4f293e074ca36ea0be29b3",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-share-390-100-viewport.png",
+      "source": "../round27-visual-focused/ending-share-390-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 390,
+      "height": 844,
+      "bytes": 157452,
+      "sha256": "bec72800694a79bac2d728ccd099aafbc0fac2f109be255ab23a6f280929bbe0",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "world-playback-430-100-viewport.png",
+      "source": "../round27-visual-focused/world-playback-430-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 430,
+      "height": 844,
+      "bytes": 81170,
+      "sha256": "04d350b81da7232e809f11ad38cc7b6919c0c6bcdd6459a8f1a9cced43b2d4ed",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "trace-success-430-100-viewport.png",
+      "source": "../round27-visual-focused/trace-success-430-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 430,
+      "height": 844,
+      "bytes": 84042,
+      "sha256": "f93c7814a9c3259621a8b099813ef94ceeea649573ad25006c0aab266f93f9a5",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-share-430-100-viewport.png",
+      "source": "../round27-visual-focused/ending-share-430-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 430,
+      "height": 844,
+      "bytes": 161787,
+      "sha256": "3aa1e9beb33375d626813ff6a44462a414f68b8c600a3f7b4662c9a732d97bce",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "world-playback-1280-100-viewport.png",
+      "source": "../round27-visual-focused/world-playback-1280-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 1280,
+      "height": 900,
+      "bytes": 236886,
+      "sha256": "b8233ab63abe6d5d4cd3e0e7d04e6fe517331053e42fbd4d82c44a3482cb02f9",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "trace-success-1280-100-viewport.png",
+      "source": "../round27-visual-focused/trace-success-1280-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 1280,
+      "height": 900,
+      "bytes": 196806,
+      "sha256": "a2edfa578bc878f16a410c0c629547803f773b90ee06f05a30ec705c62fcb082",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-share-1280-100-viewport.png",
+      "source": "../round27-visual-focused/ending-share-1280-100-viewport.png",
+      "kind": "viewport-original",
+      "width": 1280,
+      "height": 900,
+      "bytes": 291886,
+      "sha256": "bc006350965742ac74ab562a173c76223827aecfbcd93b2c07d3576a6726a0b4",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "world-playback-320-200-viewport.png",
+      "source": "../round27-visual-focused/world-playback-320-200-viewport.png",
+      "kind": "viewport-original",
+      "width": 320,
+      "height": 568,
+      "bytes": 64790,
+      "sha256": "882374712f7957094b14c5895c5608321eb02026348017eebfd2c183e081a22a",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "trace-success-320-200-viewport.png",
+      "source": "../round27-visual-focused/trace-success-320-200-viewport.png",
+      "kind": "viewport-original",
+      "width": 320,
+      "height": 568,
+      "bytes": 49948,
+      "sha256": "87e8b27f45f0c32341257834cc7335704e1305464af5c59211398ae4c5afc015",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-share-320-200-viewport.png",
+      "source": "../round27-visual-focused/ending-share-320-200-viewport.png",
+      "kind": "viewport-original",
+      "width": 320,
+      "height": 568,
+      "bytes": 85398,
+      "sha256": "1d2edff60c6736eaba8c9d1e3b74c594dfcc603147a5defc30149e3652b332c2",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "world-playback-390-200-viewport.png",
+      "source": "../round27-visual-focused/world-playback-390-200-viewport.png",
+      "kind": "viewport-original",
+      "width": 390,
+      "height": 844,
+      "bytes": 84635,
+      "sha256": "3e0aa901e5027cd0662b03d5bc7798b688d9e7bc2e22e558bb9f2a9a7c929d98",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "trace-success-390-200-viewport.png",
+      "source": "../round27-visual-focused/trace-success-390-200-viewport.png",
+      "kind": "viewport-original",
+      "width": 390,
+      "height": 844,
+      "bytes": 71665,
+      "sha256": "f200d4e84977c3682d1653ffbdbc25394bee21f0aeb976a266ac834b406d2768",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-share-390-200-viewport.png",
+      "source": "../round27-visual-focused/ending-share-390-200-viewport.png",
+      "kind": "viewport-original",
+      "width": 390,
+      "height": 844,
+      "bytes": 147808,
+      "sha256": "ba3def0b6f178209e57c311ceeead9c5f361bfb89c0aa81a377c72fbea549fd5",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "world-ended-320-200-viewport.png",
+      "source": "../round27-visual-focused/world-ended-320-200-viewport.png",
+      "kind": "viewport-original",
+      "width": 320,
+      "height": 568,
+      "bytes": 63245,
+      "sha256": "8042ecb550e08a344afebdb09850896ac7313ab98ad681bf1d5bf3218f4a9443",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "world-playback-320-200-element.png",
+      "source": "../round27-visual-focused/world-playback-320-200-element.png",
+      "kind": "full-element-original",
+      "width": 288,
+      "height": 477,
+      "bytes": 52752,
+      "sha256": "3bb50e4a57335ea25863a69a4b8190383bcf98c8623080c4e0d18d22236885bc",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "trace-success-320-200-element.png",
+      "source": "../round27-visual-focused/trace-success-320-200-element.png",
+      "kind": "full-element-original",
+      "width": 288,
+      "height": 2916,
+      "bytes": 213720,
+      "sha256": "5cbb4d0ec9eb8dfb82ffbe1080fa7ae3359ad345dd985d26ebe496f84cf2e711",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-share-320-200-element.png",
+      "source": "../round27-visual-focused/ending-share-320-200-element.png",
+      "kind": "full-element-original",
+      "width": 288,
+      "height": 1137,
+      "bytes": 163001,
+      "sha256": "9924f26ced2399a2a75fc51a2dfb6d732ca5bb383241d1f93945d301184ab33c",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-weak-320-100-element.png",
+      "source": "../round27-visual-focused/ending-weak-320-100-element.png",
+      "kind": "full-element-original",
+      "width": 288,
+      "height": 429,
+      "bytes": 76805,
+      "sha256": "5769a15bcf697e59f9c61bf81eddf66bb15b0091eeb4d7878bc514bd773d6a84",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "ending-old-320-100-element.png",
+      "source": "../round27-visual-focused/ending-old-320-100-element.png",
+      "kind": "full-element-original",
+      "width": 288,
+      "height": 402,
+      "bytes": 73220,
+      "sha256": "bd13cc9fd5a211da4d5e1738da305394753965a26ebd994155475857d6efaff3",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "trace-cancelled-320-100-element.png",
+      "source": "../round27-visual-focused/trace-cancelled-320-100-element.png",
+      "kind": "full-element-original",
+      "width": 288,
+      "height": 2582,
+      "bytes": 274791,
+      "sha256": "b5e69ec9b1935d4a0da9e0a66bca7b069c69a6b1ac35db187bcd3b327854ef9c",
+      "pixelReviewed": true,
+      "review": "Original viewed with view_image; readable explicit labels and notes, no overlap or truncation. Vertical scrolling is expected at native 200%."
+    },
+    {
+      "file": "actual-ui-baseline-ending-390-200-element.png",
+      "source": "../round27-visual-focused/actual-ui-baseline-ending-390-200-element.png",
+      "kind": "full-element-original",
+      "width": 358,
+      "height": 795,
+      "bytes": 157582,
+      "sha256": "5090666a53c8aac6425034127e1929fbc24ce8687730428715eb92378ab8d7c5",
+      "pixelReviewed": true,
+      "review": "Unchanged actual-play baseline import. Native 200% text remains readable; no policy checkpoint invented for non-policy training intervention."
+    }
+  ]
+}
