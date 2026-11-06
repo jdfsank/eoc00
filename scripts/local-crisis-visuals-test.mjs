@@ -19,7 +19,7 @@ const late=structuredClone(closed);lock(late,'protagonist','D5','mutual_aid');de
 const cases={before,y22,y23,loss,zero,legacy,missing,partial,closed,'aid-only':localAt30({teaching:false}),'teaching-only':localAt30({aid:false}),empty:localAt30({teaching:false,aid:false}),late};
 for(const [name,s]of Object.entries(cases))assert.equal(validateState(s).valid,true,name);
 const server=await createServer({server:{host:'127.0.0.1',port:4205,strictPort:true}});await server.listen();let browser,page;
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+const click=async (a,openHistory=true)=>{await page.locator(`[data-action="${a}"]`).first().click();if(a==='avg'&&openHistory){const past=page.locator('details.planning-history');if(await past.count()&&!await past.evaluate(el=>el.open))await past.locator(':scope > summary').click();}};
 const panel=(cell='D5')=>page.locator(`.local-crisis-history[data-crisis-cell="${cell}"]`);
 async function show(state,bigText=false,cell='D5'){await page.evaluate(({state,bigText,cell})=>sessionStorage.setItem('afterwave.tally.fixture',JSON.stringify({state,ui:{screen:'world',selected:cell,actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText,cell});await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(130);}
 async function snap(name,selector='.local-crisis-history',mono=false){const target=page.locator(selector);if(mono)await target.evaluate(el=>el.style.filter='grayscale(1)');const data=await target.screenshot({path:`${out}/round10-d5-${name}${mono?'-mono':''}.png`});if(mono)await target.evaluate(el=>el.style.filter='');return data.toString('base64');}
@@ -65,11 +65,16 @@ try{
    const record=getLocalCrisisRecord(state,'D5');await snap(`${width}-${name}-text200-tally`);
    if(record.recordId){
     const button=panel().locator('[data-action="trace"]');
-    // AVG navigation focuses its heading. Traverse back to the source with a
-    // real keyboard event: programmatic focus after a pointer click does not
-    // enable :focus-visible and cannot verify the visible keyboard outline.
+    // Re-enter the actual AVG, then traverse to its explicit historical
+    // disclosure using only keyboard events. The current scene now precedes
+    // this optional archive rather than putting a source before the heading.
+    await click('home');await click('avg',false);
     check(`${width}px200% ${name}: keyboard traversal starts from the AVG heading`,await page.locator('main h1').evaluate(el=>document.activeElement===el));
-    await button.scrollIntoViewIfNeeded();await page.keyboard.press('Shift+Tab');
+    const archive=page.locator('details.planning-history'),summary=archive.locator(':scope > summary');
+    for(let tabs=0;tabs<60&&!await summary.evaluate(el=>document.activeElement===el);tabs++)await page.keyboard.press('Tab');
+    await page.keyboard.press('Enter');
+    check(`${width}px200% ${name}: keyboard explicitly opens historical detail without spending`,await archive.evaluate(el=>el.open)&&await summary.evaluate(el=>document.activeElement===el)&&await page.evaluate(()=>JSON.stringify(window.afterwave.state))===JSON.stringify(state));
+    await button.scrollIntoViewIfNeeded();await page.keyboard.press('Tab');
     const focus=await button.evaluate(el=>{const r=el.getBoundingClientRect(),style=getComputedStyle(el),hit=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return {rect:r.toJSON(),scrollX,scrollY,viewport:{width:innerWidth,height:innerHeight},active:document.activeElement===el,unobscured:hit===el||el.contains(hit),focusVisible:el.matches(':focus-visible'),outline:{style:style.outlineStyle,width:parseFloat(style.outlineWidth),offset:parseFloat(style.outlineOffset)},scrollMarginBlock:style.scrollMarginBlock,fontFamily:style.fontFamily};});
     (report.focusObservations??=[]).push({width,name,...focus});
     check(`${width}px200% ${name}: source control has visible, unobscured keyboard focus`,await button.evaluate(el=>{const r=el.getBoundingClientRect(),top=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return document.activeElement===el&&(top===el||el.contains(top))&&r.height>=48&&r.top>=0&&r.bottom<=innerHeight;}));

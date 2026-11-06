@@ -2,6 +2,8 @@ import {getDecadeReview} from './decade-review.js';
 import {getReviewHistory} from './review-history.js';
 import {getFeeHistory} from './fee-history.js';
 import {getRelocationHistory, getRelocationDestination} from './relocation-history.js';
+import {evidenceTitleFor} from './investigation-intent.js';
+export {evidenceTitleFor} from './investigation-intent.js';
 import { getWarningCoverage, usesLegacyCrisisRules, usesHandoffRules, handoffSummary, getActorRefusals, getRecruitmentRoles, usesRecruitmentRules, RECRUITMENT_ACTIONS, recruitmentRolesAtDeparture, usesRecoveryRules, getRecoverySource, getRecoveryWorkforce, usesPortAccessRules, getPortWarningTargets, getFutureCheckPlan, getFutureCheckContracts, getArchiveUpgradePlan, getArchiveUpgradeContracts, getTrainingAuthorizationPlan } from './simulation.js';
 
 export const chapters = {
@@ -151,6 +153,11 @@ export function futureCheckRecollection(state) {
 }
 
 export function evidenceFor(state, id, cellId = 'D4', actorId = 'protagonist') {
+  const material = evidenceContentFor(state, id, cellId, actorId);
+  return {...material, title:evidenceTitleFor(state, id, cellId, actorId)};
+}
+
+function evidenceContentFor(state, id, cellId = 'D4', actorId = 'protagonist') {
   const base = evidenceText[id];
   if (!base) return { title: id, text: '一份有关当地制度的材料。' };
   if(cellId==='E4'&&id==='resident_testimony'&&getTrainingAuthorizationPlan(state,cellId).available)return {

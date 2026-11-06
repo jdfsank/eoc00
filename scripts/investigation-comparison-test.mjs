@@ -66,6 +66,7 @@ async function checkRowOracle(label, state, expectedProbability, expectedVeto, e
   const readings = [];
   for (const id of ['review', 'surveyed_veto', 'basic_veto']) {
     const actual = oracle(state, id); readings.push(actual);
+    if(await row(id).evaluate(el=>el.tagName==='DETAILS'&&!el.open))await row(id).locator(':scope > summary').click();
     const text = await row(id).innerText();
     check(`${label}: ${id} visibly ready with real costs and timing`, await row(id).getAttribute('data-ready') === 'true' && text.includes(id === 'review' ? '22' : '21'));
     check(`${label}: ${id} does not expose lock or investigate controls`, await row(id).locator('[data-action="lock"],[data-action="confirm"],[data-action="evidence"]').count() === 0);
@@ -138,6 +139,7 @@ try {
   const retainedReview = fixture({ warning: false }); investigateAndLock(retainedReview, 'linche', 'F6', 'independent_review');
   await restore(retainedReview, { screen: 'avg', selected: 'B4' }); const retainedReviewBytes = await stateBytes();
   for (const id of ['surveyed_veto', 'basic_veto']) {
+    if(await row(id).evaluate(el=>el.tagName==='DETAILS'&&!el.open))await row(id).locator(':scope > summary').click();
     const attempts = row(id).locator('.comparison-attempts');
     check(`Retained Linche review: ${id} identifies her55% year22 contract instead of implying a certain review`, await attempts.locator('li').count() === 1 && (await attempts.innerText()).includes('林澈') && (await attempts.innerText()).includes('F6') && (await attempts.innerText()).includes('55%') && (await attempts.innerText()).includes('22') && !(await row(id).innerText()).includes('整轮成功率'));
   }

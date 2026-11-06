@@ -333,7 +333,7 @@ try {
   await page.setViewportSize({ width: 320, height: 568 }); await importState(at30(), 'narrow-future30'); await click('settings'); await click('text-size');
   check('320px uses genuine200% application text mode', await page.evaluate(() => window.afterwave.ui.bigText && getComputedStyle(document.documentElement).fontSize === '32px'));
   await enter('B4', 'linche'); await keyboard(page.locator(`[data-action="choose"][data-id="${ID}"]`), '320/200 future preview'); await layout('future320/200'); await snap('future-preview-320-text200', '.page');
-  await keyboard(page.locator('[data-action="preview-evidence"]'), '320/200 evidence entrance'); await evidence('anomaly_records'); await evidence('resident_testimony');
+  await keyboard(page.locator('[data-action="preview-evidence"][data-id="anomaly_records"]'), '320/200 evidence entrance'); await evidence('anomaly_records'); await evidence('resident_testimony');
   await keyboard(page.locator(`[data-action="choose"][data-id="${ID}"]`), '320/200 prepared choice'); await keyboard(page.locator('[data-action="confirm"]'), '320/200 confirm'); await keyboard(page.locator('[data-action="lock"]'), '320/200 lock');
   check('320/200 real keyboard locks only one costly draft, not a settlement', (await readState()).drafts.linche.actionId === ID && !future(await readState())); await layout('locked future320/200');
   await importState(destinationState, 'narrow-destination30'); await click('settings'); await click('text-size'); await enter('E4'); await layout('E4 destination320/200'); await snap('e4-destination-320-text200', '.relocation-destination');
