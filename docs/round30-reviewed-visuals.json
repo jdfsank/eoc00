@@ -1,0 +1,106 @@
+{
+  "scope": "Eight original, unmodified PNGs inspected for this review and copied byte-for-byte from the final complete sequential 59-suite aggregate. Five are byte-identical to the individually reviewed focused captures; three differing button-color frames were individually reviewed again. This does not claim every automated capture was visually inspected or all captures are pixel-identical.",
+  "screenshots": [
+    {
+      "file": "screenshots/round30-review-30-390-100.png",
+      "originalCapture": "review-30-390-100.png",
+      "kind": "original viewport screenshot; not whole page",
+      "sha256": "8c81c71267d28b64528a15a42d784dcb524b2283742cdf88e5401b85f8a223fb",
+      "width": 390,
+      "height": 844,
+      "reviewedPixels": true,
+      "captureRun": "Final complete sequential 59-suite aggregate"
+    },
+    {
+      "file": "screenshots/round30-review-30-320-200.png",
+      "originalCapture": "review-30-320-200.png",
+      "kind": "original viewport screenshot; not whole page",
+      "sha256": "b953fb92f034882a993dec2f73a22f8d2154fcad0452dd8472dceef28bc7a2ca",
+      "width": 320,
+      "height": 568,
+      "reviewedPixels": true,
+      "captureRun": "Final complete sequential 59-suite aggregate"
+    },
+    {
+      "file": "screenshots/round30-review-40-390-100.png",
+      "originalCapture": "review-40-390-100.png",
+      "kind": "original viewport screenshot; not whole page",
+      "sha256": "f94078d13b59cecef171b684d2d6f45b633e5ce67e52cc7081dbc5d3770a5815",
+      "width": 390,
+      "height": 844,
+      "reviewedPixels": true,
+      "captureRun": "Final complete sequential 59-suite aggregate"
+    },
+    {
+      "file": "screenshots/round30-review-40-320-200.png",
+      "originalCapture": "review-40-320-200.png",
+      "kind": "original viewport screenshot; not whole page",
+      "sha256": "861e1d99f8dc205614b1f67e741bb6be127e08aae295dfe908bbe51220f6fce5",
+      "width": 320,
+      "height": 568,
+      "reviewedPixels": true,
+      "captureRun": "Final complete sequential 59-suite aggregate"
+    },
+    {
+      "file": "screenshots/round30-stage-archive-full-390-100.png",
+      "originalCapture": "stage-archive-full-390-100.png",
+      "kind": "original element screenshot; complete element, may exceed one viewport",
+      "sha256": "33b966d697011b1a968646a221fafb1dddce32d0aabe82d586080c7b45fab033",
+      "width": 358,
+      "height": 195,
+      "reviewedPixels": true,
+      "captureRun": "Final complete sequential 59-suite aggregate"
+    },
+    {
+      "file": "screenshots/round30-stage-archive-full-320-200.png",
+      "originalCapture": "stage-archive-full-320-200.png",
+      "kind": "original element screenshot; complete element, may exceed one viewport",
+      "sha256": "1fe89a37cd2984e6baa185db8cf3fb6386c4d84cc0b82df387957986523c56ac",
+      "width": 288,
+      "height": 872,
+      "reviewedPixels": true,
+      "captureRun": "Final complete sequential 59-suite aggregate"
+    },
+    {
+      "file": "screenshots/round30-new-run-confirm-initial-320-200.png",
+      "originalCapture": "new-run-confirm-initial-320-200.png",
+      "kind": "original viewport screenshot; not whole page",
+      "sha256": "cc3dfe90f4345edcd4076e1a4fa24d179823ad460e76350af13c6505706d014e",
+      "width": 320,
+      "height": 568,
+      "reviewedPixels": true,
+      "captureRun": "Final complete sequential 59-suite aggregate"
+    },
+    {
+      "file": "screenshots/round30-new-run-confirm-full-320-200.png",
+      "originalCapture": "new-run-confirm-full-320-200.png",
+      "kind": "original element screenshot; complete element, may exceed one viewport",
+      "sha256": "917b3376ff1324eafa8210b8e1c3da33df36c168f19e6e8b147048c574761c2e",
+      "width": 288,
+      "height": 691,
+      "reviewedPixels": true,
+      "captureRun": "Final complete sequential 59-suite aggregate"
+    }
+  ],
+  "productionSourceSha256": "9484722e746d4374293068d7765447044431c0aa50558e1683efa34275c6d07a",
+  "focusedRunCompletedAt": "2026-11-07T03:54:34.526Z",
+  "focusedChecks": 447,
+  "allCaptures": 54,
+  "focusedCaptureDifferences": [
+    {
+      "file": "screenshots/round30-review-30-320-200.png",
+      "focusedSHA256": "dc99975d11ebd57531dc4712e6d2fc3b932ae264a75997d14144ee6faa939aa8",
+      "aggregateSHA256": "b953fb92f034882a993dec2f73a22f8d2154fcad0452dd8472dceef28bc7a2ca"
+    },
+    {
+      "file": "screenshots/round30-review-40-320-200.png",
+      "focusedSHA256": "d2ffc132b3c6b3805222b0e1f14e54b3f8601e961278f45e84052f8d8f1776a6",
+      "aggregateSHA256": "861e1d99f8dc205614b1f67e741bb6be127e08aae295dfe908bbe51220f6fce5"
+    },
+    {
+      "file": "screenshots/round30-new-run-confirm-initial-320-200.png",
+      "focusedSHA256": "42278853b22805b26083dacac844f1682b755d91f1a1bde22f63bfdcda99d255",
+      "aggregateSHA256": "cc3dfe90f4345edcd4076e1a4fa24d179823ad460e76350af13c6505706d014e"
+    }
+  ]
+}

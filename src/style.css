@@ -345,3 +345,26 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .evidence-bookmark-label{display:block;color:#cfba86;font-size:.75rem;line-height:1.6;margin-bottom:.25rem}
 .evidence-bookmark>strong{display:block;font-size:1rem;line-height:1.65;margin-bottom:.25rem}
 .evidence-bookmark>small{display:block;font-size:.75rem;line-height:1.65;color:#b9cbbf;margin-top:.4rem}
+
+/* Round 30: an explicit chapter threshold, before the unabridged record.
+   The continuation stays in document flow; it cannot cover a historical line.
+   Native large text keeps its full size and may wrap naturally. */
+.review-stage-nav{margin:0 0 1rem;min-width:0}
+.review-stage-nav .primary{display:block;width:100%;min-height:48px;padding:12px 16px;white-space:normal;overflow-wrap:anywhere;font-size:1rem;line-height:1.5}
+.review-stage-heading{margin:0 0 1.25rem;padding:0 0 1rem;border-bottom:1px solid #789387;min-width:0;overflow-wrap:anywhere}
+.review-stage-heading .eyebrow{margin-bottom:.5rem;color:#d9c28c}
+.review-stage-heading h1{margin-bottom:.4em}
+.review-stage-heading .lead{margin-bottom:0;color:#c3d4c7}
+.review-page[data-review-stage="ended"] .review-stage-heading{border-bottom:3px double #b9a36c}
+.review-page[data-review-stage="ended"] .review-stage-heading .eyebrow{color:#e9d39b}
+.new-run-confirm{margin:1rem 0;padding:1rem;border-left:3px solid #d5b16b;background:#2b3d36;min-width:0;overflow-wrap:anywhere}
+.new-run-confirm h3{font-family:"Songti SC","Noto Serif CJK SC",Georgia,serif;color:#eee5cd;font-size:1.125rem;line-height:1.5;margin:0 0 .65rem}
+.new-run-confirm p{font-size:1rem;line-height:1.65;margin:0 0 .75rem;color:#e0e6d8}
+.new-run-confirm button{max-width:100%;white-space:normal;overflow-wrap:anywhere;min-height:48px;text-align:left}
+@media(max-width:350px){.review-stage-nav .primary{padding:10px 12px}.new-run-confirm{padding:.75rem}}
+[data-stage-archive]{margin:1.25rem 0;padding:1rem 0 1rem 1rem;border-left:3px double #c7af76;min-width:0;overflow-wrap:anywhere;background:none}
+[data-stage-archive] .eyebrow{display:block;color:#d9c28c;margin:0 0 .5rem}
+[data-stage-archive] h2{font-family:"Songti SC","Noto Serif CJK SC",Georgia,serif;font-size:1.375rem;line-height:1.5;font-weight:500;color:#eee5cd;margin:0 0 .5rem}
+[data-stage-archive] p{font-size:1rem;line-height:1.75;color:#d4dfcc;margin:0}
+.review-stage-heading + .review-turns{border-top:0;padding-top:0;margin-top:0}
+[data-stage-archive] .stamp{color:#d9c28c}
