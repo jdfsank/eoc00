@@ -1,0 +1,66 @@
+{
+  "scope": "Independent real Vite/Chromium audit of natural year20 D4 Linche at390x844 and320x568 with native100/200% text. No physical-device, screen-reader or full legacy regression certification.",
+  "rawQAPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/refusal-measurements.json",
+  "rawQASHA256": "c20e260856f7705c8c06169cd7cff6c504e989702519a83252f684b17548d5b8",
+  "checks": 104,
+  "passed": 104,
+  "errors": [],
+  "sourceBefore": "f726addbc1aabb699570135fc59e0bc040f15171c6c8ebb79766206cfb99dfb9",
+  "sourceAfter": "f726addbc1aabb699570135fc59e0bc040f15171c6c8ebb79766206cfb99dfb9",
+  "sourceHashMethod": "SHA256 over lexicographically recursive src files, feeding absolute pathname then bytes.",
+  "sourceUnchanged": true,
+  "touch": "Actual Playwright touchscreen.tap twice at the same screen coordinates per direction and viewport;8 passed repeat-touch checks, separately from8 desktop double-click checks. Synthetic Chromium input, not a real phone.",
+  "review": "Gold margin-note reads as actor testimony, not a disabled action or error. Normal-text directory still fits initial viewport. At200% native vertical scrolling is required; no clipping or horizontal overflow found. No CSS change recommended.",
+  "screenshots": [
+    {
+      "sourceRawPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-refusal-fastpath.png",
+      "path": "docs/screenshots/round36-actor-agency/390-100-refusal-fastpath.png",
+      "sourceSHA256": "f561887e93165da59fd76a83fbb8d9fe4ae4a1bfc2e0e8f885d25beee14f7b81",
+      "copiedSHA256": "f561887e93165da59fd76a83fbb8d9fe4ae4a1bfc2e0e8f885d25beee14f7b81",
+      "width": 390,
+      "height": 844,
+      "byteIdentical": true,
+      "pixelEditing": "None; file byte copy only."
+    },
+    {
+      "sourceRawPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-refusal-fastpath.png",
+      "path": "docs/screenshots/round36-actor-agency/320-200-refusal-fastpath.png",
+      "sourceSHA256": "edf4465b83e7986b0ce059b0a0f02756ab7e1c047064a58ced9763b76c625900",
+      "copiedSHA256": "edf4465b83e7986b0ce059b0a0f02756ab7e1c047064a58ced9763b76c625900",
+      "width": 320,
+      "height": 568,
+      "byteIdentical": true,
+      "pixelEditing": "None; file byte copy only."
+    },
+    {
+      "sourceRawPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-full-reason-focused.png",
+      "path": "docs/screenshots/round36-actor-agency/320-200-full-reason-focused.png",
+      "sourceSHA256": "66c366e73eef677878429085b56a922107dfe8232fd5113d8037b5636ac6aacd",
+      "copiedSHA256": "66c366e73eef677878429085b56a922107dfe8232fd5113d8037b5636ac6aacd",
+      "width": 320,
+      "height": 568,
+      "byteIdentical": true,
+      "pixelEditing": "None; file byte copy only."
+    },
+    {
+      "sourceRawPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-summary-return.png",
+      "path": "docs/screenshots/round36-actor-agency/390-100-summary-return.png",
+      "sourceSHA256": "985247de194a4abaf3b118cbd0d49f57aa1d9a62adee1cbafb110470fd1d96e5",
+      "copiedSHA256": "985247de194a4abaf3b118cbd0d49f57aa1d9a62adee1cbafb110470fd1d96e5",
+      "width": 390,
+      "height": 844,
+      "byteIdentical": true,
+      "pixelEditing": "None; file byte copy only."
+    },
+    {
+      "sourceRawPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-200-refusal-fastpath.png",
+      "path": "docs/screenshots/round36-actor-agency/390-200-refusal-fastpath.png",
+      "sourceSHA256": "2be714d62ca61adba3f4d887cc26a36e92f4252e2ca85f7c0ce8c565f53405b9",
+      "copiedSHA256": "2be714d62ca61adba3f4d887cc26a36e92f4252e2ca85f7c0ce8c565f53405b9",
+      "width": 390,
+      "height": 844,
+      "byteIdentical": true,
+      "pixelEditing": "None; file byte copy only."
+    }
+  ]
+}

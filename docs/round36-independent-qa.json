@@ -1,0 +1,245 @@
+{
+  "scope": "Independent real Vite/Chromium audit of natural year20 D4 Linche at390x844 and320x568 with native100/200% text. No physical-device, screen-reader or full legacy regression certification.",
+  "checks": 104,
+  "passed": 104,
+  "errors": [],
+  "sourceBefore": "f726addbc1aabb699570135fc59e0bc040f15171c6c8ebb79766206cfb99dfb9",
+  "sourceAfter": "f726addbc1aabb699570135fc59e0bc040f15171c6c8ebb79766206cfb99dfb9",
+  "sourceHashMethod": "SHA256 over lexicographically recursive src files, feeding absolute pathname then bytes.",
+  "sourceUnchanged": true,
+  "touch": "Actual Playwright touchscreen.tap twice at the same screen coordinates per direction and viewport;8 passed repeat-touch checks, separately from8 desktop double-click checks. Synthetic Chromium input, not a real phone.",
+  "counting": "Only final104-check run counted. Earlier76/92 runs are superseded and not added.",
+  "originalReports": [
+    {
+      "localPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/refusal-measurements.json",
+      "sha256": "c20e260856f7705c8c06169cd7cff6c504e989702519a83252f684b17548d5b8"
+    },
+    {
+      "localPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/screenshots-manifest.json",
+      "sha256": "dca6edc3402298e72365ab912e398d1ea41fd5941c2da88bbe14315a1ded4976"
+    },
+    {
+      "localPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/audit.mjs",
+      "sha256": "c8c220af2e549e0cd0d59140766c5d4cf76344d5fded35bea7f840b807739044"
+    },
+    {
+      "localPath": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/REVIEW.md",
+      "sha256": "70384a570c398d256a2df82650069f82537fc85428912f8e8579658b5b9b4675"
+    }
+  ],
+  "screenshots": [
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-100-actual-choice.png",
+      "sha256": "92954a4c3918a0e4c431079d046112a8513444a90fca371cc25df029eb068e35",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-100-full-reason-focused.png",
+      "sha256": "8fd65967dbf0fbf2e901c8115b72294faf584d0836fe2ddc5a79def2a243098f",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-100-refusal-entry.png",
+      "sha256": "931d73f30b19694ee1d8d6ffe72cfedc367a996cfa570a92983c338109ad1441",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-100-refusal-fastpath.png",
+      "sha256": "e1483d2a449c7103fa2916b7d5751ca350a77165f9d8d725bd86da9e2f0fcf5a",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-100-refusal-original.png",
+      "sha256": "dc28d515a75b0082c7a78d6cfcb8691869a0b88e72700de48d1adfec8dd0ff05",
+      "width": 288,
+      "height": 359,
+      "kind": "raw Chromium element"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-100-source.png",
+      "sha256": "fc3594673327662df5550e10bcd99fa5e664caa77a6e3256571b92f081f7e838",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-100-summary-return.png",
+      "sha256": "c150344122bbe0e3e5f03f052bdb02185c59d0c8b5bca75f95ca65cb3e07dccf",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-actual-choice.png",
+      "sha256": "06584665675910ec6ebee87377580ad7bb43a60805e7a0c9e267f80f76459766",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-full-reason-focused.png",
+      "sha256": "66c366e73eef677878429085b56a922107dfe8232fd5113d8037b5636ac6aacd",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-refusal-entry.png",
+      "sha256": "2e69da94f46838bf1154ddcc4bfd205ee2fdff8cd24b6152c04bad2d25250d91",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-refusal-fastpath.png",
+      "sha256": "edf4465b83e7986b0ce059b0a0f02756ab7e1c047064a58ced9763b76c625900",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-refusal-original.png",
+      "sha256": "d43e384f093bacbcac352fba0013fb622a079dd4a443eef74c8fdbe29d0e5d0a",
+      "width": 288,
+      "height": 1156,
+      "kind": "raw Chromium element"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-source.png",
+      "sha256": "386b5e996186a680fbadfca820283d865ca44df55ca663e98c678b137583afcc",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/320-200-summary-return.png",
+      "sha256": "fa8b271165af25b849a0e7df078894eab12caedd9c2f259c3e73e1827767094b",
+      "width": 320,
+      "height": 568,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-actual-choice.png",
+      "sha256": "7f765556aa5d6da3fd377b3a4813e84feaf0cc1dd28c6cc69a57fb7329e49604",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-full-reason-focused.png",
+      "sha256": "f4f7d31c355535869dba2d4e5129ec90b383565c84a0d24ec3b491569ec4409a",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-refusal-entry.png",
+      "sha256": "aeff436ff0ba397199801cb8288c43830d351551ea7617bc6ee2b4a81f419a15",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-refusal-fastpath.png",
+      "sha256": "f561887e93165da59fd76a83fbb8d9fe4ae4a1bfc2e0e8f885d25beee14f7b81",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-refusal-original.png",
+      "sha256": "eec18df546dd7691b4c16878b4212f989e48cc2d469f9e99b1adb70793c72b32",
+      "width": 358,
+      "height": 335,
+      "kind": "raw Chromium element"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-source.png",
+      "sha256": "52474cb3a4140ea163a9040f745842f1a79d6afd6ab18f6d5c7df6bd5c87f19b",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-100-summary-return.png",
+      "sha256": "985247de194a4abaf3b118cbd0d49f57aa1d9a62adee1cbafb110470fd1d96e5",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-200-actual-choice.png",
+      "sha256": "b5df9c42c976472ca583a32b0c8ad974e021fdaab675d7be4316f3a6d8a8549c",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-200-full-reason-focused.png",
+      "sha256": "ac2e4d6f37771e2108a8b05f82b80dc11f8d04a1ee4c1c440a456941103727af",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-200-refusal-entry.png",
+      "sha256": "8d92a48826587c060229fff91480a25e57f1ffffe4c202299dc450103edd279a",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-200-refusal-fastpath.png",
+      "sha256": "2be714d62ca61adba3f4d887cc26a36e92f4252e2ca85f7c0ce8c565f53405b9",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-200-refusal-original.png",
+      "sha256": "3f8a197bbed8e0e5404721bc8499c53739ff9a42dfdbb6bd9be746731f223557",
+      "width": 358,
+      "height": 863,
+      "kind": "raw Chromium element"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-200-source.png",
+      "sha256": "5539a0810ecb9203c3a4588d03abe82d6c88dfe82bf3d867ed266738839c00c2",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    },
+    {
+      "source": "/workspace/scratch/52f1b40b7635/round36-visual-audit/after/390-200-summary-return.png",
+      "sha256": "eae2e7e37e691273e2160c90f0ed16a167f0c789c0d9653abed26e1115323a50",
+      "width": 390,
+      "height": 844,
+      "kind": "raw Chromium viewport"
+    }
+  ],
+  "limits": [
+    "No real-device or screen-reader certification.",
+    "Current natural success route year20 atD4/Linche only; broad legacy and simulation checks belong to other QA.",
+    "No CI status claim.",
+    "Native200% requires vertical scrolling; compact note not claimed to fit first viewport."
+  ],
+  "findings": {
+    "worldAndAutosave": "Exact unchanged complete state checked after free paths, source reading, contract preview/return and touch repetitions.",
+    "interaction": "Both keyboard directions, source exact origin, desktop double click, physical-coordinate synthetic two taps, story/material fast paths and directory actual contract preview passed.",
+    "visual": "Actor-boundary note is distinct from actions/errors; no horizontal overflow or clipped visible text detected.",
+    "noteHeight": {
+      "390-100": 184.28125,
+      "320-100": 181.0625,
+      "390-200": 491.71875,
+      "320-200": 533.3125
+    }
+  }
+}

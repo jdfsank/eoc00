@@ -466,3 +466,14 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 
 .large-text .draft-comparison-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
 .large-text .draft-comparison-tabs a span{display:none}
+
+/* Round 36: the actor's personal boundary sits in the decision margin. The
+   fine gold rule echoes testimony, not a disabled contract or a failure stamp. */
+.choice-agency{margin:.75rem 0 1rem;padding:.75rem 1rem;border-left:3px solid var(--gold);background:linear-gradient(105deg,#263d39,#183335);min-width:0;overflow-wrap:anywhere}
+.choice-agency > .eyebrow{display:block;margin:0 0 .35rem;font-size:.8125rem;line-height:1.5;letter-spacing:.04em;color:var(--gold)}
+.choice-agency h3{margin:0 0 .35rem;color:var(--paper);font-family:"Songti SC","Noto Serif CJK SC",Georgia,serif;font-size:1rem;line-height:1.6;font-weight:500}
+.choice-agency > p{margin:0 0 .35rem;color:#d4dfcc;font-size:.9375rem;line-height:1.6}
+.choice-agency [data-actor-agency-link],.actor-refusal .actor-agency-return{display:block;max-width:100%;min-height:48px;padding:.45rem 0;color:var(--gold);font-size:.9375rem;line-height:1.6;text-align:left;white-space:normal;overflow-wrap:anywhere;background:transparent;border:0;text-decoration:underline;text-underline-offset:.2em}
+[data-actor-agency-target]{scroll-margin-block:12px}
+:is([data-actor-agency-target],[data-actor-agency-link]):focus{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:350px){.choice-agency{padding:.65rem .75rem}}
