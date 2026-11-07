@@ -190,3 +190,8 @@ Phaser 3负责地图和相机，DOM负责中文阅读与操作。`simulation.js`
 - 兼容：此前生产源码只有`main.js`与`style.css`改变，新增三个纯展示模块。模拟、存档、所有既有合同提供器与故事源码逐字保留。旧场景预算不使用现代跨地推算；真实旧生产者和自然路线继续完整世界对照。
 
 设计/API见[跨地调查说明](CROSS_LOCATION_INVESTIGATION.md)，独立[叙事核对](ROUND24_STORY_REVIEW.md)、[视觉记录](ROUND24_INVESTIGATION_VISUALS.md)、[QA记录](ROUND24_QA_REVIEW.md)及[最终验证](TESTING.md)分别注明证据范围。
+
+
+## 第28轮：合同结果与全局清点分账
+
+新增只读 `review-reading-context.js`，只映射已有历史核验器的有效响应。指定来源只显示其合同结果，缺失来源不借用另一地成功。展示用两张账页分别呈现待兑现/成功/失败/取消与第23年原始整体清点。中性的零损失和未知说明不改写原历史、故事、复核校验或数值；原始正文与全部来源仍保留。视觉、风险反馈与叙事评估见 [第28轮实际体验](ROUND28_PLAYABILITY_REVIEW.md)，API与边界见 [复核阅读说明](ROUND28_REVIEW_READING.md)。

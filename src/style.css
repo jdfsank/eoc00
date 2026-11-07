@@ -298,3 +298,32 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .ending-policy-checkpoint{min-width:0;margin:14px 0;padding:12px 14px;border-left:3px solid #9eb8aa;background:#203c3b;overflow-wrap:anywhere}
 .ending-policy-checkpoint h4{font-size:.875rem;line-height:1.5;margin:0 0 8px;color:#c5d9cb}
 .ending-policy-checkpoint p{font-size:1rem;line-height:1.7;margin:0;color:var(--paper)}
+
+/* Round 28: two separate ledger leaves, never a single success/failure badge
+   for both a local contract and the shared historical settlement. */
+.review-account{padding:18px;border-color:#789387;background:#142f33;color:var(--paper);min-width:0;overflow-wrap:anywhere}
+.review-account>h3{font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:1.125rem;line-height:1.5;margin:0 0 14px;color:var(--paper)}
+.review-account-pages{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;min-width:0}
+.review-result-page,.review-settlement-page{min-width:0;padding:14px;border:1px solid #557469;background:#1a393a}
+.review-settlement-page{border-top:3px double #b3a477;background:#343c32}
+.review-account-heading{display:flex;gap:10px;align-items:flex-start;min-width:0;margin:0 0 10px}
+.review-account-heading h4{font-size:1rem;line-height:1.5;margin:0;color:#e4e8d9}
+.review-account-mark{flex:none;color:#b8cebe;font-family:Georgia,serif;font-size:1.125rem;line-height:1.35}
+.review-settlement-page .review-account-mark{color:#ebcf91}
+.review-account p{font-size:.9375rem;line-height:1.75;color:#d1dfd3;margin:8px 0 0}
+.review-account .review-account-note,.review-account .review-result-date{font-size:.8125rem;color:#bfd1c4;line-height:1.6}
+.review-result-row{border-top:1px solid #698579;padding:12px 0 0;margin:12px 0 0;min-width:0}
+.review-result-row:first-of-type{margin-top:8px}
+.review-result-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;min-width:0}
+.review-result-heading strong{font-size:.9375rem;line-height:1.6;color:#e4e8d9;min-width:0}
+.review-result-status{border:1px solid #a7bdab;padding:1px 7px;font-size:.8125rem;line-height:1.6;color:#d8e6d9}
+[data-review-result-status="pending"] .review-result-status{border-style:dashed;color:#e6d5a9}
+[data-review-result-status="failed"] .review-result-status,[data-review-result-status="cancelled"] .review-result-status{border-color:#d8a59d;color:#f0c7c1}
+.review-account .review-settlement{color:#eee9d5}
+.review-account .review-account-explanation{font-size:.8125rem;line-height:1.65;margin:14px 0 0;color:#c4d3c5}
+.review-account-sources{margin:14px 0 0;border-top:1px solid #789387;padding:8px 0 0}
+.review-account-sources>summary{min-height:48px;padding:10px 0;line-height:1.6;cursor:pointer;font-size:.9375rem;color:#ded4b4}
+.review-account-sources button{white-space:normal;overflow-wrap:anywhere;text-align:left;max-width:100%}
+@media(min-width:900px){.review-account-pages{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}}
+.large-text .review-account-pages{grid-template-columns:minmax(0,1fr)}
+@media(max-width:350px){.review-account{padding:12px}.review-result-page,.review-settlement-page{padding:10px}.review-account-heading{gap:8px}}

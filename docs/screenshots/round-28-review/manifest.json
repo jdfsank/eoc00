@@ -1,0 +1,159 @@
+{
+  "scope": "18 selected original PNGs from one complete final-refinement run:12 element and6 viewport screenshots. All18 listed originals were visually inspected; no claim of pixel review of all72 captured images. Native200% text, not browser zoom or physical-device certification.",
+  "sourceBefore": "91834f1589dcd9e4d0f0b8ef1dc8909d97f045f31f296ce97c8fe4e28bff32f2",
+  "sourceAfter": "91834f1589dcd9e4d0f0b8ef1dc8909d97f045f31f296ce97c8fe4e28bff32f2",
+  "checks": 490,
+  "exitCode": 0,
+  "screenshots": [
+    {
+      "file": "success-320-100.png",
+      "kind": "original element screenshot",
+      "sha256": "96cf82cd9338e9e628c176e394ae75486a7912bd728c9e1e559e316f29508914",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "failure-cancelled-320-100.png",
+      "kind": "original element screenshot",
+      "sha256": "e7e6568946c0eaa3490f4dbcb23a83a879c0d1d788237b0e936567de0e135133",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "mixed-320-100.png",
+      "kind": "original element screenshot",
+      "sha256": "8ce5197837b9a84eb6944a9fe7277813317c7f53d41ae914211668a7c68815d0",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "pending-320-100.png",
+      "kind": "original element screenshot",
+      "sha256": "126e604458445762343c4779b85834247a8dbfaabf5f2710a62e53afb6747268",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "old-failure-320-100.png",
+      "kind": "original element screenshot",
+      "sha256": "e7e6568946c0eaa3490f4dbcb23a83a879c0d1d788237b0e936567de0e135133",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "journal-320-100.png",
+      "kind": "original element screenshot",
+      "sha256": "f1ad7de28622ab94d6198b8a9d1228bab5bef5b68ddbfd197ed73b64cd357755",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "success-320-200.png",
+      "kind": "original element screenshot",
+      "sha256": "79024e7cbeb416b5101f3f609ccc958cbe2bfe819dfdcec99b4cc22e94b0fc8e",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "mixed-320-200.png",
+      "kind": "original element screenshot",
+      "sha256": "f6bc03ac0b100b222722bcae2888754eb8b46f9e1fca13f6b6f7285e5139a51b",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "success-390-200.png",
+      "kind": "original element screenshot",
+      "sha256": "25dea2483de90c219acd06df1d396099fbcfab6b2d49ea18f0f037877be63778",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "journal-320-200.png",
+      "kind": "original element screenshot",
+      "sha256": "05ba59985f618db1190856f43fa8e3035e20ab29e6befd50788791a4e576e943",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "pending-320-200.png",
+      "kind": "original element screenshot",
+      "sha256": "96a374a55e9b8b0208523b340ea498e1d55f66a7910dc1c536117b831e584e0c",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "success-1280-100.png",
+      "kind": "original element screenshot",
+      "sha256": "1a2b0ecbad8c9c4f9707476d1be1f7ecbe5a432c17cf67d83180f30a1fc2972e",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement"
+    },
+    {
+      "file": "success-320-100-viewport.png",
+      "kind": "original viewport screenshot",
+      "sha256": "d2215d45275a9fca567bf6a0c1329001983fe0b71dcb6a16890b345f23dab44b",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "file": "success-390-100-viewport.png",
+      "kind": "original viewport screenshot",
+      "sha256": "c39f7932af99fd7686a729198bd33c946c487af2529d3e38c9c784189074e245",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "success-430-100-viewport.png",
+      "kind": "original viewport screenshot",
+      "sha256": "9486dd855dda6a07f5f63864214ff37c9fd352aa331483957a34449988de97db",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement",
+      "viewport": {
+        "width": 430,
+        "height": 844
+      }
+    },
+    {
+      "file": "success-1280-100-viewport.png",
+      "kind": "original viewport screenshot",
+      "sha256": "f9c3605ce222acf7b6c6c6e67115de5b9ccb2b753d271794af690427e416d432",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement",
+      "viewport": {
+        "width": 1280,
+        "height": 844
+      }
+    },
+    {
+      "file": "success-320-200-viewport.png",
+      "kind": "original viewport screenshot",
+      "sha256": "3c1fba9c40b40402804c9c553ba2c5a1564eb0c64694076cf87d174da5fa1538",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      }
+    },
+    {
+      "file": "success-390-200-viewport.png",
+      "kind": "original viewport screenshot",
+      "sha256": "e1521c9eb3d1c3c4221fc5a00545883774eda556178586fa2ddee33b59b42f0a",
+      "pixelReviewed": true,
+      "sourceRun": "final-refinement",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    }
+  ]
+}
