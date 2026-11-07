@@ -1,0 +1,87 @@
+{
+  "round": 33,
+  "candidate": 3,
+  "candidateTarget": 10,
+  "branch": "candidates/playable-next-10",
+  "baseCommit": "8c674de0f9b1b91fa5239018b00772e2ed200fe3",
+  "mainUnchanged": "7107021064d045cb27bec59d8e2e4df081335a85",
+  "generatedAt": "2026-11-07T12:48:39.520110+00:00",
+  "scope": "A default-collapsed native ledger pairs the retained draft and public alternative by local cost, timing, reward, risk and responsibility. Original uses frozen evidence; current alternative uses real acquired evidence. No rule, payment, probability or save change.",
+  "previousChanges": {
+    "src": [
+      "src/main.js",
+      "src/style.css"
+    ],
+    "scripts": [],
+    "tests": [],
+    "public": []
+  },
+  "coreExits": {
+    "unit": 0,
+    "build": 0,
+    "matrix": 0,
+    "balance": 0,
+    "roles": 0,
+    "browser": 0
+  },
+  "unit": {
+    "passed": 2838,
+    "failed": 0,
+    "skipped": 0
+  },
+  "matrix": {
+    "checked": 888,
+    "failed": 0,
+    "skipped": 0,
+    "branches": {
+      "success": 282,
+      "fallback": 606
+    }
+  },
+  "numericAudit": {
+    "naturalPairs": 644,
+    "allValid": true,
+    "globalBalanceCertified": false
+  },
+  "roleAudit": {
+    "pairs": 10,
+    "preparationBranches": 2,
+    "allStatesValid": true
+  },
+  "compatibility": "Original simulation, save, story, public assets, every pre-existing unit test and every pre-existing browser script remain byte-identical. No new world/save fields, probability changes, refunds or past-history rewrites.",
+  "limits": [
+    "No physical-device, screen-reader or human balance certification",
+    "Original capture budgets, failures and diagnostics are unchanged; this change does not establish or repair the earlier remote screenshot timeout",
+    "Local freeze and passing tests do not certify remote CI for the unpublished/new commit",
+    "Independent QA reports slightly precede official freeze but their exact source bytes independently match the final frozen source; not claimed post-freeze",
+    "Expanded native large-text comparison is a long reading page, not claimed fully visible in one viewport",
+    "Early new-script focus-mode and restored-screen assumptions failed and were corrected; those results are not joined into final counts"
+  ],
+  "verificationScope": "Project release-test summary. All counts were checked against one complete browser run and unchanged production/test files.",
+  "productionFreeze": {
+    "productionFiles": 349,
+    "unitTestFiles": 145,
+    "browserEntries": 64,
+    "allFrozenBytesMatched": true
+  },
+  "browser": {
+    "suites": 64,
+    "checks": 18622,
+    "aggregateExit": 0,
+    "completeInvocations": 1
+  },
+  "independentQA": {
+    "behaviorChecks": 120,
+    "visualChecks": 110,
+    "originalVisualPNGs": 42,
+    "sourceMatchesFinalBuild": true,
+    "executedBeforeFormalFreeze": true,
+    "details": "round33-independent-qa.json"
+  },
+  "reportHashVerification": {
+    "matched": 39,
+    "originallyAbsent": 25,
+    "allExistingHashSchemesPreserved": true,
+    "errors": 0
+  }
+}

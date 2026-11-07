@@ -1,0 +1,42 @@
+[
+  {
+    "path": "docs/screenshots/round33-draft-comparison/390-100-preview.png",
+    "origin": "final complete 64-suite aggregate",
+    "width": 390,
+    "height": 844,
+    "sha256": "44bca19ed4d0355f0da25f969cb230a617ba71495fe36e04ec7b20fcc8433288",
+    "actuallyViewed": true
+  },
+  {
+    "path": "docs/screenshots/round33-draft-comparison/390-100-cost-pair.png",
+    "origin": "final complete 64-suite aggregate",
+    "width": 356,
+    "height": 220,
+    "sha256": "298f818466f42989fdf25eef96f77dbd49e6c718053b27abb9b29dfe5aedd9be",
+    "actuallyViewed": true
+  },
+  {
+    "path": "docs/screenshots/round33-draft-comparison/1280-100-risk-pair.png",
+    "origin": "final complete 64-suite aggregate",
+    "width": 598,
+    "height": 167,
+    "sha256": "ac53a63525ee062c472761eea2842813c51c6e97a1b457231195250660c01f0b",
+    "actuallyViewed": true
+  },
+  {
+    "path": "docs/screenshots/round33-draft-comparison/320-200-cost-pair.png",
+    "origin": "final complete 64-suite aggregate",
+    "width": 286,
+    "height": 637,
+    "sha256": "5e2a6d7c75fb06e0d80207b36f2f43293156cf67a32d90fa34d558d6426a3124",
+    "actuallyViewed": true
+  },
+  {
+    "path": "docs/screenshots/round33-draft-comparison/390-frozen-evidence.png",
+    "origin": "independent QA on byte-identical source before official freeze",
+    "width": 358,
+    "height": 2124,
+    "sha256": "ff221e6475adbfd1175b997672e9feb3d5d31e8a914e760ee3e2b80e9ff27dd0",
+    "actuallyViewed": true
+  }
+]

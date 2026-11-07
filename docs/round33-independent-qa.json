@@ -1,0 +1,45 @@
+{
+  "round": 33,
+  "candidate": 3,
+  "scope": "Additional automated game-behavior and layout review on source bytes matching the final tested build.",
+  "behavior": {
+    "passed": 120,
+    "failed": 0,
+    "browserErrors": 0,
+    "covered": [
+      "Original merchant versus public alternative contract",
+      "Native disclosure keyboard open/close, confirmation and cancellation",
+      "Frozen original veto 0.30 versus later-evidence alternative 0.20",
+      "Cross-location costs remain separate",
+      "An explicit pass is not rendered as a contract",
+      "Current and actual legacy-producer file imports",
+      "Repeated input, navigation and reload",
+      "Full game state and autosave remain identical during free reading; commit charges once"
+    ]
+  },
+  "visual": {
+    "passed": 110,
+    "failed": 0,
+    "originalScreenshots": 42,
+    "widths": [
+      320,
+      390,
+      430,
+      1280
+    ],
+    "nativeTextScales": [
+      100,
+      200
+    ],
+    "noHorizontalOverflow": true,
+    "noClippedText": true
+  },
+  "sourceMatch": true,
+  "timingNote": "These two checks completed shortly before the formal freeze; their before/after source hashes were independently matched to the final frozen source. They are not presented as post-freeze executions.",
+  "limits": [
+    "Automated Chromium checks and review of selected original screenshots, not physical-device or screen-reader certification",
+    "No human or global balance certification",
+    "Expanded large-text comparison requires scrolling"
+  ],
+  "publishedScreenshots": "screenshots/round33-draft-comparison/"
+}
