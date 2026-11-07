@@ -1,0 +1,64 @@
+{
+  "scope": "Seven individually viewed unchanged native PNGs from final frozen candidate. Element captures are not full-page stitched images.",
+  "reviewedAt": "2026-11-07T05:47:55.221529+00:00",
+  "sourceBefore": "a9758d39de50d43e3921ca70eaebe8a8cea380506a03eb42e44317cbd096381c",
+  "sourceAfter": "a9758d39de50d43e3921ca70eaebe8a8cea380506a03eb42e44317cbd096381c",
+  "screenshots": [
+    {
+      "path": "docs/round31-visuals/d4-390-100-voice.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "f08ad492b1841190f10330c16ec3178be19af7efa6770fe51a8b67037df2822b",
+      "reviewed": true
+    },
+    {
+      "path": "docs/round31-visuals/d4-320-200-voice.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "8069a7776afa1e8bb95d76f486109992a878a11d57ba7c5d19bddba79dc82014",
+      "reviewed": true
+    },
+    {
+      "path": "docs/round31-visuals/d4-390-200-voice.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "467c6d0604cece716ba1643addccfc026e6d7bcb8fb8d8eab9a3983925dc03ef",
+      "reviewed": true
+    },
+    {
+      "path": "docs/round31-visuals/relationship-390-100-source-card.png",
+      "kind": "original element",
+      "width": 358,
+      "height": 218,
+      "sha256": "84822c2b9c1b36090001b09f7d3bbe808ac6164873a8feb5484625fbcf12610c",
+      "reviewed": true
+    },
+    {
+      "path": "docs/round31-visuals/relationship-320-200-source.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "a1ef2e07f3d7f5db6a1e4f33ab7ab4be1594f83f95a87472ec99b0f50e864624",
+      "reviewed": true
+    },
+    {
+      "path": "docs/round31-visuals/relationship-320-200-source-card.png",
+      "kind": "original element",
+      "width": 288,
+      "height": 680,
+      "sha256": "21910f38df90a60c955affff5116a4b29d7d23085c4709c2de265e507a3f3089",
+      "reviewed": true
+    },
+    {
+      "path": "docs/round31-visuals/relationship-390-200-returned.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "9516711dae1d5b9f2797fed11213330a8eb2ac0d852f727091574dfaf9cd6c0e",
+      "reviewed": true
+    }
+  ]
+}

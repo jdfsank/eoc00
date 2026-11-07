@@ -368,3 +368,16 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 [data-stage-archive] p{font-size:1rem;line-height:1.75;color:#d4dfcc;margin:0}
 .review-stage-heading + .review-turns{border-top:0;padding-top:0;margin-top:0}
 [data-stage-archive] .stamp{color:#d9c28c}
+
+/* Round 31: keep the voice and its testimony together without enclosing prose. */
+.scene-voice-heading{border-top:1px solid #a68c50;border-bottom:1px solid #42615f;padding:1rem 0 .75rem;margin:0 0 1.35rem;scroll-margin-top:.5rem;min-width:0}
+.scene-voice-heading .eyebrow{font-family:inherit;font-size:.8125rem;line-height:1.7;letter-spacing:.06em;margin:0 0 .65rem;color:#e0c181;overflow-wrap:anywhere}
+.scene-voice-heading h1{margin:0;overflow-wrap:anywhere}
+.scene-story-return{max-width:640px;margin:1.5rem auto 2rem;padding-top:.75rem;border-top:1px solid #42615f}
+.scene-story-return button{width:100%;text-align:left;white-space:normal;overflow-wrap:anywhere}
+.scene-source-reading{border-top:2px solid var(--gold);border-bottom:1px solid #69837a;background:linear-gradient(110deg,#273f3b,#18383e);padding:.75rem;margin:0 0 1.25rem;min-width:0}
+.scene-source-reading .scene-source-return-action>.secondary{margin:0;background:#102a30;text-align:left;color:#ead7a6;border-color:#a68c50;min-height:48px;white-space:normal;overflow-wrap:anywhere}
+.scene-source-reading .scene-source-origin{color:#e0c181;font-size:.875rem;line-height:1.7;margin:.75rem 0 .4rem;overflow-wrap:anywhere}
+.scene-source-reading .scene-source-record{color:#e3e7d8;font-size:.875rem;line-height:1.75;margin:.4rem 0;overflow-wrap:anywhere}
+.scene-source-reading>small{display:block;color:#b6c7b9;font-size:.8125rem;line-height:1.7;overflow-wrap:anywhere}
+@media(max-width:380px){.scene-source-reading{padding:.625rem}.scene-source-reading .scene-source-return-action>.secondary{padding:10px}.scene-voice-heading .eyebrow{letter-spacing:.035em}}

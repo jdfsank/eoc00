@@ -1,0 +1,1541 @@
+{
+  "scope": "Natural current engine witnesses through real file import; native Chromium viewport/element PNGs and 100/200% text. Explicit keyboard focus after Tab is not a full sequential tab-order or screen-reader audit.",
+  "checks": [
+    {
+      "name": "d4-320-100 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "d4-320-100 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "d4-320-100 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-320-100 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 25.46875,
+        "voiceBottom": 47.5625,
+        "titleTop": 57.953125,
+        "viewport": 568,
+        "focused": true
+      }
+    },
+    {
+      "name": "d4-320-100 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 320,
+        "scroll": 320,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "d4-320-100 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-320-100 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-320-100 one story exit",
+      "passed": true
+    },
+    {
+      "name": "d4-320-100 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-320-100 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 25.09375,
+        "voiceBottom": 47.1875,
+        "titleTop": 57.578125,
+        "viewport": 568,
+        "focused": true
+      }
+    },
+    {
+      "name": "relationship-320-100 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 320,
+        "scroll": 320,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-320-100 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 one story exit",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 source keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 source has explicit return",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 source native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 320,
+        "scroll": 320,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-320-100 source return fully visible and actionable",
+      "passed": true,
+      "detail": {
+        "top": 166.875,
+        "bottom": 214.875,
+        "height": 48,
+        "viewport": 568,
+        "hit": true
+      }
+    },
+    {
+      "name": "relationship-320-100 source complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 source autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 return keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 return restores source focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 returned complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-100 returned autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-390-100 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "d4-390-100 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "d4-390-100 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-390-100 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 25.171875,
+        "voiceBottom": 47.265625,
+        "titleTop": 57.65625,
+        "viewport": 844,
+        "focused": true
+      }
+    },
+    {
+      "name": "d4-390-100 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 390,
+        "scroll": 390,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "d4-390-100 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-390-100 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-390-100 one story exit",
+      "passed": true
+    },
+    {
+      "name": "d4-390-100 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-390-100 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 24.796875,
+        "voiceBottom": 46.890625,
+        "titleTop": 57.28125,
+        "viewport": 844,
+        "focused": true
+      }
+    },
+    {
+      "name": "relationship-390-100 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 390,
+        "scroll": 390,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-390-100 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 one story exit",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 source keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 source has explicit return",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 source native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 390,
+        "scroll": 390,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-390-100 source return fully visible and actionable",
+      "passed": true,
+      "detail": {
+        "top": 169.578125,
+        "bottom": 217.578125,
+        "height": 48,
+        "viewport": 844,
+        "hit": true
+      }
+    },
+    {
+      "name": "relationship-390-100 source complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 source autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 return keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 return restores source focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 returned complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-100 returned autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-430-100 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "d4-430-100 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "d4-430-100 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-430-100 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 25.171875,
+        "voiceBottom": 47.265625,
+        "titleTop": 57.65625,
+        "viewport": 932,
+        "focused": true
+      }
+    },
+    {
+      "name": "d4-430-100 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 430,
+        "scroll": 430,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "d4-430-100 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-430-100 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-430-100 one story exit",
+      "passed": true
+    },
+    {
+      "name": "d4-430-100 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-430-100 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 24.796875,
+        "voiceBottom": 46.890625,
+        "titleTop": 57.28125,
+        "viewport": 932,
+        "focused": true
+      }
+    },
+    {
+      "name": "relationship-430-100 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 430,
+        "scroll": 430,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-430-100 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 one story exit",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 source keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 source has explicit return",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 source native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 430,
+        "scroll": 430,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-430-100 source return fully visible and actionable",
+      "passed": true,
+      "detail": {
+        "top": 169.578125,
+        "bottom": 217.578125,
+        "height": 48,
+        "viewport": 932,
+        "hit": true
+      }
+    },
+    {
+      "name": "relationship-430-100 source complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 source autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 return keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 return restores source focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 returned complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-430-100 returned autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-1280-100 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "d4-1280-100 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "d4-1280-100 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-1280-100 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 24.984375,
+        "voiceBottom": 47.078125,
+        "titleTop": 57.46875,
+        "viewport": 900,
+        "focused": true
+      }
+    },
+    {
+      "name": "d4-1280-100 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 1280,
+        "scroll": 1280,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "d4-1280-100 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-1280-100 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-1280-100 one story exit",
+      "passed": true
+    },
+    {
+      "name": "d4-1280-100 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-1280-100 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 24.796875,
+        "voiceBottom": 46.890625,
+        "titleTop": 57.28125,
+        "viewport": 900,
+        "focused": true
+      }
+    },
+    {
+      "name": "relationship-1280-100 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 1280,
+        "scroll": 1280,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-1280-100 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 one story exit",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 source keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 source has explicit return",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 source native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "16px",
+        "width": 1280,
+        "scroll": 1280,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-1280-100 source return fully visible and actionable",
+      "passed": true,
+      "detail": {
+        "top": 214.59375,
+        "bottom": 262.59375,
+        "height": 48,
+        "viewport": 900,
+        "hit": true
+      }
+    },
+    {
+      "name": "relationship-1280-100 source complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 source autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 return keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 return restores source focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 returned complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-1280-100 returned autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-320-200 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "d4-320-200 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "d4-320-200 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-320-200 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 48.671875,
+        "voiceBottom": 137.046875,
+        "titleTop": 157.84375,
+        "viewport": 568,
+        "focused": true
+      }
+    },
+    {
+      "name": "d4-320-200 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "32px",
+        "width": 320,
+        "scroll": 320,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "d4-320-200 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-320-200 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-320-200 one story exit",
+      "passed": true
+    },
+    {
+      "name": "d4-320-200 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-320-200 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 48.890625,
+        "voiceBottom": 93.078125,
+        "titleTop": 113.875,
+        "viewport": 568,
+        "focused": true
+      }
+    },
+    {
+      "name": "relationship-320-200 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "32px",
+        "width": 320,
+        "scroll": 320,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-320-200 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 one story exit",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 source keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 source has explicit return",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 source native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "32px",
+        "width": 320,
+        "scroll": 320,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-320-200 source return fully visible and actionable",
+      "passed": true,
+      "detail": {
+        "top": 422.515625,
+        "bottom": 540.515625,
+        "height": 118,
+        "viewport": 568,
+        "hit": true
+      }
+    },
+    {
+      "name": "relationship-320-200 source complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 source autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 return keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 return restores source focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 returned complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-320-200 returned autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-390-200 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "d4-390-200 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "d4-390-200 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-390-200 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 48.90625,
+        "voiceBottom": 93.09375,
+        "titleTop": 113.890625,
+        "viewport": 844,
+        "focused": true
+      }
+    },
+    {
+      "name": "d4-390-200 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "32px",
+        "width": 390,
+        "scroll": 390,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "d4-390-200 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-390-200 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "d4-390-200 one story exit",
+      "passed": true
+    },
+    {
+      "name": "d4-390-200 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "d4-390-200 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 complete original body and title",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 exact original voice",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 read story keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 return includes voice before focused title",
+      "passed": true,
+      "detail": {
+        "voiceTop": 49.125,
+        "voiceBottom": 93.3125,
+        "titleTop": 114.109375,
+        "viewport": 844,
+        "focused": true
+      }
+    },
+    {
+      "name": "relationship-390-200 native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "32px",
+        "width": 390,
+        "scroll": 390,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-390-200 story complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 story autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 one story exit",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 story exit keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 story exit reaches choices",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 source keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 source has explicit return",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 source native text without overflow or clipped prose",
+      "passed": true,
+      "detail": {
+        "root": "32px",
+        "width": 390,
+        "scroll": 390,
+        "clipped": 0
+      }
+    },
+    {
+      "name": "relationship-390-200 source return fully visible and actionable",
+      "passed": true,
+      "detail": {
+        "top": 356.921875,
+        "bottom": 474.921875,
+        "height": 118,
+        "viewport": 844,
+        "hit": true
+      }
+    },
+    {
+      "name": "relationship-390-200 source complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 source autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 return keyboard visible focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 return restores source focus",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 returned complete world unchanged",
+      "passed": true
+    },
+    {
+      "name": "relationship-390-200 returned autosave unchanged",
+      "passed": true
+    },
+    {
+      "name": "no browser network or HMR errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "production src frozen",
+      "passed": true
+    }
+  ],
+  "metrics": [
+    {
+      "label": "d4-320-100",
+      "voiceTop": 25.46875,
+      "voiceBottom": 47.5625,
+      "titleTop": 57.953125,
+      "viewport": 568,
+      "focused": true
+    },
+    {
+      "name": "d4-320-100",
+      "root": "16px",
+      "width": 320,
+      "scroll": 320,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-320-100",
+      "voiceTop": 25.09375,
+      "voiceBottom": 47.1875,
+      "titleTop": 57.578125,
+      "viewport": 568,
+      "focused": true
+    },
+    {
+      "name": "relationship-320-100",
+      "root": "16px",
+      "width": 320,
+      "scroll": 320,
+      "clipped": 0
+    },
+    {
+      "name": "relationship-320-100 source",
+      "root": "16px",
+      "width": 320,
+      "scroll": 320,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-320-100 source return",
+      "top": 166.875,
+      "bottom": 214.875,
+      "height": 48,
+      "viewport": 568,
+      "hit": true
+    },
+    {
+      "label": "d4-390-100",
+      "voiceTop": 25.171875,
+      "voiceBottom": 47.265625,
+      "titleTop": 57.65625,
+      "viewport": 844,
+      "focused": true
+    },
+    {
+      "name": "d4-390-100",
+      "root": "16px",
+      "width": 390,
+      "scroll": 390,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-390-100",
+      "voiceTop": 24.796875,
+      "voiceBottom": 46.890625,
+      "titleTop": 57.28125,
+      "viewport": 844,
+      "focused": true
+    },
+    {
+      "name": "relationship-390-100",
+      "root": "16px",
+      "width": 390,
+      "scroll": 390,
+      "clipped": 0
+    },
+    {
+      "name": "relationship-390-100 source",
+      "root": "16px",
+      "width": 390,
+      "scroll": 390,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-390-100 source return",
+      "top": 169.578125,
+      "bottom": 217.578125,
+      "height": 48,
+      "viewport": 844,
+      "hit": true
+    },
+    {
+      "label": "d4-430-100",
+      "voiceTop": 25.171875,
+      "voiceBottom": 47.265625,
+      "titleTop": 57.65625,
+      "viewport": 932,
+      "focused": true
+    },
+    {
+      "name": "d4-430-100",
+      "root": "16px",
+      "width": 430,
+      "scroll": 430,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-430-100",
+      "voiceTop": 24.796875,
+      "voiceBottom": 46.890625,
+      "titleTop": 57.28125,
+      "viewport": 932,
+      "focused": true
+    },
+    {
+      "name": "relationship-430-100",
+      "root": "16px",
+      "width": 430,
+      "scroll": 430,
+      "clipped": 0
+    },
+    {
+      "name": "relationship-430-100 source",
+      "root": "16px",
+      "width": 430,
+      "scroll": 430,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-430-100 source return",
+      "top": 169.578125,
+      "bottom": 217.578125,
+      "height": 48,
+      "viewport": 932,
+      "hit": true
+    },
+    {
+      "label": "d4-1280-100",
+      "voiceTop": 24.984375,
+      "voiceBottom": 47.078125,
+      "titleTop": 57.46875,
+      "viewport": 900,
+      "focused": true
+    },
+    {
+      "name": "d4-1280-100",
+      "root": "16px",
+      "width": 1280,
+      "scroll": 1280,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-1280-100",
+      "voiceTop": 24.796875,
+      "voiceBottom": 46.890625,
+      "titleTop": 57.28125,
+      "viewport": 900,
+      "focused": true
+    },
+    {
+      "name": "relationship-1280-100",
+      "root": "16px",
+      "width": 1280,
+      "scroll": 1280,
+      "clipped": 0
+    },
+    {
+      "name": "relationship-1280-100 source",
+      "root": "16px",
+      "width": 1280,
+      "scroll": 1280,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-1280-100 source return",
+      "top": 214.59375,
+      "bottom": 262.59375,
+      "height": 48,
+      "viewport": 900,
+      "hit": true
+    },
+    {
+      "label": "d4-320-200",
+      "voiceTop": 48.671875,
+      "voiceBottom": 137.046875,
+      "titleTop": 157.84375,
+      "viewport": 568,
+      "focused": true
+    },
+    {
+      "name": "d4-320-200",
+      "root": "32px",
+      "width": 320,
+      "scroll": 320,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-320-200",
+      "voiceTop": 48.890625,
+      "voiceBottom": 93.078125,
+      "titleTop": 113.875,
+      "viewport": 568,
+      "focused": true
+    },
+    {
+      "name": "relationship-320-200",
+      "root": "32px",
+      "width": 320,
+      "scroll": 320,
+      "clipped": 0
+    },
+    {
+      "name": "relationship-320-200 source",
+      "root": "32px",
+      "width": 320,
+      "scroll": 320,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-320-200 source return",
+      "top": 422.515625,
+      "bottom": 540.515625,
+      "height": 118,
+      "viewport": 568,
+      "hit": true
+    },
+    {
+      "label": "d4-390-200",
+      "voiceTop": 48.90625,
+      "voiceBottom": 93.09375,
+      "titleTop": 113.890625,
+      "viewport": 844,
+      "focused": true
+    },
+    {
+      "name": "d4-390-200",
+      "root": "32px",
+      "width": 390,
+      "scroll": 390,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-390-200",
+      "voiceTop": 49.125,
+      "voiceBottom": 93.3125,
+      "titleTop": 114.109375,
+      "viewport": 844,
+      "focused": true
+    },
+    {
+      "name": "relationship-390-200",
+      "root": "32px",
+      "width": 390,
+      "scroll": 390,
+      "clipped": 0
+    },
+    {
+      "name": "relationship-390-200 source",
+      "root": "32px",
+      "width": 390,
+      "scroll": 390,
+      "clipped": 0
+    },
+    {
+      "label": "relationship-390-200 source return",
+      "top": 356.921875,
+      "bottom": 474.921875,
+      "height": 118,
+      "viewport": 844,
+      "hit": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-320-100-voice.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "950575f57e139d59b5ec79ef729dae51f8c147e5b55e710154fc1cf3faaed3ea"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-320-100-heading.png",
+      "kind": "original element",
+      "width": 288,
+      "height": 101,
+      "sha256": "6a85e8a3f5e3e42276e94f09bdd4cd87d151129af6c6a88ac378b14884f5355d"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-100-voice.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "499f21bb079ddb6f7e13e44078ec5fc3960f71f00fd1c6e7fcc422028d08a4d7"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-100-heading.png",
+      "kind": "original element",
+      "width": 288,
+      "height": 139,
+      "sha256": "e87d50ea5d57c72fa223a8d17f235695208ae82e076e70e1ce66be008d12e7c8"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-100-source.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "24c4abc8e74a02b85f5b9b593dd669f728877a76118fb60d03fcd11fb18821f0"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-100-source-card.png",
+      "kind": "original element",
+      "width": 288,
+      "height": 214,
+      "sha256": "6a333caa8d66b239094f23eb2f7566cf5711f8765a0d81927d94a2b5d3a400d5"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-100-returned.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "74c9b96754f8a865af337b1d8a9c38326d142f0671e6850f7cd0654d7adf9926"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-390-100-voice.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "f08ad492b1841190f10330c16ec3178be19af7efa6770fe51a8b67037df2822b"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-390-100-heading.png",
+      "kind": "original element",
+      "width": 358,
+      "height": 101,
+      "sha256": "907b6c1157cf9a30b5ee57f4b8c5eb9c5b84535c79c58a20df9031ae6c53c309"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-100-voice.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "47a37d10e9ed3f61747ba981b99b449cced9c634e921229119d5f22cbd63c748"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-100-heading.png",
+      "kind": "original element",
+      "width": 358,
+      "height": 139,
+      "sha256": "05e5f84785a4567d2334af16b3e2fcb200b083aba3a8e1d56d3de61b5a97ad86"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-100-source.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "3c55d23cbe52e35a9f52403f0633e514fbda1d5210d3c0667e3ae60d50a731c5"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-100-source-card.png",
+      "kind": "original element",
+      "width": 358,
+      "height": 218,
+      "sha256": "84822c2b9c1b36090001b09f7d3bbe808ac6164873a8feb5484625fbcf12610c"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-100-returned.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "07f93235788effe5cc5fe94babe9e85a6d695b53a12e2f75f3fe33a1be7c7b0d"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-430-100-voice.png",
+      "kind": "original viewport",
+      "width": 430,
+      "height": 932,
+      "sha256": "698145e5f54307da866fc83c5710d5d45290780b1e444c8698e470efb2e2c525"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-430-100-heading.png",
+      "kind": "original element",
+      "width": 398,
+      "height": 101,
+      "sha256": "3e206610b7fa4cdc28f28daa97df952118c978880359e506570c3a0c1fab3d4b"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-430-100-voice.png",
+      "kind": "original viewport",
+      "width": 430,
+      "height": 932,
+      "sha256": "a15bf55dba9ab5f30660f978ae44ae4cda4df72afff8e6c3a60d800a02ba58f2"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-430-100-heading.png",
+      "kind": "original element",
+      "width": 398,
+      "height": 139,
+      "sha256": "42194afe403ad744fd65e82ac6fd92052fdd7517073541a391ad5025ac5c2088"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-430-100-source.png",
+      "kind": "original viewport",
+      "width": 430,
+      "height": 932,
+      "sha256": "95323010ca6ea14d8d5561428a58568c1644329264f1f9601f5afbd4c5e6dbac"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-430-100-source-card.png",
+      "kind": "original element",
+      "width": 398,
+      "height": 193,
+      "sha256": "edca24d541ed1322bca52f014445c5ca60f9e6f499879d60b3dd7427392708ea"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-430-100-returned.png",
+      "kind": "original viewport",
+      "width": 430,
+      "height": 932,
+      "sha256": "8fb80d7e21ae0d109c8e1fe48f9770e7b089283b1658a570b7aa08c8cae3bbbf"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-1280-100-voice.png",
+      "kind": "original viewport",
+      "width": 1280,
+      "height": 900,
+      "sha256": "fa1400f615e4e0e1d9c791b55cb507064177b66d62139a3059f8d8fc5952d253"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-1280-100-heading.png",
+      "kind": "original element",
+      "width": 640,
+      "height": 116,
+      "sha256": "0fbf275124ac834345365d41b4536b72c5105a70f61da5341bccb837d3e9d259"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-1280-100-voice.png",
+      "kind": "original viewport",
+      "width": 1280,
+      "height": 900,
+      "sha256": "4aa8f93f6d5873a6c4242bc43a3ba6435bc8214cd57f07859cbf84e31244266b"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-1280-100-heading.png",
+      "kind": "original element",
+      "width": 640,
+      "height": 116,
+      "sha256": "868bba619b4c59f5b9aae2871e4d4e0218d32f6e93a07c8b14a55fe383074b87"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-1280-100-source.png",
+      "kind": "original viewport",
+      "width": 1280,
+      "height": 900,
+      "sha256": "48b5f806c6c2a8f3040064181613292a392b6676a058cd204d7b8d2ca3c323e4"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-1280-100-source-card.png",
+      "kind": "original element",
+      "width": 600,
+      "height": 171,
+      "sha256": "234d347a32705bd7d4b7e8ae3dd38c01c9183203628e8c0bfe833154260ef3fc"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-1280-100-returned.png",
+      "kind": "original viewport",
+      "width": 1280,
+      "height": 900,
+      "sha256": "e738c553a64836e372a4fd78595984ca1fcbffb4559503e3022d481b0436458c"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-320-200-voice.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "8069a7776afa1e8bb95d76f486109992a878a11d57ba7c5d19bddba79dc82014"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-320-200-heading.png",
+      "kind": "original element",
+      "width": 288,
+      "height": 320,
+      "sha256": "0b510928c24a0a2dbb4bbd1915c5053e8d0555266c30f5412b4c44d7e40fc9cb"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-200-voice.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "8b24f43155923b6e55791f9396639004e50eb70154a87bc4533df4fa194a43a7"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-200-heading.png",
+      "kind": "original element",
+      "width": 288,
+      "height": 351,
+      "sha256": "3c33016d0dc00ddd636df4f3574c2856e343f36ee67a69fa7eaf73117a390ec0"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-200-source.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "a1ef2e07f3d7f5db6a1e4f33ab7ab4be1594f83f95a87472ec99b0f50e864624"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-200-source-card.png",
+      "kind": "original element",
+      "width": 288,
+      "height": 680,
+      "sha256": "21910f38df90a60c955affff5116a4b29d7d23085c4709c2de265e507a3f3089"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-320-200-returned.png",
+      "kind": "original viewport",
+      "width": 320,
+      "height": 568,
+      "sha256": "83846e6f532fb80f48e34925aca5010c1f6148048f5f4c4883709d61daedc791"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-390-200-voice.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "467c6d0604cece716ba1643addccfc026e6d7bcb8fb8d8eab9a3983925dc03ef"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/d4-390-200-heading.png",
+      "kind": "original element",
+      "width": 358,
+      "height": 276,
+      "sha256": "d45738ac6cc9c6f1bd4789d9357c18ae3bc8bedc2b6899f98f80e170642fde0a"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-200-voice.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "66c10d77b4c8ccfae66cc917448e85907cbbd59d8bb500b6844d90a8c10704a7"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-200-heading.png",
+      "kind": "original element",
+      "width": 358,
+      "height": 350,
+      "sha256": "7b0eef970b9f16388046a05cf5933fca494f6b9aaf33a0433a76949c947b423d"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-200-source.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "2930f5fbe40ac6f547fff8877b2d464bdc821eb3ba76667281e2e72349182a6b"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-200-source-card.png",
+      "kind": "original element",
+      "width": 358,
+      "height": 595,
+      "sha256": "3150bcb995772c43cc539f1aa76438a58654f5300fcd63e5cea27333fe6258f5"
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round31-visual-audit/frozen-candidate/relationship-390-200-returned.png",
+      "kind": "original viewport",
+      "width": 390,
+      "height": 844,
+      "sha256": "9516711dae1d5b9f2797fed11213330a8eb2ac0d852f727091574dfaf9cd6c0e"
+    }
+  ],
+  "errors": [],
+  "sourceBefore": "a9758d39de50d43e3921ca70eaebe8a8cea380506a03eb42e44317cbd096381c",
+  "sourceAfter": "a9758d39de50d43e3921ca70eaebe8a8cea380506a03eb42e44317cbd096381c",
+  "exitCode": 0,
+  "reviewedAt": "2026-11-07T05:47:55.221529+00:00"
+}
