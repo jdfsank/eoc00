@@ -417,3 +417,22 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .draft-comparison-boundary{margin:0;padding:1rem;border-top:3px double #71877a}
 @media(max-width:600px){.draft-comparison-choices,.draft-comparison-pair{grid-template-columns:minmax(0,1fr);gap:.5rem}}
 @media(max-width:350px){.draft-choice-comparison>summary,.draft-comparison-intro,.draft-comparison-row,.draft-comparison-boundary{padding:.75rem}.draft-comparison-choices{margin:0 .75rem .75rem}.draft-comparison-choices>div,.draft-comparison-pair>div{padding:.5rem}}
+
+/* Round 34: a paper-tab index gives costs, upside, risk and responsibility
+   equal routes into the same full ledger, without a second action surface. */
+.draft-comparison-index{padding:1rem;border-bottom:3px double var(--line)}
+.draft-comparison-index h2{font-size:1rem;line-height:1.6;font-weight:500;color:var(--paper);margin:0 0 .65rem}
+.draft-comparison-index h2 span{display:block;color:var(--muted);font-size:.8125rem}
+.draft-comparison-tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(4.5rem,1fr));gap:.45rem}
+.draft-comparison-tabs a{display:flex;align-items:center;justify-content:center;gap:.35rem;border:1px solid var(--line);border-top:3px double var(--gold);min-height:48px;padding:.5rem .25rem;background:#213b39;color:var(--paper);font-size:1rem;line-height:1.5;text-decoration:none}
+.draft-comparison-tabs a span{font: .625rem Georgia,serif;color:var(--gold)}
+.draft-comparison-row-return{display:flex;justify-content:flex-end;margin-top:.65rem}
+.draft-comparison-row-return a,.draft-comparison-close a{display:block;min-height:48px;padding:.5rem .25rem;font-size:.9375rem;line-height:1.6;color:var(--gold);text-underline-offset:.2em}
+.draft-comparison-close{padding:0 1rem 1rem}
+.draft-comparison-close a{text-align:center;border:1px solid var(--line);padding:.65rem}
+.draft-choice-comparison :is(a,h2,h3,summary):focus{outline:3px solid var(--gold);outline-offset:3px}
+.draft-choice-comparison :is(a,h2,h3,summary){scroll-margin-block:12px}
+@media(max-width:350px){.draft-comparison-index{padding:.75rem}.draft-comparison-close{padding:0 .75rem .75rem}}
+
+.large-text .draft-comparison-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+.large-text .draft-comparison-tabs a span{display:none}

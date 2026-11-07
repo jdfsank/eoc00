@@ -1,3 +1,4 @@
+import {observeReloadEvents,reloadWithDiagnostic} from './helpers/reload-diagnostic.mjs';
 import {readDecisionDetails} from './helpers/decision-reading.mjs';
 import {chromium} from 'playwright';
 import cb from '@sparticuz/chromium';
@@ -19,10 +20,10 @@ for(const i of closed.institutions.filter(i=>i.cellId==='D5'))i.active=false;
 const late=structuredClone(closed);lock(late,'protagonist','D5','mutual_aid');decade(late);
 const cases={before,y22,y23,loss,zero,legacy,missing,partial,closed,'aid-only':localAt30({teaching:false}),'teaching-only':localAt30({aid:false}),empty:localAt30({teaching:false,aid:false}),late};
 for(const [name,s]of Object.entries(cases))assert.equal(validateState(s).valid,true,name);
-const server=await createServer({server:{host:'127.0.0.1',port:4205,strictPort:true}});await server.listen();let browser,page;
+const server=await createServer({server:{host:'127.0.0.1',port:4205,strictPort:true}});await server.listen();let browser,page,reloadObserver;
 const click=async (a,openHistory=true)=>{await page.locator(`[data-action="${a}"]`).first().click();await readDecisionDetails(page);if(a==='avg'&&openHistory){const past=page.locator('details.planning-history');if(await past.count()&&!await past.evaluate(el=>el.open))await past.locator(':scope > summary').click();}};
 const panel=(cell='D5')=>page.locator(`.local-crisis-history[data-crisis-cell="${cell}"]`);
-async function show(state,bigText=false,cell='D5'){await page.evaluate(({state,bigText,cell})=>sessionStorage.setItem('afterwave.tally.fixture',JSON.stringify({state,ui:{screen:'world',selected:cell,actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText,cell});await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(130);}
+async function show(state,bigText=false,cell='D5'){await page.evaluate(({state,bigText,cell})=>sessionStorage.setItem('afterwave.tally.fixture',JSON.stringify({state,ui:{screen:'world',selected:cell,actor:'protagonist',channel:'science',focus:true,bigText}})),{state,bigText,cell});await reloadWithDiagnostic(page,async()=>{await page.reload();await page.locator('canvas').waitFor();await page.waitForTimeout(130);},report.reloadDiagnostics.operations,{label:Object.entries(cases).find(([,fixture])=>fixture===state)?.[0]??'additional fixture',context:{width:page.viewportSize()?.width,year:state.year,phase:state.phase,bigText,cell,lastCheck:report.checks.at(-1)?.name}});}
 async function snap(name,selector='.local-crisis-history',mono=false){const target=page.locator(selector);if(selector==='.scene-art img'){
  await target.evaluate(img=>img.decode());await page.evaluate(()=>document.fonts.ready);await page.evaluate(()=>scrollTo(0,0));
  await page.waitForFunction(()=>{const img=document.querySelector('.scene-art img'),r=img?.getBoundingClientRect();return scrollY===0&&img?.complete&&img.naturalWidth>0&&r&&r.top>=0&&r.bottom<=innerHeight;});
@@ -32,7 +33,7 @@ async function snap(name,selector='.local-crisis-history',mono=false){const targ
 if(mono)await target.evaluate(el=>el.style.filter='grayscale(1)');const data=await target.screenshot({path:`${out}/round10-d5-${name}${mono?'-mono':''}.png`});if(mono)await target.evaluate(el=>el.style.filter='');return data.toString('base64');}
 async function source(record){await panel().locator('[data-action="trace"]').click();await page.locator('.crisis-history').waitFor();check(`${record.status} source link opens the real year23 record`,await page.evaluate(()=>window.afterwave.ui.traceId)==='crisis-impact'&&(await page.locator('.crisis-recorded-impact').innerText()).includes('第23年'));}
 try{
- browser=await chromium.launch({executablePath:await cb.executablePath(),args:[...cb.args,'--disable-gpu-rasterization'],headless:true});page=await browser.newPage({viewport:{width:390,height:844}});page.on('pageerror',e=>report.errors.push(e.message));page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
+ browser=await chromium.launch({executablePath:await cb.executablePath(),args:[...cb.args,'--disable-gpu-rasterization'],headless:true});page=await browser.newPage({viewport:{width:390,height:844}});reloadObserver=observeReloadEvents(page);report.reloadDiagnostics=reloadObserver.diagnostics;page.on('pageerror',e=>report.errors.push(e.message));page.on('response',r=>{if(r.url().includes('/assets/')&&r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
  // Optional network latency uses the real asset requests, without changing
  // focus, scrolling, layout, or any assertion to accommodate the delay.
  const assetDelay=Number(process.env.AFTERWAVE_TALLY_ASSET_DELAY_MS??0);
@@ -151,4 +152,4 @@ try{
  await show(loss,false,'B4');check('Unrelated B4 has no shared-crisis local marker',!await page.locator('.local-crisis-history').count());if(await page.locator('[data-action="avg"]').count()){await click('avg');check('Unrelated B4 visit does not borrow another region tally',!await page.locator('.local-crisis-history').count());await click('home');}else check('No B4 visit is fabricated when no local contract is available',getActions(loss,'B4','protagonist').length===0);await click('cell-history');check('Unrelated B4 archive does not invent the shared source association',!await page.locator('.history-list [data-action="trace"][data-id="crisis-impact"]').count());
  check('No runtime or asset errors',report.errors.length===0);
 }catch(error){report.failure={message:error.message,stack:error.stack};process.exitCode=1;if(page)await page.screenshot({path:`${out}/round10-d5-failure.png`,fullPage:true}).catch(()=>{});}
-finally{await fs.writeFile(`${out}/round10-local-crisis-visual-results.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(browser)await browser.close();await server.close();}
+finally{reloadObserver?.dispose();await fs.writeFile(`${out}/round10-local-crisis-visual-results.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(browser)await browser.close();await server.close();}

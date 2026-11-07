@@ -1,0 +1,45 @@
+{
+  "scope": "Five selected original screenshots actually reviewed. No cropping, resizing or pixel edits. Reading index visibility refers to its focused return position, not every initial entry state. Long risk/responsibility text still scrolls.",
+  "images": [
+    {
+      "path": "screenshots/round34-comparison-reading/320-200-index.png",
+      "width": 320,
+      "height": 568,
+      "sha256": "f27459677b5a82e7be7bd32d8b8d8e32af4be0a7a46aad83bda51cb0ac8b1282",
+      "type": "original viewport PNG",
+      "actuallyViewed": true
+    },
+    {
+      "path": "screenshots/round34-comparison-reading/320-200-risk.png",
+      "width": 320,
+      "height": 568,
+      "sha256": "a5ada61f38bfee04424f2d5c556f475d36b16417deae7f7140cf7efe822a3286",
+      "type": "original viewport PNG",
+      "actuallyViewed": true
+    },
+    {
+      "path": "screenshots/round34-comparison-reading/390-100-risk.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "d46878271b2ab9c7f6f253962fac4fd0d2630b89e894919b341b518e0357770e",
+      "type": "original viewport PNG",
+      "actuallyViewed": true
+    },
+    {
+      "path": "screenshots/round34-comparison-reading/390-100-doubleclick-collapsed.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "0aca7a819fe45fe79a30ee68aec4b018abca29908e4268bc66ef73c637849049",
+      "type": "original viewport PNG",
+      "actuallyViewed": true
+    },
+    {
+      "path": "screenshots/round34-comparison-reading/1280-100-responsibility.png",
+      "width": 1280,
+      "height": 900,
+      "sha256": "e5e5de317cc8240c34016ce10c5ad3eb4a8405279a77a05fce57244c37dfec4f",
+      "type": "original viewport PNG",
+      "actuallyViewed": true
+    }
+  ]
+}

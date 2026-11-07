@@ -1,0 +1,65 @@
+{
+  "candidate": 4,
+  "round": 34,
+  "passed": true,
+  "checks": 1208,
+  "groups": [
+    {
+      "name": "navigation",
+      "passed": true,
+      "checks": 823,
+      "scriptSHA256": "38638e4f6b7570a70f60537e5a8b190850be665cbd06d143f88980ad313fbed2",
+      "reportSHA256": "69684e483a80b960248c3922bf6bd11371c0168a39e531546b392d867ac25f9e",
+      "sourceBefore": "3521e91d067270cbb650d31d226545956eaeb2d7fae669b214392a7fdac40a05",
+      "sourceAfter": "3521e91d067270cbb650d31d226545956eaeb2d7fae669b214392a7fdac40a05",
+      "expectedSourceHash": "3521e91d067270cbb650d31d226545956eaeb2d7fae669b214392a7fdac40a05",
+      "hashScheme": "absolute POSIX src pathname then bytes; recursive directory-local localeCompare order",
+      "sourceFiles": 67,
+      "sourceMatched": true,
+      "afterFreeze": true,
+      "startedAt": "2026-11-07T13:53:03.288Z",
+      "completedAt": "2026-11-07T13:54:03.078Z"
+    },
+    {
+      "name": "compatibility",
+      "passed": true,
+      "checks": 222,
+      "scriptSHA256": "4de877637c516bf03bf239b5d31925095769c7c7282349886ce4f35842842968",
+      "reportSHA256": "ec6f24fd66d2e4adb1618d3e0728329fd33cc4c219cf8668c9fc43293f07f338",
+      "sourceBefore": "6c9d13570817a3f5d70e400d720ede7baa211e59c864c08210bf0c5165633a73",
+      "sourceAfter": "6c9d13570817a3f5d70e400d720ede7baa211e59c864c08210bf0c5165633a73",
+      "expectedSourceHash": "6c9d13570817a3f5d70e400d720ede7baa211e59c864c08210bf0c5165633a73",
+      "hashScheme": "relative POSIX src pathname then bytes; recursive directory-local localeCompare order",
+      "sourceFiles": 67,
+      "sourceMatched": true,
+      "afterFreeze": true,
+      "startedAt": "2026-11-07T13:53:09.478Z",
+      "completedAt": "2026-11-07T13:53:39.707Z"
+    },
+    {
+      "name": "tab",
+      "passed": true,
+      "checks": 163,
+      "scriptSHA256": "756f573e99a56e6a52368b846f557a95039cfec99823b437e2b6b3743ce5c7ad",
+      "reportSHA256": "914735b96dcff034d69336aeb301359946aa6af0aec5e73f35668acb61d09328",
+      "sourceBefore": "3521e91d067270cbb650d31d226545956eaeb2d7fae669b214392a7fdac40a05",
+      "sourceAfter": "3521e91d067270cbb650d31d226545956eaeb2d7fae669b214392a7fdac40a05",
+      "expectedSourceHash": "3521e91d067270cbb650d31d226545956eaeb2d7fae669b214392a7fdac40a05",
+      "hashScheme": "absolute POSIX src pathname then bytes; recursive directory-local localeCompare order",
+      "sourceFiles": 67,
+      "sourceMatched": true,
+      "afterFreeze": true,
+      "startedAt": "2026-11-07T13:54:58.838Z",
+      "completedAt": "2026-11-07T13:55:06.485Z"
+    }
+  ],
+  "originalPNGsVerified": 42,
+  "repeatSequences": 54,
+  "scope": "Six-size reading index, real keyboard Tab/Shift+Tab/Enter, pointer doubleclick and independent touch doubletaps, exact current/legacy world and autosave, frozen evidence, cross-location, explicit pass and stale-route boundaries.",
+  "qualification": "Independent touch gestures are separated by700ms and assert first native click detail1; immediate second tap remains tested. An earlier detail2/3 continuation after scripted scrolling is retained as a failed excluded cross-gesture sequence, not evidence that every continuous tap pattern passes.",
+  "limits": [
+    "Automated Chromium, not human balance/physical-device/screen-reader certification",
+    "Full comparison terms remain long; only the focused reading index is claimed to expose all five large-text destinations together",
+    "Independent QA does not replace final aggregate or remote CI"
+  ]
+}

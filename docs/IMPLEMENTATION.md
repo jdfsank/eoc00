@@ -200,3 +200,9 @@ Phaser 3负责地图和相机，DOM负责中文阅读与操作。`simulation.js`
 ## 第三十三轮：原安排与备选逐项对照
 
 新增只读 `draft-choice-comparison.js` 和展示器。原合同显式读取草稿证据，备选读取当前公开预览，返回深拷贝且不触发调查、锁定或随机。UI复用完整合同的格式函数，在真实重选的预览/确认页提供默认关闭的成对账页；同合同补证、明确放弃和跨地点分别说明。旧模拟、存档、原故事、资源及既有测试不变。详见[三方面评估](ROUND33_PLAYABILITY_REVIEW.md)与[阅读说明](ROUND33_DRAFT_COMPARISON.md)。
+
+## 第34轮：账页定位与重载观测
+
+新增 `draft-comparison-navigation.js` 只在已展开的当前账页内聚焦固定标题或原生summary，不调用模拟、存档或导航历史。main复用既有重复指针保护；底部收起不等于锁定或提交。原案与备选的读源、原合同五组文字及后续取证边界都不变。
+
+CI第20套仅新增事件记录与失败后的600ms有界DOM观察；原30秒canvas等待、单次重载、截图和断言保留。模块加载负控复现白页只证明旧诊断不足，不证明远程根因已经定位或修复。见[阅读设计](ROUND34_COMPARISON_READING.md)与[诊断说明](ROUND34_CI_RELOAD_DIAGNOSTICS.md)。

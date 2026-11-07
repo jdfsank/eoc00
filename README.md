@@ -2,6 +2,10 @@
 
 一款面向手机竖屏的原创历史干预策略叙事游戏。进入一个地方，改变一套规则，再面对由此过上不同人生的人。
 
+## 第34轮：直接读到代价与责任
+
+原案/备选账页新增成本、时间、收益、风险、责任五项目录。阅读可原处返回，底部可收起；200%采用两列页签，不缩字、不删合同。候选4/10只更新候选分支，main不变。详见[阅读与三方面改进](docs/ROUND34_COMPARISON_READING.md)、[重载诊断边界](docs/ROUND34_CI_RELOAD_DIAGNOSTICS.md)及[候选比较](docs/CANDIDATE_SERIES.md)。
+
 ## 第33轮：原安排与备选逐项对照
 
 重选时可免费展开「原安排 / 备选」账页，按当地成本、时间概率、目标、风险与责任逐项核对。原案保持锁定证据，后续调查不会静默改写；默认折叠减轻大字阅读负担。候选3/10只更新候选分支，main不变。详见[三方面评估](docs/ROUND33_PLAYABILITY_REVIEW.md)、[阅读与视觉](docs/ROUND33_DRAFT_COMPARISON.md)及[候选比较](docs/CANDIDATE_SERIES.md)。
