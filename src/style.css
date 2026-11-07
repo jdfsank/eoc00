@@ -327,3 +327,21 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 @media(min-width:900px){.review-account-pages{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}}
 .large-text .review-account-pages{grid-template-columns:minmax(0,1fr)}
 @media(max-width:350px){.review-account{padding:12px}.review-result-page,.review-settlement-page{padding:10px}.review-account-heading{gap:8px}}
+
+/* Round 29: the original arrival reads like a short commission, not another
+   alert card. It follows the unchanged primary action and retains all rules. */
+.opening-letter{margin:1.1rem 0 .75rem;padding:.15rem 0 .1rem 1rem;border-left:2px solid #bba36c;min-width:0;overflow-wrap:anywhere;background:none}
+.opening-letter .eyebrow,.opening-letter-label{display:block;color:#d2bd82;font-size:.6875rem;letter-spacing:.12em;margin:0 0 .5rem}
+.opening-letter h2{font-family:"Songti SC","Noto Serif CJK SC",Georgia,serif;font-size:1.25rem;line-height:1.5;font-weight:500;color:#eee5cd;margin:0 0 .5rem}
+.opening-letter p{font-family:"Songti SC","Noto Serif CJK SC",Georgia,serif;color:#e0dfcc;font-size:1rem;line-height:1.85;margin:0 0 .5rem}
+.opening-letter .text-button{display:block;padding:.35rem 0;min-height:48px;text-align:left;font-size:.8125rem;line-height:1.6;color:#c7c9ac;white-space:normal;overflow-wrap:anywhere}
+.world-entry .actor-picker>button:only-child{grid-column:1/-1}
+.evidence-bookmark{margin:.75rem 0;padding:.65rem 0 .65rem .8rem;border-left:2px solid #baa46c;min-width:0;overflow-wrap:anywhere;background:none}
+.evidence-bookmark p{margin:0 0 .4rem;font-size:.875rem;line-height:1.65;color:#d4dfcc}
+.evidence-bookmark strong{color:#e9d39b;font-weight:600}
+.evidence-bookmark button{max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:left;min-height:48px;font-size:.875rem;line-height:1.6}
+@media(max-width:350px){.opening-letter{padding-left:.75rem}.evidence-bookmark{padding-left:.65rem}}
+
+.evidence-bookmark-label{display:block;color:#cfba86;font-size:.75rem;line-height:1.6;margin-bottom:.25rem}
+.evidence-bookmark>strong{display:block;font-size:1rem;line-height:1.65;margin-bottom:.25rem}
+.evidence-bookmark>small{display:block;font-size:.75rem;line-height:1.65;color:#b9cbbf;margin-top:.4rem}

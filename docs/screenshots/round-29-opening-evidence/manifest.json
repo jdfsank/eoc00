@@ -1,0 +1,163 @@
+{
+  "sourceHash": "2ab60977c2a506b15bfd240adf5d6f9e28a7c50cf4e20796a9e64708cf972686",
+  "scope": "Actual controls, current natural seed0 fresh starts, genuine legacy producer file imports. Native font200% not browser zoom, physical-device or screen-reader certification. Every image is unmodified native screenshot bytes.",
+  "checks": 194,
+  "screenshots": [
+    {
+      "path": "current-320-100-opening-viewport.png",
+      "kind": "original viewport",
+      "sha256": "12e101d335b357681e109bdd4fb333bda339f9e92966dddf0a312d4badbb1951",
+      "width": 320,
+      "height": 568,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scrollY": 0,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-390-100-opening-viewport.png",
+      "kind": "original viewport",
+      "sha256": "be746c2ac36995fc791502957548bfcb66a7c1282c53b2b057a1d082cd2983df",
+      "width": 390,
+      "height": 844,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 0,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-430-100-opening-viewport.png",
+      "kind": "original viewport",
+      "sha256": "3e188cfce4f0fe1c65592ec7c37344e9414b918dc658d874118d8289f6af3794",
+      "width": 430,
+      "height": 932,
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "scrollY": 0,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-1280-100-opening-viewport.png",
+      "kind": "original viewport",
+      "sha256": "f97d238069112b95cfd6a798bbd7d5e2d94fd1c7e33384c5329f31683f983bcb",
+      "width": 1280,
+      "height": 900,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollY": 0,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-320-200-opening-viewport.png",
+      "kind": "original viewport",
+      "sha256": "995d6a64aab5e55af8460fe58b30f54dd607ebe4e647715cd9d9db42289c5807",
+      "width": 320,
+      "height": 568,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scrollY": 0,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-390-200-opening-viewport.png",
+      "kind": "original viewport",
+      "sha256": "b04151f6b17f24664e47318f52c0022f13a211fbe75a11e059ae65a289c03b4b",
+      "width": 390,
+      "height": 844,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 0,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-320-200-opening-letter.png",
+      "kind": "original element",
+      "sha256": "5f4f8cc02713049b8246eab376c2efd1f6e6946f55845f9035add463bf3ade70",
+      "width": 262,
+      "height": 661,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scrollY": 713,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-320-200-bookmark-viewport.png",
+      "kind": "original viewport",
+      "sha256": "245d116a88f51ca381776a0ec49c7d04f935f93e41df64059a21c3353f26f72f",
+      "width": 320,
+      "height": 568,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scrollY": 7460,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-390-100-bookmark-viewport.png",
+      "kind": "original viewport",
+      "sha256": "bf8ca1ec99fc00108fd803834659dfde0fe76982b40603f652c7dd458d0240a7",
+      "width": 390,
+      "height": 844,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 2568,
+      "pixelReviewed": true
+    },
+    {
+      "path": "current-390-200-bookmark-viewport.png",
+      "kind": "original viewport",
+      "sha256": "28d8f0c0695836ff50da85244dbb63c43a8479c2ddc162c9b8caaf892d142636",
+      "width": 390,
+      "height": 844,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 6575,
+      "pixelReviewed": true
+    },
+    {
+      "path": "legacy-320-200-ready-bookmark.png",
+      "kind": "original element",
+      "sha256": "71564635b5e18566a71cd36f7fe0bb824a80bc8e84d0075ef24c37f479c5c4ac",
+      "width": 254,
+      "height": 507,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scrollY": 6671,
+      "pixelReviewed": true
+    },
+    {
+      "path": "legacy-390-200-ready-bookmark.png",
+      "kind": "original element",
+      "sha256": "709aae906c495d6cab5530583e369e911ec42cfab5df380ead362a61ae416e0e",
+      "width": 324,
+      "height": 466,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 5888,
+      "pixelReviewed": true
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 // Real controls and genuine producer saves; no world injection, CSS zoom,
 // resized screenshots, hidden prose, or invented historical outcomes.
 import {chromium} from 'playwright';
+import {collectActionabilityDiagnostic} from './helpers/actionability-diagnostic.mjs';
 import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
 import fs from 'node:fs/promises';
@@ -37,5 +38,5 @@ try{
  const old=routes(legacy)[20];await page.setViewportSize({width:320,height:568});await importWorld(old,'legacy-per-scene',true);await layout('legacy-per-scene',{primary:true,big:true});check('legacy has no fabricated shared-window investigation claim',!/(?:本窗口共用|换地点不补充)/.test(await page.locator('[data-world-planning-status]').innerText()));await shot('legacy-per-scene-top');await shot('legacy-per-scene-roles','.actor-picker');await exact(old,'legacy reading');
  await click('settings');await page.locator('#seed').fill('0');await click('new-confirm');await click('new-run');s=producer.createRun(0);await exact(s,'new run clears prior world');check('new run has only real protagonist selector',await page.locator('[data-action="actor"]').count()===1);await importWorld(natural30,'final-reimport',false);check('real reimport restores two actors',await page.locator('[data-action="actor"]').count()===2);await exact(natural30,'final import');
  report.sourceAfter=await sourceHash();check('source frozen throughout complete run',report.sourceAfter===report.sourceBefore);check('no runtime asset or HMR errors',report.errors.length===0,report.errors);
-}catch(error){report.failure={message:error.message,stack:error.stack};process.exitCode=1;if(page)await page.screenshot({path:`${out}/failure.png`}).catch(()=>{})}
+}catch(error){report.failure={message:error.message,stack:error.stack};process.exitCode=1;if(page)report.actionabilityDiagnostic=await collectActionabilityDiagnostic(page).catch(error=>({status:'unavailable',reason:error.message}));if(page)await page.screenshot({path:`${out}/failure.png`}).catch(()=>{})}
 finally{report.completedAt=new Date().toISOString();report.sourceAfter=await sourceHash();await fs.writeFile(`${out}/results.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(browser)await browser.close();await server.close()}
