@@ -492,3 +492,24 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 /* Reserve this existing SVG's real ratio before decode, so preview return
    does not temporarily move the reading origin. Loaded artwork is unchanged. */
 .scene-planning-page .scene-art img[data-intrinsic-scene-size]{height:auto}
+
+/* Round 38: the existing free directory becomes a map of contractual roles.
+   Figures and desk rails are supplementary; text names every distinction.
+   Native rem sizing is retained, including the player's large-text mode. */
+.succession-fork-directory .scene-choice-links{gap:10px}
+.succession-choice-link{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;row-gap:9px;padding:12px;background:linear-gradient(110deg,#203f3e,#183638);border-left:3px solid #91b5a4}
+.succession-choice-link>span:first-child{grid-column:1;grid-row:1}
+.succession-choice-link>span[aria-hidden]{grid-column:2;grid-row:1}
+.succession-fork-detail{grid-column:1/-1;display:grid;gap:9px;min-width:0;font-size:.875rem;line-height:1.5}
+.succession-fork-people{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0;padding-top:9px;border-top:1px solid #54766d}
+.succession-fork-person{display:flex;align-items:flex-start;gap:6px;min-width:0}
+.succession-fork-person>svg{flex:0 0 25px;width:25px;height:29px;margin-top:2px;fill:none;stroke:#a9cbbb;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.succession-fork-person>span{display:grid;gap:2px;min-width:0}
+.succession-fork-person b{font-weight:500;color:#a9cbbb;letter-spacing:.08em}
+.succession-fork-person[data-succession-person="local"]{border-left:1px dashed #78988e;padding-left:8px}
+.succession-fork-responsibility{display:grid;gap:2px;padding:7px 0 0;border-top:1px solid #75684d;color:#e4d9bf}
+.succession-fork-responsibility>b{font-size:.8125rem;font-weight:500;color:var(--gold)}
+.succession-choice-link:hover{background:#294a47}
+.large-text .succession-fork-people{grid-template-columns:minmax(0,1fr);gap:10px}
+.large-text .succession-fork-person[data-succession-person="local"]{border-left:0;border-top:1px dashed #78988e;padding:10px 0 0}
+@media(min-width:900px){.succession-fork-directory .scene-choice-links{grid-template-columns:repeat(3,minmax(0,1fr))}.large-text .succession-fork-directory .scene-choice-links{grid-template-columns:minmax(0,1fr)}}

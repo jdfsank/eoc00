@@ -1,3 +1,5 @@
+import {getSuccessionChoiceFork} from './succession-choice-fork.js';
+import {renderSuccessionForkDetail} from './succession-choice-fork-view.js';
 import {getBuildingCardTradeoff} from './building-card-tradeoff.js';
 import {renderChoiceAgency,navigateActorAgency} from './actor-agency-view.js';
 import {renderDecadeRecollection,renderDecadeSettlement} from './decade-recollection-view.js';
@@ -156,7 +158,8 @@ function visit(){
 function sceneChoiceDirectory(available,investigation){
  if(!available.length)return '';
  const budget=Number.isInteger(investigation?.budget)&&investigation.budget>=0&&investigation.budget<=3?`剩余 ${investigation.budget} / 3 调查轮`:'调查余额待核对';
- return `<nav class="scene-choice-directory" data-scene-choice-directory aria-label="定位完整合同"><p class="scene-choice-directory-label">合同目录 · 只读定位</p><p class="scene-choice-directory-meta">${esc(selectedActor().name)} · ${esc(budget)}</p><p class="scene-choice-directory-note">每人每窗口一项。定位不取证、不锁定。</p><div class="scene-choice-links">${available.map(a=>button(`<span>${esc(a.title)}</span><span aria-hidden="true">↓</span>`,'scene-choice',`data-id="${esc(a.id)}" aria-label="免费定位完整合同：${esc(a.title)}"`,'scene-choice-link')).join('')}</div></nav>`;
+ const fork=getSuccessionChoiceFork(state,ui.selected,selectedActor().id);
+ return `<nav class="scene-choice-directory${fork?' succession-fork-directory':''}" data-scene-choice-directory${fork?' data-succession-fork':''} aria-label="定位完整合同"><p class="scene-choice-directory-label">合同目录 · 只读定位</p><p class="scene-choice-directory-meta">${esc(selectedActor().name)} · ${esc(budget)}</p><p class="scene-choice-directory-note">${fork?'每人每窗口一项。下列为若合同兑现的安排，定位不取证、不锁定。':'每人每窗口一项。定位不取证、不锁定。'}</p><div class="scene-choice-links">${available.map(a=>{const detail=renderSuccessionForkDetail(fork?.choices.find(c=>c.actionId===a.id));return button(`<span>${esc(a.title)}</span>${detail}<span aria-hidden="true">↓</span>`,'scene-choice',`data-id="${esc(a.id)}" aria-label="免费定位完整合同：${esc(a.title)}"${detail?` aria-describedby="succession-fork-${esc(a.id)}"`:''}`,'scene-choice-link'+(detail?' succession-choice-link':''));}).join('')}</div></nav>`;
 }
 function successionContextPanel(cellId='D4',actorId='protagonist'){
  const context=getSuccessionSceneContext(state,cellId,actorId);

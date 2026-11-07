@@ -1,0 +1,3134 @@
+{
+  "status": "passed",
+  "scope": "Independent real Chromium UI audit; natural producer saves imported by native file input. No state/DOM injection. No physical-device or screen-reader certification.",
+  "finalRun": {
+    "scope": "Independent real Chromium UI audit; natural producer saves imported by native file input. No state/DOM injection. No physical-device or screen-reader certification.",
+    "checks": [
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "success-390-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "success-390-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "success-390-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-390-100renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-390-100renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-390-100renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "success-390-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "success-390-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "failure-390-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 no invented successor",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100recruit_volunteer year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100recruit_volunteer repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100recruit_volunteer directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100recruit_volunteer original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100recruit_volunteer preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100recruit_volunteer return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "original-390-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "original-390-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "original-390-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-390-100renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-390-100renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "original-390-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "original-390-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "success-320-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "success-320-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "success-320-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-320-100renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-320-100renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-320-100renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "success-320-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "success-320-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "failure-320-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 no invented successor",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100recruit_volunteer year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100recruit_volunteer repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100recruit_volunteer directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100recruit_volunteer original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100recruit_volunteer preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100recruit_volunteer return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "original-320-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "original-320-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "original-320-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-320-100renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-320-100renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "original-320-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "original-320-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "success-390-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "success-390-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "success-390-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-390-200renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-390-200renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-390-200renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-390-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "success-390-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "success-390-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "failure-390-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 no invented successor",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200recruit_volunteer year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200recruit_volunteer repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200recruit_volunteer directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200recruit_volunteer original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200recruit_volunteer preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200recruit_volunteer return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-390-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "original-390-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "original-390-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "original-390-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-390-200renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-390-200renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-390-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "original-390-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "original-390-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-390-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "success-320-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "success-320-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "success-320-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-320-200renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-320-200renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-320-200renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-320-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "success-320-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "success-320-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "failure-320-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 no invented successor",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200recruit_volunteer year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200recruit_volunteer repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200recruit_volunteer directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200recruit_volunteer original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200recruit_volunteer preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200recruit_volunteer return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-320-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "original-320-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "original-320-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "original-320-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-320-200renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-320-200renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-320-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "original-320-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "original-320-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200 fork gate",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-320-200 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "success-1280-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "failure-1280-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 no invented successor",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100recruit_volunteer year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100recruit_volunteer repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100recruit_volunteer directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100recruit_volunteer original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100recruit_volunteer preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100recruit_volunteer return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "no-role-1280-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100renew_charter repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100renew_charter directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100renew_charter original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100renew_charter preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100renew_charter return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "original-1280-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100 fork gate",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100 exact action directory",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100 no overflow, clipping or font shrink",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100 directory reading full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100 explicit conditional scope",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_successor year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_risk year20 deployment",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_successor repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_successor directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_successor original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_successor preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_successor return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_risk repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_risk directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_risk original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_risk preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100recruit_risk return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100restore_archive repeated pointer only focuses contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100restore_archive directory full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100restore_archive original description in preview",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100restore_archive preview full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100restore_archive return full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100 keyboard directory reachable",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100 keyboard only focuses original contract",
+        "passed": true
+      },
+      {
+        "name": "older-current-1280-100 keyboard full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "import full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "reload retains fork",
+        "passed": true
+      },
+      {
+        "name": "reload full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "settings return retains fork",
+        "passed": true
+      },
+      {
+        "name": "other cell no fork",
+        "passed": true
+      },
+      {
+        "name": "other cell full live world and autosave unchanged",
+        "passed": true
+      },
+      {
+        "name": "no browser or hot-update errors",
+        "passed": true,
+        "detail": []
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-390-100.png",
+        "sha256": "ed92a721390db1dddbb14142d08a84b89d32a408ec0fc886d591565a26ff0192",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/failure-390-100.png",
+        "sha256": "f220948d42584bc9b86bbda7ef52d2564696796219cf8effd0b0058a3b82793f",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/no-role-390-100.png",
+        "sha256": "40dd17d36bd3079a33026e104037d33b8040c3a6b754ab67a47c24f4b3f4458b",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/original-390-100.png",
+        "sha256": "7c7f321150863078cef373715a794937b416a482b8ebf4a1517310e53972e63d",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/older-current-390-100.png",
+        "sha256": "34ab95c4cc615da0b65407304c3cd6489d2b08f201a2e089eeb03cd2c90c3309",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-320-100.png",
+        "sha256": "66e07dea96be730db2f0a6aa0d25c9e587e033c3f78f0df10a33f82ca86172d1",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/failure-320-100.png",
+        "sha256": "c20dd43f2b24be4738143e83c47f3bca79acff3c56554a681bed683de032a431",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/no-role-320-100.png",
+        "sha256": "0f5be69eb51d02b02480c3317d8cd8656f60f7053e54593547f1b362e1f186fe",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/original-320-100.png",
+        "sha256": "618dc52830fb3df8b2280e5a8d1d9e59cb6280193bd43ea6baf4dc979afc93b0",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/older-current-320-100.png",
+        "sha256": "c20dd43f2b24be4738143e83c47f3bca79acff3c56554a681bed683de032a431",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-390-200.png",
+        "sha256": "dd3ba22806a48d8d06295be155d1ab7b309a7413a791b054d0a695989cc57a48",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/failure-390-200.png",
+        "sha256": "e4aa860c9c3c4ea4b51d8695dcd8d0d4746052b3f418c6ad7ebd7240ac63a7bc",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/no-role-390-200.png",
+        "sha256": "89395f183f20919ff0e285495a5bf67d1e0dd6c841b7b0725a42481d7012f9f4",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/original-390-200.png",
+        "sha256": "43e02d41d15d0bbc566150cfcbd308025c3ee49211e7525b756b1e6d798f9f9c",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/older-current-390-200.png",
+        "sha256": "e4aa860c9c3c4ea4b51d8695dcd8d0d4746052b3f418c6ad7ebd7240ac63a7bc",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-320-200.png",
+        "sha256": "ced9de1369e9f0d1e7a5e6339ace855176a39fd705e83f52267de09bb8c43bdf",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/failure-320-200.png",
+        "sha256": "86096eb220541237f00c9aa950f381406b074313ac2a58df6b6c29079b7b9a7e",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/no-role-320-200.png",
+        "sha256": "f9bab709e041e67e49ae3679bdb37707e59bce4f50a01a2ea8bc22eecfa2f325",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/original-320-200.png",
+        "sha256": "9d110b8dcb4429b65240aa661a03ca11e08a39535359a9089095928de1492632",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/older-current-320-200.png",
+        "sha256": "03841e359c00d5b7343cb37ec51cf3306a96e5518cf2d300cf2da79660086915",
+        "width": 320,
+        "height": 568
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-1280-100.png",
+        "sha256": "4176b8cc3d64098813679f56ec3f6cc6ae3466eebc9f82f333d2683b3d800071",
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/failure-1280-100.png",
+        "sha256": "83a2f0d8c17fdf5c3d331efbdd285ad1bead9a5b7ebccebd742e49e0113dba18",
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/no-role-1280-100.png",
+        "sha256": "d0b8cb0432bcacbd6f0716510b388954cfc2fd55059e999817020bfa51626536",
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/original-1280-100.png",
+        "sha256": "0b6650e44a7de822e483c470a906edf20b32d902c1e7d9c2d986b678c6f3c2b6",
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/older-current-1280-100.png",
+        "sha256": "2818077401787c0d5a3e2e3360b7bc7d71b99e791299f01fa167c53b7a13c164",
+        "width": 1280,
+        "height": 900
+      }
+    ],
+    "metrics": [
+      {
+        "label": "success-390-100",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "failure-390-100",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "no-role-390-100",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "original-390-100",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "older-current-390-100",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "success-320-100",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "failure-320-100",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "no-role-320-100",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "original-320-100",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "older-current-320-100",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "success-390-200",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "failure-390-200",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "no-role-390-200",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "original-390-200",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "older-current-390-200",
+        "width": 390,
+        "scrollWidth": 390,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "success-320-200",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "failure-320-200",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "no-role-320-200",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "original-320-200",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "older-current-320-200",
+        "width": 320,
+        "scrollWidth": 320,
+        "font": "32px",
+        "clipped": 0
+      },
+      {
+        "label": "success-1280-100",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "failure-1280-100",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "no-role-1280-100",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "original-1280-100",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "font": "16px",
+        "clipped": 0
+      },
+      {
+        "label": "older-current-1280-100",
+        "width": 1280,
+        "scrollWidth": 1280,
+        "font": "16px",
+        "clipped": 0
+      }
+    ],
+    "errors": [],
+    "sourceBefore": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+    "sourceAfter": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+    "sourceStable": true,
+    "exitCode": 0,
+    "startedUTC": "2026-11-07T21:56:18Z",
+    "finishedUTC": "2026-11-07T21:58:33Z",
+    "matrix": {
+      "viewports": [
+        [
+          390,
+          844,
+          100
+        ],
+        [
+          320,
+          568,
+          100
+        ],
+        [
+          390,
+          844,
+          200
+        ],
+        [
+          320,
+          568,
+          200
+        ],
+        [
+          1280,
+          900,
+          100
+        ]
+      ],
+      "producerCases": [
+        "current natural joint success seed0",
+        "current natural joint failure seed6",
+        "current natural pass seed0",
+        "original producer joint seed0",
+        "pre-decision-flow producer joint failure seed6"
+      ]
+    },
+    "counts": {
+      "total": 617,
+      "passed": 617,
+      "screenshots": 25
+    }
+  },
+  "hashScheme": {
+    "coverage": "Every file recursively under src; public assets/tests/scripts excluded.",
+    "algorithm": "SHA-256; each directory sorted by entry.name.localeCompare; for every file append UTF-8 absolutePath.slice(repositoryRoot.length), including leading /src/, then raw file bytes; no separators. Source before/after measured by the actual running script.",
+    "notComparableDirectly": "Other test scripts hash src/... without the leading slash; compare only after independently reproducing the named scheme."
+  },
+  "harness": {
+    "before": "/workspace/scratch/52f1b40b7635/round38-independent-qa-final/audit.mjs",
+    "beforeSHA256": "a33c82413a3b671aada2dfe2c54ef6fcd92a8414902aa3398cb169cad3d7d66f",
+    "after": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/audit.mjs",
+    "afterSHA256": "c53cd2e7400d3a6c38a9d86490a648e877c07da94d5d149712ae6ee0f6c3b535",
+    "diff": "--- ../round38-independent-qa-final/audit.mjs\t2026-11-07 13:47:11.182555174 -0800\n+++ ../round38-independent-qa-ready/audit.mjs\t2026-11-07 13:56:18.701655303 -0800\n@@ -6,7 +6,7 @@\n import * as old from '../eoc00/tests/fixtures/legacy-simulation.js';\n import * as previous from '../eoc00/tests/fixtures/pre-decision-flow-producer/simulation.js';\n import {lock,commit} from '../eoc00/tests/fixtures/round23-playback-routes.js';\n-const root='/workspace/scratch/52f1b40b7635/eoc00',out='/workspace/scratch/52f1b40b7635/round38-independent-qa-final';\n+const root='/workspace/scratch/52f1b40b7635/eoc00',out=process.env.AW_INDEPENDENT_OUTPUT||'/workspace/scratch/52f1b40b7635/round38-independent-qa-final';\n const report={scope:'Independent real Chromium UI audit; natural producer saves imported by native file input. No state/DOM injection. No physical-device or screen-reader certification.',checks:[],screenshots:[],metrics:[],errors:[]};\n const check=(name,passed,detail)=>{report.checks.push({name,passed:!!passed,...(detail===undefined?{}:{detail})});if(!passed)throw Error(name);};\n async function hash(){const h=createHash('sha256');async function walk(p){for(const e of(await fs.readdir(p,{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){const f=p+'/'+e.name;if(e.isDirectory())await walk(f);else{h.update(f.slice(root.length));h.update(await fs.readFile(f));}}}await walk(root+'/src');return h.digest('hex');}\n@@ -25,5 +25,5 @@\n // Keyboard from choices heading: native Tab/Enter into original directory.\n await page.locator('[data-action=\"scene-section\"][data-section=\"choices\"]').first().click();const first=page.locator('[data-action=\"scene-choice\"]').first();for(let k=0;k<20&&!await first.evaluate(e=>document.activeElement===e);k++)await page.keyboard.press('Tab');check(label+' keyboard directory reachable',await first.evaluate(e=>document.activeElement===e));await page.keyboard.press('Enter');check(label+' keyboard only focuses original contract',await page.locator(`[data-action=\"choose\"][data-id=\"${acts[0].id}\"]`).evaluate(e=>document.activeElement===e));await exact(s,label+' keyboard');\n }\n-const s=worlds[0][1];await importWorld(s,false);await enter();await page.reload();await page.locator('.scene-planning-page').waitFor();check('reload retains fork',await page.locator('[data-succession-fork]').count()===1);await exact(s,'reload');await click('settings');await enter();check('settings return retains fork',await page.locator('[data-succession-fork]').count()===1);await enter('B4');check('other cell no fork',!await page.locator('[data-succession-fork]').count());await exact(s,'other cell');check('no browser or hot-update errors',!report.errors.length,report.errors);\n+const s=worlds[0][1];await importWorld(s,false);await enter();await page.waitForLoadState('networkidle',{timeout:12000});await page.reload();await page.locator('.scene-planning-page').waitFor();check('reload retains fork',await page.locator('[data-succession-fork]').count()===1);await exact(s,'reload');await click('settings');await enter();check('settings return retains fork',await page.locator('[data-succession-fork]').count()===1);await enter('B4');check('other cell no fork',!await page.locator('[data-succession-fork]').count());await exact(s,'other cell');check('no browser or hot-update errors',!report.errors.length,report.errors);\n }catch(e){report.failure={message:e.message,stack:e.stack};process.exitCode=1;if(page)await shot('failure').catch(()=>{});}finally{await browser?.close();await server.close();report.sourceAfter=await hash();report.sourceStable=report.sourceBefore===report.sourceAfter;if(!report.sourceStable)process.exitCode=1;report.exitCode=process.exitCode||0;await fs.writeFile(out+'/results.json',JSON.stringify(report,null,2));console.log(JSON.stringify({checks:report.checks.length,screenshots:report.screenshots.length,sourceStable:report.sourceStable,exitCode:report.exitCode,failure:report.failure}));}\n",
+    "changes": [
+      "Before the existing explicit page.reload(), await page.waitForLoadState(networkidle,{timeout:12000}).",
+      "Output destination can be chosen with AW_INDEPENDENT_OUTPUT; previous destination remains the default."
+    ],
+    "unchanged": "All assertions, error collection and requestfailed failure rule, native sizes, actions and 12000ms action timeout are unchanged. No production file or existing test script was edited by this reviewer."
+  },
+  "limitations": [
+    "This is headless Chromium, not a physical device, assistive-technology certification or human playtest.",
+    "The final run verifies reload after previously issued requests settle. It does not certify reload while resources are still loading.",
+    "Reading, native import, directory activation, previews, return/reload/settings and unchanged worlds are covered; no new lock/commit gameplay action is taken by this independent matrix."
+  ],
+  "priorAttempts": [
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa/first-run-failure.json",
+      "sha256": "19d648ef63e75e7a2359836bf6856a891bcd2c38172eb3fc58407e73ddcbce81",
+      "passed": 341,
+      "failure": {
+        "message": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"select\"][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+        "stack": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"select\"][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at enter (/workspace/scratch/52f1b40b7635/round38-independent-qa/audit.mjs:18:139)\n    at async file:///workspace/scratch/52f1b40b7635/round38-independent-qa/audit.mjs:21:267"
+      },
+      "sourceBefore": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+      "sourceAfter": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+      "note": "Preserved; not merged into final counts. No cause attributed to the coordinate-button timeout."
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-final/full-25-network-failure.json",
+      "sha256": "0f8e1e79fad1f3adebd1868b9c308993191867baa09c23fcaf495846c7c9725b",
+      "passed": 616,
+      "total": 617,
+      "exitCode": 1,
+      "failure": {
+        "message": "no browser or hot-update errors",
+        "stack": "Error: no browser or hot-update errors\n    at check (file:///workspace/scratch/52f1b40b7635/round38-independent-qa-final/audit.mjs:11:132)\n    at file:///workspace/scratch/52f1b40b7635/round38-independent-qa-final/audit.mjs:28:507"
+      },
+      "errors": [
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_none.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_aid.png",
+        "http://127.0.0.1:4638/assets/props/bank_reading_circle.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_closed_aid.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_closed_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_verified.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_none.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_recovered.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_pending.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_aid.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_recovered.png",
+        "http://127.0.0.1:4638/assets/props/warehouse.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/riverside_school.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_verified.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/water_station.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_pending.png"
+      ],
+      "startedUTC": "2026-11-07T21:49:53Z",
+      "finishedUTC": "2026-11-07T21:52:08Z",
+      "note": "Original URL-only requestfailed logs have no errorText or timestamp; the 26 URLs cannot individually be retroactively classified as ERR_ABORTED. This failure remains preserved, not converted to a pass."
+    }
+  ],
+  "diagnostic": {
+    "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-final/network-diagnostic.json",
+    "sha256": "eb7db6a0c03af17595f23bd06b9c6e4bc2a6be44b668b67df8a4549e79e6a4fc",
+    "reloadAttempts": 8,
+    "failedRequests": 48,
+    "allFailuresAreExplicitReloadPendingIds": true,
+    "allFailureCodesAborted": true,
+    "distinctHTTP": 25,
+    "distinctHTTPAlsoFinished200InRealPage": 25,
+    "scope": "A separate eight-reload reproduction, not a retrospective proof about each original URL. No errors were filtered or ignored in the final run."
+  },
+  "landingCheck": {
+    "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-final/landing-check/results.json",
+    "sha256": "c13b24a10bef7520b02ebb3cb5428a3d4317e79c634bf4865ce920fc7df14c08",
+    "passed": 134,
+    "exitCode": 0,
+    "sourceBefore": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+    "sourceAfter": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+    "metrics": [
+      {
+        "label": "success-320-200",
+        "firstTitle": {
+          "x": 31,
+          "y": 407.8125,
+          "width": 217.984375,
+          "height": 46.390625
+        },
+        "viewportHeight": 568
+      },
+      {
+        "label": "failure-320-200",
+        "firstTitle": {
+          "x": 31,
+          "y": 407.78125,
+          "width": 217.984375,
+          "height": 92.78125
+        },
+        "viewportHeight": 568
+      },
+      {
+        "label": "no-role-320-200",
+        "firstTitle": {
+          "x": 31,
+          "y": 407.609375,
+          "width": 217.984375,
+          "height": 92.78125
+        },
+        "viewportHeight": 568
+      },
+      {
+        "label": "original-320-200",
+        "firstTitle": {
+          "x": 29,
+          "y": 369.734375,
+          "width": 217.984375,
+          "height": 46.390625
+        },
+        "viewportHeight": 568
+      },
+      {
+        "label": "older-current-320-200",
+        "firstTitle": {
+          "x": 31,
+          "y": 407.78125,
+          "width": 217.984375,
+          "height": 92.78125
+        },
+        "viewportHeight": 568
+      }
+    ],
+    "notMergedIntoFinalCount": true
+  },
+  "selectedScreenshots": [
+    {
+      "path": "docs/screenshots/round38-independent-success-390-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-390-100.png",
+      "sha256": "ed92a721390db1dddbb14142d08a84b89d32a408ec0fc886d591565a26ff0192",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-failure-390-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/failure-390-100.png",
+      "sha256": "f220948d42584bc9b86bbda7ef52d2564696796219cf8effd0b0058a3b82793f",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-no-role-390-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/no-role-390-100.png",
+      "sha256": "40dd17d36bd3079a33026e104037d33b8040c3a6b754ab67a47c24f4b3f4458b",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-success-320-200.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-320-200.png",
+      "sha256": "ced9de1369e9f0d1e7a5e6339ace855176a39fd705e83f52267de09bb8c43bdf",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-success-1280-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-1280-100.png",
+      "sha256": "4176b8cc3d64098813679f56ec3f6cc6ae3466eebc9f82f333d2683b3d800071",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-original-390-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/original-390-100.png",
+      "sha256": "7c7f321150863078cef373715a794937b416a482b8ebf4a1517310e53972e63d",
+      "byteIdentical": true,
+      "rescaled": false
+    }
+  ],
+  "staticReview": {
+    "findings": [
+      "The model is gated by existing succession provenance and exact action-set checks.",
+      "Directory activation uses the original scene-choice focus/scroll path, not lock/confirm.",
+      "Risk uses actual institution staffing, naming station/archive and conditional year16 shutdown.",
+      "Recruitment says year20 deployment; no-role route does not invent a successor or vacancy.",
+      "Original unsupported producer keeps the original directory.",
+      "The identified accessibility-name gap was addressed before source freeze with aria-describedby referencing stable detail IDs."
+    ],
+    "visualInspection": "Original PNG pixels inspected for successful/failed/no-role mobile routes, native 200%, desktop, and original-producer fallback."
+  },
+  "checksPassed": 617,
+  "checksTotal": 617,
+  "rawEvidence": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/results.json",
+  "sourceBefore": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+  "sourceAfter": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+  "sourceScriptSHA256": "c53cd2e7400d3a6c38a9d86490a648e877c07da94d5d149712ae6ee0f6c3b535",
+  "actualStartedAt": "2026-11-07T21:56:18Z",
+  "actualEndedAt": "2026-11-07T21:58:33Z",
+  "errors": [],
+  "initialFailureSummary": [
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa/first-run-failure.json",
+      "sha256": "19d648ef63e75e7a2359836bf6856a891bcd2c38172eb3fc58407e73ddcbce81",
+      "passed": 341,
+      "failure": {
+        "message": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"select\"][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+        "stack": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"select\"][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at enter (/workspace/scratch/52f1b40b7635/round38-independent-qa/audit.mjs:18:139)\n    at async file:///workspace/scratch/52f1b40b7635/round38-independent-qa/audit.mjs:21:267"
+      },
+      "sourceBefore": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+      "sourceAfter": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+      "note": "Preserved; not merged into final counts. No cause attributed to the coordinate-button timeout."
+    },
+    {
+      "path": "/workspace/scratch/52f1b40b7635/round38-independent-qa-final/full-25-network-failure.json",
+      "sha256": "0f8e1e79fad1f3adebd1868b9c308993191867baa09c23fcaf495846c7c9725b",
+      "passed": 616,
+      "total": 617,
+      "exitCode": 1,
+      "failure": {
+        "message": "no browser or hot-update errors",
+        "stack": "Error: no browser or hot-update errors\n    at check (file:///workspace/scratch/52f1b40b7635/round38-independent-qa-final/audit.mjs:11:132)\n    at file:///workspace/scratch/52f1b40b7635/round38-independent-qa-final/audit.mjs:28:507"
+      },
+      "errors": [
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_none.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_aid.png",
+        "http://127.0.0.1:4638/assets/props/bank_reading_circle.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_closed_aid.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_closed_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_verified.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_none.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_recovered.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_pending.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_aid.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_recovered.png",
+        "http://127.0.0.1:4638/assets/props/warehouse.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/riverside_school.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_verified.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/water_station.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_pending.png"
+      ],
+      "startedUTC": "2026-11-07T21:49:53Z",
+      "finishedUTC": "2026-11-07T21:52:08Z",
+      "note": "Original URL-only requestfailed logs have no errorText or timestamp; the 26 URLs cannot individually be retroactively classified as ERR_ABORTED. This failure remains preserved, not converted to a pass."
+    }
+  ],
+  "reloadReadinessChange": [
+    "Before the existing explicit page.reload(), await page.waitForLoadState(networkidle,{timeout:12000}).",
+    "Output destination can be chosen with AW_INDEPENDENT_OUTPUT; previous destination remains the default."
+  ],
+  "limits": [
+    "This is headless Chromium, not a physical device, assistive-technology certification or human playtest.",
+    "The final run verifies reload after previously issued requests settle. It does not certify reload while resources are still loading.",
+    "Reading, native import, directory activation, previews, return/reload/settings and unchanged worlds are covered; no new lock/commit gameplay action is taken by this independent matrix."
+  ]
+}

@@ -218,3 +218,7 @@ CI第20套仅新增事件记录与失败后的600ms有界DOM观察；原30秒can
 ## 第37轮：建站卡中的原合同取舍
 
 纯展示器`building-card-tradeoff.js`只读取既有`getBuildingContract`的完整`displayReward/displayRisk`，复用真实年0/D4/角色可用性与旧档口径。main在三张建站卡保留费用/时点/调查原行，加入双行取舍及共同条件；迁任范围由明确行动ID控制。原简介仍在预览。所有旧单测/浏览器脚本、模拟、存档、故事和素材不改。见[实现与边界](ROUND37_BUILDING_TRADEOFFS.md)。
+
+## 第38轮：第十年的岗位分岔目录
+
+`succession-choice-fork.js`以已有现场来源闸门与可用合同为依据，脱离并冻结返回展示数据；缺岗后果来自现有staffing适配器。`succession-choice-fork-view.js`只画角色与岗位说明，原目录按钮继续执行同一个只读定位动作，原可访问名称与完整标题不变，新增说明以`aria-describedby`相连。模拟、存档、故事、现有素材及旧测试保持不变。见[三方面评估](ROUND38_PLAYABILITY_REVIEW.md)与[条件边界](ROUND38_SUCCESSION_CHOICES.md)。

@@ -1,0 +1,94 @@
+{
+  "attempts": [
+    {
+      "attempt": "new-focused",
+      "reportSHA256": "994b93ec884653960a2833d5e67eae685806435e0fc6f17458136e4ab00387f2",
+      "checksBeforeStop": 1050,
+      "passed": 1050,
+      "failure": {
+        "message": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"select\"][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+        "stack": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"select\"][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at enter (/workspace/scratch/52f1b40b7635/eoc00/scripts/round38-succession-fork-test.mjs:28:139)\n    at async file:///workspace/scratch/52f1b40b7635/eoc00/scripts/round38-succession-fork-test.mjs:38:277"
+      },
+      "errors": [],
+      "sourceBefore": "0fc994aa3ca898992be2a081481b0632aba4f9d1505af7bb38e47bf6e14a4d70",
+      "sourceAfter": "0fc994aa3ca898992be2a081481b0632aba4f9d1505af7bb38e47bf6e14a4d70",
+      "sourceStable": true,
+      "exitCode": 1,
+      "scope": "Retained initial run; none of these checks are added to a later full-run pass count."
+    },
+    {
+      "attempt": "independent",
+      "reportSHA256": "19d648ef63e75e7a2359836bf6856a891bcd2c38172eb3fc58407e73ddcbce81",
+      "checksBeforeStop": 341,
+      "passed": 341,
+      "failure": {
+        "message": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"select\"][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+        "stack": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"select\"][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at enter (/workspace/scratch/52f1b40b7635/round38-independent-qa/audit.mjs:18:139)\n    at async file:///workspace/scratch/52f1b40b7635/round38-independent-qa/audit.mjs:21:267"
+      },
+      "errors": [],
+      "sourceBefore": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+      "sourceAfter": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+      "sourceStable": true,
+      "exitCode": 1,
+      "scope": "Retained initial run; none of these checks are added to a later full-run pass count."
+    },
+    {
+      "attempt": "independent-full-network-failure",
+      "reportSHA256": "0f8e1e79fad1f3adebd1868b9c308993191867baa09c23fcaf495846c7c9725b",
+      "checksBeforeStop": 617,
+      "passed": 616,
+      "failure": {
+        "message": "no browser or hot-update errors",
+        "stack": "Error: no browser or hot-update errors\n    at check (file:///workspace/scratch/52f1b40b7635/round38-independent-qa-final/audit.mjs:11:132)\n    at file:///workspace/scratch/52f1b40b7635/round38-independent-qa-final/audit.mjs:28:507"
+      },
+      "errors": [
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_none.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_aid.png",
+        "http://127.0.0.1:4638/assets/props/bank_reading_circle.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_closed_aid.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_closed_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_verified.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_none.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_recovered.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_pending.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_aid.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_recovered.png",
+        "http://127.0.0.1:4638/assets/props/warehouse.png",
+        "http://127.0.0.1:4638/assets/props/south_bank_learning_aid_closed.png",
+        "http://127.0.0.1:4638/assets/props/riverside_school.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_fee_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_verified.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_closed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_failed.png",
+        "http://127.0.0.1:4638/assets/props/far_port_shore_failed_closed.png",
+        "http://127.0.0.1:4638/assets/props/water_station.png",
+        "http://127.0.0.1:4638/assets/props/far_port_branch_pending.png"
+      ],
+      "sourceBefore": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+      "sourceAfter": "0d018f0d046c7f4964899bc7d82e03c42a0d220e8e2c801bfd9080c680cd63b8",
+      "sourceStable": true,
+      "exitCode": 1,
+      "scope": "Complete 25-group UI run failed its final no-network-errors check. Not included in a later full-run pass count."
+    }
+  ],
+  "cause": "The first focused and first independent runs timed out while waiting for original D4 coordinate-row actionability, before the new fork. Screenshots showed the original list; cause unknown. A later full independent run failed on 26 request URLs; see the separately scoped navigation diagnostic. No original assertion or timeout was relaxed.",
+  "diagnosticRemainder": {
+    "exitCode": 130,
+    "includedInFinalPassCounts": false,
+    "note": "Stopped to avoid overlapping browser runs; incomplete diagnostic groups are not stitched into QA."
+  },
+  "navigationDiagnostic": {
+    "reportSHA256": "eb7db6a0c03af17595f23bd06b9c6e4bc2a6be44b668b67df8a4549e79e6a4fc",
+    "explicitReloads": 8,
+    "failedRequests": 48,
+    "allAbortedDuringExplicitReloadPendingSet": true,
+    "httpAssets": 25,
+    "allHttpVerificationsNonempty200": true,
+    "scope": "Controlled diagnosis shows explicit reload aborting pending original resources. Original failed run recorded URLs only, so its 26 URLs cannot retrospectively be proven to have the same cause. Independent QA-only harness now waits for networkidle before explicit reload, with the original 12000ms limit and no ignored failures. Production and official browser suites unchanged."
+  }
+}

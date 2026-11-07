@@ -1,0 +1,48 @@
+{
+  "sourceReport": "docs/round38-independent-qa.json",
+  "method": "Native Chromium viewport PNGs copied byte for byte. No scaling, cropping or recompression.",
+  "screenshots": [
+    {
+      "path": "docs/screenshots/round38-independent-success-390-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-390-100.png",
+      "sha256": "ed92a721390db1dddbb14142d08a84b89d32a408ec0fc886d591565a26ff0192",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-failure-390-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/failure-390-100.png",
+      "sha256": "f220948d42584bc9b86bbda7ef52d2564696796219cf8effd0b0058a3b82793f",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-no-role-390-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/no-role-390-100.png",
+      "sha256": "40dd17d36bd3079a33026e104037d33b8040c3a6b754ab67a47c24f4b3f4458b",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-success-320-200.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-320-200.png",
+      "sha256": "ced9de1369e9f0d1e7a5e6339ace855176a39fd705e83f52267de09bb8c43bdf",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-success-1280-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/success-1280-100.png",
+      "sha256": "4176b8cc3d64098813679f56ec3f6cc6ae3466eebc9f82f333d2683b3d800071",
+      "byteIdentical": true,
+      "rescaled": false
+    },
+    {
+      "path": "docs/screenshots/round38-independent-original-390-100.png",
+      "source": "/workspace/scratch/52f1b40b7635/round38-independent-qa-ready/original-390-100.png",
+      "sha256": "7c7f321150863078cef373715a794937b416a482b8ebf4a1517310e53972e63d",
+      "byteIdentical": true,
+      "rescaled": false
+    }
+  ]
+}

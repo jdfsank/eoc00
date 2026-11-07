@@ -53,3 +53,7 @@
 ## 第二十轮：河岸末页
 
 新增9张项目原创`ending-*.svg`结局静物横幅（1000×420），由`node scripts/render-ending-art.mjs`生成。账册折页接向河岸，签署页、磨损水尺、另置教学工具、收束工具、卷回合同和未知套页使用不同形状而非仅换色。按已兑现来源区分原学徒授权、新培训、未签、取消、缺页以及后来停运；没有具名人物、现职推断或第三方图像。当前运行与历史签署分开表述，详见[河岸末页说明](ENDING_ART_NOTES.md)。
+
+## Round 38: contractual role diagram
+
+The year-10 directory uses two small inline SVG line drawings authored in `succession-choice-fork-view.js`: a generic travelling figure and a desk with a document. These are explanatory symbols, not character portraits, historical evidence, institution status markers or newly generated scene art. Text labels carry all meaning; the drawings are hidden from assistive technology. Existing 279 asset files remain unchanged.
