@@ -1,0 +1,120 @@
+{
+  "checks": 839,
+  "passed": true,
+  "main": {
+    "checks": 802,
+    "passed": 802,
+    "exitCode": 0
+  },
+  "naturalTab": {
+    "checks": 37,
+    "passed": 37,
+    "exitCode": 0
+  },
+  "sourceStable": true,
+  "mainSourceHash": "f9d48dc03e5f10152fd5214ea00824fe9633155237a9e8a865bd20544f749552",
+  "sourceScheme": "Directory-local JS localeCompare; absolute POSIX src filename then bytes, without separator",
+  "sourceMatched": true,
+  "freezeFiles": 351,
+  "scriptHashes": {
+    "independent-review-qa.mjs": "5db3d391c06f39cf5ba22160d456a6f1818172a3e506e93b07ed60c11cebac5b",
+    "natural-tab-qa.mjs": "d1b9f452bf73024bebb1af626d21a58f1061d897af441c7cc254b4aaf5b98142",
+    "card-capture.mjs": "a5f442960bc7b5a6ef116285e75dbc941f970d2c184174e9234216e9175188a3"
+  },
+  "reviewedOriginalPngs": 20,
+  "metrics": [
+    {
+      "label": "view-320-100",
+      "width": 320,
+      "height": 568,
+      "big": false,
+      "font": "16px",
+      "total": 2451,
+      "scrollWidth": 320,
+      "recap": 334.546875,
+      "actor": 448.546875,
+      "clipped": []
+    },
+    {
+      "label": "view-390-100",
+      "width": 390,
+      "height": 844,
+      "big": false,
+      "font": "16px",
+      "total": 2275,
+      "scrollWidth": 390,
+      "recap": 336.546875,
+      "actor": 450.546875,
+      "clipped": []
+    },
+    {
+      "label": "view-430-100",
+      "width": 430,
+      "height": 932,
+      "big": false,
+      "font": "16px",
+      "total": 2142,
+      "scrollWidth": 430,
+      "recap": 336.546875,
+      "actor": 450.546875,
+      "clipped": []
+    },
+    {
+      "label": "view-1280-100",
+      "width": 1280,
+      "height": 900,
+      "big": false,
+      "font": "16px",
+      "total": 1871,
+      "scrollWidth": 1280,
+      "recap": 382.296875,
+      "actor": 469.296875,
+      "clipped": []
+    },
+    {
+      "label": "view-320-200",
+      "width": 320,
+      "height": 568,
+      "big": true,
+      "font": "32px",
+      "total": 6602,
+      "scrollWidth": 320,
+      "recap": 668.71875,
+      "actor": 1068.71875,
+      "clipped": []
+    },
+    {
+      "label": "view-390-200",
+      "width": 390,
+      "height": 844,
+      "big": true,
+      "font": "32px",
+      "total": 5646,
+      "scrollWidth": 390,
+      "recap": 573.53125,
+      "actor": 919.53125,
+      "clipped": []
+    }
+  ],
+  "initialHarnessFailure": {
+    "completedChecks": 513,
+    "excludedFromFinalCounts": true,
+    "reason": "The independent harness requested scene-source-return for a review-origin detour. The real page correctly provided reading-return. Only the harness was corrected, then the full 802 checks were rerun."
+  },
+  "limits": [
+    "Natural Tab and supplemental card reports do not contain before/after source hashes; current frozen production and their original script/report bytes are checked separately.",
+    "Reports provide no execution start timestamps. Report modification times are recorded separately, not treated as run-start proof.",
+    "The 20-image visual judgment belongs to the QA worker; this audit independently verifies their original image bytes and dimensions.",
+    "No aggregate completion, remote CI, human playtest or physical-device certification is implied."
+  ],
+  "evidenceHashes": {
+    "summary": "e8d9a9b09dbde78f377a2111a541ea9f6755fea2a00e5ecf3da3d8f98f56ad33",
+    "verification": "7a0b8dfaa65dc0c5a294692476fcd4b1122bc8e2b313f91ffe511e7e3b8dc58a",
+    "initialVerification": "862f9ea307a2f9db713d8ad0a8999fc64eda81a9f468279cc088c349d5f6f47d"
+  },
+  "freezeTiming": {
+    "qaRerunAfterTestRefreeze": false,
+    "productionFilesIdenticalAcrossFreezes": true,
+    "note": "The QA completed after the initial production freeze. A later test-only disclosure adapter caused a full script refreeze; all351 production files remained byte-identical and were independently reverified."
+  }
+}

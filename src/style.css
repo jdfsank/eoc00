@@ -367,6 +367,36 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 [data-stage-archive] h2{font-family:"Songti SC","Noto Serif CJK SC",Georgia,serif;font-size:1.375rem;line-height:1.5;font-weight:500;color:#eee5cd;margin:0 0 .5rem}
 [data-stage-archive] p{font-size:1rem;line-height:1.75;color:#d4dfcc;margin:0}
 .review-stage-heading + .review-turns{border-top:0;padding-top:0;margin-top:0}
+/* Round 35: read the choices and what they left before opening the annual
+   dossier. Three ruled fields keep responsibility beside outcome, not inside
+   a warning box. Nothing is shortened or painted as an automatic success. */
+.review-stage-heading + .decade-recollection{margin-top:1rem}
+.decade-recollection>h2{font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:1.25rem;font-weight:500;line-height:1.6;margin:0 0 .5rem;color:#ead8b0}
+.decade-recollection>p{font-size:.9375rem;line-height:1.8;color:#b7c9bb;margin:.5rem 0 1rem}
+.recollection-document.notice{background:linear-gradient(110deg,#263e3a,#18383e);border:0;border-top:3px double #b8a16e;border-bottom:1px solid #658174;padding:1rem;margin:1.25rem 0;min-width:0}
+.recollection-document>h3{font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:1.25rem;line-height:1.5;font-weight:500;margin:0 0 .75rem;color:#f0ddb1;overflow-wrap:anywhere}
+.recollection-rows{margin:0}
+.recollection-row{padding:.75rem 0;border-top:1px solid #587268;min-width:0;overflow-wrap:anywhere}
+.recollection-row dt{font-size:.875rem;font-weight:500;line-height:1.7;color:#d5bc84;margin:0 0 .35rem}
+.recollection-row dd{font-size:1rem;line-height:1.85;margin:0;color:#e0e5d6;white-space:pre-line}
+.recollection-responsibility{border-top:3px double #698577}
+.recollection-sources.button-row{padding-top:.5rem;margin:.25rem 0 0;gap:.25rem .75rem}
+.recollection-sources button{font-size:.875rem;text-align:left;white-space:normal;overflow-wrap:anywhere;max-width:100%;min-height:48px}
+.decade-settlement{position:relative;border-left:3px solid #b9aa87;padding:.25rem 0 .25rem 1rem;margin:1.5rem 0;min-width:0;overflow-wrap:anywhere}
+.decade-settlement>h2{font-family:"Songti SC","Noto Serif CJK SC",serif;font-size:1.125rem;line-height:1.6;color:#e3d6b7;margin:0 0 .5rem;font-weight:500}
+.decade-settlement-meta{font-size:.875rem;color:#b8c9bd;line-height:1.7;margin:.25rem 0 .5rem}
+.decade-settlement-text{font-size:1rem;line-height:1.85;color:#e0e5d6;white-space:pre-line;margin:.5rem 0}
+.review-turns{border:0;padding:0;margin:1.5rem 0}
+.review-turns-records{border-top:1px solid #738579;border-bottom:1px solid #738579;min-width:0}
+.review-turns-records>summary{cursor:pointer;min-height:48px;padding:.875rem .25rem;font-size:1rem;line-height:1.7;color:#e3d7b8;overflow-wrap:anywhere}
+.review-turns-records>summary small{display:block;font-size:.8125rem;line-height:1.7;color:#aebfb2;margin:.25rem 0 0 1.2rem}
+.review-turns-records[open]>summary{border-bottom:1px solid #587268}
+.review-turns-body{padding:1rem 0 0;min-width:0}
+.review-turns-body>h2{font-size:1.125rem;line-height:1.6;margin:0 0 .75rem}
+.review-turns-body>.journal-turn{position:relative;border-left:2px solid var(--line);margin:0;padding:0 0 24px 16px;min-width:0}
+.review-turns-body>.journal-turn::before{content:"";position:absolute;left:-5px;top:.5em;width:8px;height:8px;background:var(--gold);border:2px solid var(--bg);box-sizing:border-box}
+.recollection-sources button:focus-visible,.decade-settlement button:focus-visible,.review-turns-records>summary:focus-visible{outline:3px solid #f0cf83;outline-offset:3px}
+@media(min-width:700px){.recollection-row{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:1rem}.recollection-row dt{margin:0}}
 [data-stage-archive] .stamp{color:#d9c28c}
 
 /* Round 31: keep the voice and its testimony together without enclosing prose. */

@@ -1,0 +1,55 @@
+{
+  "originalPixels": true,
+  "noCropResizeOrMask": true,
+  "nativeFontSizes": [
+    "16px",
+    "32px"
+  ],
+  "reviewedInIndependentQa": 20,
+  "selected": [
+    {
+      "path": "docs/screenshots/round35-recollection-reading/view-390-100-initial.png",
+      "sha256": "48a92f697d6a8e49704c45ccf19150da8bccfc7e6ef551f4b6318e7a56083bea",
+      "width": 390,
+      "height": 844,
+      "kind": "original viewport PNG",
+      "visuallyInspected": true
+    },
+    {
+      "path": "docs/screenshots/round35-recollection-reading/view-1280-100-initial.png",
+      "sha256": "a224abc8cb37e6936d4ee0ad828413004834ba0c6ec9417afb3f09572b9d857c",
+      "width": 1280,
+      "height": 900,
+      "kind": "original viewport PNG",
+      "visuallyInspected": true
+    },
+    {
+      "path": "docs/screenshots/round35-recollection-reading/card-320-200-responsibility.png",
+      "sha256": "6558de438eadc15c84ed7ec9e8c1f429be7f7089f12189283ed20727ef616917",
+      "width": 224,
+      "height": 584,
+      "kind": "original element PNG",
+      "visuallyInspected": true
+    },
+    {
+      "path": "docs/screenshots/round35-recollection-reading/card-390-200-full-card.png",
+      "sha256": "e057c0fc0d62bdd083683a56f1f30d1ed6ed0502d5a8d3480c08642ab12b9e4a",
+      "width": 358,
+      "height": 1349,
+      "kind": "original element PNG",
+      "visuallyInspected": true
+    },
+    {
+      "path": "docs/screenshots/round35-recollection-reading/natural-tab-390-200.png",
+      "sha256": "e72bd16bf94148321b1070d83920121da2c29e066ce72db4a3b81212fad5f6fa",
+      "width": 390,
+      "height": 844,
+      "kind": "original viewport PNG",
+      "visuallyInspected": true
+    }
+  ],
+  "limits": [
+    "Large text uses vertical scrolling; this is not a claim that every card is visible in the first viewport.",
+    "Import toast was allowed to expire naturally; early masked exploratory captures are not used as acceptance images."
+  ]
+}

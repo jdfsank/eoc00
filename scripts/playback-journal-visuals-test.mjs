@@ -25,6 +25,15 @@ async function screenshot(label){
  await page.keyboard.press('Control+Home');await page.waitForFunction(()=>scrollY<1);
  async function snap(suffix){const path=`${shots}/${label}-${suffix}.png`;await page.screenshot({path});const b=await fs.readFile(path),v=await page.evaluate(()=>({width:innerWidth,height:innerHeight,scrollY}));check(`${label}/${suffix}: actual unscaled viewport PNG dimensions`,b.readUInt32BE(16)===v.width&&b.readUInt32BE(20)===v.height);report.screenshots.push({path,sha256:createHash('sha256').update(b).digest('hex'),kind:'actual viewport, no stitching or rescaling',...v});}
  await snap('top');
+ // Round 35: capture the default recollection first, then explicitly open the
+ // native annual dossier before preserving the original full-record captures.
+ const dossier=page.locator('[data-review-turns-disclosure]');
+ if(await dossier.count()){
+  check(`${label}: annual dossier initially closed`,!await dossier.evaluate(e=>e.open));
+  await dossier.locator(':scope > summary').click();
+  check(`${label}: actual summary exposes complete annual dossier`,await dossier.evaluate(e=>e.open));
+  await page.keyboard.press('Control+Home');await page.waitForFunction(()=>scrollY<1);await layout(`${label}-annual-expanded`);
+ }
  const result=page.locator('[data-playback-latest], [data-review-turns]').first();
  if(await result.count()){
   const box=await result.evaluate(e=>{const r=e.getBoundingClientRect();return {top:r.top+scrollY,height:r.height};});

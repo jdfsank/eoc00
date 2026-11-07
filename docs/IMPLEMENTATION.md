@@ -206,3 +206,7 @@ Phaser 3负责地图和相机，DOM负责中文阅读与操作。`simulation.js`
 新增 `draft-comparison-navigation.js` 只在已展开的当前账页内聚焦固定标题或原生summary，不调用模拟、存档或导航历史。main复用既有重复指针保护；底部收起不等于锁定或提交。原案与备选的读源、原合同五组文字及后续取证边界都不变。
 
 CI第20套仅新增事件记录与失败后的600ms有界DOM观察；原30秒canvas等待、单次重载、截图和断言保留。模块加载负控复现白页只证明旧诊断不足，不证明远程根因已经定位或修复。见[阅读设计](ROUND34_COMPARISON_READING.md)与[诊断说明](ROUND34_CI_RELOAD_DIAGNOSTICS.md)。
+
+## 第35轮：角色回顾前置、完整年度凭据后置
+
+新增纯展示器 `decade-recollection-view.js`，只读已有 `getStageDecadeReview` 与 `getPlaybackJournal` 的返回值，逐字呈现选择、兑现及责任，另以原始正文显示当前十年的有效危机清点。不读取世界、旗标或随机结果，不新增存档字段。完整年度流水采用原生details，保留原条目身份、顺序、来源与回访；既有阅读回程恢复包括新披露在内的展开、焦点和滚动。三套旧浏览器脚本通过真实summary进入完整原检查，未弱化断言或超时。详见[阅读设计](ROUND35_RECOLLECTION_READING.md)与[实际评估](ROUND35_PLAYABILITY_REVIEW.md)。
