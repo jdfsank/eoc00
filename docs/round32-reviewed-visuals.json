@@ -1,0 +1,28 @@
+{
+  "sourceReport": "playtest-output/round32-draft-edit-visuals/results.json",
+  "sourceSHA256": "1f31665f3fd31373830fc0fc26acbe3173df61dea09abba648622f556e148ba1",
+  "reviewed": [
+    {
+      "path": "docs/screenshots/round32-draft-edit/390-100-arrangement.png",
+      "original": "playtest-output/round32-draft-edit-visuals/390-100-arrangement.png",
+      "sha256": "d45d62bbf65cedf5a0a2665c61ff9d04f36692d40ad3b5ba6121e6f3e5b6ae2e",
+      "reviewed": true,
+      "kind": "original element PNG"
+    },
+    {
+      "path": "docs/screenshots/round32-draft-edit/320-200-slip.png",
+      "original": "playtest-output/round32-draft-edit-visuals/320-200-slip.png",
+      "sha256": "403f09f7efe5325f8f9241edd009a6187a9013f02588f08fbaeb50744bb50372",
+      "reviewed": true,
+      "kind": "original element PNG"
+    },
+    {
+      "path": "docs/screenshots/round32-draft-edit/1280-100-edit.png",
+      "original": "playtest-output/round32-draft-edit-visuals/1280-100-edit.png",
+      "sha256": "60e7ce40b93af06ef17403c1e947dfc2d8a1bf8b3dc3e9035006d4da6ed59ccd",
+      "reviewed": true,
+      "kind": "original viewport PNG"
+    }
+  ],
+  "scope": "Three selected final-run original PNGs inspected. Not a claim of manual review of all 30 images. Native 200% slip is a tall element capture, not a single-viewport claim."
+}

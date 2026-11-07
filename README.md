@@ -2,6 +2,10 @@
 
 一款面向手机竖屏的原创历史干预策略叙事游戏。进入一个地方，改变一套规则，再面对由此过上不同人生的人。
 
+## 第32轮：保留原安排，再看另一条路
+
+“修改安排”现在保留原草稿免费重选，明确重新锁定才替换；真正撤下是独立动作。原安排、备选与调查不退款在文书签条中分开呈现，旧合同成本、概率与风险完整保留。候选2/10只更新候选分支，main不变。详见[三方面评估](docs/ROUND32_PLAYABILITY_REVIEW.md)、[阅读与视觉](docs/ROUND32_DRAFT_READING.md)及[候选比较](docs/CANDIDATE_SERIES.md)。
+
 ## 第31轮：现场来路与原处回程
 
 现场人物、立场和回访的来源现在可以返回原来的阅读位置，保留角色、调查用途与展开材料。手机回读保留说话者，林澈拒绝迁任的既有入局理由直接可读。历史、费用、概率和旧调查规则不变。详见[三方面评估](docs/ROUND31_PLAYABILITY_REVIEW.md)、[叙事阅读](docs/ROUND31_SCENE_READING.md)、[回程验证](docs/ROUND31_SCENE_SOURCE_FLOW.md)和[视觉验证](docs/ROUND31_SCENE_SOURCE_VISUALS.md)。

@@ -381,3 +381,16 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .scene-source-reading .scene-source-record{color:#e3e7d8;font-size:.875rem;line-height:1.75;margin:.4rem 0;overflow-wrap:anywhere}
 .scene-source-reading>small{display:block;color:#b6c7b9;font-size:.8125rem;line-height:1.7;overflow-wrap:anywhere}
 @media(max-width:380px){.scene-source-reading{padding:.625rem}.scene-source-reading .scene-source-return-action>.secondary{padding:10px}.scene-voice-heading .eyebrow{letter-spacing:.035em}}
+
+/* Round 32: an unsealed reading slip beside the retained draft. The double
+   rule and explicit text separate a saved plan from the candidate below;
+   no stamp or success colour suggests that either has been carried out. */
+.draft-edit-context{min-width:0;margin:1rem 0 1.5rem;padding:1rem;border:1px solid #71877a;border-top:3px double #bea66d;background:linear-gradient(120deg,#2d4038,#1a3638);overflow-wrap:anywhere}
+.draft-edit-context .eyebrow{margin:0 0 .5rem;font-family:inherit;font-size:.8125rem;line-height:1.6;letter-spacing:.035em;color:#e1c88e}
+.draft-edit-context h2{font-family:"Songti SC","Noto Serif CJK SC",Georgia,serif;font-size:1.375rem;line-height:1.5;font-weight:500;color:#eee5cd;margin:0 0 .75rem}
+.draft-edit-context .draft-edit-original{padding:.6rem .75rem;border-left:3px solid #c6b27d;background:#142f30;color:#edf0de;font-size:1rem;line-height:1.65;margin:0 0 .75rem}
+.draft-edit-context .draft-edit-boundary{font-size:.9375rem;line-height:1.75;color:#d7e2d4;margin:0 0 .6rem}
+.draft-edit-context .draft-edit-investigation{font-size:.8125rem;line-height:1.7;color:#c6d3c1;margin:0 0 .75rem}
+.draft-edit-context [data-action="draft-edit-return"]{display:block;width:100%;max-width:100%;min-height:48px;margin:0;text-align:left;white-space:normal;overflow-wrap:anywhere;background:#173234;border-color:#a58f5b;color:#ead7a6;font-size:.9375rem;line-height:1.6}
+.task-card [data-action="unlock"]{color:#d4b6a7}
+@media(max-width:350px){.draft-edit-context{padding:.75rem}.draft-edit-context .draft-edit-original{padding:.5rem}.draft-edit-context [data-action="draft-edit-return"]{padding:10px}}
