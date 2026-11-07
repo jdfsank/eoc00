@@ -1,0 +1,275 @@
+{
+  "result": "pass after archive-art intrinsic-size fix",
+  "scope": "Headless Chromium, native app big-text mode; not OS zoom or physical device certification.",
+  "matrix": "3 genuine producer createRun(0) saves: current, pre-tradeoffs, original legacy; each 390x844/320x568 native100%, 390x844/320x568 app-native200%, 1280x900 native100%.",
+  "checksPassed": 294,
+  "browserCaptures": 113,
+  "checks": [
+    "45 exact canonical reward/risk comparisons; each title visible after real directory click",
+    "No horizontal document overflow or clipped ledger/cost/evidence nodes across all 45 cards",
+    "Each card keyboard Enter preview, pointer back and repeated directory double-click keep entire live world and serialized autosave unchanged",
+    "All six current/original build previews lack unrelated relocation contract; real current year20 relocate_teacher retains it without save mutation"
+  ],
+  "supplement": [
+    {
+      "name": "current build_merchant no unrelated relocation in preview",
+      "pass": true
+    },
+    {
+      "name": "current build_state no unrelated relocation in preview",
+      "pass": true
+    },
+    {
+      "name": "current build_joint no unrelated relocation in preview",
+      "pass": true
+    },
+    {
+      "name": "legacy build_merchant no unrelated relocation in preview",
+      "pass": true
+    },
+    {
+      "name": "legacy build_state no unrelated relocation in preview",
+      "pass": true
+    },
+    {
+      "name": "legacy build_joint no unrelated relocation in preview",
+      "pass": true
+    },
+    {
+      "name": "real relocate_teacher retains relocation contract",
+      "pass": true
+    },
+    {
+      "name": "real relocation preview no write",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "findings": [
+    "Reward and risk use text labels plus teal/gold rules, not color alone; cost/probability/evidence remain separate.",
+    "Shared note explicitly states all three fail without refund, require later maintenance, require successful build and operating sources for original later chains, and renewal consumes intervention.",
+    "Legacy text remains canonical legacy wording and is substantially longer. 320@200 joint entire card is tall; vertical scrolling is necessary. No claim all terms fit first viewport."
+  ],
+  "limits": [
+    "Headless browser, not physical device or screen reader review.",
+    "Keyboard exercised via focused-card Enter; this independent run does not certify full sequential Tab order.",
+    "No outcome or balance simulation rerun in this visual task."
+  ],
+  "rawEvidence": "../round37-visual-qa/results.json",
+  "sourceBefore": {
+    "action-card-copy.js": "02f9ec1878b6c8496ec641c2186eae6aa1274f235d8adc61dfcb94fa422c07ec",
+    "action-preview.js": "a0a97ff27469738c9d4be5257177bfa5544ebe4b1cbaeee8cb54eeabb9e493ce",
+    "actor-agency-view.js": "ba35271e971c19a62b94245476f6c8e2f882ea8fe90d6295f91e6e79865b4cd4",
+    "board-visuals.js": "acbeb94bc19ac36b8c991420285e84d2ee2df777adb0e48aa0059ead3767cb04",
+    "board.js": "cb2f7d20dec0a75ce0f1c1dbf67ca41c636124a56b9d0075ae974c3d5826cf80",
+    "branch-access.js": "2ef0fc66b6ad1300c2e7d6c72e0dea3e0203c9339b4d195bb3610c700634bc80",
+    "building-card-tradeoff.js": "d046b23478ed7d320ea0b55eb7accdcd6f6119850d62b36f3bd38c263a03c1a6",
+    "building-contract.js": "c9f77c8dc208173ec527507861528738cc0c665ca7214395021f5dfa0900aeb7",
+    "channel-history.js": "e2c2773c61674b7cd072f74aab08fb8a0a453a8700de66fd0d9a51eaa65cb924",
+    "comparison-guidance.js": "e07df5130f47ca1ea798098daec035d20e46d8f8ef0bc405ec3abd8e0de1248c",
+    "crisis-history.js": "9f0794a991361c401bd60f5c7a9956d3db85b4a2a53a449b845173622dee4af7",
+    "crisis-outlook.js": "b9ba4874c20cfc75bfd948c46641d9f65606d52760f5583e6423e9840e613723",
+    "crisis-regions.js": "a46066d8d0666e72b71aaef493ae639dd96d21a2eb9f06f1e9736ab812dca176",
+    "crisis-scene-context.js": "7fb90ec8d02b5fa23389faa4e8a03a5c9720568d106ff2713a3f416f25dd624b",
+    "data/board.json": "07fed22503bbaecb5f6f8c60b6aad99b6b61d47cf86065547a52889ae4c97f42",
+    "decade-recollection-view.js": "c3d6c31490c7e80199a365ebfef971cd6e0bf34cc9d760f298f706a0f822180e",
+    "decade-review.js": "3d01e5f077fb51fe8e465fbdc5db9d6d5a40c2bf3da4e880fe5f83f65da9ea93",
+    "decision-stage-copy.js": "977fb35fdfbc3ca627a7e41fd485229c1f82ee10c6f8a4c6177082859427fc1d",
+    "draft-choice-comparison-view.js": "be222e9186d82946ef940524cedecd3f8443ae532d36dbc7ece18485cff7ebd8",
+    "draft-choice-comparison.js": "b6783ad416f3bf11dc4defc13caca42d0249e8958e1417c244a08bb6a07b419f",
+    "draft-comparison-navigation.js": "3b90e140ce495c129960a9693e9423aed013f197a121f552201901e6e35ecf3a",
+    "draft-edit-context-view.js": "fe56dd9258986dc8557a71da6065f46d2940cab1a3bae4d4fef2e9a63b110b96",
+    "draft-edit-context.js": "834a1b3dac1dba7df7f3bdee1c9dec779b6f970399de9b402b65c0cd6a412a08",
+    "east-bank-visit-art.js": "21eec6b7b3881e02ae45328464f3c15ad6402f23d3a8ae58086a776883dc81d1",
+    "ending-art.js": "b35409f2090f27f5e669cdf77d869feb6413b8c65aadcafc4faf1c8d0cd474b2",
+    "ending-policy-context.js": "11fb4b8744d5af3fabf5bd8abea9ffb7c36474439e419305271c2e08bea880cc",
+    "ending-recollection.js": "c1d67af533b2dfbaa1f178065bc64223b7c9dca87ffa8781e736eb64f304f2a8",
+    "evidence-bookmark.js": "9809b31386fd6e1873ab6adb89999b39560b3e83c0e25abf36e64ebbdf5a724d",
+    "far-port-visuals.js": "f166abc9d60b6215f29bb01ddad2ddc20e3a229bdf2122501afd749a903d1af2",
+    "fee-history.js": "e827c61fc60294bd9d30894eb5a12fffe873b8fd9f37159314f3b8844e086f43",
+    "handoff-outlook.js": "041964f93f8e02c83f5814dd421eb8f9a9caf135d166aa1836c86365db347f14",
+    "import-request-guard.js": "8a8dd5bbbbeceb7f1cb3ff9815ae4c187b8a6f4daff2a8c8461434d36021d9e6",
+    "investigation-comparison-view.js": "ac9d1a4c3b08685029cb9327d9a3440de1b5649460d9ea53b01521a229f2562c",
+    "investigation-comparison.js": "6a528360c41a8d60b59047ada4f2f49d7af895c9a4ee856da7cabd71a595550f",
+    "investigation-cross-location-view.js": "605c91fd2c86bea85f85094a1412bde7f782c165cbdab49b8e05792d59c6704e",
+    "investigation-cross-location.js": "cb98fc3d07fe9687f48d6d1f1463c5263eb9b773227094af058f56e793c43b45",
+    "investigation-intent.js": "99974162016be883b38753e8083b2ade2bdc2a10151aeba8860918b4b2b35033",
+    "investigation-plan-view.js": "26dedbf3eb9e176d9cd057144d3321e5649c9d5a8c24244b149b2e4e9e3c760a",
+    "investigation-plan.js": "c9e9d68c6edd8bfc03fcfcd481ef67750ad59f6b8fdb998118baea3af898d472",
+    "local-crisis-record.js": "3b2a9a1477b00721d4dddecc93373669b65266c9513d4d9a46d17441be94453e",
+    "main.js": "e5d5f8a8d9bdd106805bffc7fc8123efc5e7d6f546e58466613cf0c577f96aa6",
+    "monastery-visuals.js": "fedb4e8868f21693dab1dc260b0ffc27535fcd3fc131243c26787d1856edb496",
+    "opening-reading-context.js": "d8b4262277948fdd61a13321b856e473069531cc732aedf692cfc2e4223132de",
+    "planning-opportunity-view.js": "a02414605fe61a67f4e654107eae42af68d82074fd78202c2397341dafca8ea1",
+    "planning-opportunity.js": "0ee8921b86152f965607131a848a629b7e13763536dbe1bb23eee6e1026d033c",
+    "playback-journal.js": "17f2a881866a4261d939332c74e9e3b82622fc1278f65abff446e026400e0717",
+    "record-stage-context.js": "d73fecd93e865196174c4c5bb1d82260fa8e06f6163242c5ddcb733b4cd3c374",
+    "relocation-history.js": "874bdeb1faf3f3b5c667a76895f82dfcddb1019e8318ca60ff11ed22e07decce",
+    "review-history.js": "4695348f08dc8141de4d8605a2b66f3079300bd0e5c602b6f4d61ac7c52dc4c3",
+    "review-reading-context.js": "6f33463f65eaad4d53be006141470dc90244b9068693e38da7ac2fff1dce59e5",
+    "riverbank-history.js": "d8db0327c154d314ffd6c9b4d4ac39285a4435b24c99910054294adcace76970",
+    "save.js": "3d223c8e34e0b09c7e02f769bff23d110730de463313f1d2312893d54726b768",
+    "scene-art.js": "c0b9d1bf1fb0585dc511a0f8bb92387b154be72c5f8a12406312c77618fc772a",
+    "scene-source-reading.js": "d217759924f4200c23c45a6cb771a1c0b3ce3679b7fec95cf79e1eeb089e42da",
+    "scene-visit.js": "13e0649c59001818e8887597302ebc360bbf272455813431f8bb3d06eb70f8c6",
+    "simulation.js": "08fab00c7ba363112e455733cc4820953479617b1322e53f407f49c22f237fee",
+    "south-bank-history.js": "42f362525aee6f06009e6af96891c5e439054625d76818d0e82204cacc9bff44",
+    "south-bank-visuals.js": "7dffe0719c6daf1d91e43897a4682cef778c4653d45990ed391b2bf6b9ac4dd0",
+    "stage-boundary-context.js": "5a4818ab06f48207bd49dc42be32f605baa059cc7906b07a0834e41815113fc0",
+    "stage-decade-review.js": "d2283df4d2260f66bf3c548c4b07477adb9af09dd4e777471a3a68e7b5848242",
+    "station-access-visuals.js": "1266eada1d0940c4310479005777e63256e9a6ee4800c1b674ab5994c9820b79",
+    "story.js": "205318494aa78849a9d439278ac3bdf29212691ce197a2b7140e6ceb57791578",
+    "style.css": "b04acb0ed95667d6c97a5afd08bdab503db32962b39d70c195dfb7e5edb930ec",
+    "succession-scene-context.js": "8aef07feb54d83e9c83489dbb248fb7457715b657bce3e66231ca4bcd9c30542",
+    "training-authorization.js": "b1689c31cf5d07e38cbca4ad0c04c6489594e5b7cdd4ec002c0630587b97e194",
+    "training-choice-comparison-view.js": "60da5ab06d4d4503506270b7998aaabfee8cc1e22f13a9ff95ba019dfbbf3e0a",
+    "training-choice-comparison.js": "6d412c98a6707d9463ea9157386aa9e3dd9b2a5b58a9f4c01a45a585a045dfa8",
+    "training-workload.js": "284ac9c61304a3162ac672a6d67eef7797c674d7d491a947964cf560d3ad0d1d",
+    "world-phase-context.js": "e7e15790bf3d8bd81679e2893a3ee7270d18b20025f8ccbdae46b89abf5b6d89",
+    "world-planning.js": "f1fb0a26b6d8523bc4983b45f4c68eabecd1fbc4819675c21d331f7b358cda1f"
+  },
+  "sourceAfter": {
+    "action-card-copy.js": "02f9ec1878b6c8496ec641c2186eae6aa1274f235d8adc61dfcb94fa422c07ec",
+    "action-preview.js": "a0a97ff27469738c9d4be5257177bfa5544ebe4b1cbaeee8cb54eeabb9e493ce",
+    "actor-agency-view.js": "ba35271e971c19a62b94245476f6c8e2f882ea8fe90d6295f91e6e79865b4cd4",
+    "board-visuals.js": "acbeb94bc19ac36b8c991420285e84d2ee2df777adb0e48aa0059ead3767cb04",
+    "board.js": "cb2f7d20dec0a75ce0f1c1dbf67ca41c636124a56b9d0075ae974c3d5826cf80",
+    "branch-access.js": "2ef0fc66b6ad1300c2e7d6c72e0dea3e0203c9339b4d195bb3610c700634bc80",
+    "building-card-tradeoff.js": "d046b23478ed7d320ea0b55eb7accdcd6f6119850d62b36f3bd38c263a03c1a6",
+    "building-contract.js": "c9f77c8dc208173ec527507861528738cc0c665ca7214395021f5dfa0900aeb7",
+    "channel-history.js": "e2c2773c61674b7cd072f74aab08fb8a0a453a8700de66fd0d9a51eaa65cb924",
+    "comparison-guidance.js": "e07df5130f47ca1ea798098daec035d20e46d8f8ef0bc405ec3abd8e0de1248c",
+    "crisis-history.js": "9f0794a991361c401bd60f5c7a9956d3db85b4a2a53a449b845173622dee4af7",
+    "crisis-outlook.js": "b9ba4874c20cfc75bfd948c46641d9f65606d52760f5583e6423e9840e613723",
+    "crisis-regions.js": "a46066d8d0666e72b71aaef493ae639dd96d21a2eb9f06f1e9736ab812dca176",
+    "crisis-scene-context.js": "7fb90ec8d02b5fa23389faa4e8a03a5c9720568d106ff2713a3f416f25dd624b",
+    "data/board.json": "07fed22503bbaecb5f6f8c60b6aad99b6b61d47cf86065547a52889ae4c97f42",
+    "decade-recollection-view.js": "c3d6c31490c7e80199a365ebfef971cd6e0bf34cc9d760f298f706a0f822180e",
+    "decade-review.js": "3d01e5f077fb51fe8e465fbdc5db9d6d5a40c2bf3da4e880fe5f83f65da9ea93",
+    "decision-stage-copy.js": "977fb35fdfbc3ca627a7e41fd485229c1f82ee10c6f8a4c6177082859427fc1d",
+    "draft-choice-comparison-view.js": "be222e9186d82946ef940524cedecd3f8443ae532d36dbc7ece18485cff7ebd8",
+    "draft-choice-comparison.js": "b6783ad416f3bf11dc4defc13caca42d0249e8958e1417c244a08bb6a07b419f",
+    "draft-comparison-navigation.js": "3b90e140ce495c129960a9693e9423aed013f197a121f552201901e6e35ecf3a",
+    "draft-edit-context-view.js": "fe56dd9258986dc8557a71da6065f46d2940cab1a3bae4d4fef2e9a63b110b96",
+    "draft-edit-context.js": "834a1b3dac1dba7df7f3bdee1c9dec779b6f970399de9b402b65c0cd6a412a08",
+    "east-bank-visit-art.js": "21eec6b7b3881e02ae45328464f3c15ad6402f23d3a8ae58086a776883dc81d1",
+    "ending-art.js": "b35409f2090f27f5e669cdf77d869feb6413b8c65aadcafc4faf1c8d0cd474b2",
+    "ending-policy-context.js": "11fb4b8744d5af3fabf5bd8abea9ffb7c36474439e419305271c2e08bea880cc",
+    "ending-recollection.js": "c1d67af533b2dfbaa1f178065bc64223b7c9dca87ffa8781e736eb64f304f2a8",
+    "evidence-bookmark.js": "9809b31386fd6e1873ab6adb89999b39560b3e83c0e25abf36e64ebbdf5a724d",
+    "far-port-visuals.js": "f166abc9d60b6215f29bb01ddad2ddc20e3a229bdf2122501afd749a903d1af2",
+    "fee-history.js": "e827c61fc60294bd9d30894eb5a12fffe873b8fd9f37159314f3b8844e086f43",
+    "handoff-outlook.js": "041964f93f8e02c83f5814dd421eb8f9a9caf135d166aa1836c86365db347f14",
+    "import-request-guard.js": "8a8dd5bbbbeceb7f1cb3ff9815ae4c187b8a6f4daff2a8c8461434d36021d9e6",
+    "investigation-comparison-view.js": "ac9d1a4c3b08685029cb9327d9a3440de1b5649460d9ea53b01521a229f2562c",
+    "investigation-comparison.js": "6a528360c41a8d60b59047ada4f2f49d7af895c9a4ee856da7cabd71a595550f",
+    "investigation-cross-location-view.js": "605c91fd2c86bea85f85094a1412bde7f782c165cbdab49b8e05792d59c6704e",
+    "investigation-cross-location.js": "cb98fc3d07fe9687f48d6d1f1463c5263eb9b773227094af058f56e793c43b45",
+    "investigation-intent.js": "99974162016be883b38753e8083b2ade2bdc2a10151aeba8860918b4b2b35033",
+    "investigation-plan-view.js": "26dedbf3eb9e176d9cd057144d3321e5649c9d5a8c24244b149b2e4e9e3c760a",
+    "investigation-plan.js": "c9e9d68c6edd8bfc03fcfcd481ef67750ad59f6b8fdb998118baea3af898d472",
+    "local-crisis-record.js": "3b2a9a1477b00721d4dddecc93373669b65266c9513d4d9a46d17441be94453e",
+    "main.js": "e5d5f8a8d9bdd106805bffc7fc8123efc5e7d6f546e58466613cf0c577f96aa6",
+    "monastery-visuals.js": "fedb4e8868f21693dab1dc260b0ffc27535fcd3fc131243c26787d1856edb496",
+    "opening-reading-context.js": "d8b4262277948fdd61a13321b856e473069531cc732aedf692cfc2e4223132de",
+    "planning-opportunity-view.js": "a02414605fe61a67f4e654107eae42af68d82074fd78202c2397341dafca8ea1",
+    "planning-opportunity.js": "0ee8921b86152f965607131a848a629b7e13763536dbe1bb23eee6e1026d033c",
+    "playback-journal.js": "17f2a881866a4261d939332c74e9e3b82622fc1278f65abff446e026400e0717",
+    "record-stage-context.js": "d73fecd93e865196174c4c5bb1d82260fa8e06f6163242c5ddcb733b4cd3c374",
+    "relocation-history.js": "874bdeb1faf3f3b5c667a76895f82dfcddb1019e8318ca60ff11ed22e07decce",
+    "review-history.js": "4695348f08dc8141de4d8605a2b66f3079300bd0e5c602b6f4d61ac7c52dc4c3",
+    "review-reading-context.js": "6f33463f65eaad4d53be006141470dc90244b9068693e38da7ac2fff1dce59e5",
+    "riverbank-history.js": "d8db0327c154d314ffd6c9b4d4ac39285a4435b24c99910054294adcace76970",
+    "save.js": "3d223c8e34e0b09c7e02f769bff23d110730de463313f1d2312893d54726b768",
+    "scene-art.js": "c0b9d1bf1fb0585dc511a0f8bb92387b154be72c5f8a12406312c77618fc772a",
+    "scene-source-reading.js": "d217759924f4200c23c45a6cb771a1c0b3ce3679b7fec95cf79e1eeb089e42da",
+    "scene-visit.js": "13e0649c59001818e8887597302ebc360bbf272455813431f8bb3d06eb70f8c6",
+    "simulation.js": "08fab00c7ba363112e455733cc4820953479617b1322e53f407f49c22f237fee",
+    "south-bank-history.js": "42f362525aee6f06009e6af96891c5e439054625d76818d0e82204cacc9bff44",
+    "south-bank-visuals.js": "7dffe0719c6daf1d91e43897a4682cef778c4653d45990ed391b2bf6b9ac4dd0",
+    "stage-boundary-context.js": "5a4818ab06f48207bd49dc42be32f605baa059cc7906b07a0834e41815113fc0",
+    "stage-decade-review.js": "d2283df4d2260f66bf3c548c4b07477adb9af09dd4e777471a3a68e7b5848242",
+    "station-access-visuals.js": "1266eada1d0940c4310479005777e63256e9a6ee4800c1b674ab5994c9820b79",
+    "story.js": "205318494aa78849a9d439278ac3bdf29212691ce197a2b7140e6ceb57791578",
+    "style.css": "b04acb0ed95667d6c97a5afd08bdab503db32962b39d70c195dfb7e5edb930ec",
+    "succession-scene-context.js": "8aef07feb54d83e9c83489dbb248fb7457715b657bce3e66231ca4bcd9c30542",
+    "training-authorization.js": "b1689c31cf5d07e38cbca4ad0c04c6489594e5b7cdd4ec002c0630587b97e194",
+    "training-choice-comparison-view.js": "60da5ab06d4d4503506270b7998aaabfee8cc1e22f13a9ff95ba019dfbbf3e0a",
+    "training-choice-comparison.js": "6d412c98a6707d9463ea9157386aa9e3dd9b2a5b58a9f4c01a45a585a045dfa8",
+    "training-workload.js": "284ac9c61304a3162ac672a6d67eef7797c674d7d491a947964cf560d3ad0d1d",
+    "world-phase-context.js": "e7e15790bf3d8bd81679e2893a3ee7270d18b20025f8ccbdae46b89abf5b6d89",
+    "world-planning.js": "f1fb0a26b6d8523bc4983b45f4c68eabecd1fbc4819675c21d331f7b358cda1f"
+  },
+  "sourceStable": true,
+  "sourceHashTiming": "Captured before and after final rerun only; no retrospective first-run hash claim.",
+  "artLoadedComparison": [
+    {
+      "kind": "before",
+      "width": 390,
+      "box": {
+        "x": 17,
+        "y": 321.796875,
+        "width": 356,
+        "height": 178
+      },
+      "sha256": "d23c3f6909e259bc4bdaef5781fd04b801d2e00fd608c868677bfa7ed63385f3"
+    },
+    {
+      "kind": "before",
+      "width": 320,
+      "box": {
+        "x": 17,
+        "y": 320.09375,
+        "width": 286,
+        "height": 150
+      },
+      "sha256": "cdf1bfdf25e4e0302fe2079758685c470de57d208ade826c6cb3d8efe7c85431"
+    },
+    {
+      "kind": "before",
+      "width": 1280,
+      "box": {
+        "x": 271,
+        "y": 341.796875,
+        "width": 738,
+        "height": 290
+      },
+      "sha256": "521e327438f3d579cbbdf40a848a3c5586792129a59c8be7107cfaeefa19d9e1"
+    },
+    {
+      "kind": "final",
+      "width": 390,
+      "box": {
+        "x": 17,
+        "y": 321.796875,
+        "width": 356,
+        "height": 178
+      },
+      "sha256": "d23c3f6909e259bc4bdaef5781fd04b801d2e00fd608c868677bfa7ed63385f3"
+    },
+    {
+      "kind": "final",
+      "width": 320,
+      "box": {
+        "x": 17,
+        "y": 320.09375,
+        "width": 286,
+        "height": 150
+      },
+      "sha256": "cdf1bfdf25e4e0302fe2079758685c470de57d208ade826c6cb3d8efe7c85431"
+    },
+    {
+      "kind": "final",
+      "width": 1280,
+      "box": {
+        "x": 271,
+        "y": 341.796875,
+        "width": 738,
+        "height": 290
+      },
+      "sha256": "521e327438f3d579cbbdf40a848a3c5586792129a59c8be7107cfaeefa19d9e1"
+    }
+  ],
+  "artVerdict": "Pre-fix vs final loaded geometry and original PNG SHA256 are identical at320/390/1280. Actual pixels inspected.",
+  "harnessNotes": "Optional art-comparison scratch harness first failed when closing a page under single-process Chromium; a second attempt waited on persisted scene navigation. Corrected harness reused page and home navigation; completed all six captures. Neither was a product assertion failure."
+}

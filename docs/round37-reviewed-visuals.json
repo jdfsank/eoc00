@@ -1,0 +1,182 @@
+{
+  "verdict": "pass with expected vertical reading cost",
+  "baselineComparison": {
+    "before": "../audit37-joint.png",
+    "after": "../round37-after-joint.png",
+    "review": "Both actual PNGs inspected. New distinct reward/risk rows make tradeoffs explicit while retaining title, cost and evidence, at cost of larger cards."
+  },
+  "reviewed": [
+    {
+      "path": "docs/screenshots/round37-current-390-100-build_state.png",
+      "sha256": "adeec019bbde7696e466cf182674a1aee0616d754f76c83c4eaba8653f11af45",
+      "width": 390,
+      "height": 844,
+      "review": "Fresh final-run original capture. Final PNG pixels re-inspected after fix."
+    },
+    {
+      "path": "docs/screenshots/round37-current-390-100-build_joint-preview.png",
+      "sha256": "e738dc1dfb7edb149f69e18a6db809215760d4d4e0aff3b2524d4bf51fb8963b",
+      "width": 390,
+      "height": 844,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-current-320-100-build_merchant.png",
+      "sha256": "02f6ef01d44eba5d0333961f2ba149f26927f530e01bc636b039caff28c2d145",
+      "width": 320,
+      "height": 568,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-current-390-200-build_joint.png",
+      "sha256": "cb97a7aedfae157e33aa4bbcc6570b8acc0e9f0428ca96c420c17658e963aaf3",
+      "width": 390,
+      "height": 844,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-current-320-200-build_joint.png",
+      "sha256": "a11098e36be6a34ad5f84b9d015ffaaecbae2a91ced40c5f35c04e9de9ff72f5",
+      "width": 320,
+      "height": 568,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-current-320-200-build_joint-entire-card.png",
+      "sha256": "69e46495da1892b7c803f33d3a228b5ed5281ab1a7d1da9e7dad29f30b9bb96a",
+      "width": 288,
+      "height": 1226,
+      "review": "Fresh final-run original capture. Final PNG pixels re-inspected after fix."
+    },
+    {
+      "path": "docs/screenshots/round37-current-320-200-common-terms.png",
+      "sha256": "9d6c109ed491e8931884a1938707ca190eea73225d85a1b269a7cd8342a1e6f3",
+      "width": 288,
+      "height": 595,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-current-1280-100-build_joint.png",
+      "sha256": "edf80ef5e475b1db345c48a1f5fe6b2e19d6ebd9ba04b9f59f0472af9c9da863",
+      "width": 1280,
+      "height": 900,
+      "review": "Fresh final-run original capture. Final PNG pixels re-inspected after fix."
+    },
+    {
+      "path": "docs/screenshots/round37-pre-tradeoffs-390-100-build_joint.png",
+      "sha256": "3e25dc0a0f33694ac6cc4a9e5dcb7af68b6cff3e73515866f2d287b774618b66",
+      "width": 390,
+      "height": 844,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-pre-tradeoffs-390-200-build_joint.png",
+      "sha256": "3e507246fe81a222fda3c6ded783b09cdda4d6c32cd75856c41ae8e737e6338d",
+      "width": 390,
+      "height": 844,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-legacy-320-100-build_state.png",
+      "sha256": "7964ba6f9524a5d6d992a88b2458f2eb3e3e0812545d4022684cd2743f3a2f80",
+      "width": 320,
+      "height": 568,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-legacy-390-100-directory.png",
+      "sha256": "3f68c168e28f26382482a9a9e6151e83424b5d310a02ef1c2ab042af82acd8cc",
+      "width": 390,
+      "height": 844,
+      "review": "Fresh final-run original capture. Final PNG pixels re-inspected after fix."
+    },
+    {
+      "path": "docs/screenshots/round37-legacy-390-200-build_joint.png",
+      "sha256": "d25a41750b25d5b3fabb149116468906ae84c1c3e8161f9b62d2d179e984f8a4",
+      "width": 390,
+      "height": 844,
+      "review": "Fresh final-run original capture. Same scenario visually inspected in initial run; fresh final capture included, representative final PNGs re-inspected."
+    },
+    {
+      "path": "docs/screenshots/round37-legacy-320-200-build_joint-entire-card.png",
+      "sha256": "ee7b16b60947cfc6c9a8ebad96c796fb92df43c60a310b3183029f7b0497d20c",
+      "width": 288,
+      "height": 1901,
+      "review": "Fresh final-run original capture. Final PNG pixels re-inspected after fix."
+    }
+  ],
+  "finalRerun": {
+    "checks": 294,
+    "sourceStable": true,
+    "artLoadedComparison": [
+      {
+        "kind": "before",
+        "width": 390,
+        "box": {
+          "x": 17,
+          "y": 321.796875,
+          "width": 356,
+          "height": 178
+        },
+        "sha256": "d23c3f6909e259bc4bdaef5781fd04b801d2e00fd608c868677bfa7ed63385f3"
+      },
+      {
+        "kind": "before",
+        "width": 320,
+        "box": {
+          "x": 17,
+          "y": 320.09375,
+          "width": 286,
+          "height": 150
+        },
+        "sha256": "cdf1bfdf25e4e0302fe2079758685c470de57d208ade826c6cb3d8efe7c85431"
+      },
+      {
+        "kind": "before",
+        "width": 1280,
+        "box": {
+          "x": 271,
+          "y": 341.796875,
+          "width": 738,
+          "height": 290
+        },
+        "sha256": "521e327438f3d579cbbdf40a848a3c5586792129a59c8be7107cfaeefa19d9e1"
+      },
+      {
+        "kind": "final",
+        "width": 390,
+        "box": {
+          "x": 17,
+          "y": 321.796875,
+          "width": 356,
+          "height": 178
+        },
+        "sha256": "d23c3f6909e259bc4bdaef5781fd04b801d2e00fd608c868677bfa7ed63385f3"
+      },
+      {
+        "kind": "final",
+        "width": 320,
+        "box": {
+          "x": 17,
+          "y": 320.09375,
+          "width": 286,
+          "height": 150
+        },
+        "sha256": "cdf1bfdf25e4e0302fe2079758685c470de57d208ade826c6cb3d8efe7c85431"
+      },
+      {
+        "kind": "final",
+        "width": 1280,
+        "box": {
+          "x": 271,
+          "y": 341.796875,
+          "width": 738,
+          "height": 290
+        },
+        "sha256": "521e327438f3d579cbbdf40a848a3c5586792129a59c8be7107cfaeefa19d9e1"
+      }
+    ],
+    "review": "Final current390 state card, current desktop joint card, legacy390 directory, entire current/legacy320@200 cards and loaded320/390/desktop art pixels re-inspected. No clipped text or changed loaded artwork.",
+    "captureScope": "14 curated originals refreshed from final source; captures not repainted."
+  }
+}

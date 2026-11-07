@@ -477,3 +477,18 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 [data-actor-agency-target]{scroll-margin-block:12px}
 :is([data-actor-agency-target],[data-actor-agency-link]):focus{outline:3px solid var(--gold);outline-offset:3px}
 @media(max-width:350px){.choice-agency{padding:.65rem .75rem}}
+
+/* Round 37: paired terms form a ledger within each first-window contract.
+   Color is reinforced by words and a double rule; native text size is intact. */
+.building-common-terms{border-left:3px double var(--gold);padding:.65rem .85rem;margin:0 0 1rem;background:#243b38;color:#d8dfcf;font-size:.9375rem;line-height:1.65;overflow-wrap:anywhere}
+.building-common-terms strong{display:block;color:var(--gold);font-weight:600;margin-bottom:.25rem}
+.building-choice-card .choice-card-tradeoff{display:grid;gap:.75rem;margin:.3rem 0}
+.building-choice-card [data-card-tradeoff]{display:block;min-width:0;padding-left:.75rem;border-left:2px solid #72c1b5;color:var(--paper);line-height:1.65;overflow-wrap:anywhere}
+.building-choice-card [data-card-tradeoff="risk"]{border-left:3px double var(--gold);color:#e8debd}
+.building-choice-card [data-card-tradeoff] strong{display:block;font-size:.8125rem;letter-spacing:.04em;color:var(--science);font-weight:600;margin-bottom:.15rem}
+.building-choice-card [data-card-tradeoff="risk"] strong{color:var(--gold)}
+.building-choice-card .choice-cost{border-top:1px solid var(--line);padding-top:.6rem;margin-top:.4rem}
+
+/* Reserve this existing SVG's real ratio before decode, so preview return
+   does not temporarily move the reading origin. Loaded artwork is unchanged. */
+.scene-planning-page .scene-art img[data-intrinsic-scene-size]{height:auto}
