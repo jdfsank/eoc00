@@ -222,3 +222,9 @@ CI第20套仅新增事件记录与失败后的600ms有界DOM观察；原30秒can
 ## 第38轮：第十年的岗位分岔目录
 
 `succession-choice-fork.js`以已有现场来源闸门与可用合同为依据，脱离并冻结返回展示数据；缺岗后果来自现有staffing适配器。`succession-choice-fork-view.js`只画角色与岗位说明，原目录按钮继续执行同一个只读定位动作，原可访问名称与完整标题不变，新增说明以`aria-describedby`相连。模拟、存档、故事、现有素材及旧测试保持不变。见[三方面评估](ROUND38_PLAYABILITY_REVIEW.md)与[条件边界](ROUND38_SUCCESSION_CHOICES.md)。
+
+## 第39轮：危机合同目录的时间与后果
+
+`crisis-choice-fork.js`复用`getCrisisSceneContext`的真实规则/来源/窗口闸门，并再次核对停闸reward的0.20/0.30完整已知合同口径。读取当前`getActions`，复制新的只读展示对象，不读取种子、未来快照、抽样或证词正文，不调用取证、锁定、结算或存档写入。当前候选合同与已锁草稿分开，后补撤离路线只改变可重新选择的合同，原证据快照不变。
+
+`crisis-choice-fork-view.js`只渲染经过转义的span与两个原创说明线图。`sceneChoiceDirectory`保留原按钮动作、顺序、标题及可访问名，补充描述关联；不新建导航或隐藏合同。新CSS只作用于新类，保持原生rem字号，移动端单列、宽屏两列、大字单列。所有旧生产核心、原故事、存档、素材和测试逐字保留。完整评估见[第39轮](ROUND39_PLAYABILITY_REVIEW.md)。

@@ -1,0 +1,189 @@
+{
+  "round": 39,
+  "candidate": 9,
+  "status": "独立主轮与额外强化轮均完整通过；不代表远程CI或真人验证通过。",
+  "sourceHashMethod": "按相对src路径字典序递归，将每个相对路径与文件字节顺序送入SHA256；脚本中的hash()实现为准。",
+  "runs": [
+    {
+      "name": "verified",
+      "description": "完整主轮：55/80/100%自然准备，双角色、B4/F6，320/390/1280原生100/200%；重复、键盘、预览返回、真实取证与旧草稿、旧producer及D4范围。",
+      "checksPassed": 1426,
+      "matrixCases": 72,
+      "originalPngCount": 23,
+      "exitCode": 0,
+      "sourceBefore": "e71eed01e1b8764c398028d0e4c4c7c95bbc566a4c5ae55b0e998d6b09c4c1c5",
+      "sourceAfter": "e71eed01e1b8764c398028d0e4c4c7c95bbc566a4c5ae55b0e998d6b09c4c1c5",
+      "sourceStable": true,
+      "script": {
+        "artifact": "qa-verified.mjs",
+        "sha256": "cdbb7c51cee874888ecc4945a5e3e345045529bad295b7ed69481d6e1590f8ba"
+      },
+      "rawReport": {
+        "artifact": "verified/results.json",
+        "sha256": "165e4ef42e7690f37da7c69057a3e1eb90045bfe829b63f442da41bbc40596af"
+      },
+      "log": {
+        "artifact": "verified/run.log",
+        "sha256": "52b1ddf399fd913a928f6968c69152c8f65c4dab4487e2a6c7b1ed1e582c1e3c"
+      }
+    },
+    {
+      "name": "enhanced-verified",
+      "description": "额外强化矩阵独立完整运行：已真实取得撤离路线的0.20，双角色、B4/F6，六种原生视口；自然55/80/100%模型比较，浏览器24组合使用55%世界；另验旧producer与D4。",
+      "checksPassed": 525,
+      "matrixCases": 24,
+      "originalPngCount": 10,
+      "exitCode": 0,
+      "sourceBefore": "e71eed01e1b8764c398028d0e4c4c7c95bbc566a4c5ae55b0e998d6b09c4c1c5",
+      "sourceAfter": "e71eed01e1b8764c398028d0e4c4c7c95bbc566a4c5ae55b0e998d6b09c4c1c5",
+      "sourceStable": true,
+      "script": {
+        "artifact": "qa-enhanced-verified.mjs",
+        "sha256": "c58beb15d41bcca375faa665c7f5dc5877ef2161c47ce72f47dea1bbde135f2a"
+      },
+      "rawReport": {
+        "artifact": "enhanced-verified/results.json",
+        "sha256": "892cd1069f35d61460646b6423e16f6ba82fc12741bffdac5acf6576d35138bf"
+      },
+      "log": {
+        "artifact": "enhanced-verified/run.log",
+        "sha256": "0d33a2be755fa7baea439b940461d9b433d215007a3937359a41b0703c2ef8f9"
+      }
+    }
+  ],
+  "reproducibility": {
+    "layout": "执行目录下保留三个同级文件夹：eoc00、round39-baseline、round39-independent-qa。脚本位于最后一个目录，../eoc00及../round39-baseline导入以脚本位置解析。",
+    "commands": [
+      "node round39-independent-qa/qa-verified.mjs",
+      "node round39-independent-qa/qa-enhanced-verified.mjs"
+    ],
+    "browser": "Playwright Chromium，@sparticuz/chromium提供可执行程序；专用本地Vite端口5439、5539。",
+    "files": "脚本、原JSON和日志以本报告中artifact相对round39-independent-qa目录的位置保留。移动归档脚本后必须恢复此同级布局，不能声称任意位置可直接运行。"
+  },
+  "invariants": [
+    "simulation.js和story.js相对round39-baseline字节完全一致；三种自然准备状态、双角色与B4/F6/D4原合同及原故事输出一致。",
+    "只读导航逐次核对整份live state和autosave与真实引擎状态完全一致。",
+    "每次适用的现场状态核对同时断言目录调查余额等于真实引擎余额。",
+    "真实锁基本停闸后支付2轮撤离调查，当前目录更新0.20；原草稿JSON和0.30承诺不变。",
+    "重复定位、真实Tab/Enter、预览及返回没有额外取证、锁定或提交。",
+    "旧producer以自己的lockTask证据接口产生真实第20年世界；保持旧目录及旧合同，不伪造新规则。",
+    "原生16px/32px，所有96组合无横向页面溢出或受检文字裁切；两套矩阵分别计数，不拼接失败轮。"
+  ],
+  "visualAndNarrativeAssessment": [
+    "刻度/闸门小线图与青绿、旧纸金层次帮助分辨纠正共同标准和先行减损；文字保留完整意义。",
+    "概率与损失基数使用不同标签，100%责任不虚构失败，也不声称洪水消失。",
+    "320px/200%首屏主要是目录说明和首项标题，必须纵向阅读；没有缩字、隐藏合同或声称一屏全览。",
+    "D4的当地覆盖、人物同意与迁任责任未被混为共同标准纠错。"
+  ],
+  "earlierRunsAndCorrections": [
+    {
+      "run": "initial qa.mjs",
+      "result": "988断言/60组合后，1280/200的avg进入按钮等待可见、可用、稳定12秒超时；源hash稳定。",
+      "boundary": "根因未知。截图存在可见入口，日志没有证明隐藏重复入口；hidden-avg推断已撤回。此失败不与补跑拼接为完整通过。",
+      "report": {
+        "artifact": "results.json",
+        "sha256": "e3d31f53b673dfe78742ca798ad9181869f16802f0393b9c4f0c65db0811426c"
+      }
+    },
+    {
+      "run": "enhanced and completion exploratory runs",
+      "result": "强化24组合及补跑12组合/实际交互完成后，旧producer辅助代码误调用不存在的old.investigate；属于独立脚本错误。",
+      "correction": "改为该真实旧producer原生lockTask证据参数，随后两套完整重跑通过。",
+      "reports": [
+        {
+          "artifact": "enhanced/results.json",
+          "sha256": "99679b73d28c219adb6f2246245f0886483280e81476ae90b268b876de4cede0"
+        },
+        {
+          "artifact": "completion/results.json",
+          "sha256": "0f1ef8cb8f756e30139ef16ec8d9554f59e76a5c827a33dc0656716fb973d398"
+        }
+      ]
+    },
+    {
+      "run": "withdrawn visual numeral concern",
+      "result": "曾把原图的目录1/3误读为3/3；不是已证产品缺陷。三张原图OCR均读1/3，completion与fresh diagnostic原PNG逐字节相同，目录DOM/session/真实调查/材料余额也均为1。",
+      "correction": "未修改生产。保留诊断并新增每次现场目录余额与引擎一致的断言后完整重跑。",
+      "report": {
+        "artifact": "budget-diagnostic/results.json",
+        "sha256": "4d7022b8696a3a52e56a0fe3c21a7a994565a6058bae7c87b73367f4492053aa"
+      },
+      "domEvidence": {
+        "artifact": "budget-diagnostic/budget.json",
+        "sha256": "503ef14c205df015fd8e5a4638a050f5f4b4101b050a190bf27fc14eac26e56a"
+      },
+      "identicalPngSha256": "27ef32d5416079cf87b9e6dce22c154a16e4d544aef0eca6d19c1353557e7c1e"
+    }
+  ],
+  "selectedScreenshots": [
+    {
+      "path": "docs/screenshots/round39-crisis-55-390.png",
+      "sha256": "696b402326362cced852f5da81c2525045600e9588b7b24d5c37dd42d68dc647",
+      "width": 390,
+      "height": 844,
+      "description": "55%准备；390px、100%原生字号",
+      "originalUneditedChromiumPng": true,
+      "pixelsInspected": true,
+      "sourceRun": "final (1202 assertions; same frozen source)"
+    },
+    {
+      "path": "docs/screenshots/round39-crisis-80-390.png",
+      "sha256": "01a48538f6799eed8e9e08e429452708629c4f8290f7bddcf653611abe039d7e",
+      "width": 390,
+      "height": 844,
+      "description": "80%准备；390px、100%原生字号",
+      "originalUneditedChromiumPng": true,
+      "pixelsInspected": true,
+      "sourceRun": "final (1202 assertions; same frozen source)"
+    },
+    {
+      "path": "docs/screenshots/round39-crisis-100-1280.png",
+      "sha256": "cc077b6cf60ae07c6a52d72fe3b8fa29548ec127347962768af49add33b7715d",
+      "width": 1280,
+      "height": 900,
+      "description": "100%准备；1280px并排比较",
+      "originalUneditedChromiumPng": true,
+      "pixelsInspected": true,
+      "sourceRun": "final (1202 assertions; same frozen source)"
+    },
+    {
+      "path": "docs/screenshots/round39-crisis-55-320-200.png",
+      "sha256": "0624748c6bbfd43b95db85c6bcb855b55f39bd1a92cb3e8e8efb750edf8c53f6",
+      "width": 320,
+      "height": 568,
+      "description": "320px、200%原生字号；明确保留纵向阅读边界",
+      "originalUneditedChromiumPng": true,
+      "pixelsInspected": true,
+      "sourceRun": "final (1202 assertions; same frozen source)"
+    },
+    {
+      "path": "docs/screenshots/round39-crisis-investigated-original-draft.png",
+      "sha256": "5ebf1572c22f7701490828702abb5a4e1b709d0fa1d0dcce4ec2c75421b24c68",
+      "width": 390,
+      "height": 844,
+      "description": "实际支付2轮调查后目录0.20、余额1/3；原基本停闸草稿不变",
+      "originalUneditedChromiumPng": true,
+      "pixelsInspected": true,
+      "sourceRun": "final (1202 assertions; same frozen source)"
+    },
+    {
+      "path": "docs/screenshots/round39-crisis-legacy-directory.png",
+      "sha256": "9000e0528197cc8b77f99035ae20513309b845f25431533f629ef9b4f8931669",
+      "width": 390,
+      "height": 844,
+      "description": "真实旧producer第20年；旧目录与旧合同保留",
+      "originalUneditedChromiumPng": true,
+      "pixelsInspected": true,
+      "sourceRun": "final (1202 assertions; same frozen source)"
+    }
+  ],
+  "narrativeReport": {
+    "artifact": "README.md",
+    "sha256": "f8e3e554a52ad5d61ff2e2ad0dc6c9e0adeccc7b82039ec960a1bc9569e749c2"
+  },
+  "boundaries": [
+    "没有修改production、原测试、支付、权限、工作流、远程分支或旧Git HEAD。此次只写独立审查资料及按要求复制六张原PNG。",
+    "不是实体手机、屏幕阅读器、真人试玩、商业美术或数值平衡认证。",
+    "没有验证远程CI，也没有解决候选5–8 runner启动前失败。"
+  ]
+}
