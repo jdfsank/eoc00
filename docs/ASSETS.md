@@ -1,3 +1,7 @@
+## 第41轮：文书续读书签
+
+本轮未增加或替换游戏场景、人物及279项原素材。聚焦续读合同时，CSS在原卡内侧增加旧纸金双线书签，与既有焦点轮廓共同标示当前阅读落点。没有新动画、遮挡文字的覆盖层或重复说明面板。`docs/screenshots/round41-contract-resume/` 收录经审看的原始Chromium视口图，仅为测试证据，不作为游戏资产。
+
 # 资产来源与状态
 
 - `public/assets/props/`中原有`agent/archive/assembly_hall/observatory/temple/tree/warehouse/water_station`的SVG与PNG：用户提供《余波》交接包 v0.3 中的原创程序化工程代理素材。固定64×80逻辑尺寸，锚点32,64，PNG为2倍输出。不是从概念图切片，也不是《陷阵之志》的资源。正式资产迭代尚未完成。

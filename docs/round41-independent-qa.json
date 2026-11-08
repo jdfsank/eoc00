@@ -1,0 +1,809 @@
+{
+  "checks": 156,
+  "passed": 156,
+  "errors": [],
+  "sourceBefore": "aab419d28be54bae3a886bd922d0ab26d2300e8a7e61940999aa130cd178a5aa",
+  "sourceAfter": "aab419d28be54bae3a886bd922d0ab26d2300e8a7e61940999aa130cd178a5aa",
+  "sourceStable": true,
+  "sourceHashMethod": "SHA256 of each src top-level JS/CSS filename then content, lexicographic order. Distinct from full recursive production hash.",
+  "originalScreenshots": 12,
+  "selectedOriginalScreenshots": [
+    {
+      "path": "docs/screenshots/round41-contract-resume/current-320-resume.png",
+      "sha256": "65d195251a90ad084a9d785bf3e2e9ef7309803ee87caa8eb769464cb0433acc",
+      "originalViewport": true
+    },
+    {
+      "path": "docs/screenshots/round41-contract-resume/current-390-reload-preview.png",
+      "sha256": "7416cdf32e2a1c870c0fcb15858ae99a62b6942bffc69946363e3a08ad75f0a8",
+      "originalViewport": true
+    },
+    {
+      "path": "docs/screenshots/round41-contract-resume/current-1280-resume.png",
+      "sha256": "47984eaa0f7436bf6f1033c02cca8450fcaf9b01a4fdc48f2428a6566df1ec26",
+      "originalViewport": true
+    },
+    {
+      "path": "docs/screenshots/round41-contract-resume/legacy-390-resume.png",
+      "sha256": "55f188d9f0161721bc48abaf3e2de6d32e37f4f37dbdfaefe870054cf5007ed7",
+      "originalViewport": true
+    }
+  ],
+  "scope": "Current and genuine legacy naturally produced worlds, actual controls, 390x844100%, 320x568native200%,1280x900100%. No injected world or DOM.",
+  "runs": "Final full156; earlier full156 is separate and excluded. No concatenation.",
+  "limitations": [
+    "No physical device, screen-reader or human-balance certification.",
+    "Full aggregate verification recorded separately.",
+    "Network errors not instrumented by independent harness; page/HMR errors were."
+  ],
+  "checksDetail": [
+    {
+      "name": "import exact",
+      "passed": true
+    },
+    {
+      "name": "current-390 ordinary only bottom link",
+      "passed": true
+    },
+    {
+      "name": "current-390 normal focus",
+      "passed": true
+    },
+    {
+      "name": "current-390 normal no preview",
+      "passed": true
+    },
+    {
+      "name": "current-390 normal title visible",
+      "passed": true
+    },
+    {
+      "name": "current-390 normal exact",
+      "passed": true
+    },
+    {
+      "name": "current-390 normal no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-390 disclosures",
+      "passed": true
+    },
+    {
+      "name": "current-390 refreshed two links",
+      "passed": true
+    },
+    {
+      "name": "current-390 double focus",
+      "passed": true
+    },
+    {
+      "name": "current-390 double no preview",
+      "passed": true
+    },
+    {
+      "name": "current-390 double title visible",
+      "passed": true
+    },
+    {
+      "name": "current-390 double exact",
+      "passed": true
+    },
+    {
+      "name": "current-390 double no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-390 confirm return links",
+      "passed": true
+    },
+    {
+      "name": "current-390 keyboard reachable",
+      "passed": true
+    },
+    {
+      "name": "current-390 keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "current-390 keyboard no preview",
+      "passed": true
+    },
+    {
+      "name": "current-390 keyboard title visible",
+      "passed": true
+    },
+    {
+      "name": "current-390 keyboard exact",
+      "passed": true
+    },
+    {
+      "name": "current-390 keyboard no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-390 old return unchanged",
+      "passed": true
+    },
+    {
+      "name": "current-390 old return exact",
+      "passed": true
+    },
+    {
+      "name": "import exact",
+      "passed": true
+    },
+    {
+      "name": "current-320 ordinary only bottom link",
+      "passed": true
+    },
+    {
+      "name": "current-320 normal focus",
+      "passed": true
+    },
+    {
+      "name": "current-320 normal no preview",
+      "passed": true
+    },
+    {
+      "name": "current-320 normal title visible",
+      "passed": true
+    },
+    {
+      "name": "current-320 normal exact",
+      "passed": true
+    },
+    {
+      "name": "current-320 normal no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-320 disclosures",
+      "passed": true
+    },
+    {
+      "name": "current-320 refreshed two links",
+      "passed": true
+    },
+    {
+      "name": "current-320 double focus",
+      "passed": true
+    },
+    {
+      "name": "current-320 double no preview",
+      "passed": true
+    },
+    {
+      "name": "current-320 double title visible",
+      "passed": true
+    },
+    {
+      "name": "current-320 double exact",
+      "passed": true
+    },
+    {
+      "name": "current-320 double no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-320 confirm return links",
+      "passed": true
+    },
+    {
+      "name": "current-320 keyboard reachable",
+      "passed": true
+    },
+    {
+      "name": "current-320 keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "current-320 keyboard no preview",
+      "passed": true
+    },
+    {
+      "name": "current-320 keyboard title visible",
+      "passed": true
+    },
+    {
+      "name": "current-320 keyboard exact",
+      "passed": true
+    },
+    {
+      "name": "current-320 keyboard no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-320 old return unchanged",
+      "passed": true
+    },
+    {
+      "name": "current-320 old return exact",
+      "passed": true
+    },
+    {
+      "name": "import exact",
+      "passed": true
+    },
+    {
+      "name": "current-1280 ordinary only bottom link",
+      "passed": true
+    },
+    {
+      "name": "current-1280 normal focus",
+      "passed": true
+    },
+    {
+      "name": "current-1280 normal no preview",
+      "passed": true
+    },
+    {
+      "name": "current-1280 normal title visible",
+      "passed": true
+    },
+    {
+      "name": "current-1280 normal exact",
+      "passed": true
+    },
+    {
+      "name": "current-1280 normal no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-1280 disclosures",
+      "passed": true
+    },
+    {
+      "name": "current-1280 refreshed two links",
+      "passed": true
+    },
+    {
+      "name": "current-1280 double focus",
+      "passed": true
+    },
+    {
+      "name": "current-1280 double no preview",
+      "passed": true
+    },
+    {
+      "name": "current-1280 double title visible",
+      "passed": true
+    },
+    {
+      "name": "current-1280 double exact",
+      "passed": true
+    },
+    {
+      "name": "current-1280 double no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-1280 confirm return links",
+      "passed": true
+    },
+    {
+      "name": "current-1280 keyboard reachable",
+      "passed": true
+    },
+    {
+      "name": "current-1280 keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "current-1280 keyboard no preview",
+      "passed": true
+    },
+    {
+      "name": "current-1280 keyboard title visible",
+      "passed": true
+    },
+    {
+      "name": "current-1280 keyboard exact",
+      "passed": true
+    },
+    {
+      "name": "current-1280 keyboard no overflow",
+      "passed": true
+    },
+    {
+      "name": "current-1280 old return unchanged",
+      "passed": true
+    },
+    {
+      "name": "current-1280 old return exact",
+      "passed": true
+    },
+    {
+      "name": "import exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 ordinary only bottom link",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 normal focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 normal no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 normal title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 normal exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 normal no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 disclosures",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 refreshed two links",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 double focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 double no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 double title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 double exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 double no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 confirm return links",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 keyboard reachable",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 keyboard no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 keyboard title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 keyboard exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 keyboard no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 old return unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy-390 old return exact",
+      "passed": true
+    },
+    {
+      "name": "import exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 ordinary only bottom link",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 normal focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 normal no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 normal title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 normal exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 normal no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 disclosures",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 refreshed two links",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 double focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 double no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 double title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 double exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 double no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 confirm return links",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 keyboard reachable",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 keyboard no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 keyboard title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 keyboard exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 keyboard no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 old return unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy-320 old return exact",
+      "passed": true
+    },
+    {
+      "name": "import exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 ordinary only bottom link",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 normal focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 normal no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 normal title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 normal exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 normal no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 disclosures",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 refreshed two links",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 double focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 double no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 double title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 double exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 double no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 confirm return links",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 keyboard reachable",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 keyboard no preview",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 keyboard title visible",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 keyboard exact",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 keyboard no overflow",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 old return unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy-1280 old return exact",
+      "passed": true
+    },
+    {
+      "name": "import exact",
+      "passed": true
+    },
+    {
+      "name": "actor/location no stale origin focus",
+      "passed": true
+    },
+    {
+      "name": "actor/location no stale origin no preview",
+      "passed": true
+    },
+    {
+      "name": "actor/location no stale origin title visible",
+      "passed": true
+    },
+    {
+      "name": "actor/location no stale origin exact",
+      "passed": true
+    },
+    {
+      "name": "actor/location no stale origin no overflow",
+      "passed": true
+    },
+    {
+      "name": "import exact",
+      "passed": true
+    },
+    {
+      "name": "import no stale origin focus",
+      "passed": true
+    },
+    {
+      "name": "import no stale origin no preview",
+      "passed": true
+    },
+    {
+      "name": "import no stale origin title visible",
+      "passed": true
+    },
+    {
+      "name": "import no stale origin exact",
+      "passed": true
+    },
+    {
+      "name": "import no stale origin no overflow",
+      "passed": true
+    },
+    {
+      "name": "new run no stale origin focus",
+      "passed": true
+    },
+    {
+      "name": "new run no stale origin no preview",
+      "passed": true
+    },
+    {
+      "name": "new run no stale origin title visible",
+      "passed": true
+    },
+    {
+      "name": "new run no stale origin exact",
+      "passed": true
+    },
+    {
+      "name": "new run no stale origin no overflow",
+      "passed": true
+    },
+    {
+      "name": "no page/hmr errors",
+      "passed": true
+    }
+  ],
+  "bottomRepeatSupplement": {
+    "checks": 33,
+    "passed": 33,
+    "originalScreenshots": 4,
+    "sourceStable": true,
+    "sourceBefore": "aab419d28be54bae3a886bd922d0ab26d2300e8a7e61940999aa130cd178a5aa",
+    "sourceAfter": "aab419d28be54bae3a886bd922d0ab26d2300e8a7e61940999aa130cd178a5aa",
+    "errors": [],
+    "scope": "Actual coordinate bottom double click with and without origin;390 standard and320 native200%. Subsequent deliberate click/Enter remain usable. Counts separate from main156.",
+    "checksDetail": [
+      {
+        "name": "390-origin bottom legacy action marker",
+        "passed": true
+      },
+      {
+        "name": "390-origin correct focus",
+        "passed": true
+      },
+      {
+        "name": "390-origin title visible",
+        "passed": true
+      },
+      {
+        "name": "390-origin no preview or confirm",
+        "passed": true
+      },
+      {
+        "name": "390-origin double full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "390-origin intentional single click full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "390-origin intentional Enter full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "390-origin no draft locked",
+        "passed": true
+      },
+      {
+        "name": "390-reload bottom legacy action marker",
+        "passed": true
+      },
+      {
+        "name": "390-reload correct focus",
+        "passed": true
+      },
+      {
+        "name": "390-reload title visible",
+        "passed": true
+      },
+      {
+        "name": "390-reload no preview or confirm",
+        "passed": true
+      },
+      {
+        "name": "390-reload double full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "390-reload intentional single click full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "390-reload intentional Enter full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "390-reload no draft locked",
+        "passed": true
+      },
+      {
+        "name": "320-origin bottom legacy action marker",
+        "passed": true
+      },
+      {
+        "name": "320-origin correct focus",
+        "passed": true
+      },
+      {
+        "name": "320-origin title visible",
+        "passed": true
+      },
+      {
+        "name": "320-origin no preview or confirm",
+        "passed": true
+      },
+      {
+        "name": "320-origin double full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "320-origin intentional single click full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "320-origin intentional Enter full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "320-origin no draft locked",
+        "passed": true
+      },
+      {
+        "name": "320-reload bottom legacy action marker",
+        "passed": true
+      },
+      {
+        "name": "320-reload correct focus",
+        "passed": true
+      },
+      {
+        "name": "320-reload title visible",
+        "passed": true
+      },
+      {
+        "name": "320-reload no preview or confirm",
+        "passed": true
+      },
+      {
+        "name": "320-reload double full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "320-reload intentional single click full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "320-reload intentional Enter full world/autosave",
+        "passed": true
+      },
+      {
+        "name": "320-reload no draft locked",
+        "passed": true
+      },
+      {
+        "name": "no page/hmr errors",
+        "passed": true
+      }
+    ]
+  }
+}

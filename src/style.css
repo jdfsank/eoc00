@@ -551,3 +551,7 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .policy-fork-responsibility>b{color:var(--gold)}
 .policy-choice-link:hover{background:#294a47}
 @media(min-width:900px){.policy-fork-directory .scene-choice-links{grid-template-columns:repeat(3,minmax(0,1fr))}.large-text .policy-fork-directory .scene-choice-links{grid-template-columns:minmax(0,1fr)}}
+
+/* A paper bookmark marks only the explicitly resumed, focused contract. */
+.scene-planning-page .choice-card[data-contract-resume]:focus{box-shadow:inset 4px 0 0 var(--gold),inset 8px 0 0 var(--bg);scroll-margin-block-start:.75rem}
+.contract-resume-link{text-align:left;max-width:100%;overflow-wrap:anywhere}
