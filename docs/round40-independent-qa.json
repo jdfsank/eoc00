@@ -1,0 +1,5108 @@
+{
+  "scope": "Independent natural-producer real Chromium UX and control audit of final freeze. No world/DOM injection, state mutation, production edit or hidden RNG read. Not physical-device or human balance certification.",
+  "sourceBefore": "ac17031e61895af52af3c177afad1c51e9eba1c7849da92cbf2d0977976f78bf",
+  "sourceAfter": "ac17031e61895af52af3c177afad1c51e9eba1c7849da92cbf2d0977976f78bf",
+  "hashMethod": "Sorted recursive SHA256 of absolute src file paths and bytes. Matches all three final completed runs.",
+  "runs": {
+    "frozen2": {
+      "checks": 469,
+      "passed": true,
+      "sourceStable": true,
+      "errors": [],
+      "originalPNGs": 18,
+      "fullReport": "/workspace/scratch/52f1b40b7635/audit-final/frozen2/results.json"
+    },
+    "enhanced2-retry": {
+      "checks": 595,
+      "passed": true,
+      "sourceStable": true,
+      "errors": [],
+      "originalPNGs": 14,
+      "fullReport": "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/results.json"
+    },
+    "visuals2-retry": {
+      "checks": 30,
+      "passed": true,
+      "sourceStable": true,
+      "errors": [],
+      "originalPNGs": 7,
+      "fullReport": "/workspace/scratch/52f1b40b7635/audit-final/visuals2-retry/results.json"
+    }
+  },
+  "enhancedVerification": "Exact current text derived independently from getHandoffReadiness, public source events, review and completed-recovery/future/archive-check helpers, not getPolicyChoiceFork. Exact reward/risk, timing label, both ARIA references, decorative SVG, absent nested controls, native font/no clipping, whole state and autosave exact, original preview and keyboard controls. Five natural current modes plus genuine previous and original legacy at320200/390100. HTTP>=400, requestfailed, pageerror and HMR monitored in all final runs; none recorded.",
+  "widthCoverage": "Separate complete 18-case producer matrix spans current, previous, legacy at320/390/1280 and100/200%. First full title must remain visible at actual section landing, with no font reduction, in every case.",
+  "visualReview": "Final320200 landing shows entire first title above shared timing; title y371.66–464.44 within568px viewport.390100 and320200 preserve natural typography, complete policies require vertical scrolling. Selected320200 start/continuation show archive method distinct from completed command check, without clipping.",
+  "initialFinalFailures": {
+    "enhanced2": {
+      "checks": 0,
+      "sourceStable": true,
+      "failure": {
+        "message": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=select][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+        "stack": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=select][data-cell=\"D4\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-cell=\"D4\" data-action=\"select\" class=\"coordinate-row\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at /workspace/scratch/52f1b40b7635/audit-final/enhanced2-qa.mjs:11:986"
+      },
+      "errors": [],
+      "fullReport": "/workspace/scratch/52f1b40b7635/audit-final/enhanced2/results.json"
+    },
+    "visuals2": {
+      "checks": 2,
+      "sourceStable": true,
+      "failure": {
+        "message": "page.screenshot: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n",
+        "stack": "page.screenshot: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\n    at /workspace/scratch/52f1b40b7635/audit-final/visual2-qa.mjs:11:1480"
+      },
+      "errors": [],
+      "fullReport": "/workspace/scratch/52f1b40b7635/audit-final/visuals2/results.json"
+    }
+  },
+  "retryMethod": "Initial enhanced2 D4 visibility/stability12s timeout and visuals2 first screenshot12s timeout retained; root causes unestablished. Entire suites retried sequentially from the start in separate output folders, identical assertions and12s thresholds; only output path changed. No partial counts combined with passes.",
+  "superseded": "Earlier old-freeze433/261/28 passing narrow checks omitted first-title landing invariant and are excluded. Old enhanced run observed source change/HMR and failed exact prior ARIA association at479 checks; excluded. Reviewing the original screenshot against the existing round26 first-title visibility requirement identified real320200 title displacement; round26 had not yet executed against that failing layout; production moved shared timing after first title, old test unchanged. All final passing evidence below uses new frozen source.",
+  "selectedOriginalScreenshots": [
+    {
+      "path": "docs/screenshots/round40-independent-current-390-100.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/frozen2/current-390-100.png",
+      "sha256": "dc4d57bbbecb36452ed87416fca6e353122c79b857caee4abe7d2084b045e11f",
+      "width": 390,
+      "height": 844,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    },
+    {
+      "path": "docs/screenshots/round40-independent-current-320-200.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/frozen2/current-320-200.png",
+      "sha256": "f52ae0274b5a6d974ea152240a335fe385a577866ab71d6330ac45b5d287991c",
+      "width": 320,
+      "height": 568,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    },
+    {
+      "path": "docs/screenshots/round40-independent-ready-390-100.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/ready-390-100.png",
+      "sha256": "2ae91cd46681c499277343dc74d75543ca21d1deb2b7373b28e6528437c6a556",
+      "width": 390,
+      "height": 844,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    },
+    {
+      "path": "docs/screenshots/round40-independent-archive-390-100.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/archive-390-100.png",
+      "sha256": "acadbb1d2306e7dbb33688f2f74455c4d42aba33c90d3116f280d4567184e00d",
+      "width": 390,
+      "height": 844,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    },
+    {
+      "path": "docs/screenshots/round40-independent-refused-390-100.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/refused-390-100.png",
+      "sha256": "63a8fda64da7374892bb07092c5975638a53f83cddb6d1b5ad04d5b50d014402",
+      "width": 390,
+      "height": 844,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    },
+    {
+      "path": "docs/screenshots/round40-independent-unauthorized-390-100.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/unauthorized-390-100.png",
+      "sha256": "eed20dc016b243f23c65bf4616a65bcf25ed0f32ce17a9562c3ce199359fe398",
+      "width": 390,
+      "height": 844,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    },
+    {
+      "path": "docs/screenshots/round40-independent-archive-320-200-central_review-start.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/visuals2-retry/archive-320-200-central_review-start.png",
+      "sha256": "f31172f67db4338f88e0f31dd1448820a0a2bb8a6a1019a715e6139eb33fb34b",
+      "width": 320,
+      "height": 568,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    },
+    {
+      "path": "docs/screenshots/round40-independent-archive-320-200-central_review-continuation.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/visuals2-retry/archive-320-200-central_review-continuation.png",
+      "sha256": "010de496b696419fe9bc9ddd077480cbde517182123248518fa4ea7d9af17d13",
+      "width": 320,
+      "height": 568,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    },
+    {
+      "path": "docs/screenshots/round40-independent-legacy-390-100.png",
+      "original": "/workspace/scratch/52f1b40b7635/audit-final/frozen2/legacy-390-100.png",
+      "sha256": "804db050c501d4b010a04f33b1d3a55c6a2f1752a8a7d6608a3c570fd291ebc8",
+      "width": 390,
+      "height": 844,
+      "kind": "Unaltered original Chromium viewport; actual pixels inspected"
+    }
+  ],
+  "fullFinalReports": {
+    "frozen2": {
+      "checks": [
+        {
+          "name": "current-320-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "current-320-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "current-320-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "current-320-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-320-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "current-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "current-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "current-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "current-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "current-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "current-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "current-390-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "current-390-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "current-390-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-390-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-1280-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "current-1280-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-1280-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-1280-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "No page errors",
+          "passed": true
+        }
+      ],
+      "shots": [
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/current-320-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/current-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/current-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/current-390-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/current-1280-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/current-1280-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/previous-320-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/previous-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/previous-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/previous-390-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/previous-1280-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/previous-1280-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/legacy-320-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/legacy-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/legacy-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/legacy-390-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/legacy-1280-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/frozen2/legacy-1280-200.png"
+      ],
+      "metrics": [
+        {
+          "label": "current-320-100",
+          "landing": {
+            "top": 160.1875,
+            "bottom": 183.375,
+            "height": 568,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "current-320-100",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "current-320-200",
+          "landing": {
+            "top": 371.65625,
+            "bottom": 464.4375,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "current-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "current-390-100",
+          "landing": {
+            "top": 160.703125,
+            "bottom": 183.890625,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "current-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "current-390-200",
+          "landing": {
+            "top": 332.390625,
+            "bottom": 378.78125,
+            "height": 844,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "current-390-200",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "current-1280-100",
+          "landing": {
+            "top": 160.5,
+            "bottom": 183.6875,
+            "height": 900,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "current-1280-100",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "current-1280-200",
+          "landing": {
+            "top": 295.296875,
+            "bottom": 341.6875,
+            "height": 900,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "current-1280-200",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "previous-320-100",
+          "landing": {
+            "top": 160.1875,
+            "bottom": 183.375,
+            "height": 568,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "previous-320-100",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "previous-320-200",
+          "landing": {
+            "top": 371.65625,
+            "bottom": 464.4375,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "previous-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "previous-390-100",
+          "landing": {
+            "top": 160.703125,
+            "bottom": 183.890625,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "previous-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "previous-390-200",
+          "landing": {
+            "top": 332.390625,
+            "bottom": 378.78125,
+            "height": 844,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "previous-390-200",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "previous-1280-100",
+          "landing": {
+            "top": 160.5,
+            "bottom": 183.6875,
+            "height": 900,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "previous-1280-100",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "previous-1280-200",
+          "landing": {
+            "top": 295.296875,
+            "bottom": 341.6875,
+            "height": 900,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "previous-1280-200",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "legacy-320-100",
+          "landing": {
+            "top": 158.140625,
+            "bottom": 181.328125,
+            "height": 568,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "legacy-320-100",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n↓\n集中干预 · 强化复核\n↓\n逐步退出独占控制\n↓"
+        },
+        {
+          "label": "legacy-320-200",
+          "landing": {
+            "top": 369.546875,
+            "bottom": 462.328125,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "legacy-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n↓\n集中干预 · 强化复核\n↓\n逐步退出独占控制\n↓"
+        },
+        {
+          "label": "legacy-390-100",
+          "landing": {
+            "top": 158.65625,
+            "bottom": 181.84375,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "legacy-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n↓\n集中干预 · 强化复核\n↓\n逐步退出独占控制\n↓"
+        },
+        {
+          "label": "legacy-390-200",
+          "landing": {
+            "top": 330.0625,
+            "bottom": 376.453125,
+            "height": 844,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "legacy-390-200",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n↓\n集中干预 · 强化复核\n↓\n逐步退出独占控制\n↓"
+        },
+        {
+          "label": "legacy-1280-100",
+          "landing": {
+            "top": 158.828125,
+            "bottom": 182.015625,
+            "height": 900,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "legacy-1280-100",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n↓\n集中干预 · 强化复核\n↓\n逐步退出独占控制\n↓"
+        },
+        {
+          "label": "legacy-1280-200",
+          "landing": {
+            "top": 294.140625,
+            "bottom": 340.53125,
+            "height": 900,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "legacy-1280-200",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n↓\n集中干预 · 强化复核\n↓\n逐步退出独占控制\n↓"
+        }
+      ],
+      "errors": [],
+      "before": "ac17031e61895af52af3c177afad1c51e9eba1c7849da92cbf2d0977976f78bf",
+      "after": "ac17031e61895af52af3c177afad1c51e9eba1c7849da92cbf2d0977976f78bf",
+      "stable": true
+    },
+    "enhanced2-retry": {
+      "checks": [
+        {
+          "name": "missing-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200 missing no fabrication",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "missing-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 missing no fabrication",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "missing-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 ready current no promise",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "ready-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 ready current no promise",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "ready-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 archive not command check",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 archive not command check",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 genuine refused consent",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "refused-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 genuine refused consent",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "refused-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 existing staff but no authority",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 existing staff but no authority",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "unauthorized-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power exact reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power exact risk",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power aria reference",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review exact reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review exact risk",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review aria reference",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw independently exact current fact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw exact reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw exact risk",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw aria reference",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw no nested controls and decorative SVG",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 exact 31/40 boundaries",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "previous-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 no modern policy DOM",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 original title native font",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 native font/width",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 appropriate fork presence",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 no modern policy DOM",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100 same choice count",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "legacy-390-100/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "No page errors",
+          "passed": true
+        }
+      ],
+      "shots": [
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/missing-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/missing-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/ready-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/ready-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/archive-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/archive-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/refused-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/refused-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/unauthorized-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/unauthorized-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/previous-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/previous-390-100.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/legacy-320-200.png",
+        "/workspace/scratch/52f1b40b7635/audit-final/enhanced2-retry/legacy-390-100.png"
+      ],
+      "metrics": [
+        {
+          "label": "missing-320-200",
+          "landing": {
+            "top": 371.65625,
+            "bottom": 464.4375,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "missing-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少运转中的培训或教学人手；缺少成功工作的异源校验载体；河港尚未作出合作承诺。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少运转中的培训或教学人手；缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "missing-390-100",
+          "landing": {
+            "top": 160.328125,
+            "bottom": 183.515625,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "missing-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少运转中的培训或教学人手；缺少成功工作的异源校验载体；河港尚未作出合作承诺。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少运转中的培训或教学人手；缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "ready-320-200",
+          "landing": {
+            "top": 371.65625,
+            "bottom": 464.4375,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "ready-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n跨地承接人手、地方授权、异源校验与河港信任齐备。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n已有成功纠正共同标准的复核记录；集中协调仍承担持续维护责任。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n跨地承接人手、地方授权与异源校验齐备。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "ready-390-100",
+          "landing": {
+            "top": 160.703125,
+            "bottom": 183.890625,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "ready-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n跨地承接人手、地方授权、异源校验与河港信任齐备。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n已有成功纠正共同标准的复核记录；集中协调仍承担持续维护责任。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n跨地承接人手、地方授权与异源校验齐备。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "archive-320-200",
+          "landing": {
+            "top": 371.484375,
+            "bottom": 464.265625,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "archive-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n河港尚未作出合作承诺。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n地方保档已提供交班方法，但尚无完成的指令复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n跨地承接人手、地方授权与异源校验齐备。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "archive-390-100",
+          "landing": {
+            "top": 159.953125,
+            "bottom": 183.140625,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "archive-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n河港尚未作出合作承诺。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n地方保档已提供交班方法，但尚无完成的指令复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n跨地承接人手、地方授权与异源校验齐备。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "refused-320-200",
+          "landing": {
+            "top": 371.453125,
+            "bottom": 464.234375,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "refused-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n现有人手尚缺地方承接授权；河港明确拒绝当前安排。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n地方保档已提供交班方法，但尚无完成的指令复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n现有人手尚缺地方承接授权。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "refused-390-100",
+          "landing": {
+            "top": 160.3125,
+            "bottom": 183.5,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "refused-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n现有人手尚缺地方承接授权；河港明确拒绝当前安排。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n地方保档已提供交班方法，但尚无完成的指令复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n现有人手尚缺地方承接授权。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "unauthorized-320-200",
+          "landing": {
+            "top": 371.828125,
+            "bottom": 464.609375,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "unauthorized-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n现有人手尚缺地方承接授权；河港尚未作出合作承诺。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n已有成功纠正共同标准的复核记录；集中协调仍承担持续维护责任。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n现有人手尚缺地方承接授权。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "unauthorized-390-100",
+          "landing": {
+            "top": 159.890625,
+            "bottom": 183.078125,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "unauthorized-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n现有人手尚缺地方承接授权；河港尚未作出合作承诺。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n已有成功纠正共同标准的复核记录；集中协调仍承担持续维护责任。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n现有人手尚缺地方承接授权。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "previous-320-200",
+          "landing": {
+            "top": 371.65625,
+            "bottom": 464.4375,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "previous-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "previous-390-100",
+          "landing": {
+            "top": 160.703125,
+            "bottom": 183.890625,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "previous-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n尚无完成的指令复核；签署集中方针不会自动完成复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n缺少成功工作的异源校验载体。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        },
+        {
+          "label": "legacy-320-200",
+          "landing": {
+            "top": 369.546875,
+            "bottom": 462.328125,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "legacy-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n↓\n集中干预 · 强化复核\n↓\n逐步退出独占控制\n↓"
+        },
+        {
+          "label": "legacy-390-100",
+          "landing": {
+            "top": 158.65625,
+            "bottom": 181.84375,
+            "height": 844,
+            "font": "16px"
+          }
+        },
+        {
+          "label": "legacy-390-100",
+          "width": 390,
+          "scrollWidth": 390,
+          "font": "16px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n↓\n集中干预 · 强化复核\n↓\n逐步退出独占控制\n↓"
+        }
+      ],
+      "errors": [],
+      "before": "ac17031e61895af52af3c177afad1c51e9eba1c7849da92cbf2d0977976f78bf",
+      "after": "ac17031e61895af52af3c177afad1c51e9eba1c7849da92cbf2d0977976f78bf",
+      "stable": true
+    },
+    "visuals2-retry": {
+      "checks": [
+        {
+          "name": "archive-320-200 original first title fully visible on real landing",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 original title native font",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 native font/width",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 no clipped fork text",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 three current facts",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 archive not command check",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200 same choice count",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/share_power preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/central_review preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw full title preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw accessible name preserved",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw focus without preview",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw free directory state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw exact original description",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw original risk/reward",
+          "passed": true
+        },
+        {
+          "name": "archive-320-200/withdraw preview state/autosave exact",
+          "passed": true
+        },
+        {
+          "name": "No page errors",
+          "passed": true
+        }
+      ],
+      "shots": [
+        "/workspace/scratch/52f1b40b7635/audit-final/visuals2-retry/archive-320-200.png"
+      ],
+      "metrics": [
+        {
+          "label": "archive-320-200",
+          "landing": {
+            "top": 371.484375,
+            "bottom": 464.265625,
+            "height": 568,
+            "font": "32px"
+          }
+        },
+        {
+          "label": "archive-320-200",
+          "width": 320,
+          "scrollWidth": 320,
+          "font": "32px",
+          "dir": "合同目录 · 只读定位\n\n主角 · 剩余 3 / 3 调查轮\n\n每人每窗口一项。定位不取证、不锁定。\n\n共享档案与纠错权\n三种方针的时点\n第31年签署方针，不等于交班成功。\n第40年按真实存续条件核对；当前条件不会提前兑现未来。\n方针所求\n有准备的地区可自治并互相复核。\n此刻核对\n河港尚未作出合作承诺。\n仍需承担\n没有独立网络与地方信任，权利将停留在纸上。\n↓\n集中干预 · 强化复核\n方针所求\n保留应急协调能力，承担持续维护责任。\n此刻核对\n地方保档已提供交班方法，但尚无完成的指令复核。\n仍需承担\n集中依赖仍然存在；缺少独立复核时结局脆弱。\n↓\n逐步退出独占控制\n方针所求\n已建立的学校与互助制度继续自行运作。\n此刻核对\n跨地承接人手、地方授权与异源校验齐备。\n仍需承担\n若人手不足，退出会造成服务空缺。\n↓"
+        }
+      ],
+      "errors": [],
+      "before": "ac17031e61895af52af3c177afad1c51e9eba1c7849da92cbf2d0977976f78bf",
+      "after": "ac17031e61895af52af3c177afad1c51e9eba1c7849da92cbf2d0977976f78bf",
+      "stable": true
+    }
+  }
+}

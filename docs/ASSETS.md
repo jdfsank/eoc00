@@ -61,3 +61,7 @@ The year-10 directory uses two small inline SVG line drawings authored in `succe
 ## 第39轮：危机目录说明线图
 
 `src/crisis-choice-fork-view.js`新增原创双刻度与闸门/水波内联SVG，分别辅助表达异源校正和先行减损。图形不代表既存建筑、实际成功结果或历史证据；完整语义仍由相邻文字提供。无外部素材、字体或网络依赖。既有279个public素材逐字不变，本轮不宣称新增场景美术。线图aria-hidden且不可聚焦，原目录按钮仍是唯一控件。
+
+## 第40轮：方针签条线图
+
+`src/policy-choice-fork-view.js`内三个原创SVG线图分别辅助共享、集中审查与交班的文字辨识。它们是界面装饰，不是历史结果、人物肖像或新场景插画；aria-hidden，不代替文字或添加动作。旧279个素材文件未更动。

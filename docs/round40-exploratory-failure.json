@@ -1,0 +1,76 @@
+{
+  "attempts": [
+    {
+      "report": "../round40-focused/results.json",
+      "reportSHA256": "37be2a4c45c437b97602e80889a9757332a2940a824e56192e654e058340fb8a",
+      "checksCompleted": 428,
+      "failedChecks": [
+        {
+          "name": "current-archive-390-100/central_review/current exact public text",
+          "passed": false
+        }
+      ],
+      "sourceBefore": "17c995a79487d264bd9be6eecdd3d6ba3a8b69aac327e8f31726f0aeb61957db",
+      "sourceAfter": "a5a06cdfa745db64ed028185343499844013ce971f9f8fa47c825d97dd354200",
+      "sourceStable": false,
+      "exitCode": 1,
+      "failure": {
+        "message": "current-archive-390-100/central_review/current exact public text",
+        "stack": "AssertionError [ERR_ASSERTION]: current-archive-390-100/central_review/current exact public text\n    at check (file:///workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:19:122)\n    at inspect (file:///workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:50:60)\n    at async file:///workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:68:159"
+      },
+      "errors": [],
+      "reason": "Development source text refinement overlapped exploratory browser run; HMR and differing source hashes invalidate it.",
+      "counting": "Excluded from final passes. Fresh final focused and full aggregate results are separate entire runs."
+    },
+    {
+      "report": "../round40-focused-pre-layout/results.json",
+      "reportSHA256": "323f12629d6e66c631c828f515271ac16cb138870581053628e64cb861c9596e",
+      "checksCompleted": 1166,
+      "failedChecks": [],
+      "sourceBefore": "a5a06cdfa745db64ed028185343499844013ce971f9f8fa47c825d97dd354200",
+      "sourceAfter": "4f6e7c87493679808b77605fe952ffc8c23fbecea5375791fd60bf1db03eecb5",
+      "sourceStable": false,
+      "exitCode": 1,
+      "failure": {
+        "message": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"avg\"]').first()\u001b[22m\n\u001b[2m    - waiting for\" http://127.0.0.1:4440/\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://127.0.0.1:4440/\"\u001b[22m\n",
+        "stack": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"avg\"]').first()\u001b[22m\n\u001b[2m    - waiting for\" http://127.0.0.1:4440/\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://127.0.0.1:4440/\"\u001b[22m\n\n    at click (/workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:33:61)\n    at enter (/workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:36:273)\n    at async file:///workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:75:2"
+      },
+      "errors": [
+        "[vite] hot updated: /src/style.css"
+      ],
+      "reason": "First-title landing regression fixed in production while this superseded exploratory run remained underway; HMR and differing source hashes invalidate it.",
+      "counting": "Excluded from final passes. Fresh final focused and full aggregate results are separate entire runs."
+    },
+    {
+      "report": "../round40-focused-fixed/results.json",
+      "reportSHA256": "25f92938ec87e90019d003d84adc64a1254e0c3ad339c8bd247fe33fae7f17a1",
+      "checksCompleted": 1189,
+      "failedChecks": [],
+      "sourceBefore": "4f6e7c87493679808b77605fe952ffc8c23fbecea5375791fd60bf1db03eecb5",
+      "sourceAfter": "4f6e7c87493679808b77605fe952ffc8c23fbecea5375791fd60bf1db03eecb5",
+      "sourceStable": true,
+      "exitCode": 1,
+      "failure": {
+        "message": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"avg\"]').first()\u001b[22m\n",
+        "stack": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"avg\"]').first()\u001b[22m\n\n    at click (/workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:33:61)\n    at enter (/workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:36:273)\n    at async file:///workspace/scratch/52f1b40b7635/eoc00/scripts/round40-policy-fork-test.mjs:75:2"
+      },
+      "errors": [],
+      "reason": "New test helper erroneously expected an AVG entry for ineligible Linche atD4. Production correctly lacks that entry; only the new test was corrected to assert absence on the actual selection screen.",
+      "counting": "Excluded from final passes. Fresh final focused and full aggregate results are separate entire runs."
+    }
+  ],
+  "layoutRegression": "Original320px native200% screenshot showed first title below viewport. We compared it against the existing round26 invariant before that suite executed; production moved shared timing after first title. No old test/timeout was changed.",
+  "harnessAmendment": {
+    "recordedAt": "2026-11-08T02:20:24.472026+00:00",
+    "changed": [
+      "scripts/round40-policy-fork-test.mjs"
+    ],
+    "before": "8455f87159984e953b3e0291cd848777e5dc3edba8fdafaed73f822a1942d0bd",
+    "after": "c6bc481e87ca7e18f551fec97369eba24e4efcd6c99bd09116c578cec023946e",
+    "reason": "Production correctly has no AVG entry for Linche atD4. New test helper incorrectly required it. New script now verifies absent scene/policy at actual selection; no production, old test, timeout or expectation of eligibility changed.",
+    "productionUnchanged": true,
+    "oldScriptsUnchanged": true,
+    "aggregatePositionLogBytes": 60125,
+    "newSuiteReportExists": false
+  }
+}
