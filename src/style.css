@@ -555,3 +555,16 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 /* A paper bookmark marks only the explicitly resumed, focused contract. */
 .scene-planning-page .choice-card[data-contract-resume]:focus{box-shadow:inset 4px 0 0 var(--gold),inset 8px 0 0 var(--bg);scroll-margin-block-start:.75rem}
 .contract-resume-link{text-align:left;max-width:100%;overflow-wrap:anywhere}
+
+/* Round 42: an open ledger joins the contract to its local payer, not a
+   global wallet or a promise that the whole window can be submitted. */
+.local-cost-ledger{border-left:2px solid #b79a58;border-block:1px solid var(--line);margin:1.5rem 0;padding:.8rem;background:linear-gradient(90deg,#b79a580b,transparent)}
+.local-cost-ledger>h2{font-size:.8125rem;line-height:1.6;font-weight:500;display:flex;align-items:center;gap:.6rem;color:#cfbd8b}
+.local-cost-mark{width:2rem;height:1.6rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.2}
+.local-cost-rows{list-style:none;margin:0;padding:0}.local-cost-rows li{padding:.65rem 0;border-bottom:1px dotted #60736b}
+.local-cost-channel{font-size:.875rem;font-weight:500;color:var(--channel);display:block;margin-bottom:.3rem}
+.local-cost-figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;font-size:.8125rem;line-height:1.6}
+.local-cost-figures span{min-width:0;overflow-wrap:anywhere}.local-cost-figures b{display:block;font-variant-numeric:tabular-nums;font-size:1rem;font-weight:500;color:var(--paper)}
+.local-cost-result{border-left:1px solid #64756b;padding-left:.5rem}.local-cost-rows [data-local-cost-shortfall="true"] .local-cost-result,.local-cost-rows [data-local-cost-shortfall="true"] .local-cost-result b{color:#edb7a3}
+.local-cost-ledger .local-cost-boundary{font-size:.8125rem;color:#b4c5b9;line-height:1.75;margin:.7rem 0 0}
+.large-text .local-cost-figures{grid-template-columns:1fr;gap:.25rem}.large-text .local-cost-figures span{display:flex;justify-content:space-between;gap:.5rem;flex-wrap:wrap}.large-text .local-cost-result{border-left:0;border-top:1px dotted #64756b;padding:.25rem 0 0}
