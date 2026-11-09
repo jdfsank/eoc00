@@ -1,0 +1,657 @@
+{
+  "archive": {
+    "path": "docs/round42-evidence/raw-validation.tar.gz",
+    "bytes": 1183018,
+    "sha256": "3f990670bcc8267defb111f1432be08c64f11d121a8f9a548e597570daa6eed8",
+    "entries": 125
+  },
+  "files": [
+    {
+      "path": "stages/acceptance-audit.json",
+      "bytes": 127668,
+      "sha256": "a177c86d48569a5d2c1a885425325dab4469906f1b94587df207ab83b7a28ca4"
+    },
+    {
+      "path": "stages/tradeoffs.finished",
+      "bytes": 21,
+      "sha256": "f2731061293471e4cbf685f3483505af8262502b4f431cb34e2c02a9c2990344"
+    },
+    {
+      "path": "stages/matrix.started",
+      "bytes": 21,
+      "sha256": "b9cc2a625797cc307820fa60af12818a22e9a0691163eeea3c8facb9173e2190"
+    },
+    {
+      "path": "stages/build.log",
+      "bytes": 1098,
+      "sha256": "4c4c8d6a7129a8256844a1a6c3f2d510bd73c7b9ab29a2ed84bd95e74a365c4b"
+    },
+    {
+      "path": "stages/roles.started",
+      "bytes": 21,
+      "sha256": "76c7e16f99eda28c77febc6297af08d850e4635a799a97bc24b41fc6662b5997"
+    },
+    {
+      "path": "stages/build.command",
+      "bytes": 14,
+      "sha256": "dae58de3ddfde95b066b259e24d83e50d15aedeafb58b0b20d7b26dd324ef0ef"
+    },
+    {
+      "path": "stages/acceptance-audit-initial-optional-baseline-failure.json",
+      "bytes": 123706,
+      "sha256": "c322ae7397af5c6b30926cce5ec08bd3ceeda9e4165b47618f22302ab96f2c65"
+    },
+    {
+      "path": "stages/run.sh",
+      "bytes": 802,
+      "sha256": "2e0de1ba238ad57eb23299f130281aeaff0b7148cc2d68fa167f66d2535bf476"
+    },
+    {
+      "path": "stages/tradeoffs.command",
+      "bytes": 49,
+      "sha256": "33092085cd3bf9fd2f1083f4c101570d9dd29e0ceb28fc05eac42023843ad841"
+    },
+    {
+      "path": "stages/browser.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/tradeoffs.log",
+      "bytes": 15315,
+      "sha256": "34d0672a6a92a57df22ce8a31cc3886903a3e77788a5f497ee2f9e76b1b84eb2"
+    },
+    {
+      "path": "stages/build.finished",
+      "bytes": 21,
+      "sha256": "504f5e445bc89f68715555528fa9988512829bfea5848d1dca0a1559578c0f4a"
+    },
+    {
+      "path": "stages/roles.finished",
+      "bytes": 21,
+      "sha256": "dd3afa0bbf21fcafe233e5482b8db2ef1e98a8cec27efff58f42f6af4976332a"
+    },
+    {
+      "path": "stages/browser.command",
+      "bytes": 21,
+      "sha256": "1a6b22751e6ea60a82089c5cf6f44efe38eb14c93dd7825ca05d5b33cbdf2be7"
+    },
+    {
+      "path": "stages/roles.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/matrix.finished",
+      "bytes": 21,
+      "sha256": "51c64a5d99df9c9d2b72824a7ad9f98c88eb82cb469abf84816435dbe045093b"
+    },
+    {
+      "path": "stages/build.started",
+      "bytes": 21,
+      "sha256": "02db1dd1eeaa7b3e7b72d142e97c71299516527f2e70cd774cced5d53cf73d06"
+    },
+    {
+      "path": "stages/matrix.command",
+      "bytes": 28,
+      "sha256": "75c186e1ea1000ead21499f2bcb3c8ba5e5647f90930396459d3bfc677151e11"
+    },
+    {
+      "path": "stages/roles.command",
+      "bytes": 48,
+      "sha256": "73a330996ae56d1a9063ebc6e0e61af4cd47ddeb2b9f9a397b99f086c10f3ca8"
+    },
+    {
+      "path": "stages/unit.finished",
+      "bytes": 21,
+      "sha256": "6c4a2abb64058d6c13306903228ebc80b4f44cc5ee596fc4341d38a4148d49bf"
+    },
+    {
+      "path": "stages/round27-verification-remote-copy.json",
+      "bytes": 117344,
+      "sha256": "2dd7081ce1389968ee809d77cc96a0ad10f01d068fd59dfcbb02e1b03625d04f"
+    },
+    {
+      "path": "stages/acceptance-audit-valid-checks-with-gap.json",
+      "bytes": 127530,
+      "sha256": "e2021640891bc9749a5fdc4cd13f36674d9d80c9809bb15504c7fe9fa699de9d"
+    },
+    {
+      "path": "stages/unit.log",
+      "bytes": 297723,
+      "sha256": "5c82b7a5c46ec1a2f5b19779d29dbf555428f32c860163a240dedd1bf562db5d"
+    },
+    {
+      "path": "stages/browser.finished",
+      "bytes": 21,
+      "sha256": "00581d7c4e2187e37181f771348282e146415ca845d9e9ab8b04fe9091bcef27"
+    },
+    {
+      "path": "stages/matrix.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/unit.started",
+      "bytes": 21,
+      "sha256": "8e8731f9ea34e13e119c9a4cf5d6ba901e651a2d6055e737063d1a7286bca223"
+    },
+    {
+      "path": "stages/optional-fixture-investigation.json",
+      "bytes": 2405,
+      "sha256": "46043d82d36977db9c55d4485195aa32af41857801ca11d655e4d34e2311719e"
+    },
+    {
+      "path": "stages/browser.log",
+      "bytes": 2696481,
+      "sha256": "951f251ef21d2142fe7c1de1365684efe0309bc5762281323e920ba8ec2a95a1"
+    },
+    {
+      "path": "stages/matrix.log",
+      "bytes": 607,
+      "sha256": "af788c358bbca1ed15fc8402417a2d1edcd31c66739945ff440ea4c99abb26fb"
+    },
+    {
+      "path": "stages/freeze.json",
+      "bytes": 71820,
+      "sha256": "f2294ad2fe58cc4a03fece8d801711f5cab22804af24965fa2d586ac2fea7e50"
+    },
+    {
+      "path": "stages/unit.command",
+      "bytes": 9,
+      "sha256": "f135f9fa4f38fd0c92563221116e2f79df0838f5ff86440ae44d4b428576fc62"
+    },
+    {
+      "path": "stages/build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/roles.log",
+      "bytes": 799,
+      "sha256": "86cb37c957cb201f5634d2a839aa469272e6e7597dffb1e7ec6c016ffed3432b"
+    },
+    {
+      "path": "stages/unit.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/tradeoffs.started",
+      "bytes": 21,
+      "sha256": "2dffb1db56b602a34d0d949bb4a982bd374f0a625ec18d26996fa28c00056bd6"
+    },
+    {
+      "path": "stages/tradeoffs.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/browser.started",
+      "bytes": 21,
+      "sha256": "5e1c3f63de62b2213116afe8ec3a96257986f4ca934b598a9a24f12d3fc24012"
+    },
+    {
+      "path": "new-current-ui-save/native-390-text200.json",
+      "bytes": 683992,
+      "sha256": "e08c94994e390188148ae5c982a4a5dac0bf6a58f718165342b7a185da51ed04"
+    },
+    {
+      "path": "audit/round42-recovered-acceptance.mjs",
+      "bytes": 18988,
+      "sha256": "750cd5c11049f7081e6b21ff9cdf259ed55ec6d9392b7bb562bc3810f9df14fe"
+    },
+    {
+      "path": "repository/playtest-output/results.json",
+      "bytes": 4378,
+      "sha256": "0440aaad2d3cffc72810c528a5df6c25cffd82099241adf55b1c34341e83933a"
+    },
+    {
+      "path": "repository/playtest-output/interaction-results.json",
+      "bytes": 26682,
+      "sha256": "9c9605289772d6b0da70a54ec95a5f1882bc4e79411518db5590dcfcc17ed71f"
+    },
+    {
+      "path": "repository/playtest-output/tradeoffs-results.json",
+      "bytes": 2718,
+      "sha256": "5d8050393300a8e18f04ffd8cd9d0109a160298aeefe7d5fc6a352533f5dbc6b"
+    },
+    {
+      "path": "repository/playtest-output/visual-results.json",
+      "bytes": 1892,
+      "sha256": "ef95400e407b33cb7a013950a21ad9cae3d27a1cda8c8c72157307c781141b34"
+    },
+    {
+      "path": "repository/playtest-output/round3-handoff-results.json",
+      "bytes": 2383,
+      "sha256": "b840c44ec69dabc6f1bddf08dc845662d90900114b001269b4ca51122d3be781"
+    },
+    {
+      "path": "repository/playtest-output/round3-learning-visual-results.json",
+      "bytes": 1844,
+      "sha256": "778632f85134bf6e67fa266de248d849e51fc5be2a59acb718f5dd0d6c9472a7"
+    },
+    {
+      "path": "repository/playtest-output/round4-aftermath-results.json",
+      "bytes": 3973,
+      "sha256": "dde0b4e27522ce17e8f84310e8b71431f3186363b5585ce145973c4ee18cb13c"
+    },
+    {
+      "path": "repository/playtest-output/round4-station-visual-results.json",
+      "bytes": 2198,
+      "sha256": "2d0974665278a65c771312ddcd11f5412c10a1474362c64ee1f519de5d4fce0e"
+    },
+    {
+      "path": "repository/playtest-output/round5-recruitment-results.json",
+      "bytes": 3545,
+      "sha256": "d2feaeb242ad6e8c6a36f7d0a6a8f70e8b2c0182d7aa6d0fe663992fabae585c"
+    },
+    {
+      "path": "repository/playtest-output/round5-maintenance-visual-results.json",
+      "bytes": 3868,
+      "sha256": "ef13a518ec1501f0278c0150c60d76dae15cfcd7d5724ed23fe5886c578502cd"
+    },
+    {
+      "path": "repository/playtest-output/round6-outlook-results.json",
+      "bytes": 3237,
+      "sha256": "d14c85b3af40d286151581eecd8543c3d62a476129b5dfc1ff71d4f2424409ba"
+    },
+    {
+      "path": "repository/playtest-output/round6-activity-visual-results.json",
+      "bytes": 13592,
+      "sha256": "657538e8c11c5cb256152352be01900271b2494ac3bb3fb8009cae62135d6c89"
+    },
+    {
+      "path": "repository/playtest-output/round7-recovery-results.json",
+      "bytes": 3831,
+      "sha256": "11b2e57a5bf07f5442ad32dc8928c196d399e6a503868e81071fa54e4c665bf7"
+    },
+    {
+      "path": "repository/playtest-output/round7-south-bank-visual-results.json",
+      "bytes": 12548,
+      "sha256": "64117f7ece314b7e5765f68fa155eee85ca65376b15f93bc4db2d6ab45e2d1ca"
+    },
+    {
+      "path": "repository/playtest-output/round8-handoff-outlook-results.json",
+      "bytes": 5073,
+      "sha256": "99f73edf2a1594d706f190432d34c7f95eb28110b9edd87ea0a42f3b0c3b53eb"
+    },
+    {
+      "path": "repository/playtest-output/round8-far-port-visual-results.json",
+      "bytes": 9911,
+      "sha256": "42c2e50618607668a60985f5faa3fc9879b59048c71436cdb328ce50b078d8c2"
+    },
+    {
+      "path": "repository/playtest-output/round9-port-access-results.json",
+      "bytes": 3829,
+      "sha256": "450addb2c2d67daa0d53ec59fa2142a7f1012bd0fa83af4b29c02573f8b85eb9"
+    },
+    {
+      "path": "repository/playtest-output/round9-river-warning-visual-results.json",
+      "bytes": 9330,
+      "sha256": "c47de077afbdb6bea129e6956753226d3b666d07c9ffdc942416d41483f59a23"
+    },
+    {
+      "path": "repository/playtest-output/round10-contract-preview-results.json",
+      "bytes": 4085,
+      "sha256": "8086feccf6fc12ced871a55c9c614f8309b0c1bffff593bb051a5e71055ff043"
+    },
+    {
+      "path": "repository/playtest-output/round10-local-crisis-visual-results.json",
+      "bytes": 95280,
+      "sha256": "44c79403378f886a09b54f88017462abed73a1170cd2c5077255bb916a5e59b4"
+    },
+    {
+      "path": "repository/playtest-output/round11-history-reading-results.json",
+      "bytes": 4880,
+      "sha256": "13e85837f07bb35b4621cfaae5352dcbd281606155efafa07ac956c6e138cbc5"
+    },
+    {
+      "path": "repository/playtest-output/round11-scene-visit-results.json",
+      "bytes": 37226,
+      "sha256": "5dccf412fb574c854666063c2c422c410cac19bc1ba04a1a5d03a308ae1a2e1e"
+    },
+    {
+      "path": "repository/playtest-output/round12-staffing-history-results.json",
+      "bytes": 6449,
+      "sha256": "6a2f74e64df2676fc514309535070dee4241b433265abd8c84c767c6e071165d"
+    },
+    {
+      "path": "repository/playtest-output/round12-port-access-visual-results.json",
+      "bytes": 59813,
+      "sha256": "e6163e5b06cfb4d65b2bf7c77be507a8f5e7f98e5c19c5336061cf69bf7c45ae"
+    },
+    {
+      "path": "repository/playtest-output/round12-toast-input-results.json",
+      "bytes": 235827,
+      "sha256": "e7d39b67fd8646fbfcbe365e0e7f409c7191cf5498428f8f1e40d89794a05546"
+    },
+    {
+      "path": "repository/playtest-output/round13-building-review-results.json",
+      "bytes": 8504,
+      "sha256": "024f26a681e42f606211817e9c0683778bf2a76777312530e452aa858a123e8f"
+    },
+    {
+      "path": "repository/playtest-output/round13-monastery-visual-results.json",
+      "bytes": 103736,
+      "sha256": "a2a0009bf02a3847aea4874c8149d31725d4b0fec95852605b7f674116748e01"
+    },
+    {
+      "path": "repository/playtest-output/round14-branch-caretaker-results.json",
+      "bytes": 90866,
+      "sha256": "84f0b5d1c7829c39ab323478752a7bbfa36d1c04f9a5fc7309852b643841da8f"
+    },
+    {
+      "path": "repository/playtest-output/round14-station-access-visual-results.json",
+      "bytes": 66273,
+      "sha256": "a2615d6f6169d72c003009f447d1ac8bd7b32b67045c721cb7b53bd4d29a3ab3"
+    },
+    {
+      "path": "repository/playtest-output/round15-future-check-destination-results.json",
+      "bytes": 116797,
+      "sha256": "c54a934413fad3ca649de15ef10b322f8c24902751b3e838a58d9d4a7fd77f58"
+    },
+    {
+      "path": "repository/playtest-output/round15-d5-visit-results.json",
+      "bytes": 244419,
+      "sha256": "85538e5456341b68f2089e28986fdbde2cbb6e0c84950a4db981bdf0562d525d"
+    },
+    {
+      "path": "repository/playtest-output/round16-board-readiness-results.json",
+      "bytes": 1206,
+      "sha256": "3860531ff537e5440250c5c549518ae37c3afe4e96c6fa29be9af0eb97deea46"
+    },
+    {
+      "path": "repository/playtest-output/round16-crisis-map-report.json",
+      "bytes": 19734,
+      "sha256": "05c7bd0cc484793a9c1606dcd2a53d355f55be945998e2da42400a1eaaf4e11e"
+    },
+    {
+      "path": "repository/playtest-output/round16-archive-upgrade-results.json",
+      "bytes": 5880,
+      "sha256": "545bd3ae41a43f139bb2c7e67bd6f11d397a8583f927fa63b5b6647afc7b14d3"
+    },
+    {
+      "path": "repository/playtest-output/round-17/investigation-comparison-results.json",
+      "bytes": 31182,
+      "sha256": "de5d1c5a3a8b6121fbad026acff4594a7f9b82594348ae6710860178dc92a12a"
+    },
+    {
+      "path": "repository/playtest-output/round-18/return-consequences-results.json",
+      "bytes": 63556,
+      "sha256": "886322e0a43671d275e81828eeaaa70b1fce76f05dc7ad6465576965d1bf9bf1"
+    },
+    {
+      "path": "repository/playtest-output/round-19/investigation-choices-results.json",
+      "bytes": 50025,
+      "sha256": "685ad5e21d389dc0454b1a22b72c2d14d725281a68e6cf81d2ee078423166dec"
+    },
+    {
+      "path": "repository/playtest-output/round-20/final-decade-results.json",
+      "bytes": 108408,
+      "sha256": "735392b6194cc5b6ed85387b64f5cd93bcd4974504d5c2bb98119bc112846f95"
+    },
+    {
+      "path": "repository/playtest-output/round-21/training-workload-results.json",
+      "bytes": 144452,
+      "sha256": "1b951c2bdd321e522a3778ac69f6fa687ee79bce1fccda8ad060089ed675ed89"
+    },
+    {
+      "path": "repository/playtest-output/round-21/training-workload/results.json",
+      "bytes": 58312,
+      "sha256": "890219148a1a0c5b2603bb9f7845f0a8b7107d1e120285f9159554ca27eba9df"
+    },
+    {
+      "path": "repository/playtest-output/round-22/decision-flow-results.json",
+      "bytes": 147430,
+      "sha256": "62a5fa88a1959c4f1f4c4ac7a697535f4d26854810c9dde07de461b5f8866471"
+    },
+    {
+      "path": "repository/playtest-output/round-22/decision-flow-visuals/report.json",
+      "bytes": 199382,
+      "sha256": "68a690b58be441a9a32189c9f551fde24609bb2f3c7411731f559b46bf0a1b50"
+    },
+    {
+      "path": "repository/playtest-output/round-23/playback-journal-results.json",
+      "bytes": 250988,
+      "sha256": "8a6413edc1984656059d30aa4b91afd0dff3ffa5b52f4c83f267d67a07228556"
+    },
+    {
+      "path": "repository/playtest-output/round23-playback-visuals/results.json",
+      "bytes": 635422,
+      "sha256": "c4a756acd52c3e50380381685ae8a4f8dac07f5acb283cb95760851bb1f17bf9"
+    },
+    {
+      "path": "repository/playtest-output/round-24/investigation-flow-results.json",
+      "bytes": 64560,
+      "sha256": "4ac56e9c810cd6964d7ab71ec49761e3ef6403764f02966a50af7766bc6100d8"
+    },
+    {
+      "path": "repository/playtest-output/round24-investigation-visuals/results.json",
+      "bytes": 301597,
+      "sha256": "5bfd5be02423d2107f8eba100f079d25d01d7952fe43883f7c855dc30d6fc668"
+    },
+    {
+      "path": "repository/playtest-output/round25-world-planning-flow/world-planning-flow-results.json",
+      "bytes": 56378,
+      "sha256": "bba4eaa6871986d8cf3d68e801e680fc2bfcddd0715bdbd0052e0bf7ca6afa19"
+    },
+    {
+      "path": "repository/playtest-output/round25-world-planning-visuals/results.json",
+      "bytes": 143489,
+      "sha256": "8b9b6bb9faee61f4c915106e0472acb8b74577829135a054cf974542a8d54a84"
+    },
+    {
+      "path": "repository/playtest-output/round26-import-safety/import-safety-results.json",
+      "bytes": 24102,
+      "sha256": "67c15b14e53c603e507ce265752be8f450e12c3483f5bea9161870cebb895aa1"
+    },
+    {
+      "path": "repository/playtest-output/round26-comparison-guidance/results.json",
+      "bytes": 57380,
+      "sha256": "9c2a58ef9990445ea9f5ed901464cca5154f87a83ba779fabed1a0bed0610de6"
+    },
+    {
+      "path": "repository/playtest-output/round26-choice-directory-visuals/results.json",
+      "bytes": 428136,
+      "sha256": "ed458acad8447ed40f10882d3db7bbdd999540f6173f76454f9ad98b4b280168"
+    },
+    {
+      "path": "repository/playtest-output/round27-lifecycle-flow/results.json",
+      "bytes": 102403,
+      "sha256": "59cd909e28b9ce36950251e0dee33829f03a5b8f45b6f3b741fdb45a661b5ce8"
+    },
+    {
+      "path": "repository/playtest-output/round27-lifecycle-visuals/results.json",
+      "bytes": 166200,
+      "sha256": "0b65cb2c465a32af5ebb23f154922f9af5ac29119a93b2a2895c29e5f68ded56"
+    },
+    {
+      "path": "repository/playtest-output/round28-review-accounts/results.json",
+      "bytes": 116953,
+      "sha256": "32b74569d8aea48edda22ce7257ad2376fe65a9ce835aafc4ffd09da317d9450"
+    },
+    {
+      "path": "repository/playtest-output/round28-review-accounts-visuals/results.json",
+      "bytes": 204632,
+      "sha256": "ad20d51b56ce9d8cf36d2a6d837338bc1bafa6491f6612b493be04e91855be44"
+    },
+    {
+      "path": "repository/playtest-output/round29-evidence-return/results.json",
+      "bytes": 4414,
+      "sha256": "ae2bef0f1a3fac32981d51cebf850319d562bb1269240b1dc9a65ff49a5d0dfe"
+    },
+    {
+      "path": "repository/playtest-output/round29-opening-evidence-visuals/results.json",
+      "bytes": 53372,
+      "sha256": "baeaf81b622ff16445da3e1154d1fd1eb4a596fbfb2e5cca60b30f12ecc6f14c"
+    },
+    {
+      "path": "repository/playtest-output/round30-stage-boundary-flow/results.json",
+      "bytes": 31316,
+      "sha256": "4983a4c7cd919cb94f59397e83c2750a296b2570c363bce6f41a86c6b3733439"
+    },
+    {
+      "path": "repository/playtest-output/round30-stage-boundary-visuals/results.json",
+      "bytes": 104679,
+      "sha256": "511d66e63e7157a13f5c5c8d9483dc8cf202a2c6f1ad33bae1bef3c0106c0365"
+    },
+    {
+      "path": "repository/playtest-output/round31-scene-source-flow/results.json",
+      "bytes": 24531,
+      "sha256": "a74a1c1b90551f5e0622384282bc536c0b7d13db679108f76ba24484dc6d792f"
+    },
+    {
+      "path": "repository/playtest-output/round31-scene-source-visuals/results.json",
+      "bytes": 40529,
+      "sha256": "a633a81426cee9ac51e767085cd6587a9d703c31be4aca2e5f7e4497900cb941"
+    },
+    {
+      "path": "repository/playtest-output/round32-draft-edit-flow/results.json",
+      "bytes": 5287,
+      "sha256": "4d815440bbdbb20eb1b85bf78f84bbe2183d9233ca9ff28c713b0aacdefdf5ef"
+    },
+    {
+      "path": "repository/playtest-output/round32-draft-edit-visuals/results.json",
+      "bytes": 23406,
+      "sha256": "3c7fd4440a96fd38c1bdf21537ce5fa04dd14be471b794d6de6bb84ff9f0a484"
+    },
+    {
+      "path": "repository/playtest-output/round33-draft-comparison/results.json",
+      "bytes": 52033,
+      "sha256": "7b35b9c811a148339be82bf12d27410569da7921e0b737b8b405ca295ce5cc11"
+    },
+    {
+      "path": "repository/playtest-output/round34-comparison-reading/results.json",
+      "bytes": 93443,
+      "sha256": "adc8c0ee92c19d88c413889e72be4921005e5b2863ccb09d7b0a1b2a5fe17da6"
+    },
+    {
+      "path": "repository/playtest-output/round35-recollection-reading/results.json",
+      "bytes": 132636,
+      "sha256": "e7586d80c986243dd9ac56ab9d4202285783340a922e54262e62b4dacd495b61"
+    },
+    {
+      "path": "repository/playtest-output/round36-actor-agency/results.json",
+      "bytes": 157280,
+      "sha256": "af425f93f3248ad685fbf9a1a41d73bcfc7f12ef91f2b25a62fea3bf853d3aa6"
+    },
+    {
+      "path": "repository/playtest-output/round37-building-tradeoffs/results.json",
+      "bytes": 108536,
+      "sha256": "666751cdbf2d71a95f19e17564cedb47ff9ce36c76b2b09e309be8c8f64b7572"
+    },
+    {
+      "path": "repository/playtest-output/round38-succession-fork/results.json",
+      "bytes": 168943,
+      "sha256": "e4b198f7fed0d0a6e803f069c959045f8a85ab8d27744f784bad038f75364f2b"
+    },
+    {
+      "path": "repository/playtest-output/round39-crisis-fork/results.json",
+      "bytes": 134827,
+      "sha256": "424b44799bccdfe02f7644b81ad48ada25a3e0cdc3e4a3890bd7c694e74be62f"
+    },
+    {
+      "path": "repository/playtest-output/round40-policy-fork/results.json",
+      "bytes": 173382,
+      "sha256": "f8280a7c1215bd33cbbef7a2f1328d62c333474ab20f16ac3dd247398f6744b3"
+    },
+    {
+      "path": "repository/playtest-output/round41-contract-resume/results.json",
+      "bytes": 55849,
+      "sha256": "c40579346c4bb356e52b6c3de7421bee42ec15ae0e4edf60144ff0c1e3560917"
+    },
+    {
+      "path": "repository/playtest-output/round42-local-cost/report.json",
+      "bytes": 284708,
+      "sha256": "adca14d9ef977cfcb95efdf3e7401c69fb4bc83805ed6486a4f2ac5057b99d4f"
+    },
+    {
+      "path": "repository/playtest-output/round42-scene-size/results.json",
+      "bytes": 103219,
+      "sha256": "bd2482d05c586eb82ecafebcbd132c53c44ba4fe51454ce0825103af1975c5ee"
+    },
+    {
+      "path": "repository/playtest-output/round6-outlook-matrix.json",
+      "bytes": 606521,
+      "sha256": "175d94ad72db92318a8346d180eea2fb4924fc3ceebf8a4ca2c169a912db81a2"
+    },
+    {
+      "path": "repository/playtest-output/round21-training-choice-balance-results.json",
+      "bytes": 5430655,
+      "sha256": "563bb41074f2391c2819c3e3ec93f40b52a25df4fb09eee7ea18e11f9b559413"
+    },
+    {
+      "path": "repository/playtest-output/round22-role-opportunity-audit.json",
+      "bytes": 29703,
+      "sha256": "f485c36d06ab02328a6572fa90bd242207fa93c3d200cb98a96c50958e544313"
+    },
+    {
+      "path": "independent-image/before-390-200/results.json",
+      "bytes": 7760,
+      "sha256": "c951f72f74306500a5a5b3bf2545c1d9c1f94e2485f07e1e14ad76ffcfa087f5"
+    },
+    {
+      "path": "independent-image/no-anchor-control/results.json",
+      "bytes": 7780,
+      "sha256": "b1389c4159cd63eb4e7d5169b8d52aeb05966f305a12fa52d16a6e75b22f1b73"
+    },
+    {
+      "path": "independent-image/fixed-held/results.json",
+      "bytes": 104059,
+      "sha256": "04a9d567065eb2a5eb42853ca30f423d3918d01cfc98e3f56793a82828d34ae9"
+    },
+    {
+      "path": "independent-image/pixels-before/results.json",
+      "bytes": 15297,
+      "sha256": "6e59482eca8e0bd2119f8b409382c50e69738cfd589d030deeca0866f57f2d05"
+    },
+    {
+      "path": "independent-image/pixels-fixed/results.json",
+      "bytes": 15285,
+      "sha256": "bdcb7f6cc8b3ddab948a9c27d83afeac3d6d27c35b94d395b48da626c7a5d7d1"
+    },
+    {
+      "path": "independent-image/pixels-before-repeat/results.json",
+      "bytes": 5615,
+      "sha256": "6c0669ea9a6ecfd2dd5674aa5a1fd0f9ef72b78545e2ba0222d3dfb02a8f31ab"
+    },
+    {
+      "path": "independent-image/pixels-fixed-repeat/results.json",
+      "bytes": 5611,
+      "sha256": "eff171c0036f61eb60ad2503eeebb7e21a5d8aa28c5cc223e36b2eeef4b15e06"
+    },
+    {
+      "path": "independent-cost/report.json",
+      "bytes": 285068,
+      "sha256": "d7f68ec895a37f9a25bb32c6e76ee6d515d76675b08297f841bace7fed0dc113"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/round42-evidence/ledger-390-100.png",
+      "sha256": "f49ae00266880ad6d15f3316744ba36318e482c4ae02129cb301b21cc99b4748",
+      "bytes": 160653
+    },
+    {
+      "path": "docs/round42-evidence/ledger-320-200.png",
+      "sha256": "7bb4353f6cfd4b2b6f93fb97e2545f5798e76b782c17940b7b14d76c7e3559db",
+      "bytes": 92074
+    },
+    {
+      "path": "docs/round42-evidence/legacy-ledger-1280-100.png",
+      "sha256": "67e863b00f43101227c438972ea7ebbcc8181522e4c6248e4d1c5c3f06fbbe62",
+      "bytes": 337648
+    },
+    {
+      "path": "docs/round42-evidence/before-held-image-390-200.png",
+      "sha256": "780b4af9ae3b3626c5cecd7d8f91db3738c98fb9645a93dcad88b95dd64d12b9",
+      "bytes": 186309
+    },
+    {
+      "path": "docs/round42-evidence/fixed-held-image-390-200.png",
+      "sha256": "dda2becb532eb4a9251084f7977df4f2fe1e05175420ed7fd6eb7149aa9f7673",
+      "bytes": 182946
+    }
+  ]
+}
