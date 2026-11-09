@@ -1,0 +1,7 @@
+{
+  "origin": "Round42 recovery validation, round27 lifecycle flow via actual UI annual controls; new current producer save, NOT lost round27 historical baseline.",
+  "archive": "docs/round42-evidence/raw-validation.tar.gz",
+  "entry": "new-current-ui-save/native-390-text200.json",
+  "sha256": "e08c94994e390188148ae5c982a4a5dac0bf6a58f718165342b7a185da51ed04",
+  "stateSha256": "30741d94ae30ec6da2381df90a32da10ae01faee43dd742271364bdd8621b2f6"
+}

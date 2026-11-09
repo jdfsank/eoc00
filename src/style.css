@@ -568,3 +568,13 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .local-cost-result{border-left:1px solid #64756b;padding-left:.5rem}.local-cost-rows [data-local-cost-shortfall="true"] .local-cost-result,.local-cost-rows [data-local-cost-shortfall="true"] .local-cost-result b{color:#edb7a3}
 .local-cost-ledger .local-cost-boundary{font-size:.8125rem;color:#b4c5b9;line-height:1.75;margin:.7rem 0 0}
 .large-text .local-cost-figures{grid-template-columns:1fr;gap:.25rem}.large-text .local-cost-figures span{display:flex;justify-content:space-between;gap:.5rem;flex-wrap:wrap}.large-text .local-cost-result{border-left:0;border-top:1px dotted #64756b;padding:.25rem 0 0}
+
+/* A quiet ledger ruler, not a success meter. Patterns survive grayscale. */
+.local-cost-track{display:flex;width:100%;height:.5rem;border:1px solid #839589;margin-top:.55rem;background:#172b27;overflow:hidden}
+.local-cost-spent,.local-cost-left{display:block;height:100%;flex:none}
+.local-cost-spent,.local-cost-key-spent{background:repeating-linear-gradient(135deg,#d9c68d 0,#d9c68d 1px,#27352d 1px,#27352d 4px)}
+.local-cost-left,.local-cost-key-left{background:#9bb6a5}
+.local-cost-key{font-size:.75rem;line-height:1.8;color:#b4c5b9;margin:.5rem 0}
+.local-cost-key-spent,.local-cost-key-left{display:inline-block;width:.8em;height:.55em;border:1px solid #839589;margin-right:.25em;vertical-align:baseline}
+
+.local-cost-key-token{display:inline-block;white-space:nowrap}

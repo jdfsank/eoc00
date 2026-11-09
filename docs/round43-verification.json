@@ -1,0 +1,178 @@
+{
+  "round": 43,
+  "date": "2026-11-09",
+  "baseCommit": "7adad84125f7810562a7de134d0c8ba0f85ca74d",
+  "baseTree": "04565474a23157689c154b5370ac3150f35287e3",
+  "main": "bd95a56c5de541c9bc663b06a2a7064728781a0b",
+  "mainChangedByThisRound": false,
+  "localStagesPassed": true,
+  "acceptance": {
+    "passed": false,
+    "evidenceValid": true,
+    "baselineCoverageEquivalent": false,
+    "acceptanceStatus": "valid-executed-checks-but-baseline-coverage-gap",
+    "coverageGaps": [
+      {
+        "script": "scripts/round27-lifecycle-visuals-test.mjs",
+        "omittedChecks": 2,
+        "reason": "Optional baseline save not present; producer coverage only. See separate actual UI flow regression.",
+        "optionalInput": "../round27-visual-audit/actual-year40-storage.json",
+        "source": "scripts/round27-lifecycle-visuals-test.mjs:44",
+        "historicalChecks": 491,
+        "actualChecks": 489
+      }
+    ]
+  },
+  "browser": {
+    "suites": 75,
+    "checks": 27368,
+    "passed": 27368,
+    "checkGroups": {
+      "checks": 27202,
+      "focusNegativeControls": 6,
+      "b4Checks": 157,
+      "oracleNegativeControls": 3
+    },
+    "hashMatched": 50,
+    "hashAbsent": 25,
+    "aggregateStageRecords": 1
+  },
+  "stages": {
+    "unit": {
+      "startedAt": 1794192650.7355943,
+      "finishedAt": 1794192733.273932,
+      "exitCode": 0,
+      "command": "npm test",
+      "logSHA256": "5c4bbcf6981b6e303e41a77762e375fb1d9ad5fdcf417904e532d08f82ba6650",
+      "logBytes": 298132
+    },
+    "build": {
+      "startedAt": 1794192733.2752006,
+      "finishedAt": 1794192738.608119,
+      "exitCode": 0,
+      "command": "npm run build",
+      "logSHA256": "eb95251df647b0ace0eaf00afe2fa209e14baa39ee01cd67ebfe06048387c2ce",
+      "logBytes": 1098
+    },
+    "browser": {
+      "startedAt": 1794192738.6096826,
+      "finishedAt": 1794197590.4865596,
+      "exitCode": 0,
+      "command": "npm run test:browser",
+      "logSHA256": "be26c9639f76267236ff55d396e489db5dbfee2a5ee85ff4256cb1a144edc7c2",
+      "logBytes": 2704477
+    },
+    "matrix": {
+      "startedAt": 1794197590.487882,
+      "finishedAt": 1794197601.8772912,
+      "exitCode": 0,
+      "command": "npm run test:outlook-matrix",
+      "logSHA256": "af788c358bbca1ed15fc8402417a2d1edcd31c66739945ff440ea4c99abb26fb",
+      "logBytes": 607
+    },
+    "tradeoffs": {
+      "startedAt": 1794197601.8784392,
+      "finishedAt": 1794197628.6832502,
+      "exitCode": 0,
+      "command": "node scripts/round21-training-choice-balance.mjs",
+      "logSHA256": "34d0672a6a92a57df22ce8a31cc3886903a3e77788a5f497ee2f9e76b1b84eb2",
+      "logBytes": 15315
+    },
+    "roles": {
+      "startedAt": 1794197628.6844218,
+      "finishedAt": 1794197629.5785747,
+      "exitCode": 0,
+      "command": "node scripts/round22-role-opportunity-audit.mjs",
+      "logSHA256": "86cb37c957cb201f5634d2a839aa469272e6e7597dffb1e7ec6c016ffed3432b",
+      "logBytes": 799
+    }
+  },
+  "supplemental": {
+    "matrix": {
+      "report": "playtest-output/round6-outlook-matrix.json",
+      "reportSHA256": "d5d62d040d7f4684e62da1083772476bf0f831a4cb59ce68718c908ad2b9ba64",
+      "modified": 1794197601.8494337,
+      "fresh": true,
+      "script": "scripts/outlook-matrix.mjs",
+      "scriptSHA256": "5e3a41473a6fd28f454a66a8a423d120a858591a67ad23da8584745ccb9072f8",
+      "checked": 888,
+      "failed": 0,
+      "skipped": 0,
+      "branches": {
+        "success": 282,
+        "fallback": 606
+      },
+      "limits": [
+        "This is deterministic automated model verification, not human playtesting, real-device certification, or evidence of historical accuracy.",
+        "The selected histories use three fixed seeds, four build choices, and risky recruitment when a real post exists. Legal year20 actor plans at distinct cells are enumerated, including explicit passes.",
+        "Individual review contracts are retained; this check does not infer independence or combine their probabilities.",
+        "Optional surveyed veto, true legacy rules, unresolved drafts, and hidden-roll access are covered separately by tests/crisis-outlook.test.js."
+      ]
+    },
+    "tradeoffs": {
+      "report": "playtest-output/round21-training-choice-balance-results.json",
+      "reportSHA256": "563bb41074f2391c2819c3e3ec93f40b52a25df4fb09eee7ea18e11f9b559413",
+      "modified": 1794197628.6580966,
+      "fresh": true,
+      "script": "scripts/round21-training-choice-balance.mjs",
+      "scriptSHA256": "7ecad0e329b2fc14c172f5e9f4bdf2308f18c8f3c33e035b30aeaf930d5d1eff",
+      "pairs": 644,
+      "crossingPairs": 644,
+      "sameTitles": 644,
+      "sameCoverage": 644,
+      "sameCrisis": 644,
+      "sameReadiness": 644,
+      "allValid": true,
+      "unchangedOriginalSources": true,
+      "balanced": false,
+      "reviewFailures": 52,
+      "scope": "Versioned workload audit of real natural player routes. Demonstrates sampled tradeoffs, not complete game balance or human playtesting. Synthetic maintenance and affordability states are labelled.",
+      "meaning": "644 sampled crossing tradeoffs; balanced=false, not universal game balance or human validation."
+    },
+    "roles": {
+      "report": "playtest-output/round22-role-opportunity-audit.json",
+      "reportSHA256": "f485c36d06ab02328a6572fa90bd242207fa93c3d200cb98a96c50958e544313",
+      "modified": 1794197629.562119,
+      "fresh": true,
+      "script": "scripts/round22-role-opportunity-audit.mjs",
+      "scriptSHA256": "22a090c302b00ad24bb2d92a1f505d0b6ec86a01f7336644e6a1c99f1f9a757c",
+      "pairs": 10,
+      "futureChecks": 2,
+      "sameCapability": 10,
+      "noPolicyDespiteReadyToShare": 10,
+      "ordinaryTrainingWithoutEngineWarning": 5,
+      "balanced": false,
+      "scope": "Ten natural role-allocation pairs plus two natural preparation branches. Not universal balance or human-playtest certification.",
+      "interpretation": "Work is not invalid or pointless. The protagonist alone owns the policy action. Choosing construction, training or a check instead can be deliberate, but needs to be explicit before investigation and submission."
+    }
+  },
+  "freeze": {
+    "path": "/workspace/scratch/52f1b40b7635/round43-work/freeze.json",
+    "sha256": "0ecc40392fa6d35b4464f774e67a613e21b9821004fa160520441cc7bb5a55cb",
+    "startedAt": 1794192630.805798,
+    "files": 624,
+    "mismatches": [],
+    "afterMismatches": []
+  },
+  "unitTests": 3001,
+  "remoteCI": "Not accepted. Inspect exact published commit separately; previous run42547059740 failed before usable steps/logs.",
+  "newFixture": {
+    "origin": "Round42 recovery validation, round27 lifecycle flow via actual UI annual controls; new current producer save, NOT lost round27 historical baseline.",
+    "archive": "docs/round42-evidence/raw-validation.tar.gz",
+    "entry": "new-current-ui-save/native-390-text200.json",
+    "sha256": "e08c94994e390188148ae5c982a4a5dac0bf6a58f718165342b7a185da51ed04",
+    "stateSha256": "30741d94ae30ec6da2381df90a32da10ae01faee43dd742271364bdd8621b2f6"
+  },
+  "limitations": [
+    "Two historical optional round27 checks remain unexecuted; new actual UI fixture is separate coverage.",
+    "25 legacy suites contain no intrinsic runtime hash.",
+    "Shortfall/exhausted/tiny ruler values tested in synthetic unit cases, not visually played browser states.",
+    "644 training pairs and10 role pairs are sampled audits with balanced:false, not universal balance or human testing."
+  ],
+  "artifact": {
+    "path": "docs/round43-evidence/raw-validation.tar.gz",
+    "bytes": 1065994,
+    "sha256": "4da7f4ca2fc8f42e2e88decc1f6647b4eadc1adbd9df47f752a5a9481ede3f13",
+    "entries": 117
+  }
+}
