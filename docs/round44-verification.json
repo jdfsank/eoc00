@@ -1,0 +1,189 @@
+{
+  "round": 44,
+  "date": "2026-11-09",
+  "baseCommit": "784e869d205bbde99da2a8c30cb0b480de93997b",
+  "baseTree": "1fd884e25378788d750e98c399233f5fa6da5178",
+  "main": "bd95a56c5de541c9bc663b06a2a7064728781a0b",
+  "mainChangedByThisRound": false,
+  "localStagesPassed": true,
+  "acceptance": {
+    "passed": false,
+    "evidenceValid": true,
+    "baselineCoverageEquivalent": false,
+    "acceptanceStatus": "valid-executed-checks-but-baseline-coverage-gap",
+    "coverageGaps": [
+      {
+        "script": "scripts/round27-lifecycle-visuals-test.mjs",
+        "omittedChecks": 2,
+        "reason": "Optional baseline save not present; producer coverage only. See separate actual UI flow regression.",
+        "optionalInput": "../round27-visual-audit/actual-year40-storage.json",
+        "source": "scripts/round27-lifecycle-visuals-test.mjs:44",
+        "historicalChecks": 491,
+        "actualChecks": 489
+      }
+    ]
+  },
+  "browser": {
+    "suites": 76,
+    "checks": 27798,
+    "passed": 27798,
+    "checkGroups": {
+      "checks": 27632,
+      "focusNegativeControls": 6,
+      "b4Checks": 157,
+      "oracleNegativeControls": 3
+    },
+    "hashMatched": 51,
+    "hashAbsent": 25,
+    "aggregateStageRecords": 1
+  },
+  "stages": {
+    "unit": {
+      "startedAt": 1794203858.1953344,
+      "finishedAt": 1794203943.7518854,
+      "exitCode": 0,
+      "command": "npm test",
+      "logSHA256": "a72791f54596071e08957927a5a96d063397ef986b735303e930d2c94143904a",
+      "logBytes": 299328
+    },
+    "build": {
+      "startedAt": 1794203943.7533238,
+      "finishedAt": 1794203949.4060688,
+      "exitCode": 0,
+      "command": "npm run build",
+      "logSHA256": "ad3081cbd5a111741960de95a165ef780d3323afc0a585f2af1c2e2b582fc90e",
+      "logBytes": 890
+    },
+    "browser": {
+      "startedAt": 1794203949.4072492,
+      "finishedAt": 1794209010.9608047,
+      "exitCode": 0,
+      "command": "npm run test:browser",
+      "logSHA256": "7ca8b81471206474408b6d5ccb475a89f7a28a07f159b578013f48e7f16a7ba6",
+      "logBytes": 2704380
+    },
+    "matrix": {
+      "startedAt": 1794209010.9636722,
+      "finishedAt": 1794209022.1732275,
+      "exitCode": 0,
+      "command": "npm run test:outlook-matrix",
+      "logSHA256": "af788c358bbca1ed15fc8402417a2d1edcd31c66739945ff440ea4c99abb26fb",
+      "logBytes": 607
+    },
+    "tradeoffs": {
+      "startedAt": 1794209022.174652,
+      "finishedAt": 1794209049.1135447,
+      "exitCode": 0,
+      "command": "node scripts/round21-training-choice-balance.mjs",
+      "logSHA256": "34d0672a6a92a57df22ce8a31cc3886903a3e77788a5f497ee2f9e76b1b84eb2",
+      "logBytes": 15315
+    },
+    "roles": {
+      "startedAt": 1794209049.1150072,
+      "finishedAt": 1794209050.0502682,
+      "exitCode": 0,
+      "command": "node scripts/round22-role-opportunity-audit.mjs",
+      "logSHA256": "86cb37c957cb201f5634d2a839aa469272e6e7597dffb1e7ec6c016ffed3432b",
+      "logBytes": 799
+    }
+  },
+  "supplemental": {
+    "matrix": {
+      "report": "playtest-output/round6-outlook-matrix.json",
+      "reportSHA256": "7eab316c4892bcf55f250e283207c8da13710ece8638ea858cfbd624abe80671",
+      "modified": 1794209022.132907,
+      "fresh": true,
+      "script": "scripts/outlook-matrix.mjs",
+      "scriptSHA256": "5e3a41473a6fd28f454a66a8a423d120a858591a67ad23da8584745ccb9072f8",
+      "checked": 888,
+      "failed": 0,
+      "skipped": 0,
+      "branches": {
+        "success": 282,
+        "fallback": 606
+      },
+      "limits": [
+        "This is deterministic automated model verification, not human playtesting, real-device certification, or evidence of historical accuracy.",
+        "The selected histories use three fixed seeds, four build choices, and risky recruitment when a real post exists. Legal year20 actor plans at distinct cells are enumerated, including explicit passes.",
+        "Individual review contracts are retained; this check does not infer independence or combine their probabilities.",
+        "Optional surveyed veto, true legacy rules, unresolved drafts, and hidden-roll access are covered separately by tests/crisis-outlook.test.js."
+      ]
+    },
+    "tradeoffs": {
+      "report": "playtest-output/round21-training-choice-balance-results.json",
+      "reportSHA256": "563bb41074f2391c2819c3e3ec93f40b52a25df4fb09eee7ea18e11f9b559413",
+      "modified": 1794209049.0815704,
+      "fresh": true,
+      "script": "scripts/round21-training-choice-balance.mjs",
+      "scriptSHA256": "7ecad0e329b2fc14c172f5e9f4bdf2308f18c8f3c33e035b30aeaf930d5d1eff",
+      "pairs": 644,
+      "crossingPairs": 644,
+      "sameTitles": 644,
+      "sameCoverage": 644,
+      "sameCrisis": 644,
+      "sameReadiness": 644,
+      "allValid": true,
+      "unchangedOriginalSources": true,
+      "balanced": false,
+      "reviewFailures": 52,
+      "scope": "Versioned workload audit of real natural player routes. Demonstrates sampled tradeoffs, not complete game balance or human playtesting. Synthetic maintenance and affordability states are labelled.",
+      "meaning": "644 sampled crossing tradeoffs; balanced=false, not universal game balance or human validation."
+    },
+    "roles": {
+      "report": "playtest-output/round22-role-opportunity-audit.json",
+      "reportSHA256": "f485c36d06ab02328a6572fa90bd242207fa93c3d200cb98a96c50958e544313",
+      "modified": 1794209050.0375938,
+      "fresh": true,
+      "script": "scripts/round22-role-opportunity-audit.mjs",
+      "scriptSHA256": "22a090c302b00ad24bb2d92a1f505d0b6ec86a01f7336644e6a1c99f1f9a757c",
+      "pairs": 10,
+      "futureChecks": 2,
+      "sameCapability": 10,
+      "noPolicyDespiteReadyToShare": 10,
+      "ordinaryTrainingWithoutEngineWarning": 5,
+      "balanced": false,
+      "scope": "Ten natural role-allocation pairs plus two natural preparation branches. Not universal balance or human-playtest certification.",
+      "interpretation": "Work is not invalid or pointless. The protagonist alone owns the policy action. Choosing construction, training or a check instead can be deliberate, but needs to be explicit before investigation and submission."
+    }
+  },
+  "freeze": {
+    "path": "/workspace/scratch/52f1b40b7635/round44-work/freeze.json",
+    "sha256": "8f4c6492d271c55ad865da81c659ca2cfcb406de3b80e362a52277aa173e988d",
+    "startedAt": 1794203858.1863883,
+    "files": 628,
+    "oldChanged": [
+      "package.json",
+      "src/main.js",
+      "src/style.css"
+    ],
+    "newFiles": [
+      "src/role-reading-choice-view.js",
+      "src/role-reading-choice.js",
+      "tests/round44-role-routing.test.js",
+      "scripts/round44-role-routing-test.mjs"
+    ],
+    "mismatches": [],
+    "afterMismatches": []
+  },
+  "unitTests": 3012,
+  "remoteCI": "Not accepted. Inspect exact published commit separately; previous run42565882357 failed before usable steps/logs. Current log retrieval returned404 BlobNotFound; root cause unknown.",
+  "development": [
+    "First aggregate stopped in unit stage with4old invariants violated by extending original protected reader. New capability extracted into separate modules and both old modules restored byte-exact; all old assertions retained, full aggregate restarted.",
+    "Initial new keyboard focus check omitted keyboard modality; retained failed result, then pressed Tab before checking focus-visible. No old test changed.",
+    "Independent320px/200%probe found offscreen target heading. Scoped new navigation scroll fixed it; before/after evidence retained.",
+    "New target-focus geometry assertion allows0.5px Chromium fractional scroll rounding; actual0.015px boundary failure retained. No old assertion changed.",
+    "Focused preliminary passes are separate, not added to full aggregate checks."
+  ],
+  "limitations": [
+    "Two historical optional round27 checks remain unexecuted; new role navigation does not restore lost historical fixture.",
+    "25 legacy suites contain no intrinsic runtime hash.",
+    "200% role comparison requires substantial vertical reading.",
+    "644training and10role pairs remain sampled audits with balanced:false; not universal balance or human testing."
+  ],
+  "artifact": {
+    "path": "docs/round44-evidence/raw-validation.tar.gz",
+    "bytes": 1202793,
+    "sha256": "c1fd9489ac5930fe32d8db9456469a40ecf018fd752eba24f2a8dab8cef6a200",
+    "entries": 144
+  }
+}

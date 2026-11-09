@@ -578,3 +578,23 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .local-cost-key-spent,.local-cost-key-left{display:inline-block;width:.8em;height:.55em;border:1px solid #839589;margin-right:.25em;vertical-align:baseline}
 
 .local-cost-key-token{display:inline-block;white-space:nowrap}
+
+/* Round 44: separate responsibilities, not an automatically reassigned pair. */
+.opportunity-role-choice{min-width:0;overflow-wrap:anywhere;border:1px solid var(--line);border-left:3px solid #8bc9bd;background:#8bc9bd05;margin:1rem 0;padding:.85rem}
+.opportunity-role-choice h3{font-size:1.05rem;margin:0 0 .5rem}
+.opportunity-role-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;margin:.8rem 0}
+.opportunity-role-slot{position:relative;min-width:0;border:1px solid var(--line);border-top:3px solid var(--gold);padding:.8rem;background:#e0b65f08}
+.opportunity-role-slot:nth-child(2){border-top-color:#8bc9bd;background:#8bc9bd08}
+.opportunity-role-slot h4{font-size:1rem;margin:.35rem 0}
+.opportunity-role-seal{display:inline-grid;place-items:center;border:1px solid currentColor;width:1.75em;height:1.75em;color:var(--gold);border-radius:50%;font-variant-numeric:tabular-nums}
+.opportunity-role-slot:nth-child(2) .opportunity-role-seal{color:#8bc9bd}
+.opportunity-role-duty{font-weight:600}
+.opportunity-role-boundary{font-size:.925rem}
+.opportunity-role-links{display:grid;gap:.6rem}
+.opportunity-role-links button{width:100%;min-height:48px;white-space:normal;text-align:left;overflow-wrap:anywhere}
+.opportunity-role-links button span{display:block;font-size:.85em;font-weight:400;margin-top:.25rem}
+.opportunity-reading-return{max-width:760px;margin:1rem auto;padding:1rem;border:1px solid var(--line);border-left:3px solid #8bc9bd;overflow-wrap:anywhere}
+.opportunity-reading-return p{margin-top:0}
+.opportunity-reading-return button{min-height:48px;white-space:normal;max-width:100%}
+.large-text .opportunity-role-pair{grid-template-columns:1fr}
+@media(max-width:420px){.opportunity-role-pair{grid-template-columns:1fr}.opportunity-reading-return{margin:1rem}}
