@@ -181,7 +181,7 @@ function list(){const crisis=getCrisisRegions(state),crisisByCell=new Map(crisis
 function visitButton(cellId){return getSceneVisit(state,cellId)?.available?button(`${esc(cellId)} · 只读现场回访`,'visit',`data-cell="${esc(cellId)}"`,'text-button'):'';}
 function sceneArtDetail(art){
  const detail=art.detail;if(!detail)return '';
- return `<figure class="scene-art-detail" data-mandate-art="${esc(detail.status)}"><img src="${import.meta.env.BASE_URL}assets/${esc(detail.file)}" alt="${esc(detail.alt)}"><figcaption>${esc(detail.caption)}</figcaption></figure>`;
+ return `<figure class="scene-art-detail" data-mandate-art="${esc(detail.status)}"><img src="${import.meta.env.BASE_URL}assets/${esc(detail.file)}" alt="${esc(detail.alt)}" width="1000" height="390" data-intrinsic-detail-size><figcaption>${esc(detail.caption)}</figcaption></figure>`;
 }
 function visitCards(v){
  if(!v.cards?.length)return '';
@@ -192,7 +192,7 @@ function visit(){
  const v=getSceneVisit(state,ui.selected);
  if(!v?.available)return `<section class="page narrow">${back()}<h1>没有可回访的现场。</h1><p>请回到世界选择可回访的地域。</p></section>`;
  const art=v.art;
- return `<section class="page reading scene-visit" data-visit-cell="${esc(v.cellId)}">${sceneSourceReturnPanel()}${readingReturnButton()}${endingReturnButton()}${back()}<div class="reading-meta">${tag(`${v.cellId} · 第 ${v.year} 年`)}${tag('只读 · 当前现实')}</div><h1>${esc(v.title)}</h1><p class="notice">${esc(v.notice)}</p><div class="scene-art${art.captionBelow?' caption-below':''}${art.composite?' scene-art-composite':''}"><img src="${import.meta.env.BASE_URL}assets/${esc(art.file)}" alt="${esc(art.alt)}"><span>${esc(art.caption)}</span></div>${sceneArtDetail(art)}<div class="prose">${v.summary.map(p=>`<p>${esc(p)}</p>`).join('')}</div>${visitCards(v)}${localCrisisPanel(art.history||getLocalCrisisRecord(state,v.cellId))}<section class="scene-visit-sources"><h2>现场的已存来源</h2>${v.sourceIds.length?v.sourceIds.map((id,index)=>button(`查看现场来源 ${index+1}`,'trace',`data-id="${esc(id)}"`,'text-button')).join(''):'<p>没有可核实的当地行动来源；不补写过去。</p>'}</section><div class="button-row">${button('查看地域历史','cell-history','','secondary')}${back()}</div></section>`;
+ return `<section class="page reading scene-visit" data-visit-cell="${esc(v.cellId)}">${sceneSourceReturnPanel()}${readingReturnButton()}${endingReturnButton()}${back()}<div class="reading-meta">${tag(`${v.cellId} · 第 ${v.year} 年`)}${tag('只读 · 当前现实')}</div><h1>${esc(v.title)}</h1><p class="notice">${esc(v.notice)}</p><div class="scene-art${art.captionBelow?' caption-below':''}${art.composite?' scene-art-composite':''}"><img src="${import.meta.env.BASE_URL}assets/${esc(art.file)}" alt="${esc(art.alt)}" width="1000" height="${art.composite?1018:500}" data-intrinsic-visit-size><span>${esc(art.caption)}</span></div>${sceneArtDetail(art)}<div class="prose">${v.summary.map(p=>`<p>${esc(p)}</p>`).join('')}</div>${visitCards(v)}${localCrisisPanel(art.history||getLocalCrisisRecord(state,v.cellId))}<section class="scene-visit-sources"><h2>现场的已存来源</h2>${v.sourceIds.length?v.sourceIds.map((id,index)=>button(`查看现场来源 ${index+1}`,'trace',`data-id="${esc(id)}"`,'text-button')).join(''):'<p>没有可核实的当地行动来源；不补写过去。</p>'}</section><div class="button-row">${button('查看地域历史','cell-history','','secondary')}${back()}</div></section>`;
 }
 // A free index into the existing full contract cards, never an extra action.
 function sceneChoiceDirectory(available,investigation){

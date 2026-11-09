@@ -1,0 +1,1717 @@
+{
+  "archive": {
+    "path": "docs/round45-evidence/raw-validation.tar.gz",
+    "bytes": 3855305,
+    "sha256": "07ff3e606e585a9690740a6c51829f45d98f8e3357dabd3cb41936ac6bb3d916",
+    "entries": 338
+  },
+  "files": [
+    {
+      "path": "stages/acceptance-audit.json",
+      "bytes": 136354,
+      "sha256": "3a1a6f7f545dcad2e483bf59c417f259c6d9a2839139a8acebec19dfbde7af8d"
+    },
+    {
+      "path": "stages/visit-size-unit.log",
+      "bytes": 536,
+      "sha256": "fa7c80bd68a199698eeca867ccdf7d73630060cdd7881c645288ee02c62da84e"
+    },
+    {
+      "path": "stages/tradeoffs.finished",
+      "bytes": 21,
+      "sha256": "c22427d81a41b981c5e0b5c1138bd4757f89a99c3e054386259db5baec59c624"
+    },
+    {
+      "path": "stages/focused-unit.log",
+      "bytes": 1581,
+      "sha256": "5538bb03b5f7bd16c38c3387f2691527572f906c0fc95ddf35897f96e5a46bb2"
+    },
+    {
+      "path": "stages/focused-final.log",
+      "bytes": 43,
+      "sha256": "5e324eb43c716fc64d118acae101f6714d4b8ad16971a9cd37c81b38e0d11a77"
+    },
+    {
+      "path": "stages/round31-unchanged-recheck.log",
+      "bytes": 775,
+      "sha256": "4779e7495d16b674c06e44e069d2eb557d8909d915f147cddb6a313471f14578"
+    },
+    {
+      "path": "stages/matrix.started",
+      "bytes": 21,
+      "sha256": "e1c6811e56952bc105eecf5e0033047db9638680df603b144aac2990d85c986c"
+    },
+    {
+      "path": "stages/round31-instrumented-current-2.log",
+      "bytes": 767,
+      "sha256": "b66f1bad07cf4788a48a19d7f09cb86a4f210d2c2f8735021e3b543e86d8e6e1"
+    },
+    {
+      "path": "stages/visit-size-before.log",
+      "bytes": 490,
+      "sha256": "80ce407748f97c10fbb08a9d72ac940a81b9dce3abf9fda89656e956e93e649e"
+    },
+    {
+      "path": "stages/round31-instrumented.mjs",
+      "bytes": 14632,
+      "sha256": "a3de3d2135803c7b38562a58186a7e8e7f8af85450d6f23ed3be9ea892884b89"
+    },
+    {
+      "path": "stages/build.log",
+      "bytes": 890,
+      "sha256": "7f504c946ef6263670c5ae8c8f4450175ae28974f5854de432deb9033b20734a"
+    },
+    {
+      "path": "stages/after.log",
+      "bytes": 43,
+      "sha256": "e6a05cf5be487de87f57cd7b2278cca4a432b754ec31c984de3ca2b8f2f7b21f"
+    },
+    {
+      "path": "stages/roles.started",
+      "bytes": 21,
+      "sha256": "e1ddad68766d380cbd20bea6f057d2a6355f2d9bfcdd156193bbbc42c34e9365"
+    },
+    {
+      "path": "stages/visit-size-after.log",
+      "bytes": 56,
+      "sha256": "0602899e566ea06173b3f09d31d854f0053a12b6897f029d8d9e7ad833ae0e5b"
+    },
+    {
+      "path": "stages/independent-visual-review.json",
+      "bytes": 3306,
+      "sha256": "6892f3dd0b846f43782db259a84284c96683973bcb8c10f70ca472b02767c733"
+    },
+    {
+      "path": "stages/build.command",
+      "bytes": 14,
+      "sha256": "dae58de3ddfde95b066b259e24d83e50d15aedeafb58b0b20d7b26dd324ef0ef"
+    },
+    {
+      "path": "stages/round31-baseline-recheck.log",
+      "bytes": 183,
+      "sha256": "7d0decc35b0e7177afed9bbdb7c212f04ed81fedcb8ff1a463ea00968262f344"
+    },
+    {
+      "path": "stages/run.sh",
+      "bytes": 790,
+      "sha256": "5e954c9d4f18344efbbba8672538f25a78dafc761bd90e060c6a3d5c2f8392af"
+    },
+    {
+      "path": "stages/image-size-diagnosis.json",
+      "bytes": 1343,
+      "sha256": "a086796ab6ade13a62b1219cf1561d416391a46713e0eb48865945094710b249"
+    },
+    {
+      "path": "stages/scroll-probe.js",
+      "bytes": 1601,
+      "sha256": "65ca9eafbe107c0002aaec05856cbc66004cbe55df391305deacba7a894013c6"
+    },
+    {
+      "path": "stages/tradeoffs.command",
+      "bytes": 49,
+      "sha256": "33092085cd3bf9fd2f1083f4c101570d9dd29e0ceb28fc05eac42023843ad841"
+    },
+    {
+      "path": "stages/browser.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/tradeoffs.log",
+      "bytes": 15315,
+      "sha256": "34d0672a6a92a57df22ce8a31cc3886903a3e77788a5f497ee2f9e76b1b84eb2"
+    },
+    {
+      "path": "stages/build.finished",
+      "bytes": 21,
+      "sha256": "b05cdece89b6f8a1040480bacfe06b3e9d22834d550557a0cde56d189164e030"
+    },
+    {
+      "path": "stages/round31-instrumented-current.log",
+      "bytes": 101,
+      "sha256": "c12ff61d4e495621a9d598d9a601594ba30b0b2c167d79ca2c1cc6d015faa621"
+    },
+    {
+      "path": "stages/roles.finished",
+      "bytes": 21,
+      "sha256": "afcf05faa26d18ed7fa32b6d0d15580da7b21bc0b0f627497f02b1782a0cf2c3"
+    },
+    {
+      "path": "stages/browser.command",
+      "bytes": 21,
+      "sha256": "1a6b22751e6ea60a82089c5cf6f44efe38eb14c93dd7825ca05d5b33cbdf2be7"
+    },
+    {
+      "path": "stages/roles.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/matrix.finished",
+      "bytes": 21,
+      "sha256": "87170be7dc66f4bc0f345caef668cd410794dd6e776a1c8c9fe2e7127765b2b8"
+    },
+    {
+      "path": "stages/build.started",
+      "bytes": 21,
+      "sha256": "0334b7e285341c683d9c4c7a90ed2730da6f725dc52da7464428d9c84fdb14fc"
+    },
+    {
+      "path": "stages/prior-ci-diagnosis.json",
+      "bytes": 162,
+      "sha256": "68dccfac089a91c3c2fa4e9159596cc6e7378ab2895a6dca780bdeab201b8f8e"
+    },
+    {
+      "path": "stages/matrix.command",
+      "bytes": 28,
+      "sha256": "75c186e1ea1000ead21499f2bcb3c8ba5e5647f90930396459d3bfc677151e11"
+    },
+    {
+      "path": "stages/roles.command",
+      "bytes": 48,
+      "sha256": "73a330996ae56d1a9063ebc6e0e61af4cd47ddeb2b9f9a397b99f086c10f3ca8"
+    },
+    {
+      "path": "stages/unit.finished",
+      "bytes": 21,
+      "sha256": "f2224328186807fb9a08a1ae95c941c40aad833ed57269939753dae117d9e681"
+    },
+    {
+      "path": "stages/unit.log",
+      "bytes": 300048,
+      "sha256": "e16e30b84cd7f0d395c50777c1c9294f1806bf9c43b612b45281427252c66785"
+    },
+    {
+      "path": "stages/browser.finished",
+      "bytes": 21,
+      "sha256": "c2481c7e6daf636f21544b73134eacf646c0a3c4514f6336f7b06df45ec28caf"
+    },
+    {
+      "path": "stages/matrix.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/unit.started",
+      "bytes": 21,
+      "sha256": "d75211dcedde54f73107e459a82d41e7f43e7647246161a87b3881cb23cf8782"
+    },
+    {
+      "path": "stages/round45-acceptance.mjs",
+      "bytes": 25514,
+      "sha256": "7d90852e3e11ce892bab092de7c0b68ee70ff565efdd9961e4ded2a761bb9d28"
+    },
+    {
+      "path": "stages/browser.log",
+      "bytes": 2705238,
+      "sha256": "84b1ccd46c5f803a2214bcbc882bc0ff6a53b7ae568a41b90ae6702c803b0506"
+    },
+    {
+      "path": "stages/matrix.log",
+      "bytes": 607,
+      "sha256": "af788c358bbca1ed15fc8402417a2d1edcd31c66739945ff440ea4c99abb26fb"
+    },
+    {
+      "path": "stages/freeze.json",
+      "bytes": 73466,
+      "sha256": "753c389a40c790d27cbc1e7f6d01dfa7e3d0408549e3121100da452c3f082818"
+    },
+    {
+      "path": "stages/unit.command",
+      "bytes": 9,
+      "sha256": "f135f9fa4f38fd0c92563221116e2f79df0838f5ff86440ae44d4b428576fc62"
+    },
+    {
+      "path": "stages/build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/roles.log",
+      "bytes": 799,
+      "sha256": "86cb37c957cb201f5634d2a839aa469272e6e7597dffb1e7ec6c016ffed3432b"
+    },
+    {
+      "path": "stages/unit.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/baseline-check.json",
+      "bytes": 57,
+      "sha256": "82a33161b0cde89809d596030e6f56fe67139e6773fe576350d0ff79d5a3ada2"
+    },
+    {
+      "path": "stages/tradeoffs.started",
+      "bytes": 21,
+      "sha256": "ca4f3a9b3bd90d39013919f41ed2ea42522c890cb747a0e374c717282e70d405"
+    },
+    {
+      "path": "stages/tradeoffs.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/before.log",
+      "bytes": 43,
+      "sha256": "04517901afa2b1e634f9a151e3c61142a488dc42c5165e818cac02ba1cf19371"
+    },
+    {
+      "path": "stages/browser.started",
+      "bytes": 21,
+      "sha256": "a9a0d8525d51e03138bcd57f61a46ac5b49fd1f93b086a0f86ab046c1d5286bb"
+    },
+    {
+      "path": "repository/playtest-output/results.json",
+      "bytes": 4378,
+      "sha256": "0440aaad2d3cffc72810c528a5df6c25cffd82099241adf55b1c34341e83933a"
+    },
+    {
+      "path": "repository/playtest-output/interaction-results.json",
+      "bytes": 26682,
+      "sha256": "5547fb7392db2fc81283fd3b330fd09977a93697da1470efb92450c537b0d922"
+    },
+    {
+      "path": "repository/playtest-output/tradeoffs-results.json",
+      "bytes": 2718,
+      "sha256": "5d8050393300a8e18f04ffd8cd9d0109a160298aeefe7d5fc6a352533f5dbc6b"
+    },
+    {
+      "path": "repository/playtest-output/visual-results.json",
+      "bytes": 1892,
+      "sha256": "ef95400e407b33cb7a013950a21ad9cae3d27a1cda8c8c72157307c781141b34"
+    },
+    {
+      "path": "repository/playtest-output/round3-handoff-results.json",
+      "bytes": 2383,
+      "sha256": "b840c44ec69dabc6f1bddf08dc845662d90900114b001269b4ca51122d3be781"
+    },
+    {
+      "path": "repository/playtest-output/round3-learning-visual-results.json",
+      "bytes": 1844,
+      "sha256": "778632f85134bf6e67fa266de248d849e51fc5be2a59acb718f5dd0d6c9472a7"
+    },
+    {
+      "path": "repository/playtest-output/round4-aftermath-results.json",
+      "bytes": 3973,
+      "sha256": "dde0b4e27522ce17e8f84310e8b71431f3186363b5585ce145973c4ee18cb13c"
+    },
+    {
+      "path": "repository/playtest-output/round4-station-visual-results.json",
+      "bytes": 2198,
+      "sha256": "2d0974665278a65c771312ddcd11f5412c10a1474362c64ee1f519de5d4fce0e"
+    },
+    {
+      "path": "repository/playtest-output/round5-recruitment-results.json",
+      "bytes": 3545,
+      "sha256": "d2feaeb242ad6e8c6a36f7d0a6a8f70e8b2c0182d7aa6d0fe663992fabae585c"
+    },
+    {
+      "path": "repository/playtest-output/round5-maintenance-visual-results.json",
+      "bytes": 3868,
+      "sha256": "ef13a518ec1501f0278c0150c60d76dae15cfcd7d5724ed23fe5886c578502cd"
+    },
+    {
+      "path": "repository/playtest-output/round6-outlook-results.json",
+      "bytes": 3237,
+      "sha256": "d14c85b3af40d286151581eecd8543c3d62a476129b5dfc1ff71d4f2424409ba"
+    },
+    {
+      "path": "repository/playtest-output/round6-activity-visual-results.json",
+      "bytes": 13592,
+      "sha256": "4892e889a4a3e72b5466925d0d5ac52eb94fd1d313e21ce538758834150e1a32"
+    },
+    {
+      "path": "repository/playtest-output/round7-recovery-results.json",
+      "bytes": 3831,
+      "sha256": "11b2e57a5bf07f5442ad32dc8928c196d399e6a503868e81071fa54e4c665bf7"
+    },
+    {
+      "path": "repository/playtest-output/round7-south-bank-visual-results.json",
+      "bytes": 12548,
+      "sha256": "64117f7ece314b7e5765f68fa155eee85ca65376b15f93bc4db2d6ab45e2d1ca"
+    },
+    {
+      "path": "repository/playtest-output/round8-handoff-outlook-results.json",
+      "bytes": 5073,
+      "sha256": "99f73edf2a1594d706f190432d34c7f95eb28110b9edd87ea0a42f3b0c3b53eb"
+    },
+    {
+      "path": "repository/playtest-output/round8-far-port-visual-results.json",
+      "bytes": 9911,
+      "sha256": "42c2e50618607668a60985f5faa3fc9879b59048c71436cdb328ce50b078d8c2"
+    },
+    {
+      "path": "repository/playtest-output/round9-port-access-results.json",
+      "bytes": 3829,
+      "sha256": "450addb2c2d67daa0d53ec59fa2142a7f1012bd0fa83af4b29c02573f8b85eb9"
+    },
+    {
+      "path": "repository/playtest-output/round9-river-warning-visual-results.json",
+      "bytes": 9330,
+      "sha256": "c47de077afbdb6bea129e6956753226d3b666d07c9ffdc942416d41483f59a23"
+    },
+    {
+      "path": "repository/playtest-output/round10-contract-preview-results.json",
+      "bytes": 4085,
+      "sha256": "8086feccf6fc12ced871a55c9c614f8309b0c1bffff593bb051a5e71055ff043"
+    },
+    {
+      "path": "repository/playtest-output/round10-local-crisis-visual-results.json",
+      "bytes": 93065,
+      "sha256": "e3621f004bb8e3ed49699e5289b789172a31790f0d9d2e3c3b0bf1d9159491b6"
+    },
+    {
+      "path": "repository/playtest-output/round11-history-reading-results.json",
+      "bytes": 4880,
+      "sha256": "13e85837f07bb35b4621cfaae5352dcbd281606155efafa07ac956c6e138cbc5"
+    },
+    {
+      "path": "repository/playtest-output/round11-scene-visit-results.json",
+      "bytes": 37226,
+      "sha256": "f7b641c3499acf2d02b2c2bd65c06ebce06b1072cf29456e2d6d9cc30cbc14d5"
+    },
+    {
+      "path": "repository/playtest-output/round12-staffing-history-results.json",
+      "bytes": 6449,
+      "sha256": "96dc806f6d7fe0e6206136283deb63e5bfc336158c0de76ac8689b94171e98cc"
+    },
+    {
+      "path": "repository/playtest-output/round12-port-access-visual-results.json",
+      "bytes": 59813,
+      "sha256": "b66058969b17984873c9ae024c00d70e8fbfed1d9f72a94acfd83df3d4d9c72d"
+    },
+    {
+      "path": "repository/playtest-output/round12-toast-input-results.json",
+      "bytes": 236011,
+      "sha256": "3217244fde2243df0e043c9ee1e77affb10edfd2032c0689fefb03d445fa5596"
+    },
+    {
+      "path": "repository/playtest-output/round13-building-review-results.json",
+      "bytes": 8504,
+      "sha256": "6b4fffe22254957291242326a93cf53b9859907fc8e59ba3434dffc24a85a958"
+    },
+    {
+      "path": "repository/playtest-output/round13-monastery-visual-results.json",
+      "bytes": 103736,
+      "sha256": "4dd4798804d2e6b69b96707dc2389eb6f118c9b9eaae8909f551deeb64533e17"
+    },
+    {
+      "path": "repository/playtest-output/round14-branch-caretaker-results.json",
+      "bytes": 90866,
+      "sha256": "3d90aecde300e8568ef7fdd3ed35dbfee0f495f02601b2f643b1c3921fbb2838"
+    },
+    {
+      "path": "repository/playtest-output/round14-station-access-visual-results.json",
+      "bytes": 66273,
+      "sha256": "a6c21c68ce5cf558e4e6c9dc4cab28c085ad2bce37974f956db41b231b33a575"
+    },
+    {
+      "path": "repository/playtest-output/round15-future-check-destination-results.json",
+      "bytes": 116797,
+      "sha256": "6c38de6f4c8a34259e9c2158979edf3686c63c32a9bec52bc6640efbfa75d3ed"
+    },
+    {
+      "path": "repository/playtest-output/round15-d5-visit-results.json",
+      "bytes": 244419,
+      "sha256": "4191fde4fcee16817c545c91a828809bdb26aac833606ade0e1e8b3b671cc99e"
+    },
+    {
+      "path": "repository/playtest-output/round16-board-readiness-results.json",
+      "bytes": 1206,
+      "sha256": "3860531ff537e5440250c5c549518ae37c3afe4e96c6fa29be9af0eb97deea46"
+    },
+    {
+      "path": "repository/playtest-output/round16-crisis-map-report.json",
+      "bytes": 19734,
+      "sha256": "05c7bd0cc484793a9c1606dcd2a53d355f55be945998e2da42400a1eaaf4e11e"
+    },
+    {
+      "path": "repository/playtest-output/round16-archive-upgrade-results.json",
+      "bytes": 5880,
+      "sha256": "545bd3ae41a43f139bb2c7e67bd6f11d397a8583f927fa63b5b6647afc7b14d3"
+    },
+    {
+      "path": "repository/playtest-output/round-17/investigation-comparison-results.json",
+      "bytes": 31182,
+      "sha256": "de5d1c5a3a8b6121fbad026acff4594a7f9b82594348ae6710860178dc92a12a"
+    },
+    {
+      "path": "repository/playtest-output/round-18/return-consequences-results.json",
+      "bytes": 63556,
+      "sha256": "748653e7d793ae130121d092ebd6f047fc3fd70fada6d7cd5718405e16c80a15"
+    },
+    {
+      "path": "repository/playtest-output/round-19/investigation-choices-results.json",
+      "bytes": 50025,
+      "sha256": "51fd9638ee18136e4655bfb6a1993e0d0060ae27a0d84b92ff9cd62d374965df"
+    },
+    {
+      "path": "repository/playtest-output/round-20/final-decade-results.json",
+      "bytes": 108408,
+      "sha256": "bd0f776e20d63958bd7a527db17c1c4a21c135a4999a63a0cf4aad1c9944dc84"
+    },
+    {
+      "path": "repository/playtest-output/round-21/training-workload-results.json",
+      "bytes": 154936,
+      "sha256": "ff8031deba51060458a2529c8144de0442f556bcafdfca1d873a559efffc2d6f"
+    },
+    {
+      "path": "repository/playtest-output/round-21/training-workload/results.json",
+      "bytes": 58312,
+      "sha256": "12ac97264ac4cc459df96c62dd33c7b50715a69d264dd9ab51e57163fb0a7d3e"
+    },
+    {
+      "path": "repository/playtest-output/round-22/decision-flow-results.json",
+      "bytes": 147430,
+      "sha256": "7ea7a85f0e4607e3afd03dfdcc7bfd7bd53576d8f615ee8300909d2e4432c325"
+    },
+    {
+      "path": "repository/playtest-output/round-22/decision-flow-visuals/report.json",
+      "bytes": 199447,
+      "sha256": "a3a52bc8a3937f7a2aa7bf119dd545e7d1951c6e05ca139ed787dfdbb1a5d74c"
+    },
+    {
+      "path": "repository/playtest-output/round-23/playback-journal-results.json",
+      "bytes": 250988,
+      "sha256": "de3efd9b5ed2fc3f94250da882580c192e12e37e2ab768f6c8253c5677c597aa"
+    },
+    {
+      "path": "repository/playtest-output/round23-playback-visuals/results.json",
+      "bytes": 635422,
+      "sha256": "85c7f299a989eb2f9e4c41012cb978faadb72a65d4a8a6a660d1351a55fff05a"
+    },
+    {
+      "path": "repository/playtest-output/round-24/investigation-flow-results.json",
+      "bytes": 64560,
+      "sha256": "7592b12e0acd518daaa0035c25f873c768174f6bbc8589c14cd3b915fe260a17"
+    },
+    {
+      "path": "repository/playtest-output/round24-investigation-visuals/results.json",
+      "bytes": 301600,
+      "sha256": "4bea93416b0be4d6779ffb3a0f5e0c777b2fbf0a3dcfe55e0a1b452d391d11e7"
+    },
+    {
+      "path": "repository/playtest-output/round25-world-planning-flow/world-planning-flow-results.json",
+      "bytes": 56378,
+      "sha256": "527b69f4f3507947006e06e236a9be0b3e83b7031dd42e40f4cc687f4fbb04e8"
+    },
+    {
+      "path": "repository/playtest-output/round25-world-planning-visuals/results.json",
+      "bytes": 143477,
+      "sha256": "b7289b5c26457477ddb12b2a61c3fc3bd5c5e3524f63e4caa7299c1676476b9e"
+    },
+    {
+      "path": "repository/playtest-output/round26-import-safety/import-safety-results.json",
+      "bytes": 24102,
+      "sha256": "54ce1010860133b48c0ad0a71f865fa0a7ae2270d27169bb7fa4562dc2af71e2"
+    },
+    {
+      "path": "repository/playtest-output/round26-comparison-guidance/results.json",
+      "bytes": 57380,
+      "sha256": "7203ae5c5a7c76a1fd55fdb0b3964e7824ecad9c70107095e56461b35f065a7f"
+    },
+    {
+      "path": "repository/playtest-output/round26-choice-directory-visuals/results.json",
+      "bytes": 427994,
+      "sha256": "6abeecdc66126b398649657b9736f3c9852fe00c29ddc9b1af9e7c8866b321c3"
+    },
+    {
+      "path": "repository/playtest-output/round27-lifecycle-flow/results.json",
+      "bytes": 102403,
+      "sha256": "2d4763b670ec8953c06419dc0ca38edcd459f05cc39b9f65ca4a69d86f0b0b64"
+    },
+    {
+      "path": "repository/playtest-output/round27-lifecycle-visuals/results.json",
+      "bytes": 166854,
+      "sha256": "2b7224580361d572ae6fb22bb848e5e7b5ef38dbebff6c62aacfb3ec3f843e31"
+    },
+    {
+      "path": "repository/playtest-output/round28-review-accounts/results.json",
+      "bytes": 116953,
+      "sha256": "8265b6ecd484b40c961cda4082455f4a5cc2660b28e297feb708f6f525715aff"
+    },
+    {
+      "path": "repository/playtest-output/round28-review-accounts-visuals/results.json",
+      "bytes": 204632,
+      "sha256": "6e85108f0ef2a85be11731651b88e8655e9810ee6b85e4c79d251ecfeff24ca5"
+    },
+    {
+      "path": "repository/playtest-output/round29-evidence-return/results.json",
+      "bytes": 4414,
+      "sha256": "825db782dd07d6c510d7dc58250aac27f4eba350b16664e1b41f26d18fc4a1c9"
+    },
+    {
+      "path": "repository/playtest-output/round29-opening-evidence-visuals/results.json",
+      "bytes": 53372,
+      "sha256": "aaa08928ed4764a2f26b10e2a08ee31fbccc6c1087ab6c0c0dd0e55b539d8aac"
+    },
+    {
+      "path": "repository/playtest-output/round30-stage-boundary-flow/results.json",
+      "bytes": 31316,
+      "sha256": "5ec6ece144ccdef6a3e74348a8966f63c0c4cf792e871e709362de7511cd194c"
+    },
+    {
+      "path": "repository/playtest-output/round30-stage-boundary-visuals/results.json",
+      "bytes": 104679,
+      "sha256": "27a939619bfc91151323c754d9a05be1b0223697f5c0902a94c97fdb54d86ab4"
+    },
+    {
+      "path": "repository/playtest-output/round31-scene-source-flow/results.json",
+      "bytes": 24441,
+      "sha256": "eb3d757aaa37ecc3a39dca67eba4df9cb9c0cb33c3bb588b5f564a9793e591b9"
+    },
+    {
+      "path": "repository/playtest-output/round31-scene-source-visuals/results.json",
+      "bytes": 40529,
+      "sha256": "09723798ffa28448205008f0162c351e30647081750856f1445d4f6e59d18cce"
+    },
+    {
+      "path": "repository/playtest-output/round32-draft-edit-flow/results.json",
+      "bytes": 5287,
+      "sha256": "cb5e9eff68d46f8fc7ecded238094d96fbb3ac91e4950682554fcea98752c52d"
+    },
+    {
+      "path": "repository/playtest-output/round32-draft-edit-visuals/results.json",
+      "bytes": 23406,
+      "sha256": "aecb7c6c313021c69181b97d82ddcdb6a6927dff65b451f49fdc11110e673d24"
+    },
+    {
+      "path": "repository/playtest-output/round33-draft-comparison/results.json",
+      "bytes": 52033,
+      "sha256": "a309d5df6a7a1c3f6b18e0c811bbc28a5696ba3da1a6d26845df1225b54ab7f1"
+    },
+    {
+      "path": "repository/playtest-output/round34-comparison-reading/results.json",
+      "bytes": 93443,
+      "sha256": "fd697467296cf9496d28aebd8d7e840cc65ba0a467888d1f1d7765141ad6dd99"
+    },
+    {
+      "path": "repository/playtest-output/round35-recollection-reading/results.json",
+      "bytes": 132636,
+      "sha256": "0e4b5f30c144b97aea2fba1e178abe48eba2ac66b1b8baed586c9b0e3ca2f221"
+    },
+    {
+      "path": "repository/playtest-output/round36-actor-agency/results.json",
+      "bytes": 157280,
+      "sha256": "898964d51af221a95c95060e45a800f672e62283eda3af6d5931fbcfdb465db8"
+    },
+    {
+      "path": "repository/playtest-output/round37-building-tradeoffs/results.json",
+      "bytes": 108536,
+      "sha256": "6b93ac19946e82bb9ee98f1c90766fce72e3c716defd223a815fcf8e5d6ffe60"
+    },
+    {
+      "path": "repository/playtest-output/round38-succession-fork/results.json",
+      "bytes": 168943,
+      "sha256": "030dd440c6590f951e1d37c7486298b28dea88f31ac8968289ede88e6aff110e"
+    },
+    {
+      "path": "repository/playtest-output/round39-crisis-fork/results.json",
+      "bytes": 134827,
+      "sha256": "3e632ac0948ff7b0f629a68d8fdd8db289758954ccfb07f8e7dc868920f1bfff"
+    },
+    {
+      "path": "repository/playtest-output/round40-policy-fork/results.json",
+      "bytes": 173382,
+      "sha256": "08821a125b839b805a5d9355d26fa8b6b10eb90413a66860f13e8344ad507ddc"
+    },
+    {
+      "path": "repository/playtest-output/round41-contract-resume/results.json",
+      "bytes": 55849,
+      "sha256": "01b5b9263b6697388d8a466e9052910a5ffdb41be067a825b53543319be69dad"
+    },
+    {
+      "path": "repository/playtest-output/round42-local-cost/report.json",
+      "bytes": 284708,
+      "sha256": "b9107ef0c3ed01ef74d00f36778cfb5f71b6e3e950c909b08a5a04b9551c1633"
+    },
+    {
+      "path": "repository/playtest-output/round42-scene-size/results.json",
+      "bytes": 103219,
+      "sha256": "3d4c6669e38faa37cbd057d5b61ef90880a08ce281bceae5256b9fcd08fe5662"
+    },
+    {
+      "path": "repository/playtest-output/round43-local-ruler/report.json",
+      "bytes": 20265,
+      "sha256": "383770c9a1a07073bf5b2cebac065b9ff2cc1a555e73f6c32a325139db6249b2"
+    },
+    {
+      "path": "repository/playtest-output/round44-role-routing/report.json",
+      "bytes": 168724,
+      "sha256": "48eb67f4e12ee1c23c191476fbaba578de75a881a3845ba9eff40e215f73983a"
+    },
+    {
+      "path": "repository/playtest-output/round45-role-reading/report.json",
+      "bytes": 36578,
+      "sha256": "de8ba48572675ef7f1fd1da27b25461c4127965398ff6301ce59c394e8431b3b"
+    },
+    {
+      "path": "repository/playtest-output/round45-visit-image-size/report.json",
+      "bytes": 161651,
+      "sha256": "f30bbf0046788a7370302c0cf646ec2362bcfc20e8baee2ff80485e5cfccf8d4"
+    },
+    {
+      "path": "repository/playtest-output/round6-outlook-matrix.json",
+      "bytes": 606521,
+      "sha256": "e2a88e2f1c2823eb83726d47983e36b0d37c6fda1c849fa9f81b803af1a1ee10"
+    },
+    {
+      "path": "repository/playtest-output/round21-training-choice-balance-results.json",
+      "bytes": 5430655,
+      "sha256": "563bb41074f2391c2819c3e3ec93f40b52a25df4fb09eee7ea18e11f9b559413"
+    },
+    {
+      "path": "repository/playtest-output/round22-role-opportunity-audit.json",
+      "bytes": 29703,
+      "sha256": "f485c36d06ab02328a6572fa90bd242207fa93c3d200cb98a96c50958e544313"
+    },
+    {
+      "path": "development/before/report.json",
+      "bytes": 34500,
+      "sha256": "427134bcce8f3a5aa04527a102e946fcd7a419eb159452de4c9e5cf014546990"
+    },
+    {
+      "path": "development/after/report.json",
+      "bytes": 35870,
+      "sha256": "bcfcead200b59a3585aca17ff8715c4f8d1d308e476c1aeb9dc9dcc9e95e468f"
+    },
+    {
+      "path": "development/focused-final/report.json",
+      "bytes": 36494,
+      "sha256": "a1d1069a14b331350873f32e4c208a19d146412878654b329e3a8a801122748f"
+    },
+    {
+      "path": "development/round31-unchanged-recheck/results.json",
+      "bytes": 22039,
+      "sha256": "aad4522c7934af5eeeadb2d9aae40f4570af10bfde0d88175d57dbc6197417e3"
+    },
+    {
+      "path": "development/round31-baseline-recheck/results.json",
+      "bytes": 24505,
+      "sha256": "00db58210b0e7a4ce9429f341fc1aa633d96f7b535c398772ab03885f54f797c"
+    },
+    {
+      "path": "development/round31-instrumented-current/results.json",
+      "bytes": 26797,
+      "sha256": "70a9fa8c888a76d914ea7555e0f167b347c6315acc368488a96e23298c56b145"
+    },
+    {
+      "path": "development/round31-instrumented-current-2/results.json",
+      "bytes": 434878,
+      "sha256": "979d7c6bbb306d42c4ff5eb04a5713f0a8af59de335c9d6c62d2eaa9b1a9aef7"
+    },
+    {
+      "path": "development/visit-size-before/report.json",
+      "bytes": 9288,
+      "sha256": "7046e589ad50a6633273b312fd027307d73dfed4a110cce5cb8d7857895ff56f"
+    },
+    {
+      "path": "development/visit-size-after/report.json",
+      "bytes": 161555,
+      "sha256": "9421ef43e2225ab8f76792394360a5379c6311b1babc482da749a7b8dbeb8693"
+    },
+    {
+      "path": "diagnostic-rechecks/scene-visit-results.json",
+      "bytes": 37226,
+      "sha256": "f7b641c3499acf2d02b2c2bd65c06ebce06b1072cf29456e2d6d9cc30cbc14d5"
+    },
+    {
+      "path": "diagnostic-rechecks/round18.log",
+      "bytes": 63643,
+      "sha256": "bc5dbf6c5a47912826845769a5e1696dfbf21ff79e9d2dae90431c76cdaf43dc"
+    },
+    {
+      "path": "diagnostic-rechecks/round31-visuals.log",
+      "bytes": 39,
+      "sha256": "18a50b0e38fab73cf1c327d01c81ae04c9239800545190a5b20776959cfb4ab9"
+    },
+    {
+      "path": "diagnostic-rechecks/round31-flow.log",
+      "bytes": 117,
+      "sha256": "7e928d97311c40eedb710937376280ac80e2292cfa5e1edf35f449541359b15d"
+    },
+    {
+      "path": "diagnostic-rechecks/scene-visit.log",
+      "bytes": 37227,
+      "sha256": "b5261b77bd74ad2b3546cbecd6e02952227a4ecc189daf0960c88469a473596b"
+    },
+    {
+      "path": "diagnostic-rechecks/round42-size.log",
+      "bytes": 39,
+      "sha256": "166ddf6ba4df43cdc29f42613d326d05d3892329d58fef1b591964cbd6ae5f17"
+    },
+    {
+      "path": "diagnostic-rechecks/round42-size/results.json",
+      "bytes": 103531,
+      "sha256": "321a6f9d6f41813d1faf0dc4002882e4ec0e1e83bf0988bbf57c8c6cba8aa18e"
+    },
+    {
+      "path": "diagnostic-rechecks/round18/return-consequences-results.json",
+      "bytes": 63556,
+      "sha256": "748653e7d793ae130121d092ebd6f047fc3fd70fada6d7cd5718405e16c80a15"
+    },
+    {
+      "path": "diagnostic-rechecks/round31-flow/results.json",
+      "bytes": 24509,
+      "sha256": "e703c371995955738a936c27b475119c0e67e2f50be30545ad826a86bdad1bf7"
+    },
+    {
+      "path": "diagnostic-rechecks/round31-visuals/results.json",
+      "bytes": 40781,
+      "sha256": "ce4c5f9e027fcfdaeb9c3507bc9192c163eae29d4abf6a78ebc7d4670330a064"
+    },
+    {
+      "path": "initial-aggregate-failure/build.log",
+      "bytes": 1098,
+      "sha256": "2816e05027f88b8e288f8be108c1ce7cf61021f7fc6ca60ced367d33e035a40f"
+    },
+    {
+      "path": "initial-aggregate-failure/build.command",
+      "bytes": 14,
+      "sha256": "dae58de3ddfde95b066b259e24d83e50d15aedeafb58b0b20d7b26dd324ef0ef"
+    },
+    {
+      "path": "initial-aggregate-failure/browser.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "initial-aggregate-failure/build.finished",
+      "bytes": 21,
+      "sha256": "3787523bf87fc5e935288ef4daa94bc190fb091627e18807e939ac34605952f6"
+    },
+    {
+      "path": "initial-aggregate-failure/browser.command",
+      "bytes": 21,
+      "sha256": "1a6b22751e6ea60a82089c5cf6f44efe38eb14c93dd7825ca05d5b33cbdf2be7"
+    },
+    {
+      "path": "initial-aggregate-failure/build.started",
+      "bytes": 21,
+      "sha256": "5c77cf569d8d3efb79021c9cdb7dc927ada628d2d0ea2787d6bb568bffc073b7"
+    },
+    {
+      "path": "initial-aggregate-failure/unit.finished",
+      "bytes": 21,
+      "sha256": "0ef8adc602afba54a6f5208c62c0ddc5950e93b341fc6e965898f704de5b3fd1"
+    },
+    {
+      "path": "initial-aggregate-failure/unit.log",
+      "bytes": 299606,
+      "sha256": "fba8e58441dc0229b66e1d2e9ee138bbe64d6aed7883bf7b8ec31568dc19222a"
+    },
+    {
+      "path": "initial-aggregate-failure/browser.finished",
+      "bytes": 21,
+      "sha256": "7e7d9bf9f7fd241630e8b593dec0d2733b933ff55c8ac33e48a8cd56a71fff49"
+    },
+    {
+      "path": "initial-aggregate-failure/unit.started",
+      "bytes": 21,
+      "sha256": "2c24f57030e871731516667f373de4daf61dc0a3811d4ecba47a583f0b1d2aef"
+    },
+    {
+      "path": "initial-aggregate-failure/browser.log",
+      "bytes": 2699233,
+      "sha256": "b3883e7040b4e81d206ebdf0562e4c3ed207f7dd3fa99f25a0346a0808c58349"
+    },
+    {
+      "path": "initial-aggregate-failure/freeze.json",
+      "bytes": 73007,
+      "sha256": "728ec57cc235617c62ba156015ed9198d5e089f02940f224f4324adb6ddb40c6"
+    },
+    {
+      "path": "initial-aggregate-failure/unit.command",
+      "bytes": 9,
+      "sha256": "f135f9fa4f38fd0c92563221116e2f79df0838f5ff86440ae44d4b428576fc62"
+    },
+    {
+      "path": "initial-aggregate-failure/build.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "initial-aggregate-failure/unit.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "initial-aggregate-failure/browser.started",
+      "bytes": 21,
+      "sha256": "fd8138ccde695c22c6f770c21b995ef462131e840ddc63cf41d85a0beb605bd6"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round15-d5-visit-results.json",
+      "bytes": 244419,
+      "sha256": "c2dac58de7cc296e5e632b173856852190947fc279bd97d607fe57c677dcab4d"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round12-staffing-history-results.json",
+      "bytes": 6449,
+      "sha256": "466e1290fa46b60743deeea2ecd4138f31496a197e27dd119a1dd5c0cf3212d3"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round22-role-opportunity-audit.json",
+      "bytes": 29703,
+      "sha256": "f485c36d06ab02328a6572fa90bd242207fa93c3d200cb98a96c50958e544313"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round5-recruitment-results.json",
+      "bytes": 3545,
+      "sha256": "d2feaeb242ad6e8c6a36f7d0a6a8f70e8b2c0182d7aa6d0fe663992fabae585c"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round16-archive-upgrade-results.json",
+      "bytes": 5880,
+      "sha256": "545bd3ae41a43f139bb2c7e67bd6f11d397a8583f927fa63b5b6647afc7b14d3"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round16-board-readiness-results.json",
+      "bytes": 1206,
+      "sha256": "3860531ff537e5440250c5c549518ae37c3afe4e96c6fa29be9af0eb97deea46"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/visual-results.json",
+      "bytes": 1892,
+      "sha256": "ef95400e407b33cb7a013950a21ad9cae3d27a1cda8c8c72157307c781141b34"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round8-handoff-outlook-results.json",
+      "bytes": 5073,
+      "sha256": "99f73edf2a1594d706f190432d34c7f95eb28110b9edd87ea0a42f3b0c3b53eb"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round3-handoff-results.json",
+      "bytes": 2383,
+      "sha256": "b840c44ec69dabc6f1bddf08dc845662d90900114b001269b4ca51122d3be781"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round10-local-crisis-visual-results.json",
+      "bytes": 92756,
+      "sha256": "da36f7713e68f89df018fdb94d072ae54aa17ef0521a73cfa207036fcb65b0d4"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/results.json",
+      "bytes": 4378,
+      "sha256": "0440aaad2d3cffc72810c528a5df6c25cffd82099241adf55b1c34341e83933a"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round14-branch-caretaker-results.json",
+      "bytes": 90866,
+      "sha256": "af60b6d925fdd8ebf9340464dc7ab644766b4f5132f18391a98b1d0b1f325ecf"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round10-contract-preview-results.json",
+      "bytes": 4085,
+      "sha256": "8086feccf6fc12ced871a55c9c614f8309b0c1bffff593bb051a5e71055ff043"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round7-south-bank-visual-results.json",
+      "bytes": 12548,
+      "sha256": "64117f7ece314b7e5765f68fa155eee85ca65376b15f93bc4db2d6ab45e2d1ca"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round16-crisis-map-report.json",
+      "bytes": 19734,
+      "sha256": "05c7bd0cc484793a9c1606dcd2a53d355f55be945998e2da42400a1eaaf4e11e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/tradeoffs-results.json",
+      "bytes": 2718,
+      "sha256": "5d8050393300a8e18f04ffd8cd9d0109a160298aeefe7d5fc6a352533f5dbc6b"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round4-aftermath-results.json",
+      "bytes": 3973,
+      "sha256": "dde0b4e27522ce17e8f84310e8b71431f3186363b5585ce145973c4ee18cb13c"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round12-port-access-visual-results.json",
+      "bytes": 59813,
+      "sha256": "4bac7630923c1282b2108827c03dad99d34aef17c02b269c633755f53c2ef923"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round9-river-warning-visual-results.json",
+      "bytes": 9330,
+      "sha256": "c47de077afbdb6bea129e6956753226d3b666d07c9ffdc942416d41483f59a23"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round6-outlook-results.json",
+      "bytes": 3237,
+      "sha256": "d14c85b3af40d286151581eecd8543c3d62a476129b5dfc1ff71d4f2424409ba"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round6-outlook-matrix.json",
+      "bytes": 606521,
+      "sha256": "7eab316c4892bcf55f250e283207c8da13710ece8638ea858cfbd624abe80671"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round14-station-access-visual-results.json",
+      "bytes": 66273,
+      "sha256": "276bac4544afb86f37d324081cebc983f022dfb6bd7b9a621d89df2b37c824f6"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round4-station-visual-results.json",
+      "bytes": 2198,
+      "sha256": "2d0974665278a65c771312ddcd11f5412c10a1474362c64ee1f519de5d4fce0e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round9-port-access-results.json",
+      "bytes": 3829,
+      "sha256": "450addb2c2d67daa0d53ec59fa2142a7f1012bd0fa83af4b29c02573f8b85eb9"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round15-future-check-destination-results.json",
+      "bytes": 116797,
+      "sha256": "52fb22b9a3e9aa150dc69efbde35ddc72611ea5b6a7e17fea1f47d1d04c6d65c"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round13-monastery-visual-results.json",
+      "bytes": 103736,
+      "sha256": "d879938aa36eb0e61e7d5a000472ec957dd00509905ac5e6e7cdf720026d5844"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round5-maintenance-visual-results.json",
+      "bytes": 3868,
+      "sha256": "ef13a518ec1501f0278c0150c60d76dae15cfcd7d5724ed23fe5886c578502cd"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round9-warning-export.json",
+      "bytes": 931835,
+      "sha256": "20f42fa7c1dd5256080197ab48c1589c204dc956cd95411e3f3491be868a8889"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round6-activity-visual-results.json",
+      "bytes": 13592,
+      "sha256": "a2b8a337fd7c1227345562e49073abb8e611901959aa37f98369982ed6d1f090"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round7-recovery-results.json",
+      "bytes": 3831,
+      "sha256": "11b2e57a5bf07f5442ad32dc8928c196d399e6a503868e81071fa54e4c665bf7"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/interaction-results.json",
+      "bytes": 26682,
+      "sha256": "77fcafa311f685509775b4c5bf2b9e6e0a5607e8f12ccce11064b95c87d9c017"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round11-scene-visit-results.json",
+      "bytes": 37226,
+      "sha256": "a4d8fbe524d52e231662f15ed22e4a83cc35d5a12f9cc6429e7471278e61b326"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round12-toast-input-results.json",
+      "bytes": 235865,
+      "sha256": "846a6c07fec43af6fc7f5aab55b98bb6d662745191b39b6d71273691367be2f7"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round11-history-reading-results.json",
+      "bytes": 4880,
+      "sha256": "13e85837f07bb35b4621cfaae5352dcbd281606155efafa07ac956c6e138cbc5"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round3-learning-visual-results.json",
+      "bytes": 1844,
+      "sha256": "778632f85134bf6e67fa266de248d849e51fc5be2a59acb718f5dd0d6c9472a7"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round8-far-port-visual-results.json",
+      "bytes": 9911,
+      "sha256": "42c2e50618607668a60985f5faa3fc9879b59048c71436cdb328ce50b078d8c2"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round21-training-choice-balance-results.json",
+      "bytes": 5430655,
+      "sha256": "563bb41074f2391c2819c3e3ec93f40b52a25df4fb09eee7ea18e11f9b559413"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round13-building-review-results.json",
+      "bytes": 8504,
+      "sha256": "208c46681e5142c60afff57c0c57cb260f28c777972bfb67c215a681583f4121"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round30-stage-boundary-visuals/results.json",
+      "bytes": 104679,
+      "sha256": "f452732e80beeb0249c1769cacc405c899f4141a543f8346c433fc91acd65bb2"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-17/investigation-comparison-results.json",
+      "bytes": 31182,
+      "sha256": "de5d1c5a3a8b6121fbad026acff4594a7f9b82594348ae6710860178dc92a12a"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round34-comparison-reading/results.json",
+      "bytes": 93443,
+      "sha256": "0e61407e30eae97156510456242ac14000be635942ec7d3b8529f8f1c31c7e67"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round41-contract-resume/results.json",
+      "bytes": 55849,
+      "sha256": "97eca74eccc41c8cd9da3090243917bedb0a323ac1c379aa40428e8f3451abd0"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-21/training-workload-results.json",
+      "bytes": 154936,
+      "sha256": "428090a0480e33a3dc66885a4b1efc5ce9f3843fc9461275dcd9fb798b5757d7"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round42-local-cost/report.json",
+      "bytes": 284708,
+      "sha256": "e8c48b626f472ce3611ea789495571f9833be521e5a48a6f5ead830ccce69c27"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round35-recollection-reading/results.json",
+      "bytes": 132636,
+      "sha256": "3a1e871a9ca8908fe6ab6c1c436beb4d778bf249557d0cef3cabb868cd7657f6"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round23-playback-visuals/results.json",
+      "bytes": 635422,
+      "sha256": "7bb6af91c28215e4b454f08916af890b4b8f2d3db3d18c0882e85674352f2290"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round27-lifecycle-visuals/results.json",
+      "bytes": 166854,
+      "sha256": "cb4d8f2a76c4e426c2c55408d662ef9fdbd7c39e8cb653025edd5762c1772379"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round32-draft-edit-visuals/results.json",
+      "bytes": 23406,
+      "sha256": "58d6c80e0591fb2f95d61e3c46f32cc2566dcbef58f994ebf4c86dd9d9f948ae"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round39-crisis-fork/results.json",
+      "bytes": 134827,
+      "sha256": "a5b63112f02a860638f7e1205e5ae1a747c48ae94a4fdbd06eb33e2954698e4e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round30-stage-boundary-flow/results.json",
+      "bytes": 31316,
+      "sha256": "c83b2db1a428c1d660dd37e3ce84603e3655aba4f0e90b32aa32c53eb3cb4cb3"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-choice-directory-visuals/natural-final-world.json",
+      "bytes": 1147857,
+      "sha256": "5d18e3291931fb9f301964132c1428f00b39e2410bab3235d9302104ba3e4b33"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-choice-directory-visuals/results.json",
+      "bytes": 428090,
+      "sha256": "7319722047c458d63c3984492567b27c4b31905fc7696786e6031447298fd86c"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-choice-directory-visuals/legacy-genuine.json",
+      "bytes": 355783,
+      "sha256": "dd0db9820382cf1bb3b236d419c625f33dbc331a4880a8baba853ad877d7e92c"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-20/final-decade-results.json",
+      "bytes": 108408,
+      "sha256": "935ea9009fad2609fede40d4694b6fff30c392244b0902c07d15a2e703ddc39f"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round29-opening-evidence-visuals/results.json",
+      "bytes": 53372,
+      "sha256": "c11e1887c8e1626b79036c5d14a91b90ef6be59d2fd562525f472f30dd96b53f"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-visuals/results.json",
+      "bytes": 143476,
+      "sha256": "9b1679ea89b80d8ea35748891a93bcde6091f1c9931040127119990b605b347a"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/investigation-flow-results.json",
+      "bytes": 64560,
+      "sha256": "c78b249ce3cb4028a635fde774d0fa58361ebf1a6241e21a867a1e04e0f6cf69"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round36-actor-agency/results.json",
+      "bytes": 157280,
+      "sha256": "e8cccb0d310639c0e0307dc00c3960b30d3b9119a47142e954b84f82a8db6afa"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round40-policy-fork/results.json",
+      "bytes": 173382,
+      "sha256": "5af7bed20b84be1901435b70f6e9970d7bec88ffd8c97038762e4d65ee182669"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round42-scene-size/results.json",
+      "bytes": 103219,
+      "sha256": "e4ff457be00f9faf11fdce11af856bcc36c75d9817c2d571d5a615fae189338e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round28-review-accounts/results.json",
+      "bytes": 116953,
+      "sha256": "010d5090f389b63b445b3b01fe6e2c2521653f95e03a7b2ba2b4aae3b61ab862"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round28-review-accounts/natural-final-save.json",
+      "bytes": 670894,
+      "sha256": "909ffdd2409e4fc0f9463c388fb78019a787bc7c4585457ea98d50e06b77667c"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round28-review-accounts/historical-success.json",
+      "bytes": 682637,
+      "sha256": "c76bba5df205a5cea0feee1d8eb27a507979571b638fb36b6f1e21c3746c3c99"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round28-review-accounts/historical-failure-cancellation.json",
+      "bytes": 670473,
+      "sha256": "0e91dadf7fbbbb639f0d14424174a97770c6a891b2d00a5aeb013a4f99ac7851"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round29-evidence-return/current-producer.json",
+      "bytes": 36702,
+      "sha256": "57b2cc0a4b7763d5ddbd161f735453c8ad999ee20e88071d1f20aaf524463e3f"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round29-evidence-return/results.json",
+      "bytes": 4414,
+      "sha256": "8a9fce2dcf1f01d07b06da7f5c2a5d84862fb8eda722590df46bf5d3257c4ddf"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round29-evidence-return/pre-tradeoffs-producer.json",
+      "bytes": 36148,
+      "sha256": "7e538473dd1f1bd40a7fc9971228b1a6a750a4562049ee78aa420ee1b599b5f3"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-19/investigation-choices-results.json",
+      "bytes": 50025,
+      "sha256": "d475b985fcc2a97cce884ff35e5c8408a79ffee35b1c8e4b3ef20c1cfc8ed721"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-18/return-consequences-results.json",
+      "bytes": 63556,
+      "sha256": "3eea474e57d2622691f1d2606ab9fb923bca617412af15c21df22a7a8b4710cb"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round31-scene-source-visuals/results.json",
+      "bytes": 40529,
+      "sha256": "c354a0bc10e80eb00a9533e6fe61d7040aea9526ebf9f2085e43f71c1bcfb306"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round33-draft-comparison/results.json",
+      "bytes": 52033,
+      "sha256": "d842cc4964629e616d2d1a4a98e3421ea3c290af570841b2bc85c298dff87040"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/results.json",
+      "bytes": 57380,
+      "sha256": "50b5d059cc5879be2c7fadff3adfe286a65f1e02e8fce957660afc8ba7f76592"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round44-role-routing/report.json",
+      "bytes": 168724,
+      "sha256": "986f33516c0aad57ff6fbdd690f6a30f87db74b270102540888826407f677280"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round31-scene-source-flow/results.json",
+      "bytes": 22012,
+      "sha256": "a978461c59ae25af40c03cf2ce8ba0458db02c6b0c3ebcf87031fd02b07de4c2"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round31-scene-source-flow/failure.png",
+      "bytes": 401399,
+      "sha256": "35fff3b042a77a111625d00a782a543f1529d299afe692c0dfdb01a0284e1d9e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round28-review-accounts-visuals/results.json",
+      "bytes": 204632,
+      "sha256": "9026e7f272dd643eb4169130f91496ca1ce5eadf9f2ee026b4ac04d8da9a2656"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-390-text100-story.json",
+      "bytes": 356866,
+      "sha256": "3ead50f4a5d85a43cf4a99905af6f5ebc2df43e3debee85200a3746af23fdb35"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/per-scene.json",
+      "bytes": 355784,
+      "sha256": "61edcbfedadd635d0b0a1f929fb0a53799429a69ebe9653a006c1d2454f46732"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-390-text200-story.json",
+      "bytes": 356865,
+      "sha256": "1a16a8afcab46ed33e22da2280f7507ce3e1d61827e46adb9421021de3421ea5"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/replacement.json",
+      "bytes": 518716,
+      "sha256": "39be79a3a15a8b30bcef996cd01c18cf236fced35f20326565ad4e16dc027555"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-320-text100.json",
+      "bytes": 518716,
+      "sha256": "39be79a3a15a8b30bcef996cd01c18cf236fced35f20326565ad4e16dc027555"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-planning-flow-results.json",
+      "bytes": 56378,
+      "sha256": "584230c27d45d3a0467dddf4fcc749bdba149d1a86a37d1304e017703d3297fc"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/round20.json",
+      "bytes": 356812,
+      "sha256": "b93de76c91b834e70b7df067e263563cb61121eb57f14e62873048bb7b534741"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-320-text200-story.json",
+      "bytes": 356865,
+      "sha256": "1a16a8afcab46ed33e22da2280f7507ce3e1d61827e46adb9421021de3421ea5"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/reset-boundaries.json",
+      "bytes": 518716,
+      "sha256": "39be79a3a15a8b30bcef996cd01c18cf236fced35f20326565ad4e16dc027555"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-320-text100-story.json",
+      "bytes": 356866,
+      "sha256": "3ead50f4a5d85a43cf4a99905af6f5ebc2df43e3debee85200a3746af23fdb35"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/no-contract-location.json",
+      "bytes": 518716,
+      "sha256": "6d6c35713746b1840dc90989fc8832c0a1071737d3ee899e887270238603f281"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-390-text200.json",
+      "bytes": 518715,
+      "sha256": "8fe51940442982344fa7604186260015831428bbd8d02a1579a6872e5bc808c8"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-320-text200.json",
+      "bytes": 518715,
+      "sha256": "8fe51940442982344fa7604186260015831428bbd8d02a1579a6872e5bc808c8"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-flow/world-390-text100.json",
+      "bytes": 518716,
+      "sha256": "39be79a3a15a8b30bcef996cd01c18cf236fced35f20326565ad4e16dc027555"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round32-draft-edit-flow/results.json",
+      "bytes": 5287,
+      "sha256": "a591be7bbbf9c916c6ada4b51b0a08be1371d8dded472782649939ea57f0dc27"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round24-investigation-visuals/results.json",
+      "bytes": 301600,
+      "sha256": "55fd2607226fc3cdbb7cdabc0ed8b33064fb982e1067732239fad7c7ace7ead4"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-22/decision-flow-results.json",
+      "bytes": 147430,
+      "sha256": "cbf380bc28c9c8a340a385b52edba586d4e793ccd29cfe6a749162814dd8ab67"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round38-succession-fork/results.json",
+      "bytes": 168943,
+      "sha256": "6bc7994fec3041ac6cc684cab63fc6ccc561b77b582b42c9fd3e9539cb77b730"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round37-building-tradeoffs/results.json",
+      "bytes": 108536,
+      "sha256": "87ce0176b4366179e075dad845bcbe96d77d35cd15eca87dbc170ef1d68b7a73"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round27-lifecycle-flow/old-failure-cancellation.json",
+      "bytes": 670489,
+      "sha256": "9202b193380bfe3e5810eddd5a076f97f5aae64bd87d1e0082fe653e850729e9"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round27-lifecycle-flow/results.json",
+      "bytes": 102403,
+      "sha256": "630ba5e15f21ee6105f8f935fcf5bda0b0a5bcc36416f09a51d2c10c8dd7b5d0"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round27-lifecycle-flow/legacy-old-rules.json",
+      "bytes": 660066,
+      "sha256": "9b341c275c6e300e42d04342ec8a415363c761e0bb21f7b72e4a96aecc7c3e93"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round27-lifecycle-flow/native-390-text200.json",
+      "bytes": 683992,
+      "sha256": "e08c94994e390188148ae5c982a4a5dac0bf6a58f718165342b7a185da51ed04"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round27-lifecycle-flow/native-320-text200.json",
+      "bytes": 683992,
+      "sha256": "e08c94994e390188148ae5c982a4a5dac0bf6a58f718165342b7a185da51ed04"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round43-local-ruler/report.json",
+      "bytes": 20265,
+      "sha256": "5d1c923e940dd445ac0dd6b0c0491b58f1465067ac8c01aa3d6b16b956d9b5a8"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-23/playback-journal-results.json",
+      "bytes": 250988,
+      "sha256": "7ec3c753c1e865b0d637dec83d1acd69f35962a8e9f33d4c2a80c312b3418746"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/fast-valid.json",
+      "bytes": 36642,
+      "sha256": "40a2c1c085b88431352e5308470ccaa2da838aa580da07233e36d58253dce4fc"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/per-scene-20.json",
+      "bytes": 355714,
+      "sha256": "eeb9da83ac9f16a4c98ed0b23ec6a38d64cd291c845bbd580973f52206ebaf61"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/round20-20.json",
+      "bytes": 356742,
+      "sha256": "ccb9b6a9e0e5fe4ac4be502acead92ea5368ff9cd8552c7467ad4229f7c41527"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/import-safety-results.json",
+      "bytes": 24102,
+      "sha256": "c4220f1e8d2491640441d247481fe4e1598d5524d198eeadc90cd4ef344f1716"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/per-scene-0.json",
+      "bytes": 36093,
+      "sha256": "29a099d541b94f8169bc93ebb872ae81355acb73c1cc544b33af4377588f03ee"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/slow-valid.json",
+      "bytes": 36642,
+      "sha256": "ac3eb4100880814b8c5b5cd78c012182da99060a0671266f8de6c86a06883042"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/round20-30.json",
+      "bytes": 518555,
+      "sha256": "3c84724d171ac44f46f5009761d25b605294a1741d7e3c5b01e13784415d2cee"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/invalid-world.json",
+      "bytes": 14,
+      "sha256": "aca66b739fcde148403f4735fd9091fbc02455deb4e6c186ea52cb71692f6269"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/slow-invalid.json",
+      "bytes": 14,
+      "sha256": "3e50cc60bb91d4883c32909de3ccea07181a3744f0d163fdada16522746fa8f0"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/round21-20.json",
+      "bytes": 356796,
+      "sha256": "efbefcd05b7ebebf7d5b69030d24a47464b19bb89ee421c1f1883834820802c4"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/too-large.json",
+      "bytes": 5000001,
+      "sha256": "9b467b7f07635e10227914b7f7942bf3271349c4274aa8aa6059c823bc55a887"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/round21-0.json",
+      "bytes": 36648,
+      "sha256": "6dcac269fe4861dc4df8be4c21c90abdd826a2182ac391f8db0491c556a5780a"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/export-while-reading.json",
+      "bytes": 64867,
+      "sha256": "8b894a7d54cc758d03dadcfe1df95384987d4a3f07484ac41b855be7f065becc"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/play-baseline.json",
+      "bytes": 36648,
+      "sha256": "6dcac269fe4861dc4df8be4c21c90abdd826a2182ac391f8db0491c556a5780a"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/slow-read-error.json",
+      "bytes": 36642,
+      "sha256": "ac3eb4100880814b8c5b5cd78c012182da99060a0671266f8de6c86a06883042"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/round21-30.json",
+      "bytes": 518651,
+      "sha256": "f10d113ef34aec768ba966bd208fceeed6210173b7bfe554e768d673d2548f80"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/fast-invalid.json",
+      "bytes": 14,
+      "sha256": "3e50cc60bb91d4883c32909de3ccea07181a3744f0d163fdada16522746fa8f0"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/round20-0.json",
+      "bytes": 36594,
+      "sha256": "15c6256632cdf7f1a8ccc13495cf4cddb6d23f317aa57a1f60965c627193ed48"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-import-safety/per-scene-30.json",
+      "bytes": 517334,
+      "sha256": "8f60e3f977b0f7bcbb279b221aa53fb916dcb45c1bbffb7f5d768fd743f8a93d"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-21/training-workload/results.json",
+      "bytes": 58312,
+      "sha256": "676ec4bb004f458c3a4cfc88c432b12973c79d812f0f003cbec38b5f89dddda0"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-visuals/fixtures/320-100.json",
+      "bytes": 518721,
+      "sha256": "9005e40b2443faee5c0090485a6d6d89362a2c06c2af6803063c6f7367cf5f75"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-visuals/fixtures/legacy-per-scene.json",
+      "bytes": 355783,
+      "sha256": "dd0db9820382cf1bb3b236d419c625f33dbc331a4880a8baba853ad877d7e92c"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-visuals/fixtures/390-100.json",
+      "bytes": 518721,
+      "sha256": "9005e40b2443faee5c0090485a6d6d89362a2c06c2af6803063c6f7367cf5f75"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-visuals/fixtures/320-200.json",
+      "bytes": 518720,
+      "sha256": "51230bd6b3c3c582ce97330049797951a11389974664210d7ee03390002dec43"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-visuals/fixtures/390-200.json",
+      "bytes": 518720,
+      "sha256": "51230bd6b3c3c582ce97330049797951a11389974664210d7ee03390002dec43"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-visuals/fixtures/1280-100.json",
+      "bytes": 518721,
+      "sha256": "9005e40b2443faee5c0090485a6d6d89362a2c06c2af6803063c6f7367cf5f75"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round25-world-planning-visuals/fixtures/final-reimport.json",
+      "bytes": 518721,
+      "sha256": "9005e40b2443faee5c0090485a6d6d89362a2c06c2af6803063c6f7367cf5f75"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/matrix-320-text100.json",
+      "bytes": 356844,
+      "sha256": "974d90368648f9420ba7f3bdb29ca608e03b5c2482531ac0036e0605beb7b31e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/matrix-320-text200.json",
+      "bytes": 356843,
+      "sha256": "dbc92dab459119ff52335ae461386f402249f9e97c3814422f970626a0c498ee"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/relocation-stopped.json",
+      "bytes": 356626,
+      "sha256": "713a9daef347f9de005c886f08ddd8fe6bc25c4a61dbd41122419df19e9001bc"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/return-reset.json",
+      "bytes": 356844,
+      "sha256": "974d90368648f9420ba7f3bdb29ca608e03b5c2482531ac0036e0605beb7b31e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/relocation-none.json",
+      "bytes": 348124,
+      "sha256": "7eac3193d83ca340fbeb4e74094596f7dfa68b1b7621deac43251321b16eb400"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/replacement-import.json",
+      "bytes": 356844,
+      "sha256": "974d90368648f9420ba7f3bdb29ca608e03b5c2482531ac0036e0605beb7b31e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/portable-E4.json",
+      "bytes": 518791,
+      "sha256": "ab76f345b894349173ac7b737abfb5aaac7d27298e9277ca23464c34a79cf216"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/natural-y30-before.json",
+      "bytes": 518735,
+      "sha256": "bd4687a22c7d7288acf96f0fd3683c23db800a8f5e8812bcfe9c8abb05a176bd"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/older-round20.json",
+      "bytes": 356790,
+      "sha256": "d804020dca50d0bccbee178d1a875e8e848f2144d47ff1454caa88ce78401ad8"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/relocation-active.json",
+      "bytes": 356844,
+      "sha256": "974d90368648f9420ba7f3bdb29ca608e03b5c2482531ac0036e0605beb7b31e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/natural-y20-before-second.json",
+      "bytes": 356857,
+      "sha256": "499f456fc1e7a94f98d526c67387f17401408bf135350feb687d430906ab7804"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/e4-nonportable.json",
+      "bytes": 518791,
+      "sha256": "ab76f345b894349173ac7b737abfb5aaac7d27298e9277ca23464c34a79cf216"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/matrix-390-text200.json",
+      "bytes": 356843,
+      "sha256": "dbc92dab459119ff52335ae461386f402249f9e97c3814422f970626a0c498ee"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/portable-D4.json",
+      "bytes": 518791,
+      "sha256": "ab76f345b894349173ac7b737abfb5aaac7d27298e9277ca23464c34a79cf216"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/matrix-390-text100.json",
+      "bytes": 356844,
+      "sha256": "974d90368648f9420ba7f3bdb29ca608e03b5c2482531ac0036e0605beb7b31e"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/natural-final.json",
+      "bytes": 682072,
+      "sha256": "69279464fb65718bd025168597fe0992045c27f1c2e90d9d057dcbbf720d1891"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-24/fixtures/older-per-scene.json",
+      "bytes": 355762,
+      "sha256": "86e58302daea64ba443c1d0c57dac19e1dece42ac9e83502bebba16c90317e4f"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/genuine-older-training.json",
+      "bytes": 356812,
+      "sha256": "b93de76c91b834e70b7df067e263563cb61121eb57f14e62873048bb7b534741"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/matrix-320-text100.json",
+      "bytes": 351779,
+      "sha256": "6ed52d571bc352a2b761388c9ac108bedc32ef0da79e1634fc305c10a6f34dad"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-current-station.json",
+      "bytes": 196194,
+      "sha256": "b313e2193c97907b3f0fcbf4619fa40f04b2214301696dd8eff51784bebdd258"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/genuine-prior.json",
+      "bytes": 356866,
+      "sha256": "276c0f1c3dcf49a961076c267e658bda8ff749edd90946e7895a7e5203bfff30"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/matrix-320-text200.json",
+      "bytes": 351778,
+      "sha256": "15f6f05e95814f1c2133a47ccb3688f6b223c36579fab4b95f48ae1dfee1e9c5"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-pre-recruitment-station.json",
+      "bytes": 195771,
+      "sha256": "b48f27600465903c7df9708668f25d6d1f09135873b670cd13b5d41430079ed4"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/natural-y20.json",
+      "bytes": 351701,
+      "sha256": "d8ce81de8faa097e7c2c92f1ae3e29a5322b78579f56b46bda662674ce845c7d"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/genuine-per-scene.json",
+      "bytes": 355784,
+      "sha256": "61edcbfedadd635d0b0a1f929fb0a53799429a69ebe9653a006c1d2454f46732"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-submit.json",
+      "bytes": 191285,
+      "sha256": "a0a40c871c835e42da8f6f4e5ca91b199171d7ce4e21aa27bb75035ed4379b19"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-per-scene-station.json",
+      "bytes": 195411,
+      "sha256": "c758bb88e983fbef2160d26d5e083a028eca124c4827bf8211d4efe7bf01f77a"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-older-training-none.json",
+      "bytes": 191231,
+      "sha256": "a348455282a9151eb0d80a6473ccf5540af928283edbfeb488a3748a13121e0b"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-current-none.json",
+      "bytes": 191285,
+      "sha256": "a0a40c871c835e42da8f6f4e5ca91b199171d7ce4e21aa27bb75035ed4379b19"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-per-scene-archive.json",
+      "bytes": 193127,
+      "sha256": "07e73afd9cad87b4cdafb0105f7ff557ca7ba45f9d01d6219ac4d337adbff6cd"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-pre-recruitment-archive.json",
+      "bytes": 193311,
+      "sha256": "e86dad51824b123784de7508e3b964dd4e918f5d124ae89926bc190186f3eaa4"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/matrix-390-text200.json",
+      "bytes": 351778,
+      "sha256": "15f6f05e95814f1c2133a47ccb3688f6b223c36579fab4b95f48ae1dfee1e9c5"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-pre-recruitment-none.json",
+      "bytes": 190778,
+      "sha256": "062f1c3e282016b390449e97053cf37de5f21e73b503b5cd49754fe7c06e5b2f"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-older-training-archive.json",
+      "bytes": 193680,
+      "sha256": "e8030797dc02adb72155a7c6645c912c8ca1abc7364e8e5f2cc0aa261da7913b"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/matrix-390-text100.json",
+      "bytes": 351779,
+      "sha256": "6ed52d571bc352a2b761388c9ac108bedc32ef0da79e1634fc305c10a6f34dad"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-current-archive.json",
+      "bytes": 193734,
+      "sha256": "e7d82595fb51a7e2479d2f1aa4c41f5565813604c744fb4743cfc642feba3c91"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/natural-y10.json",
+      "bytes": 193656,
+      "sha256": "a2674bf5213f7870b512ea7df7b75a043d5913a0cbd0e96b439e09abf9d363d9"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/natural-final.json",
+      "bytes": 674669,
+      "sha256": "c20af6c4723bfa9cbd99f6d4be5294b5719862721b1d018e20c3e1e4f7bae272"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-per-scene-none.json",
+      "bytes": 190646,
+      "sha256": "415a4b5b06733ccf987d898069b288b2d804ee88ebc2e93fd80017ac3378413c"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round26-comparison-guidance/fixtures/succession-older-training-station.json",
+      "bytes": 196140,
+      "sha256": "cc6c8d71192e78491b569b9f173944d903a54e3953b74a13a38e466f00aa4234"
+    },
+    {
+      "path": "initial-aggregate-failure/playtest-output/round-22/decision-flow-visuals/report.json",
+      "bytes": 199447,
+      "sha256": "64651737f2e1a48e726338c1d0b5e084f2c6fdca0db1c07cf47e8c4fff9c2a80"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/round45-evidence/current-1280-100.png",
+      "sha256": "b80b29c3f046e8ebc0b9357fc206548626c859fba7b41d4363d609b8b8a30876",
+      "bytes": 217119
+    },
+    {
+      "path": "docs/round45-evidence/current-390-100.png",
+      "sha256": "0e4079b796cffa0b07b6d388430c3ce55644875ff2497d3bda1c3f9ddf235f7f",
+      "bytes": 198521
+    },
+    {
+      "path": "docs/round45-evidence/current-320-200.png",
+      "sha256": "3f82daca0f0234832cd5057994e00d1fcb781bb6f969d70804c699b9ba6582c8",
+      "bytes": 426392
+    },
+    {
+      "path": "docs/round45-evidence/before-current-320-200.png",
+      "sha256": "7a25f81a30fa859dc851ae44a359ff31c4ce2a2e1396897d08d053996a65b014",
+      "bytes": 423860
+    }
+  ]
+}
