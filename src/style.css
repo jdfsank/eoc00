@@ -626,3 +626,19 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .role-research-slot.free{border-color:#8bc9bd;color:#8bc9bd}
 .role-research-budget[data-role-budget="shortfall"] .role-research-summary{color:#efc28c}
 .role-research-note{font-size:.925rem;margin:.5rem 0 0}
+
+/* Round47: unresolved planning slips, before the long contract ledger.
+   Dashed seams and explicit words carry status without relying on colour. */
+.review-readiness{border:1px solid #a98f70;border-left:3px double #d4b6a7;padding:.75rem;background:linear-gradient(105deg,#b89c5b0a,transparent)}
+.review-readiness>h2{display:flex;align-items:center;gap:.5rem;margin-top:0}
+.review-readiness>h2 svg{width:2rem;height:1.8rem;flex:none;fill:none;stroke:#d4b6a7;stroke-width:1.5}
+.review-readiness .readiness-status{font-weight:600;color:var(--paper)}
+.readiness-routes{display:grid;gap:.65rem;border-top:1px dashed #a98f70;padding-top:.65rem}
+.readiness-routes>div{min-width:0;border-left:2px solid #a98f70;padding-left:.5rem}
+.readiness-routes h3{font-size:.875rem;margin:0 0 .3rem;color:#d6c8ab}
+.readiness-routes>div>div{display:flex;flex-wrap:wrap;gap:.4rem}
+.readiness-routes button{min-height:48px;min-width:0;max-width:100%;white-space:normal;text-align:left;overflow-wrap:anywhere;margin:0}
+.review-readiness .readiness-boundary{font-size:.8125rem;line-height:1.7;margin-top:.8rem;color:var(--muted)}
+[data-review-target]{scroll-margin-block-start:1rem;overflow-wrap:anywhere}
+[data-review-target]:focus{outline:2px solid var(--gold);outline-offset:4px}
+.large-text .readiness-routes>div>div{flex-direction:column;align-items:stretch}
