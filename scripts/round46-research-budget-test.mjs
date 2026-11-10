@@ -1,0 +1,54 @@
+import {chromium} from 'playwright';
+import binary from '@sparticuz/chromium';
+import {createServer} from 'vite';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import * as sim from '../src/simulation.js';
+import * as old from '../tests/fixtures/pre-training-workload-producer/simulation.js';
+import {ready,lock} from '../tests/fixtures/pre-training-workload-scenarios.js';
+import {getRoleResearchBudget} from '../src/role-research-budget.js';
+import {getRoleReadingChoice} from '../src/role-reading-choice.js';
+const out=process.env.AW_OUTPUT||'playtest-output/round46-research-budget';
+await fs.mkdir(out,{recursive:true});
+const sha=b=>createHash('sha256').update(b).digest('hex'),json=JSON.stringify;
+const report={scope:'Real file imports and UI routing for final-window role opportunity. Public-API current and genuine old producer saves. No universal balance, human or physical-device certification.',checks:[],screenshots:[],errors:[]};
+async function hashInputs(){const rows=[];async function walk(p){for(const e of(await fs.readdir(p,{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){const f=`${p}/${e.name}`;if(e.isDirectory())await walk(f);else rows.push([f,sha(await fs.readFile(f))]);}}for(const p of ['src','tests','scripts'])await walk(p);return sha(json(rows));}
+report.inputsBefore=await hashInputs();report.scriptBefore=sha(await fs.readFile(new URL(import.meta.url)));
+const check=(name,ok,detail)=>{report.checks.push({name,passed:!!ok,...(detail===undefined?{}:{detail})});assert.ok(ok,name);};
+let server,browser,page;
+try{
+ server=await createServer({server:{host:'127.0.0.1',port:4846,strictPort:true}});await server.listen();
+ browser=await chromium.launch({executablePath:await binary.executablePath(),args:binary.args,headless:true});page=await browser.newPage();page.setDefaultTimeout(12000);
+ page.on('pageerror',e=>report.errors.push(e.message));page.on('requestfailed',r=>report.errors.push(r.url()));page.on('response',r=>{if(r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
+ await page.goto('http://127.0.0.1:4846');await page.locator('.selection-card').waitFor();
+ const click=a=>page.locator(`[data-action="${a}"]`).first().click();
+ async function exact(s,label){const actual=await page.evaluate(()=>({world:JSON.stringify(window.afterwave.state),save:JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state)}));check(label+' exact world and autosave',actual.world===json(s)&&actual.save===json(s));}
+ async function load(s,big,label){await click('settings');await page.locator('#import-save').setInputFiles({name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))});await page.locator('.selection-card').waitFor();if(await page.locator('.toast').count())await page.locator('.toast').waitFor({state:'hidden',timeout:6000});await exact(s,label+' import');}
+ async function select(cell,actor='protagonist'){await click('home');await page.locator(`[data-action="actor"][data-actor="${actor}"]`).click();await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();await page.locator('[data-primary-action]').click();}
+ async function preview(id){await select('E4');await page.locator(`[data-action="choose"][data-id="${id}"]`).click();await page.locator('[data-role-choice]').waitFor();}
+ async function inspect(loc,big,label){const m=await loc.evaluate(e=>({font:getComputedStyle(document.documentElement).fontSize,width:innerWidth,scroll:document.documentElement.scrollWidth,overflow:[e,...e.querySelectorAll('*')].filter(n=>{const r=n.getBoundingClientRect();return r.width&&(r.left<-.6||r.right>innerWidth+.6);}).map(n=>n.className),clipped:[e,...e.querySelectorAll('p,h2,h3,h4')].filter(n=>{const c=getComputedStyle(n);return ['hidden','clip'].includes(c.overflowY)&&n.scrollHeight>n.clientHeight+1;}).map(n=>n.className)}));check(label+' native font, no horizontal overflow or clipped prose',m.font===(big?'32px':'16px')&&m.scroll<=m.width&&!m.overflow.length&&!m.clipped.length,m);}
+ async function shot(loc,label){await loc.scrollIntoViewIfNeeded();const path=`${out}/${label}.png`;await loc.screenshot({path});report.screenshots.push({path,sha256:sha(await fs.readFile(path)),kind:'original Chromium element screenshot'});}
+ async function destination(actor,cell,screen,label){const u=await page.evaluate(()=>window.afterwave.ui);check(label+' exact destination',u.actor===actor&&u.selected===cell&&u.screen===screen,u);}
+ for(const [producer,api] of [['current',sim],['old',old]])for(const width of [320,390,1280])for(const big of [false,true])for(const scenario of ['fresh','shortfall','gathered']){
+  const label=`${producer}-${width}-${big?200:100}-${scenario}`;await page.setViewportSize({width,height:width===320?568:900});
+  const s=ready(api);if(scenario==='shortfall'){api.investigate(s,'linche','D5','anomaly_records');api.investigate(s,'linche','D5','resident_testimony');}if(scenario==='gathered')api.investigate(s,'protagonist','E4','resident_testimony');
+  await load(s,big,label);await preview('authorize_training');
+  const pair=page.locator('[data-role-choice]'),v=getRoleReadingChoice(s,{actorId:'protagonist',cellId:'E4',actionId:'authorize_training'});
+  for(const role of v.roles){const slot=page.locator(`[data-role-slot="${role.actorId}"]`);const text=await slot.innerText();check(label+' '+role.actorId+' full duty, arrangement, budget and requirement visible',text.includes(role.duty)&&text.includes(role.arrangement)&&text.includes(`剩余 ${role.budget} / 3`)&&text.includes(`E4本项仍需 ${role.requiredRounds} 轮`));}
+  check(label+' full narrative explanation and boundary visible',(await pair.innerText()).includes(v.explanation)&&(await pair.innerText()).includes(v.boundary));
+  for(const role of v.roles){const budget=getRoleResearchBudget(role),loc=page.locator(`[data-role-slot="${role.actorId}"] [data-role-budget]`);check(label+' '+role.actorId+' actual public comparison',await loc.getAttribute('data-role-budget')===budget.status&&(await loc.innerText()).includes(budget.summary)&&(await loc.innerText()).includes(`本窗口已用 ${budget.used} 轮`));check(label+' '+role.actorId+' three labelled noninteractive paper slips',await loc.locator('.role-research-slot').count()===3&&await loc.locator('button').count()===0);}check(label+' no guarantee or reservation',(await pair.innerText()).includes('未取证、未预留')&&(await pair.innerText()).includes('不等于整轮可提交'));await inspect(pair,big,label);await exact(s,label+' read');await shot(pair,label);
+  const metrics=await pair.evaluate(e=>{const r=e.getBoundingClientRect(),link=e.querySelector('[data-action="opportunity-route"]'),slot=e.querySelector('[data-role-slot]'),p=slot.querySelector('[data-role-arrangement]');return {height:r.height,linkOffset:link.getBoundingClientRect().top-r.top,textWidth:p.getBoundingClientRect().width,linksBeforeFacts:!!(link.compareDocumentPosition(slot)&Node.DOCUMENT_POSITION_FOLLOWING)};});
+  (report.metrics??=[]).push({label,...metrics});
+  if(!process.env.AW_BASELINE){check(label+' free reading directory precedes detailed comparison',metrics.linksBeforeFacts);if(big&&width===320)check(label+' large-text route and reading-column budget',metrics.linkOffset<800&&metrics.textWidth>=220,metrics);}
+  const link=page.locator('[data-action="opportunity-route"][data-id="companion"]');await link.scrollIntoViewIfNeeded();await link.focus();await page.keyboard.press('Enter');await destination('linche','E4','choice',label+' companion');await exact(s,label+' route');await click('opportunity-return');await exact(s,label+' return');
+  check(label+' returning keeps full readable facts',await page.locator('[data-role-slot]').count()===2);
+ }
+ for(const [producer,api] of [['current',sim],['old',old]])for(const width of [320,390,1280])for(const big of [false,true]){
+ const label=`${producer}-${width}-${big?200:100}-train-network`;await page.setViewportSize({width,height:900});const s=ready(api);api.investigate(s,'linche','D5','anomaly_records');api.investigate(s,'linche','D5','resident_testimony');await load(s,big,label);await preview('train_network');const pair=page.locator('[data-role-choice]');for(const role of ['protagonist','linche'])check(label+' '+role+' zero-required training material status',await page.locator(`[data-role-slot="${role}"] [data-role-budget]`).getAttribute('data-role-budget')==='gathered');await inspect(pair,big,label);await exact(s,label+' read');if(width===320&&big)await shot(pair,label);await page.locator('[data-action="opportunity-route"][data-id="companion"]').click();await exact(s,label+' free companion read');await click('opportunity-return');await exact(s,label+' return');
+ }
+ const research=ready(sim);await load(research,false,'actual-research');await preview('authorize_training');await page.locator('[data-action="opportunity-route"][data-id="companion"]').dblclick();await exact(research,'repeated free reading');await click('avg');const testimony=page.locator('[data-evidence-id="resident_testimony"]');if(!await testimony.evaluate(e=>e.open))await testimony.locator(':scope > summary').click();await testimony.locator('[data-action="evidence"]').click();sim.investigate(research,'linche','E4','resident_testimony');await exact(research,'actual target research');await click('opportunity-return');check('actual paid testimony updates only companion strip',await page.locator('[data-role-slot="linche"] [data-role-budget]').getAttribute('data-role-budget')==='gathered'&&await page.locator('[data-role-slot="protagonist"] [data-role-budget]').getAttribute('data-role-budget')==='available');await exact(research,'return never refunds or transfers');await page.reload();await page.locator('[data-role-choice]').waitFor();await exact(research,'reload preserves paid investigation');check('reload comparison remains gathered for companion',await page.locator('[data-role-slot="linche"] [data-role-budget]').getAttribute('data-role-budget')==='gathered');
+ check('browser has no page or network errors',report.errors.length===0,report.errors);
+}catch(e){report.failure=String(e.stack||e);throw e;}finally{
+ if(browser)await browser.close();if(server)await server.close();report.inputsAfter=await hashInputs();report.scriptAfter=sha(await fs.readFile(new URL(import.meta.url)));report.checks.push({name:'all source, tests and scripts unchanged during run',passed:report.inputsBefore===report.inputsAfter&&report.scriptBefore===report.scriptAfter});if(report.inputsBefore!==report.inputsAfter)report.failure='Inputs changed during run';report.finishedAt=new Date().toISOString();await fs.writeFile(`${out}/report.json`,json(report,null,2));console.log(json({checks:report.checks.length,passed:report.checks.filter(c=>c.passed).length,failure:report.failure||null}));assert.equal(report.failure,undefined);
+}

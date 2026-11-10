@@ -615,3 +615,14 @@ button,a,input,select,summary { scroll-margin-block:8px; }
    their existing min/max-height rules, including uncropped composite art. */
 .scene-visit .scene-art img[data-intrinsic-visit-size],
 .scene-art-detail img[data-intrinsic-detail-size]{height:auto}
+
+/* Round46: three investigation-round paper slips, not a success meter. */
+.role-research-budget{margin-top:.65rem;border-top:1px dashed var(--line);padding-top:.45rem}
+.role-research-summary{font-weight:650;margin:.25rem 0 .45rem}
+.role-research-slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.25rem}
+.role-research-slot{min-width:0;text-align:center;padding:.3em .1em;border:1px solid var(--line);font-size:.85em;overflow-wrap:anywhere}
+.role-research-slot.used{color:var(--muted);background:repeating-linear-gradient(135deg,transparent,transparent 5px,#d7bf9120 5px,#d7bf9120 7px);text-decoration:line-through}
+.role-research-slot.needed{border-style:dashed;border-color:var(--gold);color:var(--gold)}
+.role-research-slot.free{border-color:#8bc9bd;color:#8bc9bd}
+.role-research-budget[data-role-budget="shortfall"] .role-research-summary{color:#efc28c}
+.role-research-note{font-size:.925rem;margin:.5rem 0 0}
