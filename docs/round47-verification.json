@@ -1,0 +1,263 @@
+{
+  "round": 47,
+  "date": "2026-11-10",
+  "baseCommit": "dd518f50a5ff0da253d79d8aafcdf3b12187f483",
+  "baseTree": "d02df0cde1f09a170d69f791f62cfafece2a200a",
+  "recoveryCheckpoint": "9c5a9f651ae80ceece2ae5af15959d6c71447876",
+  "main": "bd95a56c5de541c9bc663b06a2a7064728781a0b",
+  "mainChanged": false,
+  "baseline": {
+    "verifiedMaterializedFiles": 1517,
+    "missingPreservedBlob": {
+      "path": "docs/round45-evidence/raw-validation.tar.gz",
+      "sha": "3a5a998136c708e2621378933b541b949842b63e"
+    }
+  },
+  "freeze": {
+    "path": "/workspace/scratch/52f1b40b7635/round47-work/freeze.json",
+    "sha256": "3efac15888f797f9b8611827c6768da7339a6a5f5e4c1ed01c04a5868591c322",
+    "startedAt": 1794307948.6379294,
+    "files": 639,
+    "oldChanged": [
+      "package.json",
+      "src/main.js",
+      "src/style.css"
+    ],
+    "newFiles": [
+      "src/window-readiness-context.js",
+      "src/window-readiness-view.js",
+      "tests/window-readiness.test.js",
+      "scripts/round47-window-readiness-test.mjs"
+    ],
+    "mismatches": [],
+    "afterMismatches": []
+  },
+  "baselineRuntime": {
+    "path": "/workspace/scratch/52f1b40b7635/round47-work/baseline-hashes.json",
+    "sha256": "cd787b8c067a5204d4f65524b904d3032a8d5759e7a25a58305439cf75a28cb6",
+    "oldTestsAndScripts": 269,
+    "mismatches": [],
+    "otherRuntimeMismatches": []
+  },
+  "unit": {
+    "tests": 3064,
+    "pass": 3064,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "stages": {
+    "unit": {
+      "startedAt": 1794307948.6453152,
+      "finishedAt": 1794308031.5961928,
+      "exitCode": 0,
+      "command": "npm test",
+      "logSHA256": "2e6e8aa79fa26a9ddfab6a22dc313cd8b42a05eac9940fa80ddfb74b1b3ba392",
+      "logBytes": 304568
+    },
+    "build": {
+      "startedAt": 1794308031.597334,
+      "finishedAt": 1794308036.5636506,
+      "exitCode": 0,
+      "command": "npm run build",
+      "logSHA256": "e08f84c70d49d885ebcaaf9a8259ace81c542999ce21589365055e8f8df6f8a8",
+      "logBytes": 890
+    },
+    "browser": {
+      "startedAt": 1794308036.5650368,
+      "finishedAt": 1794313633.2894557,
+      "exitCode": 0,
+      "command": "npm run test:browser",
+      "logSHA256": "d1a3adec1fe6e1a3e4037cf216637be5794090b4575bd3ae80b74265c062ceb3",
+      "logBytes": 2704789
+    },
+    "matrix": {
+      "startedAt": 1794313633.290727,
+      "finishedAt": 1794313644.1684432,
+      "exitCode": 0,
+      "command": "npm run test:outlook-matrix",
+      "logSHA256": "d2b4a99bf6bd6425b32393a11bcab52cd4f8e614dc8977616e67e55ed1f4747a",
+      "logBytes": 598
+    },
+    "tradeoffs": {
+      "startedAt": 1794313644.1695902,
+      "finishedAt": 1794313670.538906,
+      "exitCode": 0,
+      "command": "node scripts/round21-training-choice-balance.mjs",
+      "logSHA256": "088223170e7b775ab4675eea311a5fad30f49bc7d7b2308714c52ce133615819",
+      "logBytes": 15306
+    },
+    "roles": {
+      "startedAt": 1794313670.5400016,
+      "finishedAt": 1794313671.3720264,
+      "exitCode": 0,
+      "command": "node scripts/round22-role-opportunity-audit.mjs",
+      "logSHA256": "c0dc3cb801a39144377e29f468a2d1a4b0008bdd536e9c4f8c28ff26e3119b93",
+      "logBytes": 790
+    }
+  },
+  "browser": {
+    "suites": 80,
+    "checks": 29260,
+    "passed": 29260,
+    "checkGroups": {
+      "checks": 29094,
+      "focusNegativeControls": 6,
+      "b4Checks": 157,
+      "oracleNegativeControls": 3
+    },
+    "hashMatched": 55,
+    "hashAbsent": 25,
+    "aggregateStageRecords": 1
+  },
+  "supplemental": {
+    "matrix": {
+      "report": "playtest-output/round6-outlook-matrix.json",
+      "reportSHA256": "5928c0c76ab290e958a7b6a9848c545d6ed3aa98ccae3af602f09e08d2616aa6",
+      "modified": 1794313644.1371243,
+      "fresh": true,
+      "script": "scripts/outlook-matrix.mjs",
+      "scriptSHA256": "5e3a41473a6fd28f454a66a8a423d120a858591a67ad23da8584745ccb9072f8",
+      "checked": 888,
+      "failed": 0,
+      "skipped": 0,
+      "branches": {
+        "success": 282,
+        "fallback": 606
+      },
+      "limits": [
+        "This is deterministic automated model verification, not human playtesting, real-device certification, or evidence of historical accuracy.",
+        "The selected histories use three fixed seeds, four build choices, and risky recruitment when a real post exists. Legal year20 actor plans at distinct cells are enumerated, including explicit passes.",
+        "Individual review contracts are retained; this check does not infer independence or combine their probabilities.",
+        "Optional surveyed veto, true legacy rules, unresolved drafts, and hidden-roll access are covered separately by tests/crisis-outlook.test.js."
+      ]
+    },
+    "tradeoffs": {
+      "report": "playtest-output/round21-training-choice-balance-results.json",
+      "reportSHA256": "563bb41074f2391c2819c3e3ec93f40b52a25df4fb09eee7ea18e11f9b559413",
+      "modified": 1794313670.512911,
+      "fresh": true,
+      "script": "scripts/round21-training-choice-balance.mjs",
+      "scriptSHA256": "7ecad0e329b2fc14c172f5e9f4bdf2308f18c8f3c33e035b30aeaf930d5d1eff",
+      "pairs": 644,
+      "crossingPairs": 644,
+      "sameTitles": 644,
+      "sameCoverage": 644,
+      "sameCrisis": 644,
+      "sameReadiness": 644,
+      "allValid": true,
+      "unchangedOriginalSources": true,
+      "balanced": false,
+      "reviewFailures": 52,
+      "scope": "Versioned workload audit of real natural player routes. Demonstrates sampled tradeoffs, not complete game balance or human playtesting. Synthetic maintenance and affordability states are labelled.",
+      "meaning": "644 sampled crossing tradeoffs; balanced=false, not universal game balance or human validation."
+    },
+    "roles": {
+      "report": "playtest-output/round22-role-opportunity-audit.json",
+      "reportSHA256": "f485c36d06ab02328a6572fa90bd242207fa93c3d200cb98a96c50958e544313",
+      "modified": 1794313671.3529046,
+      "fresh": true,
+      "script": "scripts/round22-role-opportunity-audit.mjs",
+      "scriptSHA256": "22a090c302b00ad24bb2d92a1f505d0b6ec86a01f7336644e6a1c99f1f9a757c",
+      "pairs": 10,
+      "futureChecks": 2,
+      "sameCapability": 10,
+      "noPolicyDespiteReadyToShare": 10,
+      "ordinaryTrainingWithoutEngineWarning": 5,
+      "balanced": false,
+      "scope": "Ten natural role-allocation pairs plus two natural preparation branches. Not universal balance or human-playtest certification.",
+      "interpretation": "Work is not invalid or pointless. The protagonist alone owns the policy action. Choosing construction, training or a check instead can be deliberate, but needs to be explicit before investigation and submission."
+    }
+  },
+  "coverageGaps": [
+    {
+      "script": "scripts/round27-lifecycle-visuals-test.mjs",
+      "omittedChecks": 2,
+      "reason": "Optional baseline save not present; producer coverage only. See separate actual UI flow regression.",
+      "optionalInput": "../round27-visual-audit/actual-year40-storage.json",
+      "source": "scripts/round27-lifecycle-visuals-test.mjs:44",
+      "historicalChecks": 491,
+      "actualChecks": 489
+    }
+  ],
+  "evidenceValid": true,
+  "baselineCoverageEquivalent": false,
+  "acceptanceStatus": "valid-executed-checks-but-baseline-coverage-gap",
+  "independentVisualQA": {
+    "scope": "Independent final frozen browser geometry and original screenshot review; three layouts and one natural current-producer conflict route, not the aggregate suite or physical-device certification.",
+    "rows": [
+      {
+        "width": 390,
+        "textPercent": 100,
+        "baselineTitleTop": 1612.765625,
+        "finalTitleTop": 399.921875,
+        "movedEarlierBy": 1212.84375,
+        "baselineBlockHeight": 197.484375,
+        "finalBlockHeight": 368.125,
+        "extraBlockHeight": 170.640625,
+        "exactWorldAndAutosave": true,
+        "reviewedOriginalImages": [
+          "/workspace/scratch/52f1b40b7635/round47-work/independent-final-390-100-full.png",
+          "/workspace/scratch/52f1b40b7635/round47-work/independent-final-390-100-block.png"
+        ]
+      },
+      {
+        "width": 390,
+        "textPercent": 200,
+        "baselineTitleTop": 3740.09375,
+        "finalTitleTop": 922.625,
+        "movedEarlierBy": 2817.46875,
+        "baselineBlockHeight": 452.15625,
+        "finalBlockHeight": 997.453125,
+        "extraBlockHeight": 545.296875,
+        "exactWorldAndAutosave": true,
+        "reviewedOriginalImages": [
+          "/workspace/scratch/52f1b40b7635/round47-work/independent-final-390-200-full.png",
+          "/workspace/scratch/52f1b40b7635/round47-work/independent-final-390-200-block.png"
+        ]
+      },
+      {
+        "width": 320,
+        "textPercent": 200,
+        "baselineTitleTop": 4257.390625,
+        "finalTitleTop": 1049.40625,
+        "movedEarlierBy": 3207.984375,
+        "baselineBlockHeight": 551.9375,
+        "finalBlockHeight": 1236.828125,
+        "extraBlockHeight": 684.890625,
+        "exactWorldAndAutosave": true,
+        "reviewedOriginalImages": [
+          "/workspace/scratch/52f1b40b7635/round47-work/independent-final-320-200-full.png",
+          "/workspace/scratch/52f1b40b7635/round47-work/independent-final-320-200-block.png"
+        ]
+      }
+    ],
+    "freeze": {
+      "path": "/workspace/scratch/52f1b40b7635/round47-work/freeze.json",
+      "sha256": "3efac15888f797f9b8611827c6768da7339a6a5f5e4c1ed01c04a5868591c322",
+      "files": 639,
+      "afterCaptureMismatches": [],
+      "note": "Freeze was supplied before capture; independent full hash comparison performed after capture. No per-frame source hash claim."
+    },
+    "browser": {
+      "finalFailure": null,
+      "errors": []
+    },
+    "visualReview": "All six final original screenshots and all six baseline originals were opened. No visible text clipping, overlap or horizontal overflow in the blocker. Both actor controls clearly separated. Blocker is now before task cards, with patterned paper mark and explicit status. At 200% title remains below the initial 844px viewport (923/1049px); new blocker is longer (997/1237px). Do not claim whole panel on first screen or shorter total reading.",
+    "acceptanceScriptReview": {
+      "adaptation": "639 inputs,269 original tests/scripts,3064 units,80 ordered suites,55 intrinsic matched and25 absent hash suites are consistent with the frozen inventory and round47 additions.",
+      "amendment": "Added baselineChecks675 to round46 entry and541 to round47 entry so accidentally truncated reports cannot pass merely by retaining some true rows. Saved pre-review audit copy separately; no repository input changed.",
+      "limits": "The two optional round27 historical checks remain unavailable, with evidenceValid potentially true but passed false / coverage gap. Audit execution awaits aggregate completion; this review does not certify completed aggregate results."
+    }
+  },
+  "syntheticFixtureBoundary": "Current producer conflict copied, then D4 economy set to 2, explicitly only a valid low-balance import test. No natural-play or genuine historical claim.",
+  "initialFailure": "Initial focused browser run left window after true pointer double-click scrolling; world unchanged was insufficient. Existing pointer-repeat guard reused, explicit screen and focused-target assertions added. Fixed focused run541/541; full aggregate reran final inputs.",
+  "remoteCI": "Exact final published SHA must be checked after publication. Not certified at creation of this record.",
+  "notes": [
+    "No simulation, save, story, assets, costs or probabilities changed.",
+    "269 prior test/script files unchanged.",
+    "No human balance, real mobile-device or screen-reader certification."
+  ],
+  "evidence": "docs/round47-evidence/README.md"
+}
