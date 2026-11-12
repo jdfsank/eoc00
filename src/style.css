@@ -642,3 +642,12 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 [data-review-target]{scroll-margin-block-start:1rem;overflow-wrap:anywhere}
 [data-review-target]:focus{outline:2px solid var(--gold);outline-offset:4px}
 .large-text .readiness-routes>div>div{flex-direction:column;align-items:stretch}
+
+/* The signed promise precedes its supporting role and local-account dossiers. */
+.decision-page [data-contract-core]{border-top:2px solid var(--gold);border-bottom:1px solid var(--line);background:linear-gradient(135deg,#e0b65f0a,#72c1b508);padding:.5rem .85rem;margin:1.25rem 0;color:var(--paper)}
+.decision-page [data-contract-core] dt{color:var(--gold)}
+.decision-page [data-contract-core] [data-contract-material-risk]{border-left:2px solid var(--politics);padding-left:.65rem}
+.contract-model{margin:1rem 0;color:var(--muted);overflow-wrap:anywhere}
+.contract-model dt{color:var(--gold);font-weight:600;margin-bottom:.35rem}
+.contract-model dd{margin:0}
+@media(max-width:420px){.decision-page [data-contract-core]{padding:.4rem 0}.decision-page [data-contract-core] [data-contract-material-risk]{padding-left:.4rem}}

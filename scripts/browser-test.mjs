@@ -89,7 +89,7 @@ check('No-build year20 offers a real community warning action',(await page.locat
 const resident=page.locator('[data-action="evidence"][data-id="resident_testimony"]');await resident.locator('xpath=ancestor::details').locator('summary').click();await resident.click();
 check('No-build resident evidence does not thank a nonexistent service',(await page.locator('.evidence[open]').innerText()).includes('还没有持续运转的预警载体'));
 await page.locator('[data-action="choose"][data-id="free_warning"]').click();
-check('Action preview discloses tunable coverage assumptions',(await page.locator('.contract').innerText()).includes('合同条件与原型假设')&&(await page.locator('.contract').innerText()).includes('参数可调')&&(await page.locator('.contract').innerText()).includes('0.65'));
+check('Action preview discloses tunable coverage assumptions',(await page.locator('.contract-model').innerText()).includes('合同条件与原型假设')&&(await page.locator('.contract-model').innerText()).includes('参数可调')&&(await page.locator('.contract-model').innerText()).includes('0.65'));
 await click('confirm');await click('lock');await click('commit');await click('skip');await click('home');
 check('Community action creates a visible local service without inventing a station',await page.evaluate(()=>window.afterwave.state.institutions.some(i=>i.kind==='warning'&&i.active)&&!window.afterwave.state.institutions.some(i=>i.kind==='station'))&&(await page.locator('.coverage-report').innerText()).includes('0.65 / 1'));
 await page.locator('.toast').waitFor({state:'detached'});await snap('12-community-coverage');

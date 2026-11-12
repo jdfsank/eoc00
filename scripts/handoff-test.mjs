@@ -33,14 +33,14 @@ try{
  }
  check('All three year30 consequence narratives differ',new Set(Object.values(narratives)).size===3);
  await restore(fixtures.avoided);await page.locator('[data-primary-action]').click();await page.locator('[data-action="choose"][data-id="share_power"]').click();
- check('Prepared handoff preview names training people, authorization and a different checking site',(await page.locator('.contract').innerText()).includes('承接人手：E4、D5')&&(await page.locator('.contract').innerText()).includes('已获地方授权：E4、D5')&&(await page.locator('.contract').innerText()).includes('异源校验：B4')&&(await page.locator('.contract').innerText()).includes('当前交班条件齐备'));
+ check('Prepared handoff preview names training people, authorization and a different checking site',(await page.locator('.contract-model').innerText()).includes('承接人手：E4、D5')&&(await page.locator('.contract-model').innerText()).includes('已获地方授权：E4、D5')&&(await page.locator('.contract-model').innerText()).includes('异源校验：B4')&&(await page.locator('.contract-model').innerText()).includes('当前交班条件齐备'));
  await click('confirm');await click('lock');check('Locked policy review uses the same three-part readiness',(await page.locator('.handoff-readiness').innerText()).includes('当前交班条件齐备'));
  await snap('prepared-review-390');await click('commit');await click('skip');await click('ending');
  check('Actual year40 shared ending rewards preserved training rather than counting it as zero',(await page.locator('h1').innerText())==='许多人签署的历史'&&await page.evaluate(()=>window.afterwave.state.year===40&&window.afterwave.state.flags.crisis.damage===0));
  check('Ending separates people, authorization and independent checking instead of a numeric threshold',(await page.locator('.ending').innerText()).includes('已授权承接地域')&&(await page.locator('.ending').innerText()).includes('异源校验地域')&&(await page.locator('.ending').innerText()).includes('不按机构总数给结局加分'));
  await snap('shared-ending-390');
  await restore(fixtures.unmandated);await page.locator('[data-primary-action]').click();await page.locator('[data-action="choose"][data-id="withdraw"]').click();
- check('Riverport trust does not silently authorize distant trainees',(await page.locator('.contract').innerText()).includes('现有人手尚缺地方承接授权')&&await page.evaluate(()=>window.afterwave.state.flags.trust===true));
+ check('Riverport trust does not silently authorize distant trainees',(await page.locator('.contract-model').innerText()).includes('现有人手尚缺地方承接授权')&&await page.evaluate(()=>window.afterwave.state.flags.trust===true));
  for(const [name,needle] of [['respected','苏岚自己写下的选择'],['forced','苏岚从东岸寄来的信没有替迁任补上同意']]){
   await restore(fixtures[name]);await page.locator('[data-primary-action]').click();check(`${name} agreement history gets its own voice`,(await page.locator('.prose').innerText()).includes(needle));
   if(name==='forced')await snap('forced-letter-390');

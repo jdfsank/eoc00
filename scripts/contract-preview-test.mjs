@@ -31,7 +31,7 @@ try{
  const untouched=await worldState(),hidden=evidenceFor(JSON.parse(untouched),'anomaly_records','B4','protagonist').text;
  check('Uninvestigated review card is a real enabled preview button',await page.locator('[data-action="choose"][data-id="independent_review"]').isEnabled());
  await choose('independent_review');const contract=await page.locator('.contract').innerText();
- check('Before spending, full contract exposes55 percent, failure destination and nonrefund',contract.includes('55%')&&contract.includes('不退')&&contract.includes('失败'));
+ check('Before spending, full contract exposes55 percent, failure destination and nonrefund',contract.includes('55%')&&contract.includes('不退')&&(await page.locator('.contract-model').innerText()).includes('失败'));
  check('Preview never exposes the unread anomaly document',!(await page.locator('main').innerText()).includes(hidden));
  check('Preview has no simulation, draft, cost or investigation side effect',await worldState()===untouched);
  check('Missing evidence disables commitment, not contract reading',await page.locator('.missing-evidence').isVisible()&&await page.locator('[data-action="confirm"]').isDisabled());await snapshot('free-contract-390');
