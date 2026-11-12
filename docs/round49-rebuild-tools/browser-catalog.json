@@ -1,0 +1,1071 @@
+{
+  "provenance": {
+    "path": "docs/round48-verification.json",
+    "sha256": "7681fd14a5752a1daa2abc505cbbfd9433ecd5516c1fef3cab96e9b22f17bec4",
+    "purpose": "Historical schema and minimum counts only, not fresh execution evidence"
+  },
+  "entries": [
+    {
+      "script": "scripts/browser-test.mjs",
+      "report": "playtest-output/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "4ed1b7e771339f04a857a682074ff5ab1e46af4a3e4178d51630b893210bac62",
+      "baselineChecks": 46
+    },
+    {
+      "script": "scripts/interactions-test.mjs",
+      "report": "playtest-output/interaction-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "6a9546a45a18eb67fe1674c2d8cbdfcf5b9d16826a23dfa2c1e58778133ac7ee",
+      "baselineChecks": 63
+    },
+    {
+      "script": "scripts/tradeoffs-test.mjs",
+      "report": "playtest-output/tradeoffs-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "7f896d0922b7490d094476de7058d817d551b5c143911cf1368a45835d4d5efb",
+      "baselineChecks": 22
+    },
+    {
+      "script": "scripts/visuals-test.mjs",
+      "report": "playtest-output/visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "7af3f55da452180752237ebb223f9681f0ee33cf80a6140bfe9cf78afd903b95",
+      "baselineChecks": 20
+    },
+    {
+      "script": "scripts/handoff-test.mjs",
+      "report": "playtest-output/round3-handoff-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "faa4b141095bba174cbab2bb535e23611effebd6f3764a136c7c71659dc82d37",
+      "baselineChecks": 20
+    },
+    {
+      "script": "scripts/learning-visuals-test.mjs",
+      "report": "playtest-output/round3-learning-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "fd88d18b3b1e1a3e6979bb86af6580dbebb6c95a23732e4a1aa17d6bbd2f4159",
+      "baselineChecks": 18
+    },
+    {
+      "script": "scripts/aftermath-test.mjs",
+      "report": "playtest-output/round4-aftermath-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "fe59ea1763881285fdd05e51ad1539af856c1528551d293a054bd9f56354cd7b",
+      "baselineChecks": 34
+    },
+    {
+      "script": "scripts/station-visuals-test.mjs",
+      "report": "playtest-output/round4-station-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "fd09cac2b187ceb10f740f98f10107f7518a1b05a459aa0717a297245735b732",
+      "baselineChecks": 21
+    },
+    {
+      "script": "scripts/recruitment-test.mjs",
+      "report": "playtest-output/round5-recruitment-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "6f64dcb5794ad36527ab0c43da7e56e3cb1238e84d0e4880538fce1fc07d24a2",
+      "baselineChecks": 32
+    },
+    {
+      "script": "scripts/maintenance-visuals-test.mjs",
+      "report": "playtest-output/round5-maintenance-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "643f4fd9bc8a1b8ae8c573144908e222eed8b435e86098322730c310cac82d0e",
+      "baselineChecks": 35
+    },
+    {
+      "script": "scripts/outlook-test.mjs",
+      "report": "playtest-output/round6-outlook-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "551c192f1813e25f5c14d170410d00f72b9ae4e6a78fa1312f96d36a908d915f",
+      "baselineChecks": 29
+    },
+    {
+      "script": "scripts/activity-visuals-test.mjs",
+      "report": "playtest-output/round6-activity-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "17faa485f6b74e4df7db85c07825453ed723f4fa225b176441b2ae74ddd48e20",
+      "baselineChecks": 57
+    },
+    {
+      "script": "scripts/recovery-test.mjs",
+      "report": "playtest-output/round7-recovery-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "8f6498f118e9968b6ea0dc2339e77eafe4848053661b216a91ff3dd585b653cf",
+      "baselineChecks": 33
+    },
+    {
+      "script": "scripts/south-bank-visuals-test.mjs",
+      "report": "playtest-output/round7-south-bank-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "5be6eb8b0da8c06c2123bd8c66ef5bbda090a5c5730da364c6de64fa6829a5fe",
+      "baselineChecks": 114
+    },
+    {
+      "script": "scripts/handoff-outlook-test.mjs",
+      "report": "playtest-output/round8-handoff-outlook-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "8f18f9eec0e71e5d0c29e9a5b96dac2141e1648619a9be5770cf159baa8e8d15",
+      "baselineChecks": 45
+    },
+    {
+      "script": "scripts/far-port-visuals-test.mjs",
+      "report": "playtest-output/round8-far-port-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "2ba4dcebbf4cdab368e081532745417c3bbe8d9b5ed4028a7fefc3efff61231d",
+      "baselineChecks": 88
+    },
+    {
+      "script": "scripts/port-access-test.mjs",
+      "report": "playtest-output/round9-port-access-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "bcbc6e283209d987da5b9fb97744605b9382addfcc484c9cb04b88e0d360e44a",
+      "baselineChecks": 31
+    },
+    {
+      "script": "scripts/river-warning-visuals-test.mjs",
+      "report": "playtest-output/round9-river-warning-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "beb06e9c0a14e883cad18bf957d12d730278c1165897344e2dcf6df1aceacfdc",
+      "baselineChecks": 84
+    },
+    {
+      "script": "scripts/contract-preview-test.mjs",
+      "report": "playtest-output/round10-contract-preview-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "aecf8fb4b640a0be2f58b19ffc4869f5f191137279acf69420f7b2b0d5889c42",
+      "baselineChecks": 33
+    },
+    {
+      "script": "scripts/local-crisis-visuals-test.mjs",
+      "report": "playtest-output/round10-local-crisis-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "a9b1b37698eacca704bccb20ba985cd2248422e8226040611295b68034fe3fe5",
+      "baselineChecks": 388
+    },
+    {
+      "script": "scripts/history-reading-test.mjs",
+      "report": "playtest-output/round11-history-reading-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "d6ec04952a2b6a86c20034803ed31d5039222cb6d9ce75b51936fa8d1fa4760c",
+      "baselineChecks": 46
+    },
+    {
+      "script": "scripts/scene-visit-test.mjs",
+      "report": "playtest-output/round11-scene-visit-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "26cf493f4ce4470fbcdce3576b52bf34a565c0701db852f2aa629946c1d52686",
+      "baselineChecks": 315
+    },
+    {
+      "script": "scripts/staffing-history-test.mjs",
+      "report": "playtest-output/round12-staffing-history-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "7169037b15e9fcbde4df985c72139f43d978d8b9bf4d6980754b0234c7d0d6c9",
+      "baselineChecks": 50
+    },
+    {
+      "script": "scripts/port-access-visuals-test.mjs",
+      "report": "playtest-output/round12-port-access-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "57fb97c3481aa31601a99b730ed1263888e8d3222231c9ad99db519dc989ca51",
+      "baselineChecks": 352
+    },
+    {
+      "script": "scripts/toast-input-test.mjs",
+      "report": "playtest-output/round12-toast-input-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "f6d715a3a160e0ed71af02ac21127bef75dc7788cea9e1e1c1cc97cbf1d71afd",
+      "baselineChecks": 203
+    },
+    {
+      "script": "scripts/building-review-test.mjs",
+      "report": "playtest-output/round13-building-review-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "a863c56c0d08a785f0dac193ad663751eb5ae74fa4de3d0c0b34db6bd94e4fee",
+      "baselineChecks": 65
+    },
+    {
+      "script": "scripts/monastery-visuals-test.mjs",
+      "report": "playtest-output/round13-monastery-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "68b3c8d74c9dec9f72653a9a897b777052fadcda0ea54044901448338892ae30",
+      "baselineChecks": 578
+    },
+    {
+      "script": "scripts/branch-caretaker-test.mjs",
+      "report": "playtest-output/round14-branch-caretaker-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "runtime-assets-index-lexical-path",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "19783a8ec2d4d41372132c5c2fe534c98b847c3982bcfcd97999bd9239ad7450",
+      "baselineChecks": 192
+    },
+    {
+      "script": "scripts/station-access-visuals-test.mjs",
+      "report": "playtest-output/round14-station-access-visual-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "ee2b0093518e00911c32ae239a1910fb249f04d97d35fff392da9f598603093b",
+      "baselineChecks": 356
+    },
+    {
+      "script": "scripts/future-check-destination-test.mjs",
+      "report": "playtest-output/round15-future-check-destination-results.json",
+      "groups": [
+        "checks",
+        "focusNegativeControls"
+      ],
+      "scheme": "runtime-assets-index-lexical-path",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "c296ba8778c306f992a7ef8245ea4f505dd7d53aff60a7cfaec16cb7ba264a0b",
+      "baselineChecks": 188
+    },
+    {
+      "script": "scripts/south-bank-visit-test.mjs",
+      "report": "playtest-output/round15-d5-visit-results.json",
+      "groups": [
+        "checks",
+        "b4Checks",
+        "oracleNegativeControls"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "e67c4e624167fff6ae71a939f145169067355a8b303aa0ae59de92b7d6d3ca9e",
+      "baselineChecks": 1417
+    },
+    {
+      "script": "scripts/board-readiness-test.mjs",
+      "report": "playtest-output/round16-board-readiness-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "28ef01c7a542290437682a39eed460d2c5fe37668065d67e1ac7400d88238b18",
+      "baselineChecks": 10
+    },
+    {
+      "script": "scripts/crisis-map-test.mjs",
+      "report": "playtest-output/round16-crisis-map-report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "e6916260a1185589040fa892c63c745d1b79d9534b6c2c00d3713d307256733f",
+      "baselineChecks": 175
+    },
+    {
+      "script": "scripts/archive-upgrade-test.mjs",
+      "report": "playtest-output/round16-archive-upgrade-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "fe73ce4a6cc6f03630b8deae608319bb869b3653154fbe368ee551e9aa828bdd",
+      "baselineChecks": 50
+    },
+    {
+      "script": "scripts/investigation-comparison-test.mjs",
+      "report": "playtest-output/round-17/investigation-comparison-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "absent",
+      "fields": [],
+      "legacyScriptSHA256": "7bbe314c5765fda0d98f06d9f41c83815c98a127c22b321f3e75e505ea792b6f",
+      "baselineChecks": 100
+    },
+    {
+      "script": "scripts/round18-return-consequences-test.mjs",
+      "report": "playtest-output/round-18/return-consequences-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "9816e67bf8519d589130c9c586e39aed24e2f724b0ab732e524fc0b91e287278",
+      "baselineChecks": 451
+    },
+    {
+      "script": "scripts/round19-investigation-choices-test.mjs",
+      "report": "playtest-output/round-19/investigation-choices-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "2c314908cdd60898a2b5dfbb9226e89aecda485d037fda1874efb0a75794a8ec",
+      "baselineChecks": 326
+    },
+    {
+      "script": "scripts/round20-final-decade-test.mjs",
+      "report": "playtest-output/round-20/final-decade-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "350e4162b4c5f91e66436b8cfccda1d4e5e8b1eb06a3fe8ced9f7f84812522b0",
+      "baselineChecks": 694
+    },
+    {
+      "script": "scripts/round21-training-workload-test.mjs",
+      "report": "playtest-output/round-21/training-workload-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "3ff991f644cc554574c63bf6d5ac4f792ae0d29087ad504d897cd22426d8a8ef",
+      "baselineChecks": 646
+    },
+    {
+      "script": "scripts/training-workload-visuals-test.mjs",
+      "report": "playtest-output/round-21/training-workload/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "top-level-src-basename",
+      "fields": [
+        "before",
+        "after"
+      ],
+      "legacyScriptSHA256": "261c143db291bc2b58b3134ad24cfa5c4f0c9db4762f9f40083b7085a7a41059",
+      "baselineChecks": 217
+    },
+    {
+      "script": "scripts/round22-decision-flow-test.mjs",
+      "report": "playtest-output/round-22/decision-flow-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "5105960f8ae8009ada16ef433858351be2dda893c7b1c1cec6710557722a465f",
+      "baselineChecks": 732
+    },
+    {
+      "script": "scripts/decision-flow-visuals-test.mjs",
+      "report": "playtest-output/round-22/decision-flow-visuals/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "five-selected-files-content-only",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "2641680bfab8474ba06d9e9d96023e0e29541f045c2ba548157ab3762ab21a15",
+      "baselineChecks": 134
+    },
+    {
+      "script": "scripts/round23-playback-journal-test.mjs",
+      "report": "playtest-output/round-23/playback-journal-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "53cdc9e8713a0d3709e9daa2ebb2d9aea4e095c534d901fa205fc4ab3e9dc09e",
+      "baselineChecks": 1623
+    },
+    {
+      "script": "scripts/playback-journal-visuals-test.mjs",
+      "report": "playtest-output/round23-playback-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "runtimeBefore",
+        "runtimeAfter"
+      ],
+      "legacyScriptSHA256": "0cb73057348b033c341a80537de79cfab9ffc460750f9ce5857ca5408d2dfaa9",
+      "baselineChecks": 824
+    },
+    {
+      "script": "scripts/round24-investigation-flow-test.mjs",
+      "report": "playtest-output/round-24/investigation-flow-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "runtimeHash.before",
+        "runtimeHash.after"
+      ],
+      "legacyScriptSHA256": "522931503b09ab11b6e22acc1eb39e26e688d62d414c10e4dfd231813209196a",
+      "baselineChecks": 330
+    },
+    {
+      "script": "scripts/round24-investigation-visuals-test.mjs",
+      "report": "playtest-output/round24-investigation-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "8967f0e85e48929db6c4943dfb631e11227dd36e1e1b3d295f7c6bbd566eac54",
+      "baselineChecks": 790
+    },
+    {
+      "script": "scripts/round25-world-planning-flow-test.mjs",
+      "report": "playtest-output/round25-world-planning-flow/world-planning-flow-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "3f99772ff29b5570140cf7229135ee3e80b968546347671f6cdd9114b49d22be",
+      "baselineChecks": 371
+    },
+    {
+      "script": "scripts/round25-world-planning-visuals-test.mjs",
+      "report": "playtest-output/round25-world-planning-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "84397d33cc5a26b21b669b996c61d7a843c68fd7f68292edade5f3a5f942a060",
+      "baselineChecks": 479
+    },
+    {
+      "script": "scripts/round26-import-safety-test.mjs",
+      "report": "playtest-output/round26-import-safety/import-safety-results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "9a89c160b1ca86075b48aac8fe790a7742c9b47d111fe9bd72c7569b8ac3d823",
+      "baselineChecks": 181
+    },
+    {
+      "script": "scripts/round26-comparison-guidance-test.mjs",
+      "report": "playtest-output/round26-comparison-guidance/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "source.before",
+        "source.after"
+      ],
+      "legacyScriptSHA256": "589e2d499adaabc19bc1eb66fe5e6f2db89229a2806f4077751b7e6c9df7762a",
+      "baselineChecks": 417
+    },
+    {
+      "script": "scripts/round26-choice-directory-visuals-test.mjs",
+      "report": "playtest-output/round26-choice-directory-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "cdf51b64416cb6eb2ae11f152a6f2b1704050bba0b43cc0f8ef0fcbaca7a30e6",
+      "baselineChecks": 1475
+    },
+    {
+      "script": "scripts/round27-lifecycle-flow-test.mjs",
+      "report": "playtest-output/round27-lifecycle-flow/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "a0dd38c246a28e5bb061df34ef579e255771a217751890678bf420e35ddea994",
+      "baselineChecks": 637
+    },
+    {
+      "script": "scripts/round27-lifecycle-visuals-test.mjs",
+      "report": "playtest-output/round27-lifecycle-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-per-file-manifest",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "5f262b472266d2d53c66ff9e1f5e7e8eecdb9539b2502f7a46ea1e2f5e931ac2",
+      "baselineChecks": 491
+    },
+    {
+      "script": "scripts/round28-review-accounts-test.mjs",
+      "report": "playtest-output/round28-review-accounts/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "5c365bac253491abd5fb0a81315e993966733fcc4b7442fcba59163369504e38",
+      "baselineChecks": 603
+    },
+    {
+      "script": "scripts/round28-review-accounts-visuals-test.mjs",
+      "report": "playtest-output/round28-review-accounts-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "3a67544f0986cb9f52f2155b7288bdded884d9d5d5d8e5903d8594b113662ada",
+      "baselineChecks": 490
+    },
+    {
+      "script": "scripts/round29-evidence-return-test.mjs",
+      "report": "playtest-output/round29-evidence-return/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "344842e6b5fdaa46a4b15112e9aef24a786310d71abef6724eb76c2d151f87c4",
+      "baselineChecks": 44
+    },
+    {
+      "script": "scripts/round29-opening-evidence-visuals-test.mjs",
+      "report": "playtest-output/round29-opening-evidence-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "8c9bbeab3a0d4f0482143ed6cb63553ecb9cf34227174d89a0590f786774b29c",
+      "baselineChecks": 194
+    },
+    {
+      "script": "scripts/round30-stage-boundary-flow-test.mjs",
+      "report": "playtest-output/round30-stage-boundary-flow/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "9f40402036696e67c274ab9fd0e178fd531ba956b7ceab7dc2efeb2ff335437c",
+      "baselineChecks": 238
+    },
+    {
+      "script": "scripts/round30-stage-boundary-visuals-test.mjs",
+      "report": "playtest-output/round30-stage-boundary-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "786685c25d8da2dfa6095586cb7decec7f24fe3b14b46f81e42443b2860941dd",
+      "baselineChecks": 495
+    },
+    {
+      "script": "scripts/round31-scene-source-flow-test.mjs",
+      "report": "playtest-output/round31-scene-source-flow/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "796fc525c55cd9256b41ffbd20f0d59e87b658f1bce04323c19174f3b1d269d7",
+      "baselineChecks": 114
+    },
+    {
+      "script": "scripts/round31-scene-source-visuals-test.mjs",
+      "report": "playtest-output/round31-scene-source-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "e192bf47f5c81f933f8df44f3d15442d3f2f9ee48daee78c6755f1c9e2128d39",
+      "baselineChecks": 182
+    },
+    {
+      "script": "scripts/round32-draft-edit-flow-test.mjs",
+      "report": "playtest-output/round32-draft-edit-flow/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "7270cc4f5f582a7c3aa7afd3589072555949d1f41cfd5da2c40b8667fe3a15b0",
+      "baselineChecks": 50
+    },
+    {
+      "script": "scripts/round32-draft-edit-visuals-test.mjs",
+      "report": "playtest-output/round32-draft-edit-visuals/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "0538e613ccf4326537eabaa8db1300bc6e068c26d710c4be1c6e2da1fc1ec776",
+      "baselineChecks": 86
+    },
+    {
+      "script": "scripts/round33-draft-comparison-test.mjs",
+      "report": "playtest-output/round33-draft-comparison/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "6715b8d230e70b0066b8534245ec820e41f74e76fb0ebd6998871915a2700adf",
+      "baselineChecks": 157
+    },
+    {
+      "script": "scripts/round34-comparison-reading-test.mjs",
+      "report": "playtest-output/round34-comparison-reading/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "c926609acf62c2260ebfea59f036d4ccb0eca868756dc7c750154c46a73427dd",
+      "baselineChecks": 307
+    },
+    {
+      "script": "scripts/round35-recollection-reading-test.mjs",
+      "report": "playtest-output/round35-recollection-reading/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "12f5032a2991918b26f738cc5fa67155acf69eebbdd9f29b6b0b9f6c16ba0955",
+      "baselineChecks": 527
+    },
+    {
+      "script": "scripts/round36-actor-agency-test.mjs",
+      "report": "playtest-output/round36-actor-agency/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "ae92f5c5d75ce9f60e124ae8f16d02973ce1efa660f822ad88545d5b12a175b0",
+      "baselineChecks": 582
+    },
+    {
+      "script": "scripts/round37-building-tradeoffs-test.mjs",
+      "report": "playtest-output/round37-building-tradeoffs/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "1cdf713e9a7e0ed70e4c03529ab3dec03583000f5f70416b23fd5fd3bb60c4be",
+      "baselineChecks": 678
+    },
+    {
+      "script": "scripts/round38-succession-fork-test.mjs",
+      "report": "playtest-output/round38-succession-fork/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "04d374db3edce8cef9344d247b5d1373cff6797adba4e1ec23b7b674eed43e2a",
+      "baselineChecks": 1377
+    },
+    {
+      "script": "scripts/round39-crisis-fork-test.mjs",
+      "report": "playtest-output/round39-crisis-fork/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "40c81549936bdfec4c75c91bb91e24a59e885acc665f491e1f66151e57cd1103",
+      "baselineChecks": 1004
+    },
+    {
+      "script": "scripts/round40-policy-fork-test.mjs",
+      "report": "playtest-output/round40-policy-fork/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "c6bc481e87ca7e18f551fec97369eba24e4efcd6c99bd09116c578cec023946e",
+      "baselineChecks": 1203
+    },
+    {
+      "script": "scripts/round41-contract-resume-test.mjs",
+      "report": "playtest-output/round41-contract-resume/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "45de4b2a34f4e683831152cf2be3c7ae9d6efbee365ac437f76962367a735c0f",
+      "baselineChecks": 178
+    },
+    {
+      "script": "scripts/round42-local-cost-test.mjs",
+      "report": "playtest-output/round42-local-cost/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "a8740365a09de8572fc660fbdaa23db431767c2924541ccfc61c67bb42994ba3",
+      "baselineChecks": 2470
+    },
+    {
+      "script": "scripts/round42-scene-size-test.mjs",
+      "report": "playtest-output/round42-scene-size/results.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "recursive-src-locale-path",
+      "fields": [
+        "sourceBefore",
+        "sourceAfter"
+      ],
+      "legacyScriptSHA256": "f57177c3c5b546b48cfbf057b2ccc2c0042f50a27fa462f8d1eaf851c4e810e1",
+      "baselineChecks": 157
+    },
+    {
+      "script": "scripts/round43-local-ruler-test.mjs",
+      "report": "playtest-output/round43-local-ruler/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "src-tests-scripts-locale-json",
+      "fields": [
+        "inputsBefore",
+        "inputsAfter"
+      ],
+      "legacyScriptSHA256": "b95d8deec0c25fb738de9a4b79a8ef4d9fa32e33597e0ace669d489a81793430",
+      "baselineChecks": 106
+    },
+    {
+      "script": "scripts/round44-role-routing-test.mjs",
+      "report": "playtest-output/round44-role-routing/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "src-tests-scripts-locale-json",
+      "fields": [
+        "inputsBefore",
+        "inputsAfter"
+      ],
+      "legacyScriptSHA256": "249da9b7259dbc32ce67ac2bdc0f82f7cc0fcc950d165c1d363b6641ee8a90e3",
+      "baselineChecks": 430
+    },
+    {
+      "script": "scripts/round45-role-reading-test.mjs",
+      "report": "playtest-output/round45-role-reading/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "src-tests-scripts-locale-json",
+      "fields": [
+        "inputsBefore",
+        "inputsAfter"
+      ],
+      "legacyScriptSHA256": "d50335ec04caf540ac06997ce7777a4d0d72157bf8850d8f42b771b8485c66bd",
+      "baselineChecks": 136
+    },
+    {
+      "script": "scripts/round45-visit-image-size-test.mjs",
+      "report": "playtest-output/round45-visit-image-size/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "src-tests-scripts-locale-json",
+      "fields": [
+        "inputsBefore",
+        "inputsAfter"
+      ],
+      "legacyScriptSHA256": "3536f2b57b44749232c00099fda645674622501d2a94d2ad9c1d7e4b93c8b454",
+      "baselineChecks": 110
+    },
+    {
+      "script": "scripts/round46-research-budget-test.mjs",
+      "report": "playtest-output/round46-research-budget/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "src-tests-scripts-locale-json",
+      "fields": [
+        "inputsBefore",
+        "inputsAfter"
+      ],
+      "legacyScriptSHA256": "3ebee9d00373714cec48ce66502a75200ae1f29e11ae6e2358f1100236634374",
+      "baselineChecks": 675
+    },
+    {
+      "script": "scripts/round47-window-readiness-test.mjs",
+      "report": "playtest-output/round47-window-readiness/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "src-tests-scripts-locale-json",
+      "fields": [
+        "inputsBefore",
+        "inputsAfter"
+      ],
+      "legacyScriptSHA256": "098fa29953cbba5fdb21f05f70a5ddc2fe5741b52c303a43b297d590084ab34b",
+      "baselineChecks": 541
+    },
+    {
+      "script": "scripts/round48-contract-priority-test.mjs",
+      "report": "playtest-output/round48-contract-priority/report.json",
+      "groups": [
+        "checks"
+      ],
+      "scheme": "src-tests-scripts-locale-json",
+      "fields": [
+        "inputsBefore",
+        "inputsAfter"
+      ],
+      "legacyScriptSHA256": "18bbf6207a8c7be897ea7a7b7a22d7abdf5e51f7610aa5166af331890f840f9e",
+      "baselineChecks": 2231
+    }
+  ]
+}

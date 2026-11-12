@@ -651,3 +651,14 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .contract-model dt{color:var(--gold);font-weight:600;margin-bottom:.35rem}
 .contract-model dd{margin:0}
 @media(max-width:420px){.decision-page [data-contract-core]{padding:.4rem 0}.decision-page [data-contract-core] [data-contract-material-risk]{padding-left:.4rem}}
+
+/* Iteration49 rebuilt teaching dates: native text, chronological order. */
+.teaching-timing-card { display:block; margin-top:.65rem; color:var(--ink); line-height:1.65; }
+.teaching-timing { margin:1.1rem 0; padding:1rem; border:1px solid #a79b70; border-radius:.45rem; background:#eee8d5; color:#263b35; overflow-wrap:anywhere; }
+.teaching-timing h2 { font-size:1.1rem; margin:0 0 .9rem; }
+.teaching-timing p { line-height:1.75; }
+.teaching-timing-line { list-style:none; padding:0 0 0 .65rem; margin:0; }
+.teaching-timing-line li { position:relative; border-left:1px solid #647f73; padding:0 0 1rem 1.1rem; }
+.teaching-timing-line li:last-child { padding-bottom:0; border-left-color:transparent; }
+.teaching-timing-line li::before { content:""; position:absolute; left:-.29rem; top:.35rem; width:.5rem; height:.5rem; border:1px solid #647f73; border-radius:50%; background:#eee8d5; }
+.teaching-timing-line strong,.teaching-timing-line span { display:block; }

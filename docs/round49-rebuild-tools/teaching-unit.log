@@ -1,0 +1,35 @@
+✔ current year10 chronological dates and immutable world (33.214141ms)
+✔ current year20 chronological dates and immutable world (18.104192ms)
+✔ current year30 chronological dates and immutable world (23.724279ms)
+✔ old workload year10 chronological dates and immutable world (14.060992ms)
+✔ old workload year20 chronological dates and immutable world (19.266385ms)
+✔ old workload year30 chronological dates and immutable world (25.262136ms)
+✔ legacy year10 chronological dates and immutable world (8.608923ms)
+✔ legacy year20 chronological dates and immutable world (14.181599ms)
+✔ legacy year30 chronological dates and immutable world (18.451405ms)
+✔ existing natural school retains maximum coverage (current) (17.284523ms)
+✔ existing natural school retains maximum coverage (old) (15.763652ms)
+✔ current public coverage agrees exactly without invented future output (12.564314ms)
+✔ available companion reads same timing with her own actor (11.172763ms)
+✔ unknown or unavailable request omitted {"actorId":"unknown"} (10.480232ms)
+✔ unknown or unavailable request omitted {"cellId":"D4"} (10.005382ms)
+✔ unknown or unavailable request omitted {"actionId":"authorize_training"} (9.924642ms)
+✔ unknown or unavailable request omitted {"actionId":"fund_school"} (9.818536ms)
+✔ incomplete or nonplanning state omitted null (0.142751ms)
+✔ incomplete or nonplanning state omitted {} (0.042132ms)
+✔ incomplete or nonplanning state omitted {"phase":"ended","year":20} (0.032297ms)
+✔ incomplete or nonplanning state omitted {"phase":"planning","year":15} (0.030075ms)
+✔ actual committed state is not a new available contract (9.849623ms)
+✔ frozen state remains readable (15.393396ms)
+✔ invalid view and mode omit markup (11.899996ms)
+✔ render escapes labels and actor-independent action attributes (44.248709ms)
+✔ legacy card identifies overall rules without regional coefficient promises (9.44822ms)
+✔ regional card does not mislabel current model as old (12.399751ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 517.856603

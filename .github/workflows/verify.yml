@@ -21,6 +21,7 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: npm run test:browser
+      - run: npm run test:teaching-timing
       - run: npm run test:outlook-matrix
       - uses: actions/upload-artifact@v4
         if: always()

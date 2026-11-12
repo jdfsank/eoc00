@@ -94,7 +94,8 @@
     "test:visit-image-size": "node scripts/round45-visit-image-size-test.mjs",
     "test:research-budget": "node scripts/round46-research-budget-test.mjs",
     "test:window-readiness": "node scripts/round47-window-readiness-test.mjs",
-    "test:contract-priority": "node scripts/round48-contract-priority-test.mjs"
+    "test:contract-priority": "node scripts/round48-contract-priority-test.mjs",
+    "test:teaching-timing": "node scripts/round49-teaching-timing-test.mjs"
   },
   "dependencies": {
     "phaser": "3.90.0"
