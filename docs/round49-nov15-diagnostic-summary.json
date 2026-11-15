@@ -1,0 +1,101 @@
+{
+  "title": "Fresh Nov15 validation FAILED; diagnostic observations are not acceptance",
+  "createdAt": "2026-11-15T21:53:49.218249+00:00",
+  "sourceCommit": "cc85590b684b7279e324a0e83e2bc4f7c56d80df",
+  "aggregate": {
+    "unitTests": 3095,
+    "unitPassed": 3095,
+    "unitExit": 0,
+    "buildExit": 0,
+    "browserExit": 1,
+    "completeReportsWithoutFailure": 72,
+    "failedSuite": "scripts/round42-local-cost-test.mjs",
+    "failure": "6000ms import toast-hidden timeout after943 passing checks",
+    "browserSuitesNotRun": 8,
+    "laterStagesNotRun": [
+      "teaching",
+      "matrix",
+      "tradeoffs",
+      "roles"
+    ]
+  },
+  "diagnostics": {
+    "unchangedOriginalSuite": {
+      "exit": 1,
+      "passedBeforeTimeout": 1599,
+      "failure": "same6000ms toast-hidden timeout at later point"
+    },
+    "longerObservationCopy": {
+      "exit": 0,
+      "checks": 2470,
+      "passed": 2470,
+      "toastObservations": 42,
+      "maxToastWaitMs": 5536,
+      "limit": "15-second observation only; NOT original-suite or aggregate pass"
+    },
+    "originalBoundObserverCopy": {
+      "exit": 1,
+      "passedBeforeTimeout": 1551,
+      "label": "current-ready-1280-200",
+      "waitElapsedMs": 6005,
+      "domToastLifetimeMs": 3500.2,
+      "toastAbsentAfterFailure": true,
+      "maxRecordedLongTaskMs": 73,
+      "interpretation": "DOM removal observed around3500ms despite6000ms wait timeout. Suggests automation observation/scheduling discrepancy; exact cause unresolved. Does not waive failure."
+    }
+  },
+  "frozenInputCount": 646,
+  "frozenMismatches": [],
+  "publicationScope": "This new summary only. Raw new logs remain local; hashes do not imply upload. No retry of uncertain Nov12 bulk uploads. Candidate and main not moved.",
+  "files": {
+    "validation/unit.log": {
+      "sha256": "173ac69b4076806120f5e358d6b5b0e3c264ed2cf333aeca69835afadc9cc890",
+      "bytes": 307698
+    },
+    "validation/build.log": {
+      "sha256": "5180edf8591e3c66233d3a0bae599995995b25b1da056b16f5c83c2e8a9eaa26",
+      "bytes": 1098
+    },
+    "validation/browser.log": {
+      "sha256": "717ad5a5b7884d784468a0d60c423ee509d70b0227dc007a544f681e66f8df23",
+      "bytes": 2706986
+    },
+    "validation/freeze.json": {
+      "sha256": "fd5c602c5289e8e08e126ec4ec8fe4e21b8db3be44e1ec352fb69880b1f9d21e",
+      "bytes": 74333
+    },
+    "diagnostic/round42.log": {
+      "sha256": "b716dba66cddf8de7a983385c16f816e54ba5aa8ed03f27aa28ac401108f7e7f",
+      "bytes": 2330
+    },
+    "diagnostic/round42/report.json": {
+      "sha256": "f6fa8f4af8bf285f36c3f4bcc9e43ba656d92b7afa9b9b9e91476e384bab546b",
+      "bytes": 203695
+    },
+    "diagnostic/round42-long-observation.log": {
+      "sha256": "3bac79a9905343928b276dced8e62faddcaf86431e8dc0f0ef669e0b1594a663",
+      "bytes": 80
+    },
+    "diagnostic/round42-long-observation/report.json": {
+      "sha256": "3d116fca20a4fa183ed581e5f28effa8e3a228b5d93d2e8d673f61731b3ca524",
+      "bytes": 290296
+    },
+    "diagnostic/round42-observer.log": {
+      "sha256": "cd803dfcb4d3049399029cf7588da65a528d7fa73fcd05445f462744f79c9f4b",
+      "bytes": 2302
+    },
+    "diagnostic/round42-observer/report.json": {
+      "sha256": "d69b14690f8df202a5b9a5c51edbec9786d30b5d346092b73b183e37ccc12cd2",
+      "bytes": 234550
+    },
+    "failed-aggregate-raw.tar.gz": {
+      "sha256": "81affd5109577f3b22eed98a5964335d802e6412920da52c2fd17f9a06417b19",
+      "bytes": 1975209
+    },
+    "failed-aggregate-manifest.json": {
+      "sha256": "7f633b33ab4822df83bd4b4f3ebeb11e839af1d1a9cb77f2efc570940868e768",
+      "bytes": 36158
+    }
+  },
+  "next": "Preserve failures, investigate wait discrepancy without weakening original assertions, then rerun full unchanged chain. Never stitch diagnostics into aggregate. Historical two optional coverage gaps remain separate."
+}
