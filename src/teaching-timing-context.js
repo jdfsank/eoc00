@@ -17,6 +17,7 @@ export function getTeachingTimingContext(state, {actorId,cellId,actionId} = {}) 
   return {actorId,cellId,actionId,year,dueYear,crisisYear,model:legacy?'legacy-overall':'regional',
    currentCoverage:current,conditionalCoverage:legacy?null:Math.max(current,COVERAGE_RULES.localTeaching),
    schoolCoverage:legacy?null:COVERAGE_RULES.localTeaching,
+   conditionalIncrease:legacy?null:Number((Math.max(current,COVERAGE_RULES.localTeaching)-current).toFixed(4)),
    timing:dueYear<crisisYear?`第${dueYear}年教学开始，早于第23年危机；不是提交当年立刻兑现。`:`第${dueYear}年教学开始，不能降低已经记下的第23年损失。`,
    events:[{year:dueYear,label:'合同兑现后教学开始'},{year:crisisYear,label:year>crisisYear?'危机已发生，旧损失不回写':'危机按当年实际运行结算'}].sort((a,b)=>a.year-b.year)};
  } catch { return null; }

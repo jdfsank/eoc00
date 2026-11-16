@@ -26,3 +26,40 @@ test('render escapes labels and actor-independent action attributes',()=>{const 
 
 test('legacy card identifies overall rules without regional coefficient promises',()=>{const card=renderTeachingTiming(context(at(20,legacy)),'card');assert.match(card,/旧档仍按整体规则结算/);assert.ok(!card.includes('0.55'));});
 test('regional card does not mislabel current model as old',()=>{const card=renderTeachingTiming(context(at(20)),'card');assert.ok(!card.includes('旧档'));assert.match(card,/第21年/);});
+
+// Candidate1: explicitly conditional comparison, never an additional settlement.
+test('new natural school exposes current, conditional and added coverage separately',()=>{
+ const s=at(20),before=JSON.stringify(s),v=context(s),html=renderTeachingTiming(v);
+ assert.equal(v.conditionalIncrease,.55);assert.equal(JSON.stringify(s),before);
+ for(const attr of ['data-teaching-current','data-teaching-assumptions','data-teaching-conditional','data-teaching-delta'])assert.ok(html.includes(attr));
+ assert.ok(html.indexOf('data-teaching-assumptions')<html.indexOf('data-teaching-conditional'));
+ assert.match(html,/此假设下新增覆盖系数/);assert.ok(!html.includes('data-teaching-zero-increase'));
+});
+test('natural existing school says zero increase without denying other contract benefits',()=>{
+ const s=at(20,api,true),v=context(s),html=renderTeachingTiming(v);assert.equal(v.conditionalIncrease,0);
+ assert.match(html,/此假设下当地覆盖不增加；不代表没有其他合同收益/);
+ assert.match(html,/当地取最高值，同地载体不叠加/);
+});
+test('detached coverage boundaries retain higher existing coverage and round only display precision',()=>{
+ let higherCases=0;
+ for(const current of [0,.3333,.55,.65,1]){
+  const s=at(20,api,true),school=s.institutions.find(i=>i.kind==='school'&&i.cellId==='E4');
+  // Isolated arithmetic boundary, not a claimed naturally playable state.
+  school.kind='station';school.open=true;school.maintenance=current;
+  const actual=api.getWarningCoverage(s).E4.coverage,v=context(s);assert.ok(v);
+  assert.equal(v.currentCoverage,actual);assert.equal(v.conditionalCoverage,Math.max(actual,.55));
+  assert.equal(v.conditionalIncrease,Number((Math.max(actual,.55)-actual).toFixed(4)));
+  if(actual>.55){higherCases++;assert.equal(v.conditionalCoverage,actual);assert.equal(v.conditionalIncrease,0);}
+  assert.ok(!renderTeachingTiming(v).includes('000000000000'));
+ }
+ assert.ok(higherCases>0,'At least one detached boundary must actually exceed school coverage');
+});
+test('legacy cards and contracts contain no regional comparison or delta',()=>{
+ const v=context(at(20,legacy));assert.equal(v.conditionalIncrease,null);
+ for(const mode of ['card','contract']){const html=renderTeachingTiming(v,mode);assert.ok(!html.includes('data-teaching-coverage'));assert.ok(!html.includes('data-teaching-delta'));assert.ok(!html.includes('0.55'));assert.match(html,/整体/);}
+});
+test('year30 historical boundary precedes comparison and preserves chronological order',()=>{
+ const v=context(at(30)),html=renderTeachingTiming(v);assert.match(html,/以下仅说明后续服务，不改第23年记录/);
+ assert.ok(html.indexOf('data-teaching-history-boundary')<html.indexOf('data-teaching-current'));
+ assert.deepEqual(v.events.map(e=>e.year),[23,31]);assert.match(html,/不能降低已经记下的第23年损失/);
+});
