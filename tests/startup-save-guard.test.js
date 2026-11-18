@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createStartupSaveGuard} from '../src/startup-save-guard.js';
+const restore=v=>{if(!v?.valid)throw Error('invalid');return v;};
+function setup(raw){let value=raw;return {storage:{getItem:()=>value,setItem:(k,v)=>{value=v;}},read:()=>value,set:v=>{value=v;}};}
+for(const raw of ['{broken','null','{}','false','[]'])test(`preserves invalid startup ${raw}`,()=>{const t=setup(raw),g=createStartupSaveGuard(t.storage,'k',restore);assert.equal(g.blocked,true);assert.equal(g.save({valid:true}),false);assert.equal(t.read(),raw);assert.equal(g.raw,raw);});
+test('missing startup permits normal save',()=>{const t=setup(null),g=createStartupSaveGuard(t.storage,'k',restore);assert.equal(g.blocked,false);g.save({valid:true});assert.equal(t.read(),'{"valid":true}');});
+test('valid startup restores without rewriting',()=>{const raw=' {"valid": true} ',t=setup(raw),g=createStartupSaveGuard(t.storage,'k',restore);assert.deepEqual(g.loaded,{valid:true});assert.equal(t.read(),raw);});
+test('read permission failure blocks all writes and replacement',()=>{let writes=0;const g=createStartupSaveGuard({getItem:()=>{throw Error('SecurityError');},setItem:()=>writes++},'k',restore);assert.equal(g.kind,'unreadable');assert.equal(g.raw,null);g.save({valid:true});assert.throws(()=>g.replace({valid:true}));assert.equal(writes,0);});
+test('invalid replacement leaves original bytes',()=>{const t=setup('bad'),g=createStartupSaveGuard(t.storage,'k',restore);assert.throws(()=>g.replace({valid:false}));assert.equal(t.read(),'bad');});
+test('explicit valid replacement releases guard once',()=>{const t=setup('bad'),g=createStartupSaveGuard(t.storage,'k',restore);g.replace({valid:true});assert.equal(g.blocked,false);assert.equal(t.read(),'{"valid":true}');assert.throws(()=>g.replace({valid:true}));});
+test('another tab changing the save prevents overwrite',()=>{const t=setup('bad'),g=createStartupSaveGuard(t.storage,'k',restore);t.set('new-other-tab');assert.throws(()=>g.replace({valid:true}),/其他页面/);assert.equal(t.read(),'new-other-tab');});
+test('quota failure preserves blocked state and original bytes',()=>{const t=setup('bad');t.storage.setItem=()=>{throw Error('QuotaExceededError');};const g=createStartupSaveGuard(t.storage,'k',restore);assert.throws(()=>g.replace({valid:true}));assert.equal(g.blocked,true);assert.equal(t.read(),'bad');});
+test('unconfirmed readback never reports replacement success',()=>{const t=setup('bad');t.storage.setItem=()=>{};const g=createStartupSaveGuard(t.storage,'k',restore);assert.throws(()=>g.replace({valid:true}),/无法确认/);assert.equal(g.blocked,true);});
