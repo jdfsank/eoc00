@@ -4,7 +4,7 @@
  */
 export function createSaveCoordinator({initialRaw, read, write, acquire,
   lockName = 'afterwave-save:afterwave.save.v1', timeoutMs = 8000,
-  clock = {setTimeout, clearTimeout}}) {
+  clock = {setTimeout:(...args)=>globalThis.setTimeout(...args), clearTimeout:id=>globalThis.clearTimeout(id)}}) {
   if (initialRaw !== null && typeof initialRaw !== 'string') throw new TypeError('initialRaw');
   if (typeof read !== 'function' || typeof write !== 'function') throw new TypeError('storage');
   if (!Number.isFinite(timeoutMs) || timeoutMs <= 0) throw new TypeError('timeoutMs');
@@ -46,13 +46,17 @@ export function createSaveCoordinator({initialRaw, read, write, acquire,
     if (reason) { stopAll(reason); return; }
     const job = active = queue.shift();
     job.controller = new AbortController();
-    job.timer = clock.setTimeout(() => {
+    try { job.timer = clock.setTimeout(() => {
       if (job.done) return;
       // Invalidate before signal delivery and before allowing the next request.
       job.done = true; active = null;
       job.controller.abort(); lastError = 'timeout';
       job.resolve({ok:false, reason:'timeout', id:job.id}); pump();
-    }, timeoutMs);
+    }, timeoutMs); } catch {
+      // Initialization can fail before a lock is requested (e.g. timer receiver).
+      // Invalidate even a partially registered timer and release active promptly.
+      finish(job,{ok:false,reason:'timer-failed'}); return;
+    }
     const commit = () => {
       if (job.done || active !== job || unavailable()) return;
       let current;

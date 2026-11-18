@@ -680,3 +680,11 @@ button,a,input,select,summary { scroll-margin-block:8px; }
 .teaching-reading-group h3 { scroll-margin-top:1rem; font-size:1rem; }
 .teaching-reading-group h3:focus { outline:3px solid #647f73; outline-offset:.25rem; }
 .teaching-reading-back { color:#263b35; white-space:normal; text-align:left; }
+/* Persistent compact footer: no pending/error insertion shifts game controls. */
+body{padding-bottom:68px}
+.storage-bar{position:fixed;bottom:0;left:0;right:0;height:64px;box-sizing:border-box;z-index:50;display:flex;align-items:center;justify-content:center;gap:6px;padding:4px 8px;background:#18383e;border-top:1px solid #766d60;color:#eaf0e4}
+.storage-bar [data-save-status]{white-space:nowrap}
+.storage-bar button{min-height:44px;padding:2px 8px;margin:0;font-size:inherit;line-height:1.2;white-space:nowrap}
+.storage-dialog{max-width:min(90vw,36rem);max-height:85vh;overflow:auto}
+.storage-dialog::backdrop{background:#0008}
+html{scroll-padding-bottom:72px}

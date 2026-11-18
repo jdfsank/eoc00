@@ -40,3 +40,16 @@ test('invalid values and snapshots cannot mutate coordination state',async()=>{c
 test('timeout invalidates before synchronous abort callback',async()=>{const f=fixture();const a=f.api.save('A');f.calls[0].options.signal.addEventListener('abort',()=>f.calls[0].fn());f.tick();assert.equal((await a).reason,'timeout');assert.equal(f.writes,0);});
 test('null initial bytes can create a save but deletion after that conflicts',async()=>{let disk=null;const f=fixture({initialRaw:null,read:()=>disk,write:v=>{disk=v;}});const a=f.api.save('A');f.grant();assert.equal((await a).ok,true);disk=null;assert.equal(f.api.observeExternal().reason,'conflict');});
 test('synchronous lock provider failure never writes',async()=>{const f=fixture({acquire:()=>{throw Error('denied');}});assert.equal((await f.api.save('A')).reason,'lock-failed');assert.equal(f.writes,0);});
+
+test('timer initialization failure releases active, prevents late effects and permits retry',async()=>{
+ let calls=0,late;
+ const clock={setTimeout(fn){calls++;if(calls===1){late=fn;throw Error('injected timer setup failure');}return calls;},clearTimeout(){}};
+ const f=fixture({clock});
+ const failed=await f.api.save('A');
+ assert.equal(failed.reason,'timer-failed');assert.equal(f.api.snapshot().pending,0);
+ assert.equal(f.calls.length,0);assert.equal(f.writes,0);
+ const retry=f.api.save('B');assert.equal(f.api.snapshot().pending,1);
+ late();assert.equal(f.api.snapshot().pending,1);assert.equal(f.writes,0);
+ f.grant();assert.equal((await retry).ok,true);assert.equal(f.disk,'B');
+ assert.equal(f.api.snapshot().pending,0);assert.equal(f.writes,1);
+});
