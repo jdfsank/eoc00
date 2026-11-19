@@ -90,13 +90,23 @@ function cancelImport(){importRequests.invalidate();setImportReading(false);}
 let storageBusy=false,suppressAutoSave=false,saveSequence=0,settledSaveSequence=0;
 const startupGuard=createStartupSaveGuard({getItem:key=>localStorage.getItem(key)},KEY,restoreSave,coordinatedCommit);
 const saveWriter=createSaveCoordinator({initialRaw:startupGuard.raw,read:()=>localStorage.getItem(KEY),write:raw=>localStorage.setItem(KEY,raw),acquire:navigator.locks?.request?navigator.locks.request.bind(navigator.locks):undefined});
-const storageBar=document.createElement('aside');storageBar.className='storage-bar';storageBar.setAttribute('aria-label','本地存档状态');storageBar.innerHTML='<span data-save-status role="status" aria-live="polite" aria-atomic="true">本地保存</span><button type="button" data-action="save-details">详情</button><button type="button" data-action="cancel-save" disabled>取消</button>';
+const storageBar=document.createElement('aside');storageBar.className='storage-bar';storageBar.setAttribute('aria-label','本地存档状态');storageBar.innerHTML='<span data-save-status role="status" aria-live="polite" aria-atomic="true">本地保存</span><button type="button" data-action="save-details">详情</button><button type="button" data-action="cancel-save" aria-label="取消等待保存" disabled>取消</button>';
 document.body.append(storageBar);
-const storageDialog=document.createElement('dialog');storageDialog.className='storage-dialog';storageDialog.innerHTML='<h2>本地存档状态</h2><p></p><form method="dialog"><button>关闭</button></form>';document.body.append(storageDialog);
+const storageDialog=document.createElement('dialog');storageDialog.className='storage-dialog';storageDialog.setAttribute('aria-labelledby','storage-dialog-title');storageDialog.innerHTML='<h2 id="storage-dialog-title" tabindex="-1" autofocus>本地存档状态</h2><p class="storage-dialog-body" tabindex="0" aria-label="保存状态说明"></p><form method="dialog"><button>关闭</button></form><span class="storage-dialog-announcement" role="status" aria-live="polite" aria-atomic="true"></span>';document.body.append(storageDialog);
 function storageReadOnly(){const v=saveWriter.snapshot();return v.closed||v.conflicted||v.blocked||!v.supported;}
 function storageReason(reason){return ({timeout:'等待保存超时，未提交此项写入。请导出当前进度，解除其他页面占用后再操作重试。',cancelled:'已取消等待中的保存；已完成的写入不会撤销。请导出当前进度，避免关闭后丢失。',conflict:'其他页面已更改存档。本页已停止写入，内存进度仍保留。请导出本页进度，再刷新核对。',closed:'此页面已经离开，返回后只读。请导出本页进度，再刷新核对。',unsupported:'浏览器不支持安全跨页保存，本页只读。请导出进度，并使用支持 Web Locks 的安全浏览器。',uncertain:'无法核实磁盘中的存档，本页已停止写入。请保留原始数据并导出本页进度，再刷新核对。'})[reason]||'浏览器未能保存。请导出当前进度，恢复存储空间或权限后再操作重试。';}
-function refreshStorageStatus(){const v=saveWriter.snapshot(),pending=v.pending>0;storageBar.querySelector('[data-save-status]').textContent=pending?'等待保存':saveIssue||storageReadOnly()?'未保存':'本地保存';storageBar.querySelector('[data-action="cancel-save"]').disabled=!pending;storageBar.querySelector('[data-save-status]').setAttribute('aria-label',pending?'正在等待保存，可取消等待':saveIssue||'本地保存');}
-storageBar.addEventListener('click',event=>{const action=event.target.closest('[data-action]')?.dataset.action;if(action==='cancel-save'){saveWriter.cancelPending();updateSaveIssue(storageReason('cancelled'));}if(action==='save-details'){storageDialog.querySelector('p').textContent=saveIssue||(saveWriter.snapshot().pending?'正在等待同源页面释放保存锁；可取消等待，不会撤销已经完成的写入。':'本页使用合作式跨页锁保存。旧版无锁页面仍可能覆盖存档，请关闭旧页面。');storageDialog.showModal();}});
+function storagePresentation(){
+ const v=saveWriter.snapshot();
+ if(v.pending)return {label:'等待保存',description:'正在等待保存，可取消等待；取消不会撤销已经完成的写入。'};
+ if(saveIssue||storageReadOnly())return {label:'未保存',description:saveIssue||storageReason(v.lastError||(!v.supported?'unsupported':'closed'))};
+ if(startupGuard.blocked)return {label:'保存暂停',description:startupGuard.kind==='unreadable'?'无法读取浏览器存储，不能确认原始数据；自动保存已暂停。请恢复存储权限后刷新。':'原存档无法读取，自动保存已暂停，原始数据尚未被此页面覆盖。请先下载原始数据，再明确选择恢复方式。'};
+ return {label:'本地保存',description:'本页使用合作式跨页锁保存。旧版无锁页面仍可能覆盖存档，请关闭旧页面。'};
+}
+let storageDialogAnnouncement='';
+storageDialog.addEventListener('close',()=>{storageDialogAnnouncement='';storageDialog.querySelector('.storage-dialog-announcement').textContent='';});
+function refreshStorageDialog(presentation){if(!storageDialog.open)return;const announcement=presentation.label+'。'+presentation.description;if(announcement!==storageDialogAnnouncement){storageDialogAnnouncement=announcement;storageDialog.querySelector('.storage-dialog-announcement').textContent=announcement;}const body=storageDialog.querySelector('p'),title=storageDialog.querySelector('h2');if(body.textContent!==presentation.description){const scroll=body.scrollTop;body.textContent=presentation.description;body.scrollTop=scroll;}if(title.textContent!==presentation.label){title.textContent=presentation.label;title.setAttribute('aria-label','本地存档状态：'+presentation.label+'。状态更新，详细说明可滚动阅读。');}}
+function refreshStorageStatus(){const v=saveWriter.snapshot(),presentation=storagePresentation(),status=storageBar.querySelector('[data-save-status]');if(status.textContent!==presentation.label)status.textContent=presentation.label;storageBar.querySelector('[data-action="cancel-save"]').disabled=!v.pending;status.setAttribute('aria-label',presentation.description);refreshStorageDialog(presentation);}
+storageBar.addEventListener('click',event=>{const action=event.target.closest('[data-action]')?.dataset.action;if(action==='cancel-save'){saveWriter.cancelPending();updateSaveIssue(storageReason('cancelled'));}if(action==='save-details'){storageDialog.querySelector('p').textContent=storagePresentation().description;storageDialog.showModal();refreshStorageDialog(storagePresentation());storageDialog.querySelector('h2').focus({preventScroll:true});storageDialog.querySelector('p').scrollTo({top:0,behavior:'instant'});storageDialog.scrollTop=0;}});
 async function coordinatedCommit(raw){const number=++saveSequence;const pending=saveWriter.save(raw);refreshStorageStatus();const result=await pending;if(number>=settledSaveSequence){settledSaveSequence=number;updateSaveIssue(result.ok?'':storageReason(result.reason));}if(storageReadOnly())stop();refreshStorageStatus();if(!result.ok)throw Error(storageReason(result.reason));return true;}
 
 if(startupGuard.loaded)({state,ui}=startupGuard.loaded);state??=createRun(12);
@@ -106,12 +116,20 @@ async function persist(value){return startupGuard.save(value);}
 function updateSaveIssue(text){saveIssue=text;refreshStorageStatus();}
 async function save(){if(startupGuard.blocked||storageBusy||suppressAutoSave)return false;try{return await persist({state,ui});}catch{return false;}}
 function recoveryPage(){return `<main class="page narrow recovery-page" data-save-recovery><span class="eyebrow">PRESERVATION</span><h1>先保留原来的历史。</h1><p role="alert">${startupGuard.kind==='invalid'?'存档无法读取。原始数据尚未被此页面覆盖，自动保存已暂停。':'浏览器存储无法读取。无法确认原始数据，自动保存已暂停；请恢复存储权限后刷新。'}</p><p>这里还没有开始新历史。原始数据下载只保存原文，不保证能够修复。</p>${recoveryError?`<p role="alert">${esc(recoveryError)}</p>`:''}<div class="settings-actions">${button(ui.bigText?'恢复标准字号':'启用 200% 字号','recovery-text')}${startupGuard.raw!==null?button('下载原始存档数据','recovery-export'):''}${startupGuard.kind==='invalid'?`<label class="file-button">导入有效存档并替换原数据<input id="import-save" type="file" accept="application/json,.json"></label>${button('放弃原数据并开始新历史（先确认）','recovery-confirm','','secondary')}`:''}</div><p data-import-status role="status" aria-live="polite"${importReading?'':' hidden'}>${importReading?esc(importReadingText):''}</p>${recoveryConfirm?`<section class="notice" data-recovery-confirm><h2>确认替换原始数据？</h2><p>将以种子12开始新历史并替换此浏览器的原存档。请先下载原始数据；取消不会覆盖它。</p>${button('确认替换并开始','recovery-replace')}${button('取消，保留原数据','recovery-cancel','','secondary')}</section>`:''}</main>`;}
+function focusRecoveryDestination(completed=false){
+ const visible=el=>el?.isConnected&&!el.disabled&&el.getClientRects().length>0&&getComputedStyle(el).visibility!=='hidden';
+ const trigger=completed?null:ROOT.querySelector('[data-action="recovery-confirm"]');
+ const target=[trigger,ROOT.querySelector('[data-save-recovery] h1'),ROOT.querySelector('[data-primary-action]'),ROOT.querySelector('main h1,main'),storageBar.querySelector('[data-action="save-details"]')].find(visible);
+ if(!target)return;
+ if(!target.matches('button,a,input,select,textarea,[tabindex]'))target.setAttribute('tabindex','-1');
+ target.focus();
+}
 async function recoveryClick(a){
  if(a==='recovery-text'){ui.bigText=!ui.bigText;render();}
  else if(a==='recovery-export'&&startupGuard.raw!==null){const url=URL.createObjectURL(new Blob([startupGuard.raw],{type:'application/octet-stream'})),link=document.createElement('a');link.href=url;link.download='afterwave-unreadable-original.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),2000);}
  else if(a==='recovery-confirm'){cancelImport();recoveryConfirm=true;render();ROOT.querySelector('[data-action="recovery-replace"]')?.focus();}
- else if(a==='recovery-cancel'){recoveryConfirm=false;render();}
- else if(a==='recovery-replace'&&recoveryConfirm){try{const replacement={state:createRun(12),ui:createUi()};storageBusy=true;await startupGuard.replace(replacement);recoveryConfirm=false;({state,ui}=replacement);render();}catch(e){recoveryError=e.message;recoveryConfirm=false;render();}finally{storageBusy=false;refreshStorageStatus();}}
+ else if(a==='recovery-cancel'){recoveryConfirm=false;render();focusRecoveryDestination();}
+ else if(a==='recovery-replace'&&recoveryConfirm){try{const replacement={state:createRun(12),ui:createUi()};storageBusy=true;await startupGuard.replace(replacement);recoveryConfirm=false;({state,ui}=replacement);render();focusRecoveryDestination(true);}catch(e){recoveryError=e.message;recoveryConfirm=false;render();focusRecoveryDestination();}finally{storageBusy=false;refreshStorageStatus();}}
 }
 
 function button(label,action,extra='',className=''){return `<button class="${className}" data-action="${action}" ${extra}>${label}</button>`;}
@@ -237,6 +255,12 @@ function successionContextPanel(cellId='D4',actorId='protagonist'){
  const context=getSuccessionSceneContext(state,cellId,actorId);
  return context?`<aside class="succession-context" data-succession-context><h2>${esc(context.title)}</h2>${context.body.map(p=>`<p>${esc(p)}</p>`).join('')}</aside>`:'';
 }
+function buildingComparisonSummary(available,investigation){
+ const options={cellId:ui.selected,actorId:selectedActor().id,legacyEvidence:investigation.evidence};
+ const contracts=available.map(a=>({a,contract:getBuildingContract(state,a.id,options)})).filter(row=>row.contract);
+ if(!contracts.length)return '';
+ return `<section class="building-comparison-summary" aria-labelledby="building-comparison-title" data-building-comparison><h2 id="building-comparison-title">三种建站 · 并列核对</h2><p>每人每窗口一项。以下是合同条件，尚未兑现；查看不取证、不锁定。</p><p class="building-common-terms" data-comparison-common-terms><strong>三种方案共同的失败结果</strong>到期都只判定一次；若失败，仍在D4留下小型档案站，已付成本不退，原教学与分站链不启动。</p><div class="building-comparison-grid">${contracts.map(({a,contract})=>`<article data-comparison-action="${esc(a.id)}"><h3>${esc(a.title)}</h3><dl><div><dt>提交成本与名额</dt><dd>${esc(costText(a.cost))}；本窗口 1 次介入</dd></div><div><dt>结果与发生时间</dt><dd>${esc(chanceText(a))}</dd></div><div><dt>若合同兑现</dt><dd>${esc(contract.displayReward)}</dd></div><div><dt>仍需承担</dt><dd>${esc(contract.displayRisk)}</dd></div></dl>${button('定位完整方案','scene-choice',`data-id="${esc(a.id)}" aria-label="定位完整方案：${esc(a.title)}"`,'secondary')}</article>`).join('')}</div></section>`;
+}
 function avg(){
  const art=sceneArt(state,ui.selected),actor=selectedActor().id;
  const s=sceneFor(state,ui.selected,actor),crisisContext=getCrisisSceneContext(state,ui.selected,actor),ses=session(),refusals=getActorRefusals(state,actor,ui.selected);
@@ -255,7 +279,7 @@ function avg(){
   const done=ses.evidence.includes(id),material=plan?.materials.find(item=>item.id===id),purpose=intent?.evidence.find(item=>item.id===id);
   return `<details class="evidence${material?' planned-evidence':''}" data-evidence-id="${id}" ${done?'open':''}><summary>${material?renderMaterialSummary(material,plan,purpose):`${done?'✓ ':''}${esc(evidenceTitleFor(state,id,ui.selected,actor))}`}</summary>${done?`<p>${esc(evidenceFor(state,id,ui.selected,actor).text)}</p>`:`${material?renderMaterialDecision(material,plan,purpose):'<p>取证后可阅读完整材料；不一定用于本地当前方案。</p>'}${renderCrossLocationInvestigation(crossLocation,id)}${button(`调查这份材料 · ${evidenceCost(state,id)}轮`,'evidence',`data-id="${id}" ${ses.budget<evidenceCost(state,id)?'disabled':''}`)}`}${evidenceBookmarkMarkup(id)}</details>`;
  }).join('')}</section>`;
- return `<section class="page reading scene-planning-page">${back()}<div class="reading-meta">${tag(`${ui.selected} · 第 ${state.year} 年`)}${tag(selectedActor().name)}${tag('尚未提交','gold')}</div><nav class="scene-reading-nav" aria-label="现场阅读导航">${button('先看方案 · 免费','scene-section','data-section="choices"','primary')}${button('查看取证用途','scene-section','data-section="materials"','secondary')}<p>跳转不调查、不改安排；故事和材料仍完整保留。</p></nav><div class="scene-art${art.captionBelow?' caption-below':''}"><img src="${import.meta.env.BASE_URL}assets/${art.file}" alt="${esc(art.alt)}" width="1000" height="500" data-intrinsic-scene-size><span>${esc(s.subtitle)} · ${esc(art.caption)}</span></div>${sceneArtDetail(art)}<div class="prose scene-testimony"><header class="scene-voice-heading" data-scene-voice-heading><span class="eyebrow">${esc(s.speaker)}</span><h1 data-scene-section="story" tabindex="-1">${esc(s.title)}</h1></header>${s.body.map(p=>`<p>${esc(p)}</p>`).join('')}${s.relationship?`<section class="notice relationship-response"><h2>${esc(s.relationship.title)}</h2><p>${esc(s.relationship.text)}</p><div class="button-row">${s.relationship.sources.map(id=>button('查看这段关系的实际来源','trace',`data-id="${esc(id)}"`,'text-button')).join('')}</div></section>`:''}${crisisContext?.body.map(p=>`<p data-crisis-scene-context>${esc(p)}</p>`).join('')||''}<p class="question"${crisisContext?' data-crisis-scene-question':''}>${esc(crisisContext?.question||s.question)}</p></div><div class="scene-story-return">${button('回看方案与取舍 · 免费','scene-section','data-section="choices"','secondary')}</div>${successionContextPanel(ui.selected,actor)}${relocationDestinationPanel(ui.selected)}${refusals.map(r=>`<section class="notice actor-refusal"><h2 data-actor-agency-target="reason" tabindex="-1">${esc(r.title)}</h2><p data-actor-refusal-reason>${esc(r.reason)}</p><p>这项立场只约束她自己的执行，不替主角作决定。查看理由不消耗调查、不扣费，也不占用本窗口名额；可以选择其余行动或明确放弃。</p>${r.sourceEventId?button('查看当年的入局承诺','trace',`data-id="${esc(r.sourceRecordId||r.sourceEventId)}"`,'text-button'):''}<button class="text-button actor-agency-return" data-actor-agency-link="summary">返回方案旁的立场提示</button></section>`).join('')}${choices}${investigationComparisonPanel()}${materials}${past?`<details class="planning-history"><summary>回看第23年已存清点 · 不改变当前选择</summary>${past}</details>`:''}${button('核对本轮安排','window','','secondary')}</section>`;
+ return `<section class="page reading scene-planning-page">${back()}<div class="reading-meta">${tag(`${ui.selected} · 第 ${state.year} 年`)}${tag(selectedActor().name)}${tag('尚未提交','gold')}</div><nav class="scene-reading-nav" aria-label="现场阅读导航">${button('先看方案 · 免费','scene-section','data-section="choices"','primary')}${button('查看取证用途','scene-section','data-section="materials"','secondary')}<p>跳转不调查、不改安排；故事和材料仍完整保留。</p></nav>${buildingChoices?buildingComparisonSummary(available,ses):''}<div class="scene-art${art.captionBelow?' caption-below':''}"><img src="${import.meta.env.BASE_URL}assets/${art.file}" alt="${esc(art.alt)}" width="1000" height="500" data-intrinsic-scene-size><span>${esc(s.subtitle)} · ${esc(art.caption)}</span></div>${sceneArtDetail(art)}<div class="prose scene-testimony"><header class="scene-voice-heading" data-scene-voice-heading><span class="eyebrow">${esc(s.speaker)}</span><h1 data-scene-section="story" tabindex="-1">${esc(s.title)}</h1></header>${s.body.map(p=>`<p>${esc(p)}</p>`).join('')}${s.relationship?`<section class="notice relationship-response"><h2>${esc(s.relationship.title)}</h2><p>${esc(s.relationship.text)}</p><div class="button-row">${s.relationship.sources.map(id=>button('查看这段关系的实际来源','trace',`data-id="${esc(id)}"`,'text-button')).join('')}</div></section>`:''}${crisisContext?.body.map(p=>`<p data-crisis-scene-context>${esc(p)}</p>`).join('')||''}<p class="question"${crisisContext?' data-crisis-scene-question':''}>${esc(crisisContext?.question||s.question)}</p></div><div class="scene-story-return">${button('回看方案与取舍 · 免费','scene-section','data-section="choices"','secondary')}</div>${successionContextPanel(ui.selected,actor)}${relocationDestinationPanel(ui.selected)}${refusals.map(r=>`<section class="notice actor-refusal"><h2 data-actor-agency-target="reason" tabindex="-1">${esc(r.title)}</h2><p data-actor-refusal-reason>${esc(r.reason)}</p><p>这项立场只约束她自己的执行，不替主角作决定。查看理由不消耗调查、不扣费，也不占用本窗口名额；可以选择其余行动或明确放弃。</p>${r.sourceEventId?button('查看当年的入局承诺','trace',`data-id="${esc(r.sourceRecordId||r.sourceEventId)}"`,'text-button'):''}<button class="text-button actor-agency-return" data-actor-agency-link="summary">返回方案旁的立场提示</button></section>`).join('')}${choices}${investigationComparisonPanel()}${materials}${past?`<details class="planning-history"><summary>回看第23年已存清点 · 不改变当前选择</summary>${past}</details>`:''}${button('核对本轮安排','window','','secondary')}</section>`;
 }
 // Decision stages share the same contract, but do not make players reread the
 // full source dossier just to save a reversible draft. No game state is written.
@@ -472,7 +496,7 @@ function focusTarget(){
  if(!selector)return null;
  return {selector,index:[...ROOT.querySelectorAll(selector)].indexOf(element)};
 }
-function render({focusTo=null,preserveFocus=true}={}){
+function render({focusTo=null,preserveFocus=true,persist=true}={}){
  if(startupGuard.blocked){ui.screen='settings';document.documentElement.classList.toggle('large-text',ui.bigText);ROOT.innerHTML=recoveryPage();return;}
  if(draftEdit&&(draftEdit.state!==state||draftEdit.year!==state.year||draftEdit.actorId!==ui.actor||!getDraftEditContext(state,ui.actor)))draftEdit=null;
  cancelNewRun();
@@ -497,7 +521,7 @@ function render({focusTo=null,preserveFocus=true}={}){
  for(const index of endingDetailIndexes){const details=ROOT.querySelectorAll('.ending details')[index];if(details)details.open=true;}
  const target=focusTo?ROOT.querySelector(focusTo):previousFocus?ROOT.querySelectorAll(previousFocus.selector)[previousFocus.index]:null;
  if(target&&!target.disabled)target.focus({preventScroll:true});
- save();
+ if(persist)save();
 }
 function go(screen){
  if(['window','settings','archive','playback','review','ending'].includes(screen))draftEdit=null;
@@ -621,4 +645,5 @@ window.addEventListener('storage',event=>{if(event.storageArea!==localStorage||(
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&timer){stop();playbackNotice='已暂停。返回后由你继续推进。';if(ui.screen==='playback')render();}});
 window.afterwave={get storage(){return saveWriter.snapshot();},get state(){return state;},get ui(){return ui;},get mapView(){return board?.view()||mapView;},snapshot:()=>JSON.parse(JSON.stringify(state)),navigate:screen=>{if(!storageBusy)go(screen);}};
 if(storageReadOnly())updateSaveIssue(storageReason('unsupported'));
-render();
+render({persist:startupGuard.needsInitialSave});
+refreshStorageStatus();
