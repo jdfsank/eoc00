@@ -83,16 +83,17 @@ try {
 
  }
  // Explicit legal malformed-import boundaries, not natural play or old-save proofs.
- for(const fault of ['future-parent','cycle','cross-table-collision','missing-text','unknown-kind']){
+ for(const fault of ['future-parent','dangling-parent','cycle','cross-table-collision','missing-text','unknown-kind']){
   const source=copy(fixtures.round21.success.years[21]),row=source.history.find(h=>h.year===21),id=row.id;
   if(fault==='future-parent'){const future=source.events.find(e=>e.status==='pending');row.parentId=future.id;future.text='UNPUBLISHED_FUTURE_SENTINEL';}
+  if(fault==='dangling-parent')row.parentId='nonexistent-original-parent';
   if(fault==='cycle')row.parentId=row.id;
   if(fault==='cross-table-collision')source.events.push({...copy(source.events.find(e=>e.actionId==='free_warning')),id});
   if(fault==='missing-text')delete row.text;
   if(fault==='unknown-kind'){row.kind='unclassified-old-record';delete row.status;}
   check(`${fault}: boundary is accepted by unchanged original validation`,previous.validateState(source).valid);
   await enter(source,`synthetic-${fault}`);await exact(source,`${fault} after read`);
-  if(['future-parent','cycle','cross-table-collision'].includes(fault)){
+  if(['future-parent','dangling-parent','cycle','cross-table-collision'].includes(fault)){
    check(`${fault}: latest summary cannot trace an unsafe ancestor chain`,await page.locator(`[data-playback-latest] [data-action="trace"][data-id="${id}"]`).count()===0);
    await page.locator('[data-playback-current] > summary').click();check(`${fault}: original record cannot bypass unsafe-chain guard`,await page.locator(`[data-playback-current] [data-action="trace"][data-id="${id}"]`).count()===0);
    check(`${fault}: unpublished future payload is not rendered`,!(await page.locator('main').innerText()).includes('UNPUBLISHED_FUTURE_SENTINEL'));
