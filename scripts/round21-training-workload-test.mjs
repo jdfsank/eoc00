@@ -33,7 +33,15 @@ if(process.argv.includes('--fixtures-only')){console.log(JSON.stringify(report,n
 async function runtimeHash(){const h=createHash('sha256');async function walk(path){for(const d of(await fs.readdir(path,{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){const f=`${path}/${d.name}`;if(d.isDirectory())await walk(f);else{h.update(f);h.update(await fs.readFile(f));}}}await walk('src');return h.digest('hex');}
 await fs.mkdir(shots,{recursive:true});report.runtimeHash.before=await runtimeHash();
 const server=await createServer({server:{host:'127.0.0.1',port:4224,strictPort:true}});await server.listen();let browser,page;
-const click=async action=>{await page.locator(`[data-action="${action}"]`).first().click();await readDecisionDetails(page);};
+const click=async a=>{
+ await page.locator(`[data-action="${a}"]`).first().click();
+ if(a==='new-run'){
+  await page.waitForFunction(()=>afterwave.ui.screen==='world'&&afterwave.storage.pending===0&&!afterwave.storage.lastError);
+  const witness=await page.evaluate(()=>{const world=JSON.stringify(afterwave.state),disk=JSON.parse(localStorage.getItem('afterwave.save.v1'));return {year:afterwave.state.year,seed:afterwave.state.seed,exactDisk:world===JSON.stringify(disk.state)};});
+  check('Actual new-history control settled to exact year-zero disk world before contract reading',witness.year===0&&String(witness.seed)==='0'&&witness.exactDisk,witness);
+ }
+ await readDecisionDetails(page);
+};
 const stateBytes=()=>page.evaluate(()=>JSON.stringify(window.afterwave.state));
 const savedBytes=()=>page.evaluate(()=>JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state));
 async function unchanged(before,label){check(`${label}: entire memory and saved world unchanged`,await stateBytes()===before&&await savedBytes()===before);}

@@ -26,6 +26,14 @@ await file('slow-valid.json',{state:A});await file('fast-valid.json',{state:B});
 async function settled(){if(await page.evaluate(()=>window.afterwave?.ui.screen==='world'))await renderedBoard(page);}
 const click=async a=>{currentStep=`click:${a}`;await settled();await page.locator(`[data-action="${a}"]`).first().click();await settled();};
 const read=()=>page.evaluate(()=>({world:JSON.stringify(window.afterwave.state),saved:JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state),ui:JSON.stringify(window.afterwave.ui),screen:window.afterwave.ui.screen,toast:document.querySelector('.toast')?.textContent||''}));
+async function afterMutation(s,label){
+ const expected=JSON.stringify(s);
+ const probe=await page.evaluate(expected=>{const a=window.afterwave,raw=localStorage.getItem('afterwave.save.v1');return {live:JSON.stringify(a.state)===expected,durable:!!raw&&JSON.stringify(JSON.parse(raw).state)===expected,pending:a.storage.pending};},expected);
+ check(label+' immediately exact live world',probe.live);
+ check(label+' disk exact or pending',probe.durable||probe.pending);
+ await page.waitForFunction(expected=>{const a=window.afterwave,raw=localStorage.getItem('afterwave.save.v1');return !a.storage.pending&&!!raw&&JSON.stringify(JSON.parse(raw).state)===expected;},expected);
+ await exact(s,label+' after settled write');
+}
 async function exact(s,label){const actual=await read();check(`${label}: complete world exact`,actual.world===bytes(s));check(`${label}: complete saved world exact`,actual.saved===bytes(s));}
 async function settings(){await click('settings');await page.locator('#import-save').waitFor();}
 async function input(name,{expected='success'}={}){
@@ -87,13 +95,15 @@ try{
  await release('slow-valid.json');await page.waitForFunction(()=>window.afterwave.ui.screen==='world');await exact(A,'A completes after empty chooser');
  // Merely opening confirmation is not a new world. Actual confirmation is.
  await pending('slow-valid.json');await page.locator('#seed').fill('303');await click('new-confirm');await release('slow-valid.json');await exact(A,'unexecuted new-run confirmation keeps A eligible');
- await pending('slow-valid.json');await page.locator('#seed').fill('303');await click('new-confirm');await click('new-run');const fresh=producer.createRun(303);await exact(fresh,'confirmed new world before stale A');await stale('slow-valid.json',fresh,'slow A / confirmed new world');
+ await pending('slow-valid.json');await page.locator('#seed').fill('303');await click('new-confirm');await click('new-run');const fresh=producer.createRun(303);await page.waitForFunction(expected=>{const a=afterwave,raw=localStorage.getItem('afterwave.save.v1');return a.ui.screen==='world'&&!!document.querySelector('.selection-card')&&a.storage.pending===0&&!a.storage.lastError&&JSON.stringify(a.state)===expected&&raw&&JSON.stringify(JSON.parse(raw).state)===expected;},JSON.stringify(fresh));check('Older native file is still held before actual seed-303 map and save are established',await page.evaluate(()=>window.__round26Reads['slow-valid.json']?.ready&&!window.__round26Reads['slow-valid.json']?.done));await exact(fresh,'confirmed new world before stale A');await stale('slow-valid.json',fresh,'slow A / confirmed new world');
  // Every real navigation cancels; coming back never resurrects the request.
  for(const [name,reject]of [['slow-valid.json',false],['slow-invalid.json',false],['slow-read-error.json',true]]){
   await pending(name);await click('home');await settings();await stale(name,fresh,`${name} leave and re-enter settings`,{reject});
  }
  // A synthetic pagehide dispatch checks only the handler, not browser cache behavior.
  await pending('slow-valid.json');await page.evaluate(()=>window.dispatchEvent(new Event('pagehide')));await stale('slow-valid.json',fresh,'explicit synthetic pagehide handler cancellation');
+ await page.reload();await page.waitForFunction(()=>window.afterwave&&!afterwave.storage.closed&&!afterwave.storage.pending);
+ await exact(fresh,'fresh writable document after isolated synthetic lifecycle case');
  // Real browser history navigation is separate. Record whether the same document survived.
  await pending('slow-valid.json');const documentBefore=await page.evaluate(()=>window.__round26DocumentId);
  await page.waitForLoadState('networkidle');await page.goto('about:blank');await page.goBack();await page.waitForFunction(()=>!!window.afterwave);
@@ -109,9 +119,9 @@ try{
  await release('slow-valid.json');await page.waitForFunction(()=>window.afterwave.ui.screen==='world');await exact(A,'read finishes after text size and export');
  // Navigation into real irreversible play invalidates A before state changes.
  await importWorld(producer.createRun(0),'play-baseline');let expected=producer.createRun(0);await pending('slow-valid.json');await click('home');await page.waitForLoadState('networkidle');await page.locator('[data-primary-action]').click();
- for(const id of ['independent_flood_records','unfunded_maintenance']){const panel=page.locator(`[data-evidence-id="${id}"]`);await panel.locator(':scope > summary').click();await panel.locator('[data-action="evidence"]').click();producer.investigate(expected,'protagonist','D4',id);await exact(expected,`paid investigation ${id}`);}
- await page.locator('[data-action="choose"][data-id="build_joint"]').click();await click('confirm');await click('lock');producer.lockTask(expected,'protagonist','D4','build_joint',['independent_flood_records','unfunded_maintenance']);await exact(expected,'lock while old read is pending');
- await click('commit');producer.commitWindow(expected);await click('step');producer.advanceYear(expected);await exact(expected,'commit and annual advance while old read pending');await stale('slow-valid.json',expected,'slow A / investigation, lock, commit and year');
+ for(const id of ['independent_flood_records','unfunded_maintenance']){const panel=page.locator(`[data-evidence-id="${id}"]`);await panel.locator(':scope > summary').click();await panel.locator('[data-action="evidence"]').click();producer.investigate(expected,'protagonist','D4',id);await afterMutation(expected,`paid investigation ${id}`);}
+ await page.locator('[data-action="choose"][data-id="build_joint"]').click();await click('confirm');await click('lock');producer.lockTask(expected,'protagonist','D4','build_joint',['independent_flood_records','unfunded_maintenance']);await afterMutation(expected,'lock while old read is pending');
+ await click('commit');producer.commitWindow(expected);await click('step');producer.advanceYear(expected);await afterMutation(expected,'commit and annual advance while old read pending');await stale('slow-valid.json',expected,'slow A / investigation, lock, commit and year');
  // Normal same-file imports remain fresh operations, including every genuine producer.
  for(let attempt=1;attempt<=2;attempt++){await settings();await input('fast-valid.json');await exact(B,`same file normal import ${attempt}`);check(`same file import ${attempt} finishes on world`,await page.evaluate(()=>window.afterwave.ui.screen==='world'));}
  for(const [name,api]of [['round21',producer],['round20',older],['per-scene',legacy]])for(const year of [0,20,30]){

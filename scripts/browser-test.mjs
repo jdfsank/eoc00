@@ -5,7 +5,7 @@ import chromiumBinary from '@sparticuz/chromium';
 import {createServer} from 'vite';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const out='playtest-output';await fs.mkdir(out,{recursive:true});
+const out=process.env.AW_OUTPUT||'playtest-output';await fs.mkdir(out,{recursive:true});
 const server=await createServer({server:{host:'127.0.0.1',port:4174,strictPort:true}});await server.listen();
 const browser=await chromium.launch({executablePath:await chromiumBinary.executablePath(),args:chromiumBinary.args,headless:true});
 const page=await browser.newPage({viewport:{width:390,height:844}}), errors=[], checks=[];
@@ -59,12 +59,20 @@ await repairedEvidence.locator('xpath=ancestor::details').locator('summary').cli
 check('Repaired investigation session can collect evidence',await page.evaluate(()=>{
   const session=window.afterwave.ui.sessions['0:protagonist:D4'];return session.budget===2&&session.evidence.join()==='independent_flood_records';
 }));
-await page.reload();
+const evidence=()=>page.evaluate(()=>{const x=window.afterwave, q=x.storage, ui=JSON.parse(localStorage.getItem('afterwave.save.v1')).ui;
+ const field=u=>u.sessions?.['0:protagonist:D4']??null;
+ return {live:field(x.ui),saved:field(ui),pending:q.pending,error:q.lastError,conflict:q.conflicted};});
+const first=await evidence();await page.waitForFunction(()=>window.afterwave.storage.pending===0);const done=await evidence();
+check('Observed exact investigation in actual healthy storage before reload',done.saved?.budget===2&&done.saved.evidence.join()==='independent_flood_records'&&JSON.stringify(done.saved)===JSON.stringify(done.live)&&!done.error&&!done.conflict);
+console.log(JSON.stringify({evidenceBeforeReload:{first,done}}));
+await page.reload();await page.waitForFunction(()=>window.afterwave?.ui?.sessions);
 check('Reload preserves normalized investigation evidence and budget',await page.evaluate(()=>window.afterwave.ui.sessions['0:protagonist:D4'].budget===2&&window.afterwave.ui.sessions['0:protagonist:D4'].evidence.length===1));
 await page.addInitScript(()=>{const fixture=sessionStorage.getItem('afterwave.test.restore');if(fixture){localStorage.setItem('afterwave.save.v1',fixture);sessionStorage.removeItem('afterwave.test.restore');}});
 await page.evaluate(fresh=>sessionStorage.setItem('afterwave.test.restore',JSON.stringify({state:fresh,ui:{selected:'missing',screen:'constructor',sessions:null,mapTrace:{},channel:[]}})),fixtureStates.fresh);
 await page.reload();await page.locator('canvas').waitFor();
-check('Startup repairs invalid selected cell, screen and null sessions',await page.evaluate(()=>window.afterwave.ui.screen==='world'&&window.afterwave.ui.selected==='D4'&&window.afterwave.ui.sessions&&JSON.parse(localStorage.getItem('afterwave.save.v1')).ui.selected==='D4'));
+check('Startup renders normalized UI without rewriting original malformed UI-only bytes',await page.evaluate(fresh=>{const raw=localStorage.getItem('afterwave.save.v1'),{ui,state,storage}=window.afterwave;return ui.screen==='world'&&ui.selected==='D4'&&ui.sessions&&JSON.stringify(state)===JSON.stringify(fresh)&&raw===JSON.stringify({state:fresh,ui:{selected:'missing',screen:'constructor',sessions:null,mapTrace:{},channel:[]}})&&storage.pending===0&&!storage.lastError&&!storage.conflicted;},fixtureStates.fresh));
+await click('settings');await page.waitForFunction(()=>window.afterwave.storage.pending===0);
+check('Actual Settings action persists normalized UI and same world',await page.evaluate(fresh=>{const x=window.afterwave,s=JSON.parse(localStorage.getItem('afterwave.save.v1'));return s.ui.selected==='D4'&&s.ui.screen==='settings'&&JSON.stringify(s.state)===JSON.stringify(fresh)&&!x.storage.lastError&&!x.storage.conflicted;},fixtureStates.fresh));
 const corrupt=structuredClone(fixtureStates.failed);delete corrupt.institutions[0].annualSource;
 const goodWorld=await page.evaluate(()=>JSON.stringify(window.afterwave.state));
 await importFixture({state:corrupt});
@@ -78,7 +86,14 @@ await page.locator('[data-action="choose"][data-id="recruit_risk"]').click();awa
 check('Failed-build recruitment shuts the archive before year20',await page.evaluate(()=>window.afterwave.state.year===20&&window.afterwave.state.institutions.find(i=>i.kind==='archive').active===false&&window.afterwave.state.actors.some(a=>a.id==='linche')));
 await click('home');await click('avg');
 check('Failed-build year20 scene does not invent a rescued father or station manager',(await page.locator('.prose').innerText()).includes('没有正在运转的水文站')&&!(await page.locator('.prose').innerText()).includes('父亲')&&!(await page.locator('.prose').innerText()).includes('河港的管理者'));
-await click('settings');await page.locator('#seed').fill('0');await click('new-confirm');await click('new-run');
+await click('settings');await page.locator('#seed').fill('0');await click('new-confirm');
+const newRun=()=>page.evaluate(()=>{const x=window.afterwave,r=JSON.parse(localStorage.getItem('afterwave.save.v1'));return {live:[x.state.seed,x.state.year,x.ui.screen],saved:[r.state.seed,r.state.year,r.ui.screen],state:JSON.stringify(x.state),disk:JSON.stringify(r.state),pending:x.storage.pending,error:x.storage.lastError,conflict:x.storage.conflicted};});
+await page.locator('[data-action="new-run"]').click();const triggered=await newRun();
+await page.waitForFunction(()=>window.afterwave.storage.pending===0);const transitioned=await newRun();
+check('Explicit new history reached intended world and matching saved bytes before any read-only helper',JSON.stringify(transitioned.live)===JSON.stringify(['0',0,'world'])&&JSON.stringify(transitioned.saved)===JSON.stringify(transitioned.live)&&transitioned.state===transitioned.disk&&!transitioned.error&&!transitioned.conflict);
+console.log(JSON.stringify({confirmedReset:{initial:triggered.live,firstDisk:triggered.saved,pending:triggered.pending,finished:transitioned.live}}));
+await readDecisionDetails(page);const afterReader=await newRun();
+check('Read-only helper does not mutate the new world that was already committed',afterReader.state===transitioned.state&&afterReader.disk===transitioned.disk);
 check('New-run seed input preserves zero',await page.evaluate(()=>window.afterwave.state.seed==='0'&&window.afterwave.state.year===0));
 // No-build path: the UI must create a service, not pretend an existing station owes wages.
 for(let window=0;window<2;window++){

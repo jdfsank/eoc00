@@ -14,7 +14,7 @@ import { getRelocationDestination } from '../src/relocation-history.js';
 // Fixtures are produced by real annual simulation, never by assigning a year.
 // The only synthetic inputs are separately labelled unknown-version and missing
 // source boundaries, used to test rejection/truthful unknown presentation.
-const out = 'playtest-output', ID = 'establish_future_check';
+const out = process.env.AW_OUTPUT || 'playtest-output', ID = 'establish_future_check';
 await fs.mkdir(out, { recursive: true });
 const report = {
   scope: 'Round15 independent Chromium integration: future B4 checks and E4 relocation destination. Native engine saves imported through visible settings; true annual31/33/34/40 transitions;390×844 and320×568 with200% UI text and keyboard. No forced actions, injected state, illegal AVG, fabricated years, physical-device certification or old-history migration.',
@@ -154,12 +154,13 @@ async function keyboard(locator, label) {
   let tabs = 0;
   do { await page.keyboard.press('Tab'); tabs++; } while (tabs < 100 && !await locator.evaluate(el => document.activeElement === el));
   const readGeometry = () => locator.evaluate(el => {
-    const r = el.getBoundingClientRect(), upper = Math.max(0, r.top), lower = Math.min(innerHeight, r.bottom), visibleHeight = Math.max(0, lower - upper);
+    const r = el.getBoundingClientRect(), footer = document.querySelector('.storage-bar'), f = footer?.getBoundingClientRect(), fixedClearance = !footer?.contains(el) && f?.height > 0 && f.left <= 0 && f.right >= innerWidth && f.bottom >= innerHeight && getComputedStyle(footer).position === 'fixed', available = fixedClearance ? f.top : innerHeight, upper = Math.max(0, r.top), lower = Math.min(available, r.bottom), visibleHeight = Math.max(0, lower - upper);
     const ys = [upper + Math.min(8, visibleHeight / 4), (upper + lower) / 2, lower - Math.min(8, visibleHeight / 4)];
-    return { focused: document.activeElement === el, focusVisible: el.matches(':focus-visible'), choiceCard: el.matches('.choice-card'), left: r.left, right: r.right, top: r.top, bottom: r.bottom, height: r.height, viewportWidth: innerWidth, viewportHeight: innerHeight, visibleHeight, horizontalOverflow: document.documentElement.scrollWidth > innerWidth || document.body.scrollWidth > innerWidth, hits: ys.map(y => { const top = document.elementFromPoint(r.x + r.width / 2, y); return top === el || el.contains(top); }) };
+    return { focused: document.activeElement === el, focusVisible: el.matches(':focus-visible'), choiceCard: el.matches('.choice-card'), left: r.left, right: r.right, top: r.top, bottom: r.bottom, height: r.height, viewportWidth: innerWidth, viewportHeight: available, nativeViewportHeight: innerHeight, reservedFooterHeight: innerHeight-available, visibleHeight, horizontalOverflow: document.documentElement.scrollWidth > innerWidth || document.body.scrollWidth > innerWidth, hitWitness: ys.map(y=>{const x=r.x+r.width/2,top=document.elementFromPoint(x,y);return {x,y,top:top?.tagName,cls:top?.className,ancestors:top?[...function*(n){for(let k=0;n&&k<5;k++,n=n.parentElement)yield [n.tagName,n.className,getComputedStyle(n).position]}(top)]:[]}}), hits: ys.map(y => { const top = document.elementFromPoint(r.x + r.width / 2, y); return top === el || el.contains(top); }) };
   });
   let geometry = await readGeometry();
   const tabGeometry = { ...geometry };
+  const tabScrollY = await page.evaluate(()=>scrollY);
   let arrowDownKeys = 0;
   // Native Tab may leave a small reading margin above an oversized card.
   // Read further using real keys, without changing the visibility predicate,
@@ -174,6 +175,27 @@ async function keyboard(locator, label) {
   check(`${label}: native keyboard reading leaves the entire world unchanged`, await stateBytes() === beforeKeyboardReading);
   report.keyboardTargets.push({ label, tabs, tabGeometry, arrowDownKeys, ...geometry });
   check(`${label}: native Tab${arrowDownKeys ? ' and arrow reading of the oversized card' : ''} reaches visible, outlined and unobscured keyboard target`, strictFocusPredicate(geometry), geometry);
+  if (label==='320/200 future preview') {
+    const bands=[];
+    const sample=()=>locator.evaluate(el=>{
+      const r=el.getBoundingClientRect(),b=document.querySelector('.storage-bar').getBoundingClientRect();
+      const y=Math.max(r.top,0),end=Math.min(r.bottom,b.top),x=r.left+r.width/2;
+      const hits=[y+8,(y+end)/2,end-8].map(v=>{const e=document.elementFromPoint(x,v);return el===e||el.contains(e)});
+      return {from:y-r.top,to:end-r.top,total:r.height,scroll:scrollY,focused:document.activeElement===el&&el.matches(':focus-visible'),hits,y,end,footerTop:b.top};
+    });
+    const first=await sample();
+    const tabFrom=Math.max(0,-tabGeometry.top),tabTo=Math.min(tabGeometry.bottom,tabGeometry.viewportHeight)-tabGeometry.top;
+    bands.push({from:tabFrom,to:tabTo,total:tabGeometry.height,scroll:tabScrollY,focused:tabGeometry.focused&&tabGeometry.focusVisible,hits:tabGeometry.hits});
+    if(first.scroll!==tabScrollY)bands.push(first);
+    for(let i=0;i<36&&bands.at(-1).to<bands.at(-1).total-1;i++){
+      const y=bands.at(-1).scroll;await page.keyboard.press('ArrowDown');
+      await page.waitForFunction(y=>scrollY>y,y);await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
+      bands.push(await sample());
+    }
+    report.scrollableCardCoverage=bands;
+    check('Keyboard alone reaches every band of the oversized card above the footer without losing visible focus',bands[0].from<=1&&bands.at(-1).to>=bands.at(-1).total-1&&bands.every((b,i)=>b.focused&&b.hits.every(Boolean)&&(i===0||b.from<=bands[i-1].to)),bands);
+    check('Reading full card including bottom remains free',await stateBytes()===beforeKeyboardReading);
+  }
   await page.keyboard.press('Enter'); await settle(label);
 }
 async function snap(name, selector) {

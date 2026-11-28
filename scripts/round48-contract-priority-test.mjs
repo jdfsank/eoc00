@@ -47,7 +47,11 @@ try{
   if(a.modelNote){const details=page.locator('[data-confirm-contract-details]');if(confirm&&['build_joint','authorize_training'].includes(a.id)){check(label+' technical detail remains originally collapsed',await details.count()===1&&!await details.evaluate(e=>e.open));await details.locator(':scope > summary').click();check(label+' original technical explanation accessible',(await details.innerText()).includes(a.modelNote));await details.locator(':scope > summary').click();}else check(label+' original model note and caveat visible once',(await page.locator('.contract-model').innerText()).includes(a.modelNote+' 参数可调，尚未经过真人平衡验证。'));}
   if(confirm&&a.id==='build_joint')check(label+' building material failure stays outside details',await page.locator('.building-responsibility').evaluate(e=>!e.closest('details')&&e.innerText.includes('成本不退')&&e.innerText.includes('第16年')));
  }
- async function refresh(stage,s,label){await page.waitForLoadState('networkidle',{timeout:12000});await page.reload();await page.locator(`[data-decision-stage="${stage}"]`).waitFor();await exact(s,label+' refresh');}
+ async function refresh(stage,s,label){const selector=`[data-decision-stage="${stage}"]`;
+ await page.locator(selector).waitFor();
+ const route=await page.evaluate(()=>{const u=afterwave.ui;return [u.screen,u.selected,u.actor,u.choice,u.bigText]});
+ await page.waitForFunction(route=>{const raw=localStorage.getItem('afterwave.save.v1'),u=raw&&JSON.parse(raw).ui;return !afterwave.storage.pending&&!afterwave.storage.lastError&&!afterwave.storage.conflicted&&u&&JSON.stringify([u.screen,u.selected,u.actor,u.choice,u.bigText])===JSON.stringify(route)},route);
+ await page.reload();await page.locator(`[data-decision-stage="${stage}"]`).waitFor();await exact(s,label+' refresh');}
  for(const [producer,api] of [['current',sim],['old',old]])for(const width of [320,390,1280])for(const big of [false,true])for(const id of ['authorize_training','train_network','build_joint','preserve_records']){
   const label=`${producer}-${width}-${big?200:100}-${id}`,cell=id==='build_joint'?'D4':id==='preserve_records'?'B4':'E4';await page.setViewportSize({width,height:width===320?568:900});
   const s=['build_joint','preserve_records'].includes(id)?api.createRun(0):ready(api),a=sim.getActions(s,cell,'protagonist').find(a=>a.id===id);

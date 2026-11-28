@@ -181,7 +181,18 @@ async function readSources(label, { keyboard = false } = {}) {
   for (const [index, id] of ids.entries()) {
     const target = linche().locator(`[data-action="trace"][data-id="${id}"]`);
     if (keyboard && index === ids.length - 1) await keyboardActivate(target, `${label} last personal source`); else await target.click();
-    check(`${label}: source${index + 1} reaches its actual record without rewriting history`, await page.evaluate(() => window.afterwave.ui.traceId) === id && await page.locator('.causal-chain .event-card').count() > 0 && (await page.locator('.causal-chain').innerText()).includes(s.history.find(h => h.id === id).text) && await stateBytes() === raw);
+    const cards = page.locator('.causal-chain .event-card');
+    const record = s.history.find(h => h.id === id);
+    const source = cards.last().locator('[data-fee-original]');
+    const pending = { traceId: await page.evaluate(() => window.afterwave.ui.traceId), cards: await cards.count(), exactTarget: sim.traceEvent(s,id).at(-1)?.id === id, liveUnchanged: await stateBytes() === raw, disclosure: await source.count() };
+    const saved = await savedBytes();
+    if (pending.cards && pending.disclosure && pending.exactTarget) {
+      check(`${label}: source${index + 1} starts with the optional original closed`, !(await source.evaluate(el=>el.open)) && !(await source.locator('p').isVisible()));
+      await source.locator('summary').press('Enter');
+      check(`${label}: source${index + 1} retains the exact original heading and sentence in its target card`, await source.locator('p').isVisible() && (await source.locator('p').textContent()) === record.text && (!record.title || (await source.locator('h4').textContent()) === record.title), pending);
+    }
+    const readable = pending.cards > 0 && (await page.locator('.causal-chain').innerText()).includes(record.text);
+    check(`${label}: source${index + 1} reaches its actual record without rewriting history`, pending.traceId === id && readable && pending.liveUnchanged && await stateBytes() === raw && await savedBytes() === saved, pending);
     await ending();
   }
   return ids;
