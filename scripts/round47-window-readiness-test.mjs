@@ -1,3 +1,4 @@
+import {importAndWaitForSave} from './helpers/import-receipt.mjs';
 import {chromium} from 'playwright';
 import binary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -25,7 +26,7 @@ try{
  await page.goto('http://127.0.0.1:4847');await page.locator('.selection-card').waitFor();
  const click=a=>page.locator(`[data-action="${a}"]`).first().click();
  async function exact(s,label){const actual=await page.evaluate(()=>({world:JSON.stringify(window.afterwave.state),save:JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state)}));check(label+' exact world and autosave',actual.world===json(s)&&actual.save===json(s));}
- async function load(s,big,label){await click('settings');await page.locator('#import-save').setInputFiles({name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))});await page.locator('.selection-card').waitFor();if(await page.locator('.toast').count())await page.locator('.toast').waitFor({state:'hidden',timeout:6000});await exact(s,label+' import');await click('window');}
+ async function load(s,big,label){await click('settings');await importAndWaitForSave(page,{name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))},{state:s,bigText:big});await exact(s,label+' import');await click('window');}
  async function inspect(s,big,label){
   const r=sim.getWindowReview(s),v=getWindowReadinessContext(s,r),panel=page.locator('[data-window-readiness]');
   check(label+' exact authoritative issue prose once',json(await panel.locator(':scope > ul > li').allTextContents())===json(r.issues)&&await page.locator('.commit-issues').count()===1);

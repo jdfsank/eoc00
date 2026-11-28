@@ -1,3 +1,4 @@
+import {importAndWaitForSave} from './helpers/import-receipt.mjs';
 import {chromium} from 'playwright';
 import binary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -23,7 +24,7 @@ try{
  await page.goto('http://127.0.0.1:4845');await page.locator('.selection-card').waitFor();
  const click=a=>page.locator(`[data-action="${a}"]`).first().click();
  async function exact(s,label){const actual=await page.evaluate(()=>({world:JSON.stringify(window.afterwave.state),save:JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state)}));check(label+' exact world and autosave',actual.world===json(s)&&actual.save===json(s));}
- async function load(s,big,label){await click('settings');await page.locator('#import-save').setInputFiles({name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))});await page.locator('.selection-card').waitFor();if(await page.locator('.toast').count())await page.locator('.toast').waitFor({state:'hidden',timeout:6000});await exact(s,label+' import');}
+ async function load(s,big,label){await click('settings');await importAndWaitForSave(page,{name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))},{state:s,bigText:big});await exact(s,label+' import');}
  async function select(cell,actor='protagonist'){await click('home');await page.locator(`[data-action="actor"][data-actor="${actor}"]`).click();await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();await page.locator('[data-primary-action]').click();}
  async function preview(id){await select('E4');await page.locator(`[data-action="choose"][data-id="${id}"]`).click();await page.locator('[data-role-choice]').waitFor();}
  async function inspect(loc,big,label){const m=await loc.evaluate(e=>({font:getComputedStyle(document.documentElement).fontSize,width:innerWidth,scroll:document.documentElement.scrollWidth,overflow:[e,...e.querySelectorAll('*')].filter(n=>{const r=n.getBoundingClientRect();return r.width&&(r.left<-.6||r.right>innerWidth+.6);}).map(n=>n.className),clipped:[e,...e.querySelectorAll('p,h2,h3,h4')].filter(n=>{const c=getComputedStyle(n);return ['hidden','clip'].includes(c.overflowY)&&n.scrollHeight>n.clientHeight+1;}).map(n=>n.className)}));check(label+' native font, no horizontal overflow or clipped prose',m.font===(big?'32px':'16px')&&m.scroll<=m.width&&!m.overflow.length&&!m.clipped.length,m);}

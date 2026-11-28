@@ -1,3 +1,4 @@
+import {importAndWaitForSave} from './helpers/import-receipt.mjs';
 import {chromium} from 'playwright';
 import binary from '@sparticuz/chromium';
 import {createServer} from 'vite';
@@ -28,7 +29,7 @@ try{
   check(label+' immediate world equals independent model and write is durable or pending',probe.live&&!probe.error&&!probe.conflicted&&(probe.durable||probe.pending>0),probe);
   await page.waitForFunction(w=>{const a=window.afterwave,raw=localStorage.getItem('afterwave.save.v1');return !!raw&&!a.storage.pending&&!a.storage.lastError&&!a.storage.conflicted&&JSON.stringify(a.state)===w&&JSON.stringify(JSON.parse(raw).state)===w;},expected);await exact(s,label);
  }
- async function load(s,big,label){await click('settings');await page.locator('#import-save').setInputFiles({name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))});await page.locator('.selection-card').waitFor();if(await page.locator('.toast').count())await page.locator('.toast').waitFor({state:'hidden',timeout:15000});await exact(s,label+' real import');}
+ async function load(s,big,label){await click('settings');await importAndWaitForSave(page,{name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))},{state:s,bigText:big});await exact(s,label+' real import');}
  async function scene(){await click('home');await click('list');await page.locator('[data-action="select"][data-cell="E4"]').click();await page.locator('[data-primary-action]').click();}
  async function layout(loc,big,label){const m=await loc.evaluate(e=>({width:innerWidth,scroll:document.documentElement.scrollWidth,font:getComputedStyle(document.documentElement).fontSize,overflow:[e,...e.querySelectorAll('*')].filter(n=>{const r=n.getBoundingClientRect();return r.width&&(r.left<-.6||r.right>innerWidth+.6);}).map(n=>n.tagName+'.'+n.className),clipped:[e,...e.querySelectorAll('p,span,li')].filter(n=>{const c=getComputedStyle(n);return ['hidden','clip'].includes(c.overflowY)&&n.scrollHeight>n.clientHeight+1;}).map(n=>n.className)}));report.metrics.push({label,...m});check(label+' full size text without overflow/clipping',m.font===(big?'32px':'16px')&&m.scroll<=m.width&&!m.overflow.length&&!m.clipped.length,m);}
  async function coverageComparison(s,loc,mode,label){

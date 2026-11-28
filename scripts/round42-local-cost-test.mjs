@@ -1,3 +1,4 @@
+import {importAndWaitForSave} from './helpers/import-receipt.mjs';
 // NEW validation authored after executor recovery. This is not historical evidence.
 // Public controls and genuine producer saves; no injected world or DOM state.
 import {chromium} from 'playwright';
@@ -37,7 +38,7 @@ let server,browser,page;
 const click=a=>page.locator(`[data-action="${a}"]`).first().click();
 const allowedUi=new Set([...Object.keys(createUi()),'choice','traceId','mapTrace','cellHistory']);
 async function exact(s,label){const r=await page.evaluate(()=>({world:JSON.stringify(window.afterwave.state),save:JSON.parse(localStorage.getItem('afterwave.save.v1'))}));check(label+' world exact',r.world===json(s));check(label+' autosaved world exact',json(r.save.state)===json(s));check(label+' no added save fields',json(Object.keys(r.save).sort())===json(['state','ui'])&&Object.keys(r.save.ui).every(k=>allowedUi.has(k)));}
-async function imported(s,big,label){await click('settings');await page.locator('#import-save').setInputFiles({name:`${label}.json`,mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))});await page.locator('.selection-card').waitFor();if(await page.locator('.toast').count())await page.locator('.toast').waitFor({state:'hidden',timeout:6000});await exact(s,label+' import');}
+async function imported(s,big,label){await click('settings');await importAndWaitForSave(page,{name:`${label}.json`,mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))},{state:s,bigText:big});await exact(s,label+' import');}
 async function enter(id){await click('home');await click('list');await page.locator('[data-action="select"][data-cell="D4"]').click();await click('avg');await page.locator(`.choice-card[data-id="${id}"]`).click();await page.locator('[data-decision-stage="preview"]').waitFor();}
 async function reload(stage,s,id,big){
  const screen=stage==='preview'?'choice':'confirm',selector=`[data-decision-stage="${stage}"]`;

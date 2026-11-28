@@ -1,3 +1,4 @@
+import {importAndWaitForSave} from './helpers/import-receipt.mjs';
 // Real-control navigation, natural producer states, no injected DOM or world.
 import {chromium} from 'playwright';
 import binary from '@sparticuz/chromium';
@@ -18,7 +19,7 @@ report.sourceBefore=await hash();report.scriptBefore=createHash('sha256').update
 const server=await createServer({server:{host:'127.0.0.1',port:4441,strictPort:true}});await server.listen();let browser,page;
 const click=a=>page.locator(`[data-action="${a}"]`).first().click(),card=id=>page.locator(`.choice-card[data-id="${id}"]`),resume=()=>page.locator('[data-action="resume-contract"],[data-resume-contract]').first();
 async function exact(s,label){const worlds=await page.evaluate(()=>[JSON.stringify(window.afterwave.state),JSON.stringify(JSON.parse(localStorage.getItem('afterwave.save.v1')).state)]);check(label+' world/autosave exact',worlds.every(w=>w===json(s)));}
-async function imported(s,big,label){await click('settings');await page.locator('#import-save').setInputFiles({name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))});await page.locator('.selection-card').waitFor();if(await page.locator('.toast').count())await page.locator('.toast').waitFor({state:'hidden',timeout:6000});await exact(s,label+' import');}
+async function imported(s,big,label){await click('settings');await importAndWaitForSave(page,{name:label+'.json',mimeType:'application/json',buffer:Buffer.from(json({state:s,ui:{bigText:big}}))},{state:s,bigText:big});await exact(s,label+' import');}
 async function enter(cell='D4',actor='protagonist'){await click('home');await page.locator(`[data-action="actor"][data-actor="${actor}"]`).click();await click('list');await page.locator(`[data-action="select"][data-cell="${cell}"]`).click();await click('avg');await page.locator('.scene-planning-page').waitFor();}
 async function preview(id){await page.locator(`.scene-choice-link[data-id="${id}"]`).click();await card(id).press('Enter');await page.locator('[data-decision-stage="preview"]').waitFor();}
 async function reload(stage='preview'){const selector=`[data-decision-stage="${stage}"]`;
